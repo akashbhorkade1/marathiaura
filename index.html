@@ -46,6 +46,9 @@
     --border:#e3e1d9;
     --surface:#ffffff;
     --page-bg:#f7f6f2;
+    --badge-new:#e53935;
+    --badge-urgent:#ff6f00;
+    --success:#2e7d32;
   }
   *{box-sizing:border-box;}
   body{
@@ -54,6 +57,7 @@
     background:var(--page-bg);
     color:var(--text-primary);
     line-height:1.6;
+    font-size:16px;
   }
   a{text-decoration:none;color:inherit;}
   .wrap{max-width:960px;margin:0 auto;padding:0 16px;}
@@ -78,6 +82,34 @@
   nav.links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;font-weight:500;}
   nav.links a:hover{color:var(--accent);}
 
+  .search-box{
+    display:flex;
+    margin:16px 0 0;
+    gap:0;
+  }
+  .search-box input{
+    flex:1;
+    padding:10px 14px;
+    border:1px solid var(--border);
+    border-radius:8px 0 0 8px;
+    font-size:15px;
+    font-family:inherit;
+    outline:none;
+    background:var(--surface);
+  }
+  .search-box input:focus{border-color:var(--accent);}
+  .search-box button{
+    padding:10px 18px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    border-radius:0 8px 8px 0;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    min-height:44px;
+  }
+
   .hero{
     background:var(--accent-bg);
     border-radius:12px;
@@ -94,12 +126,30 @@
   .hero a.cta{
     background:var(--accent);
     color:#fff;
-    padding:8px 16px;
+    padding:10px 18px;
     border-radius:6px;
     font-size:13px;
     font-weight:600;
     white-space:nowrap;
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
   }
+
+  .alert-bar{
+    background:#fff3e0;
+    border:1px solid #ffcc80;
+    border-radius:8px;
+    padding:12px 16px;
+    margin:16px 0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .alert-bar .alert-icon{font-size:18px;}
+  .alert-bar .alert-text{flex:1;font-size:14px;font-weight:500;}
+  .alert-bar .alert-text strong{color:var(--badge-urgent);}
 
   section{margin:28px 0;}
   h2.section-title{font-size:15px;color:var(--text-secondary);margin-bottom:12px;font-weight:600;}
@@ -133,6 +183,65 @@
   }
   .post-card .title{font-size:14.5px;font-weight:600;}
   .post-card .meta{font-size:12px;color:var(--text-secondary);margin-top:3px;}
+  .badge{
+    display:inline-block;
+    font-size:11px;
+    font-weight:700;
+    padding:2px 7px;
+    border-radius:4px;
+    color:#fff;
+    margin-left:6px;
+    vertical-align:middle;
+  }
+  .badge-new{background:var(--badge-new);}
+  .badge-urgent{background:var(--badge-urgent);}
+
+  .trust-row{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin:8px 0;
+    font-size:12px;
+    color:var(--text-secondary);
+  }
+  .trust-row span{display:flex;align-items:center;gap:4px;}
+
+  .subscribe-bar{
+    background:var(--accent);
+    color:#fff;
+    border-radius:12px;
+    padding:20px;
+    margin:28px 0;
+    text-align:center;
+  }
+  .subscribe-bar h3{margin:0 0 6px;font-size:17px;}
+  .subscribe-bar p{margin:0 0 14px;font-size:14px;opacity:.9;}
+  .subscribe-bar .sub-form{display:flex;gap:8px;max-width:400px;margin:0 auto;}
+  .subscribe-bar input{
+    flex:1;
+    padding:10px 14px;
+    border:2px solid rgba(255,255,255,.3);
+    border-radius:6px;
+    font-size:14px;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    outline:none;
+    font-family:inherit;
+    min-height:44px;
+  }
+  .subscribe-bar input::placeholder{color:rgba(255,255,255,.7);}
+  .subscribe-bar input:focus{border-color:#fff;}
+  .subscribe-bar button{
+    padding:10px 18px;
+    background:#fff;
+    color:var(--accent);
+    border:none;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    min-height:44px;
+  }
 
   footer{
     background:var(--surface);
@@ -161,6 +270,8 @@
     .cat-grid{grid-template-columns:repeat(2,1fr);}
     footer .footer-grid{grid-template-columns:1fr;}
     nav.links{font-size:13px;gap:12px;}
+    .hero{flex-direction:column;align-items:flex-start;}
+    .subscribe-bar .sub-form{flex-direction:column;}
   }
 </style>
 </head>
@@ -170,14 +281,20 @@
   <div class="wrap navbar">
     <div class="logo">Marathi<span>Aura</span></div>
     <nav class="links">
-      <a href="/mpsc/">MPSC</a>
-      <a href="/talathi/">Talathi</a>
-      <a href="/police/">Police bharti</a>
-      <a href="/army/">Army</a>
-      <a href="/rrb/">RRB</a>
-      <a href="/ssc/">SSC</a>
-      <a href="/current-affairs/">Current affairs</a>
+      <a href="/mpsc/mpsc.html">MPSC</a>
+      <a href="/talathi/talathi.html">Talathi</a>
+      <a href="/police/police.html">Police bharti</a>
+      <a href="/army/army.html">Army</a>
+      <a href="/rrb/rrb.html">RRB</a>
+      <a href="/ssc/ssc.html">SSC</a>
+      <a href="/current-affairs/current-affairs.html">Current affairs</a>
     </nav>
+  </div>
+  <div class="wrap">
+    <form class="search-box" action="/search.html" method="get" role="search">
+      <input type="search" name="q" placeholder="परीक्षा, अभ्यासक्रम, निकाल शोधा..." aria-label="Search">
+      <button type="submit">शोधा</button>
+    </form>
   </div>
 </header>
 
@@ -188,28 +305,36 @@
       <div class="label">आजची ठळक बातमी</div>
       <div class="headline">MPSC संयुक्त पूर्व परीक्षा 2026 - अर्ज प्रक्रिया सुरू</div>
     </div>
-    <a class="cta" href="/mpsc/">अधिक वाचा</a>
+    <a class="cta" href="/mpsc/mpsc.html">अधिक वाचा</a>
+  </div>
+
+  <div class="alert-bar">
+    <span class="alert-icon">&#9888;</span>
+    <div class="alert-text">
+      <strong>तातडीचे:</strong> तलाठी भरती 2026 — अर्ज करण्याची शेवटची तारीख <strong>15 ऑगस्ट 2026</strong>
+    </div>
+    <a class="cta" href="/talathi/talathi.html" style="background:var(--badge-urgent);color:#fff;padding:8px 14px;border-radius:6px;font-size:13px;font-weight:600;white-space:nowrap;">अर्ज करा</a>
   </div>
 
   <section>
     <h2 class="section-title">Exam categories</h2>
     <div class="cat-grid">
-      <a class="cat-card" href="/mpsc/">
+      <a class="cat-card" href="/mpsc/mpsc.html">
         <div class="name">MPSC</div>
       </a>
-      <a class="cat-card" href="/talathi/">
+      <a class="cat-card" href="/talathi/talathi.html">
         <div class="name">Talathi</div>
       </a>
-      <a class="cat-card" href="/police/">
+      <a class="cat-card" href="/police/police.html">
         <div class="name">Police bharti</div>
       </a>
-      <a class="cat-card" href="/army/">
+      <a class="cat-card" href="/army/army.html">
         <div class="name">Army</div>
       </a>
-      <a class="cat-card" href="/rrb/">
+      <a class="cat-card" href="/rrb/rrb.html">
         <div class="name">RRB</div>
       </a>
-      <a class="cat-card" href="/ssc/">
+      <a class="cat-card" href="/ssc/ssc.html">
         <div class="name">SSC</div>
       </a>
     </div>
@@ -220,24 +345,51 @@
     <div class="post-list">
       <a class="post-card" href="/talathi/talathi-bharti-2026-result.html">
         <div>
-          <div class="title">तलाठी भरती 2026 - निकाल जाहीर</div>
-          <div class="meta">Talathi &middot; 2 hours ago</div>
+          <div class="title">तलाठी भरती 2026 - निकाल जाहीर <span class="badge badge-new">नवीन</span></div>
+          <div class="meta">Talathi &middot; 2 hours ago &middot; Last updated: 1 Aug 2026</div>
         </div>
       </a>
       <a class="post-card" href="/rrb/rrb-ntpc-syllabus-strategy.html">
         <div>
           <div class="title">RRB NTPC अभ्यासक्रम आणि रणनीती - सविस्तर मार्गदर्शन</div>
-          <div class="meta">RRB &middot; Yesterday</div>
+          <div class="meta">RRB &middot; Yesterday &middot; Last updated: 31 Jul 2026</div>
         </div>
       </a>
       <a class="post-card" href="/police/police-bharti-physical-test-schedule.html">
         <div>
-          <div class="title">पोलीस भरती शारीरिक चाचणी वेळापत्रक</div>
-          <div class="meta">Police bharti &middot; 2 days ago</div>
+          <div class="title">पोलीस भरती शारीरिक चाचणी वेळापत्रक <span class="badge badge-urgent">तातडीचे</span></div>
+          <div class="meta">Police bharti &middot; 2 days ago &middot; Last updated: 30 Jul 2026</div>
+        </div>
+      </a>
+      <a class="post-card" href="/mpsc/mpsc-combined-pre-2026-apply.html">
+        <div>
+          <div class="title">MPSC संयुक्त पूर्व परीक्षा 2026 - अर्ज प्रक्रिया सुरू <span class="badge badge-new">नवीन</span></div>
+          <div class="meta">MPSC &middot; 3 days ago &middot; Last updated: 29 Jul 2026</div>
+        </div>
+      </a>
+      <a class="post-card" href="/army/army-rally-bharti-aug-2026.html">
+        <div>
+          <div class="title">आर्मी रॅली भरती ऑगस्ट 2026 - पात्रता व वेळापत्रक</div>
+          <div class="meta">Army &middot; 4 days ago &middot; Last updated: 28 Jul 2026</div>
+        </div>
+      </a>
+      <a class="post-card" href="/ssc/ssc-cgl-2026-notification.html">
+        <div>
+          <div class="title">SSC CGL 2026 नोटिफिकेशन जाहीर</div>
+          <div class="meta">SSC &middot; 5 days ago &middot; Last updated: 27 Jul 2026</div>
         </div>
       </a>
     </div>
   </section>
+
+  <div class="subscribe-bar">
+    <h3>परीक्षेचे अपडेट्स मिळवा</h3>
+    <p>लवकरच येणाऱ्या परीक्षांच्या नोटिफिकेशन, निकाल आणि अभ्यासक्रम सरळ ईमेलवर मिळवा.</p>
+    <form class="sub-form" action="/subscribe.html" method="post">
+      <input type="email" name="email" placeholder="तुमचा ईमेल टाका" required aria-label="Email">
+      <button type="submit">सबस्क्राइब करा</button>
+    </form>
+  </div>
 
 </main>
 
@@ -250,18 +402,18 @@
     <div>
       <h3>Categories</h3>
       <ul>
-        <li><a href="/mpsc/">MPSC</a></li>
-        <li><a href="/talathi/">Talathi</a></li>
-        <li><a href="/police/">Police bharti</a></li>
-        <li><a href="/army/">Army</a></li>
-        <li><a href="/rrb/">RRB</a></li>
-        <li><a href="/ssc/">SSC</a></li>
+        <li><a href="/mpsc/mpsc.html">MPSC</a></li>
+        <li><a href="/talathi/talathi.html">Talathi</a></li>
+        <li><a href="/police/police.html">Police bharti</a></li>
+        <li><a href="/army/army.html">Army</a></li>
+        <li><a href="/rrb/rrb.html">RRB</a></li>
+        <li><a href="/ssc/ssc.html">SSC</a></li>
       </ul>
     </div>
     <div>
       <h3>Quick links</h3>
       <ul>
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact us</a></li>
         <li><a href="/privacy-policy.html">Privacy policy</a></li>

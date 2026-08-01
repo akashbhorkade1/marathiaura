@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Current Affairs Marathit – MarathiAura</title>
+<meta name="description" content="Daily, weekly, monthly Current Affairs Marathit. Competitive exams sathi chalu ghadamodi aani samanyadnyan.">
+<link rel="canonical" href="https://marathiaura.in/current-affairs/">
+<meta property="og:title" content="Current Affairs Marathit – MarathiAura">
+<meta property="og:description" content="Daily, weekly, monthly Current Affairs Marathit.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marathiaura.in/current-affairs/">
+<meta property="og:site_name" content="MarathiAura">
+
+<style>
+  :root{--accent:#0c447c;--accent-bg:#e6f1fb;--text-primary:#1a1a1a;--text-secondary:#5f5e5a;--border:#e3e1d9;--surface:#ffffff;--page-bg:#f7f6f2;--badge-new:#e53935;--badge-urgent:#ff6f00;--success:#2e7d32;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Noto Sans Devanagari','Noto Sans',Arial,sans-serif;background:var(--page-bg);color:var(--text-primary);line-height:1.6;font-size:16px;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px;}
+  header{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;}
+  .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;flex-wrap:wrap;gap:10px;}
+  .logo{font-size:20px;font-weight:700;}
+  .logo span{color:var(--accent);}
+  nav.links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;font-weight:500;}
+  nav.links a:hover{color:var(--accent);}
+  .search-box{display:flex;margin:16px 0 0;gap:0;}
+  .search-box input{flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:8px 0 0 8px;font-size:15px;font-family:inherit;outline:none;background:var(--surface);}
+  .search-box input:focus{border-color:var(--accent);}
+  .search-box button{padding:10px 18px;background:var(--accent);color:#fff;border:none;border-radius:0 8px 8px 0;font-size:14px;font-weight:600;cursor:pointer;min-height:44px;}
+  .breadcrumb{font-size:13px;color:var(--text-secondary);padding:14px 0 0;}
+  .breadcrumb a{color:var(--accent);}
+  .breadcrumb a:hover{text-decoration:underline;}
+  .cat-header{margin:20px 0 8px;}
+  .cat-header h1{font-size:22px;font-weight:700;margin:0;}
+  .cat-header p{font-size:14px;color:var(--text-secondary);margin:4px 0 0;}
+
+  .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;}
+  .filter-btn{padding:8px 16px;border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:600;background:var(--surface);cursor:pointer;color:var(--text-secondary);font-family:inherit;}
+  .filter-btn.active,.filter-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+  section{margin:28px 0;}
+  h2.section-title{font-size:15px;color:var(--text-secondary);margin-bottom:12px;font-weight:600;}
+
+  .ca-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:10px;}
+  .ca-item .ca-date{font-size:12px;color:var(--accent);font-weight:600;}
+  .ca-item .ca-title{font-size:14.5px;font-weight:600;margin:4px 0 6px;}
+  .ca-item .ca-body{font-size:14px;color:var(--text-secondary);line-height:1.7;}
+  .ca-item .ca-body ul{padding-left:18px;margin:6px 0;}
+  .ca-item .ca-body li{margin-bottom:4px;}
+  .ca-item .ca-source{font-size:12px;color:var(--accent);margin-top:6px;}
+
+  .download-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .download-card .dl-info{flex:1;}
+  .download-card .dl-title{font-size:14px;font-weight:600;}
+  .download-card .dl-meta{font-size:12px;color:var(--text-secondary);margin-top:2px;}
+  .download-card a{display:inline-flex;align-items:center;background:var(--accent);color:#fff;padding:10px 16px;border-radius:6px;font-size:13px;font-weight:600;min-height:44px;}
+
+  .subscribe-bar{background:var(--accent);color:#fff;border-radius:12px;padding:20px;margin:28px 0;text-align:center;}
+  .subscribe-bar h3{margin:0 0 6px;font-size:17px;}
+  .subscribe-bar p{margin:0 0 14px;font-size:14px;opacity:.9;}
+  .subscribe-bar .sub-form{display:flex;gap:8px;max-width:400px;margin:0 auto;}
+  .subscribe-bar input{flex:1;padding:10px 14px;border:2px solid rgba(255,255,255,.3);border-radius:6px;font-size:14px;background:rgba(255,255,255,.15);color:#fff;outline:none;font-family:inherit;min-height:44px;}
+  .subscribe-bar input::placeholder{color:rgba(255,255,255,.7);}
+  .subscribe-bar input:focus{border-color:#fff;}
+  .subscribe-bar button{padding:10px 18px;background:#fff;color:var(--accent);border:none;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;min-height:44px;}
+
+  footer{background:var(--surface);border-top:1px solid var(--border);margin-top:40px;padding:24px 0;font-size:13px;color:var(--text-secondary);}
+  footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;}
+  footer h3{font-size:13px;color:var(--text-primary);margin:0 0 10px;}
+  footer ul{list-style:none;padding:0;margin:0;}
+  footer li{margin-bottom:6px;}
+  footer .bottom{margin-top:20px;padding-top:16px;border-top:1px solid var(--border);text-align:center;}
+  @media(max-width:640px){footer .footer-grid{grid-template-columns:1fr;}nav.links{font-size:13px;gap:12px;}.subscribe-bar .sub-form{flex-direction:column;}.filter-bar{gap:6px;}.filter-btn{font-size:12px;padding:6px 12px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap navbar">
+    <div class="logo">Marathi<span>Aura</span></div>
+    <nav class="links">
+      <a href="/mpsc/mpsc.html">MPSC</a>
+      <a href="/talathi/talathi.html">Talathi</a>
+      <a href="/police/police.html">Police bharti</a>
+      <a href="/army/army.html">Army</a>
+      <a href="/rrb/rrb.html">RRB</a>
+      <a href="/ssc/ssc.html">SSC</a>
+      <a href="/">Home</a>
+    </nav>
+  </div>
+  <div class="wrap">
+    <form class="search-box" action="/search.html" method="get" role="search">
+      <input type="search" name="q" placeholder="Current Affairs shodha..." aria-label="Search">
+      <button type="submit">शोधा</button>
+    </form>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; Current Affairs</div>
+
+  <div class="cat-header">
+    <h1>Current Affairs &#2350;&#2352;&#2366;&#2336;&#2368;&#2340;</h1>
+    <p>&#2342;&#2376;&#2344;&#2367;&#2325;, &#2360;&#2366;&#2346;&#2381;&#2340;&#2366;&#2361;&#2367;&#2325;, &#2350;&#2366;&#2360;&#2367;&#2325; Current Affairs &#2350;&#2352;&#2366;&#2336;&#2368;&#2340;. &#2360;&#2352;&#2381;&#2357; &#2360;&#2381;&#2346;&#2352;&#2381;&#2343;&#2366;&#2340;&#2381;&#2350;&#2325; &#2346;&#2352;&#2368;&#2325;&#2381;&#2359;&#2366;&#2306;&#2360;&#2366;&#2311;&#2342;&#2381;&#2351;&#2366; &#2330;&#2366;&#2354;&#2369; &#2325;&#2381;&#2359;&#2375;&#2340;&#2381;&#2352; &#2313;&#2346;&#2337;&#2375;&#2335;&#2381;&#2360;&#2381;.</p>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Daily</button>
+    <button class="filter-btn">Weekly</button>
+    <button class="filter-btn">Monthly</button>
+    <button class="filter-btn">National</button>
+    <button class="filter-btn">International</button>
+    <button class="filter-btn">Sports</button>
+    <button class="filter-btn">Awards</button>
+  </div>
+
+  <section>
+    <h2 class="section-title">1 August 2026</h2>
+
+    <div class="ca-item">
+      <div class="ca-date">National</div>
+      <div class="ca-title">&#2311;&#2306;&#2337;&#2367;&#2311; &#2325;&#2376;&#2348;&#2367;&#2344;&#2375;&#2335; &#2350;&#2306;&#2340;&#2381;&#2352;&#2368; &#2350;&#2366;&#2361;&#2367;&#2340;&#2368; &#2346;&#2369;&#2352;&#2381;&#2357;&#2368; &#2346;&#2352;&#2368;&#2325;&#2381;&#2359;&#2366; 2026</div>
+      <div class="ca-body">
+        <ul>
+          <li>&#2313;&#2340;&#2381;&#2340;&#2352; &#2346;&#2381;&#2352;&#2342;&#2375;&#2358;: 832 &#2346;&#2379;&#2360;&#2381;&#2335;&#2381;&#2360; (&#2350;&#2361;&#2366;&#2352;&#2366;&#2359;&#2381;&#2335;&#2381;&#2352;) / 712 (&#2310;&#2352;&#2325;&#2381;&#2359;&#2368;&#2335;)</li>
+          <li>&#2358;&#2375;&#2357;&#2335;&#2368; &#2340;&#2366;&#2352;&#2368;&#2326;: 20 Aug 2026</li>
+          <li>&#2309;&#2352;&#2381;&#2332; &#2350;&#2366;&#2352;&#2381;&#2327;: <a href="https://mpsc.gov.in" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">mpsc.gov.in</a></li>
+        </ul>
+      </div>
+      <div class="ca-source">Source: MPSC Official</div>
+    </div>
+
+    <div class="ca-item">
+      <div class="ca-date">International</div>
+      <div class="ca-title">ISRO Chandrayaan-4 mission announcement</div>
+      <div class="ca-body">
+        <ul>
+          <li>Launch target: 2028</li>
+          <li>Objective: Lunar sample return mission</li>
+          <li>Budget approved: Rs 2,700 crore</li>
+        </ul>
+      </div>
+      <div class="ca-source">Source: ISRO / PIB</div>
+    </div>
+
+    <div class="ca-item">
+      <div class="ca-date">Sports</div>
+      <div class="ca-title">India at Olympics 2028 - Qualification updates</div>
+      <div class="ca-body">
+        <ul>
+          <li>Wrestling: 6 athletes qualified so far</li>
+          <li>Shooting: 4 quota places secured</li>
+          <li>Athletics: Neeraj Chopra confirmed participation</li>
+        </ul>
+      </div>
+      <div class="ca-source">Source: IOA Official</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">31 July 2026</h2>
+
+    <div class="ca-item">
+      <div class="ca-date">Awards</div>
+      <div class="ca-title">Maharashtra Bhushan Award 2026 announced</div>
+      <div class="ca-body">
+        <ul>
+          <li>Recipient: Dr. Raghunath Mashelkar</li>
+          <li>Field: Science and Technology</li>
+          <li>Ceremony: August 15, Mumbai</li>
+        </ul>
+      </div>
+      <div class="ca-source">Source: Maharashtra Govt</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">PDF Download</h2>
+    <div class="post-list">
+      <div class="download-card">
+        <div class="dl-info">
+          <div class="dl-title">July 2026 Current Affairs PDF</div>
+          <div class="dl-meta">PDF &middot; 3.5 MB</div>
+        </div>
+        <a href="#" download>PDF Download</a>
+      </div>
+      <div class="download-card">
+        <div class="dl-info">
+          <div class="dl-title">Weekly Current Affairs (28 Jul - 3 Aug)</div>
+          <div class="dl-meta">PDF &middot; 1.2 MB</div>
+        </div>
+        <a href="#" download>PDF Download</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="subscribe-bar">
+    <h3>Current Affairs updates milwa</h3>
+    <p>Daily current affairs straight to your email.</p>
+    <form class="sub-form" action="/subscribe.html" method="post">
+      <input type="email" name="email" placeholder="Your email" required aria-label="Email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <h3>MarathiAura</h3>
+      <p>MPSC, Talathi, Police bharti, Army, RRB, SSC exam updates, syllabus aani preparation tips Marathit.</p>
+    </div>
+    <div>
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="/mpsc/mpsc.html">MPSC</a></li>
+        <li><a href="/talathi/talathi.html">Talathi</a></li>
+        <li><a href="/police/police.html">Police bharti</a></li>
+        <li><a href="/army/army.html">Army</a></li>
+        <li><a href="/rrb/rrb.html">RRB</a></li>
+        <li><a href="/ssc/ssc.html">SSC</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact us</a></li>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">&copy; 2026 MarathiAura | Trusted Competitive Exam Updates</div>
+</footer>
+
+</body>
+</html>
