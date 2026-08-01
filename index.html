@@ -2,6 +2,9 @@
 <html lang="mr">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>MarathiAura – Trusted Competitive Exam Updates</title>
@@ -37,243 +40,8 @@
 }
 </script>
 
-<style>
-  :root{
-    --accent:#0c447c;
-    --accent-bg:#e6f1fb;
-    --text-primary:#1a1a1a;
-    --text-secondary:#5f5e5a;
-    --border:#e3e1d9;
-    --surface:#ffffff;
-    --page-bg:#f7f6f2;
-    --badge-new:#e53935;
-    --badge-urgent:#ff6f00;
-    --success:#2e7d32;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    font-family:'Noto Sans Devanagari','Noto Sans',Arial,sans-serif;
-    background:var(--page-bg);
-    color:var(--text-primary);
-    line-height:1.6;
-    font-size:16px;
-  }
-  a{text-decoration:none;color:inherit;}
-  .wrap{max-width:960px;margin:0 auto;padding:0 16px;}
-
-  header{
-    background:var(--surface);
-    border-bottom:1px solid var(--border);
-    position:sticky;
-    top:0;
-    z-index:10;
-  }
-  .navbar{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:14px 0;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .logo{font-size:20px;font-weight:700;}
-  .logo span{color:var(--accent);}
-  nav.links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;font-weight:500;}
-  nav.links a:hover{color:var(--accent);}
-
-  .search-box{
-    display:flex;
-    margin:16px 0 0;
-    gap:0;
-  }
-  .search-box input{
-    flex:1;
-    padding:10px 14px;
-    border:1px solid var(--border);
-    border-radius:8px 0 0 8px;
-    font-size:15px;
-    font-family:inherit;
-    outline:none;
-    background:var(--surface);
-  }
-  .search-box input:focus{border-color:var(--accent);}
-  .search-box button{
-    padding:10px 18px;
-    background:var(--accent);
-    color:#fff;
-    border:none;
-    border-radius:0 8px 8px 0;
-    font-size:14px;
-    font-weight:600;
-    cursor:pointer;
-    min-height:44px;
-  }
-
-  .hero{
-    background:var(--accent-bg);
-    border-radius:12px;
-    padding:18px 20px;
-    margin:20px 0;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    flex-wrap:wrap;
-  }
-  .hero .label{font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px;}
-  .hero .headline{font-size:17px;font-weight:600;}
-  .hero a.cta{
-    background:var(--accent);
-    color:#fff;
-    padding:10px 18px;
-    border-radius:6px;
-    font-size:13px;
-    font-weight:600;
-    white-space:nowrap;
-    min-height:44px;
-    display:inline-flex;
-    align-items:center;
-  }
-
-  .alert-bar{
-    background:#fff3e0;
-    border:1px solid #ffcc80;
-    border-radius:8px;
-    padding:12px 16px;
-    margin:16px 0;
-    display:flex;
-    align-items:center;
-    gap:10px;
-    flex-wrap:wrap;
-  }
-  .alert-bar .alert-icon{font-size:18px;}
-  .alert-bar .alert-text{flex:1;font-size:14px;font-weight:500;}
-  .alert-bar .alert-text strong{color:var(--badge-urgent);}
-
-  section{margin:28px 0;}
-  h2.section-title{font-size:15px;color:var(--text-secondary);margin-bottom:12px;font-weight:600;}
-
-  .cat-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-  }
-  .cat-card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:16px 10px;
-    text-align:center;
-    transition:border-color .15s;
-  }
-  .cat-card:hover{border-color:var(--accent);}
-  .cat-card .name{font-size:14px;font-weight:600;margin-top:6px;}
-
-  .post-list{display:flex;flex-direction:column;gap:10px;}
-  .post-card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:14px 16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:12px;
-  }
-  .post-card .title{font-size:14.5px;font-weight:600;}
-  .post-card .meta{font-size:12px;color:var(--text-secondary);margin-top:3px;}
-  .badge{
-    display:inline-block;
-    font-size:11px;
-    font-weight:700;
-    padding:2px 7px;
-    border-radius:4px;
-    color:#fff;
-    margin-left:6px;
-    vertical-align:middle;
-  }
-  .badge-new{background:var(--badge-new);}
-  .badge-urgent{background:var(--badge-urgent);}
-
-  .trust-row{
-    display:flex;
-    gap:16px;
-    flex-wrap:wrap;
-    margin:8px 0;
-    font-size:12px;
-    color:var(--text-secondary);
-  }
-  .trust-row span{display:flex;align-items:center;gap:4px;}
-
-  .subscribe-bar{
-    background:var(--accent);
-    color:#fff;
-    border-radius:12px;
-    padding:20px;
-    margin:28px 0;
-    text-align:center;
-  }
-  .subscribe-bar h3{margin:0 0 6px;font-size:17px;}
-  .subscribe-bar p{margin:0 0 14px;font-size:14px;opacity:.9;}
-  .subscribe-bar .sub-form{display:flex;gap:8px;max-width:400px;margin:0 auto;}
-  .subscribe-bar input{
-    flex:1;
-    padding:10px 14px;
-    border:2px solid rgba(255,255,255,.3);
-    border-radius:6px;
-    font-size:14px;
-    background:rgba(255,255,255,.15);
-    color:#fff;
-    outline:none;
-    font-family:inherit;
-    min-height:44px;
-  }
-  .subscribe-bar input::placeholder{color:rgba(255,255,255,.7);}
-  .subscribe-bar input:focus{border-color:#fff;}
-  .subscribe-bar button{
-    padding:10px 18px;
-    background:#fff;
-    color:var(--accent);
-    border:none;
-    border-radius:6px;
-    font-size:14px;
-    font-weight:700;
-    cursor:pointer;
-    min-height:44px;
-  }
-
-  footer{
-    background:var(--surface);
-    border-top:1px solid var(--border);
-    margin-top:40px;
-    padding:24px 0;
-    font-size:13px;
-    color:var(--text-secondary);
-  }
-  footer .footer-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:20px;
-  }
-  footer h3{font-size:13px;color:var(--text-primary);margin:0 0 10px;}
-  footer ul{list-style:none;padding:0;margin:0;}
-  footer li{margin-bottom:6px;}
-  footer .bottom{
-    margin-top:20px;
-    padding-top:16px;
-    border-top:1px solid var(--border);
-    text-align:center;
-  }
-
-  @media(max-width:640px){
-    .cat-grid{grid-template-columns:repeat(2,1fr);}
-    footer .footer-grid{grid-template-columns:1fr;}
-    nav.links{font-size:13px;gap:12px;}
-    .hero{flex-direction:column;align-items:flex-start;}
-    .subscribe-bar .sub-form{flex-direction:column;}
-  }
-</style>
+<link rel="stylesheet" href="/style.css">
+<link rel="manifest" href="/manifest.json">
 </head>
 <body>
 
@@ -417,6 +185,8 @@
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact us</a></li>
         <li><a href="/privacy-policy.html">Privacy policy</a></li>
+        <li><a href="/terms-and-conditions.html">Terms and conditions</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
       </ul>
     </div>
   </div>
