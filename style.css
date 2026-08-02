@@ -288,7 +288,7 @@ h2.section-title{font-size:15px;color:var(--text-secondary);margin-bottom:12px;f
 .trust-row span{display:flex;align-items:center;gap:4px;}
 
 footer{
-  background:var(--surface);
+  background:#f4f5f0;
   border-top:1px solid var(--border);
   margin-top:40px;
   padding:24px 0;
