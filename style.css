@@ -347,6 +347,64 @@ footer .bottom{
   text-align:center;
 }
 
+.join-cta{
+  background:linear-gradient(135deg,#0c447c,#1667a8);
+  border-radius:12px;
+  padding:18px 20px;
+  margin:24px 0;
+}
+.join-cta-inner{
+  max-width:960px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.join-cta-title{
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+.join-cta-sub{
+  color:#dce8f5;
+  font-size:13px;
+}
+.join-cta-buttons{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.join-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.join-icon{
+  width:20px;
+  height:20px;
+  flex-shrink:0;
+}
+.join-btn.telegram{
+  background:#229ED9;
+  color:#fff;
+}
+.join-btn.whatsapp{
+  background:#25D366;
+  color:#fff;
+}
+.join-btn:hover{
+  opacity:0.9;
+}
+
 @media(max-width:640px){
   .cat-grid{grid-template-columns:repeat(2,1fr);}
   footer .footer-grid{grid-template-columns:1fr;}
@@ -359,4 +417,7 @@ footer .bottom{
   .contact-info{grid-template-columns:1fr;}
   .filter-bar{gap:6px;}
   .filter-btn{font-size:12px;padding:6px 12px;}
+  .join-cta-inner{flex-direction:column;align-items:flex-start;}
+  .join-cta-buttons{width:100%;flex-direction:column;}
+  .join-btn{justify-content:center;width:100%;}
 }
