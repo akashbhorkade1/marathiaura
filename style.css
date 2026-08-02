@@ -288,12 +288,19 @@ h2.section-title{font-size:15px;color:var(--text-secondary);margin-bottom:12px;f
 .trust-row span{display:flex;align-items:center;gap:4px;}
 
 footer{
-  background:#f4f5f0;
+  background:#e8ecf4;
   border-top:1px solid var(--border);
   margin-top:40px;
   padding:24px 0;
   font-size:13px;
-  color:var(--text-secondary);
+  color:var(--text-primary);
+}
+footer a{
+  color:var(--text-primary);
+  text-decoration:none;
+}
+footer a:hover{
+  text-decoration:underline;
 }
 footer .footer-grid{
   display:grid;
