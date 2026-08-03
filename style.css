@@ -396,6 +396,10 @@ footer .bottom{
   background:#25D366;
   color:#fff;
 }
+.join-btn.youtube{
+  background:#FF0000;
+  color:#fff;
+}
 .join-btn:hover{
   opacity:0.9;
 }
