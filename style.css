@@ -418,3 +418,6 @@ footer .bottom{
   .join-cta-buttons{width:100%;flex-direction:column;}
   .join-btn{justify-content:center;width:100%;}
 }
+
+.search-loading{color:var(--text-secondary);font-size:15px;padding:20px 0;}
+#search-query{font-size:16px;font-weight:600;color:var(--accent);margin-bottom:12px;}
