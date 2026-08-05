@@ -20,38 +20,90 @@
       "date": "2026-07-09",
       "updated": "2026-08-05",
       "shortDesc": "68th SSC (Tech) भरती 2026: एकूण 381 जागा, पात्रता, वयोमर्यादा, महत्वाच्या तारखा आणि अर्ज प्रक्रिया. अर्ज निःशुल्क व पूर्णतः ऑनलाइन.",
-      "keywords": ["SSC Tech Bharti 2026", "Indian Army", "68th SSC Tech", "आर्मी भरती", "शॉर्ट सर्व्हिस कमिशन", "अभियांत्रिकी भरती", "लष्कर भरती 2026", "army vacancy 2026"],
+      "keywords": [
+        "SSC Tech Bharti 2026",
+        "Indian Army",
+        "68th SSC Tech",
+        "आर्मी भरती",
+        "शॉर्ट सर्व्हिस कमिशन",
+        "अभियांत्रिकी भरती",
+        "लष्कर भरती 2026",
+        "army vacancy 2026"
+      ],
       "applyLink": "https://joinindianarmy.nic.in",
       "pdfUrl": "/pdfs/ssc-tech-bharti-2026.pdf",
       "pdfSourceUrl": "https://joinindianarmy.nic.in",
       "ogImage": "/og-images/ssc-tech-bharti-2026.svg",
       "wordCount": 750,
-      "socialPosted": { "whatsapp": false, "instagram": false, "youtube": false },
+      "socialPosted": {
+        "whatsapp": false,
+        "instagram": false,
+        "youtube": true
+      },
       "importantLinks": [
-        { "title": "CEE ॲडमिट कार्ड डाउनलोड", "url": "https://www.joinindianarmy.nic.in/Default.aspx?id=156&lg=eng", "label": "ॲडमिट कार्ड" },
-        { "title": "ऑनलाइन अर्ज करा", "url": "https://joinindianarmy.nic.in", "label": "अर्ज करा" },
-        { "title": "अधिकृत संकेतस्थळ", "url": "https://joinindianarmy.nic.in", "label": "संकेतस्थळ" }
+        {
+          "title": "CEE ॲडमिट कार्ड डाउनलोड",
+          "url": "https://www.joinindianarmy.nic.in/Default.aspx?id=156&lg=eng",
+          "label": "ॲडमिट कार्ड"
+        },
+        {
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://joinindianarmy.nic.in",
+          "label": "अर्ज करा"
+        },
+        {
+          "title": "अधिकृत संकेतस्थळ",
+          "url": "https://joinindianarmy.nic.in",
+          "label": "संकेतस्थळ"
+        }
       ],
       "sections": [
         {
           "heading": "भरतीचा तपशील",
           "type": "table",
-          "headers": ["तपशील", "माहिती"],
+          "headers": [
+            "तपशील",
+            "माहिती"
+          ],
           "rows": [
-            ["कोर्सचे नाव", "68th SSC (Tech) पुरुष & 68th SSCW (Tech) महिला"],
-            ["एकूण जागा", "381"],
-            ["अर्ज पद्धत", "पूर्णतः ऑनलाइन"],
-            ["अर्ज शुल्क", "निःशुल्क"],
-            ["नोकरीचे ठिकाण", "संपूर्ण भारतात कुठेही"]
+            [
+              "कोर्सचे नाव",
+              "68th SSC (Tech) पुरुष & 68th SSCW (Tech) महिला"
+            ],
+            [
+              "एकूण जागा",
+              "381"
+            ],
+            [
+              "अर्ज पद्धत",
+              "पूर्णतः ऑनलाइन"
+            ],
+            [
+              "अर्ज शुल्क",
+              "निःशुल्क"
+            ],
+            [
+              "नोकरीचे ठिकाण",
+              "संपूर्ण भारतात कुठेही"
+            ]
           ]
         },
         {
           "heading": "महत्वाच्या तारखा",
           "type": "table",
-          "headers": ["तपशील", "तारीख"],
+          "headers": [
+            "तपशील",
+            "तारीख"
+          ],
           "rows": [
-            ["ऑनलाइन अर्ज शेवटची तारीख (पुरुष)", "7 ऑगस्ट 2026"],
-            ["ऑनलाइन अर्ज शेवटची तारीख (महिला)", "6 ऑगस्ट 2026"]
+            [
+              "ऑनलाइन अर्ज शेवटची तारीख (पुरुष)",
+              "7 ऑगस्ट 2026"
+            ],
+            [
+              "ऑनलाइन अर्ज शेवटची तारीख (महिला)",
+              "6 ऑगस्ट 2026"
+            ]
           ]
         },
         {
@@ -98,22 +150,1034 @@
           "body": "या भरतीसाठी कोणतेही शुल्क आकारले जात नाही. अर्ज पूर्णपणे ऑनलाइन पद्धतीने करावा. कोणत्याही मध्यस्थाची गरज नाही. अधिकृत संकेतस्थळावरूनच अर्ज करावा, इतर कोणत्याही संकेतस्थळावरून अर्ज केल्यास तो अवैध असेल. निवड झाल्यावर भारतीय लष्कराच्या गरजेनुसार देशात कुठेही नियुक्त केले जाऊ शकते."
         }
       ]
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664",
+      "date": "2026-08-05",
+      "slug": "updates/rssb-driver-result-2026-out---check-trade-test-selected-cand.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/rssb-driver-result-2026-out-check-trade-test-selec.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "rssb-driver-result-2026-out-check-trade-test-selec",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664",
+      "wordCount": 0,
+      "keywords": [
+        "RSSB Driver Result 2026 Out - Check Trade Test Selected Candidates List PDF Download",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/rssb-driver-result-2026-3061664",
+      "title": "RSSB Driver Result 2026 Out - Check Trade Test Selected Candidates List PDF Download"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663",
+      "date": "2026-08-05",
+      "slug": "updates/iit-delhi-project-research-scientist-recruitment-2026---appl.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/iit-delhi-project-research-scientist-recruitment-2.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "iit-delhi-project-research-scientist-recruitment-2",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663",
+      "wordCount": 0,
+      "keywords": [
+        "IIT Delhi Project Research Scientist  Recruitment 2026 - Apply Online",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/iit-delhi-project-research-scientist-iii-non-medical-recruitment-2026-apply-online-3061663",
+      "title": "IIT Delhi Project Research Scientist  Recruitment 2026 - Apply Online"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661",
+      "date": "2026-08-05",
+      "slug": "banking/nhm-mizoram-recruitment-2026---apply-offline-for-medical-off.html",
+      "pdfUrl": "",
+      "category": "banking",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/nhm-mizoram-recruitment-2026-apply-offline-for-med.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "nhm-mizoram-recruitment-2026-apply-offline-for-med",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661",
+      "wordCount": 0,
+      "keywords": [
+        "NHM Mizoram Recruitment 2026 - Apply Offline for Medical Officer, Staff Nurse, and More Posts",
+        "Banking भरती",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/nhm-mizoram-recruitment-2026-apply-offline-for-medical-officer-staff-nurse-and-more-posts-3061661",
+      "title": "NHM Mizoram Recruitment 2026 - Apply Offline for Medical Officer, Staff Nurse, and More Posts"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659",
+      "date": "2026-08-05",
+      "slug": "updates/manuu-guest-faculty-recruitment-2026---walkin.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/manuu-guest-faculty-recruitment-2026-walkin.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "manuu-guest-faculty-recruitment-2026-walkin",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659",
+      "wordCount": 0,
+      "keywords": [
+        "MANUU Guest Faculty Recruitment 2026 - Walkin",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/manuu-guest-faculty-recruitment-2026-walkin-3061659",
+      "title": "MANUU Guest Faculty Recruitment 2026 - Walkin"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657",
+      "date": "2026-08-05",
+      "slug": "updates/tancet-mba-provisional-allotment-2026---download-seat-allotm.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/tancet-mba-provisional-allotment-2026-download-sea.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "tancet-mba-provisional-allotment-2026-download-sea",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657",
+      "wordCount": 0,
+      "keywords": [
+        "TANCET MBA Provisional Allotment 2026 - Download Seat Allotment Order at tn-mbamca.com",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/tancet-mba-provisional-allotment-2026-download-seat-allotment-order-3061657",
+      "title": "TANCET MBA Provisional Allotment 2026 - Download Seat Allotment Order at tn-mbamca.com"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656",
+      "date": "2026-08-05",
+      "slug": "updates/ts-lawcet-2026-phase-1-seat-allotment-result---check-result.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/ts-lawcet-2026-phase-1-seat-allotment-result-check.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "ts-lawcet-2026-phase-1-seat-allotment-result-check",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656",
+      "wordCount": 0,
+      "keywords": [
+        "TS LAWCET 2026 Phase 1 Seat Allotment Result - Check Result @ lawcetadm.tgche.ac.in",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/ts-lawcet-2026-phase-1-seat-allotment-result-check-result-3061656",
+      "title": "TS LAWCET 2026 Phase 1 Seat Allotment Result - Check Result @ lawcetadm.tgche.ac.in"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655",
+      "date": "2026-08-05",
+      "slug": "updates/karnataka-pgcet-result-2026---check-result-online-cetonlinek.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/karnataka-pgcet-result-2026-check-result-online-ce.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "karnataka-pgcet-result-2026-check-result-online-ce",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655",
+      "wordCount": 0,
+      "keywords": [
+        "Karnataka PGCET Result 2026 - Check Result Online @ cetonline.karnataka.gov.in",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/karnataka-pgcet-result-2026-check-result-online-3061655",
+      "title": "Karnataka PGCET Result 2026 - Check Result Online @ cetonline.karnataka.gov.in"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654",
+      "date": "2026-08-05",
+      "slug": "updates/mumbai-university-result-2026-out---check-mcom-msc-result-on.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/mumbai-university-result-2026-out-check-mcom-msc-r.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "mumbai-university-result-2026-out-check-mcom-msc-r",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654",
+      "wordCount": 0,
+      "keywords": [
+        "Mumbai University Result 2026 Out - Check M.Com & MSc Result Online at mumresults.in",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/mumbai-university-result-2026-out-check-mcom-and-msc-result-online-3061654",
+      "title": "Mumbai University Result 2026 Out - Check M.Com & MSc Result Online at mumresults.in"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653",
+      "date": "2026-08-05",
+      "slug": "army/icds-pathalgaon-anganwadi-workerassistant-recruitment-2026.html",
+      "pdfUrl": "",
+      "category": "army",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/icds-pathalgaon-anganwadi-workerassistant-recruitm.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "icds-pathalgaon-anganwadi-workerassistant-recruitm",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653",
+      "wordCount": 0,
+      "keywords": [
+        "ICDS Pathalgaon Anganwadi Worker/Assistant Recruitment 2026 - Apply Online",
+        "आर्मी भरती",
+        "भरती 2026",
+        "अग्निवीर",
+        "लष्कर भरती",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/icds-pathalgaon-anganwadi-worker-assistant-recruitment-2026-apply-online-3061653",
+      "title": "ICDS Pathalgaon Anganwadi Worker/Assistant Recruitment 2026 - Apply Online"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651",
+      "date": "2026-08-05",
+      "slug": "banking/aiims-non-faculty-recruitment-2026---apply-online-for-clinic.html",
+      "pdfUrl": "",
+      "category": "banking",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/aiims-non-faculty-recruitment-2026-apply-online-fo.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "aiims-non-faculty-recruitment-2026-apply-online-fo",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651",
+      "wordCount": 0,
+      "keywords": [
+        "AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts",
+        "Banking भरती",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/aiims-non-faculty-recruitment-2026-apply-online-for-clinical-psychologist-mo-and-more-posts-3061651",
+      "title": "AIIMS Non Faculty Recruitment 2026 - Apply Online for Clinical Psychologist, MO and More Posts"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649",
+      "date": "2026-08-05",
+      "slug": "banking/psssb-junior-engineer-merit-list-2026-out---download-je-civi.html",
+      "pdfUrl": "",
+      "category": "banking",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/psssb-junior-engineer-merit-list-2026-out-download.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "psssb-junior-engineer-merit-list-2026-out-download",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649",
+      "wordCount": 0,
+      "keywords": [
+        "PSSSB Junior Engineer Merit List 2026 Out - Download JE Civil & Mechanical Sports Category Result PDF",
+        "Banking भरती",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/psssb-junior-engineer-merit-list-2026-3061649",
+      "title": "PSSSB Junior Engineer Merit List 2026 Out - Download JE Civil & Mechanical Sports Category Result PDF"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648",
+      "date": "2026-08-05",
+      "slug": "army/family-court-banda-counselor-recruitment-2026---apply-offlin.html",
+      "pdfUrl": "",
+      "category": "army",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/family-court-banda-counselor-recruitment-2026-appl.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "family-court-banda-counselor-recruitment-2026-appl",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648",
+      "wordCount": 0,
+      "keywords": [
+        "Family Court Banda Counselor Recruitment 2026 - Apply Offline",
+        "आर्मी भरती",
+        "भरती 2026",
+        "अग्निवीर",
+        "लष्कर भरती",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/family-court-banda-counselor-recruitment-2026-apply-offline-3061648",
+      "title": "Family Court Banda Counselor Recruitment 2026 - Apply Offline"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646",
+      "date": "2026-08-05",
+      "slug": "banking/aiims-mangalagiri-non-faculty-recruitment-2026---apply-onlin.html",
+      "pdfUrl": "",
+      "category": "banking",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/aiims-mangalagiri-non-faculty-recruitment-2026-app.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "aiims-mangalagiri-non-faculty-recruitment-2026-app",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646",
+      "wordCount": 0,
+      "keywords": [
+        "AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts",
+        "Banking भरती",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/aiims-mangalagiri-non-faculty-recruitment-2026-apply-online-for-senior-medical-physicist-perfusionist-posts-3061646",
+      "title": "AIIMS Mangalagiri Non Faculty Recruitment 2026 - Apply Online for Senior Medical Physicist, Perfusionist Posts"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644",
+      "date": "2026-08-05",
+      "slug": "updates/nhpc-apprentice-result-2026-out---check-provisionally-select.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/nhpc-apprentice-result-2026-out-check-provisionall.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "nhpc-apprentice-result-2026-out-check-provisionall",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644",
+      "wordCount": 0,
+      "keywords": [
+        "NHPC Apprentice Result 2026 Out - Check Provisionally Selected Candidates List PDF Download",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/nhpc-apprentice-result-2026-out-3061644",
+      "title": "NHPC Apprentice Result 2026 Out - Check Provisionally Selected Candidates List PDF Download"
+    },
+    {
+      "updated": "2026-08-05",
+      "applyLink": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643",
+      "date": "2026-08-05",
+      "slug": "updates/bangalore-university-guest-faculty-recruitment-2026---apply.html",
+      "pdfUrl": "",
+      "category": "mixed",
+      "sourceName": "FreeJobAlert",
+      "socialPosted": {
+        "whatsapp": false,
+        "youtube": true,
+        "instagram": false
+      },
+      "ogImage": "/og-images/bangalore-university-guest-faculty-recruitment-202.svg",
+      "sections": [
+        {
+          "body": "System.Xml.XmlElement",
+          "type": "text",
+          "heading": "सविस्तर माहिती"
+        },
+        {
+          "items": [
+            "ही भरती भारत सरकार / महाराष्ट्र शासनाच्या अधिकृत जाहिरातीनुसार आहे",
+            "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+            "ऑनलाइन अर्ज अधिकृत संकेतस्थळावरूनच करा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा",
+            "कोणत्याही मध्यस्थाला पैसे देऊ नका — ही भरती निःशुल्क आहे"
+          ],
+          "type": "list",
+          "heading": "पात्रता व महत्वाची माहिती"
+        },
+        {
+          "items": [
+            "अभ्यासक्रम पूर्णपणे समजून घ्या",
+            "जुन्या प्रश्नपत्रिका सोडवा (MarathiAura वर उपलब्ध)",
+            "रोजच्या चालू घडामोडी वाचा",
+            "मॉक टेस्ट द्या आणि वेळेचे नियोजन करा",
+            "Telegram आणि WhatsApp ग्रुप जॉइन करा — सर्वात आधी अपडेट मिळवा"
+          ],
+          "type": "list",
+          "heading": "तयारीचे टिप्स"
+        }
+      ],
+      "badge": "new",
+      "id": "bangalore-university-guest-faculty-recruitment-202",
+      "shortDesc": "System.Xml.XmlElement",
+      "importantLinks": [
+        {
+          "label": "अर्ज करा",
+          "title": "ऑनलाइन अर्ज करा",
+          "url": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643"
+        }
+      ],
+      "sourceUrl": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643",
+      "wordCount": 0,
+      "keywords": [
+        "Bangalore University Guest Faculty Recruitment 2026 - Apply Offline",
+        "भरती 2026",
+        "MarathiAura"
+      ],
+      "pdfSourceUrl": "https://www.freejobalert.com/articles/bangalore-university-guest-faculty-recruitment-2026-apply-offline-3061643",
+      "title": "Bangalore University Guest Faculty Recruitment 2026 - Apply Offline"
     }
   ],
   "categories": [
-    { "id": "army", "name": "Army", "path": "/army/", "nameMr": "आर्मी भरती" },
-    { "id": "mpsc", "name": "MPSC", "path": "/mpsc/", "nameMr": "MPSC भरती" },
-    { "id": "police", "name": "Police", "path": "/police/", "nameMr": "पोलीस भरती" },
-    { "id": "talathi", "name": "Talathi", "path": "/talathi/", "nameMr": "तलाठी भरती" },
-    { "id": "rrb", "name": "RRB", "path": "/rrb/", "nameMr": "RRB भरती" },
-    { "id": "ssc", "name": "SSC", "path": "/ssc/", "nameMr": "SSC भरती" },
-    { "id": "banking", "name": "Banking", "path": "/banking/", "nameMr": "Banking भरती" },
-    { "id": "answer-key", "name": "Answer Key", "path": "/answer-key/", "nameMr": "उत्तरतालिका & कटऑफ" },
-    { "id": "yojna", "name": "Yojna", "path": "/yojna/", "nameMr": "शासकीय योजना" }
+    {
+      "id": "army",
+      "name": "Army",
+      "path": "/army/",
+      "nameMr": "आर्मी भरती"
+    },
+    {
+      "id": "mpsc",
+      "name": "MPSC",
+      "path": "/mpsc/",
+      "nameMr": "MPSC भरती"
+    },
+    {
+      "id": "police",
+      "name": "Police",
+      "path": "/police/",
+      "nameMr": "पोलीस भरती"
+    },
+    {
+      "id": "talathi",
+      "name": "Talathi",
+      "path": "/talathi/",
+      "nameMr": "तलाठी भरती"
+    },
+    {
+      "id": "rrb",
+      "name": "RRB",
+      "path": "/rrb/",
+      "nameMr": "RRB भरती"
+    },
+    {
+      "id": "ssc",
+      "name": "SSC",
+      "path": "/ssc/",
+      "nameMr": "SSC भरती"
+    },
+    {
+      "id": "banking",
+      "name": "Banking",
+      "path": "/banking/",
+      "nameMr": "Banking भरती"
+    },
+    {
+      "id": "answer-key",
+      "name": "Answer Key",
+      "path": "/answer-key/",
+      "nameMr": "उत्तरतालिका & कटऑफ"
+    },
+    {
+      "id": "yojna",
+      "name": "Yojna",
+      "path": "/yojna/",
+      "nameMr": "शासकीय योजना"
+    }
   ],
   "feeds": [
-    { "name": "SarkariResult", "url": "https://www.sarkariresult.com/feed/", "category": "mixed" },
-    { "name": "FreeJobAlert", "url": "https://www.freejobalert.com/feed/", "category": "mixed" },
-    { "name": "MaharashtraYojna", "url": "https://sarkariyojna.com/maharashtra/feed/", "category": "yojna" }
+    {
+      "name": "SarkariResult",
+      "url": "https://www.sarkariresult.com/feed/",
+      "category": "mixed"
+    },
+    {
+      "name": "FreeJobAlert",
+      "url": "https://www.freejobalert.com/feed/",
+      "category": "mixed"
+    },
+    {
+      "name": "MaharashtraYojna",
+      "url": "https://sarkariyojna.com/maharashtra/feed/",
+      "category": "yojna"
+    }
   ]
 }
