@@ -1,0 +1,119 @@
+{
+  "site": {
+    "name": "MarathiAura",
+    "url": "https://marathiaura.in",
+    "logo": "/logo-nav.png",
+    "social": {
+      "whatsappChannel": "https://whatsapp.com/channel/0029Vb8NfVsAzNc0x5mGX32b",
+      "instagram": "https://instagram.com/marathiaura",
+      "youtube": "https://www.youtube.com/@MarathiAura-exam",
+      "telegram": "https://t.me/+zCKGI81nUS83ZDE1"
+    }
+  },
+  "posts": [
+    {
+      "id": "ssc-tech-bharti-2026",
+      "title": "Indian Army SSC Tech Bharti 2026 - 381 जागा",
+      "category": "army",
+      "slug": "army/ssc-tech-bharti-2026.html",
+      "badge": "new",
+      "date": "2026-07-09",
+      "updated": "2026-08-05",
+      "shortDesc": "68th SSC (Tech) भरती 2026: एकूण 381 जागा, पात्रता, वयोमर्यादा, महत्वाच्या तारखा आणि अर्ज प्रक्रिया. अर्ज निःशुल्क व पूर्णतः ऑनलाइन.",
+      "keywords": ["SSC Tech Bharti 2026", "Indian Army", "68th SSC Tech", "आर्मी भरती", "शॉर्ट सर्व्हिस कमिशन", "अभियांत्रिकी भरती", "लष्कर भरती 2026", "army vacancy 2026"],
+      "applyLink": "https://joinindianarmy.nic.in",
+      "pdfUrl": "/pdfs/ssc-tech-bharti-2026.pdf",
+      "pdfSourceUrl": "https://joinindianarmy.nic.in",
+      "ogImage": "/og-images/ssc-tech-bharti-2026.svg",
+      "wordCount": 750,
+      "socialPosted": { "whatsapp": false, "instagram": false, "youtube": false },
+      "importantLinks": [
+        { "title": "CEE ॲडमिट कार्ड डाउनलोड", "url": "https://www.joinindianarmy.nic.in/Default.aspx?id=156&lg=eng", "label": "ॲडमिट कार्ड" },
+        { "title": "ऑनलाइन अर्ज करा", "url": "https://joinindianarmy.nic.in", "label": "अर्ज करा" },
+        { "title": "अधिकृत संकेतस्थळ", "url": "https://joinindianarmy.nic.in", "label": "संकेतस्थळ" }
+      ],
+      "sections": [
+        {
+          "heading": "भरतीचा तपशील",
+          "type": "table",
+          "headers": ["तपशील", "माहिती"],
+          "rows": [
+            ["कोर्सचे नाव", "68th SSC (Tech) पुरुष & 68th SSCW (Tech) महिला"],
+            ["एकूण जागा", "381"],
+            ["अर्ज पद्धत", "पूर्णतः ऑनलाइन"],
+            ["अर्ज शुल्क", "निःशुल्क"],
+            ["नोकरीचे ठिकाण", "संपूर्ण भारतात कुठेही"]
+          ]
+        },
+        {
+          "heading": "महत्वाच्या तारखा",
+          "type": "table",
+          "headers": ["तपशील", "तारीख"],
+          "rows": [
+            ["ऑनलाइन अर्ज शेवटची तारीख (पुरुष)", "7 ऑगस्ट 2026"],
+            ["ऑनलाइन अर्ज शेवटची तारीख (महिला)", "6 ऑगस्ट 2026"]
+          ]
+        },
+        {
+          "heading": "शैक्षणिक पात्रता",
+          "type": "list",
+          "items": [
+            "SSC (Tech) पुरुष/महिला: संबंधित शाखेतील अभियांत्रिकी पदवी उत्तीर्ण, किंवा अंतिम वर्षात शिकत असलेले विद्यार्थी",
+            "SSC Women (Non-Tech, Non-UPSC): कोणत्याही शाखेतील पदवीधर"
+          ]
+        },
+        {
+          "heading": "वयोमर्यादा",
+          "type": "list",
+          "items": [
+            "सर्वसाधारण उमेदवार: जन्मतारीख 1 एप्रिल 2000 ते 31 मार्च 2007 दरम्यान असावी",
+            "संरक्षण दलातील विधवा पत्नी: 1 एप्रिल 2027 रोजी कमाल वय 35 वर्षे"
+          ]
+        },
+        {
+          "heading": "अर्ज कसा करावा",
+          "type": "olist",
+          "items": [
+            "भारतीय लष्कराच्या अधिकृत भरती संकेतस्थळावर जा",
+            "संबंधित कोर्ससाठी नोंदणी करा (पुरुष/महिला श्रेणीनुसार)",
+            "शैक्षणिक व वैयक्तिक माहिती भरा",
+            "आवश्यक कागदपत्रे अपलोड करा",
+            "अर्ज सादर करण्यापूर्वी सर्व माहिती पुन्हा तपासा",
+            "अर्ज शेवटच्या तारखेपूर्वी नक्की सादर करा"
+          ]
+        },
+        {
+          "heading": "निवड प्रक्रिया",
+          "type": "list",
+          "items": [
+            "अर्जावर आधारित शॉर्टलिस्टिंग",
+            "SSB मुलाखत (5 दिवसीय)",
+            "वैद्यक तपासणी",
+            "अंतिम विलेन सूची"
+          ]
+        },
+        {
+          "heading": "महत्वाची सूचना",
+          "type": "text",
+          "body": "या भरतीसाठी कोणतेही शुल्क आकारले जात नाही. अर्ज पूर्णपणे ऑनलाइन पद्धतीने करावा. कोणत्याही मध्यस्थाची गरज नाही. अधिकृत संकेतस्थळावरूनच अर्ज करावा, इतर कोणत्याही संकेतस्थळावरून अर्ज केल्यास तो अवैध असेल. निवड झाल्यावर भारतीय लष्कराच्या गरजेनुसार देशात कुठेही नियुक्त केले जाऊ शकते."
+        }
+      ]
+    }
+  ],
+  "categories": [
+    { "id": "army", "name": "Army", "path": "/army/", "nameMr": "आर्मी भरती" },
+    { "id": "mpsc", "name": "MPSC", "path": "/mpsc/", "nameMr": "MPSC भरती" },
+    { "id": "police", "name": "Police", "path": "/police/", "nameMr": "पोलीस भरती" },
+    { "id": "talathi", "name": "Talathi", "path": "/talathi/", "nameMr": "तलाठी भरती" },
+    { "id": "rrb", "name": "RRB", "path": "/rrb/", "nameMr": "RRB भरती" },
+    { "id": "ssc", "name": "SSC", "path": "/ssc/", "nameMr": "SSC भरती" },
+    { "id": "banking", "name": "Banking", "path": "/banking/", "nameMr": "Banking भरती" },
+    { "id": "answer-key", "name": "Answer Key", "path": "/answer-key/", "nameMr": "उत्तरतालिका & कटऑफ" },
+    { "id": "yojna", "name": "Yojna", "path": "/yojna/", "nameMr": "शासकीय योजना" }
+  ],
+  "feeds": [
+    { "name": "SarkariResult", "url": "https://www.sarkariresult.com/feed/", "category": "mixed" },
+    { "name": "FreeJobAlert", "url": "https://www.freejobalert.com/feed/", "category": "mixed" },
+    { "name": "MaharashtraYojna", "url": "https://sarkariyojna.com/maharashtra/feed/", "category": "yojna" }
+  ]
+}
