@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c447c"/>
+      <stop offset="100%" style="stop-color:#2074b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#ff6f00"/>
+  <text x="60" y="100" font-family="Arial,sans-serif" font-size="28" fill="#ff6f00" font-weight="bold">अपडेट</text>
+  <text x="60" y="200" font-family="Arial,sans-serif" font-size="52" fill="#ffffff" font-weight="bold"></text>
+  <text x="60" y="270" font-family="Arial,sans-serif" font-size="52" fill="#ffffff" font-weight="bold">CGPSC Assistant Librarian Result 2026 Out - Prelims Result PDF, Mains Shortlist</text>
+  <rect x="60" y="330" width="100" height="4" fill="#ff6f00"/>
+  <text x="60" y="400" font-family="Arial,sans-serif" font-size="30" fill="#dce8f5">marathiaura.in</text>
+  <text x="60" y="450" font-family="Arial,sans-serif" font-size="24" fill="#a8c8e8">विश्वासार्ह भरती अपडेट्स मराठीत</text>
+</svg>
