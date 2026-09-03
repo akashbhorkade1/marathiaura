@@ -1,0 +1,163 @@
+{
+  "id": "syllabus-police-bharti",
+  "type": "syllabus",
+  "title": "Police Bharti Syllabus 2026: अभ्यासक्रम, Exam Pattern आणि Subject-wise Topics",
+  "slug": "syllabus-police-bharti",
+  "path": "/syllabus/police-bharti/",
+  "category": "syllabus",
+  "exam": "police-bharti",
+  "syllabus": {
+    "examPattern": {
+      "stages": [
+        "शारीरिक चाचणी (Physical Test)",
+        "लेखी परीक्षा (Written Exam)",
+        "वैद्यकीय तपासणी",
+        "गुणवत्ता यादी"
+      ],
+      "papers": [
+        {
+          "name": "लेखी परीक्षा",
+          "questions": null,
+          "marks": null,
+          "duration": null,
+          "negativeMarking": "अधिकृत जाहिरातीत नमूद"
+        }
+      ]
+    },
+    "subjects": [
+      {
+        "subject": "मराठी",
+        "topics": [
+          {
+            "topic": "व्याकरण",
+            "points": [
+              "संज्ञा, सर्वनाम, विशेषण",
+              "काळ (Tense)",
+              "वाक्यरचना",
+              "मुहूर्ते व वाक्प्रचार"
+            ]
+          },
+          {
+            "topic": "समास व अलंकार",
+            "points": [
+              "समासाचे प्रकार",
+              "अलंकार ओळख"
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "गणित",
+        "topics": [
+          {
+            "topic": "अंकगणित",
+            "points": [
+              "संख्या व त्यांचे गुणधर्म",
+              "लसावि-मसावि",
+              "टक्केवारी",
+              "गुणोत्तर व प्रमाण",
+              "सरासरी"
+            ]
+          },
+          {
+            "topic": "बाबतीत गणित",
+            "points": [
+              "वेळ व अंतर",
+              "नफा-तोटा",
+              "व्याज",
+              "काम व वेळ"
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "सामान्य ज्ञान",
+        "topics": [
+          {
+            "topic": "महाराष्ट्र GK",
+            "points": [
+              "इतिहास",
+              "भूगोल",
+              "राज्य प्रतीके",
+              "प्रशासन"
+            ]
+          },
+          {
+            "topic": "चालू घडामोडी",
+            "points": [
+              "राष्ट्रीय",
+              "आंतरराष्ट्रीय",
+              "क्रीडा",
+              "पुरस्कार"
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "बुद्धिमत्ता चाचणी",
+        "topics": [
+          {
+            "topic": "तार्किक क्षमता",
+            "points": [
+              "रक्तसंबंध",
+              "दिशा ज्ञान",
+              "श्रेणी पूर्ण करणे",
+              "कोडिंग-डिकोडिंग"
+            ]
+          }
+        ]
+      }
+    ],
+    "preparationTips": [
+      "अधिकृत अभ्यासक्रम जाहिरातीत प्रसिद्ध झाल्यावर तोच primary माना",
+      "रोज गणित व बुद्धिमत्ता सराव — वेळेचे नियोजन महत्वाचे",
+      "शारीरिक चाचणीसाठी लेखी तयारीसोबतच धावणे-उडी यांचा दैनिक सराव",
+      "जुन्या प्रश्नपत्रिका व मॉक टेस्ट द्या"
+    ],
+    "officialSyllabusUrl": null,
+    "note": "वरील स्वरूप सामान्य मार्गदर्शनासाठी आहे. अचूक व अंतिम अभ्यासक्रम अधिकृत जाहिरातीत/अधिकृत संकेतस्थळावर प्रसिद्ध होतो."
+  },
+  "relatedMockTests": [
+    "police-bharti-mock-01"
+  ],
+  "content": {
+    "shortDesc": "Police Bharti 2026 अभ्यासक्रम — मराठी, गणित, सामान्य ज्ञान व बुद्धिमत्ता चाचणीचे subject-wise topics, exam pattern आणि तयारीच्या टिप्स मराठीत.",
+    "metaDescription": "Police Bharti Syllabus 2026 मराठी: subject-wise अभ्यासक्रम, exam pattern, तयारीचे टिप्स आणि संबंधित मॉक टेस्ट.",
+    "sections": [],
+    "faqs": [
+      {
+        "q": "Police Bharti लेखी परीक्षेत कोणते विषय असतात?",
+        "a": "सामान्यतः मराठी, गणित, सामान्य ज्ञान व बुद्धिमत्ता चाचणी. अचूक रचना अधिकृत जाहिरातीत नमूद होते."
+      },
+      {
+        "q": "Police Bharti मध्ये negative marking आहे का?",
+        "a": "असल्यास ते अधिकृत जाहिरात/परीक्षा नियमावलीत स्पष्ट केले जाते."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in",
+      "name": "mahapolice.gov.in",
+      "priority": 1,
+      "role": "syllabus",
+      "verifiedAt": null
+    }
+  ],
+  "status": "published",
+  "confidence": 88,
+  "fixture": true,
+  "publishedAt": "2026-09-03T12:00:00+05:30",
+  "lastUpdatedAt": "2026-09-03T12:00:00+05:30",
+  "contentHash": "0e1dc1dd0e2acd8b6d58ef594deeb1e664459099489d2cb8f2e579296e557d53",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Police Bharti Syllabus",
+      "पोलीस भरती अभ्यासक्रम 2026",
+      "Police Bharti Exam Pattern"
+    ],
+    "ogImage": "/og-images/syllabus-police-bharti.svg",
+    "index": true
+  }
+}

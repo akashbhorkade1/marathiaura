@@ -8,6 +8,7 @@
   "officialUrl": "https://mpsc.gov.in",
   "conductingBody": "महाराष्ट्र लोकसेवा आयोग (MPSC)",
   "eligibility": { "education": "पदवीधर (कोणताही शाखा)", "ageLimit": { "min": 19, "max": 38, "note": "आरक्षित वर्गांना नियमानुसार सूट" } },
+  "syllabusRef": null,
   "pattern": {
     "stages": ["पूर्वपरीक्षा (Prelims)", "मुख्य परीक्षा (Mains)", "मुलाखत (Interview)"],
     "papers": [

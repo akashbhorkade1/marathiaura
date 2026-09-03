@@ -35,6 +35,7 @@ for (const e of exams) {
 <tbody>${papers}</tbody></table></div>
 
 ${subjects}
+${e.syllabusRef ? `<div class="content-section"><h2>सविस्तर अभ्यासक्रम</h2><p>Subject-wise अभ्यासक्रम व topics: <a href="${esc(e.syllabusRef)}">${esc(e.examNameMr)} Syllabus</a></p></div>` : ''}
 
 <div class="source-row"><span>स्रोत: <a href="${esc(e.officialUrl)}" target="_blank" rel="noopener">${esc(e.officialUrl)}</a></span>
 <span>⚠ अंतिम व अचूक माहितीसाठी अधिकृत जाहिरात/अभ्यासक्रम तपासा.</span></div>`;

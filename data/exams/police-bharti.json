@@ -8,6 +8,7 @@
   "officialUrl": "https://www.mahapolice.gov.in",
   "conductingBody": "महाराष्ट्र पोलीस विभाग",
   "eligibility": { "education": "12वी (HSC) उत्तीर्ण", "ageLimit": { "min": 18, "max": 28, "note": "आरक्षित वर्गांना नियमानुसार सूट" } },
+  "syllabusRef": "/syllabus/police-bharti/",
   "pattern": {
     "stages": ["शारीरिक चाचणी", "लेखी परीक्षा", "वैद्यकीय तपासणी", "गुणवत्ता यादी"],
     "papers": [

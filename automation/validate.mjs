@@ -44,6 +44,14 @@ for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
   const SOURCE_ROLES = ['notification', 'notification-pdf', 'apply', 'result', 'answer-key', 'admit-card', 'syllabus', 'reference'];
   for (const s of rec.sources || []) if (s.role && !SOURCE_ROLES.includes(s.role)) issues.push(`sources[].role invalid: ${s.role}`);
 
+  // Type-specific checks
+  if (rec.type === 'syllabus' && (!rec.syllabus || !Array.isArray(rec.syllabus.subjects) || !rec.syllabus.subjects.length)) {
+    issues.push('syllabus record: syllabus.subjects missing/empty');
+  }
+  if (rec.syllabusRef && rec.syllabusRef !== null && !/^\/[a-z0-9\-\/]+\/$/.test(rec.syllabusRef)) {
+    issues.push('syllabusRef not a valid path');
+  }
+
   // contentHash — detect content drift (docs/04 §2)
   const newHash = computeHash(rec);
   if (rec.contentHash && rec.contentHash !== newHash) {

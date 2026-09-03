@@ -1,0 +1,164 @@
+{
+  "id": "syllabus-talathi-2026",
+  "type": "syllabus",
+  "title": "Talathi Bharti Syllabus 2026: अभ्यासक्रम, Exam Pattern आणि Subject-wise Topics",
+  "slug": "syllabus-talathi",
+  "path": "/syllabus/talathi/",
+  "category": "syllabus",
+  "exam": "talathi",
+  "syllabus": {
+    "examPattern": {
+      "stages": [
+        "लेखी परीक्षा (Written Exam)",
+        "कागदपत्र तपासणी",
+        "गुणवत्ता यादी"
+      ],
+      "papers": [
+        {
+          "name": "लेखी परीक्षा",
+          "questions": null,
+          "marks": null,
+          "duration": null,
+          "negativeMarking": "अधिकृत जाहिरातीत नमूद"
+        }
+      ]
+    },
+    "subjects": [
+      {
+        "subject": "मराठी",
+        "topics": [
+          {
+            "topic": "व्याकरण",
+            "points": [
+              "व्याकरण घटक",
+              "वाक्यशुद्धी",
+              "शब्दसिद्धी",
+              "वाक्प्रचार"
+            ]
+          },
+          {
+            "topic": "उतारा आकलन",
+            "points": [
+              "मुख्य कल्पना",
+              "तपशील आकलन"
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "इंग्रजी",
+        "topics": [
+          {
+            "topic": "Grammar",
+            "points": [
+              "Tenses",
+              "Articles",
+              "Prepositions",
+              "Voice & Narration"
+            ]
+          },
+          {
+            "topic": "Vocabulary",
+            "points": [
+              "Synonyms & Antonyms",
+              "One-word substitution",
+              "Idioms"
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "सामान्य अध्ययन",
+        "topics": [
+          {
+            "topic": "महाराष्ट्र",
+            "points": [
+              "इतिहास",
+              "भूगोल",
+              "ग्रामविकास",
+              "पंचायत राज",
+              "महाराष्ट्र शासन योजना"
+            ]
+          },
+          {
+            "topic": "भारत व जग",
+            "points": [
+              "राज्यव्यवस्था",
+              "चालू घडामोडी",
+              "अर्थशास्त्र मूलभूत"
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "बुद्धिमत्ता चाचणी व गणित",
+        "topics": [
+          {
+            "topic": "गणित",
+            "points": [
+              "टक्केवारी",
+              "गुणोत्तर",
+              "सरासरी",
+              "व्याज",
+              "मापन"
+            ]
+          },
+          {
+            "topic": "बुद्धिमत्ता",
+            "points": [
+              "श्रेणी",
+              "सादृश्यता",
+              "कोडिंग-डिकोडिंग",
+              "वर्गीकरण"
+            ]
+          }
+        ]
+      }
+    ],
+    "preparationTips": [
+      "महाराष्ट्र GK व ग्रामविकास यांना विशेष वेळ द्या",
+      "मराठी व्याकरणाचा नियमित सराव करा",
+      "गणितात झटपट आकलनासाठी shortcut पद्धतींचा सराव",
+      "प्रत्येक विषयाचा study plan बनवा आणि दैनिक mock test द्या"
+    ],
+    "officialSyllabusUrl": null,
+    "note": "वरील स्वरूप सामान्य मार्गदर्शनासाठी आहे. अचूक व अंतिम अभ्यासक्रम अधिकृत जाहिरातीत/अधिकृत संकेतस्थळावर प्रसिद्ध होतो."
+  },
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Talathi Bharti 2026 अभ्यासक्रम — मराठी, इंग्रजी, सामान्य अध्ययन, गणित व बुद्धिमत्ता चाचणीचे subject-wise topics, exam pattern आणि तयारीचे टिप्स.",
+    "metaDescription": "Talathi Bharti Syllabus 2026 मराठी: subject-wise अभ्यासक्रम, exam pattern आणि तयारीच्या टिप्स.",
+    "sections": [],
+    "faqs": [
+      {
+        "q": "तलाठी परीक्षेसाठी कोणता अभ्यासक्रम असतो?",
+        "a": "सामान्यतः मराठी, इंग्रजी, सामान्य अध्ययन, गणित व बुद्धिमत्ता चाचणी. अचूक अभ्यासक्रम अधिकृत जाहिरातीत प्रसिद्ध होतो."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://ranager.maharashtra.gov.in",
+      "name": "ranager.maharashtra.gov.in",
+      "priority": 1,
+      "role": "syllabus",
+      "verifiedAt": null
+    }
+  ],
+  "status": "published",
+  "confidence": 88,
+  "fixture": true,
+  "publishedAt": "2026-09-03T12:05:00+05:30",
+  "lastUpdatedAt": "2026-09-03T12:05:00+05:30",
+  "contentHash": "70d6df624e243fc432e62a3fc0f66dca096327099db41158b46401375a7f294e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Talathi Syllabus 2026",
+      "तलाठी भरती अभ्यासक्रम",
+      "Talathi Exam Pattern"
+    ],
+    "ogImage": "/og-images/syllabus-talathi-2026.svg",
+    "index": true
+  }
+}

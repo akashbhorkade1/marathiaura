@@ -49,10 +49,11 @@ function renderPost(p) {
     faqs.map(f => `<div class="faq-item"><h3>${esc(f.q)}</h3><p>${esc(f.a)}</p></div>`).join('')
   }</div>` : '';
 
+  const lk = p.links || {};
   const links = [];
-  if (p.links.notificationUrl) links.push(['सविस्तर जाहिरात / Notification', p.links.notificationUrl, 'जाहिरात पहा']);
-  if (p.links.applyUrl) links.push(['ऑनलाइन अर्ज', p.links.applyUrl, 'अर्ज करा']);
-  if (p.links.officialUrl) links.push(['अधिकृत संकेतस्थळ', p.links.officialUrl, 'अधिकृत website']);
+  if (lk.notificationUrl) links.push(['सविस्तर जाहिरात / Notification', lk.notificationUrl, 'जाहिरात पहा']);
+  if (lk.applyUrl) links.push(['ऑनलाइन अर्ज', lk.applyUrl, 'अर्ज करा']);
+  if (lk.officialUrl) links.push(['अधिकृत संकेतस्थळ', lk.officialUrl, 'अधिकृत website']);
   const linksHtml = links.length ? `<div class="content-section"><h2>महत्वाचे दुवे</h2>${
     links.map(l => `<div class="download-card"><div class="dl-info"><div class="dl-title">${esc(l[0])}</div></div><a href="${esc(l[1])}" target="_blank" rel="noopener">${esc(l[2])}</a></div>`).join('')
   }</div>` : '';
@@ -98,12 +99,14 @@ ${relatedHtml}
 
 for (const p of posts) {
   if (!p.path || !p.content || !p.content.shortDesc) { console.error(`  [SKIP] incomplete record: ${p.id}`); continue; }
+  if (p.type === 'syllabus') continue; // dedicated syllabus.mjs generator (type-specific template)
   renderPost(p);
 }
 
 // Category index pages — फक्त जेव्हा category मध्ये प्रकाशित content आहे (thin page नियम)
 for (const cat of categories) {
   if (cat.id === 'latest-bharti') continue; // वेगळ्या नावाने खाली
+  if (cat.id === 'syllabus') continue; // dedicated syllabus hub (syllabus.mjs) याला handle करते
   const catPosts = posts.filter(p => p.category === cat.id)
     .sort((a, b) => String(b.lastUpdatedAt || '').localeCompare(String(a.lastUpdatedAt || '')));
   if (!catPosts.length) continue;

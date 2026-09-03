@@ -76,6 +76,37 @@
 
 > `links` = UI दाखवण्यासाठी primary URLs. `sources[]` = provenance/automation tracking. दोन्ही वेगळे राहतील.
 
+## 2b. Syllabus Schema (base + खालील fields) — type: "syllabus"
+
+```jsonc
+{
+  "exam": "exam id — संबंधित data/exams record",
+  "syllabus": {
+    "examPattern": {
+      "stages": ["…"],
+      "papers": [{ "name": "…", "questions": n|null, "marks": n|null, "duration": "…|null", "negativeMarking": "…|null" }]
+    },
+    "subjects": [
+      { "subject": "मराठी",
+        "topics": [ { "topic": "व्याकरण", "points": ["…", "…"] } ]   // topic-level granularity — future Question Bank mapping
+      }
+    ],
+    "preparationTips": ["…"],
+    "officialSyllabusUrl": "URL | null — अधिकृत PDF असेल तरच",
+    "note": "अधिकृत अभ्यासक्रम disclaimer"
+  },
+  "syllabusRef": "base मध्ये नाही — हे recruitment/exam records वरचे field असते जे syllabus page path कडे point करते",
+  "relatedMockTests": ["testId"]
+}
+```
+
+**नियम:**
+- `syllabusRef` (recruitment/exam वर) फक्त अस्तित्वात असलेल्या syllabus page कडेच point करावे — broken internal links पकडण्यासाठी validate.mjs path format check करते
+- Topics object-format मध्येच (`{topic, points}`) — नंतर topic → questions mapping programmatic होईल
+- `officialSyllabusUrl` guess करू नये — अधिकृत PDF खरी उपलब्ध असतानाच
+
+**Relationship chain (core architecture):** `Exam → Syllabus → Subject → Topic → Question Bank → Mock Test`
+
 ## 3. Current Affairs Schema (base + खालील fields)
 
 ```jsonc

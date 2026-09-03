@@ -10,6 +10,7 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const steps = [
   'generate/posts.mjs',
+  'generate/syllabus.mjs',
   'generate/exam-hubs.mjs',
   'generate/mock-test.mjs',
   'generate/static-pages.mjs',
