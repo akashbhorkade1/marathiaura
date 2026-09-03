@@ -45,10 +45,14 @@ function detectCategory(title, fallback) {
   return fallback || 'latest-bharti';
 }
 const existingTitles = new Set(posts.map(p => normTitle(p.title)));
-const existingLinks = new Set(posts.map(p => p.source.url).filter(Boolean));
+const existingLinks = new Set(posts.flatMap(p => [
+  ...((p.sources || []).map(s => s.url)),
+  p.source && p.source.url // V1 fallback
+]).filter(Boolean));
 
 let drafts = [];
 for (const feed of (site.feeds || [])) {
+  if (feed.verified === false) { console.log(`  [SKIP] ${feed.name}: unverified feed — आधी manually verify करा (docs/04 §3)`); continue; }
   if (feed.type !== 'rss') { console.log(`  [SKIP] ${feed.name}: type '${feed.type}' supported later`); continue; }
   try {
     console.log(`Fetching: ${feed.name} → ${feed.url}`);
@@ -72,7 +76,8 @@ for (const feed of (site.feeds || [])) {
       drafts.push({
         id, type: 'recruitment',
         title,
-        slug: `/${id}/`,
+        slug: id,
+        path: `/${id}/`,
         category: cat,
         exam: null,
         department: feed.name,
@@ -91,7 +96,9 @@ for (const feed of (site.feeds || [])) {
           sections: [{ heading: 'सविस्तर माहिती', type: 'text', body: desc.slice(0, 800) }],
           faqs: []
         },
-        source: { url: link || feed.url, name: feed.name, priority: feed.priority || 2 },
+        sources: [
+          { url: link || feed.url, name: feed.name, priority: feed.priority || 2, role: 'notification', verifiedAt: now }
+        ],
         status: 'ai-generated',
         confidence: 85, // semi-automated recruitment content → review queue
         publishedAt: null,

@@ -1,5 +1,5 @@
 // Generates: homepage (index.html) + default OG image
-import { loadSite, loadCategories, loadPosts, loadExams, loadTests, published, write, esc, pageHtml, postCard, svgOg } from '../lib.mjs';
+import { loadSite, loadCategories, loadPosts, loadExams, loadTests, published, write, esc, pageHtml, postCard, svgOg, pathOf } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -16,10 +16,10 @@ const catCards = categories.filter(c => c.id !== 'latest-bharti').map(c =>
   `<a class="cat-card" href="${c.path}">${esc(c.nameMr)}<small>${esc(c.name)}</small></a>`).join('\n');
 
 const examLinks = exams.map(e =>
-  `<a class="post-card" href="${esc(e.slug)}"><div><span class="badge-cat">${esc(e.conductingBody)}</span></div><div class="title">${esc(e.examNameMr)}</div><div class="meta">${esc(e.examName)} · अभ्यासक्रम · Exam Pattern</div></a>`).join('\n');
+  `<a class="post-card" href="${esc(pathOf(e))}"><div><span class="badge-cat">${esc(e.conductingBody)}</span></div><div class="title">${esc(e.examNameMr)}</div><div class="meta">${esc(e.examName)} · अभ्यासक्रम · Exam Pattern</div></a>`).join('\n');
 
 const testLinks = tests.map(t =>
-  `<a class="post-card" href="${esc(t.slug)}"><div><span class="badge-cat">Mock Test</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${t.questions.length} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n');
+  `<a class="post-card" href="${esc(pathOf(t))}"><div><span class="badge-cat">Mock Test</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${t.questions.length} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n');
 
 const body = `
 <section class="hero">

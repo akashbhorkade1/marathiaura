@@ -22,6 +22,8 @@ jobs:
         run: node automation/validate.mjs
       - name: Build (drafts render होत नाहीत — फक्त published)
         run: node automation/build.mjs
+        env:
+          ADSENSE_PUB_ID: ${{ secrets.ADSENSE_PUB_ID }}
       - name: Commit drafts & review queue
         run: |
           git config user.name "github-actions[bot]"

@@ -1,5 +1,5 @@
 // Generates: post article pages + category index pages + OG images
-import { loadSite, loadCategories, loadPosts, published, write, esc, pageHtml, postCard, svgOg } from '../lib.mjs';
+import { loadSite, loadCategories, loadPosts, published, write, esc, pageHtml, postCard, svgOg, pathOf } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -41,7 +41,7 @@ function renderPost(p) {
   const catName = cat ? cat.nameMr : 'अपडेट';
   const sections = (p.content.sections || []).map(renderSection).join('');
   const updates = (p.updates || []).length ? `<div class="content-section"><h2>अपडेट्स</h2><ul class="updates-list">${
-    p.updates.map(u => `<li><span class="u-date">${esc((u.date || '').slice(0, 16).replace('T', ' '))}</span><br>${esc(u.note)}</li>`).join('')
+    p.updates.map(u => `<li><span class="u-date">${esc((u.date || '').slice(0, 16).replace('T', ' '))}${u.type ? ' — ' + esc(u.type) : ''}</span><br><strong>${esc(u.title || '')}</strong>${u.summary ? '<br>' + esc(u.summary) : ''}</li>`).join('')
   }</ul></div>` : '';
 
   const faqs = (p.content.faqs || []);
@@ -62,6 +62,7 @@ function renderPost(p) {
   (p.relatedMockTests || []).forEach(t => related.push(`<a href="/mock-test/${esc(t)}/">मॉक टेस्ट</a>`));
   const relatedHtml = related.length ? `<div class="content-section"><h2>संबंधित माहिती</h2><p>${related.join(' · ')}</p></div>` : '';
 
+  const sourceLink = (p.sources || []).find(s => s.url) || (p.links && p.links.officialUrl ? { url: p.links.officialUrl, name: 'अधिकृत संकेतस्थळ' } : null);
   const body = `
 <div class="breadcrumb"><a href="/">Home</a> › <a href="${esc(cat ? cat.path : '/')}">${esc(catName)}</a></div>
 <div class="page-header"><h1>${esc(p.title)}</h1></div>
@@ -74,29 +75,29 @@ ${linksHtml}
 ${faqHtml}
 ${relatedHtml}
 <div class="source-row">
-  <span>स्रोत: <a href="${esc(p.source.url || p.links.officialUrl || site.url)}" target="_blank" rel="noopener">${esc(p.source.name)}</a></span>
+  <span>स्रोत: ${sourceLink ? `<a href="${esc(sourceLink.url)}" target="_blank" rel="noopener">${esc(sourceLink.name)}</a>` : 'अधिकृत जाहिरात'}</span>
   <span>⚠ ही माहिती केवळ सर्वसाधारण मार्गदर्शनासाठी आहे. अंतिम व अचूक माहितीसाठी नेहमी अधिकृत जाहिरात तपासा.</span>
 </div>`;
 
   const schemas = [];
-  schemas.push(`{"@context":"https://schema.org","@type":"Article","headline":${JSON.stringify(p.title)},"datePublished":"${p.publishedAt}","dateModified":"${p.lastUpdatedAt}","author":{"@type":"Organization","name":"MarathiAura"},"mainEntityOfPage":"${site.url}${p.slug}"}`);
+  schemas.push(`{"@context":"https://schema.org","@type":"Article","headline":${JSON.stringify(p.title)},"datePublished":"${p.publishedAt}","dateModified":"${p.lastUpdatedAt}","author":{"@type":"Organization","name":"MarathiAura"},"mainEntityOfPage":"${site.url}${pathOf(p)}"}`);
   if (p.type === 'recruitment') {
     schemas.push(`{"@context":"https://schema.org","@type":"JobPosting","title":${JSON.stringify(p.title)},"description":${JSON.stringify(p.content.shortDesc)},"datePosted":"${(p.publishedAt || '').slice(0, 10)}","employmentType":"OTHER","hiringOrganization":{"@type":"Organization","name":${JSON.stringify(p.department || 'Official')}},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"IN"}}}`);
   }
   if (faqs.length) {
     schemas.push(`{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[${faqs.map(f => `{"@type":"Question","name":${JSON.stringify(f.q)},"acceptedAnswer":{"@type":"Answer","text":${JSON.stringify(f.a)}}}`).join(',')}]}`);
   }
-  write(p.slug.replace(/^\//, '') + 'index.html',
-    pageHtml(site, categories, { title: p.title, description: p.content.metaDescription || p.content.shortDesc, canonical: site.url + p.slug, body, ogImage: p.seo.ogImage, type: 'article' })
+  write(pathOf(p).replace(/^\//, '') + 'index.html',
+    pageHtml(site, categories, { title: p.title, description: p.content.metaDescription || p.content.shortDesc, canonical: site.url + pathOf(p), body, ogImage: p.seo.ogImage, type: 'article' })
       .replace('</head>', `<script type="application/ld+json">\n${schemas.join('\n')}\n</script>\n</head>`)
   );
   if (p.seo.ogImage) write(p.seo.ogImage.replace(/^\//, ''), svgOg(p.title, catName));
   count++;
-  console.log(`  post: ${p.slug}`);
+  console.log(`  post: ${pathOf(p)}`);
 }
 
 for (const p of posts) {
-  if (!p.slug || !p.content || !p.content.shortDesc) { console.error(`  [SKIP] incomplete record: ${p.id}`); continue; }
+  if (!p.path || !p.content || !p.content.shortDesc) { console.error(`  [SKIP] incomplete record: ${p.id}`); continue; }
   renderPost(p);
 }
 

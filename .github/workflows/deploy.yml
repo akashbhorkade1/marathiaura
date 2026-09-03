@@ -24,6 +24,8 @@ jobs:
           node-version: 20
       - name: Build site
         run: node automation/build.mjs
+        env:
+          ADSENSE_PUB_ID: ${{ secrets.ADSENSE_PUB_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

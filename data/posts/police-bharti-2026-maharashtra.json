@@ -2,7 +2,8 @@
   "id": "police-bharti-2026-maharashtra",
   "type": "recruitment",
   "title": "Police Bharti 2026: महाराष्ट्र पोलीस भरती — पात्रता, अभ्यासक्रम, अर्ज प्रक्रिया आणि शेवटची तारीख",
-  "slug": "/police-bharti-2026/",
+  "slug": "police-bharti-2026",
+  "path": "/police-bharti-2026/",
   "category": "police-bharti",
   "exam": "police-constable",
   "department": "महाराष्ट्र पोलीस विभाग",
@@ -102,16 +103,21 @@
       }
     ]
   },
-  "source": {
-    "url": "https://www.mahapolice.gov.in",
-    "name": "mahapolice.gov.in",
-    "priority": 1
-  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in",
+      "name": "mahapolice.gov.in",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": null
+    }
+  ],
   "status": "published",
   "confidence": 85,
+  "fixture": true,
   "publishedAt": "2026-09-03T10:00:00+05:30",
   "lastUpdatedAt": "2026-09-03T10:00:00+05:30",
-  "contentHash": null,
+  "contentHash": "fd5f2c225b4a88c07dd4744277e6ce78720e88eba3a7de895805743250e1f775",
   "updates": [],
   "seo": {
     "keywords": [

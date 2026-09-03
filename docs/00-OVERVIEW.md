@@ -9,8 +9,9 @@ Marathi-first स्पर्धा परीक्षा (Competitive Exam) pla
 | Document | विषय |
 |---|---|
 | [01-ARCHITECTURE.md](01-ARCHITECTURE.md) | System architecture, stack decision, automation pipeline, repo structure |
-| [02-DATA-SCHEMA.md](02-DATA-SCHEMA.md) | Database design (JSON records), field definitions, status/confidence workflow |
+| [02-DATA-SCHEMA.md](02-DATA-SCHEMA.md) | **Schema V2 (DEFINITIVE)** — common base, recruitment/CA/exam/question/source/update schemas |
 | [03-URL-STRUCTURE-AND-SITEMAP.md](03-URL-STRUCTURE-AND-SITEMAP.md) | URL rules, route map, sitemap strategy, robots, canonical policy |
+| [04-AUTOMATION-DESIGN.md](04-AUTOMATION-DESIGN.md) | Confidence policy, contentHash algorithm, feed verification, review workflow |
 
 ## तीन मुख्य Pillars
 

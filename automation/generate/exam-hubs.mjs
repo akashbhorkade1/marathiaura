@@ -1,5 +1,5 @@
 // Generates: exam hub pages (complete exam ecosystem)
-import { loadSite, loadCategories, loadExams, published, write, esc, pageHtml } from '../lib.mjs';
+import { loadSite, loadCategories, loadExams, published, write, esc, pageHtml, pathOf } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -39,9 +39,9 @@ ${subjects}
 <div class="source-row"><span>स्रोत: <a href="${esc(e.officialUrl)}" target="_blank" rel="noopener">${esc(e.officialUrl)}</a></span>
 <span>⚠ अंतिम व अचूक माहितीसाठी अधिकृत जाहिरात/अभ्यासक्रम तपासा.</span></div>`;
 
-  write(e.slug.replace(/^\//, '') + 'index.html',
-    pageHtml(site, categories, { title: `${e.examNameMr}: पात्रता, Syllabus, Exam Pattern`, description: `${e.examNameMr} — पात्रता, वयोमर्यादा, exam pattern आणि अभ्यासक्रम मराठीत.`, canonical: site.url + e.slug, body }));
+  write(pathOf(e).replace(/^\//, '') + 'index.html',
+    pageHtml(site, categories, { title: `${e.examNameMr}: पात्रता, Syllabus, Exam Pattern`, description: `${e.examNameMr} — पात्रता, वयोमर्यादा, exam pattern आणि अभ्यासक्रम मराठीत.`, canonical: site.url + pathOf(e), body }));
   count++;
-  console.log(`  exam hub: ${e.slug}`);
+  console.log(`  exam hub: ${pathOf(e)}`);
 }
 console.log(`exam-hubs.mjs: ${count} pages generated`);

@@ -2,7 +2,8 @@
   "id": "talathi-bharti-2026",
   "type": "recruitment",
   "title": "Talathi Bharti 2026: महाराष्ट्र तलाठी भरती — पात्रता, अभ्यासक्रम आणि अर्ज प्रक्रिया",
-  "slug": "/talathi-bharti-2026/",
+  "slug": "talathi-bharti-2026",
+  "path": "/talathi-bharti-2026/",
   "category": "talathi",
   "exam": "talathi",
   "department": "महसूल विभाग, महाराष्ट्र शासन",
@@ -89,16 +90,21 @@
       }
     ]
   },
-  "source": {
-    "url": "https://ranager.maharashtra.gov.in",
-    "name": "ranager.maharashtra.gov.in",
-    "priority": 1
-  },
+  "sources": [
+    {
+      "url": "https://ranager.maharashtra.gov.in",
+      "name": "ranager.maharashtra.gov.in",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": null
+    }
+  ],
   "status": "published",
   "confidence": 85,
+  "fixture": true,
   "publishedAt": "2026-09-03T10:05:00+05:30",
   "lastUpdatedAt": "2026-09-03T10:05:00+05:30",
-  "contentHash": null,
+  "contentHash": "336e624430da3e2d1375e72c00194cf23f4bae214e6c427b7ca852456d2ca2ad",
   "updates": [],
   "seo": {
     "keywords": [

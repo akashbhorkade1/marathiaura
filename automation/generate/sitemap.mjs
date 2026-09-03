@@ -1,5 +1,5 @@
 // Generates: sitemap index + category-wise sitemaps + search-index.json
-import { loadSite, loadCategories, loadPosts, loadExams, loadTests, loadPages, published, write, writeJson } from '../lib.mjs';
+import { loadSite, loadCategories, loadPosts, loadExams, loadTests, loadPages, published, write, writeJson, pathOf } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -20,11 +20,11 @@ const mods = [];
 
 // posts (genuine content only)
 const postEntries = posts.filter(p => p.seo.index !== false)
-  .map(p => urlXml(site.url + p.slug, p.lastUpdatedAt));
+  .map(p => urlXml(site.url + pathOf(p), p.lastUpdatedAt));
 mods.push(sitemapFile('sitemap-posts.xml', postEntries));
 
 // exams
-mods.push(sitemapFile('sitemap-exams.xml', exams.map(e => urlXml(site.url + e.slug, e.lastUpdatedAt))));
+mods.push(sitemapFile('sitemap-exams.xml', exams.map(e => urlXml(site.url + pathOf(e), e.lastUpdatedAt))));
 
 // category indexes (only categories that will have generated pages)
 const catEntries = [];
@@ -37,7 +37,7 @@ for (const c of categories) {
 }
 mods.push(sitemapFile('sitemap-categories.xml', catEntries));
 // mock tests
-mods.push(sitemapFile('sitemap-mocktests.xml', tests.map(t => urlXml(site.url + t.slug, new Date().toISOString()))));
+mods.push(sitemapFile('sitemap-mocktests.xml', tests.map(t => urlXml(site.url + pathOf(t), new Date().toISOString()))));
 
 // static pages
 mods.push(sitemapFile('sitemap-static.xml', [
@@ -56,7 +56,7 @@ writeJson('search-index.json', posts.map(p => ({
   title: p.title,
   desc: p.content.shortDesc,
   cat: (categories.find(c => c.id === p.category) || {}).nameMr || '',
-  url: p.slug
+  url: pathOf(p)
 })));
 
 console.log(`sitemap.mjs: index + ${mods.map(m => `${m.name}(${m.n})`).join(', ')}`);

@@ -38,10 +38,17 @@ export const loadPages = () => readJson('data/pages.json');
 // Published records only (status workflow enforcement)
 export const published = list => list.filter(p => p.status === 'published' || p.status === 'updated');
 
+// Schema V2: slug = bare segment, path = full URL path
+export const pathOf = p => p.path || ('/' + String(p.slug || '').replace(/^\/+|\/+$/g, '') + '/');
+
+// AdSense publisher ID — कधीच public config मध्ये नाही (docs/04-AUTOMATION-DESIGN.md)
+export const publisherId = () => process.env.ADSENSE_PUB_ID || null;
+
 export function adsenseHead(site) {
   const a = site.adsense;
-  if (!a || !a.enabled || !a.publisherId) return '';
-  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(a.publisherId)}"\n     crossorigin="anonymous"></script>\n`;
+  const pub = publisherId();
+  if (!a || !a.enabled || !pub) return '';
+  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(pub)}"\n     crossorigin="anonymous"></script>\n`;
 }
 
 export function headHtml(site, { title, description, canonical, ogImage = null, type = 'website', index = true }) {
@@ -131,7 +138,7 @@ export function pageHtml(site, categories, { title, description, canonical, body
 
 export function postCard(p, cat) {
   const badge = p.badge === 'urgent' ? '<span class="badge badge-urgent">तातडीचे</span>' : '<span class="badge badge-new">नवीन</span>';
-  return `<a class="post-card" href="${esc(p.slug)}">
+  return `<a class="post-card" href="${esc(pathOf(p))}">
   <div><span class="badge-cat">${esc(cat ? cat.nameMr : '')}</span></div>
   <div class="title">${esc(p.title)}${badge}</div>
   <div class="meta">प्रकाशित: ${esc((p.publishedAt || p.lastUpdatedAt || '').slice(0, 10))} · अखेरचे अद्ययावत: ${esc((p.lastUpdatedAt || '').slice(0, 10))}</div>
