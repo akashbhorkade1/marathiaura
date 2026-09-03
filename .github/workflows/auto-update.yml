@@ -1,0 +1,35 @@
+name: Auto Update (source monitoring)
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # दर 6 तासांनी
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Monitor sources (detect new notifications)
+        run: node automation/monitor.mjs
+      - name: Validate records
+        run: node automation/validate.mjs
+      - name: Build (drafts render होत नाहीत — फक्त published)
+        run: node automation/build.mjs
+      - name: Commit drafts & review queue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit"
+          else
+            git commit -m "auto: source monitor - draft records for review"
+            git push
+          fi

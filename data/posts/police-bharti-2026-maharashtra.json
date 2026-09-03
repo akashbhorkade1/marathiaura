@@ -1,0 +1,127 @@
+{
+  "id": "police-bharti-2026-maharashtra",
+  "type": "recruitment",
+  "title": "Police Bharti 2026: महाराष्ट्र पोलीस भरती — पात्रता, अभ्यासक्रम, अर्ज प्रक्रिया आणि शेवटची तारीख",
+  "slug": "/police-bharti-2026/",
+  "category": "police-bharti",
+  "exam": "police-constable",
+  "department": "महाराष्ट्र पोलीस विभाग",
+  "recruitment": {
+    "postNames": [
+      "Police Constable",
+      "SRPF Constable"
+    ],
+    "vacancies": null,
+    "vacanciesNote": "एकूण जागा अधिकृत जाहिरातीत नमूद केल्याप्रमाणे",
+    "qualification": [
+      "12वी (HSC) उत्तीर्ण"
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 28,
+      "relaxation": "आरक्षित वर्गासाठी शासकीय नियमानुसार सूट"
+    },
+    "salary": {
+      "payScale": "₹21,700 – ₹69,100 (Pay Level 3)",
+      "note": null
+    },
+    "fee": {
+      "general": null,
+      "reserved": null,
+      "note": "अर्ज शुल्क अधिकृत जाहिरातीत नमूद"
+    },
+    "applicationMode": "Online",
+    "location": "महाराष्ट्र",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": null,
+    "applyUrl": "https://www.mahapolice.gov.in",
+    "officialUrl": "https://www.mahapolice.gov.in"
+  },
+  "selectionProcess": [
+    "शारीरिक चाचणी (Physical Test)",
+    "लेखी परीक्षा (Written Exam)",
+    "वैद्यकीय तपासणी",
+    "गुणवत्ता यादी (Merit List)"
+  ],
+  "syllabusRef": null,
+  "relatedMockTests": [
+    "police-bharti-mock-01"
+  ],
+  "content": {
+    "shortDesc": "महाराष्ट्र पोलीस भरती 2026 — Police Constable व SRPF पदांसाठी जाहिरात. पात्रता, वयोमर्यादा, शारीरिक चाचणी, लेखी परीक्षेचे स्वरूप आणि अर्ज प्रक्रियेची सविस्तर माहिती येथे.",
+    "metaDescription": "Police Bharti 2026 Maharashtra: पात्रता, वयोमर्यादा, शारीरिक चाचणी, लेखी परीक्षा, अभ्यासक्रम आणि अर्ज प्रक्रियेची सविस्तर माहिती मराठीत.",
+    "sections": [
+      {
+        "heading": "भरतीची ओळख",
+        "type": "text",
+        "body": "महाराष्ट्र पोलीस विभागामार्फत Police Constable व SRPF Constable या पदांसाठी भरती प्रक्रिया राबवली जाते. ही भरती राज्यातील विविध जिल्ह्यांसाठी असते. अधिकृत जाहिरात प्रसिद्ध झाल्यानंतर अर्ज ऑनलाइन पद्धतीने भरता येतो."
+      },
+      {
+        "heading": "निवड प्रक्रिया",
+        "type": "olist",
+        "items": [
+          "शारीरिक चाचणी (Physical Efficiency Test)",
+          "लेखी परीक्षा",
+          "वैद्यकीय तपासणी",
+          "अंतिम गुणवत्ता यादी"
+        ]
+      },
+      {
+        "heading": "महत्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
+          "वयोमर्यादा अधिकृत जाहिरातीतील दिनांकी मोजावी",
+          "शारीरिक चाचणीचे मापदंड (उंची, छाती, धावण्याचे अंतर) जाहिरातीत नमूद असतात",
+          "कोणत्याही मध्यस्थाला पैसे देऊ नका — अर्ज प्रक्रिया निःशुल्क/अधिकृत शुल्कापलीकडे नाही"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Police Bharti साठी शैक्षणिक पात्रता काय आहे?",
+        "a": "12वी (HSC) उत्तीर्ण ही सामान्य पात्रता असते. पदानुसार व जाहिरातीनुसार बदल असू शकतो."
+      },
+      {
+        "q": "Police Bharti मध्ये negative marking आहे का?",
+        "a": "लेखी परीक्षेत negative marking असल्यास ते अधिकृत जाहिरात/परीक्षा नियमावलीत स्पष्ट नमूद केले जाते."
+      },
+      {
+        "q": "अर्ज कोठून करावा?",
+        "a": "अर्ज फक्त अधिकृत संकेतस्थळावरूनच करावा."
+      }
+    ]
+  },
+  "source": {
+    "url": "https://www.mahapolice.gov.in",
+    "name": "mahapolice.gov.in",
+    "priority": 1
+  },
+  "status": "published",
+  "confidence": 85,
+  "publishedAt": "2026-09-03T10:00:00+05:30",
+  "lastUpdatedAt": "2026-09-03T10:00:00+05:30",
+  "contentHash": null,
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Police Bharti 2026",
+      "पोलीस भरती 2026",
+      "Maharashtra Police Bharti",
+      "Police Constable Bharti",
+      "पोलीस भरती अर्ज"
+    ],
+    "ogImage": "/og-images/police-bharti-2026-maharashtra.svg",
+    "index": true
+  }
+}

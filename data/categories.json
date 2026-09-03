@@ -1,0 +1,20 @@
+[
+  { "id": "latest-bharti", "name": "Latest Bharti", "nameMr": "नवीन भरती", "path": "/latest-bharti/", "nav": true, "description": "सर्व नवीन सरकारी भरती 2026 — जाहिरात, पात्रता, अर्ज आणि शेवटची तारीख.", "sitemap": "posts" },
+  { "id": "mpsc", "name": "MPSC", "nameMr": "MPSC (राज्यसेवा, संयुक्त)", "path": "/mpsc/", "nav": true, "description": "MPSC राज्यसेवा, Group B, Group C, PSI, STI, ASO परीक्षांची माहिती, अभ्यासक्रम आणि अपडेट्स.", "sitemap": "posts" },
+  { "id": "police-bharti", "name": "Police Bharti", "nameMr": "पोलीस भरती", "path": "/police-bharti/", "nav": true, "description": "महाराष्ट्र पोलीस भरती, SRPF, Jail Police — जाहिरात, शारीरिक चाचणी, अभ्यासक्रम.", "sitemap": "posts" },
+  { "id": "talathi", "name": "Talathi", "nameMr": "तलाठी भरती", "path": "/talathi/", "nav": false, "description": "तलाठी भरती — महसूल विभाग, पात्रता, अभ्यासक्रम आणि अर्ज प्रक्रिया.", "sitemap": "posts" },
+  { "id": "gramsevak", "name": "Gramsevak", "nameMr": "ग्रामसेवक भरती", "path": "/gramsevak/", "nav": false, "description": "ग्रामसेवक व ग्रामविकास विभाग भरती.", "sitemap": "posts" },
+  { "id": "maharashtra-bharti", "name": "Maharashtra Bharti", "nameMr": "महाराष्ट्र भरती", "path": "/maharashtra-bharti/", "nav": false, "description": "ZP, आरोग्य विभाग, महावितरण, MIDC, महानगरपालिका इत्यादी महाराष्ट्र शासन भरती.", "sitemap": "posts" },
+  { "id": "ssc", "name": "SSC", "nameMr": "SSC परीक्षा", "path": "/ssc/", "nav": false, "description": "SSC GD, CGL, CHSL, MTS परीक्षा माहिती मराठीत.", "sitemap": "posts" },
+  { "id": "railway", "name": "Railway", "nameMr": "रेल्वे भरती", "path": "/railway/", "nav": false, "description": "RRB NTPC, Group D, ALP रेल्वे भरती व परीक्षा.", "sitemap": "posts" },
+  { "id": "banking", "name": "Banking", "nameMr": "बँकिंग परीक्षा", "path": "/banking/", "nav": false, "description": "IBPS, SBI, RBI, LIC बँकिंग परीक्षा माहिती.", "sitemap": "posts" },
+  { "id": "syllabus", "name": "Syllabus", "nameMr": "अभ्यासक्रम", "path": "/syllabus/", "nav": true, "description": "प्रत्येक परीक्षेचा subject-wise व topic-wise अभ्यासक्रम, exam pattern.", "sitemap": "posts" },
+  { "id": "answer-key", "name": "Answer Key", "nameMr": "उत्तरतालिका", "path": "/answer-key/", "nav": false, "description": "अधिकृत उत्तरतालिका, objection process आणि PDF.", "sitemap": "posts" },
+  { "id": "result", "name": "Result", "nameMr": "निकाल", "path": "/result/", "nav": true, "description": "परीक्षा निकाल, merit list, cut off.", "sitemap": "posts" },
+  { "id": "admit-card", "name": "Admit Card", "nameMr": "प्रवेशपत्र", "path": "/admit-card/", "nav": false, "description": "प्रवेशपत्र (Hall Ticket) download माहिती.", "sitemap": "posts" },
+  { "id": "current-affairs", "name": "Current Affairs", "nameMr": "चालू घडामोडी", "path": "/current-affairs/", "nav": true, "description": "दैनिक व मासिक चालू घडामोडी, one-liner प्रश्नोत्तरे.", "sitemap": "posts" },
+  { "id": "previous-papers", "name": "Previous Papers", "nameMr": "जुन्या प्रश्नपत्रिका", "path": "/previous-papers/", "nav": false, "description": "जुन्या परीक्षेच्या प्रश्नपत्रिका व solutions.", "sitemap": "posts" },
+  { "id": "study-material", "name": "Study Material", "nameMr": "अभ्यास साहित्य", "path": "/study-material/", "nav": false, "description": "गणित, बुद्धिमत्ता, मराठी व्याकरण, GK notes.", "sitemap": "posts" },
+  { "id": "maharashtra-gk", "name": "Maharashtra GK", "nameMr": "महाराष्ट्र GK", "path": "/maharashtra-gk/", "nav": false, "description": "महाराष्ट्र इतिहास, भूगोल, किल्ले, नद्या, जिल्हे — स्पर्धा परीक्षेसाठी.", "sitemap": "posts" },
+  { "id": "yojna", "name": "Yojna", "nameMr": "शासकीय योजना", "path": "/yojna/", "nav": false, "description": "केंद्र व राज्य शासनाच्या महत्वाच्या योजना.", "sitemap": "posts" }
+]

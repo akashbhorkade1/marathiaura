@@ -1,0 +1,35 @@
+{
+  "id": "current-affairs-2026-09-03",
+  "type": "current-affairs",
+  "kind": "daily",
+  "title": "चालू घडामोडी 03 सप्टेंबर 2026 — दैनिक Current Affairs",
+  "slug": "/current-affairs/2026-09-03/",
+  "category": "current-affairs",
+  "date": "2026-09-03",
+  "items": [],
+  "content": {
+    "shortDesc": "दैनिक चालू घडामोडी — उदाहरण record (schema demo).",
+    "metaDescription": "दैनिक चालू घडामोडी स्पर्धा परीक्षांसाठी.",
+    "sections": [],
+    "faqs": []
+  },
+  "source": {
+    "url": null,
+    "name": "MarathiAura",
+    "priority": 2
+  },
+  "status": "draft",
+  "confidence": 45,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-03T10:10:00+05:30",
+  "contentHash": null,
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "चालू घडामोडी",
+      "Current Affairs"
+    ],
+    "ogImage": null,
+    "index": false
+  }
+}

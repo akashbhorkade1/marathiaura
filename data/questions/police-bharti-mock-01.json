@@ -1,0 +1,72 @@
+{
+  "testId": "police-bharti-mock-01",
+  "exam": "police-bharti",
+  "title": "Police Bharti Mock Test 01 — महाराष्ट्र GK",
+  "titleMr": "पोलीस भरती मॉक टेस्ट 01 — महाराष्ट्र सामान्य ज्ञान",
+  "slug": "/mock-test/police-bharti-mock-01/",
+  "category": "police-bharti",
+  "durationMinutes": 10,
+  "status": "published",
+  "questions": [
+    {
+      "qid": "pb-m01-q1",
+      "question": "महाराष्ट्र राज्याचे राज्यप्राणी (State Animal) कोणते आहे?",
+      "options": { "A": "वाघ", "B": "शेकरू (भारतीय उडणारा कस्तूर)", "C": "रानमग्गर", "D": "सांबर" },
+      "correctAnswer": "B",
+      "explanation": "महाराष्ट्राचे राज्यप्राणी 'शेकरू' (Indian Giant Squirrel / Ratufa indica) आहे. हा प्रामुख्याने साह्याद्री परिसरातील द-दाट जंगलात आढळतो.",
+      "subject": "Maharashtra GK",
+      "topic": "राज्य प्रतीके",
+      "difficulty": "easy",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती"
+    },
+    {
+      "qid": "pb-m01-q2",
+      "question": "महाराष्ट्राचे राज्यपक्षी (State Bird) कोणता आहे?",
+      "options": { "A": "मोर", "B": "हरोळ (पिवळट पायांचा हिरवा पारवा)", "C": "कोकिळ", "D": "सुगरण" },
+      "correctAnswer": "B",
+      "explanation": "महाराष्ट्राचा राज्यपक्षी 'हरोळ' (Yellow-footed Green Pigeon) आहे.",
+      "subject": "Maharashtra GK",
+      "topic": "राज्य प्रतीके",
+      "difficulty": "easy",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती"
+    },
+    {
+      "qid": "pb-m01-q3",
+      "question": "महाराष्ट्राचे राज्यवृक्ष (State Tree) कोणते आहे?",
+      "options": { "A": "वड", "B": "पिंपळ", "C": "आंबा", "D": "निंब" },
+      "correctAnswer": "C",
+      "explanation": "महाराष्ट्राचे राज्यवृक्ष 'आंबा' (Mangifera indica) आहे.",
+      "subject": "Maharashtra GK",
+      "topic": "राज्य प्रतीके",
+      "difficulty": "easy",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती"
+    },
+    {
+      "qid": "pb-m01-q4",
+      "question": "महाराष्ट्र राज्याचे पहिले मुख्यमंत्री कोण होते?",
+      "options": { "A": "शंकरराव चव्हाण", "B": "वसंतराव नाईक", "C": "यशवंतराव चव्हाण", "D": "पृथ्वीराज चव्हाण" },
+      "correctAnswer": "C",
+      "explanation": "महाराष्ट्र राज्याच्या स्थापनेनंतर (1 मे 1960) पहिले मुख्यमंत्री यशवंतराव चव्हाण होते.",
+      "subject": "Maharashtra GK",
+      "topic": "इतिहास",
+      "difficulty": "easy",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत इतिहास"
+    },
+    {
+      "qid": "pb-m01-q5",
+      "question": "महाराष्ट्र राज्याची स्थापना कोणत्या दिवशी झाली?",
+      "options": { "A": "1 मे 1960", "B": "15 ऑगस्ट 1947", "C": "26 जानेवारी 1950", "D": "1 मे 1961" },
+      "correctAnswer": "A",
+      "explanation": "1 मे 1960 रोजी द्विभाषिक बॉम्बे राज्याचे विभाजन होऊन महाराष्ट्र राज्याची स्थापना झाली. हा दिवस 'महाराष्ट्र दिन' म्हणून साजरा केला जातो.",
+      "subject": "Maharashtra GK",
+      "topic": "इतिहास",
+      "difficulty": "easy",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत इतिहास"
+    }
+  ]
+}

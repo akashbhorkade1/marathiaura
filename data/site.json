@@ -1,0 +1,22 @@
+{
+  "site": {
+    "name": "MarathiAura",
+    "url": "https://marathiaura.in",
+    "locale": "mr_IN",
+    "tagline": "भरतीपासून निकालापर्यंत, सर्व माहिती एका ठिकाणी",
+    "description": "MPSC, पोलीस भरती, तलाठी, ZP भरती, SSC, Railway, Banking — स्पर्धा परीक्षेची सर्व माहिती मराठीत. जाहिरात, पात्रता, अभ्यासक्रम, मॉक टेस्ट, निकाल.",
+    "adsense": {
+      "publisherId": "ca-pub-1892357947938832",
+      "enabled": true
+    },
+    "social": {
+      "telegram": "https://t.me/+zCKGI81nUS83ZDE1",
+      "whatsapp": "https://whatsapp.com/channel/0029Vb8NfVsAzNc0x5mGX32b",
+      "youtube": "https://www.youtube.com/@MarathiAura-exam"
+    },
+    "feeds": [
+      { "name": "MPSC", "url": "https://mpsc.gov.in/rss", "type": "rss", "category": "mpsc", "priority": 1 },
+      { "name": "Maharashtra Police", "url": "https://www.mahapolice.gov.in/rss", "type": "rss", "category": "police-bharti", "priority": 1 }
+    ]
+  }
+}

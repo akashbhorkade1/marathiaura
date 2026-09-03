@@ -1,0 +1,113 @@
+{
+  "id": "talathi-bharti-2026",
+  "type": "recruitment",
+  "title": "Talathi Bharti 2026: महाराष्ट्र तलाठी भरती — पात्रता, अभ्यासक्रम आणि अर्ज प्रक्रिया",
+  "slug": "/talathi-bharti-2026/",
+  "category": "talathi",
+  "exam": "talathi",
+  "department": "महसूल विभाग, महाराष्ट्र शासन",
+  "recruitment": {
+    "postNames": [
+      "Talathi (तलाठी)"
+    ],
+    "vacancies": null,
+    "vacanciesNote": "जिल्हानिहाय जागा अधिकृत जाहिरातीत नमूद केल्याप्रमाणे",
+    "qualification": [
+      "पदवीधर (कोणताही शाखा)"
+    ],
+    "ageLimit": {
+      "min": 19,
+      "max": 38,
+      "relaxation": "आरक्षित वर्गासाठी शासकीय नियमानुसार सूट"
+    },
+    "salary": {
+      "payScale": "₹20,500 – ₹65,900 (Pay Level S-6)",
+      "note": null
+    },
+    "fee": {
+      "general": null,
+      "reserved": null,
+      "note": "अर्ज शुल्क अधिकृत जाहिरातीत नमूद"
+    },
+    "applicationMode": "Online",
+    "location": "महाराष्ट्र",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": null,
+    "applyUrl": "https://ranager.maharashtra.gov.in",
+    "officialUrl": "https://ranager.maharashtra.gov.in"
+  },
+  "selectionProcess": [
+    "लेखी परीक्षा (Written Exam)",
+    "स्पर्धा परीक्षा निकाल",
+    "कागदपत्र तपासणी",
+    "गुणवत्ता यादी"
+  ],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "महाराष्ट्र तलाठी भरती 2026 — महसूल विभागामार्फत तलाठी पदांसाठी जाहिरात. पात्रता, वयोमर्यादा, लेखी परीक्षेचे स्वरूप, अभ्यासक्रम आणि अर्ज प्रक्रियेची माहिती येथे दिली आहे.",
+    "metaDescription": "Talathi Bharti 2026 Maharashtra: तलाठी भरतीची पात्रता, वयोमर्यादा, अभ्यासक्रम, परीक्षा pattern आणि अर्ज प्रक्रिया मराठीत.",
+    "sections": [
+      {
+        "heading": "भरतीची ओळख",
+        "type": "text",
+        "body": "तलाठी हे महसूल विभागातील ग्रामस्तरावरील महत्वाचे पद आहे. गावाच्या महसूली नोंदी, शेतजमीन अभिलेख, पीडापाणी हप्ते इत्यादी कामे तलाठ्याकडे असतात. भरती महाराष्ट्र लोकसेवा आयोगाच्या/महसूल विभागाच्या अधिकृत प्रक्रियेतून होते."
+      },
+      {
+        "heading": "परीक्षेचे स्वरूप",
+        "type": "text",
+        "body": "लेखी परीक्षेत सामान्यतः मराठी, इंग्रजी, सामान्य अध्ययन (महाराष्ट्रासह), बुद्धिमत्ता व गणित या विषयांवर प्रश्न विचारले जातात. अचूक paper pattern अधिकृत जाहिरातीत/अभ्यासक्रमात नमूद होतो."
+      },
+      {
+        "heading": "महत्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "अर्ज फक्त अधिकृत संकेतस्थळावरून करावा",
+          "जिल्हानिहाय जागांचे वितरण जाहिरातीत पाहावे",
+          "परीक्षेच्या तारखेबद्दल अपडेट्स याच पानावर सूचित केल्या जातील"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "तलाठी भरतीसाठी पात्रता काय आहे?",
+        "a": "कोणत्याही शाखेतील पदवी ही सामान्य पात्रता असते. अचूक पात्रता अधिकृत जाहिरातीत पाहावी."
+      },
+      {
+        "q": "तलाठी भरतीचा अभ्यासक्रम कोठे मिळेल?",
+        "a": "MarathiAura वरील अभ्यासक्रम section मध्ये subject-wise अभ्यासक्रम उपलब्ध होईल."
+      }
+    ]
+  },
+  "source": {
+    "url": "https://ranager.maharashtra.gov.in",
+    "name": "ranager.maharashtra.gov.in",
+    "priority": 1
+  },
+  "status": "published",
+  "confidence": 85,
+  "publishedAt": "2026-09-03T10:05:00+05:30",
+  "lastUpdatedAt": "2026-09-03T10:05:00+05:30",
+  "contentHash": null,
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Talathi Bharti 2026",
+      "तलाठी भरती 2026",
+      "तलाठी भरती अर्ज",
+      "Maharashtra Talathi Recruitment"
+    ],
+    "ogImage": "/og-images/talathi-bharti-2026.svg",
+    "index": true
+  }
+}
