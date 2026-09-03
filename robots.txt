@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /search.html
-Disallow: /subscribe.html
-
-Sitemap: https://marathiaura.in/sitemap.xml
