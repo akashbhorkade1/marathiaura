@@ -26,9 +26,11 @@
     },
     "subjects": [
       {
+        "subjectId": "marathi",
         "subject": "मराठी",
         "topics": [
           {
+            "topicId": "marathi-vyakaran",
             "topic": "व्याकरण",
             "points": [
               "संज्ञा, सर्वनाम, विशेषण",
@@ -38,6 +40,7 @@
             ]
           },
           {
+            "topicId": "marathi-samas-va-alankar",
             "topic": "समास व अलंकार",
             "points": [
               "समासाचे प्रकार",
@@ -47,9 +50,11 @@
         ]
       },
       {
+        "subjectId": "mathematics",
         "subject": "गणित",
         "topics": [
           {
+            "topicId": "mathematics-ankan-ganit",
             "topic": "अंकगणित",
             "points": [
               "संख्या व त्यांचे गुणधर्म",
@@ -60,6 +65,7 @@
             ]
           },
           {
+            "topicId": "mathematics-babtit-ganit",
             "topic": "बाबतीत गणित",
             "points": [
               "वेळ व अंतर",
@@ -71,9 +77,11 @@
         ]
       },
       {
+        "subjectId": "general-knowledge",
         "subject": "सामान्य ज्ञान",
         "topics": [
           {
+            "topicId": "general-knowledge-maharashtra-gk",
             "topic": "महाराष्ट्र GK",
             "points": [
               "इतिहास",
@@ -83,6 +91,7 @@
             ]
           },
           {
+            "topicId": "general-knowledge-chalu-ghadamodi",
             "topic": "चालू घडामोडी",
             "points": [
               "राष्ट्रीय",
@@ -94,9 +103,11 @@
         ]
       },
       {
+        "subjectId": "reasoning",
         "subject": "बुद्धिमत्ता चाचणी",
         "topics": [
           {
+            "topicId": "reasoning-tarkik-kshamata",
             "topic": "तार्किक क्षमता",
             "points": [
               "रक्तसंबंध",

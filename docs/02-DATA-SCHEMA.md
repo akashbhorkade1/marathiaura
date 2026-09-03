@@ -130,27 +130,70 @@
 
 **Power of this structure:** एकाच `items[]` मधून **Article + One-liner sheet + Quiz + Mock Test + Question Bank** — पाचही outputs generate करता येतात. म्हणून `question/answer/explanation` बंडल करणे आवश्यक होते.
 
-## 4. Exam Hub Schema (`data/exams/*.json`) आणि Question Schema (`data/questions/*.json`)
+## 4. Exam Hub & Question Model (`data/exams/`, `data/questions/`, `data/mock-tests/`)
 
-Exam hub = base fields (id, title/slug/path, category, status, lastUpdatedAt) + `examNameMr`, `conductingBody`, `officialUrl`, `eligibility`, `pattern{stages,papers[]}`, `syllabus{subjects[]}`.
+Exam hub record (base + `examNameMr`, `description`, `conductingBody`, `officialUrl`, `eligibility`, `pattern{stages,papers[]}`, `syllabusRef`, `sources[]`). Exam हे **hub** आहे — संपूर्ण content duplicate नाही; तो related records कडे links करतो.
 
-Question record:
+### 4b. Question Bank Record (`data/questions/<exam>.json`)
+
+एका exam चा संपूर्ण question bank — सर्व mock tests यातून reference करतात:
 
 ```jsonc
 {
-  "testId": "…", "exam": "…", "title": "…", "titleMr": "…",
-  "slug": "police-bharti-mock-01", "path": "/mock-test/police-bharti-mock-01/",
-  "durationMinutes": n, "status": "published",
-  "questions": [{
-    "qid": "…", "question": "…",
-    "options": { "A": "…", "B": "…", "C": "…", "D": "…" },
-    "correctAnswer": "A|B|C|D",
-    "explanation": "required — नसल्यास generator प्रश्न घेणार नाही",
-    "subject": "…", "topic": "…", "difficulty": "easy|medium|hard",
-    "year": n|null, "source": "string | null"
-  }]
+  "exam": "police-bharti | mpsc-rajyaseva …",
+  "questions": [
+    {
+      "id": "police-bharti-q001",
+      "question": "…",
+      "options": [ { "id": "a", "text": "…" }, { "id": "b", "text": "…" } ],
+      "correctAnswer": "b",            // string; one of options[].id (case-insensitive)
+      "explanation": "…",              // required — नसल्यास generator प्रश्न घेणार नाही
+      "subject": "…", "subjectId": "…",
+      "topic": "…", "topicId": "…",    // stable topicId, संबंधित syllabus topic शी match हवा
+      "difficulty": "easy|medium|hard",
+      "exam": "…", "year": null, "source": "… | null", "tags": ["…"]
+    }
+  ]
 }
 ```
+
+**नियम:** structured `options[]` (optionA/optionB hardcode नाही). Question **एकदाच** bank मध्ये — test मध्ये कधीच copy नाही. `source` legitimate null असू शकतो (invent नाही).
+
+### 4c. Mock Test Record (`data/mock-tests/<id>.json`)
+
+```jsonc
+{
+  "id": "police-bharti-mock-01",
+  "type": "mock-test",
+  "title": "…", "titleMr": "…",
+  "slug": "mock-test/police-bharti-mock-01",
+  "path": "/mock-test/police-bharti-mock-01/",
+  "category": "…", "exam": "…",
+  "durationMinutes": 10,
+  "status": "published",
+  "fixture": true,
+  "lastUpdatedAt": "…",
+  "questionIds": [ "police-bharti-q001", "…" ]   // bank references — full questions इथे नको
+}
+```
+
+**एक question → अनेक tests** valid reuse आहे (random/subject/previous-year tests साठी); duplicate question object test मध्ये कधीच नको.
+
+## 11. Relationship Rules (definitive)
+
+```
+Exam ⇄ Syllabus            exam.syllabusRef → syllabus.path (तो record अस्तित्वात असेल तरच link)
+Exam ⇄ Mock Test           mock-test.exam = exam.id  (generator फक्त existing tests links दाखवतो)
+Exam ⇄ Recruitment         recruitment.exam = exam.id
+Syllabus ⇄ Subject         syllabus.subjects[].subjectId (stable)
+Subject ⇄ Topic            syllabus.topics[].topicId (stable, unique — whole syllabus objectives)
+Topic ⇄ Question           question.topicId → syllabus topicId (संबंधित exam साठी)
+Question ⇄ Mock Test       mock-test.questionIds[] → question.id
+```
+
+- Topic identifiers reusable (syllabus, question bank, mock tests, analytics, future recommendations)
+- Generator + validator (validate.mjs) दोन्ही ही integrity enforce करतात
+- Exam hub, syllabus page, mock test listing सर्व फक्त **existing related record** असतानाच फक्त link दाखवतात
 
 ## 5. Source Schema (`sources[]`) — provenance tracking
 

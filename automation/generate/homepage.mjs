@@ -19,7 +19,7 @@ const examLinks = exams.map(e =>
   `<a class="post-card" href="${esc(pathOf(e))}"><div><span class="badge-cat">${esc(e.conductingBody)}</span></div><div class="title">${esc(e.examNameMr)}</div><div class="meta">${esc(e.examName)} · अभ्यासक्रम · Exam Pattern</div></a>`).join('\n');
 
 const testLinks = tests.map(t =>
-  `<a class="post-card" href="${esc(pathOf(t))}"><div><span class="badge-cat">Mock Test</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${t.questions.length} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n');
+  `<a class="post-card" href="${esc(pathOf(t))}"><div><span class="badge-cat">Mock Test</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${t.questionIds ? t.questionIds.length : 0} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n');
 
 const body = `
 <section class="hero">

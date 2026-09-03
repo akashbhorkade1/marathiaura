@@ -1,0 +1,24 @@
+{
+  "id": "police-bharti-mock-01",
+  "type": "mock-test",
+  "title": "Police Bharti Mock Test 01 — Maharashtra GK",
+  "titleMr": "पोलीस भरती मॉक टेस्ट 01 — महाराष्ट्र सामान्य ज्ञान",
+  "slug": "mock-test/police-bharti-mock-01",
+  "path": "/mock-test/police-bharti-mock-01/",
+  "category": "police-bharti",
+  "exam": "police-bharti",
+  "durationMinutes": 5,
+  "status": "published",
+  "fixture": true,
+  "lastUpdatedAt": "2026-09-03T15:00:00+05:30",
+  "questionIds": [
+    "police-bharti-q001",
+    "police-bharti-q002",
+    "police-bharti-q003",
+    "police-bharti-q004",
+    "police-bharti-q005",
+    "police-bharti-q006",
+    "police-bharti-q007",
+    "police-bharti-q008"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "syllabus-mpsc-rajyaseva",
+  "type": "syllabus",
+  "title": "MPSC Rajyaseva Syllabus 2026: अभ्यासक्रम, Exam Pattern आणि Subject-wise Topics",
+  "slug": "syllabus-mpsc-rajyaseva",
+  "path": "/syllabus/mpsc-rajyaseva/",
+  "category": "syllabus",
+  "exam": "mpsc-rajyaseva",
+  "syllabus": {
+    "examPattern": {
+      "stages": [
+        "पूर्वपरीक्षा (Prelims)",
+        "मुख्य परीक्षा (Mains)",
+        "मुलाखत (Interview)"
+      ],
+      "papers": [
+        {
+          "name": "पूर्वपरीक्षा Paper 1 — सामान्य अध्ययन",
+          "questions": 100,
+          "marks": 200,
+          "duration": "2 तास",
+          "negativeMarking": "चुकीच्या उत्तरासाठी 1/4 (अधिकृत नियमावली पहा)"
+        }
+      ]
+    },
+    "subjects": [
+      {
+        "subjectId": "general-studies",
+        "subject": "सामान्य अध्ययन",
+        "topics": [
+          {
+            "topicId": "general-studies-rajyavyavastha",
+            "topic": "भारतीय राज्यव्यवस्था",
+            "points": [
+              "संविधानाची ऐतिहासिक उत्क्रांती",
+              "मूलभूत हक्क व तत्त्वे",
+              "केंद्र व राज्य शासन",
+              "न्यायपालिका",
+              "पंचायत राज"
+            ]
+          },
+          {
+            "topicId": "general-studies-itihas",
+            "topic": "इतिहास",
+            "points": [
+              "प्राचीन व मध्ययुगीन भारत",
+              "आधुनिक भारत",
+              "महाराष्ट्राचा इतिहास",
+              "स्वातंत्र्य चळवळ"
+            ]
+          },
+          {
+            "topicId": "general-studies-bhugol",
+            "topic": "भूगोल",
+            "points": [
+              "भारताचा भूगोल",
+              "महाराष्ट्राचा भूगोल",
+              "जागतिक भूगोल मूलभूत"
+            ]
+          },
+          {
+            "topicId": "general-studies-chalu-ghadamodi",
+            "topic": "चालू घडामोडी",
+            "points": [
+              "राष्ट्रीय",
+              "आंतरराष्ट्रीय",
+              "महाराष्ट्र"
+            ]
+          }
+        ]
+      },
+      {
+        "subjectId": "marathi",
+        "subject": "मराठी",
+        "topics": [
+          {
+            "topicId": "marathi-vyakaran",
+            "topic": "व्याकरण",
+            "points": [
+              "व्याकरण घटक",
+              "वाक्यशुद्धी",
+              "शब्दसिद्धी"
+            ]
+          },
+          {
+            "topicId": "marathi-sankshepikaran",
+            "topic": "संक्षेपीकरण",
+            "points": [
+              "गद्य संक्षेपण",
+              "मुद्दे काढणे"
+            ]
+          },
+          {
+            "topicId": "marathi-anuvad",
+            "topic": "अनुवाद",
+            "points": [
+              "इंग्रजी → मराठी",
+              "मराठी → इंग्रजी"
+            ]
+          }
+        ]
+      }
+    ],
+    "preparationTips": [
+      "MPSC अधिकृत संकेतस्थळावरील अभ्यासक्रम जाहिरातीत प्रसिद्ध होतो — तोच primary माना",
+      "राज्यव्यवस्था व चालू घडामोडी यांना दैनंदिन वेळ ठेवा",
+      "महाराष्ट्र-केंद्रित अभ्यास (इतिहास, भूगोल, अर्थशास्त्र) वेगळ्या notes मध्ये करा",
+      "मागील वर्षांच्या प्रश्नपत्रिकांचे विश्लेषण करा — topic-wise weight समजतो",
+      "Mains साठी answer-writing सराव लवकर सुरू करा"
+    ],
+    "officialSyllabusUrl": null,
+    "note": "वरील स्वरूप सामान्य मार्गदर्शनासाठी आहे. अचूक व अंतिम अभ्यासक्रम MPSC च्या अधिकृत जाहिरातीत/संकेतस्थळावर प्रसिद्ध होतो."
+  },
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "MPSC राज्यसेवा अभ्यासक्रम — सामान्य अध्ययन व मराठीचे subject-wise topics, पूर्वपरीक्षा exam pattern, तयारीचे टिप्स आणि संबंधित अभ्यास साधने.",
+    "metaDescription": "MPSC Rajyaseva Syllabus 2026 मराठी: सामान्य अध्ययन व मराठीचे topic-wise अभ्यासक्रम, exam pattern, तयारीचे टिप्स.",
+    "sections": [],
+    "faqs": [
+      {
+        "q": "MPSC राज्यसेवा पूर्वपरीक्षेत किती प्रश्न असतात?",
+        "a": "पूर्वपरीक्षा Paper 1 मध्ये 100 प्रश्न, एकूण 200 गुण, 2 तासांचा कालावधी असतो. अचूक pattern अधिकृत जाहिरातीत नमूद होतो."
+      },
+      {
+        "q": "MPSC अभ्यासक्रमात महाराष्ट्राला किती महत्व आहे?",
+        "a": "इतिहास, भूगोल, अर्थशास्त्र व चालू घडामोडी यांमध्ये महाराष्ट्र-विशिष्ट मुद्द्यांना महत्वाचे स्थान असते."
+      },
+      {
+        "q": "मुख्य परीक्षेचे स्वरूप काय आहे?",
+        "a": "मुख्य परीक्षा गुणोत्तर-आधारित असते; अचूक पेपर रचना अधिकृत अभ्यासक्रमात/जाहिरातीत नमूद होते."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mpsc.gov.in",
+      "name": "mpsc.gov.in",
+      "priority": 1,
+      "role": "syllabus",
+      "verifiedAt": null
+    }
+  ],
+  "status": "published",
+  "confidence": 88,
+  "fixture": true,
+  "publishedAt": "2026-09-03T14:00:00+05:30",
+  "lastUpdatedAt": "2026-09-03T14:00:00+05:30",
+  "contentHash": "702da86fdf0679985316d097115c331b22f34436c483fd55cbfe46cbf28a8f39",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "MPSC Syllabus 2026",
+      "MPSC राज्यसेवा अभ्यासक्रम",
+      "MPSC Exam Pattern",
+      "राज्यसेवा पूर्वपरीक्षा"
+    ],
+    "ogImage": "/og-images/syllabus-mpsc-rajyaseva.svg",
+    "index": true
+  }
+}

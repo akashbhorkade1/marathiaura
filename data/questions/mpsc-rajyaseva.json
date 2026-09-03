@@ -1,0 +1,131 @@
+{
+  "exam": "mpsc-rajyaseva",
+  "questions": [
+    {
+      "id": "mpsc-rajyaseva-q001",
+      "question": "Rajyabhasha ही भारतीय राज्यघटनेच्या कोणत्या अनुच्छेदांतर्गत मराठीला महाराष्ट्राची राज्यभाषा म्हणून मान्यता दिली गेली आहे?",
+      "options": [
+        { "id": "a", "text": "अनुच्छेद 345" },
+        { "id": "b", "text": "अनुच्छेद 343" },
+        { "id": "c", "text": "अनुच्छेद 348" },
+        { "id": "d", "text": "अनुच्छेद 351" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "अनुच्छेद 343 राज्यभाषेशी संबंधित; अनुच्छेद 345 राज्याला स्वत:ची अधिकृत भाषा ठरवण्याची तरतूद करते. Rajyabhasha म्हणून मराठी ही महाराष्ट्र शासनाची अधिकृत भाषा असल्याची मान्यता संविधानाच्या भाग-17 मधून येते.",
+      "subject": "भारतीय राज्यव्यवस्था",
+      "subjectId": "general-studies",
+      "topic": "Rajyabhasha",
+      "topicId": "general-studies-rajyavyavastha",
+      "difficulty": "medium",
+      "exam": "mpsc-rajyaseva",
+      "year": null,
+      "source": "भारतीय राज्यघटना (अधिकृत)",
+      "tags": ["polity", "rajyabhasha"]
+    },
+    {
+      "id": "mpsc-rajyaseva-q002",
+      "question": "महाराष्ट्र लोकसेवा आयोग ही कोणत्या अनुच्छेदांतर्गत स्थापन झालेली घटनात्मक संस्था आहे?",
+      "options": [
+        { "id": "a", "text": "अनुच्छेद 315" },
+        { "id": "b", "text": "अनुच्छेद 312" },
+        { "id": "c", "text": "अनुच्छेद 320" },
+        { "id": "d", "text": "अनुच्छेद 324" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "अनुच्छेद 315 नुसार राज्य लोकसेवा आयोगांची स्थापना होते. MPSC हे महाराष्ट्र राज्याचे घटनात्मक लोकसेवा आयोग आहे.",
+      "subject": "भारतीय राज्यव्यवस्था",
+      "subjectId": "general-studies",
+      "topic": "लोकसेवा आयोग",
+      "topicId": "general-studies-rajyavyavastha",
+      "difficulty": "medium",
+      "exam": "mpsc-rajyaseva",
+      "year": null,
+      "source": "भारतीय राज्यघटना (अधिकृत)",
+      "tags": ["polity", "commission"]
+    },
+    {
+      "id": "mpsc-rajyaseva-q003",
+      "question": "राज्यपाल याचा कार्यकाळ सामान्यतः किती वर्षांचा असतो?",
+      "options": [
+        { "id": "a", "text": "3 वर्षे" },
+        { "id": "b", "text": "5 वर्षे" },
+        { "id": "c", "text": "6 वर्षे" },
+        { "id": "d", "text": "2 वर्षे" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "राज्यपालाचा सामान्य कार्यकाळ 5 वर्षांचा असतो (अनुच्छेद 156). राष्ट्रपतींच्या मर्जीपर्यंत तो पदावर राहू शकतो.",
+      "subject": "भारतीय राज्यव्यवस्था",
+      "subjectId": "general-studies",
+      "topic": "राज्यपाल",
+      "topicId": "general-studies-rajyavyavastha",
+      "difficulty": "easy",
+      "exam": "mpsc-rajyaseva",
+      "year": null,
+      "source": "भारतीय राज्यघटना (अधिकृत)",
+      "tags": ["polity", "governor"]
+    },
+    {
+      "id": "mpsc-rajyaseva-q004",
+      "question": "पंचायत राज संस्थेला घटनात्मक दर्जा कोणत्या घटनादुरुस्तीने मिळाला?",
+      "options": [
+        { "id": "a", "text": "73 वी घटनादुरुस्ती" },
+        { "id": "b", "text": "74 वी घटनादुरुस्ती" },
+        { "id": "c", "text": "44 वी घटनादुरुस्ती" },
+        { "id": "d", "text": "42 वी घटनादुरुस्ती" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "73 व्या घटनादुरुस्तीने (1992) पंचायत राज व्यवस्थेला घटनात्मक दर्जा दिला गेला. 74 वी शहरी स्थानिक स्वराज्याशी (नगरपालिका) संबंधित.",
+      "subject": "भारतीय राज्यव्यवस्था",
+      "subjectId": "general-studies",
+      "topic": "पंचायत राज",
+      "topicId": "general-studies-rajyavyavastha",
+      "difficulty": "medium",
+      "exam": "mpsc-rajyaseva",
+      "year": 1992,
+      "source": "भारतीय राज्यघटना (अधिकृत)",
+      "tags": ["polity", "panchayat"]
+    },
+    {
+      "id": "mpsc-rajyaseva-q005",
+      "question": "मुख्यमंत्री याची नियुक्ती कोण करतो?",
+      "options": [
+        { "id": "a", "text": "राष्ट्रपती" },
+        { "id": "b", "text": "राज्यपाल" },
+        { "id": "c", "text": "सरन्यायाधीश" },
+        { "id": "d", "text": "विधीमंडळ" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "अनुच्छेद 164 नुसार मुख्यमंत्र्याची नियुक्ती राज्यपाल करतो.",
+      "subject": "भारतीय राज्यव्यवस्था",
+      "subjectId": "general-studies",
+      "topic": "मुख्यमंत्री",
+      "topicId": "general-studies-rajyavyavastha",
+      "difficulty": "easy",
+      "exam": "mpsc-rajyaseva",
+      "year": null,
+      "source": "भारतीय राज्यघटना (अधिकृत)",
+      "tags": ["polity", "cm"]
+    },
+    {
+      "id": "mpsc-rajyaseva-q006",
+      "question": "महाराष्ट्रातील विधानपरिषदेचा (Legislative Council) सध्याचा जास्तीत जास्त सदस्यसंख्या किती आहे?",
+      "options": [
+        { "id": "a", "text": "68" },
+        { "id": "b", "text": "78" },
+        { "id": "c", "text": "88" },
+        { "id": "d", "text": "98" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "महाराष्ट्र विधानपरिषदेची प्रस्तावित जास्तीत जास्त सदस्यसंख्या 78 आहे.",
+      "subject": "भारतीय राज्यव्यवस्था",
+      "subjectId": "general-studies",
+      "topic": "विधानपरिषद",
+      "topicId": "general-studies-rajyavyavastha",
+      "difficulty": "medium",
+      "exam": "mpsc-rajyaseva",
+      "year": null,
+      "source": "महाराष्ट्र विधानमंडळ अधिकृत",
+      "tags": ["polity", "legislature"]
+    }
+  ]
+}

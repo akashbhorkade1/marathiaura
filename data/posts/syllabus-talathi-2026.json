@@ -25,9 +25,11 @@
     },
     "subjects": [
       {
+        "subjectId": "marathi",
         "subject": "मराठी",
         "topics": [
           {
+            "topicId": "marathi-vyakaran",
             "topic": "व्याकरण",
             "points": [
               "व्याकरण घटक",
@@ -37,6 +39,7 @@
             ]
           },
           {
+            "topicId": "marathi-utara-aakalan",
             "topic": "उतारा आकलन",
             "points": [
               "मुख्य कल्पना",
@@ -46,9 +49,11 @@
         ]
       },
       {
+        "subjectId": "english",
         "subject": "इंग्रजी",
         "topics": [
           {
+            "topicId": "english-grammar",
             "topic": "Grammar",
             "points": [
               "Tenses",
@@ -58,6 +63,7 @@
             ]
           },
           {
+            "topicId": "english-vocabulary",
             "topic": "Vocabulary",
             "points": [
               "Synonyms & Antonyms",
@@ -68,9 +74,11 @@
         ]
       },
       {
+        "subjectId": "general-studies",
         "subject": "सामान्य अध्ययन",
         "topics": [
           {
+            "topicId": "general-studies-maharashtra",
             "topic": "महाराष्ट्र",
             "points": [
               "इतिहास",
@@ -81,6 +89,7 @@
             ]
           },
           {
+            "topicId": "general-studies-bharat-va-jag",
             "topic": "भारत व जग",
             "points": [
               "राज्यव्यवस्था",
@@ -91,9 +100,11 @@
         ]
       },
       {
+        "subjectId": "mathematics-reasoning",
         "subject": "बुद्धिमत्ता चाचणी व गणित",
         "topics": [
           {
+            "topicId": "mathematics-reasoning-ganit",
             "topic": "गणित",
             "points": [
               "टक्केवारी",
@@ -104,6 +115,7 @@
             ]
           },
           {
+            "topicId": "mathematics-reasoning-buddhimatta",
             "topic": "बुद्धिमत्ता",
             "points": [
               "श्रेणी",

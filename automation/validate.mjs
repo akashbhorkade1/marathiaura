@@ -78,4 +78,69 @@ for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
   }
   fs.writeFileSync(fp, JSON.stringify(rec, null, 2) + '\n', 'utf8');
 }
-console.log(`validate.mjs: ${ok} clean, ${flagged} flagged, ${hashChanged} content-drift detected`);
+
+// ===== Question Bank + Mock Test integrity (Step 2) =====
+const bankDir = path.join(root, 'data', 'questions');
+const testDir = path.join(root, 'data', 'mock-tests');
+const examsDir = path.join(root, 'data', 'exams');
+
+// Collect topicIds (exam → topicId set)
+const topicByExam = {};
+for (const f of fs.readdirSync(dir).filter(f => f.startsWith('syllabus-'))) {
+  const rec = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+  const topics = new Set();
+  for (const sub of (rec.syllabus?.subjects || [])) for (const t of (sub.topics || [])) if (t.topicId) topics.add(t.topicId);
+  topicByExam[rec.exam] = topics;
+}
+const examIds = new Set(fs.readdirSync(examsDir).filter(f => f.endsWith('.json')).map(f => JSON.parse(fs.readFileSync(path.join(examsDir, f), 'utf8')).id));
+
+const qids = new Set();
+const qById = new Map();
+let qBank = 0, qErr = 0, mTest = 0;
+
+for (const f of fs.readdirSync(bankDir).filter(f => f.endsWith('.json'))) {
+  const b = JSON.parse(fs.readFileSync(path.join(bankDir, f), 'utf8'));
+  const topics = topicByExam[b.exam] || new Set();
+  if (b.exam && !examIds.has(b.exam)) { console.log(`  [QBANK] ${f}: exam '${b.exam}' not in data/exams`); qErr++; }
+  for (const q of (b.questions || [])) {
+    qBank++;
+    const qIssues = [];
+    const flat = JSON.stringify(q);
+    for (const g of GARBAGE) if (flat.includes(g)) qIssues.push(`garbage: ${g}`);
+    if (!q.id) qIssues.push('missing id');
+    else if (qids.has(q.id)) qIssues.push(`duplicate id ${q.id}`);
+    if (q.id) qids.add(q.id);
+    if (!q.question || q.question.length < 10) qIssues.push('missing/too-short question');
+    if (!Array.isArray(q.options) || q.options.length < 2) qIssues.push('options must be array (>=2)');
+    else {
+      const ids = q.options.map(o => o.id);
+      if (new Set(ids).size !== ids.length) qIssues.push('duplicate option ids');
+      if (!ids.includes(q.correctAnswer)) qIssues.push(`correctAnswer '${q.correctAnswer}' not in options`);
+    }
+    if (!q.explanation) qIssues.push('missing explanation');
+    if (!q.subjectId) qIssues.push('missing subjectId');
+    if (!q.topicId) qIssues.push('missing topicId');
+    else if (topics.size && !topics.has(q.topicId)) qIssues.push(`topicId '${q.topicId}' not in syllabus (${b.exam})`);
+    if (q.difficulty && !['easy', 'medium', 'hard'].includes(q.difficulty)) qIssues.push(`difficulty '${q.difficulty}' invalid`);
+    // (no-op placeholder removed)
+
+    if (qIssues.length) { qErr++; console.log(`  [QBANK] ${f} ${q.id || '(no id)'}: ${qIssues.join('; ')}`); }
+    else qById.set(q.id, q);
+  }
+}
+
+if (fs.existsSync(testDir)) {
+for (const f of fs.readdirSync(testDir).filter(f => f.endsWith('.json'))) {
+  mTest++;
+  const t = JSON.parse(fs.readFileSync(path.join(testDir, f), 'utf8'));
+  const tIssues = [];
+  if (!t.questionIds || !t.questionIds.length) tIssues.push('missing questionIds');
+  else {
+    for (const id of t.questionIds) if (!qById.has(id)) tIssues.push(`unresolved questionId '${id}'`);
+  }
+  if (t.exam && !examIds.has(t.exam)) tIssues.push(`exam '${t.exam}' not in data/exams`);
+  if (tIssues.length) { qErr++; console.log(`  [MTEST] ${f}: ${tIssues.join('; ')}`); }
+}
+}
+
+console.log(`validate.mjs: ${ok} posts clean · ${flagged} posts flagged · ${hashChanged} drift · bank ${qBank} (${qErr} errors) · mock-tests ${mTest}`);

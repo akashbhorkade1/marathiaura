@@ -1,0 +1,22 @@
+{
+  "id": "mpsc-rajyaseva-mock-01",
+  "type": "mock-test",
+  "title": "MPSC Rajyaseva Mock Test 01 — राज्यव्यवस्था",
+  "titleMr": "MPSC राज्यसेवा मॉक टेस्ट 01 — भारतीय राज्यव्यवस्था",
+  "slug": "mock-test/mpsc-rajyaseva-mock-01",
+  "path": "/mock-test/mpsc-rajyaseva-mock-01/",
+  "category": "mpsc",
+  "exam": "mpsc-rajyaseva",
+  "durationMinutes": 5,
+  "status": "published",
+  "fixture": true,
+  "lastUpdatedAt": "2026-09-03T15:10:00+05:30",
+  "questionIds": [
+    "mpsc-rajyaseva-q001",
+    "mpsc-rajyaseva-q002",
+    "mpsc-rajyaseva-q003",
+    "mpsc-rajyaseva-q004",
+    "mpsc-rajyaseva-q005",
+    "mpsc-rajyaseva-q006"
+  ]
+}

@@ -8,19 +8,17 @@
   "officialUrl": "https://mpsc.gov.in",
   "conductingBody": "महाराष्ट्र लोकसेवा आयोग (MPSC)",
   "eligibility": { "education": "पदवीधर (कोणताही शाखा)", "ageLimit": { "min": 19, "max": 38, "note": "आरक्षित वर्गांना नियमानुसार सूट" } },
-  "syllabusRef": null,
+  "description": "महाराष्ट्र लोकसेवा आयोगाकडून घेतली जाणारी राज्यसेवा संयुक्त परीक्षा. पूर्वपरीक्षा, मुख्य परीक्षा व मुलाखत अशा टप्प्यांतून होते.",
+  "syllabusRef": "/syllabus/mpsc-rajyaseva/",
   "pattern": {
     "stages": ["पूर्वपरीक्षा (Prelims)", "मुख्य परीक्षा (Mains)", "मुलाखत (Interview)"],
     "papers": [
       { "name": "पूर्वपरीक्षा Paper 1 — सामान्य अध्ययन", "questions": 100, "marks": 200, "duration": "2 तास", "negativeMarking": "चुकीच्या उत्तरासाठी 1/4 (अधिकृत नियमावली पहा)" }
     ]
   },
-  "syllabus": {
-    "subjects": [
-      { "subject": "सामान्य अध्ययन", "topics": ["चालू घडामोडी", "इतिहास", "भूगोल", "भारतीय राज्यव्यवस्था", "अर्थशास्त्र", "विज्ञान व तंत्रज्ञान"] },
-      { "subject": "मराठी व इंग्रजी", "topics": ["व्याकरण", "संक्षेपीकरण", "अनुवाद"] }
-    ]
-  },
+  "sources": [
+    { "url": "https://mpsc.gov.in", "name": "mpsc.gov.in", "priority": 1, "role": "reference", "verifiedAt": null }
+  ],
   "status": "published",
   "lastUpdatedAt": "2026-09-03T00:00:00+05:30"
 }

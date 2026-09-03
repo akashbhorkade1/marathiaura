@@ -1,0 +1,173 @@
+{
+  "exam": "police-bharti",
+  "questions": [
+    {
+      "id": "police-bharti-q001",
+      "question": "महाराष्ट्र राज्याचे राज्यप्राणी (State Animal) कोणते आहे?",
+      "options": [
+        { "id": "a", "text": "वाघ" },
+        { "id": "b", "text": "शेकरू (भारतीय उडणारा कस्तूर)" },
+        { "id": "c", "text": "रानमग्गर" },
+        { "id": "d", "text": "सांबर" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "महाराष्ट्राचे राज्यप्राणी 'शेकरू' (Indian Giant Squirrel / Ratufa indica) आहे. हा प्रामुख्याने साह्याद्री परिसरातील दाट जंगलात आढळतो.",
+      "subject": "Maharashtra GK",
+      "subjectId": "general-knowledge",
+      "topic": "राज्य प्रतीके",
+      "topicId": "general-knowledge-maharashtra-gk",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती",
+      "tags": ["maharashtra-gk", "state-symbols"]
+    },
+    {
+      "id": "police-bharti-q002",
+      "question": "महाराष्ट्राचे राज्यपक्षी (State Bird) कोणता आहे?",
+      "options": [
+        { "id": "a", "text": "मोर" },
+        { "id": "b", "text": "हरोळ (पिवळट पायांचा हिरवा पारवा)" },
+        { "id": "c", "text": "कोकिळ" },
+        { "id": "d", "text": "सुगरण" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "महाराष्ट्राचा राज्यपक्षी 'हरोळ' (Yellow-footed Green Pigeon) आहे.",
+      "subject": "Maharashtra GK",
+      "subjectId": "general-knowledge",
+      "topic": "राज्य प्रतीके",
+      "topicId": "general-knowledge-maharashtra-gk",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती",
+      "tags": ["maharashtra-gk", "state-symbols"]
+    },
+    {
+      "id": "police-bharti-q003",
+      "question": "महाराष्ट्राचे राज्यवृक्ष (State Tree) कोणते आहे?",
+      "options": [
+        { "id": "a", "text": "वड" },
+        { "id": "b", "text": "पिंपळ" },
+        { "id": "c", "text": "आंबा" },
+        { "id": "d", "text": "निंब" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "महाराष्ट्राचे राज्यवृक्ष 'आंबा' (Mangifera indica) आहे.",
+      "subject": "Maharashtra GK",
+      "subjectId": "general-knowledge",
+      "topic": "राज्य प्रतीके",
+      "topicId": "general-knowledge-maharashtra-gk",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती",
+      "tags": ["maharashtra-gk", "state-symbols"]
+    },
+    {
+      "id": "police-bharti-q004",
+      "question": "महाराष्ट्र राज्याचे पहिले मुख्यमंत्री कोण होते?",
+      "options": [
+        { "id": "a", "text": "शंकरराव चव्हाण" },
+        { "id": "b", "text": "वसंतराव नाईक" },
+        { "id": "c", "text": "यशवंतराव चव्हाण" },
+        { "id": "d", "text": "पृथ्वीराज चव्हाण" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "महाराष्ट्र राज्याच्या स्थापनेनंतर (1 मे 1960) पहिले मुख्यमंत्री यशवंतराव चव्हाण होते.",
+      "subject": "Maharashtra GK",
+      "subjectId": "general-knowledge",
+      "topic": "इतिहास",
+      "topicId": "general-knowledge-maharashtra-gk",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत इतिहास",
+      "tags": ["maharashtra-gk", "history"]
+    },
+    {
+      "id": "police-bharti-q005",
+      "question": "महाराष्ट्र राज्याची स्थापना कोणत्या दिवशी झाली?",
+      "options": [
+        { "id": "a", "text": "1 मे 1960" },
+        { "id": "b", "text": "15 ऑगस्ट 1947" },
+        { "id": "c", "text": "26 जानेवारी 1950" },
+        { "id": "d", "text": "1 मे 1961" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "1 मे 1960 रोजी द्विभाषिक बॉम्बे राज्याचे विभाजन होऊन महाराष्ट्र राज्याची स्थापना झाली. हा दिवस 'महाराष्ट्र दिन' म्हणून साजरा केला जातो.",
+      "subject": "Maharashtra GK",
+      "subjectId": "general-knowledge",
+      "topic": "इतिहास",
+      "topicId": "general-knowledge-maharashtra-gk",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत इतिहास",
+      "tags": ["maharashtra-gk", "history"]
+    },
+    {
+      "id": "police-bharti-q006",
+      "question": "500 चे 20% किती?",
+      "options": [
+        { "id": "a", "text": "50" },
+        { "id": "b", "text": "100" },
+        { "id": "c", "text": "150" },
+        { "id": "d", "text": "200" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "500 × 20/100 = 100.",
+      "subject": "गणित",
+      "subjectId": "mathematics",
+      "topic": "अंकगणित",
+      "topicId": "mathematics-ankan-ganit",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["mathematics", "percentage"]
+    },
+    {
+      "id": "police-bharti-q007",
+      "question": "पुढील श्रेणी पूर्ण करा: 2, 4, 8, 16, ?",
+      "options": [
+        { "id": "a", "text": "24" },
+        { "id": "b", "text": "32" },
+        { "id": "c", "text": "48" },
+        { "id": "d", "text": "64" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "प्रत्येक पद मागील राशीच्या दुप्पट आहे. म्हणून 16 × 2 = 32.",
+      "subject": "बुद्धिमत्ता चाचणी",
+      "subjectId": "reasoning",
+      "topic": "तार्किक क्षमता",
+      "topicId": "reasoning-tarkik-kshamata",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["reasoning", "series"]
+    },
+    {
+      "id": "police-bharti-q008",
+      "question": "Maharashtra चे राज्यफूल (State Flower) कोणते?",
+      "options": [
+        { "id": "a", "text": "जरुल" },
+        { "id": "b", "text": "कमळ" },
+        { "id": "c", "text": "दुर्वा" },
+        { "id": "d", "text": "चाफा" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "महाराष्ट्राचे राज्यफूल 'जरुल' (Lagerstroemia speciosa) आहे.",
+      "subject": "Maharashtra GK",
+      "subjectId": "general-knowledge",
+      "topic": "राज्य प्रतीके",
+      "topicId": "general-knowledge-maharashtra-gk",
+      "difficulty": "medium",
+      "exam": "police-bharti",
+      "year": null,
+      "source": "महाराष्ट्र शासन अधिकृत माहिती",
+      "tags": ["maharashtra-gk", "state-symbols"]
+    }
+  ]
+}

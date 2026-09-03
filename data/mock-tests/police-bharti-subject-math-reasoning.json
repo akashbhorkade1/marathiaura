@@ -1,0 +1,18 @@
+{
+  "id": "police-bharti-subject-math-reasoning",
+  "type": "mock-test",
+  "title": "Police Bharti Mock Test — गणित व बुद्धिमत्ता",
+  "titleMr": "पोलीस भरती मॉक टेस्ट — गणित व बुद्धिमत्ता चाचणी",
+  "slug": "mock-test/police-bharti-subject-math-reasoning",
+  "path": "/mock-test/police-bharti-subject-math-reasoning/",
+  "category": "police-bharti",
+  "exam": "police-bharti",
+  "durationMinutes": 2,
+  "status": "published",
+  "fixture": true,
+  "lastUpdatedAt": "2026-09-03T15:05:00+05:30",
+  "questionIds": [
+    "police-bharti-q006",
+    "police-bharti-q007"
+  ]
+}

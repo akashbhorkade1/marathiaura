@@ -32,7 +32,8 @@ export const loadSite = () => readJson('data/site.json').site;
 export const loadCategories = () => readJson('data/categories.json');
 export const loadPosts = () => readJsonDir('data/posts');
 export const loadExams = () => readJsonDir('data/exams');
-export const loadTests = () => readJsonDir('data/questions').filter(t => t.status === 'published');
+export const loadTests = () => readJsonDir('data/mock-tests');
+export const loadQuestionBank = () => readJsonDir('data/questions').map(b => ({ exam: b.exam, questions: b.questions || [] }));
 export const loadPages = () => readJson('data/pages.json');
 
 // Published records only (status workflow enforcement)

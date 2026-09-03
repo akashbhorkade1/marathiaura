@@ -36,15 +36,22 @@
     html += '<div class="q-no">प्रश्न ' + (state.i + 1) + ' / ' + T.questions.length + ' · ' + esc(q.subject || '') + '</div>';
     html += '<div class="q-text">' + esc(q.question) + '</div>';
     ['A', 'B', 'C', 'D'].forEach(function (k) {
-      if (q.options[k] == null) return;
+      var text = null;
+      if (Array.isArray(q.options)) {
+        var found = q.options.filter(function (o) { return o.id === k.toLowerCase(); })[0];
+        if (found) text = found.text;
+      } else if (q.options && q.options[k] != null) {
+        text = q.options[k];
+      }
+      if (text == null) return;
       var checked = picked === k ? ' checked' : '';
       var cls = 'opt';
       if (state.submitted) {
-        if (k === q.correctAnswer) cls += ' correct';
+        if (k === String(q.correctAnswer).toUpperCase()) cls += ' correct';
         else if (picked === k) cls += ' wrong';
       }
       html += '<label class="' + cls + '"><input type="radio" name="q_' + esc(q.qid) + '" value="' + k + '"' +
-        (state.submitted ? ' disabled' : '') + checked + '> <strong>' + k + '.</strong> ' + esc(q.options[k]) + '</label>';
+        (state.submitted ? ' disabled' : '') + checked + '> <strong>' + k + '.</strong> ' + esc(text) + '</label>';
     });
     if (state.submitted) {
       html += '<div class="explanation"><strong>स्पष्टीकरण:</strong> ' + esc(q.explanation) +
@@ -74,7 +81,7 @@
     T.questions.forEach(function (q) {
       var a = state.answers[q.qid];
       if (!a) unattempted++;
-      else if (a === q.correctAnswer) correct++;
+      else if (a === String(q.correctAnswer).toUpperCase()) correct++;
       else wrong++;
     });
     var pct = total ? Math.round((correct / total) * 100) : 0;

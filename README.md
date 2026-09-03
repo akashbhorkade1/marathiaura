@@ -22,7 +22,7 @@ node automation/build.mjs     # full site → _site/
 
 ## Automation flow
 
-Official sources → **monitor** (RSS, duplicate detection) → **validate** (garbage/field/date/link checks) → confidence system (≥95% auto-publish · 80–95% review queue · <80% reject) → **build** → GitHub Pages.
+Official sources → **monitor** (RSS, duplicate detection) → **validate** (garbage/field/date/link checks) → confidence system (≥95% auto-publish · 85–94% review recommended · 70–84% manual review · <70% reject/hold) → **build** → GitHub Pages.
 
 Drafts (`status: ai-generated`) render होत नाहीत — human review नंतर `status: published` केल्यावरच site वर येतात.
 
