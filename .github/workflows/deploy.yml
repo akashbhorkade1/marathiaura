@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Run test suite
+        run: node --test automation/test/
       - name: Build site
         run: node automation/build.mjs
         env:

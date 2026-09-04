@@ -11,6 +11,16 @@
   "status": "published",
   "fixture": true,
   "lastUpdatedAt": "2026-09-03T15:10:00+05:30",
+  "description": "भारतीय राज्यव्यवस्था (Polity) विषयावरील सराव मॉक टेस्ट — संविधान, संस्था, राज्यपाल, मुख्यमंत्री, पंचायत राज.",
+  "instructions": [
+    "प्रत्येक प्रश्नाला एकच उत्तर निवडा.",
+    "उत्तर निवडल्यानंतर पुढील प्रश्नावर जा.",
+    "टायमर संपताच टेस्ट आपोआप सबमिट होईल."
+  ],
+  "testType": "subject-wise",
+  "difficulty": "medium",
+  "totalMarks": 6,
+  "marking": { "correct": 1, "wrong": 0, "unattempted": 0 },
   "questionIds": [
     "mpsc-rajyaseva-q001",
     "mpsc-rajyaseva-q002",

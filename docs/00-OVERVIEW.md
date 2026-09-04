@@ -12,6 +12,7 @@ Marathi-first स्पर्धा परीक्षा (Competitive Exam) pla
 | [02-DATA-SCHEMA.md](02-DATA-SCHEMA.md) | **Schema V2 (DEFINITIVE)** — common base, recruitment/CA/exam/question/source/update schemas |
 | [03-URL-STRUCTURE-AND-SITEMAP.md](03-URL-STRUCTURE-AND-SITEMAP.md) | URL rules, route map, sitemap strategy, robots, canonical policy |
 | [04-AUTOMATION-DESIGN.md](04-AUTOMATION-DESIGN.md) | Confidence policy, contentHash algorithm, feed verification, review workflow |
+| [05-MOCK-TEST-ENGINE.md](05-MOCK-TEST-ENGINE.md) | Pure test core contract — state model, exported API, scoring/accuracy math, timer injection, UI boundary |
 | [QUESTION-BANK-DESIGN.md](QUESTION-BANK-DESIGN.md) | Question lifecycle, stable topicIds, source/difficulty, reusability, duplicate prevention |
 
 ## तीन मुख्य Pillars
