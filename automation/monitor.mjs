@@ -56,7 +56,9 @@ for (const feed of (site.feeds || [])) {
   if (feed.type !== 'rss') { console.log(`  [SKIP] ${feed.name}: type '${feed.type}' supported later`); continue; }
   try {
     console.log(`Fetching: ${feed.name} → ${feed.url}`);
-    const res = await fetch(feed.url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': 'MarathiAuraBot/1.0' } });
+    // PIB सारखे सरकारी portals bot UA ला 403 देतात — browser-like UA आवश्यक (docs/04 §3)
+    const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
+    const res = await fetch(feed.url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': UA } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const xml = await res.text();
     const items = xml.split(/<item[\s>]/i).slice(1, 16);
@@ -66,6 +68,8 @@ for (const feed of (site.feeds || [])) {
       const link = xmlText(get('link'));
       const desc = xmlText(get('description')) || title;
       if (!title) continue;
+      // Optional feed-level filter: फक्त matching titles चेच drafts (general news sources साठी — review-queue flood टाळा)
+      if (Array.isArray(feed.keywords) && feed.keywords.length && !feed.keywords.some(k => title.toLowerCase().includes(String(k).toLowerCase()))) continue;
       if (existingTitles.has(normTitle(title)) || (link && existingLinks.has(link))) continue;
 
       const cat = detectCategory(title, feed.category);

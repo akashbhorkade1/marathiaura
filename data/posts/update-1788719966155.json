@@ -1,0 +1,74 @@
+{
+  "id": "update-1788719966155",
+  "type": "recruitment",
+  "title": "राष्ट्रीय सफाई कर्मचारी आयोग में नियुक्तियां",
+  "slug": "update-1788719966155",
+  "path": "/update-1788719966155/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "PIB Maharashtra (Press Information Bureau)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2307244",
+    "applyUrl": null,
+    "officialUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2307244"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "राष्ट्रीय सफाई कर्मचारी आयोग में नियुक्तियां",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "राष्ट्रीय सफाई कर्मचारी आयोग में नियुक्तियां"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2307244",
+      "name": "PIB Maharashtra (Press Information Bureau)",
+      "priority": 2,
+      "role": "notification",
+      "verifiedAt": "2026-09-06T18:39:26.155Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-06T18:39:26.155Z",
+  "contentHash": "87687497804e7bdda8b5cc94fe395a8cafcad63df268a70f3cf9a48de66401ba",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "राष्ट्रीय सफाई कर्मचारी आयोग में नियुक्तियां",
+      "नवीन भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/update-1788719966155.svg",
+    "index": false
+  }
+}

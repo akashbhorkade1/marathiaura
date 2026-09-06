@@ -14,8 +14,7 @@
       "youtube": "https://www.youtube.com/@MarathiAura-exam"
     },
     "feeds": [
-      { "name": "MPSC", "url": "https://mpsc.gov.in/rss", "type": "rss", "category": "mpsc", "priority": 1, "verified": false },
-      { "name": "Maharashtra Police", "url": "https://www.mahapolice.gov.in/rss", "type": "rss", "category": "police-bharti", "priority": 1, "verified": false }
+      { "name": "PIB Maharashtra (Press Information Bureau)", "url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3", "type": "rss", "category": "latest-bharti", "priority": 2, "verified": true, "keywords": ["भरती", "भरतीची", "bharti", "recruitment", "vacancy", "apply online", "constable", "सिपाही", "तलाठी", "ग्रामसेवक", "राज्यसेवा", "rajyaseva", "mpsc", "नियुक्ति", "नियुक्ती", "जाहिरात", "पद भरती"] }
     ]
   }
 }
