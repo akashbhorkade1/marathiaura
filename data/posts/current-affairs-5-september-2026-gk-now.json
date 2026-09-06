@@ -1,0 +1,83 @@
+{
+  "id": "current-affairs-5-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-06",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Current Affairs - 5 September 2026 - GK Now",
+  "slug": "current-affairs-5-september-2026-gk-now",
+  "path": "/current-affairs/5-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-5-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-5-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Today important Current Affairs 5 September 206, for preparation of UPSC, SSC, UPSSSC, Bank and other competitive exams. Compiled from official public sources. International UN votes to adopt new world map reflecting accurate size of Africa The UN General Assembly has voted to replace the traditiona",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Today important Current Affairs 5 September 206, for preparation of UPSC, SSC, UPSSSC, Bank and other competitive exams. Compiled from official public sources. International UN votes to adopt new world map reflecting accurate size of Africa The UN General Assembly has voted to replace the traditional world map with one that more accurately reflects the size of Africa on 5 September 2026. The “Corr"
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "Today important Current Affairs 5 September 206, for preparation of UPSC, SSC, UPSSSC, Bank and other competitive exams. Compiled from official public sources. International UN votes to adopt new world map reflecting accurate size of Africa The UN General Assembly has voted to replace the traditiona"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-5-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-06T19:21:27.450Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-06T19:21:27.450Z",
+  "contentHash": "084fe24a978e0d6601a20d982f0695590c77eacf75b707573a4859cc2eb4c1fd",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 5 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-5-september-2026-gk-now.svg",
+    "index": false
+  }
+}

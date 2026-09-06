@@ -56,7 +56,7 @@ contentHash = sha256(JSON.stringify(payload))             // no spaces (compact)
 2. Manual verification: URL fetch → content-type XML/RSS? → items parse होतात? → titles योग्य? → `verified: true` करावे
 3. `verified: false` feeds monitor **कधीच fetch करत नाही** (log मध्ये warning)
 4. Verified feed लागोपाठ 5 धावा fail झाल्यास monitor त्याला `verified: false` करू शकतो (future enhancement)
-5. HTML-diff sources (RSS नसलेले official pages) — `type: "html"`, `selector` config सह; Phase 2
+5. HTML-diff sources (RSS नसलेले official pages) — `type: "html"`, `anchorPattern` config सह — **implemented**; तसेच `type: "article-list"` (WordPress-सारख्या sites वरून article title + summary extract, source credit अनिवार्य). Secondary (बिगर-अधिकृत) sources = priority 3 — त्यांचे drafts नेहमी review-queue ला जातात, auto-publish कधीच नाही.
 
 ## 4. Review Workflow
 
@@ -68,7 +68,15 @@ monitor → draft (status: ai-generated, confidence: computed)
         → पुढील build मध्ये site वर
 ```
 
-Human approval चे साधन: `data/posts/<id>.json` edit करून commit (किंवा भविष्यात admin UI). Review queue entries जुन्या झाल्या की (14 दिवस) त्यांना `archived` flag — stale drafts कधीच live जाऊ नये.
+Human approval चे साधन: `automation/review.mjs` CLI:
+
+```
+node automation/review.mjs                → review-queue list (id, confidence, वय)
+node automation/review.mjs approve <id>  → status: published (confidence ≥ 85 आवश्यक) + data/posts/<id>.json अपडेट
+node automation/review.mjs reject <id>   → status: archived — generator कधीच render करणार नाही
+```
+
+Approve नंतर `node automation/build.mjs` चालवावेच (त्यानंतरच site वर render होते). Review queue entries जुन्या झाल्या की (14 दिवस) त्यांना `archived` flag — stale drafts कधीच live जाऊ नये.
 
 ## 5. Update Detection (change pipeline)
 

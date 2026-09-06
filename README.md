@@ -16,13 +16,19 @@ assets/       CSS + mock test engine (client-side)
 
 ```bash
 node automation/monitor.mjs   # sources monitor → drafts → review queue
+node automation/review.mjs    # review queue: list / approve <id> / reject <id>
 node automation/validate.mjs  # quality checks + confidence adjust
 node automation/build.mjs     # full site → _site/
 ```
 
 ## Automation flow
 
-Official sources → **monitor** (RSS, duplicate detection) → **validate** (garbage/field/date/link checks) → confidence system (≥95% auto-publish · 85–94% review recommended · 70–84% manual review · <70% reject/hold) → **build** → GitHub Pages.
+Official sources → **monitor** (RSS + HTML listing + article-list sources, duplicate detection) → **validate** (garbage/field/date/link checks) → **review queue** → human approval (`review.mjs approve <id>`) → **build** → GitHub Pages.
+
+Supported source types (`data/site.json` → `site.feeds[]`):
+- `rss` — RSS/Atom feed (उदा. PIB)
+- `html` — listing page anchors → जाहिरात/PDF links (उदा. mahapolice.gov.in) — `anchorPattern` + `excludePattern` config
+- `article-list` — WordPress-सारखी article listing → नवीन articles fetch → title/body extract (उदा. mahanaukari.com, mahabharti.in, gknow.in) — `linkPattern`, `maxFetch`, `keywords`, `excludePattern` config
 
 Drafts (`status: ai-generated`) render होत नाहीत — human review नंतर `status: published` केल्यावरच site वर येतात.
 
