@@ -29,3 +29,11 @@ if (fs.existsSync(srcAssets)) {
   fs.cpSync(srcAssets, path.join(OUT, 'assets'), { recursive: true });
   console.log('extras.mjs: assets/ copied');
 }
+
+// GitHub Pages ला custom domain कळण्यासाठी deploy artifact मध्ये CNAME असणे आवश्यक आहे.
+// Root मधील file copy केल्याने प्रत्येक fresh build नंतरही domain configuration टिकते.
+const srcCname = path.join(ROOT, 'CNAME');
+if (fs.existsSync(srcCname)) {
+  fs.copyFileSync(srcCname, path.join(OUT, 'CNAME'));
+  console.log('extras.mjs: CNAME copied');
+}
