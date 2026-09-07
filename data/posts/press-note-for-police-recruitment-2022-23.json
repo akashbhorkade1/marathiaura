@@ -1,0 +1,74 @@
+{
+  "id": "press-note-for-police-recruitment-2022-23",
+  "type": "recruitment",
+  "title": "PRESS NOTE FOR POLICE RECRUITMENT – 2022-23.",
+  "slug": "press-note-for-police-recruitment-2022-23",
+  "path": "/press-note-for-police-recruitment-2022-23/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/revised.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/revised.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "PRESS NOTE FOR POLICE RECRUITMENT – 2022-23.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "PRESS NOTE FOR POLICE RECRUITMENT – 2022-23."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/revised.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T19:14:29.109Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T19:14:29.109Z",
+  "contentHash": "b0b9d9e5e713ce34a02839dc663deaa67411f9b68b32297ccb5d20dd55618eb3",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "PRESS NOTE FOR POLICE RECRUITMENT – 2022-23.",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/press-note-for-police-recruitment-2022-23.svg",
+    "index": false
+  }
+}

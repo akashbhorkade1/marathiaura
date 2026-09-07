@@ -1,0 +1,74 @@
+{
+  "id": "instructions-regarding-the-resubmission-of-cancelled-applica",
+  "type": "recruitment",
+  "title": "INSTRUCTIONS REGARDING THE RESUBMISSION OF CANCELLED APPLICATIONS RECEIVED FOR THE SPECIAL SECURITY DEPARTMENT RECRUITMENT AS WELL AS THE NO OBJECTION CERTIFICATE -NOC-FROM THE RESPECTIVE UNIT HEADS",
+  "slug": "instructions-regarding-the-resubmission-of-cancelled-applica",
+  "path": "/instructions-regarding-the-resubmission-of-cancelled-applica/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/adobe-scan-24-jun-2025-(1).pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/adobe-scan-24-jun-2025-(1).pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "INSTRUCTIONS REGARDING THE RESUBMISSION OF CANCELLED APPLICATIONS RECEIVED FOR THE SPECIAL SECURITY DEPARTMENT RECRUITMENT AS WELL AS THE NO OBJECTION CERTIFICATE -NOC-FROM THE RESPECTIVE UNIT HEADS",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "INSTRUCTIONS REGARDING THE RESUBMISSION OF CANCELLED APPLICATIONS RECEIVED FOR THE SPECIAL SECURITY DEPARTMENT RECRUITMENT AS WELL AS THE NO OBJECTION CERTIFICATE -NOC-FROM THE RESPECTIVE UNIT HEADS"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/adobe-scan-24-jun-2025-(1).pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T19:14:29.109Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T19:14:29.109Z",
+  "contentHash": "4d95e4490e87d83130b723afe044f2f1ca36a1e571ceb7c4ed8db622513e4437",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "INSTRUCTIONS REGARDING THE RESUBMISSION OF CANCELLED APPLICATIONS RECEIVED FOR THE SPECIAL SECURITY DEPARTMENT RECRUITMENT AS WELL AS THE NO OBJECTION CERTIFICATE -NOC-FROM THE RESPECTIVE UNIT HEADS",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/instructions-regarding-the-resubmission-of-cancelled-applica.svg",
+    "index": false
+  }
+}

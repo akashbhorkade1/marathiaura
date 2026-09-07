@@ -1,0 +1,74 @@
+{
+  "id": "special-security-department-2025-recruitment-deadline-extens",
+  "type": "recruitment",
+  "title": "Special Security Department 2025 Recruitment Deadline Extension",
+  "slug": "special-security-department-2025-recruitment-deadline-extens",
+  "path": "/special-security-department-2025-recruitment-deadline-extens/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/adobe-scan-jul-18,-2025-(1).pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/adobe-scan-jul-18,-2025-(1).pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Special Security Department 2025 Recruitment Deadline Extension",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "Special Security Department 2025 Recruitment Deadline Extension"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/adobe-scan-jul-18,-2025-(1).pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T19:14:29.108Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T19:14:29.108Z",
+  "contentHash": "e248069f7dc1a9d5a147dd256a476b6ca6b19e92bd2248b7c2b92da3085a57d3",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Special Security Department 2025 Recruitment Deadline Extension",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/special-security-department-2025-recruitment-deadline-extens.svg",
+    "index": false
+  }
+}

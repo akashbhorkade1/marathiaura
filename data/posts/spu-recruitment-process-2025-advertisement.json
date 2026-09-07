@@ -1,0 +1,74 @@
+{
+  "id": "spu-recruitment-process-2025-advertisement",
+  "type": "recruitment",
+  "title": "SPU RECRUITMENT PROCESS -2025 ADVERTISEMENT",
+  "slug": "spu-recruitment-process-2025-advertisement",
+  "path": "/spu-recruitment-process-2025-advertisement/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/recruitment.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/recruitment.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "SPU RECRUITMENT PROCESS -2025 ADVERTISEMENT",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "SPU RECRUITMENT PROCESS -2025 ADVERTISEMENT"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/recruitment.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T19:14:29.109Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T19:14:29.109Z",
+  "contentHash": "c1c4ee941d2de5eb20b1ff1b8518be6fae7c453f5c5f1e3f1a153ef906e3143f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "SPU RECRUITMENT PROCESS -2025 ADVERTISEMENT",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/spu-recruitment-process-2025-advertisement.svg",
+    "index": false
+  }
+}

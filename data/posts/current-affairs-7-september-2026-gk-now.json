@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-7-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-07",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी – ७ सप्टेंबर २०२६",
+  "slug": "current-affairs-7-september-2026-gk-now",
+  "path": "/current-affairs/7-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-7-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-7-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "UPSC, SSC, UPSSSC, बँक, रेल्वे, पोलीस आणि इतर स्पर्धा परीक्षांसाठी ७ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. यात बॅडमिंटनमधील सात्विकसाईराज-चिराग यांच्या चीन मास्टर्स विजेतेपदाचा समावेश आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "UPSC, SSC, UPSSSC, बँक, रेल्वे, पोलीस आणि इतर स्पर्धा परीक्षांसाठी ७ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी अधिकृत सार्वजनिक स्त्रोतांकडून संकलित केल्या आहेत. क्रीडा क्षेत्रात, भारतीय जोडी सात्विकसाईराज रँकीरेड्डी आणि चिराग शेट्टी यांनी ६ सप्टेंबर २०२६ रोजी शेन्झेन येथे झालेल्या चायना मास्टर्स बॅडमिंटन स्पर्धेत पुरुष दुहेरीचे विजेतेपद पटकावले. भारतीय जोडीने चीनच्या हे..."
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "७ सप्टेंबर २०२६ च्या चालू घडामोडींमध्ये क्रीडा क्षेत्रातील एक महत्त्वाची बातमी आहे. भारतीय बॅडमिंटन जोडी सात्विकसाईराज रँकीरेड्डी आणि चिराग शेट्टी यांनी पुरुष दुहेरीचे विजेतेपद पटकावले. हे त्यांचे पहिले चायना मास्टर्स विजेतेपद ठरले."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-7-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T19:14:34.453Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T19:15:36.709Z",
+  "contentHash": "b248ae957852020d373040649cff592c4202637ee902aad02dc93119a63898d4",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 7 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-7-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-07T19:15:36.709Z"
+}

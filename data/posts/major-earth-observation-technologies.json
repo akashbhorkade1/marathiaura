@@ -1,0 +1,85 @@
+{
+  "id": "major-earth-observation-technologies",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-07",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "प्रमुख पृथ्वी निरीक्षण तंत्रज्ञान",
+  "slug": "major-earth-observation-technologies",
+  "path": "/current-affairs/major-earth-observation-technologies/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/major-earth-observation-technologies/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/major-earth-observation-technologies/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "या लेखामध्ये प्रमुख पृथ्वी निरीक्षण तंत्रज्ञानाची माहिती दिली आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "या विभागात प्रमुख पृथ्वी निरीक्षण तंत्रज्ञानाचा थोडक्यात आढावा घेण्यात आला आहे."
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "या विभागात प्रमुख पृथ्वी निरीक्षण तंत्रज्ञानाबद्दल सविस्तर माहिती दिली आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/major-earth-observation-technologies/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T19:14:35.601Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T19:15:59.167Z",
+  "contentHash": "fae4ebfa9d50608585c31646a12809cdad1c1e9de6264c775b9439ec8670f0c4",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Major Earth Observation Technologies",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/major-earth-observation-technologies.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-07T19:15:59.167Z"
+}
