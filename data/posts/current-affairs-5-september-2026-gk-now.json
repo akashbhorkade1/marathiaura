@@ -5,7 +5,7 @@
   "date": "2026-09-06",
   "items": [],
   "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
-  "title": "Current Affairs - 5 September 2026 - GK Now",
+  "title": "चालू घडामोडी - ५ सप्टेंबर २०२६",
   "slug": "current-affairs-5-september-2026-gk-now",
   "path": "/current-affairs/5-september-2026-gk-now/",
   "category": "current-affairs",
@@ -40,18 +40,18 @@
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "Today important Current Affairs 5 September 206, for preparation of UPSC, SSC, UPSSSC, Bank and other competitive exams. Compiled from official public sources. International UN votes to adopt new world map reflecting accurate size of Africa The UN General Assembly has voted to replace the traditiona",
+    "shortDesc": "UPSC, SSC, UPSSSC, बँक आणि इतर स्पर्धा परीक्षांसाठी ५ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. संयुक्त राष्ट्रांच्या आमसभेने आफ्रिकेचा अचूक आकार दर्शवणारा नवीन जगाचा नकाशा स्वीकारण्याचा निर्णय घेतला आहे.",
     "metaDescription": null,
     "sections": [
       {
         "heading": "थोडक्यात",
         "type": "text",
-        "body": "Today important Current Affairs 5 September 206, for preparation of UPSC, SSC, UPSSSC, Bank and other competitive exams. Compiled from official public sources. International UN votes to adopt new world map reflecting accurate size of Africa The UN General Assembly has voted to replace the traditional world map with one that more accurately reflects the size of Africa on 5 September 2026. The “Corr"
+        "body": "UPSC, SSC, UPSSSC, बँक आणि इतर स्पर्धा परीक्षांच्या तयारीसाठी ५ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. आंतरराष्ट्रीय घडामोडींमध्ये, संयुक्त राष्ट्रांच्या आमसभेने (UN General Assembly) ५ सप्टेंबर २०२६ रोजी पारंपारिक जगाचा नकाशा बदलून आफ्रिका खंडाचा अचूक आकार दर्शवणारा नवीन नकाशा स्वीकारण्याच्या बाजूने मतदान केले आहे."
       },
       {
         "heading": "सविस्तर माहिती",
         "type": "text",
-        "body": "Today important Current Affairs 5 September 206, for preparation of UPSC, SSC, UPSSSC, Bank and other competitive exams. Compiled from official public sources. International UN votes to adopt new world map reflecting accurate size of Africa The UN General Assembly has voted to replace the traditiona"
+        "body": "अधिकृत सार्वजनिक स्रोतांवरून संकलित केलेली ही माहिती विविध स्पर्धा परीक्षांच्या दृष्टीने महत्त्वाची आहे. संयुक्त राष्ट्रांच्या आमसभेने जुना पारंपारिक जगाचा नकाशा बदलण्याचा ऐतिहासिक निर्णय घेतला आहे. नवीन नकाशामध्ये आफ्रिकेचे वास्तविक आणि अचूक भौगोलिक आकारमान स्पष्टपणे दर्शवले जाईल."
       }
     ],
     "faqs": []
@@ -68,8 +68,8 @@
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-06T19:21:27.450Z",
-  "contentHash": "084fe24a978e0d6601a20d982f0695590c77eacf75b707573a4859cc2eb4c1fd",
+  "lastUpdatedAt": "2026-09-07T08:26:47.627Z",
+  "contentHash": "9a53960c7d4e14daf8e33e505baddcb9c1b622e9c8559d0932b187345a1d79b9",
   "updates": [],
   "seo": {
     "keywords": [
@@ -79,5 +79,7 @@
     ],
     "ogImage": "/og-images/current-affairs-5-september-2026-gk-now.svg",
     "index": false
-  }
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-07T08:26:47.627Z"
 }

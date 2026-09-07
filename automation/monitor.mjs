@@ -121,6 +121,7 @@ function makeDraft({ title, link, desc, body, feed }) {
     sources: [
       { url: link || feed.url, name: feed.name, priority: feed.priority || 2, role: 'notification', verifiedAt: now }
     ],
+    ...(feed.rewrite ? { rewritePending: true } : {}), // AI-rewrite झाल्यावर rewrite.mjs काढतो
     status: 'ai-generated',
     confidence: 85, // semi-automated content → review queue (docs/04 §1 tiers)
     publishedAt: null,

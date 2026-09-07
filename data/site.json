@@ -14,13 +14,119 @@
       "youtube": "https://www.youtube.com/@MarathiAura-exam"
     },
     "feeds": [
-      { "name": "PIB Maharashtra (Press Information Bureau)", "url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3", "type": "rss", "category": "latest-bharti", "priority": 2, "verified": true, "keywords": ["भरती", "भरतीची", "bharti", "recruitment", "vacancy", "apply online", "constable", "सिपाही", "तलाठी", "ग्रामसेवक", "राज्यसेवा", "rajyaseva", "mpsc", "नियुक्ति", "नियुक्ती", "जाहिरात", "पद भरती"] },
-      { "name": "Maharashtra Police (अधिकृत जाहिराती)", "url": "https://www.mahapolice.gov.in/police-recru.php", "type": "html", "category": "police-bharti", "priority": 1, "verified": true, "anchorPattern": "\\.pdf", "keywords": ["भरती", "जाहिरात", "recruitment"] },
-      { "name": "Mahanaukari", "url": "https://mahanaukari.com/", "type": "article-list", "category": "latest-bharti", "priority": 3, "verified": true, "linkPattern": "^https://mahanaukari\\.com/[a-z0-9-]+/$", "maxFetch": 2, "keywords": ["भरती", "recruitment", "bharti", "नोकरी", "job", "योजना", "शिष्यवृत्ती"] },
-      { "name": "MahaBharti", "url": "https://mahabharti.in/", "type": "article-list", "category": "maharashtra-bharti", "priority": 3, "verified": true, "linkPattern": "^https://mahabharti\\.in/[a-z0-9-]+/$", "maxFetch": 3 },
-      { "name": "GKNow (Current Affairs)", "url": "https://gknow.in/", "type": "article-list", "category": "current-affairs", "priority": 3, "verified": true, "linkPattern": "^https://gknow\\.in/[a-z0-9-]+/$", "maxFetch": 2, "keywords": ["current affairs", "current-affairs", "one-liner", "current affair"] },
-      { "name": "GKToday (Current Affairs)", "url": "https://www.gktoday.in/", "type": "article-list", "category": "current-affairs", "priority": 3, "verified": true, "linkPattern": "^https://www\\.gktoday\\.in/[a-z0-9-]+/$", "maxFetch": 2, "excludePattern": "quiz|e-book|monthly|quiz-20" },
-      { "name": "MajhiNaukri", "url": "https://majhinaukri.com/", "type": "article-list", "category": "latest-bharti", "priority": 3, "verified": true, "linkPattern": "^https://majhinaukri\\.com/[a-z0-9-]+/$", "maxFetch": 2 }
+      {
+        "name": "PIB Maharashtra (Press Information Bureau)",
+        "url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
+        "type": "rss",
+        "category": "latest-bharti",
+        "priority": 2,
+        "verified": true,
+        "keywords": [
+          "भरती",
+          "भरतीची",
+          "bharti",
+          "recruitment",
+          "vacancy",
+          "apply online",
+          "constable",
+          "सिपाही",
+          "तलाठी",
+          "ग्रामसेवक",
+          "राज्यसेवा",
+          "rajyaseva",
+          "mpsc",
+          "नियुक्ति",
+          "नियुक्ती",
+          "जाहिरात",
+          "पद भरती"
+        ],
+        "rewrite": true
+      },
+      {
+        "name": "Maharashtra Police (अधिकृत जाहिराती)",
+        "url": "https://www.mahapolice.gov.in/police-recru.php",
+        "type": "html",
+        "category": "police-bharti",
+        "priority": 1,
+        "verified": true,
+        "anchorPattern": "\\.pdf",
+        "keywords": [
+          "भरती",
+          "जाहिरात",
+          "recruitment"
+        ]
+      },
+      {
+        "name": "Mahanaukari",
+        "url": "https://mahanaukari.com/",
+        "type": "article-list",
+        "category": "latest-bharti",
+        "priority": 3,
+        "verified": true,
+        "linkPattern": "^https://mahanaukari\\.com/[a-z0-9-]+/$",
+        "maxFetch": 2,
+        "keywords": [
+          "भरती",
+          "recruitment",
+          "bharti",
+          "नोकरी",
+          "job",
+          "योजना",
+          "शिष्यवृत्ती"
+        ],
+        "rewrite": true
+      },
+      {
+        "name": "MahaBharti",
+        "url": "https://mahabharti.in/",
+        "type": "article-list",
+        "category": "maharashtra-bharti",
+        "priority": 3,
+        "verified": true,
+        "linkPattern": "^https://mahabharti\\.in/[a-z0-9-]+/$",
+        "maxFetch": 3,
+        "rewrite": true
+      },
+      {
+        "name": "GKNow (Current Affairs)",
+        "url": "https://gknow.in/",
+        "type": "article-list",
+        "category": "current-affairs",
+        "priority": 3,
+        "verified": true,
+        "linkPattern": "^https://gknow\\.in/[a-z0-9-]+/$",
+        "maxFetch": 2,
+        "keywords": [
+          "current affairs",
+          "current-affairs",
+          "one-liner",
+          "current affair"
+        ],
+        "rewrite": true
+      },
+      {
+        "name": "GKToday (Current Affairs)",
+        "url": "https://www.gktoday.in/",
+        "type": "article-list",
+        "category": "current-affairs",
+        "priority": 3,
+        "verified": true,
+        "linkPattern": "^https://www\\.gktoday\\.in/[a-z0-9-]+/$",
+        "maxFetch": 2,
+        "excludePattern": "quiz|e-book|monthly|quiz-20",
+        "rewrite": true
+      },
+      {
+        "name": "MajhiNaukri",
+        "url": "https://majhinaukri.com/",
+        "type": "article-list",
+        "category": "latest-bharti",
+        "priority": 3,
+        "verified": true,
+        "linkPattern": "^https://majhinaukri\\.com/[a-z0-9-]+/$",
+        "maxFetch": 2,
+        "rewrite": true
+      }
     ]
   }
 }

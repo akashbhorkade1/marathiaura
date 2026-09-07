@@ -17,6 +17,7 @@ assets/       CSS + mock test engine (client-side)
 ```bash
 node automation/monitor.mjs   # sources monitor → drafts → review queue
 node automation/review.mjs    # review queue: list / approve <id> / reject <id>
+node automation/rewrite.mjs   # AI Marathi rewrite (AI_API_KEY लागते; नसेल skip)
 node automation/validate.mjs  # quality checks + confidence adjust
 node automation/build.mjs     # full site → _site/
 ```

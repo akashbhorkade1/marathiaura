@@ -85,3 +85,12 @@ Approve नंतर `node automation/build.mjs` चालवावेच (त�
 2. Match मिळाला आणि source content बदलला → record च्या `updates[]` मध्ये entry + `lastUpdatedAt` bump + hash recompute
 3. Match नाही → नवीन draft
 4. कधीच: नवीन record तयार करून duplicate/thin content वाढवू नये
+
+## 6. AI Rewrite Policy (rewrite.mjs)
+
+- Review-queue मधील `rewritePending: true` drafts फक्त AI द्वारे **Marathi** मध्ये rewrite होतात (OpenAI-compatible endpoint — Gemini free tier default).
+- **Frozen नियम:** AI कधीच facts invent करू शकत नाही — dates, संख्या, पदे, शुल्क, URLs source प्रमाणेच; अनिश्चित माहिती वगळावी.
+- Env config: `AI_API_KEY` (secret), `AI_BASE_URL`, `AI_MODEL`. Key नसेल तर step safe skip — pipeline कधीच block नाही.
+- Limits: प्रति धाव max 10 rewrites (free tier rate limits). API fail = template fallback.
+- Rewrite झाल्यावर `aiRewritten: true` — पण **confidence bump नाही** (docs/04 §1: AI unreviewed = +0). Status `ai-generated` तसेच — publish फक्त human approval (`review.mjs approve`) नंतरच.
+- API key कधीच repo/commit मध्ये नाही — फक्त GitHub Secrets.
