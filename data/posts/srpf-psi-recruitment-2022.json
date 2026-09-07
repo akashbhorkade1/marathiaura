@@ -1,0 +1,74 @@
+{
+  "id": "srpf-psi-recruitment-2022",
+  "type": "recruitment",
+  "title": "SRPF PSI RECRUITMENT - 2022",
+  "slug": "srpf-psi-recruitment-2022",
+  "path": "/srpf-psi-recruitment-2022/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/6260f18b18fc13c3786f89a294ccc431.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/6260f18b18fc13c3786f89a294ccc431.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "SRPF PSI RECRUITMENT - 2022",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "SRPF PSI RECRUITMENT - 2022"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/6260f18b18fc13c3786f89a294ccc431.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.530Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.530Z",
+  "contentHash": "8edea21957372a31ff4354108585d33e4ef10db25392364c069cfc03f70ace7e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "SRPF PSI RECRUITMENT - 2022",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/srpf-psi-recruitment-2022.svg",
+    "index": false
+  }
+}

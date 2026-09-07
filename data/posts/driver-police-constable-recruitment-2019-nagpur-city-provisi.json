@@ -1,0 +1,74 @@
+{
+  "id": "driver-police-constable-recruitment-2019-nagpur-city-provisi",
+  "type": "recruitment",
+  "title": "Driver police constable recruitment 2019 Nagpur City provisional selection list",
+  "slug": "driver-police-constable-recruitment-2019-nagpur-city-provisi",
+  "path": "/driver-police-constable-recruitment-2019-nagpur-city-provisi/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/457d227950809ecb8da20f7e36f678c0.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/457d227950809ecb8da20f7e36f678c0.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Driver police constable recruitment 2019 Nagpur City provisional selection list",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "Driver police constable recruitment 2019 Nagpur City provisional selection list"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/457d227950809ecb8da20f7e36f678c0.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.530Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.530Z",
+  "contentHash": "91fd0d1781a80466e26cdc85a96d711eff4a4131a4021fbe2d249469423c65b1",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Driver police constable recruitment 2019 Nagpur City provisional selection list",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/driver-police-constable-recruitment-2019-nagpur-city-provisi.svg",
+    "index": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "press-note-police-recruitment-2021",
+  "type": "recruitment",
+  "title": "PRESS NOTE POLICE RECRUITMENT - 2021.",
+  "slug": "press-note-police-recruitment-2021",
+  "path": "/press-note-police-recruitment-2021/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/5f6aea3d4c5e974e40839e108a0168b1.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/5f6aea3d4c5e974e40839e108a0168b1.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "PRESS NOTE POLICE RECRUITMENT - 2021.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "PRESS NOTE POLICE RECRUITMENT - 2021."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/5f6aea3d4c5e974e40839e108a0168b1.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.530Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.530Z",
+  "contentHash": "a467cec65daa1ffc4faa191685635c50cf0a6000e7fc8102432e266ff3e6ef41",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "PRESS NOTE POLICE RECRUITMENT - 2021.",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/press-note-police-recruitment-2021.svg",
+    "index": false
+  }
+}

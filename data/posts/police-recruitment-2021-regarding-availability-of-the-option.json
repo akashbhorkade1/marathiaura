@@ -1,0 +1,74 @@
+{
+  "id": "police-recruitment-2021-regarding-availability-of-the-option",
+  "type": "recruitment",
+  "title": "POLICE RECRUITMENT 2021 - REGARDING AVAILABILITY OF THE OPTION TO SELECT TRANSGENDER ON ONLINE PORTAL.",
+  "slug": "police-recruitment-2021-regarding-availability-of-the-option",
+  "path": "/police-recruitment-2021-regarding-availability-of-the-option/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/0a4dd6364c959cc3d642b41a0bb70469.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/0a4dd6364c959cc3d642b41a0bb70469.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "POLICE RECRUITMENT 2021 - REGARDING AVAILABILITY OF THE OPTION TO SELECT TRANSGENDER ON ONLINE PORTAL.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "POLICE RECRUITMENT 2021 - REGARDING AVAILABILITY OF THE OPTION TO SELECT TRANSGENDER ON ONLINE PORTAL."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/0a4dd6364c959cc3d642b41a0bb70469.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.530Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.530Z",
+  "contentHash": "809fb8ad7585b009bc18f3e14881614d9abd2240a37fde59871105d0ca885401",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "POLICE RECRUITMENT 2021 - REGARDING AVAILABILITY OF THE OPTION TO SELECT TRANSGENDER ON ONLINE PORTAL.",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/police-recruitment-2021-regarding-availability-of-the-option.svg",
+    "index": false
+  }
+}

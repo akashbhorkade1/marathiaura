@@ -1,0 +1,74 @@
+{
+  "id": "police-recruitment-2021-driver-select-list-for-driving-skill",
+  "type": "recruitment",
+  "title": "Police Recruitment 2021 Driver Select List for Driving Skill Test Bhandara.",
+  "slug": "police-recruitment-2021-driver-select-list-for-driving-skill",
+  "path": "/police-recruitment-2021-driver-select-list-for-driving-skill/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/05a5d73905ea51f21bd14596e354ea50.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/05a5d73905ea51f21bd14596e354ea50.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Police Recruitment 2021 Driver Select List for Driving Skill Test Bhandara.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "Police Recruitment 2021 Driver Select List for Driving Skill Test Bhandara."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/05a5d73905ea51f21bd14596e354ea50.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.530Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.530Z",
+  "contentHash": "ca3a4e13622d55c42db379e51747ced354b8026c58d4e92ceb6ee5c8d1d3ddf7",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Police Recruitment 2021 Driver Select List for Driving Skill Test Bhandara.",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/police-recruitment-2021-driver-select-list-for-driving-skill.svg",
+    "index": false
+  }
+}

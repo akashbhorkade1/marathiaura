@@ -1,0 +1,74 @@
+{
+  "id": "driver-police-constable-recruitment-2021-aurangabad-city-ins",
+  "type": "recruitment",
+  "title": "Driver police constable recruitment 2021 Aurangabad City- Instructions for candidates and provisional selection list.",
+  "slug": "driver-police-constable-recruitment-2021-aurangabad-city-ins",
+  "path": "/driver-police-constable-recruitment-2021-aurangabad-city-ins/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/167e10e26394e55ff338ea7188b46d53.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/167e10e26394e55ff338ea7188b46d53.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Driver police constable recruitment 2021 Aurangabad City- Instructions for candidates and provisional selection list.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "Driver police constable recruitment 2021 Aurangabad City- Instructions for candidates and provisional selection list."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/167e10e26394e55ff338ea7188b46d53.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.529Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.529Z",
+  "contentHash": "af1823b8bd1fd7434a914b8901aaf385d1e06c508476edf0eefac7a36efe5423",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Driver police constable recruitment 2021 Aurangabad City- Instructions for candidates and provisional selection list.",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/driver-police-constable-recruitment-2021-aurangabad-city-ins.svg",
+    "index": false
+  }
+}

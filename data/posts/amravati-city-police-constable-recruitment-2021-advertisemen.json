@@ -1,0 +1,74 @@
+{
+  "id": "amravati-city-police-constable-recruitment-2021-advertisemen",
+  "type": "recruitment",
+  "title": "AMRAVATI CITY POLICE CONSTABLE RECRUITMENT - 2021 ADVERTISEMENT",
+  "slug": "amravati-city-police-constable-recruitment-2021-advertisemen",
+  "path": "/amravati-city-police-constable-recruitment-2021-advertisemen/",
+  "category": "police-bharti",
+  "exam": null,
+  "department": "Maharashtra Police (अधिकृत जाहिराती)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/1979bfffb78ad0ab08b661ad1611fd76.pdf",
+    "applyUrl": null,
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/1979bfffb78ad0ab08b661ad1611fd76.pdf"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "AMRAVATI CITY POLICE CONSTABLE RECRUITMENT - 2021 ADVERTISEMENT",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "AMRAVATI CITY POLICE CONSTABLE RECRUITMENT - 2021 ADVERTISEMENT"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.mahapolice.gov.in/uploads/1979bfffb78ad0ab08b661ad1611fd76.pdf",
+      "name": "Maharashtra Police (अधिकृत जाहिराती)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-07T21:21:29.530Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-07T21:21:29.530Z",
+  "contentHash": "12c580819959a64f8080177dd74b21f56496a17cde4ea514f46cc691c8f0200e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "AMRAVATI CITY POLICE CONSTABLE RECRUITMENT - 2021 ADVERTISEMENT",
+      "पोलीस भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/amravati-city-police-constable-recruitment-2021-advertisemen.svg",
+    "index": false
+  }
+}
