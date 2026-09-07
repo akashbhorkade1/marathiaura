@@ -25,13 +25,12 @@ jobs:
       - name: Run test suite
         run: |
           set +e
+          NODE_V=$(node --version 2>&1)
           OUTPUT=$(node automation/test/test-core.test.cjs 2>&1)
           CODE=$?
           if [ $CODE -ne 0 ]; then
-            MSG=$(echo "$OUTPUT" | tr '\n' ' ' | head -c 1500)
-            echo "::error::TEST_FAILED_EXIT_${CODE} :: ${MSG}"
-            node --version
-            ls -la automation/test/ assets/js/
+            MSG=$(echo "$OUTPUT" | tail -25 | tr '\n' ' ')
+            echo "::error::${NODE_V} TEST_FAILED_EXIT_${CODE} ::LAST:: ${MSG}"
             exit $CODE
           fi
           echo "$OUTPUT" | tail -8
