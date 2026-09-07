@@ -23,7 +23,18 @@ jobs:
         with:
           node-version: 20
       - name: Run test suite
-        run: node automation/test/test-core.test.cjs
+        run: |
+          set +e
+          OUTPUT=$(node automation/test/test-core.test.cjs 2>&1)
+          CODE=$?
+          if [ $CODE -ne 0 ]; then
+            MSG=$(echo "$OUTPUT" | tr '\n' ' ' | head -c 1500)
+            echo "::error::TEST_FAILED_EXIT_${CODE} :: ${MSG}"
+            node --version
+            ls -la automation/test/ assets/js/
+            exit $CODE
+          fi
+          echo "$OUTPUT" | tail -8
       - name: Build site
         run: node automation/build.mjs
         env:
