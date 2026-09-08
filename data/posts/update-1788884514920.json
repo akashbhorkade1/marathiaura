@@ -1,0 +1,76 @@
+{
+  "id": "update-1788884514920",
+  "type": "recruitment",
+  "title": "छत्तीसगड आणि गुवाहाटी उच्च न्यायालयांमध्ये न्यायाधीश व अतिरिक्त न्यायाधीशांची नियुक्ती",
+  "slug": "update-1788884514920",
+  "path": "/update-1788884514920/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "PIB Maharashtra (Press Information Bureau)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2308019",
+    "applyUrl": null,
+    "officialUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2308019"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "छत्तीसगड आणि गुवाहाटी उच्च न्यायालयांमध्ये न्यायाधीश व अतिरिक्त न्यायाधीशांची नियुक्ती",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "छत्तीसगड उच्च न्यायालय आणि गुवाहाटी उच्च न्यायालय येथे न्यायाधीश आणि अतिरिक्त न्यायाधीशांची नियुक्ती करण्यात आली आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2308019",
+      "name": "PIB Maharashtra (Press Information Bureau)",
+      "priority": 2,
+      "role": "notification",
+      "verifiedAt": "2026-09-08T16:21:54.920Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-08T16:22:47.126Z",
+  "contentHash": "a5bb69eeb0545a793649a1ae994fee3af169f7a2508eb469da645ca4e9cc9e7d",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "छत्तीसगढ़ उच्च न्यायालय और गुवाहाटी उच्च न्यायालय में न्यायाधीशों और अतिरिक्त न्यायाधीशों की नियुक्ति",
+      "नवीन भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/update-1788884514920.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-08T16:22:47.126Z"
+}
