@@ -1,0 +1,85 @@
+{
+  "id": "india-joins-global-6g-network-initiative",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-08",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "भारत जागतिक 6G नेटवर्क उपक्रमात सामील",
+  "slug": "india-joins-global-6g-network-initiative",
+  "path": "/current-affairs/india-joins-global-6g-network-initiative/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/india-joins-global-6g-network-initiative/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/india-joins-global-6g-network-initiative/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "भारत 8 सप्टेंबर 2026 रोजी जागतिक 6G नेटवर्क उपक्रमात सामील झाला आहे. ही बातमी 2026-2027 च्या चालू घडामोडींचा भाग आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "भारत 8 सप्टेंबर 2026 रोजी जागतिक 6G नेटवर्क उपक्रमात सामील झाला. हा निर्णय देशाच्या दूरसंचार क्षेत्रातील भविष्यातील प्रगतीसाठी महत्त्वाचा मानला जात आहे. या सहभागामुळे भारताला 6G तंत्रज्ञानाच्या विकासात आणि मानकीकरणात सक्रिय भूमिका बजावता येणार आहे. हा जागतिक स्तरावरील सहभाग भारताच्या तांत्रिक क्षमतेला बळकटी देईल आणि देशांतर्गत नवोपक्रमाला चालना देईल."
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "8 सप्टेंबर 2026 रोजी भारताने जागतिक 6G नेटवर्क उपक्रमात अधिकृतपणे प्रवेश केला. या महत्त्वपूर्ण पावलामुळे भारत जगातील इतर प्रमुख देशांसोबत 6G तंत्रज्ञानाच्या संशोधन आणि विकासात सहभागी होईल. 6G तंत्रज्ञान हे 5G पेक्षा अधिक वेगवान आणि कार्यक्षम असेल, ज्यामुळे कृत्रिम बुद्धिमत्ता, इंटरनेट ऑफ थिंग्ज (IoT) आणि इमर्सिव्ह अनुभवांसारख्या क्षेत्रांमध्ये क्रांती घडून येईल. भारताचा या उपक्रमातील सहभाग जागतिक दूरसंचार मानके निश्चित करण्यात भारताची भूमिका वाढवेल."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/india-joins-global-6g-network-initiative/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-08T10:57:13.478Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-08T10:57:31.880Z",
+  "contentHash": "6f4813ca7926ff46bc083e8abc131816b6b0131b54f3d96dea72613f77dd89e5",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "India Joins Global 6G Network Initiative",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/india-joins-global-6g-network-initiative.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-08T10:57:31.880Z"
+}
