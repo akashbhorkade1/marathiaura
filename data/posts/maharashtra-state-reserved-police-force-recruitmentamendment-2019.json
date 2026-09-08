@@ -1,9 +1,9 @@
 {
-  "id": "state-reserve-police-force-group-4-nagpur-police-recruitment-2019",
+  "id": "maharashtra-state-reserved-police-force-recruitmentamendment-2019",
   "type": "recruitment",
-  "title": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
-  "slug": "state-reserve-police-force-group-4-nagpur-police-recruitment-2019",
-  "path": "/state-reserve-police-force-group-4-nagpur-police-recruitment-2019/",
+  "title": "MAHARASHTRA STATE RESERVED POLICE FORCE (RECRUITMENT)(AMENDMENT) RULES, 2019.",
+  "slug": "maharashtra-state-reserved-police-force-recruitmentamendment-2019",
+  "path": "/maharashtra-state-reserved-police-force-recruitmentamendment-2019/",
   "category": "police-bharti",
   "exam": null,
   "department": "Maharashtra Police (अधिकृत जाहिराती)",
@@ -28,47 +28,47 @@
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf",
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/4e6a812c0182634b16ab2aa4bbd403dd.pdf",
     "applyUrl": null,
-    "officialUrl": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf"
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/4e6a812c0182634b16ab2aa4bbd403dd.pdf"
   },
   "selectionProcess": [],
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+    "shortDesc": "MAHARASHTRA STATE RESERVED POLICE FORCE (RECRUITMENT)(AMENDMENT) RULES, 2019.",
     "metaDescription": null,
     "sections": [
       {
         "heading": "सविस्तर माहिती",
         "type": "text",
-        "body": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST."
+        "body": "MAHARASHTRA STATE RESERVED POLICE FORCE (RECRUITMENT)(AMENDMENT) RULES, 2019."
       }
     ],
     "faqs": []
   },
   "sources": [
     {
-      "url": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf",
+      "url": "https://www.mahapolice.gov.in/uploads/4e6a812c0182634b16ab2aa4bbd403dd.pdf",
       "name": "Maharashtra Police (अधिकृत जाहिराती)",
       "priority": 1,
       "role": "notification",
-      "verifiedAt": "2026-09-08T03:55:39.938Z"
+      "verifiedAt": "2026-09-08T03:55:39.939Z"
     }
   ],
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-08T03:55:39.938Z",
-  "contentHash": "d58964c3f0448d9a6798bdcefe062c5095bb469722027c866240eb159b7a23aa",
+  "lastUpdatedAt": "2026-09-08T03:55:39.939Z",
+  "contentHash": "8b3e60eed45c438cf828e08cb601b27aa5666f8efdf26426793249bfaf6f32db",
   "updates": [],
   "seo": {
     "keywords": [
-      "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+      "MAHARASHTRA STATE RESERVED POLICE FORCE (RECRUITMENT)(AMENDMENT) RULES, 2019.",
       "पोलीस भरती",
       "MarathiAura"
     ],
-    "ogImage": "/og-images/state-reserve-police-force-group-4-nagpur-police-recruitment-2019.svg",
+    "ogImage": "/og-images/maharashtra-state-reserved-police-force-recruitmentamendment-2019.svg",
     "index": false
   }
 }

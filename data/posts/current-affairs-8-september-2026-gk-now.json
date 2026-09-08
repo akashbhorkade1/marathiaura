@@ -1,0 +1,80 @@
+{
+  "id": "current-affairs-8-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-08",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - ८ सप्टेंबर २०२६",
+  "slug": "current-affairs-8-september-2026-gk-now",
+  "path": "/current-affairs/8-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-8-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-8-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "८ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. UPSC, SSC, बँक, UPSSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांसाठी उपयुक्त.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "राष्ट्रीय सफाई कर्मचारी आयोगावर नियुक्त्या",
+        "type": "text",
+        "body": "भारत सरकारच्या सामाजिक न्याय आणि सक्षमीकरण विभागाने राष्ट्रीय सफाई कर्मचारी आयोगावर नियुक्त्या केल्या आहेत."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-8-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-08T03:55:46.533Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-08T03:56:08.236Z",
+  "contentHash": "ae63ebb07827ba2805e5827ca421394402b7c017b63e36bef0007845f8e5dd77",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 8 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-8-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-08T03:56:08.236Z"
+}

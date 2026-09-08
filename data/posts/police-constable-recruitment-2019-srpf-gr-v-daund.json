@@ -1,9 +1,9 @@
 {
-  "id": "state-reserve-police-force-group-4-nagpur-police-recruitment-2019",
+  "id": "police-constable-recruitment-2019-srpf-gr-v-daund",
   "type": "recruitment",
-  "title": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
-  "slug": "state-reserve-police-force-group-4-nagpur-police-recruitment-2019",
-  "path": "/state-reserve-police-force-group-4-nagpur-police-recruitment-2019/",
+  "title": "POLICE CONSTABLE RECRUITMENT 2019 - S.R.P.F. GR. V,- DAUND",
+  "slug": "police-constable-recruitment-2019-srpf-gr-v-daund",
+  "path": "/police-constable-recruitment-2019-srpf-gr-v-daund/",
   "category": "police-bharti",
   "exam": null,
   "department": "Maharashtra Police (अधिकृत जाहिराती)",
@@ -28,47 +28,47 @@
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf",
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/84b21bf2be36ea9f1f25368aa01ef971.pdf",
     "applyUrl": null,
-    "officialUrl": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf"
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/84b21bf2be36ea9f1f25368aa01ef971.pdf"
   },
   "selectionProcess": [],
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+    "shortDesc": "POLICE CONSTABLE RECRUITMENT 2019 - S.R.P.F. GR. V,- DAUND",
     "metaDescription": null,
     "sections": [
       {
         "heading": "सविस्तर माहिती",
         "type": "text",
-        "body": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST."
+        "body": "POLICE CONSTABLE RECRUITMENT 2019 - S.R.P.F. GR. V,- DAUND"
       }
     ],
     "faqs": []
   },
   "sources": [
     {
-      "url": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf",
+      "url": "https://www.mahapolice.gov.in/uploads/84b21bf2be36ea9f1f25368aa01ef971.pdf",
       "name": "Maharashtra Police (अधिकृत जाहिराती)",
       "priority": 1,
       "role": "notification",
-      "verifiedAt": "2026-09-08T03:55:39.938Z"
+      "verifiedAt": "2026-09-08T03:55:39.939Z"
     }
   ],
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-08T03:55:39.938Z",
-  "contentHash": "d58964c3f0448d9a6798bdcefe062c5095bb469722027c866240eb159b7a23aa",
+  "lastUpdatedAt": "2026-09-08T03:55:39.939Z",
+  "contentHash": "e3aefd5aec3a5edf24df62c324ec2491abb3a0193a18bc03aab9e319086c1cd6",
   "updates": [],
   "seo": {
     "keywords": [
-      "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+      "POLICE CONSTABLE RECRUITMENT 2019 - S.R.P.F. GR. V,- DAUND",
       "पोलीस भरती",
       "MarathiAura"
     ],
-    "ogImage": "/og-images/state-reserve-police-force-group-4-nagpur-police-recruitment-2019.svg",
+    "ogImage": "/og-images/police-constable-recruitment-2019-srpf-gr-v-daund.svg",
     "index": false
   }
 }
