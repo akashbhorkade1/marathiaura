@@ -1,7 +1,7 @@
 {
   "id": "state-reserve-police-force-group-4-nagpur-police-recruitment-2019",
   "type": "recruitment",
-  "title": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+  "title": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL SELECTION LIST.",
   "slug": "state-reserve-police-force-group-4-nagpur-police-recruitment-2019",
   "path": "/state-reserve-police-force-group-4-nagpur-police-recruitment-2019/",
   "category": "police-bharti",
@@ -28,43 +28,43 @@
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf",
+    "notificationUrl": "https://www.mahapolice.gov.in/uploads/99002d3167313563faf7c3fb8c8bdffe.pdf",
     "applyUrl": null,
-    "officialUrl": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf"
+    "officialUrl": "https://www.mahapolice.gov.in/uploads/99002d3167313563faf7c3fb8c8bdffe.pdf"
   },
   "selectionProcess": [],
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+    "shortDesc": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL SELECTION LIST.",
     "metaDescription": null,
     "sections": [
       {
         "heading": "सविस्तर माहिती",
         "type": "text",
-        "body": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST."
+        "body": "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL SELECTION LIST."
       }
     ],
     "faqs": []
   },
   "sources": [
     {
-      "url": "https://www.mahapolice.gov.in/uploads/04b6383d7523b78abd4f811d79df41bc.pdf",
+      "url": "https://www.mahapolice.gov.in/uploads/99002d3167313563faf7c3fb8c8bdffe.pdf",
       "name": "Maharashtra Police (अधिकृत जाहिराती)",
       "priority": 1,
       "role": "notification",
-      "verifiedAt": "2026-09-08T16:21:56.781Z"
+      "verifiedAt": "2026-09-08T20:56:40.856Z"
     }
   ],
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-08T16:21:56.781Z",
-  "contentHash": "d58964c3f0448d9a6798bdcefe062c5095bb469722027c866240eb159b7a23aa",
+  "lastUpdatedAt": "2026-09-08T20:56:40.856Z",
+  "contentHash": "5de48799e38a84db47868e48ddf65631072154e92ba27a006986b9c68368d576",
   "updates": [],
   "seo": {
     "keywords": [
-      "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL WAITING LIST.",
+      "STATE RESERVE POLICE FORCE GROUP-4 NAGPUR POLICE RECRUITMENT-2019 REVISED PROVISIONAL SELECTION LIST.",
       "पोलीस भरती",
       "MarathiAura"
     ],
