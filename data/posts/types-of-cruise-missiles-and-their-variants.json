@@ -1,0 +1,85 @@
+{
+  "id": "types-of-cruise-missiles-and-their-variants",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-09",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "क्रूझ क्षेपणास्त्रांचे प्रकार आणि त्यांचे उपप्रकार",
+  "slug": "types-of-cruise-missiles-and-their-variants",
+  "path": "/current-affairs/types-of-cruise-missiles-and-their-variants/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/types-of-cruise-missiles-and-their-variants/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/types-of-cruise-missiles-and-their-variants/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "या लेखात आपण क्रूझ क्षेपणास्त्रांचे विविध प्रकार आणि त्यांच्या उपप्रकारांची सविस्तर माहिती पाहणार आहोत, जी स्पर्धा परीक्षांसाठी उपयुक्त ठरेल.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "क्रूझ क्षेपणास्त्रे ही स्वयंचलित मार्गदर्शित क्षेपणास्त्रे आहेत जी लक्ष्यावर अचूक मारा करण्यासाठी डिझाइन केलेली असतात. ही क्षेपणास्त्रे कमी उंचीवरून उडतात आणि शत्रूच्या रडारला चकमा देऊन लक्ष्यापर्यंत पोहोचतात. त्यांच्या उड्डाणाचा मार्ग आणि वेग यानुसार त्यांचे विविध प्रकार पडतात. स्पर्धा परीक्षांच्या दृष्टीने या क्षेपणास्त्रांची माहिती असणे महत्त्वाचे आहे."
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "या विभागात आपण क्रूझ क्षेपणास्त्रांच्या प्रत्येक प्रकाराची आणि त्यांच्या उपप्रकारांची सविस्तर माहिती घेणार आहोत. यामध्ये त्यांच्या कार्यपद्धती, वेग, मारक क्षमता आणि विशिष्ट उदाहरणे यांचा समावेश असेल. स्पर्धा परीक्षांसाठी आवश्यक असलेल्या तांत्रिक आणि सामरिक पैलूंवर येथे प्रकाश टाकला जाईल."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/types-of-cruise-missiles-and-their-variants/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-09T11:01:34.200Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-09T11:01:52.887Z",
+  "contentHash": "0ff5993654ae339cb0947505cb4c151b0c3ef7b3344ab31c27e934da52578fce",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Types of Cruise Missiles and Their Variants",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/types-of-cruise-missiles-and-their-variants.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-09T11:01:52.887Z"
+}
