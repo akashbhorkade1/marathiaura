@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-9-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-09",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - ९ सप्टेंबर २०२६: स्पर्धा परीक्षांसाठी महत्त्वाचे अपडेट्स",
+  "slug": "current-affairs-9-september-2026-gk-now",
+  "path": "/current-affairs/9-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-9-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-9-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "९ सप्टेंबर २०२६ रोजीच्या यूपीएससी, एसएससी, बँक, आरआरबी आणि इतर स्पर्धा परीक्षांसाठी महत्त्वाच्या चालू घडामोडी. भारताचे माजी सरन्यायाधीश न्यायमूर्ती दीपक मिश्रा यांना 'कलिंग रत्न पुरस्कार' प्रदान.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्वाच्या चालू घडामोडी: ९ सप्टेंबर २०२६",
+        "type": "text",
+        "body": "यूपीएससी (UPSC), एसएससी (SSC), बँक, आरआरबी (RRB) आणि इतर स्पर्धा परीक्षांच्या तयारीसाठी ९ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. अधिकृत सार्वजनिक स्रोतांवरून संकलित केलेली ही माहिती सर्व स्पर्धा परीक्षांसाठी अत्यंत उपयुक्त आहे."
+      },
+      {
+        "heading": "पुरस्कार व सन्मान: न्यायमूर्ती दीपक मिश्रा यांना 'कलिंग रत्न पुरस्कार'",
+        "type": "text",
+        "body": "भारताचे माजी सरन्यायाधीश (CJI) न्यायमूर्ती दीपक मिश्रा यांना कटक येथे प्रतिष्ठित 'कलिंग रत्न पुरस्कार' (Kalinga Ratna Award) प्रदान करण्यात आला आहे. हा सन्मान त्यांना सरला साहित्य (Sarala Sahitya) संस्थेकडून देण्यात आला आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-9-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-09T04:00:58.486Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-09T04:01:11.275Z",
+  "contentHash": "e3dc566e67bcf5379457418e090b38572806759aca81850e07740011d8fdf2f2",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 9 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-9-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-09T04:01:11.275Z"
+}
