@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-10-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-10",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १० सप्टेंबर २०२६ : स्पर्धा परीक्षांसाठी महत्त्वाचा सारांश",
+  "slug": "current-affairs-10-september-2026-gk-now",
+  "path": "/current-affairs/10-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-10-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-10-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१० सप्टेंबर २०२६ च्या स्पर्धा परीक्षांसाठी आवश्यक चालू घडामोडींचा सारांश. यामध्ये केंद्रीय मंत्रिमंडळाने मंजूर केलेल्या महत्त्वपूर्ण रेल्वे प्रकल्पांचा समावेश आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्वाच्या घडामोडींचा आढावा",
+        "type": "text",
+        "body": "१० सप्टेंबर २०२६ रोजीच्या या चालू घडामोडी UPSC, SSC, बँक, पोलीस भरती, डिफेन्स, UPSSSC आणि इतर सर्व स्पर्धा परीक्षांसाठी अत्यंत उपयुक्त आहेत. अधिकृत सरकारी स्रोतांच्या आधारे हा माहिती संक्षेप तयार करण्यात आला आहे."
+      },
+      {
+        "heading": "८ रेल्वे मल्टीट्रॅकिंग प्रकल्पांना मंजुरी",
+        "type": "text",
+        "body": "पंतप्रधान नरेंद्र मोदी यांच्या अध्यक्षतेखाली केंद्रीय मंत्रिमंडळाने कनेक्टिव्हिटी वाढवण्यासाठी २०,८०० कोटी रुपयांपेक्षा जास्त खर्चाच्या आठ रेल्वे मल्टीट्रॅकिंग प्रकल्पांना मंजुरी दिली आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-10-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-10T10:58:34.257Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-10T10:58:44.936Z",
+  "contentHash": "6e013c901795677479c90bec3ff8d9f7f3b706b9b44825b899ce72a86895e52d",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 10 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-10-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-10T10:58:44.936Z"
+}
