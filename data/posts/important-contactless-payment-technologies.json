@@ -1,0 +1,85 @@
+{
+  "id": "important-contactless-payment-technologies",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-11",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "महत्त्वाचे कॉन्टॅक्टलेस पेमेंट तंत्रज्ञान",
+  "slug": "important-contactless-payment-technologies",
+  "path": "/current-affairs/important-contactless-payment-technologies/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/important-contactless-payment-technologies/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/important-contactless-payment-technologies/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "कॉन्टॅक्टलेस पेमेंट तंत्रज्ञानाबद्दल महत्त्वाची माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात माहिती",
+        "type": "text",
+        "body": ""
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": ""
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/important-contactless-payment-technologies/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-11T16:12:14.391Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-11T16:12:52.309Z",
+  "contentHash": "f95a4b0013f3270e673a35a0c2867c23ad2f006ffba7079b35af6b6ebe6f439b",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Important Contactless Payment Technologies",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/important-contactless-payment-technologies.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-11T16:12:52.309Z"
+}
