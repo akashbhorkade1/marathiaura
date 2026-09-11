@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-11-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-11",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - ११ सप्टेंबर २०२६ : स्पर्धा परीक्षांसाठी महत्त्वाच्या घडामोडी",
+  "slug": "current-affairs-11-september-2026-gk-now",
+  "path": "/current-affairs/11-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-11-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-11-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "११ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी; पंतप्रधान नरेंद्र मोदी यांनी फ्रान्समधील पॅरिस येथे आयोजित 'आंतरराष्ट्रीय अंतराळ परिषद'ला व्हिडिओ कॉन्फरन्सद्वारे संबोधित केले.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "पंतप्रधान नरेंद्र मोदींचे आंतरराष्ट्रीय अंतराळ परिषदेत संबोधन",
+        "type": "text",
+        "body": "पंतप्रधान नरेंद्र मोदी यांनी फ्रान्समधील पॅरिस येथे आयोजित करण्यात आलेल्या 'आंतरराष्ट्रीय अंतराळ परिषदे'ला (International Space Summit) व्हिडिओ कॉन्फरन्सद्वारे संबोधित केले. ही घडामोड आंतरराष्ट्रीय स्तरावर अत्यंत महत्त्वाची मानली जात आहे."
+      },
+      {
+        "heading": "विविध स्पर्धा परीक्षांसाठी उपयुक्तता",
+        "type": "text",
+        "body": "अधिकृत आणि सार्वजनिक स्रोतांवरून संकलित केलेल्या या चालू घडामोडी यूपीएससी (UPSC), एसएससी (SSC), यूपीएसएसएससी (UPSSSC) आणि बँक यांसारख्या विविध स्पर्धा परीक्षांच्या तयारीसाठी अत्यंत उपयुक्त आहेत."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-11-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-11T03:56:51.640Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-11T03:57:00.577Z",
+  "contentHash": "d06ab10d3ade4ef89ef52be8f2fd88b0b547c0a5af128d1b8659b67124a8d698",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 11 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-11-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-11T03:57:00.577Z"
+}
