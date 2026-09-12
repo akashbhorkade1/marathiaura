@@ -1,0 +1,85 @@
+{
+  "id": "opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-12",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "बद्री गोवंशात OPU-IVF तंत्रज्ञानाद्वारे वासराचा जन्म: देशी गोवंश संवर्धनातील महत्त्वाचा टप्पा",
+  "slug": "opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed",
+  "path": "/current-affairs/opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed-conservation-milestone/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed-conservation-milestone/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "देशी गोवंश संवर्धनात मोठे यश मिळाले असून बद्री गोवंशात OPU-IVF तंत्रज्ञानाचा वापर करून वासराचा जन्म झाला आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्वाचा वैज्ञानिक टप्पा",
+        "type": "text",
+        "body": "देशी गोवंश संवर्धनाच्या दिशेने एक महत्त्वपूर्ण यश संपादन करण्यात आले आहे. बद्री गोवंशामध्ये (Badri Cattle) OPU-IVF तंत्रज्ञानाचा यशस्वी वापर करून वासराचा जन्म झाला असून, देशी प्रजातींच्या संवर्धनातील हा एक ऐतिहासिक टप्पा ठरला आहे."
+      },
+      {
+        "heading": "चालू घडामोडी संदर्भ",
+        "type": "text",
+        "body": "१२ सप्टेंबर २०२६ च्या चालू घडामोडींनुसार, या यशस्वी प्रयोगामुळे स्थानिक व देशी गोवंशाच्या संरक्षणाला आणि त्यांच्या वंशवृद्धीला मोठी गती मिळणार आहे. स्पर्धा परीक्षांच्या दृष्टीने देशी गोवंश संवर्धन आणि आधुनिक पशुवैद्यकीय तंत्रज्ञान हा महत्त्वाचा विषय आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed-conservation-milestone/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-12T10:24:41.266Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-12T10:24:49.871Z",
+  "contentHash": "690a896264272ad9ee0e413f7ebf17aceb006223f6d93cd73fdabd3a27a0490c",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "OPU-IVF Calf Born in Badri Cattle in Major Indigenous Breed Conservation Milestone",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/opu-ivf-calf-born-in-badri-cattle-in-major-indigenous-breed.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-12T10:24:49.871Z"
+}
