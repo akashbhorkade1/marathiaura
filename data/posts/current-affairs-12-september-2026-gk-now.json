@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-12-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-12",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १२ सप्टेंबर २०२६: १८ वी ब्रिक्स (BRICS) शिखर परिषद",
+  "slug": "current-affairs-12-september-2026-gk-now",
+  "path": "/current-affairs/12-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-12-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-12-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१२ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी: UPSC, SSC आणि UPSSSC परीक्षांसाठी नवी दिल्लीतील १८ व्या ब्रिक्स शिखर परिषदेविषयी माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "दिवसातील महत्त्वाच्या घडामोडी",
+        "type": "text",
+        "body": "१२ सप्टेंबर २०२६ रोजीच्या चालू घडामोडी स्पर्धा परीक्षांच्या (UPSC, SSC, UPSSSC) तयारीसाठी अत्यंत महत्त्वाच्या आहेत. आंतरराष्ट्रीय स्तरावर १८ वी ब्रिक्स (BRICS) शिखर परिषद आज नवी दिल्ली येथे सुरू होत असून, भारत या परिषदेचे यजमानपद भूषवत आहे."
+      },
+      {
+        "heading": "१८ वी ब्रिक्स परिषद - नवी दिल्ली",
+        "type": "text",
+        "body": "नवी दिल्ली येथील 'भारत मंडपम' येथे १८ व्या ब्रिक्स शिखर परिषदेचे आयोजन शनिवार आणि रविवार रोजी करण्यात येत आहे. यामध्ये ब्रिक्स सदस्य देशांचे नेते एकत्र येत आहेत. स्पर्धा परीक्षांच्या दृष्टीने ही चालू घडामोडींमधील एक महत्त्वपूर्ण आंतरराष्ट्रीय परिषद आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-12-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-12T03:58:48.111Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-12T03:58:55.281Z",
+  "contentHash": "2f14ae5fc81065473721a38d16d6f6a723261d395a780a0b2e411544fc45770f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 12 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-12-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-12T03:58:55.281Z"
+}
