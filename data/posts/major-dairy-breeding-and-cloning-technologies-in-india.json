@@ -5,7 +5,7 @@
   "date": "2026-09-13",
   "items": [],
   "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
-  "title": "Major Dairy Breeding and Cloning Technologies in India",
+  "title": "भारतातील प्रमुख दुग्ध प्रजनन आणि क्लोनिंग तंत्रज्ञान",
   "slug": "major-dairy-breeding-and-cloning-technologies-in-india",
   "path": "/current-affairs/major-dairy-breeding-and-cloning-technologies-in-india/",
   "category": "current-affairs",
@@ -40,18 +40,13 @@
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "Home Major Dairy Breeding and Cloning Technologies in India Major Dairy Breeding and Cloning Technologies in India (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-",
+    "shortDesc": "भारतातील दुग्धव्यवसाय क्षेत्रातील प्रमुख प्रजनन आणि अत्याधुनिक क्लोनिंग तंत्रज्ञानाविषयी माहिती.",
     "metaDescription": null,
     "sections": [
       {
-        "heading": "थोडक्यात",
+        "heading": "दुग्ध प्रजनन आणि क्लोनिंग तंत्रज्ञान",
         "type": "text",
-        "body": "Home Major Dairy Breeding and Cloning Technologies in India Major Dairy Breeding and Cloning Technologies in India (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max-width: 100%; margin-bottom: 20px; } /* Target ALL possible WordPress "
-      },
-      {
-        "heading": "सविस्तर माहिती",
-        "type": "text",
-        "body": "Home Major Dairy Breeding and Cloning Technologies in India Major Dairy Breeding and Cloning Technologies in India (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-"
+        "body": "भारतामध्ये दुग्धोत्पादन वाढवण्यासाठी आणि उच्च प्रतीच्या पशुधनाच्या निर्मितीसाठी आधुनिक प्रजनन व क्लोनिंग तंत्रज्ञानाचा वापर केला जातो. स्पर्धा परीक्षांच्या दृष्टीने कृषी आणि पशुसंवर्धन क्षेत्रातील हे तंत्रज्ञान अभ्यासणे अत्यंत महत्त्वाचे आहे."
       }
     ],
     "faqs": []
@@ -65,12 +60,11 @@
       "verifiedAt": "2026-09-13T11:27:12.327Z"
     }
   ],
-  "rewritePending": true,
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-13T11:27:12.327Z",
-  "contentHash": "65b5de708ad0220bfbf1f481d0dde673d5fe798d9507fcff63cd41183247d621",
+  "lastUpdatedAt": "2026-09-13T15:56:27.709Z",
+  "contentHash": "8cd931a4448c4e46b649b0bd1adf4bc07e2a4cb7db927a6543f80a667645ecb7",
   "updates": [],
   "seo": {
     "keywords": [
@@ -80,5 +74,7 @@
     ],
     "ogImage": "/og-images/major-dairy-breeding-and-cloning-technologies-in-india.svg",
     "index": false
-  }
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-13T15:56:27.709Z"
 }
