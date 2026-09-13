@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-13-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-13",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १३ सप्टेंबर २०२६",
+  "slug": "current-affairs-13-september-2026-gk-now",
+  "path": "/current-affairs/13-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-13-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-13-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "UPSC, SSC, UPSSSC आणि RRB यांसारख्या स्पर्धा परीक्षांसाठी १३ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी आणि नवी दिल्ली येथील १८ व्या ब्रिक्स शिखर परिषदेविषयी माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "ब्रिक्स नवी दिल्ली घोषणापत्र",
+        "type": "text",
+        "body": "नवी दिल्ली येथे १२ ते १३ सप्टेंबर दरम्यान आयोजित करण्यात आलेल्या १८ व्या ब्रिक्स (BRICS) शिखर परिषदेत ब्रिक्स नेत्यांनी 'नवी दिल्ली घोषणापत्र' स्वीकारले आहे. ही परिषद “Building for Resilience, Innovation, Cooperation and Sustainability” या संकल्पनेवर (Theme) आधारित आयोजित करण्यात आली होती. आंतरराष्ट्रीय घडामोडींच्या अंतर्गत स्पर्धा परीक्षांसाठी ही एक अत्यंत महत्त्वाची नोंद आहे."
+      },
+      {
+        "heading": "परीक्षेच्या दृष्टीने महत्त्वाचे",
+        "type": "text",
+        "body": "UPSC, SSC, UPSSSC, RRB यांसारख्या विविध स्पर्धा परीक्षांच्या तयारीसाठी अधिकृत सरकारी आणि सार्वजनिक स्त्रोतांवरून या महत्त्वाच्या दैनंदिन चालू घडामोडी संकलित करण्यात आल्या आहेत."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-13-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-13T04:09:17.285Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-13T04:09:27.896Z",
+  "contentHash": "1c2232ab3d3592e1dd9185552b9d13d692f215b8b64bfcbd97bb691beea17540",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 13 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-13-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-13T04:09:27.896Z"
+}
