@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-14-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-14",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी: १४ सप्टेंबर २०२६",
+  "slug": "current-affairs-14-september-2026-gk-now",
+  "path": "/current-affairs/14-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-14-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-14-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१४ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी; UPSC, SSC, RRB स्पर्धा परीक्षांसाठी उपयुक्त दैनंदिन माहिती आणि क्रीडा क्षेत्रातील ठळक घडामोडी.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्वाच्या चालू घडामोडींचा आढावा",
+        "type": "text",
+        "body": "१४ सप्टेंबर २०२६ रोजीच्या अधिकृत सार्वजनिक स्रोतांवरून संकलित केलेल्या महत्त्वाच्या चालू घडामोडींचा हा संग्रह आहे. UPSC, SSC, RRB आणि इतर स्पर्धा परीक्षांची तयारी करणाऱ्या विद्यार्थ्यांसाठी या घडामोडी अत्यंत उपयुक्त आहेत."
+      },
+      {
+        "heading": "क्रीडा: भारताने जिंकला आठवा महिला आशिया चषक",
+        "type": "text",
+        "body": "क्रीडा क्षेत्रात भारतीय महिला क्रिकेट संघाने उत्कृष्ट अष्टपैलू कामगिरी करत श्रीलंकेचा ७२ धावांनी पराभव केला. या विजयासह भारताने विक्रमी आठव्यांदा महिला टी-२० आशिया चषकाचे (Women's Asia Cup) विजेतेपद पटकावले आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-14-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-14T04:16:35.413Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-14T04:16:45.026Z",
+  "contentHash": "055843d4d843d0d669cac6c331fd58896f0ffc3bdccd2be14cbd4bda33f80f76",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 14 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-14-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-14T04:16:45.026Z"
+}
