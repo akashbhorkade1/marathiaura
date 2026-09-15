@@ -94,3 +94,56 @@ Approve नंतर `node automation/build.mjs` चालवावेच (त�
 - Limits: प्रति धाव max 10 rewrites (free tier rate limits). API fail = template fallback.
 - Rewrite झाल्यावर `aiRewritten: true` — पण **confidence bump नाही** (docs/04 §1: AI unreviewed = +0). Status `ai-generated` तसेच — publish फक्त human approval (`review.mjs approve`) नंतरच.
 - API key कधीच repo/commit मध्ये नाही — फक्त GitHub Secrets.
+
+## 7. Recruitment Status + Output Gate (frozen)
+
+### 7.1 Status derivation (lib.mjs `recruitStatus`)
+
+Status **कधीच manually type करायचा नाही** — dates वरून machine-derived (Part 3/4). Priority order:
+
+1. `dates.resultDate` उलटली → `RESULT`
+2. `dates.applicationEnd` उलटली → `ADMIT_CARD` (admitCardDate आली असेल तर) नाहीतर `CLOSED`
+3. `dates.applicationStart` भविष्यात → `UPCOMING`
+4. `applicationEnd` ≤ `CLOSING_SOON_DAYS` (7) दिवस बाकी → `CLOSING_SOON`
+5. अन्यथा → `ACTIVE`
+
+`CLOSING_SOON` = 7 दिवस — एकच constant (`CLOSING_SOON_DAYS`), इतर कोणतीही जागा हा नियम duplicate करत नाही.
+
+### 7.2 Expired content कधीच active दिसू नये
+
+- `isClosed(p)` = `CLOSED | ADMIT_CARD | RESULT` — या records फक्त "बंद झालेल्या भरती (ऐतिहासिक संदर्भ)" section मध्ये (Part 4/12).
+- Homepage/hub वरील active sections `<!--active-list--> … <!--/active-list-->` markers ने wrap केलेले आहेत; validate-output.mjs याच markers मध्ये expired path आढळल्यास build FAIL करते.
+- Expired page हटवायचे नाही, redirect करायचे नाही — page ऐतिहासिक संदर्भासाठी 200 + `अर्ज बंद` badge सह राहते; Apply लिंक "अर्ज बंद — संदर्भासाठी" होते.
+
+### 7.3 Safe text extraction (Part 8)
+
+Source content साठी **नेहमी** `safeText()` (lib.mjs) वापरा — implicit object→string कधीच नाही:
+
+| Source value | Result |
+|---|---|
+| `string` / finite `number` | trimmed text |
+| XML node (`_`, `#text`, `textContent`, `text`, `value`, `label`, `title`, `href`, `url`) | त्या field मधील text |
+| unknown object (उदा. DOM node) | `''` (कधीच `[object Object]` / `System.Xml.XmlElement` नाही) |
+| `array` | प्रत्येक item चे safeText, `, ` ने joined |
+| `null` / `undefined` / `NaN` / `Infinity` | `''` |
+
+### 7.4 Build output gate (validate-output.mjs — build.mjs चा शेवटचा step)
+
+`node automation/build.mjs` खालीलपैकी काहीही आढळल्यास **exit 1** — deploy कधीच होत नाही:
+
+1. Serialization leaks: `System.Xml`, `XmlElement`, `[object Object]`, visible `undefined` / `NaN`
+2. Expired recruitment active section मध्ये
+3. Recruitment page वर status badge नाही
+4. noindex page sitemap मध्ये
+5. Invalid sitemap entry (missing file, duplicate URL, non-https)
+6. Internal link 404 (orphans/unresolved paths)
+7. Indexability invariants: important page accidentally noindex; indexable page sitemap मधून गायब
+
+Locally: `node automation/validate-output.mjs` (build नंतर). CI: deploy.yml मध्ये `build.mjs` मध्येच समाविष्ट असल्याने वेगळा step आवश्यक नाही.
+
+### 7.5 Tests
+
+- `node automation/test/test-core.test.cjs` — core/mock-test engine
+- `node automation/test/render.test.cjs` — status derivation, safeText (XML/array/null), badges, link trust, breadcrumb, escaping
+
+दोन्ही suites deploy.yml मध्ये build आधी चालतात.

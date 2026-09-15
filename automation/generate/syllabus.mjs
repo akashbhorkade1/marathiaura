@@ -1,5 +1,5 @@
 // Generates: syllabus pages (type: syllabus) + /syllabus/ hub index — Schema V2 compliant
-import { loadSite, loadCategories, loadPosts, loadExams, published, write, esc, pageHtml, pathOf, svgOg } from '../lib.mjs';
+import { loadSite, loadCategories, loadPosts, loadExams, published, write, esc, pageHtml, pathOf, svgOg, breadcrumbHtml } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -46,7 +46,7 @@ function renderSyllabus(p) {
   }</div>` : '';
 
   const body = `
-<div class="breadcrumb"><a href="/">Home</a> › <a href="${esc(cat ? cat.path : '/')}">${esc(cat ? cat.nameMr : '')}</a></div>
+${breadcrumbHtml(cat)}
 <div class="page-header"><h1>${esc(p.title)}</h1></div>
 <div class="last-updated">अखेरचे अद्ययावत: ${esc((p.lastUpdatedAt || '').slice(0, 10))}</div>
 <div class="highlight"><strong>थोडक्यात:</strong> ${esc(p.content.shortDesc)}</div>

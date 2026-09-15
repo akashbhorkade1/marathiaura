@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { safeText } from './lib.mjs'; // Part 8 — parser-object → plain text कधीच String(obj) नाही
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
@@ -82,7 +83,12 @@ function detectCategory(title, fallback) {
 const EXCLUDE_RE = /\/(category|tag|tags|author|page|wp-json|wp-admin|wp-login|feed|amp|search)(\/|$)|#|mailto:|tel:|\.(pdf|png|jpe?g|svg|webp|ico|css|js)($|\?)|-pdf(\/|$)|\/(about|contact|privacy|disclaimer|terms|faq|advertise)(\/|$)/i;
 
 // Draft record — schema docs/02 §post प्रमाणे; recruitment किंवा current-affairs दोन्ही types
+// safeText normalization (Part 8): RSS/HTML/object/array/null कोणतेही असले तरी नेहमी plain string
 function makeDraft({ title, link, desc, body, feed }) {
+  title = safeText(title);
+  link = safeText(link);
+  desc = safeText(desc);
+  body = safeText(body);
   const cat = detectCategory(title, feed.category);
   const id = slugify(title);
   const now = new Date().toISOString();

@@ -28,12 +28,110 @@ export const esc = s => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
+// ---------- Safe text extraction (Part 8 — source parsing hardening) ----------
+// XML node → text content, Array → joined safe text, Object → explicit field
+// extraction, null/undefined → empty safe value. NEVER implicit object-to-string.
+export function safeText(v) {
+  if (v == null) return '';
+  if (typeof v === 'string') return v.trim();
+  if (typeof v === 'number') return Number.isFinite(v) ? String(v) : '';
+  if (typeof v === 'boolean') return String(v);
+  if (Array.isArray(v)) return v.map(safeText).filter(Boolean).join(', ');
+  if (typeof v === 'object') {
+    // XML parser nodes (xml2js `_`/`#text`, fast-xml-parser, DOM `textContent`) —
+    // explicit field extraction only; never String(obj) → "System.Xml.XmlElement"
+    for (const k of ['_', '#text', 'textContent', 'text', 'value', 'label', 'title', 'href', 'url']) {
+      const val = v[k];
+      if (val != null && typeof val !== 'object') {
+        const t = String(val).trim();
+        if (t) return t;
+      }
+    }
+    return '';
+  }
+  return '';
+}
+
+// ---------- Recruitment status system (Part 3 — machine-derived from dates) ----------
+// States: ACTIVE | CLOSING_SOON | CLOSED | ADMIT_CARD | RESULT | UPCOMING
+// Rule: CLOSING_SOON = अर्ज शेवटची तारीखेला ≤ 7 दिवस बाकी. Dates are YYYY-MM-DD (IST).
+export const CLOSING_SOON_DAYS = 7;
+const DAY_MS = 86400000;
+const istDayEnd = iso => new Date(`${iso}T23:59:59+05:30`).getTime();
+const istDayStart = iso => new Date(`${iso}T00:00:00+05:30`).getTime();
+
+export function recruitStatus(p, now = Date.now()) {
+  if (!p || p.type !== 'recruitment') return null;
+  const d = p.dates || {};
+  if (d.resultDate && now >= istDayEnd(d.resultDate)) return 'RESULT';
+  // 1) शेवटची तारीख उलटली → CLOSED / ADMIT_CARD (expired कधीच active दिसू नये)
+  if (d.applicationEnd && now > istDayEnd(d.applicationEnd)) {
+    return (d.admitCardDate && now >= istDayStart(d.admitCardDate)) ? 'ADMIT_CARD' : 'CLOSED';
+  }
+  // 2) अर्ज अजून सुरू नाही → UPCOMING (तारीख जवळ असली तरी शेवटची तारीख जवळ दाखवणे चुकीचे ठरते)
+  if (d.applicationStart && now < istDayStart(d.applicationStart)) return 'UPCOMING';
+  // 3) अर्ज सुरू आणि ≤ CLOSING_SOON_DAYS दिवस बाकी → CLOSING_SOON
+  if (d.applicationEnd && istDayEnd(d.applicationEnd) - now <= CLOSING_SOON_DAYS * DAY_MS) return 'CLOSING_SOON';
+  return 'ACTIVE';
+}
+
+export const STATUS_META = {
+  ACTIVE: { label: 'अर्ज सुरू', icon: '🟢', cls: 'badge-active' },
+  CLOSING_SOON: { label: 'शेवटची तारीख जवळ', icon: '🟠', cls: 'badge-closing' },
+  CLOSED: { label: 'अर्ज बंद', icon: '🔴', cls: 'badge-closed' },
+  ADMIT_CARD: { label: 'प्रवेशपत्र उपलब्ध', icon: '🔵', cls: 'badge-admit' },
+  RESULT: { label: 'निकाल जाहीर', icon: '🏆', cls: 'badge-result' },
+  UPCOMING: { label: 'लवकरच येत आहे', icon: '🔜', cls: 'badge-upcoming' }
+};
+
+export function statusBadge(p) {
+  const s = recruitStatus(p);
+  if (!s) return '';
+  const m = STATUS_META[s];
+  return `<span class="badge ${m.cls}" data-status="${s}">${m.icon} ${m.label}</span>`;
+}
+
+export const isClosed = p => ['CLOSED', 'ADMIT_CARD', 'RESULT'].includes(recruitStatus(p));
+
+// YYYY-MM-DD (किंवा full ISO) → DD-MM-YYYY display
+export const fmtDate = v => {
+  const m = String(v || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : '';
+};
+
+// Last Verified (Part 5) — फक्त sources[] मध्ये खरोखर verifiedAt असेल तरच; कधीच fabricate नाही
+export function lastVerified(p) {
+  const dates = (p && p.sources || []).map(s => s && s.verifiedAt).filter(Boolean)
+    .map(v => String(v).slice(0, 10)).sort();
+  return dates.length ? dates[dates.length - 1] : null;
+}
+
+// Source trust (Part 14) — gov.in/nic.in hosts only are "official"
+export function isOfficialUrl(u) {
+  try { return /(^|\.)gov\.in$|(^|\.)nic\.in$/.test(new URL(u).hostname); }
+  catch { return false; }
+}
+export const linkLabel = url => isOfficialUrl(url) ? 'अधिकृत जाहिरात / Notification' : 'माहिती स्रोत (तृतीय-पक्ष)';
+
 export const loadSite = () => readJson('data/site.json').site;
 export const loadCategories = () => readJson('data/categories.json');
 export const loadPosts = () => readJsonDir('data/posts');
 export const loadExams = () => readJsonDir('data/exams');
 export const loadTests = () => readJsonDir('data/mock-tests');
 export const loadQuestionBank = () => readJsonDir('data/questions').map(b => ({ exam: b.exam, questions: b.questions || [] }));
+
+// Mock-test question resolution — mock-test.mjs आणि sitemap.mjs एकच नियम वापरतात
+// (sitemap मध्ये फक्त प्रत्यक्षात generate होणारी test pages यावीत)
+export function questionIndex() {
+  const qById = new Map();
+  for (const b of loadQuestionBank()) for (const q of (b.questions || [])) if (q && q.id) qById.set(q.id, q);
+  return qById;
+}
+export function resolveTestQuestions(t, qById) {
+  return (t.questionIds || []).map(id => qById.get(id)).filter(Boolean)
+    .filter(q => q.question && q.correctAnswer && q.explanation); // explanation आवश्यक
+}
+export const isRenderableTest = (t, qById) => (t.questionIds || []).length > 0 && resolveTestQuestions(t, qById).length > 0;
 export const loadPages = () => readJson('data/pages.json');
 
 // Published records only (status workflow enforcement)
@@ -54,7 +152,9 @@ export function adsenseHead(site) {
 
 export function headHtml(site, { title, description, canonical, ogImage = null, type = 'website', index = true }) {
   const noindex = index ? '' : '\n<meta name="robots" content="noindex, follow">';
-  const img = ogImage || `${site.url}/og-default.svg`;
+  const img = ogImage
+    ? (ogImage.startsWith('http') ? ogImage : site.url + ogImage)
+    : `${site.url}/og-default.svg`;
   return `<!DOCTYPE html>
 <html lang="mr">
 <head>
@@ -77,8 +177,38 @@ ${adsenseHead(site)}</head>
 `;
 }
 
+// Category paths that actually have generated pages (thin-page rule, docs/03 §3) —
+// nav/footer/homepage कधीच 404 category links दाखवणार नाहीत.
+let _availCats = null;
+export function generatedCategoryPaths() {
+  if (_availCats) return _availCats;
+  const posts = published(loadPosts());
+  const set = new Set();
+  for (const c of loadCategories()) {
+    if (c.id === 'latest-bharti') {
+      if (posts.some(p => p.type === 'recruitment')) set.add(c.path);
+    } else if (c.id === 'syllabus') {
+      if (posts.some(p => p.type === 'syllabus')) set.add(c.path);
+    } else if (posts.some(p => p.category === c.id)) {
+      set.add(c.path);
+    }
+  }
+  _availCats = set;
+  return set;
+}
+
+// Breadcrumb — category link फक्त प्रत्यक्षात generate झालेल्या hub page साठी (404 links टाळा, Part 16)
+export function breadcrumbHtml(cat) {
+  const home = '<a href="/">Home</a>';
+  if (!cat) return `<div class="breadcrumb">${home}</div>`;
+  const plain = `<div class="breadcrumb">${home} › ${esc(cat.nameMr)}</div>`;
+  if (!generatedCategoryPaths().has(cat.path)) return plain;
+  return `<div class="breadcrumb">${home} › <a href="${esc(cat.path)}">${esc(cat.nameMr)}</a></div>`;
+}
+
 export function navHtml(categories) {
-  const navCats = categories.filter(c => c.nav);
+  const avail = generatedCategoryPaths();
+  const navCats = categories.filter(c => c.nav && avail.has(c.path));
   const links = [
     '<a href="/">Home</a>',
     ...navCats.map(c => `<a href="${c.path}">${esc(c.nameMr)}</a>`)
@@ -102,7 +232,9 @@ export function navHtml(categories) {
 }
 
 export function footerHtml(site, categories) {
-  const catLinks = categories.slice(0, 8).map(c => `<li><a href="${c.path}">${esc(c.nameMr)}</a></li>`).join('\n');
+  const avail = generatedCategoryPaths();
+  const catLinks = categories.filter(c => avail.has(c.path)).slice(0, 8)
+    .map(c => `<li><a href="${c.path}">${esc(c.nameMr)}</a></li>`).join('\n');
   return `<footer class="site">
 <div class="wrap footer-grid">
   <div>
@@ -111,13 +243,13 @@ export function footerHtml(site, categories) {
     <p><small>हे कोणत्याही सरकारी संस्थेचे अधिकृत संकेतस्थळ नाही. स्रोत: अधिकृत जाहिराती.</small></p>
   </div>
   <div>
-    <h3>Categories</h3>
+    <h3>श्रेणी (Categories)</h3>
     <ul>
     ${catLinks}
     </ul>
   </div>
   <div>
-    <h3>महत्वाचे दुवे</h3>
+    <h3>महत्त्वाचे दुवे</h3>
     <ul>
       <li><a href="/about/">आमच्याविषयी</a></li>
       <li><a href="/contact/">संपर्क</a></li>
@@ -138,11 +270,16 @@ export function pageHtml(site, categories, { title, description, canonical, body
 }
 
 export function postCard(p, cat) {
-  const badge = p.badge === 'urgent' ? '<span class="badge badge-urgent">तातडीचे</span>' : '<span class="badge badge-new">नवीन</span>';
-  return `<a class="post-card" href="${esc(pathOf(p))}">
+  const st = statusBadge(p);
+  const closed = recruitStatus(p) === 'CLOSED';
+  const lastDate = p.dates && p.dates.applicationEnd ? fmtDate(p.dates.applicationEnd) : null;
+  const dateMeta = p.type === 'recruitment' && lastDate ? `शेवटची तारीख: ${lastDate} · ` : '';
+  // manual "urgent" badge कधीच expired record वर दिसू नये (Part 4) — machine status ने replace होते
+  const legacyBadge = (!isClosed(p) && p.badge === 'urgent') ? '<span class="badge badge-urgent">तातडीचे</span>' : '';
+  return `<a class="post-card${closed ? ' is-closed' : ''}" href="${esc(pathOf(p))}">
   <div><span class="badge-cat">${esc(cat ? cat.nameMr : '')}</span></div>
-  <div class="title">${esc(p.title)}${badge}</div>
-  <div class="meta">प्रकाशित: ${esc((p.publishedAt || p.lastUpdatedAt || '').slice(0, 10))} · अखेरचे अद्ययावत: ${esc((p.lastUpdatedAt || '').slice(0, 10))}</div>
+  <div class="title">${esc(p.title)}${st ? ' ' + st : legacyBadge}</div>
+  <div class="meta">${dateMeta}प्रकाशित: ${esc((p.publishedAt || p.lastUpdatedAt || '').slice(0, 10))} · अखेरचे अद्ययावत: ${esc((p.lastUpdatedAt || '').slice(0, 10))}</div>
 </a>`;
 }
 

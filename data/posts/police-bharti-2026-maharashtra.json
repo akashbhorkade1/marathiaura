@@ -78,7 +78,7 @@
         ]
       },
       {
-        "heading": "महत्वाच्या सूचना",
+        "heading": "महत्त्वाच्या सूचना",
         "type": "list",
         "items": [
           "अर्ज करण्यापूर्वी अधिकृत जाहिरात नक्की वाचा",
@@ -116,8 +116,8 @@
   "confidence": 85,
   "fixture": true,
   "publishedAt": "2026-09-03T10:00:00+05:30",
-  "lastUpdatedAt": "2026-09-03T10:00:00+05:30",
-  "contentHash": "fd5f2c225b4a88c07dd4744277e6ce78720e88eba3a7de895805743250e1f775",
+  "lastUpdatedAt": "2026-09-15T10:00:00+05:30",
+  "contentHash": "78752566c83734c889a97445d4a6a1d75b98be3798511d94b43609aa93cf7343",
   "updates": [],
   "seo": {
     "keywords": [

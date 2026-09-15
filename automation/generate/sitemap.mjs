@@ -1,5 +1,6 @@
 // Generates: sitemap index + category-wise sitemaps + search-index.json
-import { loadSite, loadCategories, loadPosts, loadExams, loadTests, loadPages, published, write, writeJson, pathOf } from '../lib.mjs';
+import { loadSite, loadCategories, loadPosts, loadExams, loadTests, loadPages, published, write, writeJson, pathOf,
+  safeText, recruitStatus, STATUS_META, questionIndex, isRenderableTest } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -36,8 +37,12 @@ for (const c of categories) {
   }
 }
 mods.push(sitemapFile('sitemap-categories.xml', catEntries));
-// mock tests
-mods.push(sitemapFile('sitemap-mocktests.xml', tests.map(t => urlXml(site.url + pathOf(t), new Date().toISOString()))));
+// mock tests — फक्त render होणारी test pages + listing hub (mock-test.mjs शी समान नियम)
+const qIdx = questionIndex();
+const renderableTests = tests.filter(t => isRenderableTest(t, qIdx));
+const mockEntries = renderableTests.map(t => urlXml(site.url + pathOf(t), new Date().toISOString()));
+if (renderableTests.length) mockEntries.unshift(urlXml(site.url + '/mock-test/', new Date().toISOString()));
+mods.push(sitemapFile('sitemap-mocktests.xml', mockEntries));
 
 // static pages
 mods.push(sitemapFile('sitemap-static.xml', [
@@ -51,12 +56,24 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="h
 }\n</sitemapindex>\n`;
 write('sitemap.xml', indexXml);
 
-// search index (client-side search)
-writeJson('search-index.json', posts.map(p => ({
-  title: p.title,
-  desc: p.content.shortDesc,
-  cat: (categories.find(c => c.id === p.category) || {}).nameMr || '',
-  url: pathOf(p)
-})));
+// search index (client-side search) — फक्त indexable pages (noindex pages वगळा)
+// Part 11: department / qualification / status / last date ने filter करता येईल अशी fields
+writeJson('search-index.json', posts.filter(p => p.seo.index !== false).map(p => {
+  const r = p.recruitment || {};
+  const status = recruitStatus(p);
+  return {
+    title: p.title,
+    desc: p.content.shortDesc,
+    cat: (categories.find(c => c.id === p.category) || {}).nameMr || '',
+    url: pathOf(p),
+    type: p.type,
+    dept: safeText(p.department),
+    qual: (r.qualification || []).map(safeText).filter(Boolean).join(', '),
+    location: safeText(r.location),
+    status: status || '',
+    statusLabel: status ? STATUS_META[status].label : '',
+    lastDate: (p.dates && p.dates.applicationEnd) || ''
+  };
+}));
 
 console.log(`sitemap.mjs: index + ${mods.map(m => `${m.name}(${m.n})`).join(', ')}`);

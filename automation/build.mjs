@@ -25,4 +25,8 @@ for (const s of steps) {
   await import(pathToFileURL(path.join(root, 'automation', s)).href);
   console.log('');
 }
+// हार्ड गेट — serialization leaks / expired-active / invalid sitemap असल्यास build FAIL (Parts 7/21)
+console.log('▶ validate-output.mjs');
+await import(pathToFileURL(path.join(root, 'automation', 'validate-output.mjs')).href);
+console.log('');
 console.log('✅ Build complete');

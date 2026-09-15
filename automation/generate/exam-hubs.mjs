@@ -1,6 +1,6 @@
 // Generates: exam hub pages (complete exam ecosystem — hub, duplicate content नाही)
 // Schema V2: only render relationship links when the referenced record/page actually exists.
-import { loadSite, loadCategories, loadExams, loadPosts, loadTests, published, write, esc, pageHtml, pathOf } from '../lib.mjs';
+import { loadSite, loadCategories, loadExams, loadPosts, loadTests, published, write, esc, pageHtml, pathOf, breadcrumbHtml } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -38,7 +38,7 @@ for (const e of exams) {
   const relHtml = relLink.length ? `<div class="content-section"><h2>संबंधित माहिती (Exam Hub)</h2><p>${relLink.join(' · ')}</p></div>` : '';
 
   const body = `
-<div class="breadcrumb"><a href="/">Home</a> › <a href="${esc(cat ? cat.path : '/')}">${esc(cat ? cat.nameMr : '')}</a></div>
+${breadcrumbHtml(cat)}
 <div class="page-header"><h1>${esc(e.examNameMr)}</h1></div>
 <div class="last-updated">अखेरचे अद्ययावत: ${esc((e.lastUpdatedAt || '').slice(0, 10))}</div>
 <div class="highlight"><strong>${esc(e.examName)}</strong> — ${esc(e.conductingBody)}. ${e.description ? esc(e.description) : ''}</div>

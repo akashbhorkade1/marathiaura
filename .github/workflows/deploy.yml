@@ -23,7 +23,9 @@ jobs:
         with:
           node-version: 24
       - name: Run test suite
-        run: node automation/test/test-core.test.cjs
+        run: |
+          node automation/test/test-core.test.cjs
+          node automation/test/render.test.cjs
       - name: Build site
         run: node automation/build.mjs
         env:

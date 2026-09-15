@@ -1,29 +1,23 @@
 // Generates: mock test pages (client-side engine) + /mock-test/ listing — Schema V2
 // Tests reference question bank IDs (एक question → अनेक tests, zero duplication)
-import { loadSite, loadCategories, loadTests, loadQuestionBank, write, esc, pageHtml, pathOf } from '../lib.mjs';
+import { loadSite, loadCategories, loadTests, questionIndex, resolveTestQuestions, isRenderableTest, write, esc, pageHtml, pathOf } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
 const tests = loadTests();
-// Question bank lookup (bank files: data/questions/<exam>.json)
-const bankByExam = {};
-for (const bank of loadQuestionBank()) {
-  bankByExam[bank.exam] = bank.questions || [];
-}
-const qById = new Map();
-for (const q of Object.values(bankByExam).flat()) if (q && q.id) qById.set(q.id, q);
+// Question bank lookup — resolution नियम lib.mjs मध्ये (sitemap सोबत shared)
+const qById = questionIndex();
 
-function resolveQuestions(t) {
-  // Reference-only; test मध्ये full question object NEVER copy करायचा
-  const resolved = (t.questionIds || []).map(id => qById.get(id)).filter(Boolean);
-  return resolved.filter(q => q.question && q.correctAnswer && q.explanation); // explanation आवश्यक
-}
+const resolveQuestions = t => resolveTestQuestions(t, qById);
 
 let count = 0;
 for (const t of tests) {
-  if (!t.questionIds || !t.questionIds.length) { console.error(`  [SKIP] ${t.id}: no questionIds`); continue; }
+  if (!isRenderableTest(t, qById)) {
+    console.error(`  [SKIP] ${t.id}: ${(t.questionIds || []).length ? 'no resolvable valid questions' : 'no questionIds'}`);
+    continue;
+  }
+
   const resolved = resolveQuestions(t);
-  if (!resolved.length) { console.error(`  [SKIP] ${t.id}: no resolvable valid questions`); continue; }
 
   const data = {
     title: t.titleMr || t.title,
@@ -68,13 +62,14 @@ for (const t of tests) {
   console.log(`  mock test: ${pathOf(t)} (${resolved.length} questions)`);
 }
 
-// Listing page
-if (tests.length) {
+// Listing page — फक्त प्रत्यक्षात generate झालेल्या test pages (404 links टाळा)
+const renderable = tests.filter(t => isRenderableTest(t, qById));
+if (renderable.length) {
   const body = `
 <div class="page-header"><h1>मॉक टेस्ट</h1></div>
 <p>फ्री ऑनलाइन मॉक टेस्ट — timer, स्पष्टीकरण आणि score analysis सह.</p>
 <div class="post-list">
-${tests.map(t => `<a class="post-card" href="${esc(pathOf(t))}"><div><span class="badge-cat">${esc(t.exam)}</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${(t.questionIds || []).length} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n')}
+${renderable.map(t => `<a class="post-card" href="${esc(pathOf(t))}"><div><span class="badge-cat">${esc(t.exam)}</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${(t.questionIds || []).length} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n')}
 </div>`;
   write('mock-test/index.html', pageHtml(site, categories, { title: 'मॉक टेस्ट — Free Online Mock Tests', description: 'स्पर्धा परीक्षेसाठी फ्री ऑनलाइन मॉक टेस्ट.', canonical: site.url + '/mock-test/', body }));
   console.log('  listing: /mock-test/');

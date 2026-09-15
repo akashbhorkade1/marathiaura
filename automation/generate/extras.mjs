@@ -30,6 +30,20 @@ if (fs.existsSync(srcAssets)) {
   console.log('extras.mjs: assets/ copied');
 }
 
+// redirects (docs/03 §7) — GitHub Pages native redirects नाहीत → meta-refresh stub + noindex
+const redirectsPath = path.join(ROOT, 'data', 'redirects.json');
+if (fs.existsSync(redirectsPath)) {
+  let redirects = [];
+  try { redirects = JSON.parse(fs.readFileSync(redirectsPath, 'utf8')).redirects || []; } catch { redirects = []; }
+  for (const r of redirects) {
+    if (!r || !r.from || !r.to) continue;
+    const to = r.to.startsWith('http') ? r.to : site.url + r.to;
+    write(r.from.replace(/^\//, '').replace(/\/$/, '') + '/index.html',
+      `<!DOCTYPE html>\n<html lang="mr">\n<head>\n<meta charset="UTF-8">\n<meta name="robots" content="noindex, follow">\n<link rel="canonical" href="${to}">\n<meta http-equiv="refresh" content="0; url=${to}">\n<title>हलवले गेले आहे...</title>\n</head>\n<body>\n<p>हे पान हलवले गेले आहे. <a href="${to}">इथे क्लिक करा</a>.</p>\n</body>\n</html>\n`);
+    console.log(`  redirect: ${r.from} → ${r.to}`);
+  }
+}
+
 // GitHub Pages ला custom domain कळण्यासाठी deploy artifact मध्ये CNAME असणे आवश्यक आहे.
 // Root मधील file copy केल्याने प्रत्येक fresh build नंतरही domain configuration टिकते.
 const srcCname = path.join(ROOT, 'CNAME');
