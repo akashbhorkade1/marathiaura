@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-15-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-15",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १५ सप्टेंबर २०२६",
+  "slug": "current-affairs-15-september-2026-gk-now",
+  "path": "/current-affairs/15-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-15-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-15-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१५ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. UPSC, SSC, RRB, UPSSSC यांसारख्या स्पर्धा परीक्षांच्या तयारीसाठी अधिकृत सार्वजनिक स्रोतांकडून संकलित केलेल्या दैनंदिन बातम्या. सरकारने जाहीर केले आहे की, २,००० रुपयांपर्यंतच्या UPI व्यवहारांवर बँका कोणतेही शुल्क आकारू शकणार नाहीत.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "आजच्या ठळक चालू घडामोडी",
+        "type": "text",
+        "body": "१५ सप्टेंबर २०२६ रोजीच्या महत्त्वाच्या चालू घडामोडी. UPSC, SSC, RRB, UPSSSC यांसारख्या स्पर्धा परीक्षांसाठी उपयुक्त दैनंदिन बातम्या अधिकृत सार्वजनिक स्रोतांकडून संकलित केल्या आहेत. अर्थव्यवस्थेशी संबंधित एक महत्त्वाची बातमी: सरकारने जाहीर केले आहे की, १५ सप्टेंबर २०२६ पासून २,००० रुपयांपर्यंतच्या युनिफाइड पेमेंट्स इंटरफेस (UPI) व्यवहारांवर बँका कोणतेही शुल्क आकारू शकणार नाहीत."
+      },
+      {
+        "heading": "महत्त्वाच्या घडामोडींचे विश्लेषण",
+        "type": "text",
+        "body": "१५ सप्टेंबर २०२६ रोजीच्या चालू घडामोडींमध्ये स्पर्धा परीक्षांसाठी महत्त्वाच्या बातम्यांचा समावेश आहे. या बातम्या UPSC, SSC, RRB, UPSSSC यांसारख्या परीक्षांच्या तयारीसाठी अधिकृत सार्वजनिक स्रोतांकडून संकलित केल्या आहेत. अर्थव्यवस्थेशी संबंधित एक महत्त्वाची बातमी: २,००० रुपयांपर्यंतचे UPI व्यवहार बँक शुल्कापासून मुक्त राहतील. सरकारने जाहीर केले आहे की, बँका कोणतेही शुल्क आकारू शकणार नाहीत..."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-15-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-15T04:16:23.215Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-15T04:16:49.919Z",
+  "contentHash": "66b6e6178ad6065750c09540e232d56a62215f9af40fbe5c646a64049a802664",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 15 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-15-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-15T04:16:49.919Z"
+}
