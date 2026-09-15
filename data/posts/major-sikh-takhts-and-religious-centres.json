@@ -5,7 +5,7 @@
   "date": "2026-09-15",
   "items": [],
   "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
-  "title": "Major Sikh Takhts and Religious Centres",
+  "title": "प्रमुख शीख तख्त आणि धार्मिक केंद्रे",
   "slug": "major-sikh-takhts-and-religious-centres",
   "path": "/current-affairs/major-sikh-takhts-and-religious-centres/",
   "category": "current-affairs",
@@ -40,18 +40,18 @@
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "Home Major Sikh Takhts and Religious Centres Major Sikh Takhts and Religious Centres (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max",
+    "shortDesc": "शीख धर्मातील प्रमुख तख्त आणि महत्त्वाच्या धार्मिक केंद्रांविषयी माहिती.",
     "metaDescription": null,
     "sections": [
       {
-        "heading": "थोडक्यात",
+        "heading": "थोडक्यात माहिती",
         "type": "text",
-        "body": "Home Major Sikh Takhts and Religious Centres Major Sikh Takhts and Religious Centres (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max-width: 100%; margin-bottom: 20px; } /* Target ALL possible WordPress oEmbed wrappers */ .post-video"
+        "body": "शीख धर्मातील प्रमुख तख्त आणि महत्त्वाची धार्मिक केंद्रे ही शीख इतिहास, संस्कृती आणि परंपरेच्या दृष्टीने अत्यंत महत्त्वाची मानली जातात. स्पर्धा परीक्षांच्या सामान्य ज्ञान आणि इतिहास घटकाच्या दृष्टीने या धार्मिक स्थळांचा अभ्यास उपयुक्त ठरतो."
       },
       {
         "heading": "सविस्तर माहिती",
         "type": "text",
-        "body": "Home Major Sikh Takhts and Religious Centres Major Sikh Takhts and Religious Centres (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max"
+        "body": "प्रमुख शीख तख्त आणि शीख समुदायाशी संबंधित प्रमुख धार्मिक केंद्रांविषयीची माहिती स्पर्धा परीक्षेच्या तयारीसाठी महत्त्वाची आहे. या धार्मिक स्थळांचा ऐतिहासिक आणि सांस्कृतिक संदर्भ विविध परीक्षांमध्ये विचारला जातो."
       }
     ],
     "faqs": []
@@ -65,12 +65,11 @@
       "verifiedAt": "2026-09-15T16:38:59.386Z"
     }
   ],
-  "rewritePending": true,
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-15T16:38:59.386Z",
-  "contentHash": "4966d0c7614507c9c4e6314f73e6eef53b40efcee468c4cb3bf8fb8b9b08c008",
+  "lastUpdatedAt": "2026-09-15T21:04:02.905Z",
+  "contentHash": "5a31f121877ed578cbc2dcc5cda90a811ad2f1ac860ca116a7439d8f0dbb61e2",
   "updates": [],
   "seo": {
     "keywords": [
@@ -80,5 +79,7 @@
     ],
     "ogImage": "/og-images/major-sikh-takhts-and-religious-centres.svg",
     "index": false
-  }
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-15T21:04:02.905Z"
 }
