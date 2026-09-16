@@ -1,0 +1,85 @@
+{
+  "id": "munich-and-barcelona-to-host-uefa-champions-league-finals",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-16",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "म्युनिक आणि बार्सिलोना येथे UEFA चॅम्पियन्स लीग फायनल्सचे आयोजन",
+  "slug": "munich-and-barcelona-to-host-uefa-champions-league-finals",
+  "path": "/current-affairs/munich-and-barcelona-to-host-uefa-champions-league-finals/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/munich-and-barcelona-to-host-uefa-champions-league-finals/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/munich-and-barcelona-to-host-uefa-champions-league-finals/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "म्युनिक आणि बार्सिलोना शहरांमध्ये UEFA चॅम्पियन्स लीग फायनल्सचे आयोजन केले जाणार आहे. ही माहिती १६ सप्टेंबर २०२६ रोजी प्रसिद्ध झाली.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "UEFA चॅम्पियन्स लीगच्या अंतिम सामन्यांचे यजमानपद म्युनिक आणि बार्सिलोना या दोन युरोपीय शहरांना मिळाले आहे. फुटबॉल जगतातील या प्रतिष्ठित स्पर्धेच्या अंतिम फेरीचे आयोजन या शहरांमध्ये केले जाईल."
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "यूईएफए (UEFA) ने नुकत्याच केलेल्या घोषणेनुसार, चॅम्पियन्स लीगच्या अंतिम सामन्यांसाठी म्युनिक आणि बार्सिलोना यांची निवड करण्यात आली आहे. या निर्णयामुळे दोन्ही शहरांमधील फुटबॉलप्रेमींमध्ये आनंदाचे वातावरण आहे. या मोठ्या क्रीडा आयोजनासाठी आवश्यक तयारी लवकरच सुरू होईल, अशी अपेक्षा आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/munich-and-barcelona-to-host-uefa-champions-league-finals/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-16T11:12:22.391Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-16T11:13:35.839Z",
+  "contentHash": "9b76b5cf0757b732f6ec93c964bcdb825061aef98c4eff50e77d89d4604ccb72",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Munich and Barcelona to Host UEFA Champions League Finals",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/munich-and-barcelona-to-host-uefa-champions-league-finals.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-16T11:13:35.839Z"
+}
