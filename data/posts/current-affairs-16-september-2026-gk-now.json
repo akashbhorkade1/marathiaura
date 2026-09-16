@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-16-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-16",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १६ सप्टेंबर २०२६",
+  "slug": "current-affairs-16-september-2026-gk-now",
+  "path": "/current-affairs/16-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-16-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-16-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१६ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. सरकारी नोकरीच्या तयारी करणाऱ्या उमेदवारांसाठी उपयुक्त. अर्थव्यवस्थेशी संबंधित: ₹२,००० वरील UPI व्यापारी व्यवहारांवर शुल्क.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "आजच्या ठळक घडामोडी",
+        "type": "text",
+        "body": "१६ सप्टेंबर २०२६ रोजीच्या प्रमुख चालू घडामोडींमध्ये, भारत सरकारच्या अर्थ मंत्रालयाने ₹२,००० पेक्षा जास्त रकमेच्या UPI व्यापारी (मर्चंट) व्यवहारांवर ०.४% शुल्क आकारण्याची घोषणा केली आहे. ही माहिती सरकारी नोकरीच्या तयारी करणाऱ्या उमेदवारांसाठी उपयुक्त आहे."
+      },
+      {
+        "heading": "UPI व्यवहारांवरील शुल्क: सविस्तर माहिती",
+        "type": "text",
+        "body": "अर्थ मंत्रालयाच्या घोषणेनुसार, ₹२,००० पेक्षा जास्त रकमेच्या व्यक्ती-ते-व्यापारी (P2M) UPI व्यवहारांवर ०.४% MDR (Merchant Discount Rate) लागू होईल. या शुल्काची प्रति व्यवहार कमाल मर्यादा ₹३०० निश्चित करण्यात आली आहे. ही नवीन तरतूद व्यापारी व्यवहारांवर परिणाम करेल."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-16-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-16T04:12:17.801Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-16T04:12:38.722Z",
+  "contentHash": "8be9abc85f25552f370fb93027f9779e3b104238055fa39dc299aee95d83ce2e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 16 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-16-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-16T04:12:38.722Z"
+}
