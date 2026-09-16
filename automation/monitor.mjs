@@ -155,11 +155,20 @@ for (const feed of (site.feeds || [])) {
       const xml = await fetchPage(feed.url);
       const items = xml.split(/<item[\s>]/i).slice(1, 1 + MAX_ITEMS);
       for (const raw of items) {
-        const get = tag => { const m = raw.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i')); return m ? m[1] : ''; };
-        const title = xmlText(get('title'));
+        // `<tag attr="…">` attributes (उदा. System.Xml serialization metadata) कधीच content मध्ये जाऊ नयेत.
+        // `<tag attr="…">` attributes (उदा. System.Xml serialization metadata) कधीच content मध्ये जाऊ नयेत —
+        // फक्त inner text काढा (get attrs strip करते), outer tag string कधीच paste नाही.
+        const get = tag => { const m = raw.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i')); return m ? m[1].replace(/<[^>]+>/g, ' ').trim() : ''; };
+        const titleRaw = get('title');
         const link = xmlText(get('link'));
+        if (!titleRaw || !link) continue; // blank item → skip (कधीच raw XML paste नाही)
+        // Raw CDATA/XML wrapper किंवा serialization attrs (System.Xml / XmlElement) कधीच draft मध्ये जाऊ नयेत —
+        // फक्त plain-text content; दिसणारा garbage आढळल्यास item skip.
+        const title = xmlText(titleRaw);
+        if (!title) continue;
         const desc = xmlText(get('description')) || title;
-        if (title) collected.push({ title, link, desc });
+        if (/System\.Xml|XmlElement|\[object Object\]/.test(`${title} ${desc}`)) continue;
+        collected.push({ title, link, desc });
       }
     } else if (feed.type === 'html') {
       // Listing page वरून थेट links (जाहिरात PDFs सारखे) — article page fetch नाही (docs/04 §3.5)

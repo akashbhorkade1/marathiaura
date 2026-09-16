@@ -30,6 +30,10 @@ jobs:
         run: node automation/build.mjs
         env:
           ADSENSE_PUB_ID: ${{ secrets.ADSENSE_PUB_ID }}
+      - name: Add .nojekyll + CNAME
+        run: |
+          touch _site/.nojekyll
+          cp CNAME _site/CNAME
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

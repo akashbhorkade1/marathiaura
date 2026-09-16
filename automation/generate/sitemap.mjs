@@ -56,6 +56,24 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="h
 }\n</sitemapindex>\n`;
 write('sitemap.xml', indexXml);
 
+// RSS feed (Part 17) — latest indexable updates; feed readers + discovery साठी
+// स्रोत: published + indexable posts (drafts/noindex कधीच feed मध्ये नाहीत)
+function rssXml(items) {
+  const escXml = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const now = new Date().toUTCString();
+  const entry = items.map(p => {
+    const link = site.url + pathOf(p);
+    const pub = p.publishedAt || p.lastUpdatedAt;
+    return `  <item>\n    <title>${escXml(p.title)}</title>\n    <link>${escXml(link)}</link>\n    <guid>${escXml(link)}</guid>\n    <description>${escXml(safeText(p.content.shortDesc))}</description>\n${pub ? `    <pubDate>${new Date(pub).toUTCString()}</pubDate>\n` : ''}  </item>`;
+  }).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n  <title>${escXml(site.name)}</title>\n  <link>${escXml(site.url)}/</link>\n  <description>${escXml(site.description)}</description>\n  <language>mr-IN</language>\n  <lastBuildDate>${now}</lastBuildDate>\n${entry}\n</channel>\n</rss>\n`;
+}
+const rssItems = [...posts.filter(p => p.seo.index !== false)]
+  .sort((a, b) => String(b.publishedAt || b.lastUpdatedAt || '').localeCompare(String(a.publishedAt || a.lastUpdatedAt || '')))
+  .slice(0, 30);
+write('feed.xml', rssXml(rssItems));
+console.log(`sitemap.mjs: feed.xml (${rssItems.length} items)`);
+
 // search index (client-side search) — फक्त indexable pages (noindex pages वगळा)
 // Part 11: department / qualification / status / last date ने filter करता येईल अशी fields
 writeJson('search-index.json', posts.filter(p => p.seo.index !== false).map(p => {

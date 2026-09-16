@@ -1,6 +1,17 @@
+# Build output
 _site/
-node_modules/
+
+# Secrets
 .env
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Logs / temp
 *.log
+audit_*.txt
+_dbg*
+_fix*
+files_audit.txt
+COMMIT_MSG.txt

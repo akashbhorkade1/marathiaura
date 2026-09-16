@@ -1,0 +1,14 @@
+# Normalize line endings — Node tooling (validator/generators) writes LF;
+# without this, core.autocrlf=true creates phantom diffs on every automation run.
+* text=auto
+*.json text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.xml text eol=lf
+*.svg text eol=lf
+*.txt text eol=lf

@@ -10,7 +10,11 @@ const assert = require('node:assert/strict');
 // lib.mjs is ESM — load once via dynamic import
 const libP = import('../lib.mjs');
 const day = 86400000;
-const isoDate = offsetDays => new Date(Date.now() + offsetDays * day).toISOString().slice(0, 10);
+// IST calendar day ± offset — production dates are IST YYYY-MM-DD,
+// so fixtures must also be IST-based (UTC slicing is off-by-one near midnight IST).
+const isoDate = offsetDays => new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit'
+}).format(new Date(Date.now() + offsetDays * day));
 
 /* ---------- 1. Active recruitment ---------- */
 test('status: no dates → ACTIVE', async () => {
@@ -112,6 +116,12 @@ test('safeText: nested XML node without a known text field → empty (no implici
   assert.equal(L.safeText({ a: { b: 'x' } }), '');
   assert.equal(L.safeText({}), '');
   assert.ok(!L.safeText({ a: {} }).includes('object'));
+  // RSS nested leakage regression (Part 7 root cause): parser object stringified
+  // directly used to read ".OuterXml" style garbage — must always be ''.
+  const rssish = { OuterXml: '<title>भरती</title>', InnerText: { deep: 'x' }, nodeName: 'System.Xml.XmlElement' };
+  const leaked = L.safeText(rssish) + L.safeText([rssish]) + L.safeText({ item: rssish });
+  assert.ok(!/System\.Xml|XmlElement|\[object Object\]/.test(leaked));
+  assert.equal(L.safeText(rssish), '');
 });
 
 test('safeText: array → joined safe text', async () => {
@@ -178,4 +188,22 @@ test('esc: escapes HTML metacharacters (Part 20)', async () => {
   const L = await libP;
   assert.equal(L.esc('<script>alert("x")</script>'), '&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt;');
   assert.equal(L.esc(null), '');
+});
+
+/* ---------- 10. Part-22 renderer matrix (official link vs invalid external) ---------- */
+test('renderer matrix: missing/empty/array sources + official vs invalid links stay safe', async () => {
+  const L = await libP;
+  // missing last date → ACTIVE (never CLOSED), badge present
+  assert.equal(L.recruitStatus({ type: 'recruitment', dates: {} }), 'ACTIVE');
+  assert.match(L.statusBadge({ type: 'recruitment', dates: {} }), /अर्ज सुरू/);
+  // missing source field / empty source field → lastVerified null (never fabricated)
+  assert.equal(L.lastVerified({}), null);
+  assert.equal(L.lastVerified({ sources: [] }), null);
+  assert.equal(L.lastVerified({ sources: [{}] }), null);
+  // array source field → safeText joins, never "[object Object]"
+  assert.equal(L.safeText([{ _: 'a' }, { _: 'b' }]), 'a, b');
+  // official notification link vs invalid external link
+  assert.equal(L.isOfficialUrl('https://mpsc.gov.in/notice.pdf'), true);
+  assert.equal(L.isOfficialUrl('not a url'), false);
+  assert.equal(L.isOfficialUrl('ftp://mpsc.gov.in/x'), false);
 });

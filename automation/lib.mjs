@@ -57,21 +57,32 @@ export function safeText(v) {
 // Rule: CLOSING_SOON = अर्ज शेवटची तारीखेला ≤ 7 दिवस बाकी. Dates are YYYY-MM-DD (IST).
 export const CLOSING_SOON_DAYS = 7;
 const DAY_MS = 86400000;
-const istDayEnd = iso => new Date(`${iso}T23:59:59+05:30`).getTime();
-const istDayStart = iso => new Date(`${iso}T00:00:00+05:30`).getTime();
+// IST calendar day (YYYY-MM-DD) for a timestamp — tests use UTC-based isoDate,
+// production dates are IST YYYY-MM-DD, so all comparisons must use IST days.
+const istToday = (now = Date.now()) => new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit'
+}).format(new Date(now));
 
 export function recruitStatus(p, now = Date.now()) {
   if (!p || p.type !== 'recruitment') return null;
   const d = p.dates || {};
-  if (d.resultDate && now >= istDayEnd(d.resultDate)) return 'RESULT';
-  // 1) शेवटची तारीख उलटली → CLOSED / ADMIT_CARD (expired कधीच active दिसू नये)
-  if (d.applicationEnd && now > istDayEnd(d.applicationEnd)) {
-    return (d.admitCardDate && now >= istDayStart(d.admitCardDate)) ? 'ADMIT_CARD' : 'CLOSED';
+  const today = istToday(now);
+  // 0) निकाल जाहीर
+  if (d.resultDate && today >= d.resultDate) return 'RESULT';
+  // 1) अर्ज अजून सुरू नाही → UPCOMING (शेवटची तारीख लवकर असली तरी expired नसताना UPCOMINGच — अर्ज बंद दाखवू नये)
+  //    Exception: शेवटची तारीख आधीच उलटली (bad data) → expiredच जिंकते, CLOSED/ADMIT_CARD (खाली).
+  const notStarted = d.applicationStart && today < d.applicationStart;
+  const alreadyEnded = d.applicationEnd && today > d.applicationEnd;
+  if (notStarted && !alreadyEnded) return 'UPCOMING';
+  // 2) शेवटची तारीख उलटली → CLOSED / ADMIT_CARD (expired कधीच active दिसू नये)
+  if (alreadyEnded) {
+    return (d.admitCardDate && today >= d.admitCardDate) ? 'ADMIT_CARD' : 'CLOSED';
   }
-  // 2) अर्ज अजून सुरू नाही → UPCOMING (तारीख जवळ असली तरी शेवटची तारीख जवळ दाखवणे चुकीचे ठरते)
-  if (d.applicationStart && now < istDayStart(d.applicationStart)) return 'UPCOMING';
-  // 3) अर्ज सुरू आणि ≤ CLOSING_SOON_DAYS दिवस बाकी → CLOSING_SOON
-  if (d.applicationEnd && istDayEnd(d.applicationEnd) - now <= CLOSING_SOON_DAYS * DAY_MS) return 'CLOSING_SOON';
+  // 3) अर्ज सुरू आणि शेवटची तारीख ≤ CLOSING_SOON_DAYS calendar दिवसांवर → CLOSING_SOON
+  if (d.applicationEnd) {
+    const daysLeft = Math.round((Date.parse(d.applicationEnd) - Date.parse(today)) / DAY_MS);
+    if (daysLeft <= CLOSING_SOON_DAYS) return 'CLOSING_SOON';
+  }
   return 'ACTIVE';
 }
 
@@ -108,8 +119,12 @@ export function lastVerified(p) {
 
 // Source trust (Part 14) — gov.in/nic.in hosts only are "official"
 export function isOfficialUrl(u) {
-  try { return /(^|\.)gov\.in$|(^|\.)nic\.in$/.test(new URL(u).hostname); }
-  catch { return false; }
+  try {
+    const x = new URL(u);
+    if (x.protocol !== 'http:' && x.protocol !== 'https:') return false;
+    const h = x.hostname.toLowerCase();
+    return h === 'gov.in' || h.endsWith('.gov.in') || h === 'nic.in' || h.endsWith('.nic.in');
+  } catch { return false; }
 }
 export const linkLabel = url => isOfficialUrl(url) ? 'अधिकृत जाहिरात / Notification' : 'माहिती स्रोत (तृतीय-पक्ष)';
 
@@ -162,8 +177,10 @@ export function headHtml(site, { title, description, canonical, ogImage = null, 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
+
 ${noindex}
 <link rel="canonical" href="${esc(canonical)}">
+  <link rel="alternate" type="application/rss+xml" title="${esc(site.name)} — Latest Updates" href="${site.url}/feed.xml">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="${esc(type)}">

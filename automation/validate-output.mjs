@@ -108,6 +108,8 @@ if (fs.existsSync(idxPath)) {
 }
 
 // ---------- 6. Internal links resolve (orphan/404 prevention — hard fail) ----------
+// RSS discovery link (Part 17): every indexable page advertises /feed.xml —
+// feed.xml must exist and contain only indexable URLs (no drafts/noindex).
 const exists = p => {
   if (p === '/') return fs.existsSync(path.join(OUT, 'index.html'));
   const clean = p.split('#')[0].split('?')[0];
@@ -119,6 +121,27 @@ for (const f of htmlFiles) {
   const html = fs.readFileSync(f, 'utf8');
   for (const m of html.matchAll(/href="(\/[^"]*)"/g)) {
     if (!exists(m[1])) errors.push(`internal link 404 in ${rel(f)}: ${m[1]}`);
+  }
+}
+
+// ---------- 6b. RSS feed integrity (Part 17) ----------
+const feedPath = path.join(OUT, 'feed.xml');
+if (!fs.existsSync(feedPath)) {
+  errors.push('feed.xml missing (RSS discovery broken)');
+} else {
+  const feed = fs.readFileSync(feedPath, 'utf8');
+  for (const g of GARBAGE) {
+    if (feed.includes(g)) errors.push(`serialization leak in feed.xml: "${g}"`);
+  }
+  const noindexUrls = new Set();
+  for (const f of htmlFiles) {
+    const html = fs.readFileSync(f, 'utf8');
+    if (!/name="robots" content="noindex/i.test(html)) continue;
+    const c = html.match(/rel="canonical" href="([^"]+)"/);
+    if (c) noindexUrls.add(c[1]);
+  }
+  for (const m of feed.matchAll(/<link>([^<]+)<\/link>/g)) {
+    if (noindexUrls.has(m[1])) errors.push(`noindex URL in feed.xml: ${m[1]}`);
   }
 }
 
