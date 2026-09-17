@@ -1,0 +1,85 @@
+{
+  "id": "gift-city-rises-to-37th-position-in-global-ranking",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-17",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "गिफ्ट सिटीने जागतिक क्रमवारीत ३७ वे स्थान पटकावले",
+  "slug": "gift-city-rises-to-37th-position-in-global-ranking",
+  "path": "/current-affairs/gift-city-rises-to-37th-position-in-global-ranking/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/gift-city-rises-to-37th-position-in-global-ranking/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/gift-city-rises-to-37th-position-in-global-ranking/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "जागतिक क्रमवारीत गिफ्ट सिटीने (GIFT City) महत्त्वपूर्ण झेप घेतली असून आता ३७ वे स्थान पटकावले आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "जागतिक क्रमवारीत गिफ्ट सिटीची प्रगती",
+        "type": "text",
+        "body": "गिफ्ट सिटीने (GIFT City) जागतिक क्रमवारीत (Global Ranking) ३७ व्या स्थानावर झेप घेतली आहे. आंतरराष्ट्रीय वित्तीय केंद्र म्हणून विकसित होत असलेल्या गिफ्ट सिटीच्या क्रमवारीत ही लक्षणीय सुधारणा मानली जात आहे."
+      },
+      {
+        "heading": "महत्त्वाचे मुद्दे",
+        "type": "text",
+        "body": "जागतिक पातळीवर भारताचे आंतरराष्ट्रीय वित्तीय सेवा केंद्र (IFSC) म्हणून ओळखल्या जाणाऱ्या गिफ्ट सिटीचे मानांकन सातत्याने सुधारत असून तिने ३७ वे स्थान गाठले आहे. चालू घडामोडी आणि स्पर्धा परीक्षांच्या दृष्टीने ही जागतिक क्रमवारी अत्यंत महत्त्वाची आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/gift-city-rises-to-37th-position-in-global-ranking/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-17T11:20:29.446Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-17T11:21:01.434Z",
+  "contentHash": "a3392f972f26d3d38c2182f5db7f3d9d35e9e42b1f4b5959e29b8b5548f6c234",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "GIFT City Rises to 37th Position in Global Ranking",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/gift-city-rises-to-37th-position-in-global-ranking.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-17T11:21:01.434Z"
+}
