@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-17-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-17",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १७ सप्टेंबर २०२६",
+  "slug": "current-affairs-17-september-2026-gk-now",
+  "path": "/current-affairs/17-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-17-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-17-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१७ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. अधिकृत सार्वजनिक स्रोतांकडून संकलित या दैनंदिन बातम्या UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांसाठी उपयुक्त आहेत. आजच्या मुख्य बातमीत, ज्येष्ठ कन्नड अभिनेते अनंत नाग यांना दादासाहेब फाळके पुरस्कार प्रदान करण्यात आला.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "ज्येष्ठ कन्नड अभिनेते अनंत नाग यांना प्रतिष्ठित दादासाहेब फाळके पुरस्कार २०२४ साठी निवडण्यात आले आहे. भारतीय चित्रपटसृष्टीतील हा सर्वोच्च सन्मान त्यांच्या महत्त्वपूर्ण योगदानाला आदराने गौरवतो."
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "१७ सप्टेंबर २०२६ च्या चालू घडामोडींमध्ये, ज्येष्ठ कन्नड अभिनेते अनंत नाग यांना दादासाहेब फाळके पुरस्कार प्रदान करण्यात आला आहे. भारतीय चित्रपटसृष्टीतील त्यांच्या दीर्घकाळच्या आणि महत्त्वपूर्ण योगदानाला या सर्वोच्च सन्मानाने गौरवण्यात आले आहे. हा पुरस्कार चित्रपट क्षेत्रातील सर्वोच्च मानला जातो आणि तो त्यांच्या कारकिर्दीतील उत्कृष्ट कामगिरीची पावती आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-17-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-17T04:19:21.189Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-17T04:19:40.604Z",
+  "contentHash": "054630ace4088a37b933cdcba567dd7e4b12856de1df03624dca33eb47f47e5f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 17 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-17-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-17T04:19:40.604Z"
+}
