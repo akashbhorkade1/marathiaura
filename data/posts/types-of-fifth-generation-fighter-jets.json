@@ -1,0 +1,85 @@
+{
+  "id": "types-of-fifth-generation-fighter-jets",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-18",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "पाचव्या पिढीतील लढाऊ विमानांचे प्रकार",
+  "slug": "types-of-fifth-generation-fighter-jets",
+  "path": "/current-affairs/types-of-fifth-generation-fighter-jets/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/types-of-fifth-generation-fighter-jets/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/types-of-fifth-generation-fighter-jets/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home Types of Fifth-Generation Fighter Jets Types of Fifth-Generation Fighter Jets (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max-w",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": ""
+      },
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": ""
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/types-of-fifth-generation-fighter-jets/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-18T10:54:56.219Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-18T10:55:29.789Z",
+  "contentHash": "88881d384f14ccaf71d508e81b0851ef674e5507f5e4a68aa888eb6f745dea3f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Types of Fifth-Generation Fighter Jets",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/types-of-fifth-generation-fighter-jets.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-18T10:55:29.789Z"
+}

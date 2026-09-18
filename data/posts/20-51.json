@@ -1,0 +1,76 @@
+{
+  "id": "20-51",
+  "type": "recruitment",
+  "title": "पंतप्रधान उद्या २० व्या रोजगार मेळ्यात सरकारमधील ५१ हजारांहून अधिक नवीन नियुक्त तरुणांना नियुक्तीपत्रे वितरित करतील",
+  "slug": "20-51",
+  "path": "/20-51/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "PIB Maharashtra (Press Information Bureau)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2312028",
+    "applyUrl": null,
+    "officialUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2312028"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "पंतप्रधान उद्या २० व्या रोजगार मेळ्यात सरकारमधील ५१ हजारांहून अधिक नवीन नियुक्त तरुणांना नियुक्तीपत्रे वितरित करतील",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "पंतप्रधान उद्या २० व्या रोजगार मेळ्यात सरकारमधील ५१ हजारांहून अधिक नवीन नियुक्त तरुणांना नियुक्तीपत्रे वितरित करतील."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2312028",
+      "name": "PIB Maharashtra (Press Information Bureau)",
+      "priority": 2,
+      "role": "notification",
+      "verifiedAt": "2026-09-18T10:54:47.348Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-18T10:55:20.982Z",
+  "contentHash": "a93b7860cec4f63aaf4c79601a53d9df2bb656b78b9f7ef7edd0c7c34d5c082f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "प्रधानमंत्री कल 20वें रोजगार मेले में सरकार में 51 हजार से अधिक नव नियुक्त युवाओं को नियुक्ति पत्र वितरित करेंगे",
+      "नवीन भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/20-51.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-18T10:55:20.982Z"
+}
