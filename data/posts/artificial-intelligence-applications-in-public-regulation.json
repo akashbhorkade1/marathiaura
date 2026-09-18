@@ -1,0 +1,85 @@
+{
+  "id": "artificial-intelligence-applications-in-public-regulation",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-18",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "सार्वजनिक नियमनामध्ये कृत्रिम बुद्धिमत्तेचे (AI) अनुप्रयोग",
+  "slug": "artificial-intelligence-applications-in-public-regulation",
+  "path": "/current-affairs/artificial-intelligence-applications-in-public-regulation/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/artificial-intelligence-applications-in-public-regulation/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/artificial-intelligence-applications-in-public-regulation/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "या लेखात सार्वजनिक नियमन क्षेत्रातील कृत्रिम बुद्धिमत्तेच्या (AI) विविध उपयोगांची चर्चा केली आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "कृत्रिम बुद्धिमत्ता आणि सार्वजनिक नियमन: एक आढावा",
+        "type": "text",
+        "body": "या विभागात सार्वजनिक नियमन क्षेत्रातील कृत्रिम बुद्धिमत्तेच्या (AI) वापराचा थोडक्यात परिचय दिला जाईल. AI तंत्रज्ञान कसे नियमन प्रक्रिया अधिक कार्यक्षम आणि प्रभावी बनवू शकते, यावर प्रकाश टाकला जाईल."
+      },
+      {
+        "heading": "सार्वजनिक नियमनातील AI चे विविध अनुप्रयोग",
+        "type": "text",
+        "body": "या विभागात सार्वजनिक नियमन क्षेत्रातील कृत्रिम बुद्धिमत्तेच्या (AI) विविध आणि सविस्तर उपयोगांवर चर्चा केली जाईल. यामध्ये डेटा विश्लेषण, जोखीम मूल्यांकन, अनुपालन तपासणी आणि धोरण निर्मितीमध्ये AI ची भूमिका यांसारख्या पैलूंचा समावेश असेल."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/artificial-intelligence-applications-in-public-regulation/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-18T16:09:06.667Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-18T16:10:18.487Z",
+  "contentHash": "10c62c39b2e801a748b6351aab110095bac8b4a6cb78b73546ce78b914148993",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Artificial Intelligence Applications in Public Regulation",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/artificial-intelligence-applications-in-public-regulation.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-18T16:10:18.487Z"
+}
