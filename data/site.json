@@ -15,6 +15,60 @@
     },
     "feeds": [
       {
+        "name": "MPSC (अधिकृत संकेतस्थळ)",
+        "url": "https://mpsc.gov.in/",
+        "type": "html",
+        "category": "mpsc",
+        "priority": 2,
+        "verified": false,
+        "anchorPattern": "(new|latest|announce|जाहिरात|अधिसूचना|result|admit)",
+        "maxFetch": 10,
+        "keywords": [
+          "भरती",
+          "जाहिरात",
+          "अधिसूचना",
+          "recruitment",
+          "notification",
+          "examination",
+          "राज्यसेवा",
+          "rajyaseva",
+          "परीक्षा"
+        ]
+      },
+      {
+        "name": "Employment News (केंद्र सरकार)",
+        "url": "https://www.employmentnews.gov.in/",
+        "type": "html",
+        "category": "latest-bharti",
+        "priority": 2,
+        "verified": false,
+        "maxFetch": 5,
+        "keywords": [
+          "recruitment",
+          "vacancy",
+          "posts",
+          "apply online",
+          "notification",
+          "भरती"
+        ]
+      },
+      {
+        "name": "National Career Service — NCS (कामगार मंत्रालय)",
+        "url": "https://www.ncs.gov.in/",
+        "type": "html",
+        "category": "latest-bharti",
+        "priority": 2,
+        "verified": false,
+        "maxFetch": 5,
+        "keywords": [
+          "government",
+          "recruitment",
+          "vacancy",
+          "job",
+          "भरती"
+        ]
+      },
+      {
         "name": "PIB Maharashtra (Press Information Bureau)",
         "url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
         "type": "rss",

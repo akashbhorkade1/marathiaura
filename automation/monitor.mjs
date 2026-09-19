@@ -4,6 +4,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { safeText } from './lib.mjs'; // Part 8 — parser-object → plain text कधीच String(obj) नाही
+import { normalizeFacts, detectCategoryFacts } from './normalize.mjs';
+import { findCanonical, SIM_THRESHOLD, titleSimilarity } from './dedup.mjs';
+import { classifyUrl, resolveConflict, FAKE_URGENCY_RE, PLACEHOLDER_RE } from './verify-official.mjs';
+import { buildTitle, buildShortDesc, buildSections, buildLinksSection, shingleSimilarity, COPY_THRESHOLD } from './generate-original-mr.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
@@ -84,49 +88,70 @@ const EXCLUDE_RE = /\/(category|tag|tags|author|page|wp-json|wp-admin|wp-login|f
 
 // Draft record — schema docs/02 §post प्रमाणे; recruitment किंवा current-affairs दोन्ही types
 // safeText normalization (Part 8): RSS/HTML/object/array/null कोणतेही असले तरी नेहमी plain string
+// Pipeline (docs/05 §3): raw item → NORMALIZE facts → ORIGINAL Marathi generation.
+// §14: source body कधीच थेट paste होत नाही — फक्त facts (dates/संख्या/पदे) वरून नवीन मराठी article.
 function makeDraft({ title, link, desc, body, feed }) {
   title = safeText(title);
   link = safeText(link);
   desc = safeText(desc);
   body = safeText(body);
-  const cat = detectCategory(title, feed.category);
-  const id = slugify(title);
   const now = new Date().toISOString();
+  const facts = normalizeFacts({ title, body: `${desc} ${body}`, sourceUrl: link || feed.url, sourceName: feed.name, sourcePriority: feed.priority || 2, sourceType: feed.type, retrievedAt: now });
+  // §21 copy gate: generated content source text शी copied असल्यास तो source वापरूच नये
+  const sections = buildSections(facts);
+  const genText = sections.map(s => [...(s.items || []), s.body, ...(s.rows || []).flat()].filter(Boolean).join(' ')).join(' ');
+  const copySim = body ? shingleSimilarity(genText, body) : 0;
+  const flagged = [
+    ...(copySim >= COPY_THRESHOLD ? ['copied-source'] : []),
+    ...(FAKE_URGENCY_RE.test(`${title} ${genText}`) ? ['fake-urgency'] : []),
+    ...(PLACEHOLDER_RE.test(`${title} ${genText}`) ? ['placeholder'] : [])
+  ];
+  const cat = detectCategoryFacts(facts, detectCategory(title, feed.category));
+  const genTitle = buildTitle(facts) || title;
+  const id = slugify(genTitle);
   const catObj = categories.find(c => c.id === cat);
   const isCA = cat === 'current-affairs' || feed.postType === 'current-affairs';
-  const summary = String(desc || title);
+  const links = buildLinksSection(facts) ? facts.links : { notificationUrl: link || null, applyUrl: null, officialUrl: null };
   return {
     id,
     type: isCA ? 'current-affairs' : 'recruitment',
     ...(isCA ? { kind: 'daily', date: now.slice(0, 10), items: [], itemSchema: 'docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }' } : {}),
-    title,
+    title: genTitle,
     slug: id,
     path: isCA ? `/current-affairs/${id.replace(/^current-affairs-/, '')}/` : `/${id}/`,
     category: cat,
     exam: null,
-    department: feed.name,
+    department: facts.organization || feed.name,
     recruitment: {
-      postNames: [], vacancies: null, vacanciesNote: 'अधिकृत जाहिरातीत नमूद',
-      qualification: [], ageLimit: null, salary: null, fee: null,
-      applicationMode: null, location: 'भारत', jobType: 'government'
+      postNames: facts.postNames, vacancies: facts.vacancies, vacanciesNote: facts.vacancies ? null : 'अधिकृत जाहिरातीत नमूद',
+      qualification: facts.qualification, ageLimit: facts.ageLimit, salary: facts.salary, fee: facts.fee,
+      applicationMode: null, location: facts.location || 'भारत', jobType: 'government'
     },
-    dates: { notification: null, applicationStart: null, applicationEnd: null, examDate: null, admitCardDate: null, resultDate: null },
-    links: { notificationUrl: link || null, applyUrl: null, officialUrl: link || null },
-    selectionProcess: [],
+    dates: facts.dates,
+    links,
+    selectionProcess: facts.selectionProcess,
     syllabusRef: null, relatedMockTests: [],
     content: {
-      shortDesc: summary.slice(0, 300),
+      shortDesc: isCA ? (desc || title).slice(0, 300) : buildShortDesc(facts).slice(0, 300),
       metaDescription: null,
-      // Marathi template structure — source साठी credit; शब्दशः कॉपी नाही (docs/04 §2 rewrite policy)
-      sections: [
-        ...(body ? [{ heading: 'थोडक्यात', type: 'text', body: String(body).slice(0, 400) }] : []),
-        { heading: 'सविस्तर माहिती', type: 'text', body: summary.slice(0, 800) }
-      ],
+      // §8/§14: फक्त facts-आधारित original Marathi sections — source paragraph कधीच नाही
+      sections: isCA ? [
+        { heading: 'थोडक्यात', type: 'text', body: (desc || title).slice(0, 400) }
+      ] : sections,
       faqs: []
     },
     sources: [
       { url: link || feed.url, name: feed.name, priority: feed.priority || 2, role: 'notification', verifiedAt: now }
     ],
+    // §22 provenance — internal tracking; public render नाही
+    provenance: {
+      sourceName: feed.name, sourceUrl: link || feed.url, sourceType: feed.type,
+      officialUrl: facts.links.officialUrl || null, officialNotificationUrl: null,
+      retrievedAt: now, verifiedAt: null,
+      confidence: 85, contentHash: null,
+      copySimilarity: Number(copySim.toFixed(4)), flags: flagged
+    },
+    ...(flagged.length ? { needsReview: true } : {}),
     ...(feed.rewrite ? { rewritePending: true } : {}), // AI-rewrite झाल्यावर rewrite.mjs काढतो
     status: 'ai-generated',
     confidence: 85, // semi-automated content → review queue (docs/04 §1 tiers)
@@ -134,7 +159,7 @@ function makeDraft({ title, link, desc, body, feed }) {
     lastUpdatedAt: now,
     contentHash: null,
     updates: [],
-    seo: { keywords: [title, catObj ? catObj.nameMr : cat, 'MarathiAura'], ogImage: `/og-images/${id}.svg`, index: false }
+    seo: { keywords: [genTitle, catObj ? catObj.nameMr : cat, 'MarathiAura'], ogImage: `/og-images/${id}.svg`, index: false }
   };
 }
 
@@ -144,7 +169,29 @@ const existingLinks = new Set(posts.flatMap(p => [
   p.source && p.source.url // V1 fallback
 ]).filter(Boolean));
 
+// §6 merge — जास्त trusted (लहान priority number) चा non-null fact जिंकतो; फक्त source-supported values
+function applyFacts(rec, facts, feed) {
+  const now = new Date().toISOString();
+  const better = !rec.provenance || (feed.priority || 2) <= (rec.provenance.priority ?? 4);
+  if (better) {
+    if (!rec.department && facts.organization) rec.department = facts.organization;
+    if (facts.vacancies != null && (rec.recruitment.vacancies == null || better)) rec.recruitment.vacancies = facts.vacancies;
+    if (facts.advtNo && !rec.advtNo) rec.advtNo = facts.advtNo;
+    for (const k of Object.keys(rec.dates)) {
+      if (facts.dates[k] && (!rec.dates[k] || better)) rec.dates[k] = facts.dates[k];
+    }
+    if ((facts.qualification || []).length && !(rec.recruitment.qualification || []).length) rec.recruitment.qualification = facts.qualification;
+    if (facts.ageLimit && !rec.recruitment.ageLimit) rec.recruitment.ageLimit = facts.ageLimit;
+    if (facts.fee && !rec.recruitment.fee) rec.recruitment.fee = facts.fee;
+  }
+  // provenance — दोन्ही sources track (§22)
+  rec.provenance = { ...(rec.provenance || { priority: feed.priority || 2 }), priority: Math.min(rec.provenance?.priority ?? 4, feed.priority || 2), crossSources: [...new Set([...(rec.provenance?.crossSources || []), feed.name])] };
+  rec.sources.push({ url: facts.source.url, name: feed.name, priority: feed.priority || 2, role: 'reference', verifiedAt: now });
+  rec.lastUpdatedAt = now;
+}
+
 let drafts = [];
+const updateQueue = []; // §18: published record बदलला → update candidate (review queue, auto-edit नाही)
 for (const feed of (site.feeds || [])) {
   if (feed.verified === false) { console.log(`  [SKIP] ${feed.name}: unverified feed — आधी manually verify करा (docs/04 §3)`); continue; }
   try {
@@ -219,6 +266,25 @@ for (const feed of (site.feeds || [])) {
       if (Array.isArray(feed.keywords) && feed.keywords.length && !feed.keywords.some(k => title.toLowerCase().includes(String(k).toLowerCase()))) continue;
       if (existingTitles.has(normTitle(title)) || (link && existingLinks.has(link))) continue;
 
+      // §6 dedup — canonical match (deterministic key → title fallback + hard-fact confirm)
+      const facts = normalizeFacts({ title, body: `${desc} ${body}`, sourceUrl: link || feed.url, sourceName: feed.name, sourcePriority: feed.priority || 2, sourceType: feed.type });
+      const match = findCanonical(facts, [...posts, ...drafts]);
+      if (match) {
+        const rec = match.record;
+        if (rec.status === 'ai-generated' || rec.status === 'under-review') {
+          // §18: त्याच draft मध्येच merge — नवीन duplicate article नाही (§27)
+          applyFacts(rec, facts, feed);
+          console.log(`  MERGED → ${match.method}: ${rec.id}`);
+        } else {
+          // §18 + §23: published record कधीच auto-edit नाही — update candidate review queue मध्ये
+          updateQueue.push({ id: rec.id, title: rec.title, confidence: rec.confidence ?? 0, addedAt: new Date().toISOString(), update: `source-detected: ${feed.name}` });
+          console.log(`  UPDATE-DETECTED → review-queue: ${rec.id}`);
+        }
+        existingTitles.add(normTitle(title));
+        if (link) existingLinks.add(link);
+        continue;
+      }
+
       drafts.push(makeDraft({ title, link, desc, body, feed }));
       existingTitles.add(normTitle(title));
       if (link) existingLinks.add(link);
@@ -231,15 +297,16 @@ for (const feed of (site.feeds || [])) {
   }
 }
 
-if (drafts.length) {
+if (drafts.length || updateQueue.length) {
   // Drafts → data/posts (status: ai-generated → generator render करणार नाही)
   for (const d of drafts) writeJson(`data/posts/${d.id}.json`, d);
-  // Review queue
+  // Review queue (+ §18 update candidates)
   const queuePath = 'data/review-queue.json';
   const queue = fs.existsSync(path.join(root, queuePath)) ? read(queuePath) : [];
   queue.push(...drafts.map(d => ({ id: d.id, title: d.title, confidence: d.confidence, addedAt: d.lastUpdatedAt })));
+  queue.push(...updateQueue);
   writeJson(queuePath, queue);
-  console.log(`\nmonitor.mjs: ${drafts.length} draft(s) तयार — review-queue मध्ये पाठवले (human approval हवी)`);
+  console.log(`\nmonitor.mjs: ${drafts.length} draft(s) + ${updateQueue.length} update-candidate(s) — review-queue मध्ये पाठवले (human approval हवी)`);
 } else {
   console.log('\nmonitor.mjs: कोणती नवीन notification नाही');
 }

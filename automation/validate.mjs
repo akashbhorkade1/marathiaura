@@ -4,6 +4,8 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
+import { FAKE_URGENCY_RE, PLACEHOLDER_RE, classifyUrl } from './verify-official.mjs'; // docs/05 §6 — §21 quality gate
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dir = path.join(root, 'data', 'posts');
 const GARBAGE = ['System.Xml', 'XmlElement', 'undefined', 'NaN', '[object Object]'];
@@ -43,6 +45,19 @@ for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
   for (const u of rec.updates || []) if (u.type && !UPDATE_TYPES.includes(u.type)) issues.push(`updates[].type invalid: ${u.type}`);
   const SOURCE_ROLES = ['notification', 'notification-pdf', 'apply', 'result', 'answer-key', 'admit-card', 'syllabus', 'reference'];
   for (const s of rec.sources || []) if (s.role && !SOURCE_ROLES.includes(s.role)) issues.push(`sources[].role invalid: ${s.role}`);
+
+  // docs/05 §5 — official links: https/http फक्त; blog link कधीच official/apply नाही
+  for (const [k, v] of Object.entries(rec.links || {})) {
+    if (!v) continue;
+    const cls = classifyUrl(v);
+    if (!cls.ok) issues.push(`links.${k} invalid: ${cls.reason}`);
+    else if (!cls.official && (k === 'officialUrl' || k === 'applyUrl')) issues.push(`links.${k} non-government host — official म्हणून वापरता येणार नाही`);
+  }
+  // docs/05 §21 — fake urgency / placeholder / visible null-undefined content
+  const visible = JSON.stringify([rec.title, rec.content && rec.content.shortDesc, ...((rec.content && rec.content.sections) || [])]);
+  if (FAKE_URGENCY_RE.test(visible)) issues.push('fake urgency language (§21)');
+  if (PLACEHOLDER_RE.test(visible)) issues.push('placeholder/inferred language (§4/§21)');
+  if (/\bundefined\b|\bnull\b/.test(visible)) issues.push('visible null/undefined content (§21)');
 
   // Type-specific checks
   if (rec.type === 'syllabus' && (!rec.syllabus || !Array.isArray(rec.syllabus.subjects) || !rec.syllabus.subjects.length)) {
