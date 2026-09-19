@@ -1,0 +1,85 @@
+{
+  "id": "pm-modi-distributes-51000-appointment-letters-at-20th-rozgar",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-19",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "२० व्या रोजगार मेळाव्यात पंतप्रधान मोदींच्या हस्ते ५१,००० नियुक्ती पत्रांचे वाटप",
+  "slug": "pm-modi-distributes-51000-appointment-letters-at-20th-rozgar",
+  "path": "/current-affairs/pm-modi-distributes-51000-appointment-letters-at-20th-rozgar/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/pm-modi-distributes-51000-appointment-letters-at-20th-rozgar-mela/",
+    "applyUrl": null,
+    "officialUrl": "https://www.gktoday.in/pm-modi-distributes-51000-appointment-letters-at-20th-rozgar-mela/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "२० व्या रोजगार मेळाव्यांतर्गत पंतप्रधान नरेंद्र मोदी यांच्या हस्ते देशभरातील ५१,००० उमेदवारांना नियुक्ती पत्रांचे वाटप करण्यात आले.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "रोजगार मेळाव्यातील नियुक्ती पत्र वाटप",
+        "type": "text",
+        "body": "पंतप्रधान नरेंद्र मोदी यांच्या हस्ते २० व्या रोजगार मेळाव्याच्या निमित्ताने ५१,००० नवीन नियुक्त उमेदवारांना नियुक्ती पत्रांचे वाटप करण्यात आले आहे. हा कार्यक्रम १९ सप्टेंबर २०२६ रोजी पार पडला. केंद्र सरकारच्या रोजगार मेळावा उपक्रमांतर्गत देशभरातील तरुणांना विविध विभागांमध्ये नियुक्ती दिली जात आहे."
+      },
+      {
+        "heading": "महत्त्वाचे तपशील",
+        "type": "text",
+        "body": "या २० व्या रोजगार मेळाव्यात एकूण ५१,००० नियुक्ती पत्रांचे वाटप करण्यात आले आहे. स्पर्धा परीक्षांची तयारी करणाऱ्या विद्यार्थ्यांसाठी चालू घडामोडींच्या दृष्टीने हा महत्त्वाचा घटक आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/pm-modi-distributes-51000-appointment-letters-at-20th-rozgar-mela/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-19T10:37:41.449Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-19T10:38:02.461Z",
+  "contentHash": "3219f6cb5aba6d817061beb75f40c2b0a55595007ac6ff3ff1c897f21e331b09",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "PM Modi Distributes 51,000 Appointment Letters at 20th Rozgar Mela",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/pm-modi-distributes-51000-appointment-letters-at-20th-rozgar.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-19T10:38:02.461Z"
+}
