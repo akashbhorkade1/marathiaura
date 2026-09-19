@@ -133,5 +133,67 @@ footer.site a:hover{text-decoration:underline}
   nav.main-nav a{border-top:0;padding:8px 12px}
   .footer-grid{grid-template-columns:1.4fr 1fr 1fr}
 }
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* ============================================================
+   Homepage v2 (Phase 1) — Hero + ताज्या भरती (job cards) + शेवटची तारीख sidebar
+   Generator: automation/generate/homepage.mjs — फक्त खरे generated paths link होतील
+   ============================================================ */
+.home-hero{background:linear-gradient(135deg,#e8f1fb,#d9e9f8);border-bottom:1px solid var(--border);padding:40px 0 46px;text-align:center}
+.home-hero h1{margin:0 auto 10px;max-width:760px;font-size:1.5rem;line-height:1.5;color:var(--primary-dark)}
+.home-hero h1 .hl{color:var(--primary)}
+.home-hero .hero-sub{margin:0 auto 20px;max-width:680px;color:var(--muted);font-size:1rem}
+.home-hero .home-search{margin-top:0}
+.popular-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;margin-top:16px;font-size:.85rem;color:var(--muted)}
+.popular-tags .tag{background:#fff;border:1px solid var(--border);border-radius:15px;padding:3px 12px;color:var(--text);text-decoration:none}
+.popular-tags .tag:hover{border-color:var(--primary);color:var(--primary)}
+
+.home-main{display:grid;grid-template-columns:1fr;gap:26px;margin:26px 0 10px;align-items:start}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 12px}
+.section-head .section-title{margin:0}
+.section-head a{font-size:.85rem;white-space:nowrap}
+
+/* Job cards */
+.job-list{display:grid;gap:12px}
+.job-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--text);transition:box-shadow .15s,border-color .15s}
+.job-card:hover{box-shadow:0 4px 14px rgba(12,68,124,.12);border-color:var(--primary)}
+.job-card .job-dept{font-size:.84rem;color:var(--muted);margin-bottom:6px}
+.job-card .title{font-weight:700;font-size:1.02rem;line-height:1.55;margin-bottom:8px}
+.job-qual{font-size:.86rem;margin-bottom:4px}
+.job-qual .lbl{color:var(--muted)}
+.job-lastdate{font-size:.88rem;margin-bottom:2px}
+.job-lastdate strong{color:var(--primary-dark)}
+.job-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.job-actions .jbtn{display:inline-block;font-size:.85rem;font-weight:700;padding:7px 14px;border-radius:8px}
+.job-actions .jbtn-solid{background:var(--primary);color:#fff}
+.job-actions .jbtn-solid:hover{background:var(--primary-dark)}
+.job-actions .jbtn-outline{border:1px solid var(--border);background:#fff;color:var(--primary)}
+
+/* शेवटची तारीख sidebar */
+.deadline-list{display:grid;gap:10px}
+.deadline-item{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--border);border-left:4px solid var(--danger);border-radius:var(--radius);padding:10px 12px;text-decoration:none;color:var(--text)}
+.deadline-item:hover{box-shadow:0 3px 10px rgba(198,40,40,.10)}
+.days-left{min-width:54px;text-align:center;background:#fdecea;color:var(--danger);border-radius:8px;padding:6px 4px}
+.days-left .n{display:block;font-size:1.3rem;font-weight:800;line-height:1.15}
+.days-left small{font-size:.66rem;font-weight:700}
+.deadline-info{min-width:0}
+.deadline-info .d-title{display:block;font-weight:700;font-size:.95rem;line-height:1.45}
+.deadline-info .d-date{display:block;font-size:.8rem;color:var(--muted);margin-top:2px}
+.deadline-cta{margin-top:12px;font-size:.85rem}
+.deadline-cta a{color:var(--primary);font-weight:700}
+.home-side .empty-state{margin:0}
+
+/* अभ्यास साधनं */
+.tool-card .ico{font-size:1.5rem;display:block;margin-bottom:6px}
+
+@media(min-width:1024px){
+  .home-main{grid-template-columns:2fr 1fr}
+  .home-hero h1{font-size:2rem}
+}
+
+/* ============================================================
+   Homepage v2 (Phase 2) — Quick-links strip
+   फक्त generated pages link होतात (homepage.mjs quickLinks gate);
+   card चा base look .cat-card कडून, फक्त ico + grid layout इथे
+   ============================================================ */
+.quick-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:20px 0 0}
+.quick-card .ico{display:block;font-size:1.5rem;margin-bottom:6px}
 
