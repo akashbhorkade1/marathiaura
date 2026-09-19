@@ -1,0 +1,85 @@
+{
+  "id": "current-affairs-19-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-19",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १९ सप्टेंबर २०२६ (GK Now)",
+  "slug": "current-affairs-19-september-2026-gk-now",
+  "path": "/current-affairs/19-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-19-september-2026/",
+    "applyUrl": null,
+    "officialUrl": "https://gknow.in/current-affairs-19-september-2026/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१९ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी; चेन्नई येथील कलाक्षेत्र फाउंडेशनमध्ये १७ व्या कथकली महोत्सवाचे आयोजन. UPSC, SSC, पोलीस भरती आणि स्पर्धा परीक्षांसाठी उपयुक्त माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "स्पर्धा परीक्षांसाठी दैनंदिन चालू घडामोडी",
+        "type": "text",
+        "body": "१९ सप्टेंबर २०२६ च्या अधिकृत सार्वजनिक स्रोतांवरून संकलित केलेल्या महत्त्वाच्या चालू घडामोडी प्रसिद्ध करण्यात आल्या आहेत. या घडामोडी UPSC, SSC, UPSSC, संरक्षण (Defence) आणि पोलीस भरती अशा विविध स्पर्धा परीक्षांच्या तयारीसाठी अत्यंत उपयुक्त आहेत."
+      },
+      {
+        "heading": "कला आणि संस्कृती: १७ व्या कथकली महोत्सवाचे उद्घाटन",
+        "type": "text",
+        "body": "चेन्नई येथील कलाक्षेत्र फाउंडेशनमध्ये १७ व्या कथकली महोत्सवाचे उद्घाटन करण्यात आले आहे. हा १७ वा कथकली महोत्सव भारत सरकारच्या सांस्कृतिक मंत्रालयाच्या अंतर्गत कलाक्षेत्र फाउंडेशनद्वारे आयोजित करण्यात आला आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-19-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-19T03:59:42.956Z"
+    }
+  ],
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-19T03:59:47.635Z",
+  "contentHash": "79f4b7a5c8c2734ce43a165260ffea04ece6c2305b1a8f87f39f624c0950c3fb",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 19 September 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-19-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-19T03:59:47.635Z"
+}
