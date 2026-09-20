@@ -162,7 +162,36 @@ export function adsenseHead(site) {
   const a = site.adsense;
   const pub = publisherId();
   if (!a || !a.enabled || !pub) return '';
-  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(pub)}"\n     crossorigin="anonymous"></script>\n`;
+  return `<meta name="google-adsense-account" content="${esc(pub)}">\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(pub)}"\n     crossorigin="anonymous"></script>\n`;
+}
+
+// GA4 measurement ID — CI secret (GA4_MEASUREMENT_ID) मधून; secret नसेल तर site-default
+// fallback (G-JQ33GWHJWE). Measurement ID public असते (प्रत्येक page HTML मध्ये दिसते) —
+// hardcode हा secret violation नाही, पण override शक्यता env मधूनच.
+// नेहमीच एकच gtag tag render होतो — duplicate Google tag कधीच नाही.
+const DEFAULT_GA4_ID = 'G-JQ33GWHJWE';
+export const ga4Id = () => process.env.GA4_MEASUREMENT_ID || DEFAULT_GA4_ID;
+export function analyticsHead(site) {
+  const a = site.analytics;
+  if (!a || !a.enabled) return '';
+  const id = ga4Id();
+  return `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(id)}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${esc(id)}');
+</script>
+`;
+}
+
+// Google Search Console (HTML meta-tag verification) — code CI secret मधून; missing → render नाही
+export const gscCode = () => process.env.GOOGLE_SITE_VERIFICATION || null;
+export function searchConsoleHead() {
+  const code = gscCode();
+  return code ? `<meta name="google-site-verification" content="${esc(code)}">\n` : '';
 }
 
 export function headHtml(site, { title, description, canonical, ogImage = null, type = 'website', index = true }) {
@@ -173,16 +202,7 @@ export function headHtml(site, { title, description, canonical, ogImage = null, 
   return `<!DOCTYPE html>
 <html lang="mr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQ33GWHJWE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JQ33GWHJWE');
-</script>
-<meta charset="UTF-8">
+${analyticsHead(site)}<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
@@ -199,7 +219,7 @@ ${noindex}
 <meta property="og:image" content="${esc(img)}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/style.css">
-${adsenseHead(site)}</head>
+${searchConsoleHead()}${adsenseHead(site)}</head>
 `;
 }
 

@@ -8,6 +8,9 @@
     "adsense": {
       "enabled": true
     },
+    "analytics": {
+      "enabled": true
+    },
     "social": {
       "telegram": "https://t.me/+zCKGI81nUS83ZDE1",
       "whatsapp": "https://whatsapp.com/channel/0029Vb8NfVsAzNc0x5mGX32b",

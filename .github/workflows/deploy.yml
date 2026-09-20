@@ -30,6 +30,8 @@ jobs:
         run: node automation/build.mjs
         env:
           ADSENSE_PUB_ID: ${{ secrets.ADSENSE_PUB_ID }}
+          GA4_MEASUREMENT_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
+          GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
       - name: Add .nojekyll + CNAME
         run: |
           touch _site/.nojekyll
