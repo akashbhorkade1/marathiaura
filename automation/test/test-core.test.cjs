@@ -92,6 +92,12 @@ test('nav: goToQuestion clamps out-of-range', () => {
   assert.equal(TC.goToQuestion(TC.createInitialState(TEST), 99).currentQuestionIndex, 3);
 });
 test('nav: navigation preserves answers', () => {
+  let s = TC.createInitialState(TEST);
+  s = TC.selectAnswer(s, 'q-001', 'b');
+  s = TC.goNext(s); s = TC.goNext(s); s = TC.goPrevious(s);
+  assert.equal(s.answers['q-001'], 'b');
+  assert.equal(s.currentQuestionIndex, 1);
+});
 
 /* ================= STATUS ================= */
 test('status: unvisited to visited-unanswered to answered to current', () => {
@@ -156,6 +162,9 @@ test('scoring: no-negative marking config respected', () => {
   assert.equal(r.score, 2); assert.equal(r.maxScore, 4); assert.equal(r.percentage, 50);
 });
 test('scoring: marking.wrong > 0 throws', () => {
+  const bad = { id: 'b', questionIds: ['q-001'], durationMinutes: 1, marking: { correct: 1, wrong: 0.5 } };
+  assert.throws(() => TC.calculateResult(TC.createInitialState(bad), bad, QUESTIONS));
+});
 
 /* ================= ACCURACY ================= */
 test('accuracy: zero attempted → 0 (no divide-by-zero)', () => {
@@ -230,15 +239,4 @@ test('submit: idempotent — resubmit returns same state', () => {
   const out1 = TC.submitTest(TC.createInitialState(TEST), TEST, QUESTIONS);
   const out2 = TC.submitTest(out1.state, TEST, QUESTIONS);
   assert.equal(out2.state, out1.state);
-});
-
-  const bad = { id: 'b', questionIds: ['q-001'], durationMinutes: 1, marking: { correct: 1, wrong: 0.5 } };
-  assert.throws(() => TC.calculateResult(TC.createInitialState(bad), bad, QUESTIONS));
-});
-
-  let s = TC.createInitialState(TEST);
-  s = TC.selectAnswer(s, 'q-001', 'b');
-  s = TC.goNext(s); s = TC.goNext(s); s = TC.goPrevious(s);
-  assert.equal(s.answers['q-001'], 'b');
-  assert.equal(s.currentQuestionIndex, 1);
 });
