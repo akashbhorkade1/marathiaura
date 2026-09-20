@@ -30,14 +30,15 @@ jobs:
         run: node automation/build.mjs
         env:
           ADSENSE_PUB_ID: ${{ secrets.ADSENSE_PUB_ID }}
-      - name: Commit drafts & review queue
+      - name: Commit drafts, review queue & generated sitemaps
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
+          git add -f _site/sitemap.xml _site/sitemap-posts.xml _site/sitemap-exams.xml _site/sitemap-categories.xml _site/sitemap-mocktests.xml _site/sitemap-static.xml _site/feed.xml _site/search-index.json
           if git diff --cached --quiet; then
             echo "No changes — skipping commit"
           else
-            git commit -m "auto: source monitor - draft records for review"
+            git commit -m "auto: monitor drafts + sitemap refresh (build)"
             git push
           fi

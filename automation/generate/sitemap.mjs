@@ -9,8 +9,8 @@ const exams = published(loadExams());
 const tests = loadTests();
 const pages = loadPages();
 
-function urlXml(loc, lastmod) {
-  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${(lastmod || new Date().toISOString()).slice(0, 10)}</lastmod>\n  </url>`;
+function urlXml(loc, lastmod, changefreq = 'weekly', priority = '0.5') {
+  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${(lastmod || new Date().toISOString()).slice(0, 10)}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }
 function sitemapFile(name, entries) {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join('\n')}\n</urlset>\n`;
@@ -19,35 +19,37 @@ function sitemapFile(name, entries) {
 }
 const mods = [];
 
-// posts (genuine content only)
+// posts (genuine content only) — changefreq + priority by type (Part 11)
 const postEntries = posts.filter(p => p.seo.index !== false)
-  .map(p => urlXml(site.url + pathOf(p), p.lastUpdatedAt));
+  .map(p => urlXml(site.url + pathOf(p), p.lastUpdatedAt,
+    p.type === 'recruitment' ? 'daily' : 'weekly',
+    p.type === 'recruitment' ? '0.9' : '0.7'));
 mods.push(sitemapFile('sitemap-posts.xml', postEntries));
 
 // exams
-mods.push(sitemapFile('sitemap-exams.xml', exams.map(e => urlXml(site.url + pathOf(e), e.lastUpdatedAt))));
+mods.push(sitemapFile('sitemap-exams.xml', exams.map(e => urlXml(site.url + pathOf(e), e.lastUpdatedAt, 'weekly', '0.8'))));
 
 // category indexes (only categories that will have generated pages)
 const catEntries = [];
 for (const c of categories) {
   if (c.id === 'latest-bharti') {
-    if (posts.some(p => p.type === 'recruitment')) catEntries.push(urlXml(site.url + c.path, new Date().toISOString()));
+    if (posts.some(p => p.type === 'recruitment')) catEntries.push(urlXml(site.url + c.path, new Date().toISOString(), 'daily', '0.8'));
   } else if (posts.some(p => p.category === c.id)) {
-    catEntries.push(urlXml(site.url + c.path, new Date().toISOString()));
+    catEntries.push(urlXml(site.url + c.path, new Date().toISOString(), 'daily', '0.7'));
   }
 }
 mods.push(sitemapFile('sitemap-categories.xml', catEntries));
 // mock tests — फक्त render होणारी test pages + listing hub (mock-test.mjs शी समान नियम)
 const qIdx = questionIndex();
 const renderableTests = tests.filter(t => isRenderableTest(t, qIdx));
-const mockEntries = renderableTests.map(t => urlXml(site.url + pathOf(t), new Date().toISOString()));
-if (renderableTests.length) mockEntries.unshift(urlXml(site.url + '/mock-test/', new Date().toISOString()));
+const mockEntries = renderableTests.map(t => urlXml(site.url + pathOf(t), new Date().toISOString(), 'monthly', '0.6'));
+if (renderableTests.length) mockEntries.unshift(urlXml(site.url + '/mock-test/', new Date().toISOString(), 'weekly', '0.7'));
 mods.push(sitemapFile('sitemap-mocktests.xml', mockEntries));
 
 // static pages
 mods.push(sitemapFile('sitemap-static.xml', [
-  urlXml(site.url + '/', new Date().toISOString()),
-  ...pages.map(p => urlXml(`${site.url}/${p.id}/`, new Date().toISOString()))
+  urlXml(site.url + '/', new Date().toISOString(), 'daily', '1.0'),
+  ...pages.map(p => urlXml(`${site.url}/${p.id}/`, new Date().toISOString(), 'monthly', '0.5'))
 ].filter(Boolean)));
 
 // sitemap index
