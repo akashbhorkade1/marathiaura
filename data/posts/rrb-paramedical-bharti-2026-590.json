@@ -1,81 +1,191 @@
 {
   "id": "rrb-paramedical-bharti-2026-590",
   "type": "recruitment",
-  "title": "RRB Paramedical भरती 2026: रेल्वेत 590 पॅरामेडिकल पदांसाठी संधी",
+  "title": "RRB Paramedical भरती 2026 (CEN 05/2026): रेल्वेत 590 जागा",
   "slug": "rrb-paramedical-bharti-2026-590",
   "path": "/rrb-paramedical-bharti-2026-590/",
   "category": "railway",
   "exam": null,
-  "department": "Mahanaukari",
+  "department": "रेल्वे भरती मंडळ (RRB) — भारतीय रेल्वे",
   "recruitment": {
-    "postNames": [],
-    "vacancies": null,
-    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
-    "qualification": [],
-    "ageLimit": null,
-    "salary": null,
-    "fee": null,
-    "applicationMode": null,
-    "location": "भारत",
+    "postNames": [
+      "नर्सिंग सुपरिटेंडेंट",
+      "फार्मासिस्ट (Entry Grade)",
+      "हेल्थ अँड मलेरिया इन्स्पेक्टर ग्रेड-III",
+      "लॅब असिस्टंट ग्रेड-II",
+      "रेडिओग्राफर / एक्स-रे टेक्निशियन",
+      "ECG टेक्निशियन",
+      "ऑप्टोमेट्रिस्ट",
+      "डायलिसिस टेक्निशियन",
+      "ऑडिओलॉजिस्ट अँड स्पीच थेरपिस्ट"
+    ],
+    "vacancies": 590,
+    "vacanciesNote": "CEN 05/2026 अंतर्गत 21 RRB झोनमधील एकूण जागा",
+    "qualification": [
+      "नर्सिंग सुपरिटेंडेंट: B.Sc नर्सिंग किंवा GNM + Registered Nurse",
+      "फार्मासिस्ट: फार्मसी पदवी/डिप्लोमा + नोंदणी",
+      "HMI: रसायनशास्त्रासह B.Sc + हेल्थ इन्स्पेक्टर डिप्लोमा",
+      "लॅब असिस्टंट: 10+2 विज्ञान + DMLT",
+      "रेडिओग्राफर: 10+2 (भौतिकशास्त्र/रसायनशास्त्र) + रेडिओग्राफी डिप्लोमा",
+      "ECG/ऑप्टोमेट्रिस्ट/डायलिसिस/ऑडिओलॉजिस्ट: संबंधित प्रमाणपत्र/डिप्लोमा/पदवी"
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 40,
+      "relaxation": "पदानुसार 18-40 वर्षे; SC/ST +5, OBC +3 वर्षे सूट"
+    },
+    "salary": {
+      "payScale": "Level-3 ते Level-7 (7वा वेतन आयोग; पदानुसार ₹21,700 – ₹1,42,400)",
+      "note": null
+    },
+    "fee": {
+      "general": 500,
+      "reserved": 250,
+      "note": "CBT ला बसल्यानंतर परतावा: UR/OBC/EWS ₹400, SC/ST/PH/महिला ₹250"
+    },
+    "applicationMode": "Online",
+    "location": "भारतीय रेल्वे — 21 RRB झोन (संपूर्ण भारत)",
     "jobType": "government"
   },
   "dates": {
     "notification": null,
-    "applicationStart": null,
-    "applicationEnd": null,
+    "applicationStart": "2026-09-15",
+    "applicationEnd": "2026-10-14",
     "examDate": null,
     "admitCardDate": null,
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://mahanaukari.com/rrb-paramedical-bharti-2026/",
-    "applyUrl": null,
-    "officialUrl": "https://mahanaukari.com/rrb-paramedical-bharti-2026/"
+    "notificationUrl": "https://www.rrbapply.gov.in/assets/forms/CEN_05_2026_PM.pdf",
+    "applyUrl": "https://www.rrbapply.gov.in/",
+    "officialUrl": "https://www.rrbapply.gov.in/"
   },
-  "selectionProcess": [],
+  "selectionProcess": [
+    "संगणक आधारित परीक्षा (CBT)",
+    "कागदपत्र पडताळणी (Document Verification)",
+    "वैद्यकीय तपासणी (Medical Examination)"
+  ],
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "भारतीय रेल्वेमध्ये वैद्यकीय आणि पॅरामेडिकल क्षेत्रात करिअर करू इच्छिणाऱ्या उमेदवारांसाठी RRB Paramedical भरती 2026 अंतर्गत एक महत्त्वाची संधी उपलब्ध झाली आहे. रेल्वे भरती बोर्ड (RRBs) द्वारे CEN No. 05/2026 अंतर्गत विविध पॅरामेडिकल पदांच्या एकूण 590 रिक्त जागांसाठी ही भरती प्रक्रिया जाहीर करण्यात आल",
-    "metaDescription": null,
+    "shortDesc": "RRB Paramedical भरती 2026 (CEN 05/2026): भारतीय रेल्वेत नर्सिंग सुपरिटेंडेंट, फार्मासिस्ट, लॅब असिस्टंटसह 9 संवर्गांत एकूण 590 जागा. अर्ज 15 सप्टेंबर ते 14 ऑक्टोबर 2026 — फक्त Online. CBT (100 गुण) + कागदपत्र पडताळणी + वैद्यकीय तपासणी.",
+    "metaDescription": "RRB Paramedical भरती 2026 CEN 05/2026: 590 जागा — पात्रता, वय, फी, तारखा, CBT परीक्षा पॅटर्न व अभ्यासक्रम माहिती मराठीत.",
     "sections": [
       {
-        "heading": "भरती थोडक्यात",
+        "heading": "भरतीबाबत थोडक्यात माहिती",
         "type": "text",
-        "body": "रेल्वे भरती बोर्ड (RRBs) ने CEN No. 05/2026 अंतर्गत RRB Paramedical भरती 2026 ची घोषणा केली आहे. या भरती मोहिमेद्वारे भारतीय रेल्वेमध्ये वैद्यकीय आणि पॅरामेडिकल विभागातील एकूण 590 रिक्त जागा भरल्या जाणार आहेत. यामध्ये नर्सिंग सुपरिंटेंडेंट, फार्मासिस्ट, रेडिओग्राफर, लॅब असिस्टंट यांसारख्या विविध पदांचा समावेश आहे. वैद्यकीय क्षेत्रात सरकारी नोकरी शोधणाऱ्या उमेदवारांसाठी ही एक उत्तम संधी आहे."
+        "body": "रेल्वे भरती मंडळाने (RRB) CEN 05/2026 अंतर्गत भारतीय रेल्वेतील पॅरामेडिकल विभागासाठी एकूण 590 जागांची भरती जाहीर केली आहे. नर्सिंग सुपरिटेंडेंट (365), फार्मासिस्ट (118), हेल्थ अँड मलेरिया इन्स्पेक्टर (43), लॅब असिस्टंट (31), रेडिओग्राफर (25) यांसह 9 संवर्गांतील पदांचा समावेश आहे. रेल्वेतील नोकरीत आकर्षक वेतनासह नोकरीची हमी, मोफत रेल्वे पास व वैद्यकीय सुविधा मिळतात."
       },
       {
-        "heading": "महत्त्वाची माहिती",
+        "heading": "पदनिहाय जागा",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "जागा"
+        ],
+        "rows": [
+          [
+            "नर्सिंग सुपरिटेंडेंट",
+            "365"
+          ],
+          [
+            "फार्मासिस्ट (Entry Grade)",
+            "118"
+          ],
+          [
+            "हेल्थ अँड मलेरिया इन्स्पेक्टर ग्रेड-III",
+            "43"
+          ],
+          [
+            "लॅब असिस्टंट ग्रेड-II",
+            "31"
+          ],
+          [
+            "रेडिओग्राफर / एक्स-रे टेक्निशियन",
+            "25"
+          ],
+          [
+            "ECG टेक्निशियन",
+            "4"
+          ],
+          [
+            "ऑप्टोमेट्रिस्ट",
+            "2"
+          ],
+          [
+            "डायलिसिस टेक्निशियन",
+            "1"
+          ],
+          [
+            "ऑडिओलॉजिस्ट अँड स्पीच थेरपिस्ट",
+            "1"
+          ]
+        ]
+      },
+      {
+        "heading": "परीक्षेचे स्वरूप (CBT)",
         "type": "text",
-        "body": "ही भरती प्रक्रिया Railway Recruitment Boards (RRBs) द्वारे CEN No. 05/2026 या जाहिरात क्रमांकांतर्गत राबवली जात आहे. भारतीय रेल्वेच्या विविध झोनमध्ये पॅरामेडिकल सेवा देण्यासाठी पात्र आणि इच्छुक उमेदवारांकडून अर्ज मागवण्यात येत आहेत. एकूण 590 जागांसाठी होणारी ही भरती वैद्यकीय क्षेत्रातील कर्मचाऱ्यांची गरज पूर्ण करण्यास मदत करेल. उमेदवारांनी अधिक तपशिलांसाठी अधिकृत जाहिरात पाहणे आवश्यक आहे."
+        "body": "CBT मध्ये एकूण 100 प्रश्न 100 गुणांसाठी असतील; कालावधी 90 मिनिटे. Professional Ability 70 गुणांचा सर्वांत महत्त्वाचा विभाग आहे. प्रत्येक चुकीच्या उत्तरासाठी 1/3 गुणांचे निगेटिव्ह मार्किंग असेल. General Awareness (10), General Arithmetic/Reasoning (10) व General Science (10) हे इतर विभाग आहेत."
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "अर्ज करण्यापूर्वी अधिकृत CEN 05/2026 जाहिरात PDF नक्की वाचा",
+          "पसंतीचा RRB निवडताना काळजी घ्या — नंतर बदल करता येत नाही",
+          "निर्धारित पात्रता 14/10/2026 पर्यंत पूर्ण असावी",
+          "CBT ला बसल्यानंतर परीक्षा शुल्काचा परतावा मिळतो"
+        ]
       }
     ],
-    "faqs": []
+    "faqs": [
+      {
+        "q": "RRB Paramedical भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "एकूण 590 जागा — नर्सिंग सुपरिटेंडेंट 365, फार्मासिस्ट 118, HMI 43, लॅब असिस्टंट 31, रेडिओग्राफर 25 व इतर."
+      },
+      {
+        "q": "अर्ज कसा व केव्हा करावा?",
+        "a": "अर्ज फक्त Online rrbapply.gov.in वर 15 सप्टेंबर ते 14 ऑक्टोबर 2026 (11:59 PM) या कालावधीत करावा."
+      },
+      {
+        "q": "CBT परीक्षेचे स्वरूप काय आहे?",
+        "a": "100 प्रश्न 100 गुणांसाठी, 90 मिनिटे; Professional Ability 70 गुण; प्रत्येक चुकीच्या उत्तरासाठी 1/3 निगेटिव्ह मार्किंग."
+      }
+    ]
   },
   "sources": [
     {
-      "url": "https://mahanaukari.com/rrb-paramedical-bharti-2026/",
-      "name": "Mahanaukari",
-      "priority": 3,
+      "url": "https://www.rrbapply.gov.in/assets/forms/CEN_05_2026_PM.pdf",
+      "name": "RRB CEN 05/2026 अधिकृत जाहिरात PDF",
+      "priority": 1,
+      "role": "notification-pdf",
+      "verifiedAt": "2026-09-21T12:00:00+05:30"
+    },
+    {
+      "url": "https://www.rrbapply.gov.in/",
+      "name": "RRB Apply अधिकृत संकेतस्थळ",
+      "priority": 1,
       "role": "notification",
-      "verifiedAt": "2026-09-19T10:37:32.909Z"
+      "verifiedAt": "2026-09-21T12:00:00+05:30"
     }
   ],
-  "status": "ai-generated",
-  "confidence": 85,
-  "publishedAt": null,
-  "lastUpdatedAt": "2026-09-19T10:37:58.299Z",
-  "contentHash": "11cf98d28f11748e2ff85cb527ded0588e6a75afbcd888a09263dfffa4ddba57",
+  "status": "published",
+  "confidence": 92,
+  "publishedAt": "2026-09-21T12:00:00+05:30",
+  "lastUpdatedAt": "2026-09-21T12:00:00+05:30",
+  "contentHash": "8ee778d407fe589d8590827a8ff9126d2ceded652096ff007594ba20f4ef8f9c",
   "updates": [],
   "seo": {
     "keywords": [
-      "RRB Paramedical Bharti 2026: रेल्वेत 590 जागा",
+      "RRB Paramedical Bharti 2026",
+      "CEN 05/2026",
+      "Railway Nursing Superintendent",
+      "RRB Pharmacist Vacancy",
       "रेल्वे भरती",
+      "Railway परीक्षा",
       "MarathiAura"
     ],
     "ogImage": "/og-images/rrb-paramedical-bharti-2026-590.svg",
-    "index": false
-  },
-  "aiRewritten": true,
-  "aiRewrittenAt": "2026-09-19T10:37:58.299Z"
+    "index": true
+  }
 }
