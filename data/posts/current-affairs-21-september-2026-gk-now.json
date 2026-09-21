@@ -1,0 +1,96 @@
+{
+  "id": "current-affairs-21-september-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-21",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - २१ सप्टेंबर २०२६",
+  "slug": "current-affairs-21-september-2026-gk-now",
+  "path": "/current-affairs/21-september-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [
+      "SSC",
+      "MBA"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-21",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-21-september-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "२१ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी; UPSC, SSC, UPSSC, डिफेन्स आणि पोलीस भरती यांसारख्या स्पर्धा परीक्षांच्या तयारीसाठी उपयुक्त माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्वाच्या घडामोडी आणि कला-संस्कृती",
+        "type": "text",
+        "body": "२१ सप्टेंबर २०२६ रोजीच्या अधिकृत सार्वजनिक स्रोतांवरून संकलित केलेल्या महत्त्वाच्या घडामोडी UPSC, SSC, UPSSC, डिफेन्स आणि पोलीस भरती स्पर्धा परीक्षांसाठी उपयुक्त आहेत.\n\nकला आणि संस्कृती:\nनागा चित्रपट निर्मात्याने दिग्दर्शित केलेल्या 'Angh' या चित्रपटाने TIFF मध्ये ऐतिहासिक कामगिरी करत 'Platform Prize 2026' जिंकला आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-21-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-21T12:27:07.196Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKNow (Current Affairs)",
+    "sourceUrl": "https://gknow.in/current-affairs-21-september-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-21T12:27:07.196Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-21T12:27:45.728Z",
+  "contentHash": "b3e91487d019fdf44118608c65dffbe0d433ee84eea97fe669274a0e6b5a54a4",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 21 September 2026 - GK Now भरती",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-21-september-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-21T12:27:45.728Z"
+}
