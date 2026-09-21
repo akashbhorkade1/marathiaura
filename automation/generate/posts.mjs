@@ -114,23 +114,28 @@ function selectionHtml(p) {
   <ol>${items.map(i => `<li>${esc(i)}</li>`).join('')}</ol></div>\n`;
 }
 
-// अर्ज कसा करायचा? — फक्त source-supported fields (applicationMode / applyUrl / fee / शेवटची तारीख)
-function howToApplyHtml(p, closed) {
+// अर्ज शुल्क व पद्धत (LOCKED क्रम #10) — fee चा वेगळा मुद्दा; mode सोबत
+function feeModeHtml(p, closed) {
   const r = p.recruitment || {};
   const mode = safeText(r.applicationMode);
-  const apply = (p.links && /^https?:\/\//.test(p.links.applyUrl || '')) ? p.links.applyUrl : null;
-  if (!mode && !apply) return '';
-  const steps = [];
-  if (mode) steps.push(`अर्ज पद्धत: ${mode}`);
   const fee = feeText(r);
+  const apply = (p.links && /^https?:\/\//.test(p.links.applyUrl || '')) ? p.links.applyUrl : null;
+  if (!fee && !mode && !apply) return '';
+  const steps = [];
   if (fee) steps.push(`अर्ज शुल्क: ${fee}`);
+  if (mode) steps.push(`अर्ज पद्धत: फक्त ${mode}`);
   if (p.dates && p.dates.applicationEnd) steps.push(`अर्ज करण्याची शेवटची तारीख: ${fmtDate(p.dates.applicationEnd)}`);
   steps.push(closed
     ? 'अर्ज प्रक्रिया पूर्ण झाली आहे — लिंक फक्त संदर्भासाठी'
     : 'अधिकृत अर्ज लिंकवरूनच अर्ज करा (खालील महत्त्वाच्या लिंक्स पहा)');
-  return `<div class="content-section"><h2>अर्ज कसा करायचा?</h2>
+  return `<div class="content-section"><h2>अर्ज शुल्क व पद्धत</h2>
   <ol>${steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol>
   <p><small>कोणत्याही मध्यस्थाला पैसे देऊ नका. अर्ज नेहमी अधिकृत संकेतस्थळावरूनच करा.</small></p></div>\n`;
+}
+
+// अर्ज कसा करायचा? — legacy alias (जुन्या data मध्ये section heading असेल तर duplicate guard साठीच)
+function howToApplyHtml(p, closed) {
+  return feeModeHtml(p, closed).replace('<h2>अर्ज शुल्क व पद्धत</h2>', '<h2>अर्ज कसा करायचा?</h2>');
 }
 
 // कोणती कागदपत्रे लागतील? — फक्त source मध्ये documents[] असेल तरच (कधीच invent नाही)
@@ -146,7 +151,7 @@ function documentsHtml(p) {
 function renderPost(p) {
   const cat = catById[p.category];
   const catName = cat ? cat.nameMr : 'अपडेट';
-  const sections = (p.content.sections || []).map(renderSection).join('');
+  // (sections खाली LOCKED क्रमाने build होतात — पहा DATA_ORDER/injects)
   const updates = (p.updates || []).length ? `<div class="content-section"><h2>अपडेट्स</h2><ul class="updates-list">${
     p.updates.map(u => `<li><span class="u-date">${esc((u.date || '').slice(0, 16).replace('T', ' '))}${u.type ? ' — ' + esc(u.type) : ''}</span><br><strong>${esc(u.title || '')}</strong>${u.summary ? '<br>' + esc(u.summary) : ''}</li>`).join('')
   }</ul></div>` : '';
@@ -193,23 +198,67 @@ function renderPost(p) {
   const closedNote = closed ? `<div class="closed-note">🔴 या भरतीची अर्ज प्रक्रिया बंद झाली आहे. हे पान ऐतिहासिक संदर्भासाठी उपलब्ध आहे.</div>` : '';
 
   // Structured source-backed sections — heading आधीच content.sections मध्ये असल्यास duplicate रेंडर नाही
-  // (ही heading सूची = LOCKED TEMPLATE क्रम — auto-sections आणि content.sections कधीच एकमेकांचे
-  // duplicate दिसणार नाहीत, आणि तुमचा format नेहमी या क्रमात render होतो)
-  const LOCKED_SECTION_ORDER = [
-    ['महत्त्वाच्या तारखा', datesTable(p)],
-    ['ही भरती तुमच्यासाठी आहे का? 👀', checklistHtml(p)],
-    ['वेतन / Pay Scale', salaryHtml(p)],
-    ['निवड प्रक्रिया', selectionHtml(p)],
-    ['अर्ज कसा करायचा?', howToApplyHtml(p, closed)],
-    ['कोणती कागदपत्रे लागतील?', documentsHtml(p)]
+  // PERFECT LOCKED KRAM (prompt template):
+  // 1 Title+Intro (header+highlight, नेहमी वर) · 2 At-a-Glance · 3 Eligibility · 4+ data sections (vacancy,
+  // qualification, age, salary, selection, exam, fee-mode) · 11 Dates · 12 Instructions · 13 Links · 14 FAQs · 15 Tags(SEO)
+  // data-sections चा क्रम data मधून येतो (तुमचा format)· auto-section फक्त data मध्ये नसेल तेव्हाच, LOCKED जागेवर.
+  const DATA_ORDER = [
+    'भरतीबाबत थोडक्यात माहिती',
+    'भरतीबाबत थोडक्यात',
+    'पदनिहाय जागा',
+    'शैक्षणिक पात्रता',
+    'वयोमर्यादा',
+    'वेतन / Pay Scale',
+    'निवड प्रक्रिया',
+    'परीक्षेचे स्वरूप आणि अभ्यासक्रम',
+    'अर्ज शुल्क व पद्धत',
+    'अर्ज कसा करायचा?',
+    'अर्ज शुल्क व पद्धत (Application Fee)',
+    'परीक्षा वेळापत्रक',
+    'महत्त्वाच्या सूचना'
   ];
-  const sectionHeadings = new Set((p.content.sections || []).map(s => safeText(s.heading).replace(/\s+/g, ' ').trim()));
-  const structured = LOCKED_SECTION_ORDER
-    .filter(([, html]) => html)
-    // content.sections मध्ये त्याच नावाचा section असल्यास duplicate टाळा —
-    // auto-section ची heading disabled, पण क्रम LOCKED order ने stable राहतो.
-    .filter(([h]) => !sectionHeadings.has(h))
-    .map(([, html]) => html).join('');
+  const sectNorm = s => safeText(s.heading).replace(/\s+/g, ' ').trim();
+  const sectionHeadings = new Set((p.content.sections || []).map(sectNorm));
+  // data-sections: तुमच्या format च्या क्रमाने sort करा (DATA_ORDER), नंतर extra sections मूळ क्रमाने.
+  // तुमचा data आधीच LOCKED क्रमात असतो — हे unknown order च्या जुन्या records साठी safety net आहे.
+  const orderedSecs = [...(p.content.sections || [])].sort((a, b) => {
+    const ia = DATA_ORDER.indexOf(sectNorm(a));
+    const ib = DATA_ORDER.indexOf(sectNorm(b));
+    if (ia === -1 && ib === -1) return 0;
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  });
+  // auto-sections (data मध्ये नसलेल्या headings फक्त) — प्रत्येकी तिच्या LOCKED जागेवर:
+  // #3 eligibility · #7 वेतन → वयोमर्यादा नंतर · #8 निवड → वेतन नंतर · #10 शुल्क → परीक्षा नंतर · documents शेवटी
+  // #11 dates (data/auto): महत्त्वाच्या सूचना नंतर (Links just आधी) — खाली handle होते
+  const autoFor = (heading, html) => (!html || sectionHeadings.has(heading)) ? null : { heading, html };
+  const autoSalary = autoFor('वेतन / Pay Scale', salaryHtml(p));
+  const autoSelection = autoFor('निवड प्रक्रिया', selectionHtml(p));
+  const autoFeeMode = autoFor('अर्ज शुल्क व पद्धत', feeModeHtml(p, closed)) || autoFor('अर्ज कसा करायचा?', howToApplyHtml(p, closed));
+  const autoDocs = autoFor('कोणती कागदपत्रे लागतील?', documentsHtml(p));
+  const finalSecs = [...orderedSecs];
+  const dropHeading = h => { const i = finalSecs.findIndex(s => sectNorm(s) === h); if (i !== -1) finalSecs.splice(i, 1); };
+  dropHeading('महत्त्वाच्या तारखा'); // #11 नेहमी सूचनांनंतरच (खाली append होते)
+  dropHeading('महत्त्वाच्या सूचना'); // #12 नेहमी fee/dates आधी (खाली append होते)
+  const injectAfter = (heading, item) => {
+    if (!item) return;
+    const i = finalSecs.findIndex(s => sectNorm(s) === heading);
+    if (i === -1) finalSecs.push(item); else finalSecs.splice(i + 1, 0, item);
+  };
+  injectAfter('वयोमर्यादा', autoSalary);
+  injectAfter(autoSalary ? 'वेतन / Pay Scale' : 'वयोमर्यादा', autoSelection);
+  injectAfter('परीक्षेचे स्वरूप आणि अभ्यासक्रम', autoFeeMode);
+  if (autoDocs) finalSecs.push(autoDocs);
+  // #12 सूचना: data मधील मूळ item (असल्यास) fee/परीक्षा नंतर append करा
+  const instrItem = (p.content.sections || []).find(s => sectNorm(s) === 'महत्त्वाच्या सूचना');
+  if (instrItem) finalSecs.push(instrItem);
+  // #11 तारखा: data मधील मूळ item (असल्यास) सूचना नंतर; auto-dates injection (लाईन 262-266) आता वापरत नाही
+  const datesItem = (p.content.sections || []).find(s => sectNorm(s) === 'महत्त्वाच्या तारखा');
+  if (datesItem) finalSecs.push(datesItem);
+  else if (datesTable(p)) finalSecs.push({ heading: 'महत्त्वाच्या तारखा', type: 'auto-dates' });
+  const autoEligibility = sectionHeadings.has('ही भरती तुमच्यासाठी आहे का? 👀') ? '' : checklistHtml(p);
+  const sections = finalSecs.map(s => (s.type === 'auto-dates' ? datesTable(p) : renderSection(s))).join('');
 
   const body = `
 ${breadcrumbHtml(cat)}
@@ -219,8 +268,8 @@ ${verifiedHtml}
 ${closedNote}
 <div class="highlight"><strong>थोडक्यात:</strong> ${esc(safeText(p.content.shortDesc))}</div>
 ${infoTable(p)}
+${autoEligibility}
 ${sections}
-${structured}
 ${updates}
 ${linksHtml}
 ${faqHtml}
