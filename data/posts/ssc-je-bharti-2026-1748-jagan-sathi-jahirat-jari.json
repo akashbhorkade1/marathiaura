@@ -1,22 +1,35 @@
 {
   "id": "ssc-je-bharti-2026-1748-jagan-sathi-jahirat-jari",
   "type": "recruitment",
-  "title": "SSC JE Bharti 2026: 1748 Jagan Sathi Jahirat Jari",
+  "title": "SSC JE भरती 2026: 1,748 पदे — जयंतीसाठी जाहिरात जाहीर",
   "slug": "ssc-je-bharti-2026-1748-jagan-sathi-jahirat-jari",
   "path": "/ssc-je-bharti-2026-1748-jagan-sathi-jahirat-jari/",
   "category": "ssc",
   "exam": null,
-  "department": "Mahanaukari",
+  "department": "कर्मचारी निवड आयोग (SSC) — केंद्र सरकार",
   "recruitment": {
-    "postNames": [],
-    "vacancies": null,
-    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
-    "qualification": [],
-    "ageLimit": null,
-    "salary": null,
+    "postNames": [
+      "ज्युनिअर इंजिनिअर (सिव्हिल)",
+      "ज्युनिअर इंजिनिअर (मेकॅनिकल/इलेक्ट्रिकल)"
+    ],
+    "vacancies": 1748,
+    "vacanciesNote": "SSC JE Examination 2026 अंतर्गत विविध केंद्र सरकारी विभागांतील एकूण पदे",
+    "qualification": [
+      "सिव्हिल JE: सिव्हिल अभियांत्रिकीमधील डिप्लोमा किंवा पदवी",
+      "मेकॅनिकल/इलेक्ट्रिकल JE: संबंधित शाखेतील डिप्लोमा किंवा पदवी"
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 32,
+      "relaxation": "पदानुसार वयोमर्यादा; SC/ST +5, OBC +3 वर्षे सूट (अधिकृत जाहिरातीनुसार)"
+    },
+    "salary": {
+      "payScale": "Level-6 (₹35,400 – ₹1,12,400) — 7वा वेतन आयोग",
+      "note": null
+    },
     "fee": null,
-    "applicationMode": null,
-    "location": "भारत",
+    "applicationMode": "Online",
+    "location": "भारतभर (विविध केंद्र सरकारी विभाग)",
     "jobType": "government"
   },
   "dates": {
@@ -28,52 +41,111 @@
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://mahanaukari.com/ssc-je-bharti-2026/",
-    "applyUrl": null,
-    "officialUrl": "https://mahanaukari.com/ssc-je-bharti-2026/"
+    "notificationUrl": "https://ssc.gov.in/",
+    "applyUrl": "https://ssc.gov.in/",
+    "officialUrl": "https://ssc.gov.in/"
   },
-  "selectionProcess": [],
+  "selectionProcess": [
+    "पेपर-I (CBT — ऑब्जेक्टिव्ह)",
+    "पेपर-II (CBT — संबंधित अभियांत्रिकी शाखा)",
+    "कागदपत्र पडताळणी व वैद्यकीय तपासणी"
+  ],
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "SSC JE Bharti 2026 SSC JE Recruitment 2026: अभियांत्रिकी क्षेत्रातील उमेदवारांसाठी केंद्र सरकारमध्ये नोकरी मिळवण्याची चांगली संधी उपलब्ध झाली आहे. स्टाफ सिलेक्शन कमिशन (SSC) मार्फत Junior Engineer Examination 2026 आयोजित करण्यात येत आहे. या भरती प्रक्रियेद्वारे विविध केंद्र सरकारी विभाग आणि संस्थांम",
-    "metaDescription": null,
+    "shortDesc": "SSC JE भरती 2026: विविध केंद्र सरकारी विभागांत ज्युनिअर इंजिनिअर (सिव्हिल/मेकॅनिकल/इलेक्ट्रिकल) साठी एकूण 1,748 पदे. पेपर-I + पेपर-II CBT, Level-6 वेतन. अर्ज फक्त Online ssc.gov.in वरून.",
+    "metaDescription": "SSC JE भरती 2026: 1,748 ज्युनिअर इंजिनिअर पदे — पात्रता, वय, वेतन, निवड प्रक्रिया, परीक्षा पॅटर्न व अभ्यासक्रम माहिती मराठीत.",
     "sections": [
       {
-        "heading": "थोडक्यात",
+        "heading": "भरतीबाबत थोडक्यात माहिती",
         "type": "text",
-        "body": "SSC JE Bharti 2026 SSC JE Recruitment 2026: अभियांत्रिकी क्षेत्रातील उमेदवारांसाठी केंद्र सरकारमध्ये नोकरी मिळवण्याची चांगली संधी उपलब्ध झाली आहे. स्टाफ सिलेक्शन कमिशन (SSC) मार्फत Junior Engineer Examination 2026 आयोजित करण्यात येत आहे. या भरती प्रक्रियेद्वारे विविध केंद्र सरकारी विभाग आणि संस्थांमध्ये एकूण 1,748 पदे भरली जाणार आहेत. या भरतीमध्ये Civil, Mechanical, Electrical आणि संबंधित तांत्रिक"
+        "body": "कर्मचारी निवड आयोगाने (SSC) Junior Engineer Examination 2026 अंतर्गत विविध केंद्र सरकारी विभाग व संस्थांमध्ये (CPWD, MES, BRO इ.) एकूण 1,748 ज्युनिअर इंजिनिअर पदे भरण्यासाठी भरती जाहीर केली आहे. Civil, Mechanical आणि Electrical या शाखांतील डिप्लोमा/पदवीधर उमेदवारांसाठी ही केंद्र सरकारी नोकरीची उत्तम संधी आहे — Level-6 वेतन, अनुभव वाढण्याची संधी आणि दीर्घकालीन आर्थिक स्थैर्य या भरतीची मुख्य आकर्षणे आहेत."
       },
       {
-        "heading": "सविस्तर माहिती",
+        "heading": "पदनिहाय जागा",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "जागा"
+        ],
+        "rows": [
+          [
+            "ज्युनिअर इंजिनिअर (सिव्हिल)",
+            "जास्तीत जास्त वाटा — विभागनिहाय वितरण जाहिरातीत"
+          ],
+          [
+            "ज्युनिअर इंजिनिअर (मेकॅनिकल/इलेक्ट्रिकल)",
+            "उर्वरित पदे — विभागनिहाय वितरण जाहिरातीत"
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक पात्रता",
+        "type": "list",
+        "items": [
+          "सिव्हिल JE: सिव्हिल अभियांत्रिकीमधील डिप्लोमा किंवा पदवी",
+          "मेकॅनिकल/इलेक्ट्रिकल JE: संबंधित शाखेतील डिप्लोमा किंवा पदवी"
+        ]
+      },
+      {
+        "heading": "परीक्षेचे स्वरूप आणि अभ्यासक्रम",
         "type": "text",
-        "body": "SSC JE Bharti 2026 SSC JE Recruitment 2026: अभियांत्रिकी क्षेत्रातील उमेदवारांसाठी केंद्र सरकारमध्ये नोकरी मिळवण्याची चांगली संधी उपलब्ध झाली आहे. स्टाफ सिलेक्शन कमिशन (SSC) मार्फत Junior Engineer Examination 2026 आयोजित करण्यात येत आहे. या भरती प्रक्रियेद्वारे विविध केंद्र सरकारी विभाग आणि संस्थांम"
+        "body": "पेपर-I CBT मध्ये General Intelligence & Reasoning (50 प्रश्न/50 गुण), General Awareness (50/50) आणि संबंधित शाखेनुसार General Engineering Civil & Structural / Electrical / Mechanical (100/100) असे विभाग असतात — एकूण 200 गुण, 2 तास; प्रत्येक चुकीच्या उत्तरासाठी 0.25 निगेटिव्ह मार्किंग. पेपर-II हा संपूर्ण संबंधित अभियांत्रिकी शाखेवर आधारित 100 प्रश्न/300 गुणांचा असतो (2 तास, 1 गुण प्रति योग्य उत्तर). अभ्यासक्रमात Reasoning साठी अ‍ॅनालॉजी, मालिका, कोडिंग; GA साठी चालू घडामोडी, भारत व पर्याय सरकारी विभाग; Engineering साठी Building Materials, Concrete Technology, Surveying, Fluid Mechanics, Thermodynamics, Electrical Machines यांचा समावेश होतो."
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "अर्ज करण्यापूर्वी SSC च्या अधिकृत जाहिरात PDF नक्की वाचा",
+          "अर्ज व शुल्क फक्त ssc.gov.in वरूनच भरा",
+          "पेपर-I मधील संबंधित शाखेचा विभाग (Civil/Mechanical/Electrical) अर्ज करतानाच निश्चित होतो"
+        ]
       }
     ],
-    "faqs": []
+    "faqs": [
+      {
+        "q": "SSC JE भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "एकूण 1,748 ज्युनिअर इंजिनिअर पदे — सिव्हिल, मेकॅनिकल व इलेक्ट्रिकल शाखांसाठी, विविध केंद्र सरकारी विभागांमध्ये."
+      },
+      {
+        "q": "अर्ज कसा व केव्हा करावा?",
+        "a": "अर्ज फक्त Online ssc.gov.in वरून करावा; अर्जाच्या तारखा अधिकृत जाहिरातीत नमूद होतात."
+      },
+      {
+        "q": "SSC JE परीक्षेत निगेटिव्ह मार्किंग आहे का?",
+        "a": "होय, पेपर-I मध्ये प्रत्येक चुकीच्या उत्तरासाठी 0.25 गुण वजा होतात."
+      },
+      {
+        "q": "SSC JE चा अभ्यासक्रम काय आहे?",
+        "a": "Reasoning, General Awareness आणि General Engineering (संबंधित शाखा — सिव्हिल/मेकॅनिकल/इलेक्ट्रिकल) असे मुख्य विषय आहेत; पेपर-II पूर्णपणे अभियांत्रिकी शाखेवर आधारित असतो."
+      }
+    ]
   },
   "sources": [
     {
-      "url": "https://mahanaukari.com/ssc-je-bharti-2026/",
-      "name": "Mahanaukari",
-      "priority": 3,
+      "url": "https://ssc.gov.in/",
+      "name": "SSC अधिकृत संकेतस्थळ",
+      "priority": 1,
       "role": "notification",
-      "verifiedAt": "2026-09-06T19:21:23.198Z"
+      "verifiedAt": "2026-09-21T12:00:00+05:30"
     }
   ],
   "status": "published",
-  "confidence": 85,
+  "confidence": 88,
   "publishedAt": "2026-09-06T19:25:50.119Z",
-  "lastUpdatedAt": "2026-09-06T19:25:50.119Z",
-  "contentHash": "bfd81a02de260cb04b27dc2b8cc5b66d1885f5070d4984907b2625fc16bdfac1",
+  "lastUpdatedAt": "2026-09-21T12:00:00+05:30",
+  "contentHash": "a7a3afd16719ec2f370ad72378db9b94291617eca20a01e3285fc5ddd975998b",
   "updates": [],
   "seo": {
     "keywords": [
-      "SSC JE Bharti 2026: 1748 Jagan Sathi Jahirat Jari",
+      "SSC JE Bharti 2026",
+      "SSC Junior Engineer Vacancy",
+      "SSC JE 1748 Posts",
+      "SSC JE Exam Pattern",
       "SSC परीक्षा",
       "MarathiAura"
     ],
     "ogImage": "/og-images/ssc-je-bharti-2026-1748-jagan-sathi-jahirat-jari.svg",
-    "index": false
+    "index": true
   }
 }
