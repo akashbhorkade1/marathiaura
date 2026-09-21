@@ -52,7 +52,7 @@ const quickLinks = [
   { href: '/result/', icon: '🏆', label: 'निकाल', sub: 'Result' },
   { href: '/syllabus/', icon: '📚', label: 'अभ्यासक्रम', sub: 'Syllabus' },
   { href: '/mock-test/', icon: '🧠', label: 'मॉक टेस्ट', sub: 'Mock Test' },
-  ...(waLink ? [{ href: waLink, icon: '💬', label: 'WhatsApp जॉइन करा', sub: 'WhatsApp Group', external: true }] : [])
+  ...(waLink ? [{ href: waLink, img: '/assets/img/whatsapp.jpg', label: 'WhatsApp जॉइन करा', sub: 'WhatsApp Group', external: true }] : [])
 ].filter(t => t.external || t.href.startsWith('#') || (t.href === '/mock-test/' ? testsRenderable : avail.has(t.href)));
 
 // Job card (Phase 1) — फक्त record मध्ये असलेलीच facts; source-मध्ये नसलेली संख्या कधीच guess नाही
@@ -124,7 +124,7 @@ const body = `
 ${quickLinks.length ? `
 <section class="wrap" aria-label="महत्त्वाचे विभाग">
   <div class="quick-grid">
-  ${quickLinks.map(t => `<a class="cat-card quick-card" href="${esc(t.href)}"${t.external ? ' target="_blank" rel="noopener"' : ''}><span class="ico">${t.icon}</span>${esc(t.label)}<small>${esc(t.sub)}</small></a>`).join('\n')}
+  ${quickLinks.map(t => `<a class="cat-card quick-card" href="${esc(t.href)}"${t.external ? ' target="_blank" rel="noopener"' : ''}><span class="ico">${t.img ? `<img class="ico-img" src="${esc(t.img)}" alt="" width="30" height="30" loading="lazy">` : t.icon}</span>${esc(t.label)}<small>${esc(t.sub)}</small></a>`).join('\n')}
   </div>
 </section>` : ''}
 
