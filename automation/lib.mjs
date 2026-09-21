@@ -310,9 +310,30 @@ export function footerHtml(site, categories) {
 </footer>`;
 }
 
-export function pageHtml(site, categories, { title, description, canonical, body, ogImage, type = 'website', index = true }) {
+// Global Quick-Links strip (LOCKED 4 blocks) — प्रत्येक page वर footer च्या वर:
+// 📢 नवीन भरती · 📚 अभ्यासक्रम · 🧠 मॉक टेस्ट · WhatsApp जॉइन (site.social.whatsapp असेल तर)
+// फक्त प्रत्यक्षात generate झालेलीच pages link होतात (dead-link नियम); WhatsApp external.
+export function quickStripHtml(site) {
+  const avail = generatedCategoryPaths();
+  const wa = safeText(site.social && site.social.whatsapp);
+  const testsOk = loadTests().some(t => isRenderableTest(t, questionIndex()));
+  const links = [
+    { href: '/latest-bharti/', icon: '📢', label: 'नवीन भरती', sub: 'Latest Bharti' },
+    { href: '/syllabus/', icon: '📚', label: 'अभ्यासक्रम', sub: 'Syllabus' },
+    { href: '/mock-test/', icon: '🧠', label: 'मॉक टेस्ट', sub: 'Mock Test' },
+    ...(wa ? [{ href: wa, img: '/assets/img/whatsapp.jpg', label: 'WhatsApp जॉइन करा', sub: 'WhatsApp Group', external: true }] : [])
+  ].filter(t => t.external || (t.href === '/mock-test/' ? testsOk : avail.has(t.href)));
+  if (!links.length) return '';
+  return `<section class="wrap quick-strip" aria-label="महत्त्वाचे विभाग">
+  <div class="quick-grid">
+  ${links.map(t => `<a class="cat-card quick-card" href="${esc(t.href)}"${t.external ? ' target="_blank" rel="noopener"' : ''}><span class="ico">${t.img ? `<img class="ico-img" src="${esc(t.img)}" alt="" width="30" height="30" loading="lazy">` : t.icon}</span>${esc(t.label)}<small>${esc(t.sub)}</small></a>`).join('\n')}
+  </div>
+</section>`;
+}
+
+export function pageHtml(site, categories, { title, description, canonical, body, ogImage, type = 'website', index = true, quickStrip = true }) {
   return headHtml(site, { title, description, canonical, ogImage, type, index }) +
-    `<body>\n${navHtml(categories)}\n<main class="wrap">\n${body}\n</main>\n${footerHtml(site, categories)}\n</body>\n</html>\n`;
+    `<body>\n${navHtml(categories)}\n<main class="wrap">\n${body}\n</main>\n${quickStrip ? quickStripHtml(site) : ''}\n${footerHtml(site, categories)}\n</body>\n</html>\n`;
 }
 
 export function postCard(p, cat) {

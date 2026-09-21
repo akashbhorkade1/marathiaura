@@ -172,7 +172,8 @@ write('index.html', pageHtml(site, categories, {
   description: site.description,
   canonical: site.url + '/',
   body,
-  ogImage: '/og-default.svg'
+  ogImage: '/og-default.svg',
+  quickStrip: false // homepage वर strip ची स्वतःची जागा आहे (quick-links section) — duplicate टाळा
 }));
 write('og-default.svg', svgOg('MarathiAura', 'स्पर्धा परीक्षा'));
 console.log('homepage.mjs: index.html generated (v2 — hero + quick-links + jobs + deadlines)');
