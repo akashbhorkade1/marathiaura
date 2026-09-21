@@ -127,6 +127,11 @@
         "body": "पूर्व परीक्षा (कार्यालय सहाय्यक व स्केल-I): नोव्हेंबर/डिसेंबर 2026. मुख्य/एकल परीक्षा: डिसेंबर 2026/फेब्रुवारी 2027. मुलाखत (अधिकारी संवर्ग): जानेवारी/फेब्रुवारी 2027. निश्चित तारखा IBPS च्या संकेतस्थळावर जाहीर होतील."
       },
       {
+        "heading": "परीक्षेचे स्वरूप आणि अभ्यासक्रम",
+        "type": "text",
+        "body": "IBPS RRB परीक्षेत पूर्व परीक्षा 80 प्रश्न 80 गुणांसाठी (45 मिनिटे) असते — Reasoning 40 प्रश्न (25 मिनिटे) व Numerical/Quantitative 40 प्रश्न (20 मिनिटे). मुख्य/एकल परीक्षेत Reasoning, Quantitative, General Awareness, English/Hindi व Computer Knowledge असे विभाग असतात; प्रत्येक चुकीच्या उत्तरासाठी 1/4 गुणांचे निगेटिव्ह मार्किंग असते. अभ्यासक्रमात Reasoning साठी Puzzles, Seating Arrangement, Syllogism, Blood Relations; Quantitative साठी Simplification, DI, Percentage, Profit-Loss; General Awareness साठी बँकिंग/आर्थिक घडामोडी व चालू घडामोडी; संगणकासाठी मूलभूत Hardware/Software, Internet व MS Office यांचा समावेश होतो."
+      },
+      {
         "heading": "महत्त्वाच्या सूचना",
         "type": "list",
         "items": [
@@ -156,6 +161,14 @@
       {
         "q": "निवड प्रक्रिया कशी आहे?",
         "a": "कार्यालय सहाय्यक व स्केल-I साठी पूर्व + मुख्य परीक्षा; स्केल-II/III साठी एकल परीक्षा. अधिकारी संवर्गासाठी मुलाखत होते, कार्यालय सहाय्यकासाठी मुलाखत नाही."
+      },
+      {
+        "q": "IBPS RRB परीक्षेत निगेटिव्ह मार्किंग आहे का?",
+        "a": "होय, Online परीक्षेत प्रत्येक चुकीच्या उत्तरासाठी 1/4 गुण वजा होतात."
+      },
+      {
+        "q": "IBPS RRB परीक्षेचा अभ्यासक्रम काय आहे?",
+        "a": "Reasoning (Puzzles, Arrangement, Syllogism), Quantitative (Simplification, DI, Percentage), General Awareness (बँकिंग व चालू घडामोडी), English/Hindi व Computer Knowledge असे मुख्य विषय आहेत."
       }
     ]
   },
@@ -179,7 +192,7 @@
   "confidence": 90,
   "publishedAt": "2026-09-20T12:00:00+05:30",
   "lastUpdatedAt": "2026-09-20T12:00:00+05:30",
-  "contentHash": "9e8f0702a697833917cb2bd5c04e9443439e85b0f0595c136053e501480b3cfd",
+  "contentHash": "4477875a32ea3b512fca8b3c73418b7d30a35ddacfa111c2629692886cc0b2f7",
   "updates": [],
   "seo": {
     "keywords": [
