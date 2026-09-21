@@ -43,14 +43,17 @@ const latestLink = avail.has('/latest-bharti/') ? '<a href="/latest-bharti/">स
 
 // Phase 2 — Quick-links strip: फक्त प्रत्यक्षात generate झालेलीच pages link होतील (Phase 1 नियम).
 // Last Date card फक्त तेव्हाच जेव्हा deadline sidebar खरोखर render होतो (dead anchor कधीच नाही)
+// WhatsApp group card — site.social.whatsapp (data/site.json) मधून; तिथे असेल तरच दिसेल.
+const waLink = safeText(site.social && site.social.whatsapp);
 const quickLinks = [
   { href: '/latest-bharti/', icon: '📢', label: 'नवीन भरती', sub: 'Latest Bharti' },
   ...(withDeadline.length ? [{ href: '#closing-soon', icon: '⏳', label: 'शेवटची तारीख', sub: 'Last Date' }] : []),
   { href: '/admit-card/', icon: '📄', label: 'प्रवेशपत्र', sub: 'Admit Card' },
   { href: '/result/', icon: '🏆', label: 'निकाल', sub: 'Result' },
   { href: '/syllabus/', icon: '📚', label: 'अभ्यासक्रम', sub: 'Syllabus' },
-  { href: '/mock-test/', icon: '🧠', label: 'मॉक टेस्ट', sub: 'Mock Test' }
-].filter(t => t.href.startsWith('#') || (t.href === '/mock-test/' ? testsRenderable : avail.has(t.href)));
+  { href: '/mock-test/', icon: '🧠', label: 'मॉक टेस्ट', sub: 'Mock Test' },
+  ...(waLink ? [{ href: waLink, icon: '💬', label: 'WhatsApp जॉइन करा', sub: 'WhatsApp Group', external: true }] : [])
+].filter(t => t.external || t.href.startsWith('#') || (t.href === '/mock-test/' ? testsRenderable : avail.has(t.href)));
 
 // Job card (Phase 1) — फक्त record मध्ये असलेलीच facts; source-मध्ये नसलेली संख्या कधीच guess नाही
 function jobCard(p) {
@@ -121,7 +124,7 @@ const body = `
 ${quickLinks.length ? `
 <section class="wrap" aria-label="महत्त्वाचे विभाग">
   <div class="quick-grid">
-  ${quickLinks.map(t => `<a class="cat-card quick-card" href="${t.href}"><span class="ico">${t.icon}</span>${esc(t.label)}<small>${esc(t.sub)}</small></a>`).join('\n')}
+  ${quickLinks.map(t => `<a class="cat-card quick-card" href="${esc(t.href)}"${t.external ? ' target="_blank" rel="noopener"' : ''}><span class="ico">${t.icon}</span>${esc(t.label)}<small>${esc(t.sub)}</small></a>`).join('\n')}
   </div>
 </section>` : ''}
 
