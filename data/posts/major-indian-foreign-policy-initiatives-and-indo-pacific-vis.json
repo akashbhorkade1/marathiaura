@@ -1,0 +1,95 @@
+{
+  "id": "major-indian-foreign-policy-initiatives-and-indo-pacific-vis",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-21",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Major Indian Foreign Policy Initiatives and Indo-Pacific Vision भरती — 16 जागा",
+  "slug": "major-indian-foreign-policy-initiatives-and-indo-pacific-vis",
+  "path": "/current-affairs/major-indian-foreign-policy-initiatives-and-indo-pacific-vis/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [
+      "diploma"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/major-indian-foreign-policy-initiatives-and-indo-pacific-vision/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Major Indian Foreign Policy Initiatives and Indo-Pacific Vision अंतर्गत 16 रिक्त जागांसाठी भरती जाहीर करण्यात आली आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "भरतीचा तपशील",
+        "type": "text",
+        "body": "Major Indian Foreign Policy Initiatives and Indo-Pacific Vision अंतर्गत एकूण 16 जागांसाठी भरती प्रक्रिया जाहीर करण्यात आली आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/major-indian-foreign-policy-initiatives-and-indo-pacific-vision/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-21T21:52:48.306Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/major-indian-foreign-policy-initiatives-and-indo-pacific-vision/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-21T21:52:48.306Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-21T21:52:57.507Z",
+  "contentHash": "a03126a40dbe7e727588b0e7147098dfbce4077b089b9c61fc2c0d79f1f71f2d",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Major Indian Foreign Policy Initiatives and Indo-Pacific Vis भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/major-indian-foreign-policy-initiatives-and-indo-pacific-vis.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-21T21:52:57.507Z"
+}
