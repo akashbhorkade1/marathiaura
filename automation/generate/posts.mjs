@@ -193,13 +193,23 @@ function renderPost(p) {
   const closedNote = closed ? `<div class="closed-note">🔴 या भरतीची अर्ज प्रक्रिया बंद झाली आहे. हे पान ऐतिहासिक संदर्भासाठी उपलब्ध आहे.</div>` : '';
 
   // Structured source-backed sections — heading आधीच content.sections मध्ये असल्यास duplicate रेंडर नाही
-  const sectionHeadings = new Set((p.content.sections || []).map(s => safeText(s.heading).replace(/\s+/g, ' ').trim()));
-  const structured = [
-    ['निवड प्रक्रिया', selectionHtml(p)],
+  // (ही heading सूची = LOCKED TEMPLATE क्रम — auto-sections आणि content.sections कधीच एकमेकांचे
+  // duplicate दिसणार नाहीत, आणि तुमचा format नेहमी या क्रमात render होतो)
+  const LOCKED_SECTION_ORDER = [
+    ['महत्त्वाच्या तारखा', datesTable(p)],
+    ['ही भरती तुमच्यासाठी आहे का? 👀', checklistHtml(p)],
     ['वेतन / Pay Scale', salaryHtml(p)],
+    ['निवड प्रक्रिया', selectionHtml(p)],
     ['अर्ज कसा करायचा?', howToApplyHtml(p, closed)],
     ['कोणती कागदपत्रे लागतील?', documentsHtml(p)]
-  ].filter(([h, html]) => html && !sectionHeadings.has(h)).map(([, html]) => html).join('');
+  ];
+  const sectionHeadings = new Set((p.content.sections || []).map(s => safeText(s.heading).replace(/\s+/g, ' ').trim()));
+  const structured = LOCKED_SECTION_ORDER
+    .filter(([, html]) => html)
+    // content.sections मध्ये त्याच नावाचा section असल्यास duplicate टाळा —
+    // auto-section ची heading disabled, पण क्रम LOCKED order ने stable राहतो.
+    .filter(([h]) => !sectionHeadings.has(h))
+    .map(([, html]) => html).join('');
 
   const body = `
 ${breadcrumbHtml(cat)}
@@ -209,8 +219,6 @@ ${verifiedHtml}
 ${closedNote}
 <div class="highlight"><strong>थोडक्यात:</strong> ${esc(safeText(p.content.shortDesc))}</div>
 ${infoTable(p)}
-${checklistHtml(p)}
-${datesTable(p)}
 ${sections}
 ${structured}
 ${updates}
