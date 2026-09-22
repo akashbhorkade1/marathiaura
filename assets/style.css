@@ -199,4 +199,6 @@ footer.site a:hover{text-decoration:underline}
 .quick-card .ico-img{display:block;width:30px;height:30px;margin:0 0 4px;border-radius:8px}
 .quick-strip{margin:28px auto 0}
 .share-card{cursor:pointer;font:inherit;color:inherit;text-align:left;width:100%}
+.wa-share .whatsapp-btn{background-color:#25D366;border:none;color:#fff;font-weight:bold;font-size:1rem;padding:12px 20px;border-radius:8px;cursor:pointer;width:100%;text-align:center}
+.wa-share .whatsapp-btn:hover{background-color:#1da851}
 

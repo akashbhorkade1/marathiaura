@@ -148,6 +148,39 @@ function documentsHtml(p) {
   <p><small>कागदपत्रांची अंतिम यादी अधिकृत जाहिरातीत दिलेली आहे.</small></p></div>\n`;
 }
 
+// 1-Click WhatsApp Share (LOCKED template) — प्रत्येक post page वर महत्त्वाच्या लिंक्स नंतर:
+// 📢 Title · 🔢 जागा · 📅 शेवटची तारीख · 🔗 Post link · 📲 WhatsApp group CTA
+// Logic: wa.me/?text= + encodeURIComponent(message). Missing facts → short placeholder (guess नाही).
+function waShareHtml(p, site) {
+  if (p.type !== 'recruitment') return '';
+  const r = p.recruitment || {};
+  const vac = (typeof r.vacancies === 'number') ? String(r.vacancies) : (safeText(r.vacanciesNote) || 'अधिकृत जाहिरात पहा');
+  const lastDate = (p.dates && p.dates.applicationEnd) ? fmtDate(p.dates.applicationEnd) : 'लवकरच जाहीर होईल';
+  const postUrl = site.url + pathOf(p);
+  const group = safeText(site.social && site.social.whatsapp);
+  return `<div class="content-section wa-share"><h2>मित्रांना शेअर करा 📲</h2>
+  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-vac="${esc(vac)}" data-wa-date="${esc(lastDate)}" data-wa-url="${esc(postUrl)}" data-wa-group="${esc(group)}">📲 व्हॉट्सॲपवर शेअर करा</button>
+</div>
+<script>
+window.shareDirectToWhatsApp = window.shareDirectToWhatsApp || function(btn){
+  var title = btn.dataset.waTitle || '', vac = btn.dataset.waVac || '',
+      lastDate = btn.dataset.waDate || '', postUrl = btn.dataset.waUrl || location.href,
+      group = btn.dataset.waGroup || '';
+  var message = '📢 *' + title + '*\\n'
+    + '🔢 एकूण जागा: ' + vac + '\\n'
+    + '📅 अर्ज करण्याची शेवटची तारीख: ' + lastDate + '\\n\\n'
+    + '🔗 सविस्तर माहिती व ऑनलाईन अर्ज:\\n' + postUrl + '\\n\\n'
+    + '📲 मोफत नोकरी अपडेट्ससाठी आमचा व्हॉट्सॲप ग्रुप जॉईन करा:\\n' + group + '\\n'
+    + '------------------------------------------\\n'
+    + 'मित्रांना नक्की शेअर करा! 🙏';
+  window.open('https://wa.me/?text=' + encodeURIComponent(message), '_blank', 'noopener');
+};
+document.querySelectorAll('.whatsapp-btn').forEach(function(b){
+  b.addEventListener('click', function(){ window.shareDirectToWhatsApp(b); });
+});
+</script>\n`;
+}
+
 function renderPost(p) {
   const cat = catById[p.category];
   const catName = cat ? cat.nameMr : 'अपडेट';
@@ -272,6 +305,7 @@ ${autoEligibility}
 ${sections}
 ${updates}
 ${linksHtml}
+${waShareHtml(p, site)}
 ${faqHtml}
 ${relatedHtml}
 <div class="source-row">
