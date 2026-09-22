@@ -39,7 +39,7 @@
   "dates": {
     "notification": "2026-09-01",
     "applicationStart": "2026-09-01",
-    "applicationEnd": "2026-09-21",
+    "applicationEnd": "2026-09-27",
     "examDate": null,
     "admitCardDate": null,
     "resultDate": null
@@ -119,7 +119,7 @@
       {
         "heading": "अर्ज शुल्क व पद्धत",
         "type": "text",
-        "body": "General/OBC/EWS साठी 850 रुपये; SC/ST/PwBD/ESM साठी 175 रुपये (GST सह). शुल्क फक्त Online भरायचे. कार्यालय सहाय्यक + एक अधिकारी पदासाठी स्वतंत्र अर्ज व स्वतंत्र शुल्क भरावे लागते."
+        "body": "General/OBC/EWS साठी 850 रुपये; SC/ST/PwBD/ESM साठी 175 रुपये (GST सह). शुल्क फक्त Online भरायचे — दोन्ही (अर्ज + शुल्क) आता 27 सप्टेंबर 2026 पर्यंत स्वीकारले जातील. कार्यालय सहाय्यक + एक अधिकारी पदासाठी स्वतंत्र अर्ज व स्वतंत्र शुल्क भरावे लागते. अर्जाची प्रिंट 05/10/2026 पर्यंत घेता येईल."
       },
       {
         "heading": "परीक्षा वेळापत्रक",
@@ -135,7 +135,8 @@
         "heading": "महत्त्वाच्या सूचना",
         "type": "list",
         "items": [
-          "अर्ज करण्यापूर्वी अधिकृत CRP RRBs-XV जाहिरात PDF नक्की वाचा",
+          "अर्ज करण्यापूर्वी अधिकृत CRP RRBs-XV जाहिरात PDF + तारीखवाढ दुरुस्तीपत्रक (Corrigendum) नक्की वाचा",
+          "✅ मोठी बातमी: IBPS ने अर्जाची शेवटची तारीख 21/09/2026 वरून 27/09/2026 पर्यंत वाढवली आहे — अर्ज न केलेल्यांनी लगेच भरावा",
           "कार्यालय सहाय्यक व स्केल-I साठी एकाच राज्याची निवड करावी — नंतर बदल करता येत नाही",
           "अर्ज व शुल्क फक्त ibps.in वरूनच भरा"
         ]
@@ -148,7 +149,7 @@
       },
       {
         "q": "अर्ज कसा व केव्हा करावा?",
-        "a": "अर्ज फक्त Online पद्धतीने ibps.in वर 1 ते 21 सप्टेंबर 2026 या कालावधीत भरायचा आहे."
+        "a": "अर्ज फक्त Online पद्धतीने ibps.in वर करावा. मुळची शेवटची तारीख 21/09/2026 होती, पण IBPS ने अधिकृत दुरुस्तीपत्रकाद्वारे ती 27/09/2026 पर्यंत वाढवली आहे."
       },
       {
         "q": "शैक्षणिक पात्रता काय आहे?",
@@ -174,6 +175,13 @@
   },
   "sources": [
     {
+      "url": "https://www.ibps.in/wp-content/uploads/Approved_Corrigendum-for-Extension_CRP-RRBs-XV-002.pdf",
+      "name": "IBPS CRP RRBs-XV तारीखवाढ दुरुस्तीपत्रक (Corrigendum)",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-09-22T08:00:00+05:30"
+    },
+    {
       "url": "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf",
       "name": "IBPS CRP RRBs-XV जाहिरात PDF",
       "priority": 1,
@@ -191,9 +199,20 @@
   "status": "published",
   "confidence": 90,
   "publishedAt": "2026-09-20T12:00:00+05:30",
-  "lastUpdatedAt": "2026-09-20T12:00:00+05:30",
-  "contentHash": "4477875a32ea3b512fca8b3c73418b7d30a35ddacfa111c2629692886cc0b2f7",
-  "updates": [],
+  "lastUpdatedAt": "2026-09-22T08:00:00+05:30",
+  "contentHash": "cea7657febaba6a4146a4d157c3a289ff51baa00ce8fcff77891dd193c28335a",
+  "updates": [
+    {
+      "date": "2026-09-22T08:00:00+05:30",
+      "type": "application-extended",
+      "title": "अर्जाची शेवटची तारीख 27/09/2026 पर्यंत वाढवली",
+      "summary": "IBPS ने अधिकृत दुरुस्तीपत्रकाद्वारे (Corrigendum) CRP RRBs-XV अर्ज सादर करण्याची व शुल्क भरण्याची शेवटची तारीख 21/09/2026 वरून 27/09/2026 पर्यंत वाढवली. अर्जाची प्रिंट 05/10/2026 पर्यंत घेता येईल.",
+      "source": {
+        "url": "https://www.ibps.in/wp-content/uploads/Approved_Corrigendum-for-Extension_CRP-RRBs-XV-002.pdf",
+        "name": "IBPS तारीखवाढ दुरुस्तीपत्रक"
+      }
+    }
+  ],
   "seo": {
     "keywords": [
       "IBPS RRB Bharti 2026",
