@@ -198,4 +198,5 @@ footer.site a:hover{text-decoration:underline}
 .quick-card .ico{display:block;font-size:1.5rem;margin-bottom:6px}
 .quick-card .ico-img{display:block;width:30px;height:30px;margin:0 0 4px;border-radius:8px}
 .quick-strip{margin:28px auto 0}
+.share-card{cursor:pointer;font:inherit;color:inherit;text-align:left;width:100%}
 
