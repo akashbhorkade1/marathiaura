@@ -128,6 +128,24 @@ export function isOfficialUrl(u) {
 }
 export const linkLabel = url => isOfficialUrl(url) ? 'अधिकृत जाहिरात / Notification' : 'माहिती स्रोत (तृतीय-पक्ष)';
 
+// Table cell linkify — cell text मधील http(s) URL ला clickable <a> बनवते.
+// Data मध्ये raw URL ठेवायचा (fact); "Click Here" सारखे presentation इथे generator देते.
+// XSS-safe: href + label दोन्ही esc() मधून. Bare URL → "येथे क्लिक करा"; "Label → URL" → Label link.
+export function linkifyCell(cell) {
+  const t = safeText(cell);
+  if (!t) return '';
+  const m = t.match(/https?:\/\/[^\s"'<>]+/);
+  if (!m) return esc(t);
+  let url = m[0].replace(/[.,;:!?)\]]+$/, '');
+  let label = t.replace(url, '').replace(/^[→>\-–—:|\s]+/, '').replace(/[→>\-–—:|\s]+$/, '').trim();
+  if (!label) {
+    const rest = t.replace(url, '').trim();
+    if (/click/i.test(rest)) label = 'येथे क्लिक करा';
+  }
+  if (!label) label = 'येथे क्लिक करा';
+  return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+}
+
 export const loadSite = () => readJson('data/site.json').site;
 export const loadCategories = () => readJson('data/categories.json');
 export const loadPosts = () => readJsonDir('data/posts');

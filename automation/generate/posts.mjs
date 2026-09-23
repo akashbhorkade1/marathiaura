@@ -1,6 +1,6 @@
 // Generates: post article pages + category index pages + OG images
 import { loadSite, loadCategories, loadPosts, published, write, esc, pageHtml, postCard, svgOg, pathOf,
-  safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, breadcrumbHtml, STATUS_META } from '../lib.mjs';
+  safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, linkifyCell, breadcrumbHtml, STATUS_META } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -20,7 +20,9 @@ function renderSection(sec) {
     const rows = (sec.rows || []).map(r => (r || []).map(c => safeText(c)));
     if (!rows.length) return '';
     inner += '<table><thead><tr>' + (sec.headers || []).map(h => `<th>${esc(safeText(h))}</th>`).join('') + '</tr></thead><tbody>';
-    for (const row of rows) inner += '<tr>' + row.map(c => `<td>${esc(c)}</td>`).join('') + '</tr>';
+    // Important Links table: दुसरा column = raw URL → Click Here link (cell linkify)
+    const isLinksTable = /महत्वाच्या?\s*लिंक्स?/i.test(heading) || (sec.headers || []).some(h => /लिंक/i.test(safeText(h)));
+    for (const row of rows) inner += '<tr>' + row.map((c, ci) => `<td>${isLinksTable && ci > 0 ? linkifyCell(c) : esc(c)}</td>`).join('') + '</tr>';
     inner += '</tbody></table>';
   } else if (sec.type === 'list') {
     const items = (sec.items || []).map(safeText).filter(Boolean);
