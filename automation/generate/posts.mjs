@@ -162,7 +162,7 @@ function waShareHtml(p, site) {
     const rDate = p.dates && p.dates.resultDate ? fmtDate(p.dates.resultDate) : '';
     const rGroup = safeText(site.social && site.social.whatsapp);
     return `<div class="content-section wa-share"><h2>मित्रांना शेअर करा 📲</h2>
-  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-dept="${esc(rDept)}" data-wa-rdate="${esc(rDate)}" data-wa-url="${esc(rUrl)}" data-wa-group="${esc(rGroup)}">📲 व्हॉट्सॲपवर शेअर करा</button>
+  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-dept="${esc(rDept)}" data-wa-rdate="${esc(rDate)}" data-wa-url="${esc(rUrl)}" data-wa-group="${esc(rGroup)}">📲 शेअर करा</button>
 </div>
 <script>
 window.shareResultToWhatsApp = window.shareResultToWhatsApp || function(btn){
@@ -186,14 +186,41 @@ document.querySelectorAll('.whatsapp-btn').forEach(function(b){
 </script>
 `;
   }
-  if (p.type !== 'recruitment') return '';
+  if (p.type !== 'recruitment') {
+    // Generic share — सर्व इतर post types (current-affairs, answer-key, admit-card, yojna, page …)
+    // महत्त्वाच्या/तक्ता links नंतरच यासाठी body मध्ये ${waShareHtml} आधीच ${linksHtml} नंतर आहे.
+    const gUrl = site.url + pathOf(p);
+    const gDept = safeText(p.department);
+    const gGroup = safeText(site.social && site.social.whatsapp);
+    return `<div class="content-section wa-share"><h2>मित्रांना शेअर करा 📲</h2>
+  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-dept="${esc(gDept)}" data-wa-url="${esc(gUrl)}" data-wa-group="${esc(gGroup)}">📲 शेअर करा</button>
+</div>
+<script>
+window.shareGenericToWhatsApp = window.shareGenericToWhatsApp || function(btn){
+  var title = btn.dataset.waTitle || '', dept = btn.dataset.waDept || '',
+      postUrl = btn.dataset.waUrl || location.href,
+      group = btn.dataset.waGroup || '';
+  var NL = String.fromCharCode(10);
+  var lines = ['📢 *' + title + '*'];
+  if (dept) lines.push('🏢 ' + dept);
+  lines.push('', '🔗 *सविस्तर माहिती:*', postUrl, '',
+    '📲 *स्पर्धा परीक्षेचे अपडेट्ससाठी व्हॉट्सॲप ग्रुप:*', group,
+    '------------------------------------------',
+    'आपल्या मित्रांना ही बातमी लगेच शेअर करा! 🎯');
+  window.open('https://wa.me/?text=' + encodeURIComponent(lines.join(NL)), '_blank', 'noopener');
+};
+document.querySelectorAll('.whatsapp-btn').forEach(function(b){
+  b.addEventListener('click', function(){ window.shareGenericToWhatsApp(b); });
+});
+</script>\n`;
+  }
   const r = p.recruitment || {};
   const vac = (typeof r.vacancies === 'number') ? String(r.vacancies) : (safeText(r.vacanciesNote) || 'अधिकृत जाहिरात पहा');
   const lastDate = (p.dates && p.dates.applicationEnd) ? fmtDate(p.dates.applicationEnd) : 'लवकरच जाहीर होईल';
   const postUrl = site.url + pathOf(p);
   const group = safeText(site.social && site.social.whatsapp);
   return `<div class="content-section wa-share"><h2>मित्रांना शेअर करा 📲</h2>
-  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-vac="${esc(vac)}" data-wa-date="${esc(lastDate)}" data-wa-url="${esc(postUrl)}" data-wa-group="${esc(group)}">📲 व्हॉट्सॲपवर शेअर करा</button>
+  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-vac="${esc(vac)}" data-wa-date="${esc(lastDate)}" data-wa-url="${esc(postUrl)}" data-wa-group="${esc(group)}">📲 शेअर करा</button>
 </div>
 <script>
 window.shareDirectToWhatsApp = window.shareDirectToWhatsApp || function(btn){

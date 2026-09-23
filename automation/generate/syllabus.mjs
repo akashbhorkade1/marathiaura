@@ -1,5 +1,5 @@
 // Generates: syllabus pages (type: syllabus) + /syllabus/ hub index — Schema V2 compliant
-import { loadSite, loadCategories, loadPosts, loadExams, published, write, esc, pageHtml, pathOf, svgOg, breadcrumbHtml } from '../lib.mjs';
+import { loadSite, loadCategories, loadPosts, loadExams, published, write, esc, safeText, pageHtml, pathOf, svgOg, breadcrumbHtml } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -26,6 +26,34 @@ function subjectSections(s) {
       return `<h3 style="font-size:1rem;margin:10px 0 4px">${esc(Array.isArray(t) ? t[0] : t.topic)}</h3><ul>${points.map(pt => `<li>${esc(pt)}</li>`).join('')}</ul>`;
     }).join('')
   }</div>\n`).join('');
+}
+
+function shareHtml(p) {
+  const postUrl = site.url + pathOf(p);
+  const dept = safeText(p.department);
+  const group = safeText(site.social && site.social.whatsapp);
+  return `<div class="content-section wa-share"><h2>मित्रांना शेअर करा 📲</h2>
+  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-dept="${esc(dept)}" data-wa-url="${esc(postUrl)}" data-wa-group="${esc(group)}">📲 शेअर करा</button>
+</div>
+<script>
+window.shareGenericToWhatsApp = window.shareGenericToWhatsApp || function(btn){
+  var title = btn.dataset.waTitle || '', dept = btn.dataset.waDept || '',
+      postUrl = btn.dataset.waUrl || location.href,
+      group = btn.dataset.waGroup || '';
+  var NL = String.fromCharCode(10);
+  var lines = ['📢 *' + title + '*'];
+  if (dept) lines.push('🏢 ' + dept);
+  lines.push('', '🔗 *सविस्तर माहिती:*', postUrl, '',
+    '📲 *स्पर्धा परीक्षेचे अपडेट्ससाठी व्हॉट्सॲप ग्रुप:*', group,
+    '------------------------------------------',
+    'आपल्या मित्रांना ही बातमी लगेच शेअर करा! 🎯');
+  window.open('https://wa.me/?text=' + encodeURIComponent(lines.join(NL)), '_blank', 'noopener');
+};
+document.querySelectorAll('.whatsapp-btn').forEach(function(b){
+  b.addEventListener('click', function(){ window.shareGenericToWhatsApp(b); });
+});
+</script>
+`;
 }
 
 function renderSyllabus(p) {
@@ -57,6 +85,7 @@ ${s.officialSyllabusUrl ? `<div class="download-card"><div class="dl-info"><div 
 ${s.note ? `<div class="highlight">ℹ ${esc(s.note)}</div>` : ''}
 ${faqHtml}
 ${relatedHtml}
+${shareHtml(p)}
 <div class="source-row">
   <span>स्रोत: ${(p.sources || []).filter(x => x.url).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join(', ') || 'अधिकृत स्रोत'}</span>
   <span>⚠ अंतिम व अचूक अभ्यासक्रमासाठी अधिकृत जाहिरात तपासा.</span>
