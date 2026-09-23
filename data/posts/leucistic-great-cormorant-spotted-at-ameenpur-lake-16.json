@@ -1,0 +1,93 @@
+{
+  "id": "leucistic-great-cormorant-spotted-at-ameenpur-lake-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-23",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "अमीनपूर तलावात ल्युसिस्टिक ग्रेट कॉर्मोरंट पक्षी आढळला",
+  "slug": "leucistic-great-cormorant-spotted-at-ameenpur-lake-16",
+  "path": "/current-affairs/leucistic-great-cormorant-spotted-at-ameenpur-lake-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-23",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/leucistic-great-cormorant-spotted-at-ameenpur-lake/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "23 सप्टेंबर 2026 रोजी अमीनपूर तलावात ल्युसिस्टिक ग्रेट कॉर्मोरंट पक्षी आढळला. चालू घडामोडी 2026-2027.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "23 सप्टेंबर 2026 रोजी अमीनपूर तलावात एक दुर्मिळ ल्युसिस्टिक ग्रेट कॉर्मोरंट (Leucistic Great Cormorant) पक्षी आढळून आला. ही घटना चालू घडामोडी 2026-2027 अंतर्गत नोंदवली गेली आहे. या पक्ष्याच्या आगमनाने पक्षीनिरीक्षक आणि पर्यावरणप्रेमींमध्ये कुतूहल निर्माण झाले आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/leucistic-great-cormorant-spotted-at-ameenpur-lake/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-23T11:09:56.246Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/leucistic-great-cormorant-spotted-at-ameenpur-lake/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-23T11:09:56.246Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-23T11:10:07.850Z",
+  "contentHash": "a592b7308f75d67b9ef1f729a2268e639acf6b8664be209ce5092f212cde353e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Leucistic Great Cormorant Spotted at Ameenpur Lake भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/leucistic-great-cormorant-spotted-at-ameenpur-lake-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-23T11:10:07.850Z"
+}
