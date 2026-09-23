@@ -51,6 +51,7 @@ function vacancyText(r) {
 }
 
 function infoTable(p) {
+  if (p.type === 'result') return ''; // Result template supplies its own "निकाल एका नजरेत" table (locked order)
   const r = p.recruitment || {};
   const st = recruitStatus(p);
   const rows = [
@@ -152,6 +153,37 @@ function documentsHtml(p) {
 // 📢 Title · 🔢 जागा · 📅 शेवटची तारीख · 🔗 Post link · 📲 WhatsApp group CTA
 // Logic: wa.me/?text= + encodeURIComponent(message). Missing facts → short placeholder (guess नाही).
 function waShareHtml(p, site) {
+  // Result posts — locked Result template snippet (📢 निकाल जाहीर + 🏢 विभाग + 📅 निकाल दिनांक + 🔗 पान + 📲 ग्रुप CTA)
+  if (p.type === 'result') {
+    const rUrl = site.url + pathOf(p);
+    const rDept = safeText(p.department);
+    const rDate = p.dates && p.dates.resultDate ? fmtDate(p.dates.resultDate) : '';
+    const rGroup = safeText(site.social && site.social.whatsapp);
+    return `<div class="content-section wa-share"><h2>मित्रांना शेअर करा 📲</h2>
+  <button type="button" class="whatsapp-btn" data-wa-title="${esc(p.title)}" data-wa-dept="${esc(rDept)}" data-wa-rdate="${esc(rDate)}" data-wa-url="${esc(rUrl)}" data-wa-group="${esc(rGroup)}">📲 व्हॉट्सॲपवर शेअर करा</button>
+</div>
+<script>
+window.shareResultToWhatsApp = window.shareResultToWhatsApp || function(btn){
+  var title = btn.dataset.waTitle || '', dept = btn.dataset.waDept || '',
+      rdate = btn.dataset.waRdate || '', postUrl = btn.dataset.waUrl || location.href,
+      group = btn.dataset.waGroup || '';
+  var NL = String.fromCharCode(10);
+  var lines = ['📢 *निकाल जाहीर! ' + title + '*'];
+  if (dept) lines.push('🏢 विभाग: ' + dept);
+  if (rdate) lines.push('📅 निकाल दिनांक: ' + rdate);
+  lines.push('📊 कट-ऑफ आणि गुणवत्ता यादी प्रसिद्ध झाली आहे!', '',
+    '🔗 *तुमचा निकाल आणि गुणवत्ता यादी (PDF) लगेच तपासा:*', postUrl, '',
+    '📲 *स्पर्धा परीक्षेचे निकाल व भरती अपडेट्ससाठी व्हॉट्सॲप ग्रुप:*', group,
+    '------------------------------------------',
+    'आपल्या मित्रांना ही बातमी लगेच शेअर करा! 🎯');
+  window.open('https://wa.me/?text=' + encodeURIComponent(lines.join(NL)), '_blank', 'noopener');
+};
+document.querySelectorAll('.whatsapp-btn').forEach(function(b){
+  b.addEventListener('click', function(){ window.shareResultToWhatsApp(b); });
+});
+</script>
+`;
+  }
   if (p.type !== 'recruitment') return '';
   const r = p.recruitment || {};
   const vac = (typeof r.vacancies === 'number') ? String(r.vacancies) : (safeText(r.vacanciesNote) || 'अधिकृत जाहिरात पहा');
@@ -289,7 +321,7 @@ function renderPost(p) {
   // #11 तारखा: data मधील मूळ item (असल्यास) सूचना नंतर; auto-dates injection (लाईन 262-266) आता वापरत नाही
   const datesItem = (p.content.sections || []).find(s => sectNorm(s) === 'महत्त्वाच्या तारखा');
   if (datesItem) finalSecs.push(datesItem);
-  else if (datesTable(p)) finalSecs.push({ heading: 'महत्त्वाच्या तारखा', type: 'auto-dates' });
+  else if (p.type !== 'result' && datesTable(p)) finalSecs.push({ heading: 'महत्त्वाच्या तारखा', type: 'auto-dates' });
   const autoEligibility = sectionHeadings.has('ही भरती तुमच्यासाठी आहे का? 👀') ? '' : checklistHtml(p);
   const sections = finalSecs.map(s => (s.type === 'auto-dates' ? datesTable(p) : renderSection(s))).join('');
 
