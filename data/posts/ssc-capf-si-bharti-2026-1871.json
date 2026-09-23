@@ -1,0 +1,310 @@
+{
+  "id": "ssc-capf-si-bharti-2026-1871",
+  "type": "recruitment",
+  "title": "SSC CAPF SI भरती 2026: दिल्ली पोलीस व CAPF मध्ये 1,871 SI जागा",
+  "slug": "ssc-capf-si-bharti-2026-1871",
+  "path": "/ssc-capf-si-bharti-2026-1871/",
+  "category": "ssc",
+  "status": "published",
+  "confidence": 90,
+  "publishedAt": "2026-09-23T21:30:00+05:30",
+  "lastUpdatedAt": "2026-09-23T16:10:23.523Z",
+  "contentHash": "c25275b24308a1661a0ff5004d8c47490f97406be48998c106820c3a9e4d90a0",
+  "updates": [],
+  "exam": null,
+  "department": "कर्मचारी निवड आयोग (SSC) — केंद्र सरकार",
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "selectionProcess": [
+    "Paper-I: Computer Based Test (CBT — वस्तुनिष्ठ)",
+    "PST/PET: शारीरिक मोजमाप व सहनशक्ती चाचणी (पात्रता स्वरूप; ESM ला PET नाही)",
+    "Paper-II: Computer Based Test (CBT — वस्तुनिष्ठ)",
+    "कागदपत्र पडताळणी व Detailed Medical Examination"
+  ],
+  "dates": {
+    "notification": "2026-09-10",
+    "applicationStart": "2026-09-10",
+    "applicationEnd": "2026-09-30",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf",
+    "applyUrl": "https://ssc.gov.in/",
+    "officialUrl": "https://ssc.gov.in/"
+  },
+  "recruitment": {
+    "postNames": [
+      "Sub-Inspector (Executive) Delhi Police — Male / Female",
+      "Sub-Inspector (GD) CAPFs — BSF, CRPF, ITBP, CISF, SSB",
+      "Sub-Inspector (Fire) CISF — Male"
+    ],
+    "vacancies": 1871,
+    "vacanciesNote": "Tentative: दिल्ली पोलीस Male 205 + Female 112, CAPF GD 1,320 (CRPF 254, BSF 457, ITBP 187, CISF 250, SSB 172), SI Fire 234",
+    "qualification": [
+      "SI (Delhi Police) व SI (GD) CAPFs: मान्यताप्राप्त विद्यापीठातून Bachelor पदवी किंवा समतुल्य (30.09.2026 पर्यंत पात्रता आवश्यक)",
+      "SI (Fire): Physics, Chemistry, Maths सह BSc किंवा मॅट्रिक + 3 वर्षांचा डिप्लोमा (Mechanical, Civil, Electrical, Automobiles, Chemical, Mining, Aeronautical, Telecommunication)",
+      "दिल्ली पोलीस पुरुष: PE&MT तारखेला LMV (Motorcycle + Car) वैध ड्रायव्हिंग लायसन्स आवश्यक"
+    ],
+    "ageLimit": {
+      "min": 20,
+      "max": 25,
+      "relaxation": "SC/ST +5, OBC +3 वर्षे; ESM ला नियमानुसार सूट. SI (Fire) CISF साठी वय 18-30. वय मोजणी दिनांक 01.08.2026"
+    },
+    "salary": {
+      "payScale": "Level-6 (Rs.35,400 – Rs.1,12,400)",
+      "note": null
+    },
+    "fee": {
+      "general": 100,
+      "reserved": 0,
+      "note": "महिला, SC, ST व राखीव माजी सैनिकांना शुल्क माफी. शुल्क फक्त Online. दुरुस्ती शुल्क पहिल्यांदा 200 व दुसऱ्यांदा 500 रुपये"
+    },
+    "applicationMode": "Online",
+    "location": "संपूर्ण भारत (दिल्ली पोलीस + CAPFs)",
+    "jobType": "government"
+  },
+  "sources": [
+    {
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf",
+      "name": "SSC अधिकृत जाहिरात PDF (CAPF SI 2026, 69 पाने)",
+      "priority": 1,
+      "role": "notification-pdf",
+      "verifiedAt": "2026-09-23T21:30:00+05:30"
+    },
+    {
+      "url": "https://ssc.gov.in/",
+      "name": "SSC अधिकृत संकेतस्थळ",
+      "priority": 1,
+      "role": "apply",
+      "verifiedAt": "2026-09-23T21:30:00+05:30"
+    }
+  ],
+  "seo": {
+    "keywords": [
+      "SSC CAPF SI Bharti 2026",
+      "SSC SI Delhi Police 2026",
+      "CAPF Sub Inspector 1871 Posts",
+      "SSC CAPF SI Apply Online",
+      "SI Fire CISF Vacancy",
+      "SSC परीक्षा"
+    ],
+    "ogImage": "/og-images/ssc-capf-si-bharti-2026-1871.svg",
+    "index": true
+  },
+  "content": {
+    "shortDesc": "SSC SI Delhi Police व CAPF परीक्षा 2026: दिल्ली पोलीस, BSF, CRPF, ITBP, CISF, SSB मधील SI पदांसाठी एकूण 1,871 जागा. पदवीधर उमेदवार 10 ते 30 सप्टेंबर 2026 पर्यंत ssc.gov.in वरून Online अर्ज करू शकतात. Paper-I + PST/PET + Paper-II मधून निवड.",
+    "metaDescription": "SSC SI Delhi Police व CAPF परीक्षा 2026: 1,871 SI जागा — पदवीधर, वय 20-25, Paper-I + PST/PET + Paper-II, अर्ज 10 ते 30 सप्टेंबर 2026. संपूर्ण माहिती मराठीत.",
+    "sections": [
+      {
+        "heading": "भरतीबाबत थोडक्यात माहिती",
+        "type": "text",
+        "body": "कर्मचारी निवड आयोगाने (SSC) Sub-Inspector in Delhi Police and Central Armed Police Forces (CAPFs) Examination 2026 ची अधिकृत जाहिरात 10 सप्टेंबर 2026 रोजी प्रसिद्ध केली आहे. दिल्ली पोलीस SI (Executive) पुरुष व महिला, CAPF SI (GD) (BSF, CRPF, ITBP, CISF, SSB) आणि CISF SI (Fire) पुरुष या पदांसाठी एकूण 1,871 tentative जागा भरल्या जाणार आहेत. पदवीधर उमेदवार 10 सप्टेंबर ते 30 सप्टेंबर 2026 या कालावधीत ssc.gov.in वरून Online अर्ज करू शकतात. निवड Paper-I CBT, PST/PET, Paper-II CBT, कागदपत्र पडताळणी व वैद्यकीय तपासणीतून होते."
+      },
+      {
+        "heading": "पदनिहाय जागा",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "दल / विभाग",
+          "जागा"
+        ],
+        "rows": [
+          [
+            "Sub-Inspector (Executive) — Male",
+            "दिल्ली पोलीस",
+            "205 (Open 184 + ESM 21)"
+          ],
+          [
+            "Sub-Inspector (Executive) — Female",
+            "दिल्ली पोलीस",
+            "112"
+          ],
+          [
+            "Sub-Inspector (GD)",
+            "CRPF (पुरुष + महिला)",
+            "254"
+          ],
+          [
+            "Sub-Inspector (GD)",
+            "BSF (पुरुष + महिला)",
+            "457"
+          ],
+          [
+            "Sub-Inspector (GD)",
+            "ITBP (पुरुष + महिला)",
+            "187"
+          ],
+          [
+            "Sub-Inspector (GD)",
+            "CISF (पुरुष + महिला)",
+            "250"
+          ],
+          [
+            "Sub-Inspector (GD)",
+            "SSB (पुरुष + महिला)",
+            "172"
+          ],
+          [
+            "Sub-Inspector (Fire) — Male",
+            "CISF",
+            "234"
+          ],
+          [
+            "एकूण",
+            "सर्व पदे मिळून (tentative)",
+            "1,871"
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक पात्रता",
+        "type": "list",
+        "items": [
+          "SI (Delhi Police) व SI (GD) CAPFs: मान्यताप्राप्त विद्यापीठातून Bachelor पदवी किंवा समतुल्य. पदवीच्या शेवटच्या वर्षाची परीक्षा दिलेले उमेदवारही अर्ज करू शकतात, मात्र 30 सप्टेंबर 2026 पर्यंत आवश्यक पात्रता धारण केलेली असावी",
+          "SI (Fire) CISF: Physics, Chemistry व Mathematics सह Science शाखेतील Bachelor पदवी किंवा मॅट्रिक + Mechanical, Civil, Electrical, Automobiles, Chemical, Mining, Aeronautical, Telecommunication मध्ये 3 वर्षांचा डिप्लोमा. मूळ डिप्लोमा असल्यास संबंधित शाखेतील B.Tech/M.Tech ग्राह्य",
+          "दिल्ली पोलीस (फक्त पुरुष): PE&MT साठी ठरवलेल्या तारखेला LMV (Motorcycle व Car) साठी वैध ड्रायव्हिंग लायसन्स आवश्यक. लायसन्स नसलेले पुरुष उमेदवार फक्त CAPF SI साठी पात्र",
+          "राष्ट्रीयत्व: भारताचे नागरिक किंवा नेपाळ/भूतानचे प्रजाजन (पात्रता प्रमाणपत्रासह)"
+        ]
+      },
+      {
+        "heading": "वयोमर्यादा",
+        "type": "list",
+        "items": [
+          "वय मोजणी दिनांक: 1 ऑगस्ट 2026",
+          "SI (Delhi Police) व SI (GD) CAPFs: वय 20 ते 25 वर्षे (जन्म 02.08.2001 पूर्वी नाही व 01.08.2006 नंतर नाही)",
+          "SI (Fire) CISF: वय 18 ते 30 वर्षे (जन्म 02.08.1996 पूर्वी नाही व 01.08.2008 नंतर नाही)",
+          "SC/ST ला 5 वर्षे, OBC ला 3 वर्षे सूट. ESM ला लष्करी सेवा वजा करून 3 वर्षे सूट",
+          "दिल्ली पोलीस महिला (विधवा/घटस्फोटित/विभक्त, पुनर्विवाह नाही): UR/EWS/OBC पर्यंत 35 वर्षे, SC/ST पर्यंत 40 वर्षे",
+          "दिल्ली पोलीस विभागीय उमेदवार (3 वर्षे सेवा): UR/EWS पर्यंत 30, OBC पर्यंत 33, SC/ST पर्यंत 35 वर्षे"
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा",
+        "type": "table",
+        "headers": [
+          "टप्पा",
+          "तारीख"
+        ],
+        "rows": [
+          [
+            "जाहिरात प्रसिद्ध",
+            "10 सप्टेंबर 2026"
+          ],
+          [
+            "Online अर्ज सुरू",
+            "10 सप्टेंबर 2026"
+          ],
+          [
+            "Online अर्ज शेवट",
+            "30 सप्टेंबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "Online शुल्क भरणा शेवट",
+            "1 ऑक्टोबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "अर्ज दुरुस्ती (Correction Window)",
+            "8 ते 10 ऑक्टोबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "Paper-I CBT परीक्षा",
+            "तारीख नंतर जाहीर होईल"
+          ]
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क",
+        "type": "list",
+        "items": [
+          "सामान्य, OBC व EWS पुरुष उमेदवार: 100 रुपये (फक्त Online — BHIM UPI, Net Banking, Visa, MasterCard, Maestro, RuPay Debit)",
+          "महिला, SC, ST व राखीव माजी सैनिकांना शुल्क माफी",
+          "शुल्क एकदा भरल्यावर परतावा नाही",
+          "अर्ज दुरुस्ती शुल्क: पहिल्या दुरुस्तीला 200 रुपये, दुसऱ्या दुरुस्तीला 500 रुपये (सर्व प्रवर्गांना लागू)"
+        ]
+      },
+      {
+        "heading": "वेतनश्रेणी",
+        "type": "list",
+        "items": [
+          "SI (GD) CAPFs: Pay Level-6 (35,400 ते 1,12,400 रुपये) — Group B (Non-Gazetted, Non-Ministerial)",
+          "SI (Executive) Delhi Police: Pay Level-6 (35,400 ते 1,12,400 रुपये) — दिल्ली पोलिसांकडून Group C",
+          "SI (Fire) CISF: Pay Level-6 (35,400 ते 1,12,400 रुपये) — Group B (Non-Gazetted, Non-Ministerial)",
+          "CAPF पदांवर निवड झालेल्यांना संपूर्ण भारतात कोठेही सेवा करावी लागेल"
+        ]
+      },
+      {
+        "heading": "अर्ज कसा करावा",
+        "type": "olist",
+        "items": [
+          "ssc.gov.in वर One-Time Registration (OTR) पूर्ण करा. Aadhaar Authentication निवडणे हितावह",
+          "OTR नंतर SI in Delhi Police and CAPFs Examination 2026 चा Online अर्ज उघडा (वेबसाइट किंवा mySSC ॲप)",
+          "अर्ज भरताना थेट कॅमेऱ्यातून फोटो काढला जातो. स्वाक्षरी JPEG 10 ते 20 KB अपलोड करा",
+          "100 रुपये शुल्क (लागू असल्यास) 1 ऑक्टोबर 2026 पूर्वी फक्त Online भरा",
+          "30 सप्टेंबर 2026 (रात्री 11:00) पूर्वी अर्ज सादर करून प्रिंट जतन करा. दुरुस्ती 8 ते 10 ऑक्टोबर 2026",
+          "महाराष्ट्र Western Region केंद्रे: मुंबई, पुणे, नागपूर, नाशिक, छ. संभाजीनगर, कोल्हापूर, अमरावती, नांदेड, जळगाव इ."
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "अर्ज करण्यापूर्वी अधिकृत CAPF SI 2026 जाहिरात PDF (69 पाने) संपूर्ण वाचा",
+          "Paper-II नंतर Post/Force Preference (A ते G कोड) द्यावी लागते — एकदा दिलेली पसंती अंतिम व अपरिवर्तनीय",
+          "अर्ज व शुल्क फक्त ssc.gov.in वरूनच भरा. शेवटच्या तारखेची वाट पाहू नका",
+          "हेल्पलाइन (अर्ज अडचण): 1800 309 3063 (Toll Free)"
+        ]
+      },
+      {
+        "heading": "परीक्षेचे स्वरूप आणि अभ्यासक्रम",
+        "type": "list",
+        "items": [
+          "Paper-I: 4 भाग, प्रत्येकी 25 प्रश्न व 25 गुण (एकूण 100 प्रश्न, 100 गुण), कालावधी 1 तास. भाग: Reasoning, GK, Quant, English",
+          "Paper-II: भाग 1 ते 3 प्रत्येकी 20 प्रश्न व 40 गुण + भाग 4 English 100 प्रश्न व 200 गुण (एकूण 160 प्रश्न, 320 गुण)",
+          "दोन्ही पेपर्स वस्तुनिष्ठ बहुपर्यायी, भाग 1 ते 3 हिंदी व इंग्रजीत. Paper-I मध्ये 0.25 व Paper-II मध्ये 0.50 निगेटिव्ह मार्किंग",
+          "किमान पात्रता गुण (बोनस वगळून): UR 30%, OBC/EWS 25%, इतर प्रवर्ग 20%. एकापेक्षा जास्त शिफ्टमध्ये परीक्षा झाल्यास normalization",
+          "NCC प्रमाणपत्रधारकांना प्रत्येक पेपरमध्ये बोनस: C 5%, B 3%, A 2% (normalized score मध्ये जोडले जातात)",
+          "Tentative Answer Key वर आक्षेप: प्रति प्रश्न 50 रुपये (Online, वेळेतच)"
+        ]
+      },
+      {
+        "heading": "शारीरिक चाचणी (PST/PET)",
+        "type": "list",
+        "items": [
+          "PST/PET पात्रता स्वरूपाचे आहेत, गुण नाहीत. PET मधून ESM ला सूट, मात्र PST सर्वांना",
+          "पुरुष: 100 मीटर 16 सेकंदात, 1.6 किमी 6.5 मिनिटांत, लांब उडी 3.65 मीटर, उंच उडी 1.2 मीटर, गोळा फेक 4.5 मीटर",
+          "महिला: 100 मीटर 18 सेकंदात, 800 मीटर 4 मिनिटांत, लांब उडी 2.7 मीटर, उंच उडी 0.9 मीटर",
+          "उंची/छाती: पुरुष सर्वसाधारण 170 सेमी (छाती 80-85), डोंगरी/मराठा 165 सेमी, ST 162.5 सेमी. महिला 157/155/154 सेमी. SI (Fire) छाती 81-86",
+          "PST मध्ये अपात्र ठरलेल्यांना त्याच मैदानावरील अपिल प्राधिकाऱ्याकडे अपील करता येते"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "SSC CAPF SI भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "एकूण 1,871 जागा — दिल्ली पोलीस SI 317 (पुरुष 205, महिला 112), CAPF SI (GD) 1,320 आणि CISF SI (Fire) 234. जागा tentative आहेत."
+      },
+      {
+        "q": "शैक्षणिक पात्रता काय आहे?",
+        "a": "SI (Delhi Police) व SI (GD) साठी मान्यताप्राप्त विद्यापीठाची पदवी. SI (Fire) साठी PCM सह BSc किंवा मॅट्रिक + 3 वर्षांचा डिप्लोमा. दिल्ली पोलीस पुरुषांना PE&MT तारखेला LMV लायसन्स आवश्यक."
+      },
+      {
+        "q": "वयोमर्यादा काय आहे?",
+        "a": "1 ऑगस्ट 2026 रोजी SI (Delhi Police) व SI (GD) साठी 20 ते 25 वर्षे. SI (Fire) साठी 18 ते 30 वर्षे. SC/ST +5, OBC +3 सूट."
+      },
+      {
+        "q": "अर्ज शुल्क किती आहे?",
+        "a": "100 रुपये फक्त Online. महिला, SC, ST व राखीव माजी सैनिकांना माफी. दुरुस्ती पहिल्यांदा 200, दुसऱ्यांदा 500 रुपये."
+      },
+      {
+        "q": "अर्ज कसा व केव्हा करावा?",
+        "a": "फक्त Online ssc.gov.in वर (OTR सह) 10 ते 30 सप्टेंबर 2026 पर्यंत. शुल्क 1 ऑक्टोबरपर्यंत. दुरुस्ती 8 ते 10 ऑक्टोबर 2026."
+      },
+      {
+        "q": "निवड प्रक्रिया काय आहे?",
+        "a": "Paper-I CBT, PST/PET (ESM ला PET नाही), Paper-II CBT, कागदपत्र पडताळणी व वैद्यकीय तपासणी. Paper-I 0.25, Paper-II 0.50 निगेटिव्ह. NCC C 5%, B 3%, A 2% बोनस."
+      }
+    ]
+  }
+}
