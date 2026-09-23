@@ -1,0 +1,93 @@
+{
+  "id": "important-military-and-space-bases-in-the-arctic-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-23",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "आर्क्टिकमधील महत्त्वाची लष्करी आणि अवकाश केंद्रे",
+  "slug": "important-military-and-space-bases-in-the-arctic-16",
+  "path": "/current-affairs/important-military-and-space-bases-in-the-arctic-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/important-military-and-space-bases-in-the-arctic/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "आर्क्टिक प्रदेशातील महत्त्वाच्या लष्करी आणि अवकाश केंद्रांची माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "या लेखात आर्क्टिक प्रदेशातील महत्त्वाच्या लष्करी आणि अवकाश केंद्रांची माहिती दिली आहे. या केंद्रांचे सामरिक महत्त्व आणि जागतिक भू-राजकारणातील त्यांची भूमिका यावर चर्चा केली जाईल."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/important-military-and-space-bases-in-the-arctic/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-23T16:31:34.002Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/important-military-and-space-bases-in-the-arctic/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-23T16:31:34.002Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-23T16:31:49.679Z",
+  "contentHash": "3ba75f1678560dcddc8098bf66273419c019259c0d467688896ba09b30904f86",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Important Military and Space Bases in the Arctic भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/important-military-and-space-bases-in-the-arctic-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-23T16:31:49.679Z"
+}
