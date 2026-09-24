@@ -1,0 +1,113 @@
+{
+  "id": "ssc-chsl-bharti-2026-2536-2536",
+  "type": "recruitment",
+  "title": "SSC CHSL भरती 2026: 2536 पदांसाठी अर्ज करा",
+  "slug": "ssc-chsl-bharti-2026-2536-2536",
+  "path": "/ssc-chsl-bharti-2026-2536-2536/",
+  "category": "ssc",
+  "exam": null,
+  "department": "Mahanaukari",
+  "recruitment": {
+    "postNames": [
+      "उमेदवारांची निवड केली जाते"
+    ],
+    "vacancies": 2536,
+    "vacanciesNote": null,
+    "qualification": [
+      "12वी",
+      "10वी",
+      "HSC"
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 27,
+      "relaxation": null
+    },
+    "salary": null,
+    "fee": {
+      "general": 100,
+      "reserved": null,
+      "note": null
+    },
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-08-01",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://mahanaukari.com/ssc-chsl-bharti-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "कर्मचारी निवड आयोगामार्फत (SSC) CHSL भरती 2026 अंतर्गत 2,536 पदांसाठी अर्ज मागवण्यात आले आहेत. अर्ज करण्याची अंतिम तारीख 1 ऑगस्ट 2026 आहे. या भरतीसाठी आवश्यक पात्रता, अर्ज शुल्क आणि अधिकृत अधिसूचना (Official Notification) खालील तपशिलात पहा.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "भरतीचा तपशील",
+        "type": "text",
+        "body": "कर्मचारी निवड आयोग (SSC) द्वारे आयोजित CHSL भरती 2026 अंतर्गत विविध पदांसाठी एकूण 2,536 जागा उपलब्ध आहेत. या भरती प्रक्रियेद्वारे केंद्र सरकारच्या विविध विभागांमध्ये उमेदवारांची निवड केली जाईल. पात्र आणि इच्छुक उमेदवारांनी अंतिम मुदतीपूर्वी अर्ज करणे आवश्यक आहे."
+      },
+      {
+        "heading": "पात्रता निकष",
+        "type": "text",
+        "body": "या भरतीसाठी अर्ज करू इच्छिणाऱ्या उमेदवारांकडे 10वी किंवा 12वी (HSC) उत्तीर्ण असणे आवश्यक आहे. उमेदवारांचे वय 18 ते 27 वर्षांदरम्यान असावे."
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा व अर्ज शुल्क",
+        "type": "text",
+        "body": "अर्ज सादर करण्याची अंतिम तारीख: 1 ऑगस्ट 2026. अर्ज शुल्काबाबतची सविस्तर माहिती अधिकृत अधिसूचनेत (Official Notification) उपलब्ध आहे, ती उमेदवारांनी अर्ज करण्यापूर्वी काळजीपूर्वक वाचावी."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://mahanaukari.com/ssc-chsl-bharti-2026/",
+      "name": "Mahanaukari",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-24T16:51:22.683Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "Mahanaukari",
+    "sourceUrl": "https://mahanaukari.com/ssc-chsl-bharti-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-24T16:51:22.683Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0.013,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-24T16:51:51.940Z",
+  "contentHash": "3b662d4de7db31cb5d8db378c74d1b5557fb787bbc75c43cd1526f12eb6e2efc",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "SSC CHSL Bharti 2026: 2536 जागांसाठी भरती: उमेदवारांची निवड केली जाते भरती — 2,536 जागा",
+      "SSC परीक्षा",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/ssc-chsl-bharti-2026-2536-2536.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-24T16:51:51.940Z"
+}
