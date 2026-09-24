@@ -179,6 +179,9 @@ footer.site a:hover{text-decoration:underline}
 .deadline-info .d-date{display:block;font-size:.8rem;color:var(--muted);margin-top:2px}
 .deadline-cta{margin-top:12px;font-size:.85rem}
 .deadline-cta a{color:var(--primary);font-weight:700}
+
+/* Closing-soon full cards — homepage "लवकर बंद होणार" section (deadline-item चाच red accent) */
+.home-closing .job-card{border-left:4px solid var(--danger)}
 .home-side .empty-state{margin:0}
 
 /* अभ्यास साधनं */

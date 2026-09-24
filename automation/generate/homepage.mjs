@@ -98,6 +98,12 @@ const jobsHtml = featured.map(p => jobCard(p)).join('\n') ||
   '<p class="empty-state">सध्या अर्ज सुरू असलेली नवीन भरती नाही — नवीन जाहिरात लगेच येथे दिसेल. खाली अभ्यास साधनं पहा.</p>';
 const deadlinesHtml = withDeadline.map(p => deadlineItem(p)).join('\n');
 
+// ⏳ लवकर बंद होणार — closing-soon भरतींचे पूर्ण cards (शेवटची तारीख जवळपासल्या पहिल्या).
+// फक्त activeRec मधील CLOSING_SOON (≤7 दिवस) — expired कधीच इथे render होत नाही (active-list gate).
+const closingSoonHtml = [...closingSoon]
+  .sort((a, b) => String(a.dates.applicationEnd).localeCompare(String(b.dates.applicationEnd)))
+  .map(p => jobCard(p)).join('\n');
+
 // अभ्यास साधनं — फक्त प्रत्यक्षात generate झालेलीच pages link करा
 const studyTools = [
   { href: '/syllabus/', icon: '📚', label: 'अभ्यासक्रम', sub: 'Syllabus' },
@@ -151,6 +157,19 @@ ${showSidebar ? `
   </aside>` : ''}
 <!--/active-list-->
 </div>
+
+${closingSoonHtml ? `
+<!--active-list-->
+<section class="block wrap home-closing" aria-label="लवकर बंद होणाऱ्या भरती">
+  <div class="section-head">
+    <h2 class="section-title">⏳ लवकर बंद होणाऱ्या भरती</h2>
+    ${latestLink}
+  </div>
+  <div class="job-list">
+  ${closingSoonHtml}
+  </div>
+</section>
+<!--/active-list-->` : ''}
 
 ${studyTools.length ? `
 <section class="block wrap">
