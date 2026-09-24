@@ -1,81 +1,252 @@
 {
-  "id": "ssc-chsl-bharti-2026-2536",
-  "type": "recruitment",
-  "title": "SSC CHSL भरती 2026: 2536 जागांसाठी भरती जाहीर",
-  "slug": "ssc-chsl-bharti-2026-2536",
-  "path": "/ssc-chsl-bharti-2026-2536/",
   "category": "ssc",
+  "confidence": 90,
+  "department": "कर्मचारी निवड आयोग (SSC) — केंद्र सरकार",
   "exam": null,
-  "department": "Mahanaukari",
-  "recruitment": {
-    "postNames": [],
-    "vacancies": null,
-    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
-    "qualification": [],
-    "ageLimit": null,
-    "salary": null,
-    "fee": null,
-    "applicationMode": null,
-    "location": "भारत",
-    "jobType": "government"
-  },
+  "id": "ssc-chsl-bharti-2026-2536",
+  "lastUpdatedAt": "2026-09-23T15:10:20.114Z",
+  "path": "/ssc-chsl-bharti-2026-2536/",
+  "publishedAt": "2026-09-23T15:10:20.114Z",
+  "slug": "ssc-chsl-bharti-2026-2536",
+  "status": "published",
+  "syllabusRef": null,
+  "title": "SSC CHSL भरती 2026: LDC, JSA व DEO — 2,536 जागा",
+  "type": "recruitment",
+  "updates": [],
   "dates": {
-    "notification": null,
-    "applicationStart": null,
-    "applicationEnd": null,
-    "examDate": null,
     "admitCardDate": null,
+    "applicationEnd": "2026-10-07",
+    "applicationStart": "2026-09-07",
+    "examDate": null,
+    "notification": "2026-09-07",
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://mahanaukari.com/ssc-chsl-bharti-2026/",
-    "applyUrl": null,
-    "officialUrl": "https://mahanaukari.com/ssc-chsl-bharti-2026/"
+    "applyUrl": "https://ssc.gov.in/",
+    "notificationUrl": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2026.pdf",
+    "officialUrl": "https://ssc.gov.in/"
   },
-  "selectionProcess": [],
-  "syllabusRef": null,
+  "selectionProcess": [
+    "टियर-1: Computer Based Test (CBT — वस्तुनिष्ठ)",
+    "टियर-2: CBT + Skill Test / Typing Test (पदानुसार)",
+    "कागदपत्र पडताळणी व वैद्यकीय तपासणी"
+  ],
   "relatedMockTests": [],
+  "recruitment": {
+    "postNames": [
+      "Lower Division Clerk (LDC) / Junior Secretariat Assistant (JSA)",
+      "Data Entry Operator (DEO)"
+    ],
+    "vacancies": 2536,
+    "vacanciesNote": "LDC/JSA व DEO (Group-C) पदांसाठी एकूण जागा; प्रवर्गनिहाय वितरण अधिकृत जाहिरातीत",
+    "qualification": [
+      "LDC/JSA: मान्यताप्राप्त मंडळातून 12वी किंवा समतुल्य",
+      "DEO: 12वी उत्तीर्ण (काही पदांसाठी विज्ञान/गणित आवश्यक — जाहिरात पहावी)"
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 27,
+      "relaxation": "SC/ST +5, OBC +3 वर्षे व इतर प्रवर्गांना नियमानुसार सूट (अधिकृत जाहिरातीनुसार)"
+    },
+    "salary": {
+      "payScale": "LDC/JSA: Level-2 (₹19,900 – ₹63,200); DEO: Level-4/5 (पदानुसार) — 7वा वेतन आयोग",
+      "note": null
+    },
+    "fee": {
+      "general": 100,
+      "reserved": 0,
+      "note": "महिला, SC, ST, माजी सैनिक व दिव्यांग उमेदवारांना शुल्क माफी; OTR अनिवार्य; शुल्क फक्त Online"
+    },
+    "applicationMode": "Online",
+    "location": "संपूर्ण भारत (केंद्र सरकारी मंत्रालये/विभागे)",
+    "jobType": "government"
+  },
+  "sources": [
+    {
+      "name": "SSC अधिकृत जाहिरात PDF (CHSL 2026)",
+      "priority": 1,
+      "role": "notification-pdf",
+      "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsl_2026.pdf",
+      "verifiedAt": "2026-09-23T20:00:00+05:30"
+    },
+    {
+      "name": "SSC अधिकृत संकेतस्थळ",
+      "priority": 1,
+      "role": "apply",
+      "url": "https://ssc.gov.in/",
+      "verifiedAt": "2026-09-23T20:00:00+05:30"
+    }
+  ],
+  "seo": {
+    "index": false,
+    "keywords": [
+      "SSC CHSL Bharti 2026",
+      "SSC CHSL 2536 Posts",
+      "LDC JSA DEO Vacancy",
+      "SSC परीक्षा",
+      "12वी भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/ssc-chsl-bharti-2026-2536.svg"
+  },
   "content": {
-    "shortDesc": "केंद्र सरकारच्या विविध विभागांमध्ये नोकरी करू इच्छिणाऱ्या १२वी उत्तीर्ण उमेदवारांसाठी स्टाफ सिलेक्शन कमिशन (SSC) मार्फत CHSL परीक्षेचे आयोजन केले जाते. या भरतीद्वारे २५३६ पदे भरली जाणार आहेत.",
-    "metaDescription": null,
+    "shortDesc": "SSC CHSL भरती 2026: केंद्र सरकारच्या LDC/JSA व DEO (Group-C) पदांसाठी एकूण 2,536 जागा. 12वी उत्तीर्ण उमेदवार 7 सप्टेंबर ते 7 ऑक्टोबर 2026 या कालावधीत ssc.gov.in वरून Online अर्ज करू शकतात. टियर-1 अधिक टियर-2 CBT व Skill/Typing Test मधून निवड.",
+    "metaDescription": "SSC CHSL भरती 2026: 2,536 LDC, JSA व DEO जागा — 12वी उत्तीर्ण, वय 18-27, टियर-1 + टियर-2 CBT, अर्ज 7 सप्टेंबर ते 7 ऑक्टोबर 2026. संपूर्ण माहिती मराठीत.",
     "sections": [
       {
         "heading": "भरतीबाबत थोडक्यात माहिती",
         "type": "text",
-        "body": "स्टाफ सिलेक्शन कमिशन (SSC) मार्फत Combined Higher Secondary Level म्हणजेच CHSL परीक्षेचे आयोजन केले जाते. केंद्र सरकारच्या विविध मंत्रालये, विभाग आणि कार्यालयांमध्ये लिपिकीय (Clerical) तसेच डेटा एंट्रीशी संबंधित पदांवर काम करू इच्छिणाऱ्या १२वी उत्तीर्ण उमेदवारांसाठी ही एक महत्त्वाची स्पर्धा परीक्षा आहे."
+        "body": "कर्मचारी निवड आयोगाने (SSC) Combined Higher Secondary Level (CHSL) Examination 2026 ची अधिकृत जाहिरात 7 सप्टेंबर 2026 रोजी प्रसिद्ध केली आहे. केंद्र सरकारच्या विविध मंत्रालये, विभाग व कार्यालयांतील LDC/JSA व DEO या Group-C पदांसाठी एकूण 2,536 जागा भरल्या जाणार आहेत. 12वी उत्तीर्ण उमेदवार 7 सप्टेंबर ते 7 ऑक्टोबर 2026 या कालावधीत ssc.gov.in वरून Online अर्ज करू शकतात. निवड टियर-1 CBT अधिक टियर-2 CBT (Skill/Typing Test सह) अधिक कागदपत्र पडताळणीतून होते."
       },
       {
-        "heading": "रिक्त पदे आणि पात्रता",
+        "heading": "पदनिहाय माहिती",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "तपशील"
+        ],
+        "rows": [
+          [
+            "Lower Division Clerk (LDC) / Junior Secretariat Assistant (JSA)",
+            "केंद्र सरकारची मंत्रालये/विभागे — Group-C"
+          ],
+          [
+            "Data Entry Operator (DEO)",
+            "केंद्र सरकारची कार्यालये — Group-C (काही DEO पदांसाठी 12वीत विज्ञान/गणित आवश्यक — जाहिरात पहावी)"
+          ],
+          [
+            "एकूण जागा",
+            "2,536 (प्रवर्गनिहाय वितरण अधिकृत जाहिरातीत)"
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक पात्रता",
+        "type": "list",
+        "items": [
+          "LDC/JSA: मान्यताप्राप्त मंडळातून 12वी (इंटरमिजिएट) किंवा समतुल्य परीक्षा उत्तीर्ण",
+          "DEO: 12वी उत्तीर्ण; काही DEO पदांसाठी 12वीत विज्ञान शाखेत गणित विषय आवश्यक — तपशील अधिकृत जाहिरातीत पहावा",
+          "पात्रता अर्जाच्या शेवटच्या तारखेपर्यंत पूर्ण असावी"
+        ]
+      },
+      {
+        "heading": "वयोमर्यादा",
+        "type": "list",
+        "items": [
+          "वय 18 ते 27 वर्षे (जाहिरातीतील वय मोजणी दिनांकानुसार — अधिकृत जाहिरात पहावी)",
+          "SC/ST अधिक 5, OBC अधिक 3 वर्षे व इतर राखीव प्रवर्गांना केंद्र शासनाच्या नियमानुसार सूट"
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा",
+        "type": "table",
+        "headers": [
+          "टप्पा",
+          "तारीख"
+        ],
+        "rows": [
+          [
+            "जाहिरात प्रसिद्ध",
+            "7 सप्टेंबर 2026"
+          ],
+          [
+            "Online अर्ज सुरू",
+            "7 सप्टेंबर 2026"
+          ],
+          [
+            "Online अर्ज शेवट",
+            "7 ऑक्टोबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "Online शुल्क भरणा शेवट",
+            "8 ऑक्टोबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "अर्ज दुरुस्ती (Correction)",
+            "14 ते 16 ऑक्टोबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "टियर-1 परीक्षा",
+            "2027 च्या सुरुवातीस"
+          ],
+          [
+            "टियर-2 परीक्षा",
+            "तारीख नंतर जाहीर होईल"
+          ]
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क",
+        "type": "list",
+        "items": [
+          "सामान्य/OBC/EWS पुरुष उमेदवार: 100 रुपये (फक्त Online)",
+          "महिला, SC, ST, माजी सैनिक व दिव्यांग उमेदवारांना शुल्क माफी",
+          "अर्जासाठी One-Time Registration (OTR) ssc.gov.in वर अनिवार्य"
+        ]
+      },
+      {
+        "heading": "वेतनश्रेणी",
+        "type": "list",
+        "items": [
+          "LDC/JSA: Pay Level-2 (19900 ते 63200 रुपये)",
+          "DEO: Pay Level-4/5 (पदानुसार; तपशील अधिकृत जाहिरातीत पहावा)",
+          "7व्या वेतन आयोगानुसार वेतन व भत्ते"
+        ]
+      },
+      {
+        "heading": "परीक्षेचे स्वरूप आणि अभ्यासक्रम",
         "type": "text",
-        "body": "या भरती मोहिमेच्या माध्यमातून एकूण २५३६ रिक्त जागा भरल्या जाणार आहेत. १२वी उत्तीर्ण उमेदवार या परीक्षेसाठी अर्ज करण्यास पात्र असून, केंद्र सरकारच्या विविध आस्थापनांमध्ये करिअर घडवण्याची ही उत्तम संधी आहे."
+        "body": "टियर-1: Computer Based Test (CBT) — वस्तुनिष्ठ बहुपर्यायी प्रश्न. टियर-2: CBT अधिक Skill Test / Typing Test (पदानुसार — DEO साठी Data Entry Speed Test, LDC/JSA साठी Typing Test). दोन्ही टियरनंतर कागदपत्र पडताळणी व वैद्यकीय तपासणी. परीक्षेचे सविस्तर गुण, प्रश्नसंख्या व निगेटिव्ह मार्किंग अधिकृत जाहिरातीतील परीक्षा पॅटर्ननुसार तपासावेत."
+      },
+      {
+        "heading": "अर्ज कसा करावा",
+        "type": "olist",
+        "items": [
+          "ssc.gov.in या संकेतस्थळावर जा व One-Time Registration (OTR) पूर्ण करा",
+          "CHSL Examination 2026 लिंक उघडून अर्ज भरा",
+          "फोटो, स्वाक्षरी व आवश्यक कागदपत्रे अपलोड करा",
+          "लागू असल्यास 100 रुपये शुल्क 8 ऑक्टोबर 2026 पूर्वी Online भरा",
+          "7 ऑक्टोबर 2026 (रात्री 11:00) पूर्वी अर्ज सादर करून प्रिंट जतन करा",
+          "आवश्यक असल्यास 14 ते 16 ऑक्टोबर 2026 दुरुस्ती खिडकी वापरा"
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "अर्ज करण्यापूर्वी अधिकृत CHSL 2026 जाहिरात PDF संपूर्ण वाचा",
+          "OTR शिवाय अर्ज भरता येत नाही — आधी नोंदणी पूर्ण करा",
+          "DEO पदासाठी 12वीतील विषयाची अट तपासा",
+          "अर्ज व शुल्क फक्त ssc.gov.in वरूनच भरा"
+        ]
       }
     ],
-    "faqs": []
+    "faqs": [
+      {
+        "q": "SSC CHSL भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "एकूण 2,536 जागा — LDC/JSA व DEO (Group-C) पदांसाठी; प्रवर्गनिहाय वितरण अधिकृत जाहिरातीत दिले आहे."
+      },
+      {
+        "q": "शैक्षणिक पात्रता काय आहे?",
+        "a": "LDC/JSA साठी 12वी उत्तीर्ण; DEO साठी 12वी उत्तीर्ण (काही पदांसाठी विज्ञान/गणित आवश्यक — जाहिरात पहावी)."
+      },
+      {
+        "q": "वयोमर्यादा काय आहे?",
+        "a": "वय 18 ते 27 वर्षे; SC/ST ला 5 व OBC ला 3 वर्षे सूट."
+      },
+      {
+        "q": "अर्ज शुल्क किती आहे?",
+        "a": "सामान्य/OBC/EWS पुरुष उमेदवारांसाठी 100 रुपये; महिला, SC, ST, माजी सैनिक व दिव्यांग उमेदवारांना शुल्क माफी."
+      },
+      {
+        "q": "अर्ज कसा व केव्हा करावा?",
+        "a": "अर्ज फक्त Online ssc.gov.in वर (OTR सह) 7 सप्टेंबर ते 7 ऑक्टोबर 2026 (रात्री 11:00) या कालावधीत करावा; शुल्क भरणा 8 ऑक्टोबरपर्यंत; दुरुस्ती 14 ते 16 ऑक्टोबर 2026."
+      },
+      {
+        "q": "निवड प्रक्रिया काय आहे?",
+        "a": "टियर-1 CBT, टियर-2 CBT अधिक Skill/Typing Test, त्यानंतर कागदपत्र पडताळणी व वैद्यकीय तपासणी."
+      }
+    ]
   },
-  "sources": [
-    {
-      "url": "https://mahanaukari.com/ssc-chsl-bharti-2026/",
-      "name": "Mahanaukari",
-      "priority": 3,
-      "role": "notification",
-      "verifiedAt": "2026-09-10T16:08:44.012Z"
-    }
-  ],
-  "status": "ai-generated",
-  "confidence": 85,
-  "publishedAt": null,
-  "lastUpdatedAt": "2026-09-10T16:09:42.974Z",
-  "contentHash": "210a43d2f0a181e01f25264ae1bd30f51410115d27e57685cc1145744073cdba",
-  "updates": [],
-  "seo": {
-    "keywords": [
-      "SSC CHSL Bharti 2026: 2536 जागांसाठी भरती",
-      "SSC परीक्षा",
-      "MarathiAura"
-    ],
-    "ogImage": "/og-images/ssc-chsl-bharti-2026-2536.svg",
-    "index": false
-  },
-  "aiRewritten": true,
-  "aiRewrittenAt": "2026-09-10T16:09:42.974Z"
+  "contentHash": "1dae42cdbdec1a02d3efec0be416c651f3806176314d4f5399b340b01f2a1466"
 }
