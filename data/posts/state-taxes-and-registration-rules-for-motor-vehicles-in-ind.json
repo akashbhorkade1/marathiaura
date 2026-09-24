@@ -1,0 +1,95 @@
+{
+  "id": "state-taxes-and-registration-rules-for-motor-vehicles-in-ind",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-24",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "State Taxes and Registration Rules for Motor Vehicles in India भरती — 16 जागा",
+  "slug": "state-taxes-and-registration-rules-for-motor-vehicles-in-ind",
+  "path": "/current-affairs/state-taxes-and-registration-rules-for-motor-vehicles-in-ind/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [
+      "MCA"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/state-taxes-and-registration-rules-for-motor-vehicles-in-india/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "State Taxes and Registration Rules for Motor Vehicles in India अंतर्गत विविध पदांच्या 16 जागांसाठी भरती जाहीर करण्यात आली आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "भरती तपशील",
+        "type": "text",
+        "body": "State Taxes and Registration Rules for Motor Vehicles in India अंतर्गत एकूण 16 रिक्त जागांसाठी भरती प्रक्रिया आयोजित केली आहे. या पदांसाठी इच्छुक उमेदवारांनी सविस्तर जाहिरात व आवश्यक पात्रतेची पडताळणी अधिकृत प्रसिद्धी पत्रकानुसार करावी."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/state-taxes-and-registration-rules-for-motor-vehicles-in-india/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-24T04:04:33.410Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/state-taxes-and-registration-rules-for-motor-vehicles-in-india/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-24T04:04:33.410Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-24T04:04:42.405Z",
+  "contentHash": "90e82054a6620f806a1442d958e247af4e4392aa4d1afe86b123ec7256cf753a",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "State Taxes and Registration Rules for Motor Vehicles in Ind भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/state-taxes-and-registration-rules-for-motor-vehicles-in-ind.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-24T04:04:42.405Z"
+}
