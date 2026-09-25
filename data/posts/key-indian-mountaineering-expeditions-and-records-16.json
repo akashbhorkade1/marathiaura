@@ -1,0 +1,93 @@
+{
+  "id": "key-indian-mountaineering-expeditions-and-records-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-25",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "भारतातील प्रमुख गिर्यारोहण मोहिमा आणि विक्रम",
+  "slug": "key-indian-mountaineering-expeditions-and-records-16",
+  "path": "/current-affairs/key-indian-mountaineering-expeditions-and-records-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/key-indian-mountaineering-expeditions-and-records/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "स्पर्धा परीक्षांसाठी भारतातील महत्त्वाच्या गिर्यारोहण मोहिमा आणि विक्रमांबद्दल सविस्तर माहिती. या नोंदी भूगोलाच्या आणि सामान्य ज्ञानाच्या दृष्टीने महत्त्वाच्या आहेत.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्व आणि अभ्यास",
+        "type": "text",
+        "body": "भारतातील गिर्यारोहण मोहिमा आणि त्यातील विक्रमांचा अभ्यास स्पर्धा परीक्षांसाठी अत्यंत महत्त्वाचा आहे. यामध्ये विविध शिखरे, गिर्यारोहक, त्यांच्या मोहिमांचे वर्ष आणि त्यांनी प्रस्थापित केलेले विक्रम यावर प्रश्न विचारले जातात. भूगोल, इतिहास आणि चालू घडामोडी या विषयांमध्ये या माहितीचा समावेश होतो. उमेदवारांनी या क्षेत्रातील प्रमुख घटना आणि व्यक्तींची माहिती असणे आवश्यक आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/key-indian-mountaineering-expeditions-and-records/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-25T21:20:13.550Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/key-indian-mountaineering-expeditions-and-records/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-25T21:20:13.550Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-25T21:20:38.544Z",
+  "contentHash": "f03ced4d528f1beee330edffe71015f5e78b9ca11f480aa112822fc9c7dd8ed1",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Key Indian Mountaineering Expeditions and Records भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/key-indian-mountaineering-expeditions-and-records-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-25T21:20:38.544Z"
+}
