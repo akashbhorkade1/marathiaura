@@ -1,0 +1,89 @@
+{
+  "id": "update-1790335901146",
+  "type": "recruitment",
+  "title": "PIB महाराष्ट्र भरती",
+  "slug": "update-1790335901146",
+  "path": "/update-1790335901146/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "PIB Maharashtra (Press Information Bureau)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2314875",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "PIB महाराष्ट्र (प्रेस इन्फॉर्मेशन ब्युरो) द्वारे भरती जाहीर करण्यात आली आहे. विविध पदांसाठी अर्ज मागवण्यात आले आहेत. पात्रता, अर्ज शुल्क आणि अधिकृत अधिसूचना खालीलप्रमाणे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "भरतीची थोडक्यात माहिती",
+        "type": "text",
+        "body": ""
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2314875",
+      "name": "PIB Maharashtra (Press Information Bureau)",
+      "priority": 2,
+      "role": "notification",
+      "verifiedAt": "2026-09-25T11:31:41.118Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "PIB Maharashtra (Press Information Bureau)",
+    "sourceUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2314875",
+    "sourceType": "rss",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-25T11:31:41.118Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-25T11:32:16.530Z",
+  "contentHash": "5ae6c28fe7b6b9df2bfe696ed0faf40178f3e50c8b7cfaeedf6445a6880a9511",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "उपराष्ट्रपति ने उभरती सुरक्षा और विकास संबंधी चुनौतियों से न भरती",
+      "नवीन भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/update-1790335901146.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-25T11:32:16.530Z"
+}
