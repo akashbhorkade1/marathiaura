@@ -1,0 +1,93 @@
+{
+  "id": "india-orders-captive-coal-plants-to-maximise-output-from-oct",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-26",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "१ ऑक्टोबरपासून कॅप्टिव्ह कोळसा प्रकल्पांचे उत्पादन वाढवण्याचे भारताचे निर्देश — १६ जागा भरती",
+  "slug": "india-orders-captive-coal-plants-to-maximise-output-from-oct",
+  "path": "/current-affairs/india-orders-captive-coal-plants-to-maximise-output-from-oct/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-26",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/india-orders-captive-coal-plants-to-maximise-output-from-october-1/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "भारताने १ ऑक्टोबरपासून कॅप्टिव्ह कोळसा प्रकल्पांना आपले उत्पादन वाढवण्याचे निर्देश दिले आहेत. २६ सप्टेंबर २०२६ च्या चालू घडामोडींशी संबंधित ही महत्त्वाची माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "महत्त्वाच्या चालू घडामोडी व माहिती",
+        "type": "text",
+        "body": "चालू घडामोडी (Current Affairs 2026-2027) संदर्भातील नोंदीनुसार, भारताने १ ऑक्टोबरपासून कॅप्टिव्ह कोळसा प्रकल्पांना (Captive Coal Plants) त्यांचे उत्पादन वाढवण्याचे निर्देश जारी केले आहेत. २६ सप्टेंबर २०२६ रोजी ही माहिती समोर आली असून, यासंबंधी १६ जागांच्या भरतीचा उल्लेख करण्यात आला आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/india-orders-captive-coal-plants-to-maximise-output-from-october-1/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-26T11:06:28.322Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/india-orders-captive-coal-plants-to-maximise-output-from-october-1/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-26T11:06:28.322Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-26T11:06:46.402Z",
+  "contentHash": "41bc18ea5bd1b2642fb5b0c179512b96cb3379e6a5daf5aeeed497ddd70b5555",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "India Orders Captive Coal Plants to Maximise Output from Oct भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/india-orders-captive-coal-plants-to-maximise-output-from-oct.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-26T11:06:46.402Z"
+}
