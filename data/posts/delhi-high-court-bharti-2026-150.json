@@ -1,81 +1,279 @@
 {
   "id": "delhi-high-court-bharti-2026-150",
   "type": "recruitment",
-  "title": "दिल्ली उच्च न्यायालय भरती 2026: 150 पदांसाठी अर्ज सुरू",
+  "title": "Delhi High Court SPA PA भरती 2026: 150 जागा",
   "slug": "delhi-high-court-bharti-2026-150",
   "path": "/delhi-high-court-bharti-2026-150/",
   "category": "latest-bharti",
   "exam": null,
-  "department": "Mahanaukari",
+  "department": "High Court of Delhi, New Delhi",
   "recruitment": {
-    "postNames": [],
-    "vacancies": null,
-    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
-    "qualification": [],
-    "ageLimit": null,
-    "salary": null,
-    "fee": null,
-    "applicationMode": null,
-    "location": "भारत",
+    "postNames": [
+      "Senior Personal Assistant (SPA)",
+      "Personal Assistant (PA)"
+    ],
+    "vacancies": 150,
+    "vacanciesNote": "Group-B — SPA 117 + PA 33; PA मध्ये General प्रवर्गाची जागा नाही",
+    "qualification": [
+      "SPA: मान्यताप्राप्त विद्यापीठाची पदवी + English Shorthand किमान 110 wpm + English Typing किमान 40 wpm + संगणकाचे चांगले ज्ञान",
+      "PA: मान्यताप्राप्त विद्यापीठाची पदवी + English Shorthand किमान 100 wpm + English Typing किमान 40 wpm + संगणकाचे चांगले ज्ञान",
+      "पात्रता 05 ऑक्टोबर 2026 (अर्ज शेवट) रोजी पूर्ण असावी"
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 32,
+      "relaxation": "01.01.2026 रोजी 18-32 वर्षे; SC/ST +5, OBC-NCL +3, PwBD +10/+13/+15, माजी सैनिक +3; DHC नियमित कर्मचाऱ्यांना कमाल वयोमर्यादा नाही"
+    },
+    "salary": {
+      "payScale": "SPA: Pay Level-8; PA: Pay Level-7 (7वा वेतन आयोग)",
+      "note": null
+    },
+    "fee": {
+      "general": 1500,
+      "reserved": 1300,
+      "note": "Gen/OBC-NCL/EWS 1500 रुपये; SC/ST/PwBD 1300 रुपये + बँक शुल्क; दोन्ही पदांसाठी स्वतंत्र अर्ज व शुल्क"
+    },
+    "applicationMode": "Online",
+    "location": "Delhi (High Court of Delhi, New Delhi)",
     "jobType": "government"
   },
   "dates": {
-    "notification": null,
-    "applicationStart": null,
-    "applicationEnd": null,
+    "notification": "2026-09-02",
+    "applicationStart": "2026-09-15",
+    "applicationEnd": "2026-10-05",
     "examDate": null,
     "admitCardDate": null,
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://mahanaukari.com/delhi-high-court-bharti-2026/",
-    "applyUrl": null,
-    "officialUrl": "https://mahanaukari.com/delhi-high-court-bharti-2026/"
+    "notificationUrl": "https://delhihighcourt.nic.in/files/2026-09/recuritment/vacancy_circular_for_spa.pdf",
+    "applyUrl": "https://delhihighcourt.nic.in/",
+    "officialUrl": "https://delhihighcourt.nic.in/"
   },
-  "selectionProcess": [],
+  "selectionProcess": [
+    "English Typing Test (पात्रता स्वरूप)",
+    "English Shorthand Test",
+    "Main Descriptive Examination",
+    "Interview (मुलाखत)"
+  ],
   "syllabusRef": null,
   "relatedMockTests": [],
-  "content": {
-    "shortDesc": "दिल्ली उच्च न्यायालयाने सीनियर पर्सनल असिस्टंट (SPA) आणि पर्सनल असिस्टंट (PA) या पदांसाठी 150 रिक्त जागांची भरती प्रक्रिया जाहीर केली आहे. पात्र उमेदवारांकडून ऑनलाइन अर्ज मागविण्यात आले आहेत.",
-    "metaDescription": null,
-    "sections": [
-      {
-        "heading": "पदांची माहिती आणि महत्त्वाच्या तारखा",
-        "type": "text",
-        "body": "दिल्ली उच्च न्यायालयाने सीनियर पर्सनल असिस्टंट (SPA) आणि पर्सनल असिस्टंट (PA) या पदांसाठी एकूण 150 रिक्त जागा भरण्यासाठी भरती प्रक्रिया सुरू केली आहे. पात्र उमेदवारांकडून ऑनलाइन अर्ज मागविण्यात आले आहेत. या भरतीची अधिकृत Vacancy Notice दिल्ली उच्च न्यायालयाच्या संकेतस्थळावर 5 सप्टेंबर 2026 रोजी प्रसिद्ध करण्यात आली."
-      },
-      {
-        "heading": "अर्ज प्रक्रिया",
-        "type": "text",
-        "body": "या भरतीसाठी पात्र आणि इच्छुक उमेदवारांनी दिल्ली उच्च न्यायालयाच्या अधिकृत संकेतस्थळाला भेट देऊन ऑनलाइन पद्धतीने अर्ज सादर करावेत. अर्ज करण्यापूर्वी उमेदवारांनी अधिकृत Vacancy Notice काळजीपूर्वक वाचण्याचा सल्ला दिला जातो."
-      }
-    ],
-    "faqs": []
-  },
   "sources": [
     {
-      "url": "https://mahanaukari.com/delhi-high-court-bharti-2026/",
-      "name": "Mahanaukari",
-      "priority": 3,
-      "role": "notification",
-      "verifiedAt": "2026-09-07T19:14:31.219Z"
+      "url": "https://delhihighcourt.nic.in/files/2026-09/recuritment/vacancy_circular_for_spa.pdf",
+      "name": "Delhi High Court Official Circular",
+      "priority": 1,
+      "role": "notification-pdf",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://delhihighcourt.nic.in/",
+      "name": "Delhi High Court Official Website",
+      "priority": 1,
+      "role": "reference",
+      "verifiedAt": null
     }
   ],
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-07T19:14:53.057Z",
-  "contentHash": "0e9d82b3ce2a7286bb3cb74b6598ea08c853bdc82b1f17ad675d64d5661cfaeb",
+  "lastUpdatedAt": "2026-09-27T17:04:20.080Z",
+  "contentHash": "f95205936e8fa6402ad9162f8327f08174ce136ea1f107dc70aa7a170b98a180",
   "updates": [],
   "seo": {
     "keywords": [
-      "Delhi High Court Bharti 2026: 150 जागांसाठी भरती जाहीर",
+      "Delhi High Court Bharti 2026",
+      "Delhi High Court SPA PA 150 Posts",
+      "Senior Personal Assistant",
       "नवीन भरती",
       "MarathiAura"
     ],
     "ogImage": "/og-images/delhi-high-court-bharti-2026-150.svg",
     "index": false
   },
-  "aiRewritten": true,
-  "aiRewrittenAt": "2026-09-07T19:14:53.057Z"
+  "content": {
+    "shortDesc": "High Court of Delhi मार्फत Senior Personal Assistant व Personal Assistant Examination 2026 अंतर्गत Group-B च्या एकूण 150 जागांसाठी भरती जाहीर झाली आहे. पदवीधर उमेदवार 15 सप्टेंबर ते 05 ऑक्टोबर 2026 या कालावधीत Online अर्ज करू शकतात.",
+    "metaDescription": "Delhi High Court SPA PA Bharti 2026: 150 Group-B जागा — SPA 117, PA 33, पदवी + Shorthand, वय 18-32, फी 1500/1300 रुपये, अर्ज 15 सप्टेंबर ते 05 ऑक्टोबर 2026.",
+    "sections": [
+      {
+        "heading": "भरतीबाबत थोडक्यात माहिती",
+        "type": "text",
+        "body": "High Court of Delhi, New Delhi यांनी दिनांक 02 सप्टेंबर 2026 च्या Vacancy Notice अन्वये Senior Personal Assistant and Personal Assistant Examination 2026 जाहीर केली आहे. Group-B च्या एकूण 150 जागांपैकी Senior Personal Assistant (SPA) 117 व Personal Assistant (PA) 33 जागा आहेत. SPA साठी Level-8 व PA साठी Level-7 वेतनश्रेणी आहे. दोन्ही पदांसाठी अर्ज करायचा असल्यास स्वतंत्र अर्ज व विहित शुल्क भरावे लागते. निवड Typing Test (पात्रता), Shorthand Test, Main Descriptive Exam व Interview मधून होते; अंतिम गुणवत्ता Shorthand + Descriptive + Interview गुणांवर ठरते."
+      },
+      {
+        "heading": "पदनिहाय व प्रवर्गनिहाय जागा",
+        "type": "table",
+        "headers": [
+          "पद",
+          "GEN",
+          "EWS",
+          "OBC-NCL",
+          "SC",
+          "ST",
+          "एकूण"
+        ],
+        "rows": [
+          [
+            "Senior Personal Assistant (Level-8)",
+            "43",
+            "14",
+            "32",
+            "16",
+            "12",
+            "117"
+          ],
+          [
+            "Personal Assistant (Level-7)",
+            "— (जागा नाही)",
+            "7",
+            "16",
+            "5",
+            "5",
+            "33"
+          ],
+          [
+            "एकूण",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "150"
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक व कौशल्य पात्रता",
+        "type": "list",
+        "items": [
+          "SPA: पदवी + English Shorthand किमान 110 wpm + English Typing किमान 40 wpm + संगणकाचे चांगले ज्ञान",
+          "PA: पदवी + English Shorthand किमान 100 wpm + English Typing किमान 40 wpm + संगणकाचे चांगले ज्ञान",
+          "पात्रता 05 ऑक्टोबर 2026 रोजी पूर्ण असावी; निकाल जाहीर झालेला असावा"
+        ]
+      },
+      {
+        "heading": "वयोमर्यादा",
+        "type": "list",
+        "items": [
+          "01 जानेवारी 2026 रोजी वय 18 ते 32 वर्षे (02.01.1994 ते 01.01.2008 दरम्यान जन्म)",
+          "SC/ST +5, OBC-NCL +3 वर्षे सूट",
+          "PwBD (Gen/EWS) +10, (OBC) +13, (SC/ST) +15 वर्षे सूट; माजी सैनिक +3 वर्षे",
+          "Delhi High Court च्या नियमित कर्मचाऱ्यांना कमाल वयोमर्यादा नाही"
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा",
+        "type": "table",
+        "headers": [
+          "टप्पा",
+          "तारीख"
+        ],
+        "rows": [
+          [
+            "Vacancy Notice दिनांक",
+            "02 सप्टेंबर 2026"
+          ],
+          [
+            "Online अर्ज सुरू",
+            "15 सप्टेंबर 2026 (सकाळी 11:00)"
+          ],
+          [
+            "अर्ज व शुल्क शेवट",
+            "05 ऑक्टोबर 2026 (रात्री 11:00)"
+          ],
+          [
+            "अर्ज दुरुस्ती खिडकी",
+            "12 ते 14 ऑक्टोबर 2026"
+          ],
+          [
+            "परीक्षा तारीख/प्रवेशपत्र",
+            "नंतर जाहीर होईल"
+          ]
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क",
+        "type": "list",
+        "items": [
+          "Gen/OBC-NCL/EWS: 1500 रुपये + बँक शुल्क",
+          "SC/ST/PwBD: 1300 रुपये + बँक शुल्क",
+          "दुरुस्ती शुल्क: पहिल्या दुरुस्तीस 200, दुसऱ्यास 500 रुपये",
+          "दोन्ही पदांसाठी स्वतंत्र अर्ज व शुल्क आवश्यक"
+        ]
+      },
+      {
+        "heading": "निवड प्रक्रिया",
+        "type": "olist",
+        "items": [
+          "English Typing Test (फक्त पात्रता — गुण अंतिम यादीत नाहीत)",
+          "English Shorthand Test",
+          "Main Descriptive Examination",
+          "Interview (मुलाखत)",
+          "अंतिम गुणवत्ता: Shorthand + Descriptive + Interview गुणांवर; समान गुण असल्यास ज्येष्ठ उमेदवाराला प्राधान्य"
+        ]
+      },
+      {
+        "heading": "अर्ज कसा करावा (Online)",
+        "type": "olist",
+        "items": [
+          "delhihighcourt.nic.in वरील Job Openings/Recruitment विभागात जा",
+          "SPA/PA Examination 2026 लिंक उघडा",
+          "नोंदणी करून अर्ज भरा — नाव, जन्मतारीख कागदपत्रांनुसार",
+          "फोटो, स्वाक्षरी व आवश्यक कागदपत्रे अपलोड करा",
+          "Online शुल्क (UPI/Net Banking/Card) भरा",
+          "05 ऑक्टोबर 2026 (रात्री 11:00) पूर्वी अर्ज सादर करून Confirmation Page जतन करा",
+          "चूक झाल्यास 12-14 ऑक्टोबर दुरुस्ती खिडकी वापरा"
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या लिंक्स",
+        "type": "table",
+        "headers": [
+          "तपशील",
+          "लिंक"
+        ],
+        "rows": [
+          [
+            "Vacancy Circular PDF (SPA)",
+            "https://delhihighcourt.nic.in/files/2026-09/recuritment/vacancy_circular_for_spa.pdf"
+          ],
+          [
+            "Apply Online / Official Website",
+            "https://delhihighcourt.nic.in/"
+          ]
+        ]
+      },
+      {
+        "heading": "महत्त्वाची नोंद",
+        "type": "text",
+        "body": "ही माहिती official circular व verified secondary sources वर आधारित draft आहे — अर्ज करण्यापूर्वी delhihighcourt.nic.in वरील अधिकृत Vacancy Notice व पुढील corrigenda संपूर्ण वाचा. PA पदासाठी General प्रवर्गाची जागा नाही याची नोंद घ्यावी."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Delhi High Court भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "एकूण 150 Group-B जागा — Senior Personal Assistant 117 व Personal Assistant 33."
+      },
+      {
+        "q": "शैक्षणिक पात्रता काय आहे?",
+        "a": "मान्यताप्राप्त पदवी + English Typing 40 wpm + SPA साठी Shorthand 110 wpm / PA साठी 100 wpm + संगणक ज्ञान."
+      },
+      {
+        "q": "वयोमर्यादा काय आहे?",
+        "a": "01.01.2026 रोजी 18-32 वर्षे; SC/ST +5, OBC +3 व इतरांना नियमानुसार सूट."
+      },
+      {
+        "q": "अर्ज शुल्क किती आहे?",
+        "a": "Gen/OBC/EWS 1500 रुपये; SC/ST/PwBD 1300 रुपये (+ बँक शुल्क). दोन्ही पदांसाठी स्वतंत्र शुल्क."
+      },
+      {
+        "q": "अर्जाची शेवटची तारीख काय आहे?",
+        "a": "05 ऑक्टोबर 2026 (रात्री 11:00). दुरुस्ती 12-14 ऑक्टोबर 2026."
+      },
+      {
+        "q": "निवड प्रक्रिया काय आहे?",
+        "a": "Typing Test (पात्रता), Shorthand Test, Main Descriptive Exam व Interview; अंतिम यादी Shorthand + Descriptive + Interview गुणांवर."
+      }
+    ]
+  }
 }
