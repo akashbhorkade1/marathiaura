@@ -8,8 +8,8 @@
     "dept": "Bank of India (BOI)",
     "qual": "पदानुसार B.E./B.Tech/MCA/M.Sc (IT/Computer Science) / Law पदवी (LLB) / B.E. (Fire/Civil) / संबंधित पदवी + अनुभव, Information Security व CISA/CISM/CISSP पदांसाठी संबंधित व्यावसायिक प्रमाणपत्रे अनिवार्य किंवा प्राधान्य, सविस्तर पदनिहाय शैक्षणिक पात्रता व अनुभव अधिकृत जाहिरातीमध्ये तपासावा",
     "location": "संपूर्ण भारत (All India)",
-    "status": "ACTIVE",
-    "statusLabel": "अर्ज सुरू",
+    "status": "CLOSING_SOON",
+    "statusLabel": "शेवटची तारीख जवळ",
     "lastDate": "2026-10-05"
   },
   {
@@ -21,8 +21,8 @@
     "dept": "Institute of Banking Personnel Selection (IBPS) — प्रादेशिक ग्रामीण बँका",
     "qual": "कार्यालय सहाय्यक व स्केल-I: कोणत्याही शाखेतील पदवी + स्थानिक भाषा आवश्यक, स्केल-II: 50% गुणांसह पदवी + 1-2 वर्षे संबंधित अनुभव, स्केल-III: 50% गुणांसह पदवी + 5 वर्षे बँक अधिकारी अनुभव",
     "location": "सहभागी प्रादेशिक ग्रामीण बँका — विविध राज्ये / केंद्रशासित प्रदेश",
-    "status": "CLOSING_SOON",
-    "statusLabel": "शेवटची तारीख जवळ",
+    "status": "CLOSED",
+    "statusLabel": "अर्ज बंद",
     "lastDate": "2026-09-27"
   },
   {
@@ -37,6 +37,19 @@
     "status": "ACTIVE",
     "statusLabel": "अर्ज सुरू",
     "lastDate": ""
+  },
+  {
+    "title": "PGIMER चंदीगड नर्सिंग ऑफिसर भरती 2026: 243 पदांसाठी ऑनलाइन अर्ज सुरू",
+    "desc": "पोस्टग्रॅज्युएट इन्स्टिट्यूट ऑफ मेडिकल एज्युकेशन अँड रिसर्च (PGIMER), चंदीगड येथे नर्सिंग ऑफिसर (Group B) पदांच्या 243 जागांसाठी भरती जाहीर झाली आहे. 7th CPC Level-7 वेतनश्रेणी असून ऑनलाइन अर्ज करण्याची अंतिम मुदत 03 ऑक्टोबर 2026 आहे.",
+    "cat": "नवीन भरती",
+    "url": "/pgimer-nursing-officer-bharti-2026-243-posts/",
+    "type": "recruitment",
+    "dept": "Postgraduate Institute of Medical Education & Research (PGIMER), Chandigarh",
+    "qual": "B.Sc. (Hons.) Nursing किंवा B.Sc. Nursing किंवा Post Basic B.Sc. Nursing मान्यताप्राप्त विद्यापीठ/संस्थेतून उत्तीर्ण, आणि State Nursing Council मध्ये परिचारिका / सुईण (RN किंवा RN & RM) म्हणून नोंदणी आवश्यक., किंवा, General Nursing & Midwifery (GNM) डिप्लोमा मान्यताप्राप्त मंडळ/परिषदेतून उत्तीर्ण, State Nursing Council मध्ये RN/RM नोंदणी, आणि शैक्षणिक पात्रतेनंतर किमान 50 खाटांच्या रुग्णालयात 1 वर्षाचा अनुभव आवश्यक.",
+    "location": "चंदीगड (Chandigarh) / PGIMER",
+    "status": "CLOSING_SOON",
+    "statusLabel": "शेवटची तारीख जवळ",
+    "lastDate": "2026-10-03"
   },
   {
     "title": "Police Bharti 2026: महाराष्ट्र पोलीस भरती — पात्रता, अभ्यासक्रम, अर्ज प्रक्रिया आणि शेवटची तारीख",

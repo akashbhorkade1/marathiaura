@@ -1,0 +1,348 @@
+{
+  "id": "pgimer-nursing-officer-bharti-2026-243-posts",
+  "type": "recruitment",
+  "title": "PGIMER चंदीगड नर्सिंग ऑफिसर भरती 2026: 243 पदांसाठी ऑनलाइन अर्ज सुरू",
+  "slug": "pgimer-nursing-officer-bharti-2026-243-posts",
+  "path": "/pgimer-nursing-officer-bharti-2026-243-posts/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "Postgraduate Institute of Medical Education & Research (PGIMER), Chandigarh",
+  "recruitment": {
+    "postNames": [
+      "Nursing Officer (Group B)"
+    ],
+    "vacancies": 243,
+    "vacanciesNote": "Advt No. PGI/RC/055/2026/2276 — UR: 99, SC: 36, ST: 18, OBC: 66, EWS: 24 (यामध्ये 10 पदे PwBD साठी समांतर आरक्षित)",
+    "qualification": [
+      "B.Sc. (Hons.) Nursing किंवा B.Sc. Nursing किंवा Post Basic B.Sc. Nursing मान्यताप्राप्त विद्यापीठ/संस्थेतून उत्तीर्ण, आणि State Nursing Council मध्ये परिचारिका / सुईण (RN किंवा RN & RM) म्हणून नोंदणी आवश्यक.",
+      "किंवा",
+      "General Nursing & Midwifery (GNM) डिप्लोमा मान्यताप्राप्त मंडळ/परिषदेतून उत्तीर्ण, State Nursing Council मध्ये RN/RM नोंदणी, आणि शैक्षणिक पात्रतेनंतर किमान 50 खाटांच्या रुग्णालयात 1 वर्षाचा अनुभव आवश्यक."
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "वय 03.10.2026 रोजी 18 ते 35 वर्षे. SC/ST उमेदवारांसाठी 5 वर्षे, OBC साठी 3 वर्षे, PwBD साठी 10 वर्षे सवलत (PwBD+SC/ST 15 वर्षे, PwBD+OBC 13 वर्षे, केंद्र सरकारी कर्मचारी व इतर प्रवर्गांसाठी नियमानुसार सवलत)."
+    },
+    "salary": {
+      "payScale": "Level-7 (₹44,900 - ₹1,42,400) 7th CPC Pay Matrix नुसार",
+      "note": "मूळ वेतनाव्यतिरिक्त केंद्र सरकारच्या नियमांनुसार महागाई भत्ता (DA), घरभाडे भत्ता (HRA) व इतर भत्ते देय असतील."
+    },
+    "fee": {
+      "general": 1500,
+      "reserved": 800,
+      "note": "General / OBC / EWS उमेदवारांसाठी ₹1,500 + ट्रॅन्झॅक्शन चार्जेस; SC / ST उमेदवारांसाठी ₹800 + ट्रॅन्झॅक्शन चार्जेस; दिव्यांग (PwBD) उमेदवारांना परीक्षा शुल्क पूर्णपणे माफ आहे. शुल्क Debit/Credit Card किंवा Net Banking द्वारे भरावे."
+    },
+    "applicationMode": "Online",
+    "location": "चंदीगड (Chandigarh) / PGIMER",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": "2026-09-09",
+    "applicationStart": "2026-09-10",
+    "applicationEnd": "2026-10-03",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/804344628.pdf",
+    "applyUrl": "https://cdn.digialm.com//EForms/configuredHtml/2650/102253/Index.html",
+    "officialUrl": "https://pgimer.edu.in/"
+  },
+  "selectionProcess": [
+    "संगणकावर आधारित ऑनलाइन परीक्षा (CBT - Computer Based Test): 100 प्रश्न, 100 गुण, 100 मिनिटे (इंग्रजी माध्यमातून).",
+    "कागदपत्र छाननी (Scrutiny of Applications / Documents): CBT मधील गुणवत्तेनुसार प्रत्येक जागेसाठी तिप्पट (1:3) उमेदवार कागदपत्र पडताळणीसाठी निवडले जातील.",
+    "दस्तऐवज पडताळणी (Document Verification): मूळ कागदपत्रांची प्रत्यक्ष तपासणी.",
+    "अंतिम निवड (Final Merit List): CBT मध्ये मिळालेल्या गुणांच्या आधारे अंतिम गुणवत्ता यादी जाहीर होईल (Group B अराजपत्रीत पदांसाठी कोणतीही मुलाखत नाही)."
+  ],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "sources": [
+    {
+      "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/804344628.pdf",
+      "name": "PGIMER Detailed Advertisement Guidelines PDF (Advt No. PGI/RC/055/2026/2276)",
+      "priority": 1,
+      "role": "notification-pdf",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://pgimer.edu.in/",
+      "name": "PGIMER Official Website",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://cdn.digialm.com//EForms/configuredHtml/2650/102253/Index.html",
+      "name": "PGIMER Online Application Portal (TCS iON)",
+      "priority": 1,
+      "role": "apply",
+      "verifiedAt": null
+    }
+  ],
+  "status": "published",
+  "confidence": 90,
+  "publishedAt": "2026-09-27T18:45:00.000Z",
+  "lastUpdatedAt": "2026-09-27T18:45:00.000Z",
+  "contentHash": "60b757a8f1956cb95c78b5954c69afd7814149e2adc97c52c6b1f20aeb7a5061",
+  "updates": [
+    {
+      "date": "2026-09-09T00:00:00+05:30",
+      "type": "notification",
+      "title": "PGIMER चंदीगड 243 नर्सिंग ऑफिसर पदांची जाहिरात प्रसिद्ध",
+      "summary": "PGIMER चंदीगडने Advt No. PGI/RC/055/2026/2276 अन्वये 243 नर्सिंग ऑफिसर पदांसाठी थेट भरती प्रक्रिया जाहीर केली आहे. 10 सप्टेंबरपासून अर्ज सुरू झाले असून 3 ऑक्टोबर 2026 पर्यंत ऑनलाइन अर्ज करता येतील.",
+      "source": {
+        "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/804344628.pdf",
+        "name": "PGIMER Advertisement Guidelines"
+      }
+    }
+  ],
+  "seo": {
+    "keywords": [
+      "PGIMER Chandigarh Nursing Officer Recruitment 2026",
+      "PGIMER Nursing Officer Bharti 2026",
+      "PGIMER 243 Nursing Officer",
+      "पीजीआय चंदीगड नर्सिंग ऑफिसर भरती 2026",
+      "Nursing Officer Level 7 Govt Jobs",
+      "सरकारी परिचारिका भरती 2026"
+    ],
+    "ogImage": "/og-images/pgimer-nursing-officer-bharti-2026-243-posts.svg",
+    "index": true
+  },
+  "content": {
+    "shortDesc": "पोस्टग्रॅज्युएट इन्स्टिट्यूट ऑफ मेडिकल एज्युकेशन अँड रिसर्च (PGIMER), चंदीगड येथे नर्सिंग ऑफिसर (Group B) पदांच्या 243 जागांसाठी भरती जाहीर झाली आहे. 7th CPC Level-7 वेतनश्रेणी असून ऑनलाइन अर्ज करण्याची अंतिम मुदत 03 ऑक्टोबर 2026 आहे.",
+    "metaDescription": "PGIMER Chandigarh Nursing Officer Bharti 2026: चंदीगड येथे 243 नर्सिंग ऑफिसर (Group B) पदांसाठी भरती जाहीर. शैक्षणिक पात्रता, वयोमर्यादा, परीक्षा स्वरूप व ऑनलाइन अर्ज लिंक पहा.",
+    "sections": [
+      {
+        "heading": "भरतीचा संक्षिप्त आढावा (Overview)",
+        "type": "text",
+        "body": "पोस्टग्रॅज्युएट इन्स्टिट्यूट ऑफ मेडिकल एज्युकेशन अँड रिसर्च (PGIMER), चंदीगड अंतर्गत नर्सिंग ऑफिसर (Group B) पदांच्या एकूण 243 जागा थेट भरतीद्वारे (Direct Recruitment) भरण्यासाठी अधिकृत जाहिरात (Advt No. PGI/RC/055/2026/2276) प्रसिद्ध करण्यात आली आहे. देशातील अग्रगण्य वैद्यकीय संस्थेत 7th CPC Pay Matrix Level-7 (₹44,900 ते ₹1,42,400) वेतनावर काम करण्याची ही सुवर्णसंधी आहे. यासाठी ऑनलाइन नोंदणी 10 सप्टेंबर 2026 रोजी सुरू झाली असून अर्ज करण्याची अंतिम तारीख 03 ऑक्टोबर 2026 आहे."
+      },
+      {
+        "heading": "पदांचा तपशील व सामाजिक आरक्षण (Vacancy Breakdown)",
+        "type": "table",
+        "headers": [
+          "प्रवर्ग / वर्गवारी (Category)",
+          "जागांची संख्या (Vacancies)"
+        ],
+        "rows": [
+          [
+            "खुला प्रवर्ग (General / UR)",
+            "99"
+          ],
+          [
+            "इतर मागासवर्गीय (OBC)",
+            "66"
+          ],
+          [
+            "अनुसूचित जाती (SC)",
+            "36"
+          ],
+          [
+            "अनुसूचित जमाती (ST)",
+            "18"
+          ],
+          [
+            "आर्थिकदृष्ट्या दुर्बल घटक (EWS)",
+            "24"
+          ],
+          [
+            "एकूण पदसंख्या (Total)",
+            "243"
+          ],
+          [
+            "दिव्यांग आरक्षण (PwBD - समाविष्ट)",
+            "10 जागा (OA, OL, CP, LC, Dw, AAV, SLD, MD)"
+          ]
+        ]
+      },
+      {
+        "heading": "वेतनश्रेणी (Pay Scale)",
+        "type": "text",
+        "body": "नर्सिंग ऑफिसर पदासाठी 7th Central Pay Commission (7th CPC) नुसार Pay Matrix Level-7 (मूळ वेतन ₹44,900/- ते ₹1,42,400/-) वेतनश्रेणी लागू राहील. याव्यतिरिक्त नियमानुसार DA, HRA, नर्सिंग अलाउन्स व इतर केंद्र सरकारी भत्ते मिळतील."
+      },
+      {
+        "heading": "शैक्षणिक पात्रता व अनुभव (Eligibility Criteria)",
+        "type": "list",
+        "items": [
+          "पर्याय १: मान्यताप्राप्त विद्यापीठ किंवा संस्थेतून B.Sc. (Hons.) Nursing / नियमित B.Sc. Nursing / Post Basic B.Sc. Nursing पदवी उत्तीर्ण; आणि राज्य नर्सिंग कौन्सिलमध्ये (State Nursing Council) Registered Nurse (RN) किंवा Registered Nurse & Registered Midwife (RN & RM) म्हणून अधिकृत नोंदणी.",
+          "पर्याय २: मान्यताप्राप्त बोर्ड किंवा कौन्सिलमधून जनरल नर्सिंग अँड मिडवायफरी (GNM - Diploma in General Nursing and Midwifery) उत्तीर्ण; राज्य नर्सिंग कौन्सिलमध्ये RN/RM नोंदणी; तसेच आवश्यक शैक्षणिक पदविका प्राप्त केल्यानंतर किमान ५० खाटांच्या (minimum 50 bedded hospital) रुग्णालयातील किमान १ वर्षाचा प्रत्यक्ष कामाचा अनुभव असणे अनिवार्य आहे.",
+          "पात्रतेची निर्णायक तारीख (Crucial Date): शैक्षणिक पात्रता, वय आणि अनुभव निश्चित करण्यासाठी अंतिम तारीख 03 ऑक्टोबर 2026 मानली जाईल."
+        ]
+      },
+      {
+        "heading": "वयोमर्यादा व सवलती (Age Limit & Relaxation)",
+        "type": "table",
+        "headers": [
+          "प्रवर्ग",
+          "वयोमर्यादा / सवलत"
+        ],
+        "rows": [
+          [
+            "किमान व कमाल वय (03.10.2026 रोजी)",
+            "18 ते 35 वर्षे"
+          ],
+          [
+            "अनुसूचित जाती / जमाती (SC / ST)",
+            "5 वर्षे सवलत (कमाल 40 वर्षांपर्यंत)"
+          ],
+          [
+            "इतर मागासवर्गीय (OBC)",
+            "3 वर्षे सवलत (कमाल 38 वर्षांपर्यंत)"
+          ],
+          [
+            "दिव्यांग उमेदवार (PwBD)",
+            "10 वर्षे सवलत (General 45, OBC 48, SC/ST 50 वर्षांपर्यंत)"
+          ],
+          [
+            "माजी सैनिक (Ex-Servicemen)",
+            "किमान 5 वर्षे लष्करी सेवेच्या अटींवर नियमानुसार सवलत"
+          ],
+          [
+            "केंद्र शासकीय कर्मचारी (Group B)",
+            "DoPT नियमांनुसार 5 ते 10 वर्षांपर्यंत सवलत"
+          ]
+        ]
+      },
+      {
+        "heading": "निवड प्रक्रिया व परीक्षेचे स्वरूप (Selection Process & CBT Pattern)",
+        "type": "olist",
+        "items": [
+          "संगणक आधारित ऑनलाइन परीक्षा (CBT): सर्व पात्र अर्जदारांसाठी 100 गुणांची अखिल भारतीय स्तरावर संगणकावर आधारित वस्तुनिष्ठ (MCQ) परीक्षा घेतली जाईल. परीक्षेमध्ये 100 प्रश्न असतील आणि कालावधी 100 मिनिटांचा असेल. परीक्षा फक्त इंग्रजी माध्यमातून होईल.",
+          "नकारात्मक गुणदान (Negative Marking): प्रत्येक बरोबर उत्तरासाठी 1 गुण मिळेल, तर प्रत्येक चुकीच्या उत्तरासाठी 0.25 (1/4) गुण वजा केले जातील.",
+          "किमान पात्रता गुण (Qualifying Cut-off): CBT मध्ये General/EWS प्रवर्गासाठी किमान 40% गुण आणि SC/ST/OBC प्रवर्गासाठी किमान 35% गुण मिळवणे अनिवार्य आहे.",
+          "कागदपत्र छाननीसाठी निवड: CBT मध्ये उत्तीर्ण झालेल्या गुणवत्ताधारक उमेदवारांपैकी प्रत्येक जागेसाठी ३ पट (३ × पदे + टाईस) उमेदवारांची कागदपत्र छाननी व पडताळणीसाठी निवड केली जाईल.",
+          "थेट निवड (No Interview): केंद्र सरकारच्या धोरणानुसार Group B (Non-Gazetted) पदांसाठी कोणतीही मुलाखत घेतली जाणार नाही. निवड पूर्णपणे CBT मधील गुणांवर आधारित मेरिटनुसार केली जाईल."
+        ]
+      },
+      {
+        "heading": "परीक्षेचा अभ्यासक्रम (Syllabus for CBT)",
+        "type": "text",
+        "body": "नर्सिंग ऑफिसर CBT परीक्षेचा अभ्यासक्रम हा नर्सिंग पदवी/पदविका (B.Sc. Nursing / GNM) या अभ्यासक्रमावर आधारित असेल. यामध्ये Medical-Surgical Nursing, Anatomy & Physiology, Pharmacology, Obstetrics & Gynaecological Nursing, Child Health Nursing, Community Health Nursing, Mental Health Nursing, Nursing Administration & Management या विषयांवर आधारित प्रश्न विचारले जातील."
+      },
+      {
+        "heading": "परीक्षा केंद्रे (Examination Cities)",
+        "type": "list",
+        "items": [
+          "CBT परीक्षा देशभरातील 29 प्रमुख शहरांमध्ये घेतली जाईल. परीक्षा केंद्र 'First-Come First-Serve' (प्रथम येणाऱ्यास प्रथम प्राधान्य) या तत्त्वावर संगणकीय प्रणालीद्वारे वाटप केले जाईल.",
+          "महाराष्ट्रातील परीक्षा केंद्र: नागपूर (Nagpur) येथे परीक्षा केंद्र उपलब्ध आहे.",
+          "इतर प्रमुख शहरे: चंदीगड/मोहाली, दिल्ली/एनसीआर, भोपाळ, हैदराबाद, बंगळुरू, अहमदाबाद, आग्रा, लखनऊ, कानपूर, कोलकाता, पाटणा, जम्मू, डेहराडून इत्यादी."
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क (Application Fee)",
+        "type": "table",
+        "headers": [
+          "प्रवर्ग (Category)",
+          "अर्ज शुल्क (Application Fee)"
+        ],
+        "rows": [
+          [
+            "सर्वसाधारण / ओबीसी / ईडब्ल्यूएस (General / OBC / EWS)",
+            "₹1,500/- + बँक व्यवहार शुल्क"
+          ],
+          [
+            "अनुसूचित जाती / जमाती (SC / ST)",
+            "₹800/- + बँक व्यवहार शुल्क"
+          ],
+          [
+            "दिव्यांग उमेदवार (PwBD)",
+            "शुल्क माफ (Exempted / मोफत)"
+          ]
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा (Important Dates)",
+        "type": "table",
+        "headers": [
+          "तपशील (Event)",
+          "तारीख (Timeline)"
+        ],
+        "rows": [
+          [
+            "अधिकृत जाहिरात प्रसिद्धी",
+            "09 सप्टेंबर 2026"
+          ],
+          [
+            "ऑनलाइन अर्ज व नोंदणी सुरू",
+            "10 सप्टेंबर 2026"
+          ],
+          [
+            "ऑनलाइन अर्ज सादर करण्याची अंतिम मुदत",
+            "03 ऑक्टोबर 2026"
+          ],
+          [
+            "पात्रतेची निर्णायक तारीख (Cut-off Date)",
+            "03 ऑक्टोबर 2026"
+          ],
+          [
+            "CBT परीक्षा तारीख व प्रवेशपत्र",
+            "PGIMER संकेतस्थळावर स्वतंत्रपणे प्रसिद्ध होईल"
+          ]
+        ]
+      },
+      {
+        "heading": "ऑनलाइन अर्ज कसा करावा? (Step-by-Step Application Guide)",
+        "type": "olist",
+        "items": [
+          "सर्वप्रथम PGIMER च्या अधिकृत संकेतस्थळाला (pgimer.edu.in) भेट द्या किंवा थेट TCS iON ॲप्लिकेशन पोर्टलवर जा.",
+          "पोर्टलवर उपलब्ध 'Register' लिंकवर क्लिक करून नाव, जन्मतारीख, मोबाईल नंबर व सक्रिय ईमेल आयडी भरून प्राथमिक नोंदणी पूर्ण करा.",
+          "नोंदणीनंतर ईमेल/एसएमएस द्वारे मिळालेल्या User ID व Password च्या आधारे लॉगिन करा.",
+          "वैयक्तिक तपशील, शैक्षणिक पात्रता (B.Sc. Nursing/GNM), नर्सिंग कौन्सिल नोंदणी क्रमांक व अनुभव तपशील अचूक भरा.",
+          "छायाचित्र (Photo) अपलोड करताना त्यावर उमेदवाराचे नाव व फोटो काढलेली तारीख स्पष्ट नमूद असावी (मार्गदर्शक सूचनांनुसार). सही व संबंधित कागदपत्रे विहित साईजमध्ये स्कॅन करून अपलोड करा.",
+          "पसंतीचे परीक्षा केंद्र (उदा. नागपूर किंवा इतर) काळजीपूर्वक निवडा.",
+          "Debit Card, Credit Card किंवा Net Banking द्वारे परीक्षा शुल्क ऑनलाइन भरा.",
+          "अर्ज अंतिम सादर (Submit) केल्यानंतर भरलेल्या अर्जाची प्रिंट काढून किंवा PDF डाऊनलोड करून सुरक्षित ठेवा."
+        ]
+      },
+      {
+        "heading": "अधिकृत लिंक्स व संपर्क (Official Links)",
+        "type": "table",
+        "headers": [
+          "तपशील",
+          "अधिकृत लिंक"
+        ],
+        "rows": [
+          [
+            "सविस्तर जाहिरात मार्गदर्शिका (Detailed Advt PDF)",
+            "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/804344628.pdf"
+          ],
+          [
+            "ऑनलाइन अर्ज पोर्टल (Online Apply Portal)",
+            "https://cdn.digialm.com//EForms/configuredHtml/2650/102253/Index.html"
+          ],
+          [
+            "PGIMER चंदीगड अधिकृत संकेतस्थळ",
+            "https://pgimer.edu.in/"
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "PGIMER नर्सिंग ऑफिसर भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "या भरतीमध्ये नर्सिंग ऑफिसर (Group B) संवर्गातील एकूण 243 जागा भरल्या जाणार आहेत. यामध्ये UR 99, OBC 66, SC 36, ST 18 आणि EWS साठी 24 जागा आहेत."
+      },
+      {
+        "q": "या पदासाठी आवश्यक शैक्षणिक पात्रता काय आहे?",
+        "a": "B.Sc. (Hons.) Nursing किंवा B.Sc. Nursing / Post Basic B.Sc. Nursing सह State Nursing Council मध्ये RN/RM नोंदणी असणे आवश्यक आहे. अथवा GNM डिप्लोमा, RN/RM नोंदणी आणि किमान 50 खाटांच्या रुग्णालयातील 1 वर्षाचा अनुभव आवश्यक आहे."
+      },
+      {
+        "q": "ऑनलाइन अर्ज करण्याची शेवटची तारीख कोणती आहे?",
+        "a": "ऑनलाइन अर्ज सादर करण्याची अंतिम मुदत 03 ऑक्टोबर 2026 आहे."
+      },
+      {
+        "q": "निवड प्रक्रियेत मुलाखत (Interview) घेतली जाईल का?",
+        "a": "नाही. ग्रुप 'बी' पदांसाठी कोणतीही मुलाखत घेतली जाणार नाही. निवड पूर्णपणे 100 गुणांच्या संगणक आधारित परीक्षेतील (CBT) गुणांच्या मेरिटवर होईल."
+      },
+      {
+        "q": "महाराष्ट्रामध्ये परीक्षा केंद्र उपलब्ध आहे का?",
+        "a": "होय, परीक्षेसाठी महाराष्ट्रातील नागपूर (Nagpur) येथे केंद्र उपलब्ध आहे."
+      },
+      {
+        "q": "नर्सिंग ऑफिसर पदाचे वेतन किती आहे?",
+        "a": "हे पद 7th CPC Level-7 (₹44,900 - ₹1,42,400) मध्ये मोडते, ज्यामध्ये DA, HRA व इतर भत्त्यांसह आकर्षक मासिक वेतन मिळते."
+      }
+    ]
+  }
+}
