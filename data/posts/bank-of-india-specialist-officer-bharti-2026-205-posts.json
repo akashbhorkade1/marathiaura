@@ -15,34 +15,34 @@
       "Officer (Scale-I)"
     ],
     "vacancies": 205,
-    "vacanciesNote": "Specialist Officers — Scale-IV 10 + Scale-III 49 + Scale-II 118 + Scale-I 28",
+    "vacanciesNote": "Specialist Officers (Project No. 2026-27/02) — Scale-IV 10 + Scale-III 49 + Scale-II 118 + Scale-I 28",
     "qualification": [
-      "पदानुसार IT/Computer Science/संबंधित शाखेतील पदवी/पदव्युत्तर पदवी + अनुभव",
-      "Information Security/CISA/CISM/CISSP पदांसाठी संबंधित प्रमाणपत्रे",
-      "अचूक पात्रता व अनुभव प्रत्येक पदासाठी अधिकृत जाहिरातीत तपासावेत"
+      "पदानुसार B.E./B.Tech/MCA/M.Sc (IT/Computer Science) / Law पदवी (LLB) / B.E. (Fire/Civil) / संबंधित पदवी + अनुभव",
+      "Information Security व CISA/CISM/CISSP पदांसाठी संबंधित व्यावसायिक प्रमाणपत्रे अनिवार्य किंवा प्राधान्य",
+      "सविस्तर पदनिहाय शैक्षणिक पात्रता व अनुभव अधिकृत जाहिरातीमध्ये तपासावा"
     ],
     "ageLimit": {
-      "min": 28,
+      "min": 21,
       "max": 42,
-      "relaxation": "पदानुसार 28-37 / 28-40 / 28-42 / 32-42 वर्षे; अचूक मर्यादा अधिकृत जाहिरातीत"
+      "relaxation": "वय 01.08.2026 रोजी: Scale-I: 21-30 वर्षे; Scale-II: 25-35 वर्षे; Scale-III: 28-37 वर्षे (CISA 28-40); Scale-IV: 28-40 वर्षे (CISA/InfoSec 28-42). नियमानुसार SC/ST +5 वर्षे, OBC +3 वर्षे, PwBD +10 वर्षे सवलत."
     },
     "salary": {
-      "payScale": "माहिती अद्याप उपलब्ध नाही",
-      "note": "Scale I-IV नुसार बँक नियमानुसार वेतन — अधिकृत जाहिरातीत तपासावे"
+      "payScale": "JMGS-I: ₹48,480 - 85,920 | MMGS-II: ₹64,820 - 93,960 | MMGS-III: ₹85,920 - 1,05,280 | SMGS-IV: ₹1,02,300 - 1,20,940",
+      "note": "मूळ वेतनाव्यतिरिक्त DA, HRA, CCA व इतर भत्ते बँकेच्या नियमांनुसार देय असतील."
     },
     "fee": {
       "general": 1180,
       "reserved": 175,
-      "note": "SC/ST/PWD 175 रुपये (फक्त सूचना शुल्क); इतर 1180 रुपये"
+      "note": "SC / ST / PwBD उमेदवारांसाठी ₹175 (फक्त सूचना शुल्क); General / EWS / OBC उमेदवारांसाठी ₹1,180 (अर्ज शुल्क + सूचना शुल्क). GST समाविष्ट."
     },
     "applicationMode": "Online",
-    "location": "संपूर्ण भारत",
+    "location": "संपूर्ण भारत (All India)",
     "jobType": "government"
   },
   "dates": {
-    "notification": null,
+    "notification": "2026-08-01",
     "applicationStart": "2026-09-10",
-    "applicationEnd": "2026-09-25",
+    "applicationEnd": "2026-10-05",
     "examDate": null,
     "admitCardDate": null,
     "resultDate": null
@@ -53,38 +53,39 @@
     "officialUrl": "https://bankofindia.bank.in/"
   },
   "selectionProcess": [
-    "Online परीक्षा",
-    "मुलाखत (Interview)"
+    "कागदपत्र छाननी (Scrutiny of Eligibility / Shortlisting)",
+    "Online लेखी परीक्षा (100 मिनिटे, 125 गुण — लागू असल्यास)",
+    "वैयक्तिक मुलाखत (Personal Interview — 100 गुण)"
   ],
   "syllabusRef": null,
   "relatedMockTests": [],
   "sources": [
     {
-      "url": "https://cdn.majhinaukri.net/news/08/bank-of-india-bharti-2026-for-205-posts.pdf",
-      "name": "MajhiNaukri PDF (secondary)",
-      "priority": 3,
-      "role": "notification-pdf",
-      "verifiedAt": null
-    },
-    {
       "url": "https://bankofindia.bank.in/documents/20121/29065908/Webnotice_EXTENSION-2026-27-02_Notice.pdf",
       "name": "BOI Extension Notice (official)",
       "priority": 1,
-      "role": "correction",
+      "role": "notification",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://cdn.majhinaukri.net/news/08/bank-of-india-bharti-2026-for-205-posts.pdf",
+      "name": "BOI Specialist Officers Advertisement PDF (Project No. 2026-27/02)",
+      "priority": 2,
+      "role": "notification-pdf",
       "verifiedAt": null
     }
   ],
   "status": "ai-generated",
   "confidence": 85,
   "publishedAt": null,
-  "lastUpdatedAt": "2026-09-27T17:18:59.088Z",
-  "contentHash": "d36b18af1d900e10f0718487f210f0fb04f335556d514b4977c720ce59183bad",
+  "lastUpdatedAt": "2026-09-27T18:00:00.000Z",
+  "contentHash": "9835b5053937a690c38318ddad9eefaa66a4a71fcd9dfcfe412ea8f421a2c3db",
   "updates": [
     {
       "date": "2026-09-26T00:00:00+05:30",
       "type": "application-extended",
-      "title": "अर्जाची शेवटची तारीख वाढवली (Extension Notice)",
-      "summary": "Webnotice EXTENSION-2026-27-02 अन्वये अर्जाची शेवटची तारीख वाढवली आहे — अचूक नवीन तारीख अधिकृत Extension Notice PDF मध्ये पहावी.",
+      "title": "अर्जाची शेवटची तारीख 5 ऑक्टोबर 2026 पर्यंत वाढवली",
+      "summary": "Webnotice EXTENSION-2026-27-02 अन्वये Bank of India Specialist Officers भरती 2026 साठी Online अर्ज सादर करण्याची अंतिम मुदत 25 सप्टेंबरवरून वाढवून 5 ऑक्टोबर 2026 करण्यात आली आहे.",
       "source": {
         "url": "https://bankofindia.bank.in/documents/20121/29065908/Webnotice_EXTENSION-2026-27-02_Notice.pdf",
         "name": "BOI Extension Notice"
@@ -94,173 +95,460 @@
   "seo": {
     "keywords": [
       "Bank of India Bharti 2026",
-      "BOI Specialist Officer 205 Posts",
-      "Chief Manager Senior Manager",
-      "बँकिंग परीक्षा",
-      "MarathiAura"
+      "BOI Specialist Officer Recruitment 2026",
+      "BOI SO 205 Posts",
+      "Chief Manager Senior Manager Manager Officer",
+      "बँक ऑफ इंडिया भरती 2026",
+      "बँकिंग भरती 2026"
     ],
     "ogImage": "/og-images/bank-of-india-specialist-officer-bharti-2026-205-posts.svg",
     "index": false
   },
   "content": {
-    "shortDesc": "Bank of India (BOI) अंतर्गत Specialist Officers च्या एकूण 205 जागांसाठी भरती जाहीर झाली आहे — Chief Manager, Senior Manager, Manager व Officer पदांसाठी. पात्र उमेदवार 10 सप्टेंबर 2026 पासून Online अर्ज करू शकतात; शेवटची तारीख Extension Notice अन्वये वाढवली आहे.",
-    "metaDescription": "Bank of India Specialist Officer Bharti 2026: 205 जागा — Scale I-IV, IT/संबंधित पदवी + अनुभव, वय 28-42, फी 1180/175 रुपये.",
+    "shortDesc": "Bank of India (BOI) अंतर्गत Specialist Officers पदांच्या एकूण 205 जागांसाठी भरती जाहीर झाली आहे. यामध्ये Chief Manager, Senior Manager, Manager आणि Officer पदांचा समावेश असून अर्जाची अंतिम मुदत 5 ऑक्टोबर 2026 पर्यंत वाढवण्यात आली आहे.",
+    "metaDescription": "Bank of India Specialist Officer Bharti 2026: 205 जागा — Scale I ते IV, वेतन ₹48,480-1,20,940, वयोमर्यादा 21-42 वर्षे. अर्ज करण्याची शेवटची तारीख 5 ऑक्टोबर 2026.",
     "sections": [
       {
-        "heading": "भरतीबाबत थोडक्यात माहिती",
+        "heading": "भरतीचा संक्षिप्त आढावा",
         "type": "text",
-        "body": "Bank of India (BOI) यांनी 2026-27 मधील Specialist Officers भरतीसाठी एकूण 205 जागांची जाहिरात प्रसिद्ध केली आहे. यात Chief Manager (Scale-IV) 10, Senior Manager (Scale-III) 49, Manager (Scale-II) 118 व Officer (Scale-I) 28 पदांचा समावेश आहे. बहुतांश पदे Full-Stack Engineering, Digital Platforms, Data Engineering, Information Security, API Governance, DevSecOps यांसारख्या IT/तंत्रज्ञान क्षेत्रातील आहेत. Online अर्ज 10 सप्टेंबर 2026 पासून सुरू झाले; शेवटची तारीख Extension Notice (Webnotice EXTENSION-2026-27-02) अन्वये वाढवण्यात आली आहे."
+        "body": "Bank of India (BOI) या आघाडीच्या सार्वजनिक क्षेत्रातील बँकेने Specialist Officers (Scale I ते Scale IV) च्या विविध संवर्गातील 205 जागा भरण्यासाठी अधिकृत जाहिरात (Project No. 2026-27/02) प्रसिद्ध केली आहे. या भरती अंतर्गत IT, Full-Stack Engineering, Digital Banking, Information Security, DevSecOps, Data Analytics, Law, Civil आणि Fire & Security यांसारख्या विविध विशेष शाखांमधील तज्ज्ञ अधिकाऱ्यांची निवड केली जाईल. अर्ज प्रक्रिया 10 सप्टेंबर 2026 पासून सुरू झाली असून Extension Notice अन्वये शेवटची तारीख 5 ऑक्टोबर 2026 पर्यंत वाढवण्यात आली आहे."
       },
       {
-        "heading": "स्केलनिहाय जागा",
+        "heading": "पदांचे वर्गीकरण व जागा (Scale-wise Breakdown)",
         "type": "table",
         "headers": [
-          "स्केल / पद",
-          "जागा"
+          "स्केल व पदनाम",
+          "एकूण जागा",
+          "GEN",
+          "SC",
+          "ST",
+          "OBC",
+          "EWS"
         ],
         "rows": [
           [
-            "Scale-IV — Chief Manager",
-            "10"
+            "Scale-IV: Chief Manager",
+            "10",
+            "6",
+            "1",
+            "0",
+            "2",
+            "1"
           ],
           [
-            "Scale-III — Senior Manager",
-            "49"
+            "Scale-III: Senior Manager",
+            "49",
+            "22",
+            "7",
+            "3",
+            "13",
+            "4"
           ],
           [
-            "Scale-II — Manager",
-            "118"
+            "Scale-II: Manager",
+            "118",
+            "51",
+            "17",
+            "8",
+            "31",
+            "11"
           ],
           [
-            "Scale-I — Officer",
-            "28"
+            "Scale-I: Officer",
+            "28",
+            "13",
+            "4",
+            "2",
+            "7",
+            "2"
           ],
           [
-            "एकूण",
-            "205"
+            "एकूण पदसंख्या",
+            "205",
+            "92",
+            "29",
+            "13",
+            "53",
+            "18"
           ]
         ]
       },
       {
-        "heading": "Scale-IV Chief Manager (10) — पदनिहाय",
+        "heading": "Scale-IV — Chief Manager (10 जागा)",
         "type": "table",
         "headers": [
-          "पद",
-          "जागा"
+          "पदाचे नाव",
+          "जागा",
+          "वयोमर्यादा (01.08.2026)"
         ],
         "rows": [
           [
-            "Full-Stack Engineering",
-            "2"
+            "Chief Manager – Full-Stack Engineering",
+            "2",
+            "28 ते 40 वर्षे"
           ],
           [
-            "Digital Banking Operations",
-            "2"
+            "Chief Manager – Digital Platforms",
+            "1",
+            "28 ते 40 वर्षे"
           ],
           [
-            "Information Security",
-            "2"
+            "Chief Manager – Supply Chain, Trade Finance Technology",
+            "1",
+            "28 ते 40 वर्षे"
           ],
           [
-            "Digital Platforms",
-            "1"
+            "Chief Manager – Digital Banking Operations",
+            "2",
+            "28 ते 40 वर्षे"
           ],
           [
-            "Supply Chain, Trade Finance Technology",
-            "1"
+            "Chief Manager – IT Procurement, Contracts & SLA Management",
+            "1",
+            "28 ते 40 वर्षे"
           ],
           [
-            "IT Procurement, Contracts and SLA",
-            "1"
+            "Chief Manager – IT Officer (CISA / CISM / CISSP)",
+            "1",
+            "28 ते 42 वर्षे"
           ],
           [
-            "IT (CISA/CISM/CISSP)",
-            "1"
+            "Chief Manager – Information Security",
+            "2",
+            "32 ते 42 वर्षे"
           ]
         ]
       },
       {
-        "heading": "Scale-III Senior Manager (49) — ठळक पदे",
-        "type": "list",
-        "items": [
-          "Full-Stack Engineering 12, Information Security 6, IT (CISA/CISM/CISSP) 5",
-          "Data Engineering 4, API Governance and Security 4",
-          "Finacle Support, Infrastructure Operations, Solution Architecture, DevSecOps प्रत्येकी 3",
-          "Digital Platforms, IT Procurement, Database Administration प्रत्येकी 2",
-          "संपूर्ण यादी अधिकृत जाहिरातीत तपासावी"
-        ]
-      },
-      {
-        "heading": "शैक्षणिक पात्रता व अनुभव (थोडक्यात)",
-        "type": "list",
-        "items": [
-          "पदानुसार संबंधित शाखेतील पदवी/पदव्युत्तर पदवी (IT/Computer Science/Engineering)",
-          "Information Security व CISA/CISM/CISSP पदांसाठी संबंधित प्रमाणपत्रे आवश्यक",
-          "प्रत्येक पदासाठी अनुभवाची अट वेगळी — अचूक तपशील अधिकृत जाहिरातीत तपासावा"
-        ]
-      },
-      {
-        "heading": "वयोमर्यादा",
-        "type": "list",
-        "items": [
-          "एकूण वयोमर्यादा 28-42 वर्षे (पदानुसार)",
-          "Chief Manager: बहुतेक पदे 28-40; IT (CISA) 28-42; Info Security 32-42",
-          "Senior Manager: बहुतेक पदे 28-37; IT (CISA) 28-40",
-          "अचूक मर्यादा प्रत्येक पदासाठी अधिकृत जाहिरातीत तपासावी"
-        ]
-      },
-      {
-        "heading": "महत्त्वाच्या तारखा",
+        "heading": "Scale-III — Senior Manager (49 जागा) — प्रमुख पदे",
         "type": "table",
         "headers": [
-          "टप्पा",
+          "पदाचे नाव",
+          "जागा",
+          "वयोमर्यादा (01.08.2026)"
+        ],
+        "rows": [
+          [
+            "Senior Manager – Full-Stack Engineering",
+            "12",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – Information Security",
+            "6",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – IT Officer (CISA / CISM / CISSP)",
+            "5",
+            "28 ते 40 वर्षे"
+          ],
+          [
+            "Senior Manager – Data Engineering",
+            "4",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – API Governance & Security",
+            "4",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – DevSecOps Engineering",
+            "3",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – Solution & Technology Architecture",
+            "3",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – Finacle Application Support",
+            "3",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – Infrastructure Operations",
+            "3",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – Database Administration",
+            "2",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – Digital Platforms",
+            "2",
+            "28 ते 37 वर्षे"
+          ],
+          [
+            "Senior Manager – IT Procurement Specialist",
+            "2",
+            "28 ते 37 वर्षे"
+          ]
+        ]
+      },
+      {
+        "heading": "Scale-II — Manager (118 जागा) — प्रमुख पदे",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "जागा",
+          "वयोमर्यादा (01.08.2026)"
+        ],
+        "rows": [
+          [
+            "Manager – Full-Stack Engineering",
+            "18",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Infrastructure Operations",
+            "12",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Application Support & Operations",
+            "11",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Law Officer",
+            "10",
+            "25 ते 30 वर्षे"
+          ],
+          [
+            "Manager – Security Officer",
+            "10",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Information Security",
+            "8",
+            "25 ते 32 वर्षे"
+          ],
+          [
+            "Manager – IT Officer (CISA / CISM / CISSP)",
+            "7",
+            "27 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Digital Platforms",
+            "5",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Data Analytics",
+            "5",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – BRE / LOS / Decisioning Engineering",
+            "4",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – IT Procurement Specialist",
+            "4",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – IT Project Manager",
+            "3",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – DevSecOps Engineering",
+            "3",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – Automation Testing",
+            "3",
+            "25 ते 35 वर्षे"
+          ],
+          [
+            "Manager – IT System Administrator / Solution Architecture / UI-UX / इतर",
+            "15",
+            "25 ते 35 वर्षे"
+          ]
+        ]
+      },
+      {
+        "heading": "Scale-I — Officer (28 जागा)",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "जागा",
+          "वयोमर्यादा (01.08.2026)"
+        ],
+        "rows": [
+          [
+            "Officer – Civil Engineer",
+            "10",
+            "25 ते 30 वर्षे"
+          ],
+          [
+            "Officer – Full-Stack Engineering",
+            "6",
+            "21 ते 30 वर्षे"
+          ],
+          [
+            "Officer – Application Support & Operations",
+            "4",
+            "21 ते 30 वर्षे"
+          ],
+          [
+            "Officer – Data Analytics",
+            "2",
+            "21 ते 30 वर्षे"
+          ],
+          [
+            "Officer – Data Engineering",
+            "2",
+            "21 ते 30 वर्षे"
+          ],
+          [
+            "Officer – QA & Test Engineering",
+            "2",
+            "21 ते 30 वर्षे"
+          ],
+          [
+            "Officer – Information Security",
+            "2",
+            "22 ते 30 वर्षे"
+          ]
+        ]
+      },
+      {
+        "heading": "वेतनश्रेणी (Pay Scale)",
+        "type": "table",
+        "headers": [
+          "ग्रेड / स्केल",
+          "वेतनश्रेणी (Basic Pay)"
+        ],
+        "rows": [
+          [
+            "Junior Management Grade Scale - I (JMGS-I)",
+            "₹48,480 – 2000 (7) – ₹62,480 – 2340 (2) – ₹67,160 – 2680 (7) – ₹85,920"
+          ],
+          [
+            "Middle Management Grade Scale - II (MMGS-II)",
+            "₹64,820 – 2340 (1) – ₹67,160 – 2680 (10) – ₹93,960"
+          ],
+          [
+            "Middle Management Grade Scale - III (MMGS-III)",
+            "₹85,920 – 2680 (5) – ₹99,320 – 2980 (2) – ₹1,05,280"
+          ],
+          [
+            "Senior Management Grade Scale - IV (SMGS-IV)",
+            "₹1,02,300 – 2980 (4) – ₹1,14,220 – 3360 (2) – ₹1,20,940"
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक पात्रता व अनुभव (Educational Qualification & Experience)",
+        "type": "list",
+        "items": [
+          "IT व तांत्रिक पदे: मान्यताप्राप्त विद्यापीठातून B.E. / B.Tech (Computer Science / Computer Applications / Information Technology / Electronics / Telecommunications) किंवा M.Sc (IT/CS) किंवा MCA पदवी आवश्यक.",
+          "कायदेशीर अधिकारी (Law Officer): मान्यताप्राप्त विद्यापीठातून विधी पदवी (LLB) आणि बार कौन्सिलमध्ये वकील म्हणून नोंदणी आवश्यक.",
+          "सिव्हिल इंजिनिअर (Civil Engineer): मान्यताप्राप्त विद्यापीठातून Civil Engineering पदवी (B.E./B.Tech) आवश्यक.",
+          "फायर ऑफिसर (Fire Officer): National Fire Service College (NFSC) नागपूर येथून B.E. (Fire) किंवा समतुल्य पात्रता.",
+          "विशेष प्रमाणपत्रे: Information Security व CISA पदांसाठी CISA / CISM / CISSP / CEH प्रमाणपत्रे आवश्यक किंवा प्राधान्य.",
+          "अनुभव: पदानुसार संबंधित क्षेत्रातील 1 ते 8 वर्षांचा व्यावसायिक अनुभव आवश्यक (अचूक पदनिहाय अनुभव अधिसूचनेत तपासावा)."
+        ]
+      },
+      {
+        "heading": "निवड प्रक्रिया व परीक्षा स्वरूप (Selection Process)",
+        "type": "olist",
+        "items": [
+          "कागदपत्र छाननी: नोंदणीवेळी अपलोड केलेल्या कागदपत्रांच्या आधारे उमेदवारांची प्राथमिक छाननी केली जाईल.",
+          "Online लेखी परीक्षा: अर्जदारांच्या संख्येनुसार बँक ऑनलाइन परीक्षा आयोजित करू शकते. यामध्ये इंग्रजी भाषा चाचणी (25 गुण, फक्त पात्रता निकष) आणि संबंधित व्यावसायिक ज्ञान / Professional Knowledge (100 गुण) यांचा समावेश असेल. एकूण कालावधी 100 मिनिटे राहील.",
+          "नकारात्मक गुण (Negative Marking): प्रत्येक चुकीच्या उत्तरासाठी संबंधित प्रश्नाला असलेल्या गुणांपैकी 1/4 गुण वजा केले जातील.",
+          "मुलाखत (Personal Interview): ऑनलाइन परीक्षेत मिळालेल्या गुणांच्या आधारे गुणवत्ता यादी तयार करून उमेदवारांना 100 गुणांच्या मुलाखतीसाठी बोलवले जाईल. मुलाखतीत किमान 50% गुण (राखीव प्रवर्गासाठी 45%) मिळवणे आवश्यक आहे.",
+          "अंतिम निवड: जर परीक्षा आणि मुलाखत दोन्ही घेतली गेली, तर त्यांचे अंतिम गुणोत्तर 60:40 असेल. बँक केवळ मुलाखतीच्या आधारेही थेट निवड करू शकते."
+        ]
+      },
+      {
+        "heading": "सुरक्षा ठेव रक्कम (Security Deposit)",
+        "type": "list",
+        "items": [
+          "निवड झालेल्या उमेदवारांना रुजू होताना सुरक्षा ठेव रक्कम (Security Deposit) भरावी लागेल, जी 3 वर्षांच्या समाधानकारक सेवेनंतर परत केली जाईल:",
+          "JMGS-I (Scale-I) अधिकारी: ₹1,00,000/-",
+          "MMGS-II (Scale-II) अधिकारी: ₹2,00,000/-",
+          "MMGS-III व वरील (Scale-III & IV) अधिकारी: ₹3,00,000/-",
+          "टीप: 3 वर्षे पूर्ण होण्यापूर्वी सेवा सोडल्यास ही रक्कम जप्त केली जाईल."
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क (Application Fee)",
+        "type": "table",
+        "headers": [
+          "प्रवर्ग",
+          "शुल्क (GST समाविष्ट)"
+        ],
+        "rows": [
+          [
+            "SC / ST / PwBD उमेदवार",
+            "₹175/- (फक्त Intimation Charges)"
+          ],
+          [
+            "General / EWS / OBC आणि इतर उमेदवार",
+            "₹1,180/- (अर्ज शुल्क + Intimation Charges)"
+          ]
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा (Important Dates)",
+        "type": "table",
+        "headers": [
+          "तपशील",
           "तारीख"
         ],
         "rows": [
           [
-            "Online अर्ज सुरू",
+            "अधिकृत जाहिरात प्रसिद्धी",
+            "01 ऑगस्ट 2026"
+          ],
+          [
+            "Online नोंदणी व अर्ज सुरू",
             "10 सप्टेंबर 2026"
           ],
           [
-            "अर्जाची शेवटची तारीख (मूळ)",
+            "अर्जाची मूळ शेवटची तारीख",
             "25 सप्टेंबर 2026"
           ],
           [
-            "Extension Notice",
-            "Webnotice EXTENSION-2026-27-02 — नवीन तारीख PDF मध्ये पहावी"
+            "अर्जाची वाढीव अंतिम तारीख (Extended Last Date)",
+            "05 ऑक्टोबर 2026"
+          ],
+          [
+            "वयोमर्यादा व पात्रतेची निर्णायक तारीख",
+            "01 ऑगस्ट 2026"
+          ],
+          [
+            "Online परीक्षा तारीख",
+            "स्वतंत्रपणे अधिकृत संकेतस्थळावर कळवण्यात येईल"
           ]
         ]
       },
       {
-        "heading": "अर्ज शुल्क",
-        "type": "list",
-        "items": [
-          "SC/ST/PWD: 175 रुपये (फक्त सूचना शुल्क)",
-          "इतर सर्व: 1180 रुपये (अर्ज शुल्क + सूचना शुल्क)"
-        ]
-      },
-      {
-        "heading": "निवड प्रक्रिया",
+        "heading": "Online अर्ज कसा करावा?",
         "type": "olist",
         "items": [
-          "Online परीक्षा",
-          "मुलाखत (Interview)",
-          "अंतिम गुणवत्ता दोन्ही टप्प्यांवर (जाहिरातीनुसार)"
+          "Bank of India च्या अधिकृत संकेतस्थळाला (bankofindia.bank.in) भेट द्या आणि Careers विभागात जा.",
+          "Project No. 2026-27/02 Notice dated 01.08.2026 आणि Extension Notice काळजीपूर्वक वाचा.",
+          "Apply Online लिंकवर क्लिक करून नाव, मोबाईल नंबर व ईमेल आयडी नोंदवून Registration करा.",
+          "आपल्या योग्य पदाची निवड करून वैयक्तिक व शैक्षणिक माहिती भरा.",
+          "फोटो, स्वाक्षरी, आवश्यक शैक्षणिक पदवी, अनुभव प्रमाणपत्रे व बायोडाटा स्कॅन करून विहित स्वरूपात अपलोड करा.",
+          "Net Banking, Debit/Credit Card किंवा UPI द्वारे परीक्षा शुल्क भरा.",
+          "अंतिम अर्ज सादर करून (Submit) अर्जाची प्रत डाऊनलोड करा व प्रिंट काढून ठेवा."
         ]
       },
       {
-        "heading": "अर्ज कसा करावा (Online)",
-        "type": "olist",
-        "items": [
-          "bankofindia.bank.in वरील Careers/Recruitment विभागात जा",
-          "Specialist Officers 2026-27 जाहिरात संपूर्ण वाचा",
-          "पात्रतेनुसार पद निवडून Online अर्ज भरा",
-          "कागदपत्रे अपलोड करून शुल्क Online भरा",
-          "Extension Notice मधील नवीन शेवटच्या तारखेपूर्वी अर्ज सादर करा"
-        ]
-      },
-      {
-        "heading": "महत्त्वाच्या लिंक्स",
+        "heading": "अधिकृत लिंक्स (Official Links)",
         "type": "table",
         "headers": [
           "तपशील",
@@ -268,49 +556,44 @@
         ],
         "rows": [
           [
-            "Notification PDF",
-            "https://cdn.majhinaukri.net/news/08/bank-of-india-bharti-2026-for-205-posts.pdf"
-          ],
-          [
-            "Extension Notice PDF",
+            "अर्जाची मुदतवाढ नोटीस (Extension Notice PDF)",
             "https://bankofindia.bank.in/documents/20121/29065908/Webnotice_EXTENSION-2026-27-02_Notice.pdf"
           ],
           [
-            "Apply Online / Official Website",
+            "सविस्तर मूळ जाहिरात PDF (Advt Notice PDF)",
+            "https://cdn.majhinaukri.net/news/08/bank-of-india-bharti-2026-for-205-posts.pdf"
+          ],
+          [
+            "Bank of India अधिकृत संकेतस्थळ",
             "https://bankofindia.bank.in/"
           ]
         ]
-      },
-      {
-        "heading": "महत्त्वाची नोंद",
-        "type": "text",
-        "body": "ही माहिती secondary sources वर आधारित draft आहे — अर्ज करण्यापूर्वी bankofindia.bank.in वरील अधिकृत जाहिरात व Extension Notice PDF संपूर्ण वाचा. Scale-II/Scale-I मधील प्रत्येक पदाची पात्रता, अनुभव व वयोमर्यादा अधिकृत जाहिरातीनुसार तपासावीत."
       }
     ],
     "faqs": [
       {
-        "q": "Bank of India भरती 2026 मध्ये एकूण किती जागा आहेत?",
-        "a": "एकूण 205 Specialist Officer जागा — Scale-IV 10, Scale-III 49, Scale-II 118, Scale-I 28."
+        "q": "Bank of India Specialist Officer भरती 2026 मध्ये एकूण किती जागा आहेत?",
+        "a": "या भरतीत एकूण 205 जागा आहेत — Scale-IV: 10, Scale-III: 49, Scale-II: 118 आणि Scale-I: 28 जागा."
       },
       {
-        "q": "कोणती पदे आहेत?",
-        "a": "Chief Manager, Senior Manager, Manager व Officer — मुख्यत्वे IT/तंत्रज्ञान क्षेत्रातील (Full-Stack, Digital, Data, Security)."
+        "q": "अर्ज करण्याची वाढीव शेवटची तारीख काय आहे?",
+        "a": "बँकेने प्रसिद्ध केलेल्या Extension Notice नुसार ऑनलाइन अर्ज करण्याची अंतिम मुदत 05 ऑक्टोबर 2026 पर्यंत वाढवण्यात आली आहे."
       },
       {
-        "q": "वयोमर्यादा काय आहे?",
-        "a": "एकूण 28-42 वर्षे; पदानुसार 28-37/28-40/28-42/32-42 — तपशील जाहिरातीत पहावा."
+        "q": "या पदांसाठी वेतनश्रेणी काय आहे?",
+        "a": "JMGS-I साठी ₹48,480-85,920, MMGS-II साठी ₹64,820-93,960, MMGS-III साठी ₹85,920-1,05,280 आणि SMGS-IV साठी ₹1,02,300-1,20,940 बेसिक पे आणि इतर सरकारी भत्ते मिळतील."
       },
       {
         "q": "अर्ज शुल्क किती आहे?",
-        "a": "SC/ST/PWD 175 रुपये; इतर 1180 रुपये."
+        "a": "SC/ST/PwBD उमेदवारांसाठी ₹175 आणि General/OBC/EWS उमेदवारांसाठी ₹1,180 अर्ज शुल्क आहे."
       },
       {
-        "q": "अर्जाची शेवटची तारीख काय आहे?",
-        "a": "मूळ तारीख 25 सप्टेंबर 2026 होती; Extension Notice अन्वये वाढवली आहे — नवीन तारीख official PDF मध्ये पहावी."
+        "q": "निवड प्रक्रिया कशी असेल?",
+        "a": "कागदपत्र छाननी, ऑनलाइन परीक्षा (Professional Knowledge 100 गुण + English qualifying 25 गुण) आणि 100 गुणांची मुलाखत याद्वारे उमेदवारांची निवड केली जाईल."
       },
       {
-        "q": "निवड प्रक्रिया काय आहे?",
-        "a": "Online परीक्षा व मुलाखत."
+        "q": "सुरक्षा ठेव रक्कम (Security Deposit) किती आहे?",
+        "a": "JMGS-I साठी ₹1 लाख, MMGS-II साठी ₹2 लाख आणि MMGS-III व वरील पदांसाठी ₹3 लाख सुरक्षा ठेव असून ती 3 वर्षांनंतर परत मिळते."
       }
     ]
   }
