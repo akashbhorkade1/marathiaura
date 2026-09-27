@@ -1,0 +1,93 @@
+{
+  "id": "major-global-ai-governance-initiatives-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-27",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "प्रमुख जागतिक AI गव्हर्नन्स उपक्रम",
+  "slug": "major-global-ai-governance-initiatives-16",
+  "path": "/current-affairs/major-global-ai-governance-initiatives-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/major-global-ai-governance-initiatives/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "आर्टिफिशियल इंटेलिजन्स (AI) च्या वाढत्या प्रभावामुळे जगभरात AI च्या नियमनासाठी आणि नैतिक वापरासाठी सुरू असलेल्या प्रमुख जागतिक उपक्रमांची माहिती.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "आर्टिफिशियल इंटेलिजन्स (AI) तंत्रज्ञानाचा वापर वेगाने वाढत आहे, ज्यामुळे त्याचे सामाजिक, आर्थिक आणि नैतिक परिणाम महत्त्वाचे ठरले आहेत. या पार्श्वभूमीवर, जगभरातील विविध देश, आंतरराष्ट्रीय संस्था आणि खाजगी कंपन्या AI च्या विकासाला आणि वापराला योग्य दिशा देण्यासाठी, तसेच संभाव्य धोके कमी करण्यासाठी अनेक गव्हर्नन्स उपक्रम राबवत आहेत. या उपक्रमांमध्ये AI च्या सुरक्षितता, पारदर्शकता, जबाबदारी आणि मानवी मूल्यांचे संरक्षण यावर भर दिला जातो. या लेखात, अशा प्रमुख जागतिक AI गव्हर्नन्स उपक्रमांचा थोडक्यात आढावा घेण्यात आला आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/major-global-ai-governance-initiatives/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-27T16:43:17.762Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/major-global-ai-governance-initiatives/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-27T16:43:17.762Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-27T16:43:34.858Z",
+  "contentHash": "a5e9efc0072b7191746357417512272d56699cc910bacc9fcdc85258d316a2ed",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Major Global AI Governance Initiatives भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/major-global-ai-governance-initiatives-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-27T16:43:34.858Z"
+}
