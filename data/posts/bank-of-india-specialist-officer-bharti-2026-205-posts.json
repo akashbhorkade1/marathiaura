@@ -75,10 +75,10 @@
       "verifiedAt": null
     }
   ],
-  "status": "ai-generated",
+  "status": "published",
   "confidence": 85,
-  "publishedAt": null,
-  "lastUpdatedAt": "2026-09-27T18:00:00.000Z",
+  "publishedAt": "2026-09-27T18:09:32.239Z",
+  "lastUpdatedAt": "2026-09-27T18:09:32.239Z",
   "contentHash": "9835b5053937a690c38318ddad9eefaa66a4a71fcd9dfcfe412ea8f421a2c3db",
   "updates": [
     {
@@ -102,7 +102,7 @@
       "बँकिंग भरती 2026"
     ],
     "ogImage": "/og-images/bank-of-india-specialist-officer-bharti-2026-205-posts.svg",
-    "index": false
+    "index": true
   },
   "content": {
     "shortDesc": "Bank of India (BOI) अंतर्गत Specialist Officers पदांच्या एकूण 205 जागांसाठी भरती जाहीर झाली आहे. यामध्ये Chief Manager, Senior Manager, Manager आणि Officer पदांचा समावेश असून अर्जाची अंतिम मुदत 5 ऑक्टोबर 2026 पर्यंत वाढवण्यात आली आहे.",
