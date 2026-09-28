@@ -1,0 +1,93 @@
+{
+  "id": "three-indian-boxers-reach-asian-games-semi-finals-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-28",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "आशियाई क्रीडा स्पर्धा: तीन भारतीय बॉक्सर उपांत्य फेरीत",
+  "slug": "three-indian-boxers-reach-asian-games-semi-finals-16",
+  "path": "/current-affairs/three-indian-boxers-reach-asian-games-semi-finals-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-28",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/three-indian-boxers-reach-asian-games-semi-finals/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "28 सप्टेंबर 2026 रोजीच्या ताज्या चालू घडामोडी: आशियाई क्रीडा स्पर्धेत तीन भारतीय बॉक्सर उपांत्य फेरीत दाखल.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "28 सप्टेंबर 2026 रोजीच्या ताज्या चालू घडामोडींनुसार, आशियाई क्रीडा स्पर्धेत तीन भारतीय बॉक्सरनी उपांत्य फेरीत धडक मारली आहे. ही माहिती 2026-2027 च्या चालू घडामोडींचा भाग म्हणून सादर करण्यात आली आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/three-indian-boxers-reach-asian-games-semi-finals/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-28T13:24:41.161Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/three-indian-boxers-reach-asian-games-semi-finals/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-28T13:24:41.161Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-28T13:24:56.706Z",
+  "contentHash": "7314607379a1ef56566f7d6fc8cf7784479ae7dbda5756aca35e5f5f81b5ca2c",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Three Indian Boxers Reach Asian Games Semi-Finals भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/three-indian-boxers-reach-asian-games-semi-finals-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-28T13:24:56.706Z"
+}
