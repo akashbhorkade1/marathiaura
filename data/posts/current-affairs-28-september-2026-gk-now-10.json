@@ -1,0 +1,96 @@
+{
+  "id": "current-affairs-28-september-2026-gk-now-10",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-28",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - २८ सप्टेंबर २०२६",
+  "slug": "current-affairs-28-september-2026-gk-now-10",
+  "path": "/current-affairs/28-september-2026-gk-now-10/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 10,
+    "vacanciesNote": null,
+    "qualification": [
+      "SSC",
+      "MBA"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-28",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-28-september-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "२८ सप्टेंबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांसाठी उपयुक्त दैनिक बातम्या.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "कला आणि संस्कृती: ललित कला अकादमी पुरस्कार",
+        "type": "text",
+        "body": "ललित कला अकादमीने ६५ व्या राष्ट्रीय कला प्रदर्शनात २० पुरस्कारांची घोषणा केली."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-28-september-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-28T04:41:42.541Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKNow (Current Affairs)",
+    "sourceUrl": "https://gknow.in/current-affairs-28-september-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-28T04:41:42.541Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-28T04:41:58.936Z",
+  "contentHash": "b7417f615f29e4fe4c773631ac6194ae44b221c708569d0999bdac722e7aae2a",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 28 September 2026 - GK Now भरती — 10 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-28-september-2026-gk-now-10.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-28T04:41:58.936Z"
+}
