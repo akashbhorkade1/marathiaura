@@ -51,3 +51,14 @@ if (fs.existsSync(srcCname)) {
   fs.copyFileSync(srcCname, path.join(OUT, 'CNAME'));
   console.log('extras.mjs: CNAME copied');
 }
+
+// favicon.ico — browsers request /favicon.ico regardless of <link> tags, so this file
+// must live at the SITE ROOT (not under assets/) and be copied like CNAME above.
+const srcFavicon = path.join(ROOT, 'favicon.ico');
+if (fs.existsSync(srcFavicon)) {
+  fs.copyFileSync(srcFavicon, path.join(OUT, 'favicon.ico'));
+  console.log('extras.mjs: favicon.ico copied');
+} else {
+  console.log('extras.mjs: WARNING favicon.ico missing in repo root — /favicon.ico will 404');
+}
+

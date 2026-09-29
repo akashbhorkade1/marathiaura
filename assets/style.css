@@ -16,6 +16,9 @@ header.site{background:var(--primary);color:#fff;position:sticky;top:0;z-index:5
 .nav-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
 .brand{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:800;font-size:1.25rem;letter-spacing:.3px}
 .brand span.dot{color:var(--accent)}
+.brand-mark{height:36px;width:36px;object-fit:contain;flex:none}
+.footer-brand{display:flex;align-items:center;gap:8px}
+.footer-brand .brand-mark{height:32px;width:32px}
 .menu-toggle{display:none}
 .menu-btn{font-size:1.6rem;background:none;border:0;color:#fff;cursor:pointer;padding:4px 8px}
 nav.main-nav{display:none;flex-direction:column;background:var(--primary-dark)}
