@@ -1,0 +1,93 @@
+{
+  "id": "trai-data-shows-jio-and-airtel-added-subscribers-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-29",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "TRAI आकडेवारी: Jio आणि Airtel ने नवीन ग्राहक जोडले",
+  "slug": "trai-data-shows-jio-and-airtel-added-subscribers-16",
+  "path": "/current-affairs/trai-data-shows-jio-and-airtel-added-subscribers-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-29",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/trai-data-shows-jio-and-airtel-added-subscribers/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "भारतीय दूरसंचार नियामक प्राधिकरण (TRAI) च्या ताज्या आकडेवारीनुसार, Jio आणि Airtel या कंपन्यांनी नवीन ग्राहक जोडले आहेत. २९ सप्टेंबर २०२६ रोजीच्या चालू घडामोडी.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "भारतीय दूरसंचार नियामक प्राधिकरण (TRAI) ने जाहीर केलेल्या ताज्या आकडेवारीनुसार, दूरसंचार क्षेत्रातील प्रमुख कंपन्या Jio आणि Airtel यांनी त्यांच्या ग्राहकसंख्येत वाढ केली आहे. ही माहिती २९ सप्टेंबर २०२६ रोजीच्या महत्त्वाच्या चालू घडामोडींचा भाग आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/trai-data-shows-jio-and-airtel-added-subscribers/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-29T05:08:27.839Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/trai-data-shows-jio-and-airtel-added-subscribers/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-29T05:08:27.839Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-29T05:08:58.912Z",
+  "contentHash": "cf9d4316c8e1fc8864665c6ebfacd7c001497824b7b4d79d37f801d53abdc3c2",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "TRAI Data Shows Jio and Airtel Added Subscribers भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/trai-data-shows-jio-and-airtel-added-subscribers-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-29T05:08:58.912Z"
+}
