@@ -1,12 +1,12 @@
 {
   "id": "cpri-bharti-2026-110-posts",
   "type": "recruitment",
-  "title": "CPRI भरती 2026: 110 जागा",
+  "title": "CPRI भरती 2026 (जाहिरात CPRI/06/2026): इंजिनिअर, तंत्रज्ञ व सहाय्यक संवर्गातील 110 पदांसाठी ऑनलाइन अर्ज सुरू",
   "slug": "cpri-bharti-2026-110-posts",
   "path": "/cpri-bharti-2026-110-posts/",
   "category": "latest-bharti",
   "exam": null,
-  "department": "Central Power Research Institute (CPRI)",
+  "department": "Central Power Research Institute (CPRI), Ministry of Power",
   "recruitment": {
     "postNames": [
       "Engineering Officer Gr.1 (Electrical/Civil)",
@@ -18,33 +18,38 @@
       "Multi-Tasking Staff (MTS) Gr.1"
     ],
     "vacancies": 110,
-    "vacanciesNote": "जाहिरात क्र. CPRI/06/2026 — PwBD व माजी सैनिक आरक्षणासह",
+    "vacanciesNote": "Advt CPRI/06/2026 dtd 19.09.2026 - EO(E)7 EO(C)1 EngAsst(E)10 EngAsst(M)1 SciAsst2 Tech(E)7 Tech(M)2 Attendant37 AsstGrII29 MTS14",
     "qualification": [
-      "Engineering Officer Gr.1: संबंधित शाखेतील B.E./B.Tech (अचूक अटी जाहिरातीत)",
-      "Engineering Assistant: संबंधित शाखेतील Diploma",
-      "Scientific Assistant: संबंधित विषयातील B.Sc.",
-      "Technician Gr.1: संबंधित ट्रेडमधील ITI",
-      "Technical Attendant Gr.1: 10वी + संबंधित ITI (अचूक अट जाहिरातीत तपासावी)",
-      "Assistant Gr. II: मान्यताप्राप्त पदवी",
-      "MTS Gr.1: 10वी उत्तीर्ण (सर्व पदे माजी सैनिकांसाठी राखीव)"
+      "EO Elec: BE/BTech Elec + GATE 2024/25/26",
+      "EO Civil: BE/BTech Civil + GATE 2024/25/26",
+      "Sci Asst: BSc Chemistry + 5yr exp",
+      "Eng Asst: Diploma + 5yr exp",
+      "Tech: ITI",
+      "Attendant: 10th (+ITI pref)",
+      "Asst GrII: BA/BSc/BCom/BBA/BBM/BCA + NIELIT BCC Grade-B",
+      "MTS: 10th (ESM only)"
     ],
-    "ageLimit": null,
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "relaxation": "MTS 25, Tech 28, EO/Attendant/AsstGrII 30, EngAsst/SciAsst 35 as on 12.10.2026; SC+5, OBC+3, PwBD+10 as per GoI"
+    },
     "salary": {
-      "payScale": "माहिती अद्याप उपलब्ध नाही",
-      "note": "पदानुसार वेतनश्रेणी अधिकृत जाहिरातीत तपासावी"
+      "payScale": "Level-1 to Level-7 (Rs.18000 to Rs.142400) + allowances",
+      "note": "EO L7; EngAsst/SciAsst L6; AsstGrII L4; Tech L2; Attendant/MTS L1"
     },
     "fee": {
       "general": 1000,
       "reserved": 700,
-      "note": "Engg Officer/Scientific Asst/Engg Asst 1000 रुपये; Technician/Asst Gr II/Tech Attendant 700 रुपये; MTS (माजी सैनिक) ला सूट"
+      "note": "EO/SciAsst/EngAsst Rs.1000; Tech/AsstGrII/Attendant Rs.700; SC/ST/PwBD/ESM/Women exempt"
     },
     "applicationMode": "Online",
-    "location": "संपूर्ण भारत (CPRI केंद्रे)",
+    "location": "Bengaluru HQ and Bhopal Hyderabad Nagpur Nashik Noida Kolkata Guwahati Raipur",
     "jobType": "government"
   },
   "dates": {
-    "notification": null,
-    "applicationStart": null,
+    "notification": "2026-09-19",
+    "applicationStart": "2026-09-19",
     "applicationEnd": "2026-10-12",
     "examDate": null,
     "admitCardDate": null,
@@ -56,15 +61,18 @@
     "officialUrl": "https://cpri.res.in/"
   },
   "selectionProcess": [
-    "लेखी परीक्षा",
-    "Skill Test (पदानुसार)"
+    "EO: GATE score basis",
+    "EngAsst/SciAsst: CBT + skill test",
+    "Tech: CBT + trade test",
+    "Attendant/AsstGrII: CBT",
+    "MTS: CBT + trade/proficiency test"
   ],
   "syllabusRef": null,
   "relatedMockTests": [],
   "sources": [
     {
       "url": "https://cpri.res.in/sites/default/files/Advt.No_.CPRI_.06.2026_0.pdf",
-      "name": "CPRI Official PDF",
+      "name": "CPRI Advt CPRI/06/2026 PDF",
       "priority": 1,
       "role": "notification-pdf",
       "verifiedAt": null
@@ -73,26 +81,37 @@
       "url": "https://cpri.res.in/",
       "name": "CPRI Official Website",
       "priority": 1,
-      "role": "reference",
+      "role": "notification",
       "verifiedAt": null
     }
   ],
-  "status": "ai-generated",
-  "confidence": 85,
-  "publishedAt": null,
-  "lastUpdatedAt": "2026-09-27T17:25:54.924Z",
-  "contentHash": "aea282323db3740a35805100f886db49d6a5a380ce1cefb07edfc04064dfdbd1",
-  "updates": [],
+  "status": "published",
+  "confidence": 90,
+  "publishedAt": "2026-09-29T04:15:00.000Z",
+  "lastUpdatedAt": "2026-09-29T04:15:00.000Z",
+  "contentHash": "91a3a3690385a92abf104219b4f6e444ad08f44082600120c73e7ce857f657fb",
+  "updates": [
+    {
+      "date": "2026-09-19T00:00:00+05:30",
+      "type": "notification",
+      "title": "CPRI Advt CPRI/06/2026 published - 110 posts",
+      "summary": "CPRI announced 110 posts; online applications 19 Sep to 12 Oct 2026.",
+      "source": {
+        "url": "https://cpri.res.in/sites/default/files/Advt.No_.CPRI_.06.2026_0.pdf",
+        "name": "CPRI Advt"
+      }
+    }
+  ],
   "seo": {
     "keywords": [
-      "CPRI Bharti 2026",
-      "CPRI 110 Posts",
-      "Engineering Officer Assistant",
-      "नवीन भरती",
-      "MarathiAura"
+      "CPRI Recruitment 2026",
+      "CPRI Bharti 2026 110",
+      "CPRI Engineer Technician",
+      "CPRI MTS",
+      "cpri.res.in"
     ],
     "ogImage": "/og-images/cpri-bharti-2026-110-posts.svg",
-    "index": false
+    "index": true
   },
   "content": {
     "shortDesc": "Central Power Research Institute (CPRI) अंतर्गत विविध पदांच्या एकूण 110 जागांसाठी भरती जाहीर झाली आहे. पात्र उमेदवार 12 ऑक्टोबर 2026 पूर्वी cpri.res.in वर Online अर्ज करू शकतात.",
