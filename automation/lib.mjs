@@ -284,7 +284,7 @@ export function navHtml(categories) {
   ];
   return `<header class="site">
 <div class="wrap nav-row">
-  <a class="brand" href="/"><img class="brand-mark" src="/assets/img/header-logo.png" alt="MarathiAura" width="36" height="36">MarathiAura<span class="dot">.</span></a>
+  <a class="brand" href="/"><img class="brand-mark" src="/assets/img/header-logo.png" alt="MarathiAura" width="36" height="36"></a>
   <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
   <label class="menu-btn" for="menu-toggle" aria-label="Menu">☰</label>
 </div>
@@ -307,7 +307,7 @@ export function footerHtml(site, categories) {
   return `<footer class="site">
 <div class="wrap footer-grid">
   <div>
-    <h3 class="footer-brand"><img class="brand-mark" src="/assets/img/header-logo.png" alt="MarathiAura" width="32" height="32">MarathiAura</h3>
+    <h3 class="footer-brand"><img class="brand-mark" src="/assets/img/header-logo.png" alt="MarathiAura" width="32" height="32"></h3>
     <p>${esc(site.tagline)}</p>
     <p><small>हे कोणत्याही सरकारी संस्थेचे अधिकृत संकेतस्थळ नाही. स्रोत: अधिकृत जाहिराती.</small></p>
   </div>
