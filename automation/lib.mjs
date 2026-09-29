@@ -284,14 +284,12 @@ export function navHtml(categories) {
   ];
   return `<header class="site">
 <div class="wrap nav-row">
-  <a class="brand" href="/"><img class="brand-mark" src="/assets/img/header-logo.png" alt="MarathiAura" width="36" height="36"></a>
+  <a class="brand" href="/"><img class="brand-mark" src="/assets/img/header-logo.png" alt="MarathiAura" width="44" height="44"></a>
   <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
   <label class="menu-btn" for="menu-toggle" aria-label="Menu">☰</label>
-</div>
-<nav class="main-nav wrap">
+  <nav class="main-nav">
   ${links.join('\n  ')}
-</nav>
-<div class="wrap">
+  </nav>
   <form class="search-box" action="/search.html" method="get" role="search">
     <input type="search" name="q" placeholder="भरती, निकाल, अभ्यासक्रम शोधा..." aria-label="Search">
     <button type="submit">शोधा</button>
