@@ -1,43 +1,64 @@
 {
   "id": "bank-of-baroda-bharti-2026-1100-posts",
   "type": "recruitment",
-  "title": "Bank of Baroda Bharti 2026: 1100 पदे",
+  "title": "Bank of Baroda Wealth Management भरती 2026: 1100 पदे - मुदतवाढ 01 ऑक्टोबरपर्यंत",
   "slug": "bank-of-baroda-bharti-2026-1100-posts",
   "path": "/bank-of-baroda-bharti-2026-1100-posts/",
   "category": "banking",
   "exam": null,
-  "department": "Mahanaukari",
+  "department": "Bank of Baroda (BOB)",
   "recruitment": {
-    "postNames": [],
-    "vacancies": null,
-    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
-    "qualification": [],
-    "ageLimit": null,
-    "salary": null,
-    "fee": null,
-    "applicationMode": null,
-    "location": "भारत",
+    "postNames": [
+      "Wealth Executive (JMG/S-I)",
+      "Credit Analyst - C and IC (MMG/S-II)"
+    ],
+    "vacancies": 1100,
+    "vacanciesNote": "Advt BOB/HRM/REC/ADVT/2026/17 dtd 04.09.2026 - Wealth Executive 1000 (SC150 ST75 OBC270 EWS100 UR405 PwBD40); Credit Analyst 100 (SC15 ST8 OBC27 EWS10 UR40 PwBD4)",
+    "qualification": [
+      "Wealth Executive: Graduation + IC38/NISM V-A/XXI-A/V-D certification; min 2yr exp in sales/distribution of Wealth/Insurance products with PSU/pvt/foreign banks/NBFCs/Insurance/Broking/AMC/Wealth firms (revised per Addendum 17.09.2026)",
+      "Credit Analyst: Graduation + CA; min 1yr banking exp in Scheduled Commercial Bank"
+    ],
+    "ageLimit": {
+      "min": 21,
+      "max": 33,
+      "relaxation": "Wealth Executive 22-32; Credit Analyst 21-33; SC/ST+5 OBC+3 PwBD+10 ESM per norms"
+    },
+    "salary": {
+      "payScale": "JMG/S-I Rs.48480-85920; MMG/S-II Rs.64820-93960",
+      "note": "Regular posts; pay as amended from time to time"
+    },
+    "fee": {
+      "general": 850,
+      "reserved": 175,
+      "note": "Gen/EWS/OBC Rs.850; SC/ST/PwBD/ESM/Women Rs.175"
+    },
+    "applicationMode": "Online",
+    "location": "Bank of Baroda offices/branches across India",
     "jobType": "government"
   },
   "dates": {
-    "notification": null,
-    "applicationStart": null,
-    "applicationEnd": null,
+    "notification": "2026-09-04",
+    "applicationStart": "2026-09-04",
+    "applicationEnd": "2026-10-01",
     "examDate": null,
     "admitCardDate": null,
     "resultDate": null
   },
   "links": {
-    "notificationUrl": "https://mahanaukari.com/bank-of-baroda-bharti-2026/",
-    "applyUrl": null,
-    "officialUrl": "https://mahanaukari.com/bank-of-baroda-bharti-2026/"
+    "notificationUrl": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-09/Addendum-21-09.pdf",
+    "applyUrl": "https://www.bankofbaroda.in/",
+    "officialUrl": "https://www.bankofbaroda.in/"
   },
-  "selectionProcess": [],
+  "selectionProcess": [
+    "Online Examination (120 Qs, 120 marks, 120 min)",
+    "Group Discussion and/or Interview",
+    "Document Verification"
+  ],
   "syllabusRef": null,
   "relatedMockTests": [],
   "content": {
-    "shortDesc": "बँकिंग क्षेत्रात नोकरीची इच्छा असणाऱ्या उमेदवारांसाठी बँक ऑफ बडोदा (Bank of Baroda) मध्ये 2026 साठी भरती प्रक्रिया राबवली जात आहे. विविध विभागांतील पदांसाठी ही महत्त्वाची संधी उपलब्ध झाली आहे.",
-    "metaDescription": null,
+    "shortDesc": "Bank of Baroda (Advt 2026/17) - Wealth Executive 1000 and Credit Analyst 100 regular posts; addendum revises Wealth Executive experience and extends last date to 01.10.2026.",
+    "metaDescription": "BOB Recruitment 2026: 1100 Wealth Executive and Credit Analyst posts; eligibility, age, pay, fee, selection, addendum changes, apply by 01 Oct 2026.",
     "sections": [
       {
         "heading": "भरतीबाबत थोडक्यात माहिती",
@@ -54,27 +75,46 @@
   },
   "sources": [
     {
-      "url": "https://mahanaukari.com/bank-of-baroda-bharti-2026/",
-      "name": "Mahanaukari",
-      "priority": 3,
+      "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-09/Addendum-21-09.pdf",
+      "name": "BOB Addendum 17.09.2026 to Advt 2026/17",
+      "priority": 1,
+      "role": "notification-pdf",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://www.bankofbaroda.in/",
+      "name": "Bank of Baroda Official Website",
+      "priority": 1,
       "role": "notification",
-      "verifiedAt": "2026-09-06T19:21:23.197Z"
+      "verifiedAt": null
     }
   ],
-  "status": "ai-generated",
-  "confidence": 85,
-  "publishedAt": null,
-  "lastUpdatedAt": "2026-09-07T08:26:15.869Z",
-  "contentHash": "5628dd1157d759930beebf82ff89c052f8547339e374c7e088d7a6885068d667",
-  "updates": [],
+  "status": "published",
+  "confidence": 90,
+  "publishedAt": "2026-09-29T05:00:00.000Z",
+  "lastUpdatedAt": "2026-09-29T05:00:00.000Z",
+  "contentHash": "5d7770133767981520fdb1b6ec419e5b371404990b3b710ae4f3733ff5476274",
+  "updates": [
+    {
+      "date": "2026-09-17T00:00:00+05:30",
+      "type": "application-extended",
+      "title": "Wealth Executive experience revised; last date extended to 01.10.2026",
+      "summary": "Addendum: Wealth Executive exp revised to sales/distribution incl NBFCs/Insurance; last date for application and fee extended to 01.10.2026 23:59.",
+      "source": {
+        "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-09/Addendum-21-09.pdf",
+        "name": "BOB Addendum"
+      }
+    }
+  ],
   "seo": {
     "keywords": [
-      "Bank of Baroda Bharti 2026: 1100 Posts",
-      "बँकिंग परीक्षा",
-      "MarathiAura"
+      "Bank of Baroda Recruitment 2026",
+      "BOB Wealth Executive 1100",
+      "BOB last date extended 01 Oct 2026",
+      "BOB Credit Analyst"
     ],
     "ogImage": "/og-images/bank-of-baroda-bharti-2026-1100-posts.svg",
-    "index": false
+    "index": true
   },
   "aiRewritten": true,
   "aiRewrittenAt": "2026-09-07T08:26:15.869Z"
