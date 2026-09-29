@@ -1,0 +1,151 @@
+{
+  "id": "iim-nagpur-junior-executive-bharti-2026-obc",
+  "type": "recruitment",
+  "title": "IIM Nagpur Junior Executive Bharti 2026 (OBC): Regular post, apply by 10 Oct 2026",
+  "slug": "iim-nagpur-junior-executive-bharti-2026-obc",
+  "path": "/iim-nagpur-junior-executive-bharti-2026-obc/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "Indian Institute of Management Nagpur (IIM Nagpur)",
+  "recruitment": {
+    "postNames": [
+      "Junior Executive - Regular (OBC)"
+    ],
+    "vacancies": null,
+    "vacanciesNote": "Junior Executive - Regular post reserved for OBC; vacancy count not stated in notice - refer official advertisement",
+    "qualification": [
+      "Graduation degree; Masters degree preferred",
+      "Minimum 3 years post-qualification experience in academic/administrative activities, preferably student affairs domains",
+      "Hands-on MS Office Suite; related certification preferred",
+      "IIMs/IITs/NITs or premier institution experience added advantage"
+    ],
+    "ageLimit": {
+      "min": null,
+      "max": 35,
+      "relaxation": "Not exceeding 35 years as on last date of application (10/10/2026)"
+    },
+    "salary": {
+      "payScale": "Regular appointment at appropriate pay level as per 7th Pay Commission and Institute norms",
+      "note": "Initial probation 2 years; perks and allowances per Institute norms; accommodation per housing policy subject to availability"
+    },
+    "fee": null,
+    "applicationMode": "Online",
+    "location": "Nagpur (Maharashtra)",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": "2026-09-26",
+    "applicationStart": null,
+    "applicationEnd": "2026-10-10",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.iimnagpur.ac.in/",
+    "applyUrl": "https://iimnagpurnt.samarth.edu.in/index.php/site/login",
+    "officialUrl": "https://www.iimnagpur.ac.in/"
+  },
+  "selectionProcess": [
+    "Online application screening/shortlisting",
+    "Interview (only shortlisted/selected candidates informed)"
+  ],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "sources": [
+    {
+      "url": "https://www.iimnagpur.ac.in/",
+      "name": "IIM Nagpur Official Website",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://iimnagpurnt.samarth.edu.in/index.php/site/login",
+      "name": "IIM Nagpur Samarth Application Portal",
+      "priority": 1,
+      "role": "apply",
+      "verifiedAt": null
+    }
+  ],
+  "status": "published",
+  "confidence": 90,
+  "publishedAt": "2026-09-29T05:30:00.000Z",
+  "lastUpdatedAt": "2026-09-29T05:30:00.000Z",
+  "contentHash": "15760c4a206e96c9cf262479d1b212aa92c77d5e352b098a21b8604d207cb8b6",
+  "updates": [
+    {
+      "date": "2026-09-26T00:00:00+05:30",
+      "type": "notification",
+      "title": "IIM Nagpur Junior Executive (OBC) notification",
+      "summary": "IIM Nagpur invited online applications for Junior Executive - Regular (OBC); last date 10/10/2026 up to 5:00 PM.",
+      "source": {
+        "url": "https://www.iimnagpur.ac.in/",
+        "name": "IIM Nagpur"
+      }
+    }
+  ],
+  "seo": {
+    "keywords": [
+      "IIM Nagpur Junior Executive Bharti 2026",
+      "IIM Nagpur Recruitment 2026 OBC",
+      "IIM Nagpur apply online Samarth"
+    ],
+    "ogImage": "/og-images/iim-nagpur-junior-executive-bharti-2026-obc.svg",
+    "index": true
+  },
+  "content": {
+    "shortDesc": "Indian Institute of Management Nagpur invites online applications for Junior Executive - Regular (OBC) with Graduation and 3 years experience; age up to 35 years; last date 10 Oct 2026 5 PM.",
+    "metaDescription": "IIM Nagpur Junior Executive (OBC) 2026: Graduation + 3 years admin experience, age 35 max, regular 7th CPC post in Nagpur; apply online by 10 Oct 2026.",
+    "sections": [
+      {
+        "heading": "Overview",
+        "type": "text",
+        "body": "Indian Institute of Management Nagpur is looking for a qualified and experienced Junior Executive (Regular, OBC) for general administrative duties including hostels, canteen, sports complex, health centre, student services, events, proposals, vendor contracts, MIS reports and record-keeping. Apply online only via the Samarth portal by 10/10/2026 up to 5:00 PM."
+      },
+      {
+        "heading": "Eligibility",
+        "type": "list",
+        "items": [
+          "Graduation degree; Masters preferred",
+          "Minimum 3 years post-qualification experience in academic/administrative activities, preferably student affairs",
+          "MS Office hands-on; certification preferred",
+          "IIM/IIT/NIT or premier institution experience added advantage"
+        ]
+      },
+      {
+        "heading": "Age and terms",
+        "type": "list",
+        "items": [
+          "Not exceeding 35 years as on last date of application",
+          "Regular appointment per 7th Pay Commission with 2-year probation",
+          "Accommodation per housing policy subject to availability",
+          "Institute may transfer roles or engage contractually if no suitable regular candidate"
+        ]
+      },
+      {
+        "heading": "How to apply",
+        "type": "olist",
+        "items": [
+          "Read the full IIM Nagpur advertisement on www.iimnagpur.ac.in",
+          "Apply online only at the Samarth portal before 10 Oct 2026 5 PM",
+          "Only shortlisted candidates informed about interview; rejection mails not sent"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the last date?",
+        "a": "10 Oct 2026 up to 5:00 PM, online only."
+      },
+      {
+        "q": "What is the age limit?",
+        "a": "Not exceeding 35 years as on the last date."
+      },
+      {
+        "q": "Where is the job?",
+        "a": "IIM Nagpur, Nagpur (Maharashtra)."
+      }
+    ]
+  }
+}
