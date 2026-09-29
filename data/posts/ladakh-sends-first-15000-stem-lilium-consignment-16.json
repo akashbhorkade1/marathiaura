@@ -1,0 +1,97 @@
+{
+  "id": "ladakh-sends-first-15000-stem-lilium-consignment-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-29",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "लडाखमधून 15,000 लिलियम स्टेमची पहिली खेप रवाना",
+  "slug": "ladakh-sends-first-15000-stem-lilium-consignment-16",
+  "path": "/current-affairs/ladakh-sends-first-15000-stem-lilium-consignment-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": {
+      "general": 3265,
+      "reserved": null,
+      "note": null
+    },
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-29",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/ladakh-sends-first-15000-stem-lilium-consignment/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "लडाखमधून 15,000 लिलियम स्टेमची पहिली खेप 29 सप्टेंबर 2026 रोजी रवाना झाली. स्पर्धा परीक्षांसाठी महत्त्वाच्या चालू घडामोडी.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "लडाखमधून 15,000 लिलियम स्टेमची पहिली खेप 29 सप्टेंबर 2026 रोजी रवाना करण्यात आली. हा लडाखमधील कृषी विकासाच्या दृष्टीने एक महत्त्वाचा टप्पा आहे. स्पर्धा परीक्षांसाठी 2026-2027 च्या चालू घडामोडींमध्ये या घटनेचा समावेश होतो."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/ladakh-sends-first-15000-stem-lilium-consignment/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-29T12:29:13.036Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/ladakh-sends-first-15000-stem-lilium-consignment/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-29T12:29:13.036Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-29T12:29:51.844Z",
+  "contentHash": "a38739dc924a7a4b1ad529bd26510cc5480f8e45dcdcad2afea00325545eea3f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Ladakh Sends First 15,000-Stem Lilium Consignment भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/ladakh-sends-first-15000-stem-lilium-consignment-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-29T12:29:51.844Z"
+}
