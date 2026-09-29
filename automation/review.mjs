@@ -46,6 +46,9 @@ if (!cmd || cmd === 'list') {
       record.status = 'published';
       record.publishedAt = record.publishedAt || now;
       record.lastUpdatedAt = now;
+      // drafts जन्माला seo.index = false येतो (monitor.mjs) — approve केल्यार तो flag
+      // नितंबून clear करावो, नाहितर published post कायम noindex + sitemap बाहेर राहतो (docs/04 §4)
+      record.seo = { ...(record.seo || {}), index: true };
       writeJson(postPath(id), record);
     }
     console.log(`✓ '${id}' published`);

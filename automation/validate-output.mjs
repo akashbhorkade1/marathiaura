@@ -149,6 +149,15 @@ if (!fs.existsSync(feedPath)) {
 const canonicalOf = html => (html.match(/rel="canonical" href="([^"]+)"/) || [])[1] || '';
 const isNoindex = html => /name="robots" content="noindex/i.test(html);
 
+// 7a-0. status published/updated ⇒ human-approved ⇒ indexable असणं अनिवार्य (docs/04 §4).
+// monitor.mjs drafts ला seo.index=false देतो; review.mjs approve तो flag clear करतो —
+// आणिकोतर clear नासल्यार live post कायम noindex + sitemap/RSS/search-index बाहेर राहतो.
+for (const p of published(loadPosts())) {
+  if (p.seo && p.seo.index === false) {
+    errors.push(`published post is noindex (stale seo.index=false — draft flag never cleared): ${p.id}`);
+  }
+}
+
 // 7a. महत्त्वाची pages कधीच accidentally noindex नसावीत (indexable असावी अशा records)
 const important = new Set(['index.html']);
 for (const p of recruitPosts) {

@@ -169,5 +169,173 @@
       "source": "महाराष्ट्र शासन अधिकृत माहिती",
       "tags": ["maharashtra-gk", "state-symbols"]
     }
+,    {
+      "id": "police-bharti-q009",
+      "question": "144 चें 25% कितलें?",
+      "options": [
+        { "id": "a", "text": "24" },
+        { "id": "b", "text": "32" },
+        { "id": "c", "text": "36" },
+        { "id": "d", "text": "44" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "144 × 25/100 = 36.",
+      "subject": "गणित",
+      "subjectId": "mathematics",
+      "topic": "अंकगणित",
+      "topicId": "mathematics-ankan-ganit",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["mathematics", "percentage"]
+    }
+,    {
+      "id": "police-bharti-q010",
+      "question": "दोन भागान्चें प्रमाण 3 : 4 आसा आणिक तान्ची बेरीज 140 आसा, जाल्यार ल्हान भाग कितलो?",
+      "options": [
+        { "id": "a", "text": "40" },
+        { "id": "b", "text": "60" },
+        { "id": "c", "text": "75" },
+        { "id": "d", "text": "80" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "3x + 4x = 140 → 7x = 140 → x = 20. म्हणून ल्हान भाग = 3 × 20 = 60.",
+      "subject": "गणित",
+      "subjectId": "mathematics",
+      "topic": "बाबतीत गणित",
+      "topicId": "mathematics-babtit-ganit",
+      "difficulty": "medium",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["mathematics", "ratio-proportion"]
+    }
+,    {
+      "id": "police-bharti-q011",
+      "question": "एक गाडी 5 वरांनी 260 किमी अंतर कापता. तिचो सरासरी वेग किमी/वरा कितलो?",
+      "options": [
+        { "id": "a", "text": "48" },
+        { "id": "b", "text": "50" },
+        { "id": "c", "text": "52" },
+        { "id": "d", "text": "54" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "सरासरी वेग = अंतर ÷ वेळ = 260 ÷ 5 = 52 किमी/वरा.",
+      "subject": "गणित",
+      "subjectId": "mathematics",
+      "topic": "अंकगणित",
+      "topicId": "mathematics-ankan-ganit",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["mathematics", "time-speed-distance"]
+    }
+,    {
+      "id": "police-bharti-q012",
+      "question": "₹450 किमतीची वस्तू 20% सवलतीचेर विकली गेली, तर गिरायकान किती रुपये द्यावेत?",
+      "options": [
+        { "id": "a", "text": "315" },
+        { "id": "b", "text": "340" },
+        { "id": "c", "text": "360" },
+        { "id": "d", "text": "390" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "सवलती उपरांत किंमत = 450 × (100 − 20)/100 = 450 × 0.8 = ₹360.",
+      "subject": "गणित",
+      "subjectId": "mathematics",
+      "topic": "अंकगणित",
+      "topicId": "mathematics-ankan-ganit",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["mathematics", "profit-loss"]
+    }
+,    {
+      "id": "police-bharti-q013",
+      "question": "ठरला श्रेणीतला वेगळा आकडा खरा? 7, 13, 19, 21, 23",
+      "options": [
+        { "id": "a", "text": "13" },
+        { "id": "b", "text": "19" },
+        { "id": "c", "text": "21" },
+        { "id": "d", "text": "23" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "7, 13, 19, 23 हे सर्व मूळ संख्या (prime numbers) आसात; पूण 21 = 3 × 7, म्हणून ती मूळ संख्या न्हय.",
+      "subject": "बुद्धिमत्ता चाचणी",
+      "subjectId": "reasoning",
+      "topic": "तार्किक क्षमता",
+      "topicId": "reasoning-tarkik-kshamata",
+      "difficulty": "medium",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["reasoning", "odd-one-out"]
+    }
+,    {
+      "id": "police-bharti-q014",
+      "question": "विधान 1: दर एक पोलिस शिपाय कसोटींत तालीम घेता. विधान 2: सुनीत पोलिस शिपाय आसा. योग्य निश्कर्श खंयचो?",
+      "options": [
+        { "id": "a", "text": "सुनीत कसोटींत तालीम घेता" },
+        { "id": "b", "text": "सुनीत तालीम घेना" },
+        { "id": "c", "text": "जे तालीम घेतात ते सगळे पोलिस शिपाय आसात" },
+        { "id": "d", "text": "निश्कर्श काडप शक्य ना" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "पयल्या विधाना प्रमाणे दर एक पोलिस शिपाय तालीम घेता, आनी सुनीत पोलिस शिपाय आसा — म्हणून तो तालीम घेता हेंच निश्चित निश्कर्श. पर्याय (c) उरफाट्या दिशेन तर्क करता, तो मान्य ना.",
+      "subject": "बुद्धिमत्ता चाचणी",
+      "subjectId": "reasoning",
+      "topic": "तार्किक क्षमता",
+      "topicId": "reasoning-tarkik-kshamata",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["reasoning", "syllogism"]
+    }
+,    {
+      "id": "police-bharti-q015",
+      "question": "उत्तर दिकेक तोंड करून उबो आशिल्लो मनीस उजवे वटेन वळलो, तर ताचें तोंड खंयच्या दिकेक आसतलें?",
+      "options": [
+        { "id": "a", "text": "दक्षिण" },
+        { "id": "b", "text": "पूर्व" },
+        { "id": "c", "text": "पश्चिम" },
+        { "id": "d", "text": "वायव्य" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "उत्तर तोंड करून उजवे वटेन वळल्यार दिशा पूर्व जाता (डवे वटेन वळल्यार पश्चिम).",
+      "subject": "बुद्धिमत्ता चाचणी",
+      "subjectId": "reasoning",
+      "topic": "तार्किक क्षमता",
+      "topicId": "reasoning-tarkik-kshamata",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["reasoning", "direction-sense"]
+    }
+,    {
+      "id": "police-bharti-q016",
+      "question": "श्रेणी पूर्ण करा: 1, 4, 9, 16, 25, ?",
+      "options": [
+        { "id": "a", "text": "30" },
+        { "id": "b", "text": "35" },
+        { "id": "c", "text": "36" },
+        { "id": "d", "text": "49" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "ही वर्ग संख्यांची श्रेणी आसा: 1², 2², 3², 4², 5² — म्हणून फुडलें पद 6² = 36.",
+      "subject": "बुद्धिमत्ता चाचणी",
+      "subjectId": "reasoning",
+      "topic": "तार्किक क्षमता",
+      "topicId": "reasoning-tarkik-kshamata",
+      "difficulty": "easy",
+      "exam": "police-bharti",
+      "year": null,
+      "source": null,
+      "tags": ["reasoning", "series"]
+    }
   ]
 }
