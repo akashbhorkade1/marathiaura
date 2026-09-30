@@ -138,8 +138,8 @@
     "dept": "कर्मचारी निवड आयोग (SSC) — केंद्र सरकार",
     "qual": "SI (Delhi Police) व SI (GD) CAPFs: मान्यताप्राप्त विद्यापीठातून Bachelor पदवी किंवा समतुल्य (30.09.2026 पर्यंत पात्रता आवश्यक), SI (Fire): Physics, Chemistry, Maths सह BSc किंवा मॅट्रिक + 3 वर्षांचा डिप्लोमा (Mechanical, Civil, Electrical, Automobiles, Chemical, Mining, Aeronautical, Telecommunication), दिल्ली पोलीस पुरुष: PE&MT तारखेला LMV (Motorcycle + Car) वैध ड्रायव्हिंग लायसन्स आवश्यक",
     "location": "संपूर्ण भारत (दिल्ली पोलीस + CAPFs)",
-    "status": "CLOSING_SOON",
-    "statusLabel": "शेवटची तारीख जवळ",
+    "status": "CLOSED",
+    "statusLabel": "अर्ज बंद",
     "lastDate": "2026-09-30"
   },
   {
