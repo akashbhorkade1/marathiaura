@@ -1,0 +1,93 @@
+{
+  "id": "second-edition-of-naval-commanders-conference-2026-begins-i",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-09-30",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "नवी दिल्लीत नौदल कमांडर परिषदेची दुसरी आवृत्ती २०२६ सुरू",
+  "slug": "second-edition-of-naval-commanders-conference-2026-begins-i",
+  "path": "/current-affairs/second-edition-of-naval-commanders-conference-2026-begins-i/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-09-30",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/second-edition-of-naval-commanders-conference-2026-begins-in-new-delhi/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "नवी दिल्ली येथे ३० सप्टेंबर २०२६ रोजी नौदल कमांडर परिषदेची दुसरी आवृत्ती सुरू झाली. ही चालू घडामोडी २०२६-२०२७ चा एक महत्त्वाचा भाग आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "परिषदेबद्दल माहिती",
+        "type": "text",
+        "body": "नवी दिल्ली येथे ३० सप्टेंबर २०२६ रोजी नौदल कमांडर परिषदेची दुसरी आवृत्ती सुरू झाली. ही घटना चालू घडामोडी २०२६-२०२७ अंतर्गत येते."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/second-edition-of-naval-commanders-conference-2026-begins-in-new-delhi/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-09-30T12:14:00.576Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/second-edition-of-naval-commanders-conference-2026-begins-in-new-delhi/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-09-30T12:14:00.576Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-09-30T12:14:42.478Z",
+  "contentHash": "654a2f0694efacc7b13d872db40a9e8447a3e46c525bdd09f85755974f5c03a4",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Second Edition of Naval Commanders’ Conference 2026 Begins i भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/second-edition-of-naval-commanders-conference-2026-begins-i.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-09-30T12:14:42.478Z"
+}
