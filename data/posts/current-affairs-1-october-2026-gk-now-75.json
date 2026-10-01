@@ -1,0 +1,95 @@
+{
+  "id": "current-affairs-1-october-2026-gk-now-75",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-01",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - १ ऑक्टोबर २०२६ - GK Now भरती — ७५ जागा",
+  "slug": "current-affairs-1-october-2026-gk-now-75",
+  "path": "/current-affairs/1-october-2026-gk-now-75/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 75,
+    "vacanciesNote": null,
+    "qualification": [
+      "SSC"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-01",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-1-october-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "आजच्या चालू घडामोडी १ ऑक्टोबर २०२६ – अधिकृत सार्वजनिक स्रोतांकडून संकलित. UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांच्या तयारीसाठी उपयुक्त दैनंदिन महत्त्वाच्या बातम्या. चालू घडामोडी: सौदी अधिकाऱ्यांनी ओमानच्या सह-वैमानिकाला कॅप्टनवर चाकू हल्ला करून Flydubai fli",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "आजच्या चालू घडामोडी १ ऑक्टोबर २०२६ – अधिकृत सार्वजनिक स्रोतांकडून संकलित. UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांच्या तयारीसाठी उपयुक्त दैनंदिन महत्त्वाच्या बातम्या. चालू घडामोडी: सौदी अधिकाऱ्यांनी ओमानच्या सह-वैमानिकाला कॅप्टनवर चाकू हल्ला करून Flydubai fli"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-1-october-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-01T05:08:50.540Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKNow (Current Affairs)",
+    "sourceUrl": "https://gknow.in/current-affairs-1-october-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-01T05:08:50.540Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-01T05:09:07.035Z",
+  "contentHash": "4c2570266a3c79fcbc75bf465ef64766980613a08c1f2d927830b01585901e7d",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 1 October 2026 - GK Now भरती — 75 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-1-october-2026-gk-now-75.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-01T05:09:07.035Z"
+}
