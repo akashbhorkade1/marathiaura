@@ -1,0 +1,93 @@
+{
+  "id": "important-sectors-in-indias-creative-economy-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-01",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "भारताच्या क्रिएटिव्ह इकॉनॉमीमधील (सर्जनशील अर्थव्यवस्थेतील) महत्त्वाचे क्षेत्रे",
+  "slug": "important-sectors-in-indias-creative-economy-16",
+  "path": "/current-affairs/important-sectors-in-indias-creative-economy-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/important-sectors-in-indias-creative-economy/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "भारताच्या सर्जनशील अर्थव्यवस्थेतील विविध महत्त्वाच्या क्षेत्रांची सविस्तर माहिती लवकरच उपलब्ध होईल.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "सविस्तर माहिती",
+        "type": "text",
+        "body": "या विभागात भारताच्या क्रिएटिव्ह इकॉनॉमीमधील (सर्जनशील अर्थव्यवस्थेतील) महत्त्वाच्या क्षेत्रांविषयी सविस्तर माहिती लवकरच प्रकाशित केली जाईल. कृपया अद्ययावत माहितीसाठी पुन्हा भेट द्या."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/important-sectors-in-indias-creative-economy/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-01T12:48:53.639Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/important-sectors-in-indias-creative-economy/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-01T12:48:53.639Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-01T12:49:15.410Z",
+  "contentHash": "7240a28ac815689bb1de4b24d01060f523373d9bf3ecd624e51a2f98e7a7ab82",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Important Sectors in India’s Creative Economy भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/important-sectors-in-indias-creative-economy-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-01T12:49:15.410Z"
+}
