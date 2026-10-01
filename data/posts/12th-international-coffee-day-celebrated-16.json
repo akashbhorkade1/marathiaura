@@ -1,0 +1,97 @@
+{
+  "id": "12th-international-coffee-day-celebrated-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-01",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "१२वा आंतरराष्ट्रीय कॉफी दिन साजरा: १ ऑक्टोबर २०२६",
+  "slug": "12th-international-coffee-day-celebrated-16",
+  "path": "/current-affairs/12th-international-coffee-day-celebrated-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": {
+      "general": 12,
+      "reserved": null,
+      "note": null
+    },
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-01",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/12th-international-coffee-day-celebrated/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "१ ऑक्टोबर २०२६ रोजी १२वा आंतरराष्ट्रीय कॉफी दिन साजरा करण्यात आला. हा लेख २०२६-२०२७ च्या ताज्या चालू घडामोडींचा भाग आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "आंतरराष्ट्रीय कॉफी दिन २०२६",
+        "type": "text",
+        "body": "१ ऑक्टोबर २०२६ रोजी १२वा आंतरराष्ट्रीय कॉफी दिन साजरा करण्यात आला. हा दिवस जागतिक स्तरावर कॉफीच्या महत्त्वाचे आणि तिच्या उत्पादक, निर्यातदार व विक्रेत्यांच्या योगदानाचे स्मरण करतो. ही माहिती २०२६-२०२७ च्या ताज्या चालू घडामोडींचा एक भाग आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/12th-international-coffee-day-celebrated/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-01T22:30:57.713Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/12th-international-coffee-day-celebrated/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-01T22:30:57.713Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-01T22:31:14.790Z",
+  "contentHash": "c13eb912042a0f7c9e27cae1228b210e5ea65ffc7147b548aa6f338d8edd0b92",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "12th International Coffee Day Celebrated भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/12th-international-coffee-day-celebrated-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-01T22:31:14.790Z"
+}
