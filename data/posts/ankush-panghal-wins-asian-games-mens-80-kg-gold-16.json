@@ -1,0 +1,93 @@
+{
+  "id": "ankush-panghal-wins-asian-games-mens-80-kg-gold-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-02",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "अंकुश पांघलने आशियाई क्रीडा स्पर्धेत ८० किलो वजनी गटात सुवर्णपदक जिंकले",
+  "slug": "ankush-panghal-wins-asian-games-mens-80-kg-gold-16",
+  "path": "/current-affairs/ankush-panghal-wins-asian-games-mens-80-kg-gold-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-02",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/ankush-panghal-wins-asian-games-mens-80-kg-gold/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "अंकुश पांघलने २ ऑक्टोबर २०२६ रोजी आशियाई क्रीडा स्पर्धेत पुरुषांच्या ८० किलो वजनी गटात सुवर्णपदक पटकावले. ही बातमी २०२६-२०२७ च्या चालू घडामोडींचा भाग आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "अंकुश पांघलने २ ऑक्टोबर २०२६ रोजी आशियाई क्रीडा स्पर्धेत पुरुषांच्या ८० किलो वजनी गटात सुवर्णपदक पटकावले. स्पर्धा परीक्षांसाठी ही एक महत्त्वाची चालू घडामोड आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/ankush-panghal-wins-asian-games-mens-80-kg-gold/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-02T12:12:32.587Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/ankush-panghal-wins-asian-games-mens-80-kg-gold/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-02T12:12:32.587Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-02T12:12:54.696Z",
+  "contentHash": "d00db31358e9268bc4f3692c0836501533447586778c6c1abb0324d37d8f60f8",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Ankush Panghal Wins Asian Games Men’s 80 kg Gold भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/ankush-panghal-wins-asian-games-mens-80-kg-gold-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-02T12:12:54.696Z"
+}
