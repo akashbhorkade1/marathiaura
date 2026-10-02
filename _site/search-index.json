@@ -73,8 +73,8 @@
     "dept": "Indian Institute of Management Nagpur (IIM Nagpur)",
     "qual": "Graduation degree; Masters degree preferred, Minimum 3 years post-qualification experience in academic/administrative activities, preferably student affairs domains, Hands-on MS Office Suite; related certification preferred, IIMs/IITs/NITs or premier institution experience added advantage",
     "location": "Nagpur (Maharashtra)",
-    "status": "ACTIVE",
-    "statusLabel": "अर्ज सुरू",
+    "status": "CLOSING_SOON",
+    "statusLabel": "शेवटची तारीख जवळ",
     "lastDate": "2026-10-10"
   },
   {
@@ -242,8 +242,8 @@
     "dept": "Union Public Service Commission (UPSC) / केंद्रीय लोकसेवा आयोग",
     "qual": "Assistant Public Prosecutor (140 जागा): मान्यताप्राप्त विद्यापीठाची विधी पदवी (Degree in Law / LLB) + किमान 3 वर्षे वकिलीचा प्रत्यक्ष अनुभव (3 years experience at the Bar)., Specialist Grade III Assistant Professor - General Medicine / Anatomy (64 जागा): मान्यताप्राप्त MBBS सह संबंधित विषयात MD/MS/DNB पदव्युत्तर पदवी + पदव्युत्तर पदवीनंतर किमान 3 वर्षे अध्यापनाचा अनुभव (Senior Resident/Tutor/Demonstrator/Lecturer)., Assistant Editor (2 जागा): पत्रकारिता किंवा जनसंवाद पदवी (Degree in Journalism/Mass Comm) किंवा इंग्रजी/अर्थशास्त्र/सांख्यिकी पदवी सह 1 वर्षाचा पत्रकारिता डिप्लोमा + संपादन व प्रकाशनाचा किमान 3 वर्षे अनुभव., Specialist Grade II - Junior Scale (2 जागा): MBBS सह संबंधित विषयात पदव्युत्तर पदवी (MD/MS) + 3 वर्षे अनुभव किंवा पदविका (Diploma) + 5 वर्षे अनुभव., Public Law Officer / Law Officer - Ladakh (4 जागा): विधी पदवी (LLB) + किमान 2 वर्षे प्रत्यक्ष वकिलीचा अनुभव (District Court किंवा High Court/Supreme Court नोंदणीकृत).",
     "location": "नवी दिल्ली / लडाख / संपूर्ण भारत",
-    "status": "CLOSING_SOON",
-    "statusLabel": "शेवटची तारीख जवळ",
+    "status": "CLOSED",
+    "statusLabel": "अर्ज बंद",
     "lastDate": "2026-10-02"
   }
 ]
