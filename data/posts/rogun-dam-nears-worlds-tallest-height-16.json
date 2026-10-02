@@ -1,0 +1,93 @@
+{
+  "id": "rogun-dam-nears-worlds-tallest-height-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-02",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "रोगुण धरण जगातील सर्वात उंच धरणांपैकी एक बनण्याच्या मार्गावर",
+  "slug": "rogun-dam-nears-worlds-tallest-height-16",
+  "path": "/current-affairs/rogun-dam-nears-worlds-tallest-height-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-02",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/rogun-dam-nears-worlds-tallest-height/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "२ ऑक्टोबर २०२६ रोजीच्या ताज्या चालू घडामोडींनुसार, रोगुण धरण जगातील सर्वात उंच धरणांपैकी एक बनण्याच्या जवळ पोहोचले आहे. (२०२६-२०२७ च्या चालू घडामोडी).",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "२ ऑक्टोबर २०२६ रोजीच्या चालू घडामोडींनुसार, रोगुण धरण जगातील सर्वात उंच धरणांपैकी एक बनण्याच्या मार्गावर आहे. हे धरण पूर्ण झाल्यावर जगातील सर्वात उंच धरणांपैकी एक म्हणून ओळखले जाईल. ही माहिती २०२६-२०२७ या वर्षातील महत्त्वाच्या चालू घडामोडींचा भाग आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/rogun-dam-nears-worlds-tallest-height/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-02T04:57:58.445Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/rogun-dam-nears-worlds-tallest-height/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-02T04:57:58.445Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-02T04:58:16.891Z",
+  "contentHash": "33ad43ef7008ef88f2d8bf4bbb9553c726fdf5c2b735eb8fa51dd12e9ea3fcbc",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Rogun Dam Nears World’s Tallest Height भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/rogun-dam-nears-worlds-tallest-height-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-02T04:58:16.891Z"
+}
