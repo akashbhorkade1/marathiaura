@@ -1,0 +1,93 @@
+{
+  "id": "india-secures-deportation-of-navpreet-singh-from-trkiye-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-03",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "भारताकडून तुर्कीयेतून नवप्रीत सिंगचे प्रत्यार्पण — १६ जागा भरती व चालू घडामोडी",
+  "slug": "india-secures-deportation-of-navpreet-singh-from-trkiye-16",
+  "path": "/current-affairs/india-secures-deportation-of-navpreet-singh-from-trkiye-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-03",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/india-secures-deportation-of-navpreet-singh-from-turkiye/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "भारताने तुर्कीये (Türkiye) येथून नवप्रीत सिंगचे यशस्वी प्रत्यार्पण घडवून आणले आहे. ३ ऑक्टोबर २०२६ रोजीच्या चालू घडामोडींशी संबंधित ही महत्त्वाची अपडेट आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "नवप्रीत सिंगचे तुर्कीयेतून प्रत्यार्पण",
+        "type": "text",
+        "body": "भारताने तुर्कीयेतून (Türkiye) नवप्रीत सिंगचे प्रत्यार्पण (Deportation) यशस्वीरीत्या घडवून आणले आहे. ३ ऑक्टोबर २०२६ च्या ताज्या चालू घडामोडींनुसार (Current Affairs 2026-2027) स्पर्धा परीक्षांच्या दृष्टीने ही महत्त्वाची आंतरराष्ट्रीय घटना आहे. यासंदर्भातील १६ जागा भरती व चालू घडामोडींचा अभ्यास करणाऱ्या उमेदवारांसाठी ही माहिती उपयुक्त आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/india-secures-deportation-of-navpreet-singh-from-turkiye/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-03T11:22:11.434Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/india-secures-deportation-of-navpreet-singh-from-turkiye/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-03T11:22:11.434Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-03T11:22:18.228Z",
+  "contentHash": "b7b8634f1eab5eaad390bb8775e3efaa4ad6b99b062004d7fac67f1778d4c973",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "India Secures Deportation of Navpreet Singh from Türkiye भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/india-secures-deportation-of-navpreet-singh-from-trkiye-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-03T11:22:18.228Z"
+}
