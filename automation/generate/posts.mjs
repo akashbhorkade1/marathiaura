@@ -273,6 +273,15 @@ function renderPost(p) {
   if (lk.officialUrl && /^https?:\/\//.test(lk.officialUrl)) {
     links.push(['अधिकृत संकेतस्थळ / Official Website', lk.officialUrl, 'Official Website', isOfficialUrl(lk.officialUrl)]);
   }
+  // MarathiAura community links — केंद्रीकृत config (data/site.json → site.social) मधूनच; प्रत्येक
+  // article record मध्ये manually नोंदवलेले नाही. भर्ती "अधिकृत" official link नाहीत (nofollow).
+  const social = site.social || {};
+  if (/^https?:\/\//.test(safeText(social.whatsapp))) {
+    links.push(['MarathiAura WhatsApp Group', social.whatsapp, 'जॉइन करा', false]);
+  }
+  if (/^https?:\/\//.test(safeText(social.instagram))) {
+    links.push(['MarathiAura Instagram', social.instagram, 'फॉलो करा', false]);
+  }
   const linksHtml = links.length ? `<div class="content-section"><h2>महत्त्वाच्या लिंक्स</h2>${
     links.map(l => `<div class="download-card"><div class="dl-info"><div class="dl-title">${esc(l[0])}</div></div><a href="${esc(l[1])}" target="_blank" rel="noopener${l[3] ? '' : ' nofollow'}">${esc(l[2])}</a></div>`).join('')
   }</div>` : '';
