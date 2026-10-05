@@ -67,11 +67,11 @@ const renderable = tests.filter(t => isRenderableTest(t, qById));
 if (renderable.length) {
   const body = `
 <div class="page-header"><h1>मॉक टेस्ट</h1></div>
-<p>फ्री ऑनलाइन मॉक टेस्ट — timer, स्पष्टीकरण आणि score analysis सह.</p>
+<p>स्पर्धा परीक्षेसाठी फ्री ऑनलाइन मॉक टेस्ट — timer, स्पष्टीकरण आणि score analysis सह.</p>
 <div class="post-list">
 ${renderable.map(t => `<a class="post-card" href="${esc(pathOf(t))}"><div><span class="badge-cat">${esc(t.exam)}</span></div><div class="title">${esc(t.titleMr || t.title)}</div><div class="meta">${(t.questionIds || []).length} प्रश्न · ${t.durationMinutes} मिनिटे</div></a>`).join('\n')}
 </div>`;
-  write('mock-test/index.html', pageHtml(site, categories, { title: 'मॉक टेस्ट — Free Online Mock Tests', description: 'स्पर्धा परीक्षेसाठी फ्री ऑनलाइन मॉक टेस्ट.', canonical: site.url + '/mock-test/', body }));
+  write('mock-test/index.html', pageHtml(site, categories, { title: 'मॉक टेस्ट — स्पर्धा परीक्षा Mock Test (मराठी, फ्री ऑनलाइन)', description: 'स्पर्धा परीक्षेसाठी फ्री मराठी ऑनलाइन मॉक टेस्ट — MPSC, पोलीस भरती व सरकारी परीक्षांचे Mock Test, स्पष्टीकरणासह.', canonical: site.url + '/mock-test/', body }));
   console.log('  listing: /mock-test/');
 }
 console.log(`mock-test.mjs: ${count} test pages generated`);

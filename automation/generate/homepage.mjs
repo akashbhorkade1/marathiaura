@@ -115,7 +115,7 @@ const studyTools = [
 const body = `
 <section class="home-hero">
   <div class="wrap">
-    <h1>तुमच्या स्पर्धा परीक्षेच्या तयारीसाठी <span class="hl">विश्वसनीय माहिती, मराठीत.</span></h1>
+    <h1>महाराष्ट्र सरकारी भरती आणि स्पर्धा परीक्षा अपडेट <span class="hl">विश्वसनीय माहिती, मराठीत.</span></h1>
     <p class="hero-sub">${esc(site.tagline)}</p>
     <div class="home-search">
       <form action="/search.html" method="get" role="search">
@@ -187,7 +187,7 @@ ${catCards ? `<section class="block wrap">
 </section>` : ''}`;
 
 write('index.html', pageHtml(site, categories, {
-  title: 'MarathiAura — भरती, निकाल, प्रवेशपत्र व स्पर्धा परीक्षा माहिती मराठीत',
+  title: 'महाराष्ट्र सरकारी भरती 2026, सरकारी नोकरी अपडेट | MarathiAura',
   description: site.description,
   canonical: site.url + '/',
   body,

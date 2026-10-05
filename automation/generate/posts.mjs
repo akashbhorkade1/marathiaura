@@ -1,11 +1,13 @@
 // Generates: post article pages + category index pages + OG images
-import { loadSite, loadCategories, loadPosts, published, write, esc, pageHtml, postCard, svgOg, pathOf,
+import { loadSite, loadCategories, loadPosts, loadTests, published, write, esc, pageHtml, postCard, svgOg, pathOf,
   safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, linkifyCell, breadcrumbHtml, STATUS_META } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
 const posts = published(loadPosts());
 const catById = Object.fromEntries(categories.map(c => [c.id, c]));
+// संबंधित माहिती anchors साठी (docs/06) — mock test titles data मधूनच
+const testsById = new Map(loadTests().map(t => [t.id, t]));
 let count = 0;
 
 function renderSection(sec) {
@@ -275,9 +277,15 @@ function renderPost(p) {
     links.map(l => `<div class="download-card"><div class="dl-info"><div class="dl-title">${esc(l[0])}</div></div><a href="${esc(l[1])}" target="_blank" rel="noopener${l[3] ? '' : ' nofollow'}">${esc(l[2])}</a></div>`).join('')
   }</div>` : '';
 
+  // संबंधित माहिती — descriptive anchors जेव्हा target चे title उपलब्ध आहे (docs/06);
+  // generic label फक्त fallback म्हणून. Anchor over-optimize कधीच नाही.
   const related = [];
-  if (p.syllabusRef) related.push(`<a href="${esc(p.syllabusRef)}">अभ्यासक्रम</a>`);
-  (p.relatedMockTests || []).forEach(t => related.push(`<a href="/mock-test/${esc(t)}/">मॉक टेस्ट</a>`));
+  const syllabusPost = p.syllabusRef ? posts.find(x => x.type === 'syllabus' && x.path === p.syllabusRef) : null;
+  if (p.syllabusRef) related.push(`<a href="${esc(p.syllabusRef)}">${esc(syllabusPost ? syllabusPost.title.split(':')[0] : 'अभ्यासक्रम')}</a>`);
+  (p.relatedMockTests || []).forEach(tid => {
+    const t = testsById.get(tid);
+    related.push(`<a href="/mock-test/${esc(tid)}/">${esc(t ? (t.titleMr || t.title) : 'मॉक टेस्ट')}</a>`);
+  });
   const relatedHtml = related.length ? `<div class="content-section"><h2>संबंधित माहिती</h2><p>${related.join(' · ')}</p></div>` : '';
 
   // स्रोत (Part 14) — सर्व sources[] स्पष्टपणे; official vs तृतीय-पक्ष वेगळे
@@ -443,8 +451,11 @@ ${activeCards.join('\n') || '<p class="empty-state">सध्या या व�
 </div>
 <!--/active-list-->
 ${closedSection(closedCards)}`;
+  // Title: primary keyword = nameMr (+ वर्ष); English name suffix फक्त जेव्हा तो नावात आधीच नाही
+  // (उदा. "SSC भरती 2026 — SSC" सारखा redundancy काढा — docs/06 keyword strategy)
+  const catTitle = cat.nameMr.includes(cat.name) ? `${cat.nameMr} 2026` : `${cat.nameMr} 2026 — ${cat.name}`;
   write(cat.path.replace(/^\//, '') + 'index.html',
-    pageHtml(site, categories, { title: `${cat.nameMr} 2026 — ${cat.name}`, description: cat.description, canonical: site.url + cat.path, body }));
+    pageHtml(site, categories, { title: catTitle, description: cat.description, canonical: site.url + cat.path, body }));
   console.log(`  category: ${cat.path} (active ${activeCards.length}, closed ${closedCards.length})`);
 }
 
@@ -456,7 +467,7 @@ if (recPosts.length) {
   const catOf = p => catById[p.category];
   const body = `
 <div class="page-header"><h1>नवीन सरकारी भरती 2026</h1></div>
-<p>सर्व नवीन सरकारी व महाराष्ट्र भरतींची अपडेट्स — जाहिरात, पात्रता, अर्ज आणि शेवटची तारीख.</p>
+<p>महाराष्ट्र सरकारी नोकरी आणि नवीन सरकारी भरतींची अपडेट्स — जाहिरात, पात्रता, अर्ज आणि शेवटची तारीख.</p>
 <!--active-list-->
 <h2 class="section-title">अर्ज सुरू असलेली भरती</h2>
 <div class="post-list">
@@ -465,7 +476,7 @@ ${active.map(p => postCard(p, catOf(p))).join('\n') || '<p class="empty-state">�
 <!--/active-list-->
 ${closedSection(closedPosts.map(p => postCard(p, catOf(p))))}`;
   write('latest-bharti/index.html',
-    pageHtml(site, categories, { title: 'नवीन भरती 2026 — Latest Government Jobs', description: 'सर्व नवीन सरकारी भरती 2026 — जाहिरात, पात्रता, अर्ज आणि शेवटची तारीख.', canonical: site.url + '/latest-bharti/', body }));
+    pageHtml(site, categories, { title: 'नवीन सरकारी भरती 2026 — महाराष्ट्र सरकारी नोकरी अपडेट', description: 'महाराष्ट्र सरकारी नोकरी व नवीन सरकारी भरती 2026 — जाहिरात, पात्रता, अर्ज आणि शेवटची तारीख एका ठिकाणी.', canonical: site.url + '/latest-bharti/', body }));
   console.log(`  category: /latest-bharti/ (active ${active.length}, closed ${closedPosts.length})`);
 }
 

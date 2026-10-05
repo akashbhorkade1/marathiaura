@@ -107,11 +107,11 @@ for (const p of syllabi) {
 if (syllabi.length) {
   const body = `
 <div class="page-header"><h1>अभ्यासक्रम (Syllabus)</h1></div>
-<p>प्रत्येक परीक्षेचा subject-wise अभ्यासक्रम, exam pattern आणि तयारीचे टिप्स.</p>
+<p>स्पर्धा परीक्षेचा subject-wise अभ्यासक्रम, exam pattern आणि तयारीचे टिप्स.</p>
 <div class="post-list">
 ${syllabi.map(p => `<a class="post-card" href="${pathOf(p)}"><div><span class="badge-cat">Syllabus</span></div><div class="title">${esc(p.title)}</div><div class="meta">अखेरचे अद्ययावत: ${esc((p.lastUpdatedAt || '').slice(0, 10))}</div></a>`).join('\n')}
 </div>`;
-  write('syllabus/index.html', pageHtml(site, categories, { title: 'अभ्यासक्रम — Syllabus (सर्व परीक्षा)', description: 'MPSC, पोलीस भरती, तलाठी इत्यादी परीक्षांचे subject-wise अभ्यासक्रम व exam pattern.', canonical: site.url + '/syllabus/', body }));
+  write('syllabus/index.html', pageHtml(site, categories, { title: 'स्पर्धा परीक्षा अभ्यासक्रम — Syllabus (सर्व परीक्षा)', description: 'MPSC, पोलीस भरती, तलाठी इत्यादी स्पर्धा परीक्षांचा अभ्यासक्रम — subject-wise topics व exam pattern मराठीत.', canonical: site.url + '/syllabus/', body }));
   console.log('  hub: /syllabus/');
 }
 console.log(`syllabus.mjs: ${count} syllabus pages generated`);
