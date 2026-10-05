@@ -1,0 +1,89 @@
+{
+  "id": "update-1791209262622",
+  "type": "recruitment",
+  "title": "दिल्ली उच्च न्यायालयात अतिरिक्त न्यायाधीशांच्या नियुक्तीसाठी भरती",
+  "slug": "update-1791209262622",
+  "path": "/update-1791209262622/",
+  "category": "latest-bharti",
+  "exam": null,
+  "department": "PIB Maharashtra (Press Information Bureau)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2319352",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "प्रेस इन्फॉर्मेशन ब्युरो (PIB महाराष्ट्र) द्वारे प्रकाशित करण्यात आलेली ही भरती आहे. विविध पदांसाठी अर्ज मागवण्यात आले असून, पात्रता, अर्ज शुल्क आणि अधिकृत अधिसूचना खालील विभागात उपलब्ध आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "भरतीची थोडक्यात माहिती",
+        "type": "text",
+        "body": ""
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2319352",
+      "name": "PIB Maharashtra (Press Information Bureau)",
+      "priority": 2,
+      "role": "notification",
+      "verifiedAt": "2026-10-05T14:07:42.582Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "PIB Maharashtra (Press Information Bureau)",
+    "sourceUrl": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2319352",
+    "sourceType": "rss",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-05T14:07:42.582Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-05T14:07:59.764Z",
+  "contentHash": "fa5435a0cacfc7adada07f43de6c2dfbf82065171c83f628750e9e3bcaaf3668",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "दिल्ली उच्च न्यायालय में अतिरिक्त न्यायाधीश की नियुक्ति भरती",
+      "नवीन भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/update-1791209262622.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-05T14:07:59.764Z"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "israels-sufa-53-military-project-in-southern-syria-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-05",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "इस्रायलच्या 'सुफा ५३' लष्करी प्रकल्पात भरती – दक्षिण सीरिया, १६ जागा",
+  "slug": "israels-sufa-53-military-project-in-southern-syria-16",
+  "path": "/current-affairs/israels-sufa-53-military-project-in-southern-syria-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-05",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/israels-sufa-53-military-project-in-southern-syria/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "इस्रायलच्या दक्षिण सीरियातील 'सुफा ५३' लष्करी प्रकल्पासाठी भरती प्रक्रिया सुरू झाली आहे. या भरतीची अंतिम तारीख ५ ऑक्टोबर २०२६ आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "इस्रायलच्या दक्षिण सीरियातील 'सुफा ५३' या लष्करी प्रकल्पासाठी एकूण १६ जागांसाठी भरती प्रक्रिया जाहीर करण्यात आली आहे. अर्ज करण्याची अंतिम तारीख ५ ऑक्टोबर २०२६ आहे. इच्छुक उमेदवारांनी या संधीचा लाभ घ्यावा."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/israels-sufa-53-military-project-in-southern-syria/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-05T14:07:49.208Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/israels-sufa-53-military-project-in-southern-syria/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-05T14:07:49.208Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-05T14:08:31.143Z",
+  "contentHash": "958faccf20d287c1aa1d2e2b292470b3e9a5cb021c9a115541756052cc5fd681",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Israel’s Sufa 53 Military Project in Southern Syria भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/israels-sufa-53-military-project-in-southern-syria-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-05T14:08:31.143Z"
+}
