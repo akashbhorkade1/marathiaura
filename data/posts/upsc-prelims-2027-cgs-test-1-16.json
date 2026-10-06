@@ -1,0 +1,93 @@
+{
+  "id": "upsc-prelims-2027-cgs-test-1-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-06",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "UPSC Prelims 2027 CGS Test-1 भरती — 16 जागा",
+  "slug": "upsc-prelims-2027-cgs-test-1-16",
+  "path": "/current-affairs/upsc-prelims-2027-cgs-test-1-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-1/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "केंद्रीय लोकसेवा आयोगामार्फत (UPSC) Prelims 2027 CGS अंतर्गत एकूण 16 रिक्त पदांसाठी भरती जाहीर करण्यात आली आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "भरती तपशील",
+        "type": "text",
+        "body": "केंद्रीय लोकसेवा आयोग (UPSC) अंतर्गत Prelims 2027 CGS भरती प्रक्रियेद्वारे 16 रिक्त जागा भरल्या जाणार आहेत. इच्छुक आणि पात्र उमेदवारांनी या भरतीसंदर्भातील सविस्तर माहितीसाठी अधिकृत जाहिरात तपासावी."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-1/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-06T13:05:21.601Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-1/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-06T13:05:21.601Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-06T13:05:47.622Z",
+  "contentHash": "2c925f94d10f82b359e58c1a88a4adcac27a01d805f97b354e9cbdcded2688f6",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "UPSC Prelims 2027 CGS Test-1 भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/upsc-prelims-2027-cgs-test-1-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-06T13:05:47.622Z"
+}
