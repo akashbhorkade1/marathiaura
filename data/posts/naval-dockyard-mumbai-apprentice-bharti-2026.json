@@ -187,13 +187,7 @@
     ]
   },
   "sources": [
-    {
-      "url": "https://cdn.majhinaukri.net/news/10/naval-dockyard-mumbai-bharti-2026-for-283-apprentice-posts.pdf",
-      "name": "majhinaukri.net — जाहिरात PDF (तृतीय-पक्ष स्रोत)",
-      "priority": 3,
-      "role": "notification-pdf",
-      "verifiedAt": "2026-10-05T08:36:08.612Z"
-    },
+ 
     {
       "url": "https://www.apprenticeshipindia.gov.in/",
       "name": "apprenticeshipindia.gov.in (NAPS पोर्टल)",
