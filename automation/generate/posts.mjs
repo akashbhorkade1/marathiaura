@@ -1,6 +1,7 @@
 // Generates: post article pages + category index pages + OG images
 import { loadSite, loadCategories, loadPosts, loadTests, published, write, esc, pageHtml, postCard, svgOg, pathOf,
-  safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, linkifyCell, breadcrumbHtml, STATUS_META } from '../lib.mjs';
+  safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, linkifyCell, breadcrumbHtml, STATUS_META,
+  EMPTY_HUB_CATEGORIES } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -447,7 +448,10 @@ for (const cat of categories) {
   if (cat.id === 'syllabus') continue; // dedicated syllabus hub (syllabus.mjs) याला handle करते
   const catPosts = posts.filter(p => p.category === cat.id)
     .sort((a, b) => String(b.lastUpdatedAt || '').localeCompare(String(a.lastUpdatedAt || '')));
-  if (!catPosts.length) continue;
+  // Authorized zero-post exception (lib.mjs EMPTY_HUB_CATEGORIES): the page is built
+  // empty so nav/breadcrumb/quick-link resolve. Every other category keeps skipping.
+  const emptyHub = EMPTY_HUB_CATEGORIES.has(cat.id);
+  if (!catPosts.length && !emptyHub) continue;
   const { active, closed: closedPosts } = splitByStatus(catPosts);
   const activeCards = active.map(p => postCard(p, catById[p.category]));
   const closedCards = closedPosts.map(p => postCard(p, catById[p.category]));
@@ -463,9 +467,12 @@ ${closedSection(closedCards)}`;
   // Title: primary keyword = nameMr (+ वर्ष); English name suffix फक्त जेव्हा तो नावात आधीच नाही
   // (उदा. "SSC भरती 2026 — SSC" सारखा redundancy काढा — docs/06 keyword strategy)
   const catTitle = cat.nameMr.includes(cat.name) ? `${cat.nameMr} 2026` : `${cat.nameMr} 2026 — ${cat.name}`;
+  // Empty hub = thin page ⇒ noindex,follow. Existing mechanism (headHtml `index` flag),
+  // so it drops out of the sitemap automatically until a real article lands.
   write(cat.path.replace(/^\//, '') + 'index.html',
-    pageHtml(site, categories, { title: catTitle, description: cat.description, canonical: site.url + cat.path, body }));
-  console.log(`  category: ${cat.path} (active ${activeCards.length}, closed ${closedCards.length})`);
+    pageHtml(site, categories, { title: catTitle, description: cat.description, canonical: site.url + cat.path, body,
+      index: activeCards.length + closedCards.length > 0 }));
+  console.log(`  category: ${cat.path} (active ${activeCards.length}, closed ${closedCards.length}${catPosts.length ? '' : ', empty hub — noindex'})`);
 }
 
 // /latest-bharti/ — सर्व recruitment updates (active आधी, बंद archive नंतर)

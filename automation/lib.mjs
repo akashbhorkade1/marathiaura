@@ -248,6 +248,12 @@ ${searchConsoleHead()}${adsenseHead(site)}</head>
 
 // Category paths that actually have generated pages (thin-page rule, docs/03 §3) —
 // nav/footer/homepage कधीच 404 category links दाखवणार नाहीत.
+//
+// ZERO-POST EXCEPTION (explicitly authorized): 'admit-card' hub ships before any
+// article exists. It is listed in ONE place so the nav, breadcrumb and the
+// generator all agree. Every other category still requires >=1 published post.
+export const EMPTY_HUB_CATEGORIES = new Set(['admit-card']);
+
 let _availCats = null;
 export function generatedCategoryPaths() {
   if (_availCats) return _availCats;
@@ -258,7 +264,7 @@ export function generatedCategoryPaths() {
       if (posts.some(p => p.type === 'recruitment')) set.add(c.path);
     } else if (c.id === 'syllabus') {
       if (posts.some(p => p.type === 'syllabus')) set.add(c.path);
-    } else if (posts.some(p => p.category === c.id)) {
+    } else if (EMPTY_HUB_CATEGORIES.has(c.id) || posts.some(p => p.category === c.id)) {
       set.add(c.path);
     }
   }

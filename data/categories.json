@@ -1,7 +1,8 @@
 [
   { "id": "latest-bharti", "name": "Latest Bharti", "nameMr": "नवीन भरती", "path": "/latest-bharti/", "nav": true, "description": "सर्व नवीन सरकारी भरती 2026 — जाहिरात, पात्रता, अर्ज आणि शेवटची तारीख.", "contentType": "post" },
   { "id": "mpsc", "name": "MPSC", "nameMr": "MPSC (राज्यसेवा, संयुक्त)", "path": "/mpsc/", "nav": true, "description": "MPSC राज्यसेवा, Group B, Group C, PSI, STI, ASO परीक्षांची माहिती, अभ्यासक्रम आणि अपडेट्स.", "contentType": "post" },
-  { "id": "police-bharti", "name": "Police Bharti", "nameMr": "पोलीस भरती", "path": "/police-bharti/", "nav": true, "description": "महाराष्ट्र पोलीस भरती, SRPF, Jail Police — जाहिरात, शारीरिक चाचणी, अभ्यासक्रम.", "contentType": "post" },
+  { "id": "admit-card", "name": "Admit Card", "nameMr": "प्रवेशपत्र", "path": "/admit-card/", "nav": true, "description": "प्रवेशपत्र (Hall Ticket) download माहिती.", "contentType": "post" },
+  { "id": "police-bharti", "name": "Police Bharti", "nameMr": "पोलीस भरती", "path": "/police-bharti/", "nav": false, "description": "महाराष्ट्र पोलीस भरती, SRPF, Jail Police — जाहिरात, शारीरिक चाचणी, अभ्यासक्रम.", "contentType": "post" },
   { "id": "talathi", "name": "Talathi", "nameMr": "तलाठी भरती", "path": "/talathi/", "nav": false, "description": "तलाठी भरती — महसूल विभाग, पात्रता, अभ्यासक्रम आणि अर्ज प्रक्रिया.", "contentType": "post" },
   { "id": "gramsevak", "name": "Gramsevak", "nameMr": "ग्रामसेवक भरती", "path": "/gramsevak/", "nav": false, "description": "ग्रामसेवक व ग्रामविकास विभाग भरती.", "contentType": "post" },
   { "id": "maharashtra-bharti", "name": "Maharashtra Bharti", "nameMr": "महाराष्ट्र भरती", "path": "/maharashtra-bharti/", "nav": false, "description": "ZP, आरोग्य विभाग, महावितरण, MIDC, महानगरपालिका इत्यादी महाराष्ट्र शासन भरती.", "contentType": "post" },
@@ -11,7 +12,6 @@
   { "id": "syllabus", "name": "Syllabus", "nameMr": "अभ्यासक्रम", "path": "/syllabus/", "nav": true, "description": "प्रत्येक परीक्षेचा subject-wise व topic-wise अभ्यासक्रम, exam pattern.", "contentType": "post" },
   { "id": "answer-key", "name": "Answer Key", "nameMr": "उत्तरतालिका", "path": "/answer-key/", "nav": false, "description": "अधिकृत उत्तरतालिका, objection process आणि PDF.", "contentType": "post" },
   { "id": "result", "name": "Result", "nameMr": "भरती निकाल", "path": "/result/", "nav": true, "description": "भरती निकाल, परीक्षा निकाल, merit list व cut off यांची अपडेट्स.", "contentType": "post" },
-  { "id": "admit-card", "name": "Admit Card", "nameMr": "प्रवेशपत्र", "path": "/admit-card/", "nav": false, "description": "प्रवेशपत्र (Hall Ticket) download माहिती.", "contentType": "post" },
   { "id": "current-affairs", "name": "Current Affairs", "nameMr": "चालू घडामोडी", "path": "/current-affairs/", "nav": true, "description": "दैनिक व मासिक चालू घडामोडी, one-liner प्रश्नोत्तरे.", "contentType": "post" },
   { "id": "previous-papers", "name": "Previous Papers", "nameMr": "जुन्या प्रश्नपत्रिका", "path": "/previous-papers/", "nav": false, "description": "जुन्या परीक्षेच्या प्रश्नपत्रिका व solutions.", "contentType": "post" },
   { "id": "study-material", "name": "Study Material", "nameMr": "अभ्यास साहित्य", "path": "/study-material/", "nav": false, "description": "गणित, बुद्धिमत्ता, मराठी व्याकरण, GK notes.", "contentType": "post" },
