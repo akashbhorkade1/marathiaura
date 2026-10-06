@@ -1,0 +1,95 @@
+{
+  "id": "hal-koraput-delivers-2000th-aero-engine-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-06",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "HAL कोरापुट: 2000 व्या एअरो-इंजिनची यशस्वी डिलिव्हरी",
+  "slug": "hal-koraput-delivers-2000th-aero-engine-16",
+  "path": "/current-affairs/hal-koraput-delivers-2000th-aero-engine-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [
+      "MBA"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-06",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/hal-koraput-delivers-2000th-aero-engine/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "हिंदुस्तान एरोनॉटिक्स लिमिटेड (HAL) च्या कोरापुट युनिटने 6 ऑक्टोबर 2026 रोजी आपले 2000 वे एअरो-इंजिन यशस्वीरित्या वितरित केले. हा एक महत्त्वाचा टप्पा असून, स्पर्धा परीक्षांसाठी ही बातमी चालू घडामोडींच्या दृष्टीने महत्त्वाची आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "हिंदुस्तान एरोनॉटिक्स लिमिटेड (HAL) च्या कोरापुट युनिटने 6 ऑक्टोबर 2026 रोजी एक महत्त्वपूर्ण टप्पा गाठला आहे. या युनिटने आपले 2000 वे एअरो-इंजिन यशस्वीरित्या वितरित केले. हे यश HAL च्या उत्पादन क्षमतेचे आणि देशाच्या संरक्षण क्षेत्रातील योगदानाचे प्रतीक आहे. स्पर्धा परीक्षांच्या दृष्टीने, ही चालू घडामोडींमधील एक महत्त्वाची बातमी आहे, जी 2026-2027 च्या चालू घडामोडींमध्ये समाविष्ट केली जाईल."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/hal-koraput-delivers-2000th-aero-engine/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-06T05:44:38.986Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/hal-koraput-delivers-2000th-aero-engine/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-06T05:44:38.986Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-06T05:45:07.114Z",
+  "contentHash": "be5aabaf8e891e0d6d079ca4698c54a55ef58583b97b99c38d012746efffed41",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "HAL Koraput Delivers 2,000th Aero-Engine भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/hal-koraput-delivers-2000th-aero-engine-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-06T05:45:07.114Z"
+}

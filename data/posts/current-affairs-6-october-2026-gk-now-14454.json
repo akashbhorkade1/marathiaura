@@ -1,0 +1,95 @@
+{
+  "id": "current-affairs-6-october-2026-gk-now-14454",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-06",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - 6 ऑक्टोबर 2026 - GK Now भरती — 14,454 जागा",
+  "slug": "current-affairs-6-october-2026-gk-now-14454",
+  "path": "/current-affairs/6-october-2026-gk-now-14454/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 14454,
+    "vacanciesNote": null,
+    "qualification": [
+      "SSC"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-06",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-6-october-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "आजच्या चालू घडामोडी 6 ऑक्टोबर 2026 – अधिकृत सार्वजनिक स्रोतांकडून संकलित. UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांच्या तयारीसाठी उपयुक्त दैनंदिन महत्त्वाच्या बातम्या. पुरस्कार आणि सन्मान: कार्ल डीसेरोथ, पीटर हेगेमन, जॉर्ज नागल यांना 2026 चे नोबेल वैद्यकशास्त्र पारितोषिक मिळाले. पीटर हेगे",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "आजच्या चालू घडामोडी 6 ऑक्टोबर 2026 – अधिकृत सार्वजनिक स्रोतांकडून संकलित. UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांच्या तयारीसाठी उपयुक्त दैनंदिन महत्त्वाच्या बातम्या. पुरस्कार आणि सन्मान: कार्ल डीसेरोथ, पीटर हेगेमन, जॉर्ज नागल यांना 2026 चे नोबेल वैद्यकशास्त्र पारितोषिक मिळाले. पीटर हेगेमन सायन्स"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-6-october-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-06T05:44:37.233Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKNow (Current Affairs)",
+    "sourceUrl": "https://gknow.in/current-affairs-6-october-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-06T05:44:37.233Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-06T05:44:53.785Z",
+  "contentHash": "52e501206d515f54416edc3cd09326c18c35c4e88eacc78acde9da340b1ee85e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 6 October 2026 - GK Now भरती — 14,454 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-6-october-2026-gk-now-14454.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-06T05:44:53.785Z"
+}
