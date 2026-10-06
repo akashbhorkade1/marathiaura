@@ -236,6 +236,11 @@ ${noindex}
 <meta property="og:locale" content="mr_IN">
 <meta property="og:image" content="${esc(img)}">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Web fonts: Mukta (body/UI) + Anek Devanagari (headings) — only required weights,
+     font-display:swap so text stays readable while fonts load. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500;600;700&amp;family=Mukta:wght@400;500;600;700&amp;display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">

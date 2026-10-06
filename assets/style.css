@@ -3,13 +3,24 @@
   --primary:#0c447c; --primary-dark:#093259; --accent:#ff6f00;
   --bg:#f4f7fb; --card:#fff; --text:#1c2b3a; --muted:#5a6b7d;
   --border:#dde5ee; --radius:10px; --success:#1a7f37; --danger:#c62828;
+  /* Font stacks — Noto Sans Devanagari first fallback keeps Devanagari shaping
+     correct if the web fonts never load (never a Latin-only fallback first). */
+  --font-body:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;
+  --font-head:"Anek Devanagari","Noto Sans Devanagari",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html{font-size:16px;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:"Noto Sans Devanagari","Mangal",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+body{margin:0;font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.7}
 a{color:var(--primary)}
 img,svg{max-width:100%}
 .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+
+/* Typography hierarchy — Anek Devanagari = headings, Mukta = body/UI.
+   Weights match what is actually loaded (Anek 500/600/700, Mukta 400/500/600/700). */
+h1,h2,h3,h4,h5,h6,.section-title{font-family:var(--font-head)}
+h1{font-weight:700}
+h2,h3{font-weight:600}
+h4,h5,h6{font-weight:500}
 
 /* Header / Nav */
 header.site{background:var(--primary);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,.15)}
@@ -22,7 +33,7 @@ header.site{background:var(--primary);color:#fff;position:sticky;top:0;z-index:5
 .menu-toggle{display:none}
 .menu-btn{font-size:1.6rem;background:none;border:0;color:#fff;cursor:pointer;padding:4px 8px}
 nav.main-nav{display:none;flex-direction:column;background:var(--primary-dark);flex:1 0 calc(100% + 32px);margin:0 -16px;padding:0 16px}
-nav.main-nav a{color:#e8eef5;text-decoration:none;padding:12px 16px;border-top:1px solid rgba(255,255,255,.08);font-size:.98rem}
+nav.main-nav a{color:#e8eef5;text-decoration:none;padding:12px 16px;border-top:1px solid rgba(255,255,255,.08);font-size:.98rem;font-weight:600}
 nav.main-nav a:hover{background:rgba(255,255,255,.08);color:#fff}
 .menu-toggle:checked ~ nav.main-nav{display:flex}
 .search-box{display:flex;gap:8px;padding:0 0 12px;flex-wrap:wrap}
@@ -47,7 +58,7 @@ h2.section-title{font-size:1.3rem;margin:0 0 14px;padding-left:12px;border-left:
 .post-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--text);transition:box-shadow .15s}
 .post-card:hover{box-shadow:0 4px 14px rgba(12,68,124,.12)}
 .post-card .badge-cat{display:inline-block;font-size:.72rem;font-weight:700;color:var(--primary);background:#e8f0fa;border-radius:6px;padding:2px 8px;margin-bottom:6px}
-.post-card .title{font-weight:700;font-size:1.02rem;line-height:1.5}
+.post-card .title{font-family:var(--font-head);font-weight:600;font-size:1.02rem;line-height:1.5}
 .post-card .meta{color:var(--muted);font-size:.82rem;margin-top:4px}
 .badge{display:inline-block;font-size:.7rem;font-weight:700;border-radius:6px;padding:2px 8px;vertical-align:middle;margin-left:6px}
 .badge-new{background:#e6f4ea;color:var(--success)}
@@ -69,7 +80,7 @@ h2.section-title{font-size:1.3rem;margin:0 0 14px;padding-left:12px;border-left:
 .home-search input{width:70%;padding:12px 14px;border:0;border-radius:8px 0 0 8px;font-size:1rem;font-family:inherit}
 .home-search button{width:28%;padding:12px 10px;border:0;border-radius:0 8px 8px 0;background:var(--accent);color:#fff;font-weight:700;font-size:1rem;cursor:pointer;font-family:inherit}
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
-.cat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;text-decoration:none;color:var(--text);font-weight:700;font-size:.95rem}
+.cat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;text-decoration:none;color:var(--text);font-family:var(--font-head);font-weight:600;font-size:.95rem}
 .cat-card:hover{border-color:var(--primary)}
 .cat-card small{display:block;color:var(--muted);font-weight:400;margin-top:2px}
 
@@ -91,7 +102,7 @@ h2.section-title{font-size:1.3rem;margin:0 0 14px;padding-left:12px;border-left:
 .updates-list li{background:#fff;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:8px;font-size:.95rem}
 .updates-list .u-date{color:var(--muted);font-size:.78rem}
 .download-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.download-card .dl-title{font-weight:700}
+.download-card .dl-title{font-family:var(--font-head);font-weight:600}
 .download-card .dl-meta{font-size:.82rem;color:var(--muted)}
 .download-card a{background:var(--primary);color:#fff;text-decoration:none;padding:8px 16px;border-radius:8px;font-size:.9rem;font-weight:700;white-space:nowrap}
 .faq-item{border-bottom:1px solid var(--border);padding:10px 0}
@@ -115,7 +126,7 @@ h2.section-title{font-size:1.3rem;margin:0 0 14px;padding-left:12px;border-left:
 .result-summary{background:#e8f0fa;border-radius:var(--radius);padding:16px 18px;margin-bottom:14px}
 .score-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:10px}
 .score-box{background:#fff;border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center}
-.score-box .num{font-size:1.4rem;font-weight:800}
+.score-box .num{font-size:1.4rem;font-family:var(--font-head);font-weight:700}
 .score-box .lbl{font-size:.75rem;color:var(--muted)}
 .explanation{background:#f6f9fd;border-left:4px solid var(--primary);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:10px;font-size:.93rem}
 
@@ -163,7 +174,7 @@ footer.site a:hover{text-decoration:underline}
 .job-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--text);transition:box-shadow .15s,border-color .15s}
 .job-card:hover{box-shadow:0 4px 14px rgba(12,68,124,.12);border-color:var(--primary)}
 .job-card .job-dept{font-size:.84rem;color:var(--muted);margin-bottom:6px}
-.job-card .title{font-weight:700;font-size:1.02rem;line-height:1.55;margin-bottom:8px}
+.job-card .title{font-family:var(--font-head);font-weight:600;font-size:1.02rem;line-height:1.55;margin-bottom:8px}
 .job-qual{font-size:.86rem;margin-bottom:4px}
 .job-qual .lbl{color:var(--muted)}
 .job-lastdate{font-size:.88rem;margin-bottom:2px}
@@ -179,7 +190,7 @@ footer.site a:hover{text-decoration:underline}
 .deadline-item{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--border);border-left:4px solid var(--danger);border-radius:var(--radius);padding:10px 12px;text-decoration:none;color:var(--text)}
 .deadline-item:hover{box-shadow:0 3px 10px rgba(198,40,40,.10)}
 .days-left{min-width:54px;text-align:center;background:#fdecea;color:var(--danger);border-radius:8px;padding:6px 4px}
-.days-left .n{display:block;font-size:1.3rem;font-weight:800;line-height:1.15}
+.days-left .n{display:block;font-size:1.3rem;font-family:var(--font-head);font-weight:700;line-height:1.15}
 .days-left small{font-size:.66rem;font-weight:700}
 .deadline-info{min-width:0}
 .deadline-info .d-title{display:block;font-weight:700;font-size:.95rem;line-height:1.45}
