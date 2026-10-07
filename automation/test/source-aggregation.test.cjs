@@ -9,6 +9,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const libP = import('../lib.mjs');
 const normP = import('../normalize.mjs');
+const detectP = import('../normalize.mjs');
 const dedupP = import('../dedup.mjs');
 const verifyP = import('../verify-official.mjs');
 const genP = import('../generate-original-mr.mjs');
@@ -78,7 +79,7 @@ test('dedup: same recruitment across 2+ sources → single canonical, provenance
   // 3-source: तिसरा (Employment News) पण त्याच canonical लाच merge → एकच record (§16)
   const c = N.normalizeFacts({
     title: 'MPSC राज्यसेवा परीक्षा 2026 — 4689 जागांसाठी अर्ज',
-    body: 'शेवटची तारीख 15 ऑक्टोबर 2026.', sourceUrl: 'https://employmentnews.gov.in/mpsc', sourceName: 'Employment News', sourcePriority: 2
+    body: '4689 जागांसाठी भरती — शेवटची तारीख 15 ऑक्टोबर 2026.', sourceUrl: 'https://employmentnews.gov.in/mpsc', sourceName: 'Employment News', sourcePriority: 2
   });
   const hit2 = D.findCanonical(c, [toRec(a), toRec(merged)]);
   assert.ok(hit2, 'third source → same canonical record');
@@ -208,4 +209,36 @@ test('copy-detection: verbatim paragraph FAILS the similarity gate', async () =>
   // §14 allowed factual transformation → similarity खूप कमी
   const orig = 'PGIMER कडून Nursing Officer पदाच्या 243 जागांसाठी अर्ज मागवण्यात आले आहेत.';
   assert.ok(G.shingleSimilarity(orig, src) < G.COPY_THRESHOLD);
+});
+
+/* ---------- 17. Current affairs (GKNow/GKToday) — no fabricated vacancy parse, clean classification ---------- */
+test('normalize: current-affairs post → vacancies null, no recruitment vacancy parse', async () => {
+  const N = await normP;
+  const f = N.normalizeFacts({
+    title: 'चालू घडामोडी - 6 ऑक्टोबर 2026 - GK Now भरती — 14,454 जागा',
+    body: 'आजच्या दिवसाच्या महत्त्वाच्या बातम्या आहेत.',
+    sourceUrl: 'https://gknow.in/6-october-2026',
+    sourceName: 'GKNow',
+    sourcePriority: 3,
+    sourceType: 'article-list',
+    isRecruitment: false
+  });
+  assert.equal(f.vacancies, null);
+  assert.equal(f.recruitmentName, 'चालू घडामोडी - 6 ऑक्टोबर 2026 - GK Now भरती — 14,454 जागा');
+  assert.equal(f.organization, null);
+  assert.equal(f.advtNo, null);
+});
+
+test('detect: category detection honors source-provided current-affairs category', async () => {
+  const N = await normP;
+  const f = N.normalizeFacts({
+    title: 'Current Affairs - 6 October 2026',
+    body: 'आजच्या दिवसाच्या महत्त्वाच्या बातम्या आहेत.',
+    sourceUrl: 'https://gknow.in/6-october-2026',
+    sourceName: 'GKNow',
+    sourcePriority: 3,
+    sourceType: 'article-list'
+  });
+  assert.equal((await detectP).detectCategoryFacts(f, 'current-affairs'), 'current-affairs');
+  assert.equal((await detectP).detectCategoryFacts(f, 'latest-bharti'), 'latest-bharti');
 });
