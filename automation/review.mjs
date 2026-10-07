@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { recordVerification } from './verify-official.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const queuePath = path.join(root, 'data/review-queue.json');
@@ -40,6 +41,25 @@ if (!cmd || cmd === 'list') {
     // docs/04 §1: publish होण्यासाठी status published **आणि** confidence ≥ 85 दोन्ही आवश्यक
     if (record && (record.confidence ?? 0) < 85) {
       console.error(`✗ confidence ${record.confidence} < 85 — approve शक्य नाही. आधी fields भरा (docs/04 §1 factor table)`);
+      process.exit(1);
+    }
+    // Strict verification: third-party-only recruitment → official verification शिवाय publish नाही.
+    // AI rewrite / confidence score म्हणजे verification नाही.
+    if (record && record.type === 'recruitment') {
+      const v = recordVerification(record);
+      const humanVerified = record.provenance && record.provenance.verifiedAt;
+      if (v.thirdPartyOnly && !humanVerified) {
+        console.error(`✗ third-party-only recruitment — official verification (L1/L2) शिवाय publish नाही. आधी official notification verify करून provenance.verifiedAt नोंदवा.`);
+        process.exit(1);
+      }
+      if (!v.officialVerified && !humanVerified) {
+        console.error(`✗ official verification नाही (L1/L2 source किंवा provenance.verifiedAt हवी). Review मध्येच ठेवा.`);
+        process.exit(1);
+      }
+    }
+    // Daily CA → future publishing बंद; फक्त weekly/monthly roundup.
+    if (record && record.type === 'current-affairs' && record.kind === 'daily') {
+      console.error(`✗ daily current-affairs approve करता येणार नाही (daily publishing बंद; weekly/monthly roundup हेच formats).`);
       process.exit(1);
     }
     if (record) {

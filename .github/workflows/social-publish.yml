@@ -1,0 +1,44 @@
+name: Social Publish (Instagram — published articles only)
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Max articles per run'
+        required: false
+        default: '5'
+      post_id:
+        description: 'Publish only this post id (optional)'
+        required: false
+        default: ''
+  # Deploy नंतरच — public image URL उपलब्ध हवी. Push वर नाही (duplicate टाळा).
+
+permissions:
+  contents: write
+
+jobs:
+  social:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Generate social assets + Instagram publish (safe-skip without creds)
+        run: node automation/social-publish.mjs --limit=${{ inputs.limit || '5' }} ${{ inputs.post_id && format('--id={0}', inputs.post_id) || '' }}
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ secrets.IG_GRAPH_HOST }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+      - name: Commit social artifacts + status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posts assets/social 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No social changes — skipping commit"
+          else
+            git commit -m "social: artifacts + instagram status"
+            git push
+          fi

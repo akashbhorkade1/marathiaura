@@ -20,6 +20,10 @@ jobs:
         run: node automation/test/test-core.test.cjs
       - name: Monitor sources (detect new notifications)
         run: node automation/monitor.mjs
+      - name: Weekly CA roundup draft (if 3+ developments; else skip)
+        run: node automation/ca-weekly.mjs || true
+      - name: Monthly CA roundup draft (if enough data; else skip)
+        run: node automation/ca-monthly.mjs || true
       - name: AI rewrite drafts (Marathi)
         run: node automation/rewrite.mjs
         env:

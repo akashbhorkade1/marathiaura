@@ -76,7 +76,11 @@ for (const q of pending) {
       shortDesc: post.content.shortDesc,
       sections: post.content.sections.map(s => ({ heading: s.heading, body: s.body }))
     });
-    if (!out.title || !Array.isArray(out.sections) || !out.sections.length) throw new Error('AI output अपूर्ण');
+    if (!out.title || !Array.isArray(out.sections) || !out.sections.length) throw new Error('AI output incomplete');
+    if (post.type === 'current-affairs') {
+      const blob = `${out.title || ''} ${out.shortDesc || ''}`;
+      if (/(recruitment|vacanc\w*|vacancies|apply online)/i.test(blob)) throw new Error('CA contamination reject');
+    }
     const now = new Date().toISOString();
     post.title = String(out.title).slice(0, 160);
     post.content.shortDesc = String(out.shortDesc || post.content.shortDesc).slice(0, 300);

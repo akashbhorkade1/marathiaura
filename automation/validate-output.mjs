@@ -158,6 +158,38 @@ for (const p of published(loadPosts())) {
   }
 }
 
+// 7a-0b. Strict build gates (master task): unverified published recruitment आणि
+// recruitment-contaminated CA कधीच live जाऊ नयेत. Legacy scope: फक्त नवीन records
+// (STRICT_CUTOFF नंतर update झालेले) hard-fail; जुने records warn-only (URL break नाही).
+const STRICT_CUTOFF = '2026-10-07';
+const isNewRec = p => String(p.lastUpdatedAt || p.publishedAt || '') >= STRICT_CUTOFF;
+const RECRUIT_WORD_RE = /(भरती|भर्ती|recruitment|vacanc\w*|जागा|vacancies)/i;
+const OFFICIAL_RE = /(^|\.)(gov\.in|nic\.in|gov|edu\.in|ac\.in)$/i;
+const isOfficialHost = u => { try { return OFFICIAL_RE.test(new URL(u).hostname.replace(/^www\./, '')); } catch { return false; } };
+for (const p of published(loadPosts())) {
+  if (!isNewRec(p)) continue;
+  if (p.type === 'recruitment') {
+    const srcs = p.sources || [];
+    const official = srcs.some(s => (Number.isFinite(s.priority) ? s.priority : 4) <= 2 || isOfficialHost(s.url || ''));
+    const humanVerified = !!(p.provenance && p.provenance.verifiedAt);
+    if (!official && !humanVerified) {
+      errors.push(`unverified published recruitment (L1/L2 or provenance.verifiedAt required): ${p.id}`);
+    }
+    const thirdOnly = srcs.length > 0 && srcs.every(s => !(((Number.isFinite(s.priority) ? s.priority : 4) <= 2) || isOfficialHost(s.url || '')));
+    if (thirdOnly && !humanVerified) {
+      errors.push(`third-party-only published recruitment (official verification required): ${p.id}`);
+    }
+  }
+  if (p.type === 'current-affairs') {
+    const r = p.recruitment || {};
+    if (Number.isFinite(r.vacancies)) errors.push(`current-affairs published with vacancies (generic number ≠ vacancy): ${p.id}`);
+    if (RECRUIT_WORD_RE.test(`${p.title || ''} ${(p.content && p.content.shortDesc) || ''}`)) {
+      errors.push(`current-affairs published with recruitment wording: ${p.id}`);
+    }
+    if (p.kind === 'daily' && !p.collectionOnly) errors.push(`daily current-affairs published (weekly/monthly only): ${p.id}`);
+  }
+}
+
 // 7a. महत्त्वाची pages कधीच accidentally noindex नसावीत (indexable असावी अशा records)
 const important = new Set(['index.html']);
 for (const p of recruitPosts) {

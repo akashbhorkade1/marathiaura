@@ -30,9 +30,21 @@ export function parseDate(raw) {
 }
 
 // ---------- Numeric/labelled field extraction ----------
-export function parseVacancies(raw) {
+// Recruitment context gate: vacancy extraction फक्त explicit recruitment context
+// (भरती/जाहिरात/recruitment/apply online/अर्ज मागवले/पदांसाठी भरती) असतानाच.
+// Current-affairs / general info मधील generic numbers (16 प्रकार, 14,454, 75, 2026...)
+// कधीच vacancy नाहीत → null. Unknown असल्यास null (guessing forbidden).
+const RECRUIT_CONTEXT_RE = /(भरती|भर्ती|जाहिरात|अधिसूचना|recruit\w*|vacanc\w*|openings?|positions?|\bposts?\b|apply\s*online|अर्ज\s*(मागवले|सुरू|करा)|पदांसाठी|रिक्त\s*पद|advt\.?\s*(no\.?|number)?|advertisement)/i;
+export function hasRecruitmentContext(raw) {
+  return RECRUIT_CONTEXT_RE.test(safeText(raw));
+}
+
+export function parseVacancies(raw, opts = {}) {
   const s = safeText(raw);
   if (!s) return null;
+  // Context gate: recruitment context नसेल (CA/general info) → generic numbers ignore → null.
+  // opts.allowWithoutContext फक्त legacy-compat/खास verified recruitment path साठी.
+  if (!opts.allowWithoutContext && !hasRecruitmentContext(s)) return null;
   // "17,471 जागा" / "243 Nursing Officer posts" / "एकूण 4689 पदे" — फक्त explicit असतानाच.
   // आधी strict adjacency (4689 जागा), नंतर digit-free gap (243 Nursing Officer posts) —
   // "2026 च्या 4689 जागा" सारख्या मजकुरात चुकीचा year निवडू नये म्हणून gap मध्ये दुसरा number block.
@@ -108,10 +120,35 @@ export function detectCategoryFacts(facts, fallback = 'latest-bharti') {
 }
 
 // ---------- MAIN: raw item → normalized factual record (§4 full field list) ----------
-export function normalizeFacts({ title, body, sourceUrl, sourceName, sourcePriority = 2, sourceType = 'html', retrievedAt }) {
+// Strict rule: CA/general info कधीच recruitment नाही. isRecruitment=false असताना
+// recruitment-specific fields (vacancies/advt/postNames/qualification/age/fee/dates)
+// सर्व null/empty — generic numbers कधीच vacancy नाहीत (guessing forbidden).
+export function normalizeFacts({ title, body, sourceUrl, sourceName, sourcePriority = 2, sourceType = 'html', retrievedAt, isRecruitment = true }) {
   title = safeText(title);
   body = safeText(body);
   const text = `${title}. ${body}`.slice(0, 4000);
+  // CA/general info → recruitment-specific fields सर्व null/empty (no fabrication).
+  // applicationEnd सारख्या तारखा CA event date वरून infer करू नयेत.
+  if (!isRecruitment) {
+    return {
+      title,
+      organization: null,
+      recruitmentName: title.slice(0, 120) || null,
+      advtNo: null,
+      postNames: [],
+      vacancies: null,
+      qualification: [],
+      ageLimit: null,
+      experience: null,
+      dates: { notification: null, applicationStart: null, applicationEnd: null, examDate: null, admitCardDate: null, resultDate: null },
+      fee: null,
+      selectionProcess: [],
+      salary: null,
+      location: null,
+      links: { notificationUrl: sourceUrl || null, applyUrl: null, officialUrl: null },
+      source: { name: safeText(sourceName), url: sourceUrl || null, priority: sourcePriority, type: safeText(sourceType), retrievedAt: retrievedAt || new Date().toISOString() }
+    };
+  }
   const applicationEnd = parseDate(text);
   return {
     title,
@@ -119,7 +156,7 @@ export function normalizeFacts({ title, body, sourceUrl, sourceName, sourcePrior
     recruitmentName: title.slice(0, 120) || null,
     advtNo: parseAdvtNo(text),
     postNames: parsePostNames(text),
-    vacancies: parseVacancies(text),
+    vacancies: isRecruitment ? parseVacancies(text) : null,
     qualification: parseQualification(text),
     ageLimit: parseAgeLimit(text),
     experience: null, // unstructured text मधून experience कधीच infer करू नये

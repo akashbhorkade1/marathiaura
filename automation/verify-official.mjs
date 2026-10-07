@@ -54,6 +54,30 @@ export async function checkUrl(url) {
   }
 }
 
+// ---------- Source tier (L1 > L2 > L3) ----------
+// L1 = actual recruiting authority / official notification (official gov/edu domain OR priority 1)
+// L2 = trusted government portal (priority 2, non-official host but gov-adjacent)
+// L3 = third-party recruitment/job website (priority >= 3)
+export function sourceTier(source) {
+  const s = source || {};
+  const pri = Number.isFinite(s.priority) ? s.priority : 4;
+  const cls = classifyUrl(s.url || '');
+  if (cls.official || pri <= 1) return 1;
+  if (pri <= 2) return 2;
+  return 3;
+}
+
+// Record-level verification: official/primary verification present?
+// officialVerified = at least one L1/L2 source present (priority <= 2 or official domain).
+// Third-party-only (all L3) → NOT verified → must stay in review queue (human approval + official check).
+export function recordVerification(rec) {
+  const sources = (rec && rec.sources) || [];
+  const tiers = sources.map(sourceTier);
+  const bestTier = tiers.length ? Math.min(...tiers) : 4;
+  const officialVerified = tiers.some(t => t <= 2);
+  const thirdPartyOnly = sources.length > 0 && tiers.every(t => t >= 3);
+  return { bestTier, officialVerified, thirdPartyOnly, sourceCount: sources.length };
+}
 // ---------- Fake urgency + placeholder guard (§21) ----------
 export const FAKE_URGENCY_RE = /(ताबडतोब|आताच अर्ज करा|last chance|limited slots|गोल्डन अपॉर्चुनिटी|golden opportunity)/i;
 export const PLACEHOLDER_RE = /(\binferred\b|\bprobably\b|\bexpected\b|अंदाजे तारीख|unknown status)/i;

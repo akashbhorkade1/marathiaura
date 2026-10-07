@@ -91,12 +91,13 @@ const EXCLUDE_RE = /\/(category|tag|tags|author|page|wp-json|wp-admin|wp-login|f
 // Pipeline (docs/05 §3): raw item → NORMALIZE facts → ORIGINAL Marathi generation.
 // §14: source body कधीच थेट paste होत नाही — फक्त facts (dates/संख्या/पदे) वरून नवीन मराठी article.
 function makeDraft({ title, link, desc, body, feed }) {
+  const isCA = feed.category === 'current-affairs' || feed.postType === 'current-affairs';
   title = safeText(title);
   link = safeText(link);
   desc = safeText(desc);
   body = safeText(body);
   const now = new Date().toISOString();
-  const facts = normalizeFacts({ title, body: `${desc} ${body}`, sourceUrl: link || feed.url, sourceName: feed.name, sourcePriority: feed.priority || 2, sourceType: feed.type, retrievedAt: now });
+  const facts = normalizeFacts({ title, body: `${desc} ${body}`, sourceUrl: link || feed.url, sourceName: feed.name, sourcePriority: feed.priority || 2, sourceType: feed.type, retrievedAt: now, isRecruitment: !isCA });
   // §21 copy gate: generated content source text शी copied असल्यास तो source वापरूच नये
   const sections = buildSections(facts);
   const genText = sections.map(s => [...(s.items || []), s.body, ...(s.rows || []).flat()].filter(Boolean).join(' ')).join(' ');
@@ -107,27 +108,32 @@ function makeDraft({ title, link, desc, body, feed }) {
     ...(PLACEHOLDER_RE.test(`${title} ${genText}`) ? ['placeholder'] : [])
   ];
   const cat = detectCategoryFacts(facts, detectCategory(title, feed.category));
-  const genTitle = buildTitle(facts) || title;
+  const genTitle = isCA ? title : buildTitle(facts) || title;
   const id = slugify(genTitle);
   const catObj = categories.find(c => c.id === cat);
-  const isCA = cat === 'current-affairs' || feed.postType === 'current-affairs';
   const links = buildLinksSection(facts) ? facts.links : { notificationUrl: link || null, applyUrl: null, officialUrl: null };
+  // CA: recruitment template sections कधीच नाही — general info template फक्त.
+  // CA vacancies/advt/recruitment context कधीच नाही (normalize isRecruitment=false → null).
+  const caRecruitment = { postNames: [], vacancies: null, vacanciesNote: null, qualification: [], ageLimit: null, salary: null, fee: null, applicationMode: null, location: null, jobType: null };
+  // Daily CA → internal collection record (collectionOnly): review/publish pipeline मध्ये नाही.
+  // Weekly/Monthly roundup हेच primary publishing formats.
+  const caCollectionOnly = isCA && (!feed.caPublish || feed.caPublish === 'collection');
   return {
     id,
     type: isCA ? 'current-affairs' : 'recruitment',
-    ...(isCA ? { kind: 'daily', date: now.slice(0, 10), items: [], itemSchema: 'docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }' } : {}),
+    ...(isCA ? { kind: 'daily', collectionOnly: true, date: now.slice(0, 10), items: [], itemSchema: 'docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }' } : {}),
     title: genTitle,
     slug: id,
     path: isCA ? `/current-affairs/${id.replace(/^current-affairs-/, '')}/` : `/${id}/`,
     category: cat,
     exam: null,
-    department: facts.organization || feed.name,
-    recruitment: {
+    department: isCA ? feed.name : (facts.organization || feed.name),
+    recruitment: isCA ? caRecruitment : {
       postNames: facts.postNames, vacancies: facts.vacancies, vacanciesNote: facts.vacancies ? null : 'अधिकृत जाहिरातीत नमूद',
       qualification: facts.qualification, ageLimit: facts.ageLimit, salary: facts.salary, fee: facts.fee,
       applicationMode: null, location: facts.location || 'भारत', jobType: 'government'
     },
-    dates: facts.dates,
+    dates: isCA ? { notification: null, applicationStart: null, applicationEnd: null, examDate: null, admitCardDate: null, resultDate: null } : facts.dates,
     links,
     selectionProcess: facts.selectionProcess,
     syllabusRef: null, relatedMockTests: [],
@@ -265,10 +271,14 @@ for (const feed of (site.feeds || [])) {
       // Optional feed-level filter: फक्त matching titles चेच drafts (general news sources साठी — review-queue flood टाळा)
       if (Array.isArray(feed.keywords) && feed.keywords.length && !feed.keywords.some(k => title.toLowerCase().includes(String(k).toLowerCase()))) continue;
       if (existingTitles.has(normTitle(title)) || (link && existingLinks.has(link))) continue;
+      const isCA = feed.category === 'current-affairs' || feed.postType === 'current-affairs';
 
       // §6 dedup — canonical match (deterministic key → title fallback + hard-fact confirm)
-      const facts = normalizeFacts({ title, body: `${desc} ${body}`, sourceUrl: link || feed.url, sourceName: feed.name, sourcePriority: feed.priority || 2, sourceType: feed.type });
-      const match = findCanonical(facts, [...posts, ...drafts]);
+      // CA dedup: same event multiple sources → one event. Type-guard: CA कधीच recruitment
+      // record मध्ये merge नाही (आणि उलटही नाही) — false recruitment conversion टाळा.
+      const facts = normalizeFacts({ title, body: `${desc} ${body}`, sourceUrl: link || feed.url, sourceName: feed.name, sourcePriority: feed.priority || 2, sourceType: feed.type, isRecruitment: !isCA });
+      const pool = [...posts, ...drafts].filter(r => isCA ? r.type === 'current-affairs' : r.type === 'recruitment');
+      const match = findCanonical(facts, pool);
       if (match) {
         const rec = match.record;
         if (rec.status === 'ai-generated' || rec.status === 'under-review') {
@@ -289,7 +299,8 @@ for (const feed of (site.feeds || [])) {
       existingTitles.add(normTitle(title));
       if (link) existingLinks.add(link);
       added++;
-      console.log(`  NEW: ${title}`);
+      // Daily CA → collection-only internal record; review queue मध्ये नाही (weekly/monthly हेच publish formats).
+      console.log(`  NEW: ${title}${isCA ? ' [CA daily → collection-only]' : ''}`);
     }
   } catch (e) {
     // Failure isolation: एक feed fail झाला तरी बाकी चालू
@@ -301,12 +312,14 @@ if (drafts.length || updateQueue.length) {
   // Drafts → data/posts (status: ai-generated → generator render करणार नाही)
   for (const d of drafts) writeJson(`data/posts/${d.id}.json`, d);
   // Review queue (+ §18 update candidates)
+  // Daily CA collection-only records → review queue मध्ये नाही (internal collection; weekly/monthly हेच publish formats).
+  const reviewable = drafts.filter(d => !(d.type === 'current-affairs' && d.collectionOnly));
   const queuePath = 'data/review-queue.json';
   const queue = fs.existsSync(path.join(root, queuePath)) ? read(queuePath) : [];
-  queue.push(...drafts.map(d => ({ id: d.id, title: d.title, confidence: d.confidence, addedAt: d.lastUpdatedAt })));
+  queue.push(...reviewable.map(d => ({ id: d.id, title: d.title, confidence: d.confidence, addedAt: d.lastUpdatedAt })));
   queue.push(...updateQueue);
   writeJson(queuePath, queue);
-  console.log(`\nmonitor.mjs: ${drafts.length} draft(s) + ${updateQueue.length} update-candidate(s) — review-queue मध्ये पाठवले (human approval हवी)`);
+  console.log(`\nmonitor.mjs: ${drafts.length} draft(s) (${reviewable.length} reviewable, ${drafts.length - reviewable.length} CA collection-only) + ${updateQueue.length} update-candidate(s) — review-queue मध्ये पाठवले (human approval हवी)`);
 } else {
   console.log('\nmonitor.mjs: कोणती नवीन notification नाही');
 }

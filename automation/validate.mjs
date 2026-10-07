@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-import { FAKE_URGENCY_RE, PLACEHOLDER_RE, classifyUrl } from './verify-official.mjs'; // docs/05 §6 — §21 quality gate
+import { FAKE_URGENCY_RE, PLACEHOLDER_RE, classifyUrl, recordVerification } from './verify-official.mjs'; // docs/05 §6 — §21 quality gate
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dir = path.join(root, 'data', 'posts');
@@ -58,6 +58,39 @@ for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
   if (FAKE_URGENCY_RE.test(visible)) issues.push('fake urgency language (§21)');
   if (PLACEHOLDER_RE.test(visible)) issues.push('placeholder/inferred language (§4/§21)');
   if (/\bundefined\b|\bnull\b/.test(visible)) issues.push('visible null/undefined content (§21)');
+
+  // ---------- Strict rules (master task): CA ≠ recruitment; third-party-only ≠ verified ----------
+  // Legacy scope: जुने published/draft records flag होऊ शकतात पण build-safe राहतात;
+  // हे gates प्रामुख्याने नवीन records + review/approve path साठी आहेत.
+  const STRICT_CUTOFF = '2026-10-07';
+  const isNew = String(rec.lastUpdatedAt || rec.publishedAt || '') >= STRICT_CUTOFF;
+  const RECRUIT_WORD_RE = /(भरती|भर्ती|recruitment|vacanc\w*|जागा|vacancies)/i;
+  if (rec.type === 'current-affairs' && isNew) {
+    // CA record मध्ये recruitment wording/vacancy/apply-link कधीच नाही.
+    const r = rec.recruitment || {};
+    if (Number.isFinite(r.vacancies)) issues.push('current-affairs must never carry vacancies (generic number ≠ vacancy)');
+    if ((r.postNames || []).length) issues.push('current-affairs must never carry postNames');
+    if (RECRUIT_WORD_RE.test(`${rec.title || ''} ${(rec.content && rec.content.shortDesc) || ''}`)) issues.push('current-affairs title/shortDesc carries recruitment wording');
+    if (rec.links && (rec.links.applyUrl || rec.links.officialUrl)) issues.push('current-affairs must not carry applyUrl/officialUrl');
+    // Daily CA → future publication नाही; फक्त weekly/monthly roundup publish formats.
+    if (rec.kind === 'daily' && !rec.collectionOnly && (rec.status === 'published' || rec.status === 'updated')) {
+      issues.push('daily current-affairs must not be published (weekly/monthly only; daily = internal collection)');
+    }
+  }
+  if (rec.type === 'recruitment' && isNew) {
+    // Third-party-only → official verification नाही → published/updated स्थितीत राहू नये.
+    const v = recordVerification(rec);
+    if (v.thirdPartyOnly && (rec.status === 'published' || rec.status === 'updated')) {
+      issues.push('third-party-only recruitment must not be published without official verification (L1/L2 required)');
+    }
+    if (!v.officialVerified && (rec.status === 'published' || rec.status === 'updated') && !(rec.provenance && rec.provenance.verifiedAt)) {
+      issues.push('recruitment published without official verification (provenance.verifiedAt or L1/L2 source required)');
+    }
+    // verify-official शिवाय officialVerified=true claim करू नये.
+    if (rec.provenance && rec.provenance.verifiedAt && !v.officialVerified) {
+      issues.push('provenance.verifiedAt set but no L1/L2 source present (verification claim unsupported)');
+    }
+  }
 
   // Type-specific checks
   if (rec.type === 'syllabus' && (!rec.syllabus || !Array.isArray(rec.syllabus.subjects) || !rec.syllabus.subjects.length)) {
