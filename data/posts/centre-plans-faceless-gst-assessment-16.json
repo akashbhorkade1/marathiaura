@@ -1,0 +1,93 @@
+{
+  "id": "centre-plans-faceless-gst-assessment-16",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-07",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "केंद्र सरकारची फेसलेस जीएसटी मूल्यांकन भरती — 16 जागा",
+  "slug": "centre-plans-faceless-gst-assessment-16",
+  "path": "/current-affairs/centre-plans-faceless-gst-assessment-16/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": 16,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-07",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/centre-plans-faceless-gst-assessment/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "केंद्र सरकारने 7 ऑक्टोबर 2026 रोजी फेसलेस जीएसटी मूल्यांकन प्रणाली सुरू करण्याची योजना आखली आहे. ही माहिती चालू घडामोडी 2026-2027 च्या संदर्भात उपलब्ध आहे.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "केंद्र सरकारने 7 ऑक्टोबर 2026 रोजी फेसलेस जीएसटी मूल्यांकन प्रणाली सुरू करण्याची योजना आखली आहे. ही माहिती चालू घडामोडी 2026-2027 च्या संदर्भात उपलब्ध आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/centre-plans-faceless-gst-assessment/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-07T05:16:02.851Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/centre-plans-faceless-gst-assessment/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-07T05:16:02.851Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-07T05:16:30.402Z",
+  "contentHash": "c5fbbd3a8bd1f7ab47bd2928aa1969049af3d8ff4b70a5062d43f6950be1b26e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Centre Plans Faceless GST Assessment भरती — 16 जागा",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/centre-plans-faceless-gst-assessment-16.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-07T05:16:30.402Z"
+}
