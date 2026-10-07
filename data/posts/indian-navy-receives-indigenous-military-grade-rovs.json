@@ -1,0 +1,93 @@
+{
+  "id": "indian-navy-receives-indigenous-military-grade-rovs",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-07",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Indian Navy Receives Indigenous Military-Grade ROVs",
+  "slug": "indian-navy-receives-indigenous-military-grade-rovs",
+  "path": "/current-affairs/indian-navy-receives-indigenous-military-grade-rovs/",
+  "category": "defence",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/indian-navy-receives-indigenous-military-grade-rovs/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home Indian Navy Receives Indigenous Military-Grade ROVs Indian Navy Receives Indigenous Military-Grade ROVs October 7, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home Indian Navy Receives Indigenous Military-Grade ROVs Indian Navy Receives Indigenous Military-Grade ROVs October 7, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/indian-navy-receives-indigenous-military-grade-rovs/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-07T22:55:56.132Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/indian-navy-receives-indigenous-military-grade-rovs/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-07T22:55:56.132Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-07T22:55:56.132Z",
+  "contentHash": "733b9bcd98e304cdfec72531185cb919edd635e4123ceac98c89e0964a59569f",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Indian Navy Receives Indigenous Military-Grade ROVs",
+      "defence",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/indian-navy-receives-indigenous-military-grade-rovs.svg",
+    "index": false
+  }
+}
