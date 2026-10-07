@@ -1,0 +1,96 @@
+{
+  "id": "current-affairs-7-october-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "date": "2026-10-07",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "चालू घडामोडी - ७ ऑक्टोबर २०२६",
+  "slug": "current-affairs-7-october-2026-gk-now",
+  "path": "/current-affairs/7-october-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": "अधिकृत जाहिरातीत नमूद",
+    "qualification": [
+      "SSC",
+      "diploma"
+    ],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": "भारत",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": "2026-10-31",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-7-october-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "७ ऑक्टोबर २०२६ च्या महत्त्वाच्या चालू घडामोडी. अधिकृत सार्वजनिक स्रोतांकडून संकलित केलेल्या या दैनंदिन बातम्या UPSC, SSC, UPSSC, संरक्षण आणि पोलीस स्पर्धा परीक्षांच्या तयारीसाठी अत्यंत उपयुक्त आहेत.",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "शासनाने एअर मार्शल आशुतोष दीक्षित यांची हवाई दल प्रमुख (CAS) म्हणून नियुक्ती केली आहे."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-7-october-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-07T05:16:00.954Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKNow (Current Affairs)",
+    "sourceUrl": "https://gknow.in/current-affairs-7-october-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-07T05:16:00.954Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-07T05:16:14.837Z",
+  "contentHash": "dc1f35d8efd28c605d52d8e6393fc5be0b76c2ba84f8367785b78cfcce78103b",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 7 October 2026 - GK Now भरती",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-7-october-2026-gk-now.svg",
+    "index": false
+  },
+  "aiRewritten": true,
+  "aiRewrittenAt": "2026-10-07T05:16:14.837Z"
+}
