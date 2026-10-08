@@ -1,0 +1,93 @@
+{
+  "id": "us-bill-proposes-higher-fines-for-h-1b-visa-violations",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-08",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "US Bill Proposes Higher Fines for H-1B Visa Violations",
+  "slug": "us-bill-proposes-higher-fines-for-h-1b-visa-violations",
+  "path": "/current-affairs/us-bill-proposes-higher-fines-for-h-1b-visa-violations/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/us-bill-proposes-higher-fines-for-h-1b-visa-violations/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home US Bill Proposes Higher Fines for H-1B Visa Violations US Bill Proposes Higher Fines for H-1B Visa Violations October 8, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).p",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home US Bill Proposes Higher Fines for H-1B Visa Violations US Bill Proposes Higher Fines for H-1B Visa Violations October 8, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).p"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/us-bill-proposes-higher-fines-for-h-1b-visa-violations/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-08T23:08:25.572Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/us-bill-proposes-higher-fines-for-h-1b-visa-violations/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-08T23:08:25.572Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-08T23:08:25.572Z",
+  "contentHash": "733d95ea033e44c7235fb525f88014849fd0223d17f9e79b6987ea8ea11bddf5",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "US Bill Proposes Higher Fines for H-1B Visa Violations",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/us-bill-proposes-higher-fines-for-h-1b-visa-violations.svg",
+    "index": false
+  }
+}
