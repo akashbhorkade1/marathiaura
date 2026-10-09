@@ -1,0 +1,93 @@
+{
+  "id": "endemic-wildlife-of-the-western-ghats",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-09",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Endemic Wildlife of the Western Ghats",
+  "slug": "endemic-wildlife-of-the-western-ghats",
+  "path": "/current-affairs/endemic-wildlife-of-the-western-ghats/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/endemic-wildlife-of-the-western-ghats/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home Endemic Wildlife of the Western Ghats Endemic Wildlife of the Western Ghats @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidd",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home Endemic Wildlife of the Western Ghats Endemic Wildlife of the Western Ghats @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidd"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/endemic-wildlife-of-the-western-ghats/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-09T22:28:04.715Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/endemic-wildlife-of-the-western-ghats/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-09T22:28:04.715Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-09T22:28:04.715Z",
+  "contentHash": "0fba2f3d5e4c517c4dd623e7d86557b2f4bd19cfde87afdf131001363c266141",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Endemic Wildlife of the Western Ghats",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/endemic-wildlife-of-the-western-ghats.svg",
+    "index": false
+  }
+}
