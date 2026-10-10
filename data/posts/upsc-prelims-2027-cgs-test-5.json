@@ -1,0 +1,93 @@
+{
+  "id": "upsc-prelims-2027-cgs-test-5",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-10",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "UPSC Prelims 2027 CGS Test-5",
+  "slug": "upsc-prelims-2027-cgs-test-5",
+  "path": "/current-affairs/upsc-prelims-2027-cgs-test-5/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-5/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home UPSC Prelims 2027 CGS Test-5 UPSC Prelims 2027 CGS Test-5 /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max-width: 100%; margin-bottom: 20px; } /* Target ALL possible WordPress oEm",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home UPSC Prelims 2027 CGS Test-5 UPSC Prelims 2027 CGS Test-5 /* Ensure middle column never overflows */ .column.middle-column { max-width: 100%; overflow-x: hidden; } /* Video container */ .post-video-embed { width: 100%; max-width: 100%; margin-bottom: 20px; } /* Target ALL possible WordPress oEm"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-5/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-10T21:24:16.525Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/upsc-prelims-2027-cgs-test-5/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-10T21:24:16.525Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-10T21:24:16.525Z",
+  "contentHash": "53c3f9669b67cb467803956462856f6a68367b506f536b86836ec001bf427c8d",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "UPSC Prelims 2027 CGS Test-5",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/upsc-prelims-2027-cgs-test-5.svg",
+    "index": false
+  }
+}
