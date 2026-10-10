@@ -1,0 +1,93 @@
+{
+  "id": "current-affairs-10-october-2026-gk-now",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-10",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Current Affairs - 10 October 2026 - GK Now",
+  "slug": "current-affairs-10-october-2026-gk-now",
+  "path": "/current-affairs/10-october-2026-gk-now/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKNow (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://gknow.in/current-affairs-10-october-2026/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Today Current Affairs 10 October 2026 &#8211; Compiled from official public sources. Daily important news useful for preparation of UPSC, SSC, UPSSC, Defence and Police competitive exams. Awards and Honors South Africa’s Navanethem ‘Navi’ Pillay wins 2026 Nobel Peace Prize On 9 October 2026, South A",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Today Current Affairs 10 October 2026 &#8211; Compiled from official public sources. Daily important news useful for preparation of UPSC, SSC, UPSSC, Defence and Police competitive exams. Awards and Honors South Africa’s Navanethem ‘Navi’ Pillay wins 2026 Nobel Peace Prize On 9 October 2026, South A"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://gknow.in/current-affairs-10-october-2026/",
+      "name": "GKNow (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-10T05:13:06.528Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKNow (Current Affairs)",
+    "sourceUrl": "https://gknow.in/current-affairs-10-october-2026/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-10T05:13:06.528Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-10T05:13:06.528Z",
+  "contentHash": "2713ffdf9b55a8afb15254bacd962a55a3fb9560e3a13bd3ea5fb853b7dd19a6",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Current Affairs - 10 October 2026 - GK Now",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/current-affairs-10-october-2026-gk-now.svg",
+    "index": false
+  }
+}
