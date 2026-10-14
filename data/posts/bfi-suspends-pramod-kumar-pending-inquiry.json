@@ -1,0 +1,93 @@
+{
+  "id": "bfi-suspends-pramod-kumar-pending-inquiry",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-14",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "BFI Suspends Pramod Kumar Pending Inquiry",
+  "slug": "bfi-suspends-pramod-kumar-pending-inquiry",
+  "path": "/current-affairs/bfi-suspends-pramod-kumar-pending-inquiry/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/bfi-suspends-pramod-kumar-pending-inquiry/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home BFI Suspends Pramod Kumar Pending Inquiry BFI Suspends Pramod Kumar Pending Inquiry October 14, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home BFI Suspends Pramod Kumar Pending Inquiry BFI Suspends Pramod Kumar Pending Inquiry October 14, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/bfi-suspends-pramod-kumar-pending-inquiry/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-14T11:31:38.051Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/bfi-suspends-pramod-kumar-pending-inquiry/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-14T11:31:38.051Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-14T11:31:38.051Z",
+  "contentHash": "b03a1f38c0fc1a0844dd625258a0a2396a603bec2608b1c85bd955a5126e9229",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "BFI Suspends Pramod Kumar Pending Inquiry",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/bfi-suspends-pramod-kumar-pending-inquiry.svg",
+    "index": false
+  }
+}
