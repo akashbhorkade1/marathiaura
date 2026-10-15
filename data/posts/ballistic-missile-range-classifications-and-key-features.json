@@ -1,0 +1,93 @@
+{
+  "id": "ballistic-missile-range-classifications-and-key-features",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-15",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Ballistic Missile Range Classifications and Key Features",
+  "slug": "ballistic-missile-range-classifications-and-key-features",
+  "path": "/current-affairs/ballistic-missile-range-classifications-and-key-features/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/ballistic-missile-range-classifications-and-key-features/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home Ballistic Missile Range Classifications and Key Features Ballistic Missile Range Classifications and Key Features @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-colu",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home Ballistic Missile Range Classifications and Key Features Ballistic Missile Range Classifications and Key Features @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-colu"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/ballistic-missile-range-classifications-and-key-features/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-15T21:08:23.317Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/ballistic-missile-range-classifications-and-key-features/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-15T21:08:23.317Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-15T21:08:23.317Z",
+  "contentHash": "38436b63be0df613841045cf314315f66efbe0af4065752cc1af1ab6adeaa081",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Ballistic Missile Range Classifications and Key Features",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/ballistic-missile-range-classifications-and-key-features.svg",
+    "index": false
+  }
+}
