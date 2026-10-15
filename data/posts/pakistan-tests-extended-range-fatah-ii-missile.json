@@ -1,0 +1,93 @@
+{
+  "id": "pakistan-tests-extended-range-fatah-ii-missile",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-15",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Pakistan Tests Extended-Range Fatah-II Missile",
+  "slug": "pakistan-tests-extended-range-fatah-ii-missile",
+  "path": "/current-affairs/pakistan-tests-extended-range-fatah-ii-missile/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/pakistan-tests-extended-range-fatah-ii-missile/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home Pakistan Tests Extended-Range Fatah-II Missile Pakistan Tests Extended-Range Fatah-II Missile October 15, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ens",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home Pakistan Tests Extended-Range Fatah-II Missile Pakistan Tests Extended-Range Fatah-II Missile October 15, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ens"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/pakistan-tests-extended-range-fatah-ii-missile/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-15T11:08:59.168Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/pakistan-tests-extended-range-fatah-ii-missile/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-15T11:08:59.168Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-15T11:08:59.168Z",
+  "contentHash": "5078a7d75d43ba3bcb0fa1209515bea7e737bc77be41f6adf3fffb62f6fcb11e",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Pakistan Tests Extended-Range Fatah-II Missile",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/pakistan-tests-extended-range-fatah-ii-missile.svg",
+    "index": false
+  }
+}
