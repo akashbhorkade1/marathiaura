@@ -78,7 +78,7 @@
   "status": "published",
   "confidence": 85,
   "publishedAt": "2026-09-27T18:09:32.239Z",
-  "lastUpdatedAt": "2026-09-27T18:09:32.239Z",
+  "lastUpdatedAt": "2026-10-19T08:21:53.076Z",
   "contentHash": "9835b5053937a690c38318ddad9eefaa66a4a71fcd9dfcfe412ea8f421a2c3db",
   "updates": [
     {
@@ -596,5 +596,13 @@
         "a": "JMGS-I साठी ₹1 लाख, MMGS-II साठी ₹2 लाख आणि MMGS-III व वरील पदांसाठी ₹3 लाख सुरक्षा ठेव असून ती 3 वर्षांनंतर परत मिळते."
       }
     ]
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/bank-of-india-specialist-officer-bharti-2026-205-posts.caption.txt",
+      "imagePath": "/assets/social/bank-of-india-specialist-officer-bharti-2026-205-posts.svg",
+      "updatedAt": "2026-10-19T08:21:53.076Z"
+    }
   }
 }

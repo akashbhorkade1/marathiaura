@@ -283,7 +283,7 @@
   "department": "केंद्रीय राखीव पोलीस दल (CRPF) — गृह मंत्रालय",
   "exam": null,
   "id": "crpf-sports-quota-bharti-2026-521-posts",
-  "lastUpdatedAt": "2026-09-23T14:21:56.224Z",
+  "lastUpdatedAt": "2026-10-19T08:21:53.077Z",
   "links": {
     "applyUrl": "https://rect.crpf.gov.in/",
     "notificationUrl": "https://rect.crpf.gov.in/Upload/Recruitment/Meritorious_Sportspersons_315092026-672.pdf",
@@ -363,5 +363,13 @@
   "title": "CRPF Sports Quota भरती 2026: हेड कॉन्स्टेबल व कॉन्स्टेबल GD — 521 जागा",
   "type": "recruitment",
   "updates": [],
-  "contentHash": "f59d0d03e8d2d8dc4009f1b87983ee2b4df9ecfed7d21c7b05888f8cf11f738b"
+  "contentHash": "f59d0d03e8d2d8dc4009f1b87983ee2b4df9ecfed7d21c7b05888f8cf11f738b",
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/crpf-sports-quota-bharti-2026-521-posts.caption.txt",
+      "imagePath": "/assets/social/crpf-sports-quota-bharti-2026-521-posts.svg",
+      "updatedAt": "2026-10-19T08:21:53.077Z"
+    }
+  }
 }

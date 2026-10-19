@@ -373,7 +373,7 @@
   "status": "published",
   "confidence": 90,
   "publishedAt": "2026-10-19T00:00:00.000Z",
-  "lastUpdatedAt": "2026-10-19T00:00:00.000Z",
+  "lastUpdatedAt": "2026-10-19T08:21:53.077Z",
   "contentHash": "fe3f6263af59f66179809b4fa92d09c6a813b9fa8e9f7cd513b91709d0dd21ba",
   "updates": [
     {
@@ -404,5 +404,13 @@
     "verifiedAt": "2026-10-19T00:00:00.000Z",
     "verifiedBy": "human-review",
     "note": "Advt 2026/01 व शेवटची तारीख 15.11.2026 cwceportal.com/Careers वर थेट पडताळली"
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/cwc-recruitment-2026-327-posts.caption.txt",
+      "imagePath": "/assets/social/cwc-recruitment-2026-327-posts.svg",
+      "updatedAt": "2026-10-19T08:21:53.077Z"
+    }
   }
 }

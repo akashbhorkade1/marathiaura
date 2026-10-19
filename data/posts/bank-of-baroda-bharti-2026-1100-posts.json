@@ -92,7 +92,7 @@
   "status": "published",
   "confidence": 90,
   "publishedAt": "2026-09-29T05:00:00.000Z",
-  "lastUpdatedAt": "2026-09-29T05:00:00.000Z",
+  "lastUpdatedAt": "2026-10-19T08:21:53.069Z",
   "contentHash": "5d7770133767981520fdb1b6ec419e5b371404990b3b710ae4f3733ff5476274",
   "updates": [
     {
@@ -117,5 +117,13 @@
     "index": true
   },
   "aiRewritten": true,
-  "aiRewrittenAt": "2026-09-07T08:26:15.869Z"
+  "aiRewrittenAt": "2026-09-07T08:26:15.869Z",
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/bank-of-baroda-bharti-2026-1100-posts.caption.txt",
+      "imagePath": "/assets/social/bank-of-baroda-bharti-2026-1100-posts.svg",
+      "updatedAt": "2026-10-19T08:21:53.069Z"
+    }
+  }
 }

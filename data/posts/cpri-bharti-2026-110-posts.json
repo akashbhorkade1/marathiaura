@@ -88,7 +88,7 @@
   "status": "published",
   "confidence": 90,
   "publishedAt": "2026-09-29T04:15:00.000Z",
-  "lastUpdatedAt": "2026-09-29T04:15:00.000Z",
+  "lastUpdatedAt": "2026-10-19T08:21:53.077Z",
   "contentHash": "91a3a3690385a92abf104219b4f6e444ad08f44082600120c73e7ce857f657fb",
   "updates": [
     {
@@ -291,5 +291,13 @@
         "a": "MTS Gr.1 ची सर्व पदे माजी सैनिकांसाठी राखीव; Attendant व Assistant मध्येही काही पदे राखीव."
       }
     ]
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/cpri-bharti-2026-110-posts.caption.txt",
+      "imagePath": "/assets/social/cpri-bharti-2026-110-posts.svg",
+      "updatedAt": "2026-10-19T08:21:53.077Z"
+    }
   }
 }
