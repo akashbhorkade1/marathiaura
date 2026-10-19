@@ -7,8 +7,7 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  actions: write
 
 jobs:
   update:
@@ -50,4 +49,6 @@ jobs:
           fi
       - name: Trigger Pages deploy after successful source update
         if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run deploy.yml --ref main
