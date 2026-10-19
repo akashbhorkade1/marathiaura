@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update:
@@ -46,3 +48,6 @@ jobs:
             git commit -m "auto: monitor drafts + sitemap refresh (build)"
             git push
           fi
+      - name: Trigger Pages deploy after successful source update
+        if: success()
+        run: gh workflow run deploy.yml --ref main
