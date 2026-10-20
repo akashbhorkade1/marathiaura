@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350">
+<defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0c447c"/><stop offset="100%" style="stop-color:#2074b8"/></linearGradient></defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<rect width="1080" height="10" fill="#ff6f00"/>
+<text x="80" y="150" font-family="Arial,sans-serif" font-size="44" fill="#ff6f00" font-weight="bold">MarathiAura</text>
+<text x="80" y="210" font-family="Arial,sans-serif" font-size="30" fill="#dce8f5">सरकारी भरती</text>
+<rect x="80" y="250" width="120" height="5" fill="#ff6f00"/>
+<text x="80" y="470" font-family="Arial,sans-serif" font-size="56" fill="#ffffff" font-weight="bold">SDSC SHAR भरती 2026:</text>
+<text x="80" y="544" font-family="Arial,sans-serif" font-size="56" fill="#ffffff" font-weight="bold">तांत्रिक सहाय्यक,</text>
+<text x="80" y="618" font-family="Arial,sans-serif" font-size="56" fill="#ffffff" font-weight="bold">तंत्रज्ञ, ड्रायव्हर व</text>
+<text x="80" y="692" font-family="Arial,sans-serif" font-size="56" fill="#ffffff" font-weight="bold">इतर पदे — जाहिरात</text>
+<text x="80" y="880" font-family="Arial,sans-serif" font-size="38" fill="#ffe0b2">💼 Technical Assistant</text>
+<text x="80" y="942" font-family="Arial,sans-serif" font-size="38" fill="#ffe0b2">📅 शेवटची तारीख: 9 नोव्हेंबर 2026</text>
+<text x="80" y="1004" font-family="Arial,sans-serif" font-size="38" fill="#ffe0b2">🎓 Technical Assistant: First Class Diploma in relevant enginee</text>
+<rect x="80" y="1150" width="920" height="2" fill="#ff6f00" opacity="0.6"/>
+<text x="80" y="1210" font-family="Arial,sans-serif" font-size="34" fill="#ffffff">marathiaura.in</text>
+<text x="80" y="1260" font-family="Arial,sans-serif" font-size="28" fill="#a8c8e8">📲 मित्रांना शेअर करा</text>
+</svg>
