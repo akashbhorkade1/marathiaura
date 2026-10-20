@@ -1,0 +1,93 @@
+{
+  "id": "india-begins-red-list-assessment-of-1211-bird-species",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-20",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "India Begins Red List Assessment of 1,211 Bird Species",
+  "slug": "india-begins-red-list-assessment-of-1211-bird-species",
+  "path": "/current-affairs/india-begins-red-list-assessment-of-1211-bird-species/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/india-begins-red-list-assessment-of-1211-bird-species/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home India Begins Red List Assessment of 1,211 Bird Species India Begins Red List Assessment of 1,211 Bird Species October 20, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home India Begins Red List Assessment of 1,211 Bird Species India Begins Red List Assessment of 1,211 Bird Species October 20, 2026 Current Affairs Today - Latest Current Affairs - 2026-2027 @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || [])."
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/india-begins-red-list-assessment-of-1211-bird-species/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-20T04:15:53.827Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/india-begins-red-list-assessment-of-1211-bird-species/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-20T04:15:53.827Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-20T04:15:53.827Z",
+  "contentHash": "771578e9018db064983a05424435648c6cfad074ac7ecada75b8f8ca89c549e9",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "India Begins Red List Assessment of 1,211 Bird Species",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/india-begins-red-list-assessment-of-1211-bird-species.svg",
+    "index": false
+  }
+}
