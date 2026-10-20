@@ -1,16 +1,41 @@
 // Social helpers — Instagram eligibility + deterministic caption + hashtags.
 // फक्त published + indexable articles. Draft/under-review/archived/noindex → not eligible.
 // Duplicate protection: social.instagram.status === 'published' → skip.
+// 'ready' / 'failed' → re-eligible (stuck in generate phase or earlier publish failure).
 import { safeText } from './lib.mjs';
 
 export const SHARE_CTA = '📲 मित्रांना शेअर करा';
 
-export function socialEligibility(post) {
+const DAY_MS = 86400000;
+// IST calendar day (YYYY-MM-DD) — production dates are IST YYYY-MM-DD, so comparisons use IST days.
+const istToday = (now = Date.now()) => new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit'
+}).format(new Date(now));
+
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+export function socialEligibility(post, now = Date.now()) {
   if (!post) return { eligible: false, reason: 'missing post' };
   if (post.status !== 'published') return { eligible: false, reason: `status=${post.status}` };
   if (!post.seo || post.seo.index !== true) return { eligible: false, reason: 'noindex' };
   const st = post.social && post.social.instagram && post.social.instagram.status;
-  if (st === 'published' || st === 'ready') return { eligible: false, reason: 'already posted/ready' };
+  if (st === 'published') return { eligible: false, reason: 'already published' };
+  // 'ready' (deploy-pending) and 'failed' (retry) are re-eligible; never skip them as "already posted".
+
+  // Recruitment expiry: applicationEnd आजच्या आधीची असेल → reject.
+  // Missing / invalid deadline → आपोऊ active न समजता skip + review reason नोंदवा.
+  if (post.type === 'recruitment') {
+    const d = post.dates || {};
+    const appEnd = d.applicationEnd;
+    if (!appEnd || !DATE_RE.test(appEnd)) {
+      return { eligible: false, reason: 'recruitment-missing-or-invalid-deadline', review: 'no verifiable applicationEnd date' };
+    }
+    const today = istToday(now);
+    if (today > appEnd) {
+      return { eligible: false, reason: 'recruitment-expired', review: `applicationEnd ${appEnd} is in the past (IST today=${today})` };
+    }
+  }
+
   return { eligible: true, reason: 'published+indexable+fresh' };
 }
 

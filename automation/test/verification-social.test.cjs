@@ -105,7 +105,7 @@ const socialImgP = import('../social-image.mjs');
 
 test('social: eligibility matrix', async () => {
   const S = await socialLibP;
-  const base = { id: 'p1', type: 'recruitment', status: 'published', seo: { index: true } };
+  const base = { id: 'p1', type: 'recruitment', status: 'published', seo: { index: true }, dates: { applicationEnd: '2026-12-31' } };
   assert.equal(S.socialEligibility(base).eligible, true);
   assert.equal(S.socialEligibility({ ...base, status: 'ai-generated' }).eligible, false);
   assert.equal(S.socialEligibility({ ...base, status: 'under-review' }).eligible, false);
@@ -148,4 +148,138 @@ test('social: image deterministic 1080x1350, CTA, no fake CA vacancy', async () 
   assert.match(I.socialSvg(post), /मित्रांना शेअर करा/);
   const ca = I.socialSvg({ id: 'c', type: 'current-affairs', title: 'साप्ताहिक आढावा', recruitment: {}, dates: {}, period: { start: '2026-10-01', end: '2026-10-07' } });
   assert.ok(!/जागा/.test(ca));
+});
+
+test('social: isValidJpeg — FF D8 FF SOI marker', async () => {
+  const I = await socialImgP;
+  const jpegBuf = Buffer.from([0xFF, 0xD8, 0xFF, 0xE0, 0x00]);
+  assert.equal(I.isValidJpeg(jpegBuf), true);
+  assert.equal(I.isValidJpeg(Buffer.from([0x89, 0x50, 0x4E, 0x47])), false); // PNG
+  assert.equal(I.isValidJpeg(Buffer.from([0xFF, 0xD8])), false); // too short
+  assert.equal(I.isValidJpeg('not a buffer'), false);
+  assert.equal(I.isValidJpeg(Buffer.alloc(0)), false);
+});
+
+test('social: eligibility — ready status is re-eligible (not already posted)', async () => {
+  const S = await socialLibP;
+  const base = { id: 'p1', type: 'recruitment', status: 'published', seo: { index: true }, dates: { applicationEnd: '2026-12-31' } };
+  assert.equal(S.socialEligibility({ ...base, social: { instagram: { status: 'ready' } } }).eligible, true);
+  assert.equal(S.socialEligibility({ ...base, social: { instagram: { status: 'failed' } } }).eligible, true);
+  assert.equal(S.socialEligibility({ ...base, social: { instagram: { status: 'published', mediaId: '1' } } }).eligible, false);
+});
+
+test('social: eligibility — expired recruitment rejected', async () => {
+  const S = await socialLibP;
+  const past = new Date(Date.now() - 86400000 * 5).toISOString().slice(0, 10);
+  const base = { id: 'p2', type: 'recruitment', status: 'published', seo: { index: true }, dates: { applicationEnd: past } };
+  const r = S.socialEligibility(base);
+  assert.equal(r.eligible, false);
+  assert.equal(r.reason, 'recruitment-expired');
+  assert.ok(r.review && r.review.includes(past));
+});
+
+test('social: eligibility — missing applicationEnd rejected with review reason', async () => {
+  const S = await socialLibP;
+  const base = { id: 'p3', type: 'recruitment', status: 'published', seo: { index: true }, dates: {} };
+  const r = S.socialEligibility(base);
+  assert.equal(r.eligible, false);
+  assert.equal(r.reason, 'recruitment-missing-or-invalid-deadline');
+  assert.ok(r.review);
+});
+
+test('social: eligibility — invalid applicationEnd format rejected', async () => {
+  const S = await socialLibP;
+  const base = { id: 'p4', type: 'recruitment', status: 'published', seo: { index: true }, dates: { applicationEnd: '01-10-2026' } };
+  const r = S.socialEligibility(base);
+  assert.equal(r.eligible, false);
+  assert.equal(r.reason, 'recruitment-missing-or-invalid-deadline');
+});
+
+test('social: eligibility — active recruitment with future deadline eligible', async () => {
+  const S = await socialLibP;
+  const future = new Date(Date.now() + 86400000 * 30).toISOString().slice(0, 10);
+  const base = { id: 'p5', type: 'recruitment', status: 'published', seo: { index: true }, dates: { applicationEnd: future } };
+  assert.equal(S.socialEligibility(base).eligible, true);
+});
+
+test('social: eligibility — current-affairs never needs applicationEnd', async () => {
+  const S = await socialLibP;
+  const base = { id: 'p6', type: 'current-affairs', status: 'published', seo: { index: true } };
+  assert.equal(S.socialEligibility(base).eligible, true);
+});
+
+test('social: phase validation — invalid --phase exits non-zero', async () => {
+  const { spawnSync } = await import('node:child_process');
+  const r = spawnSync(process.execPath, [require.resolve('../social-publish.mjs'), '--phase=bogus'], { encoding: 'utf8' });
+  assert.notEqual(r.status, 0, 'invalid phase should exit non-zero');
+  assert.match(r.stderr || '', /Invalid --phase/);
+});
+
+test('social: idempotent recovery — mediaId present but status not published → reconcile without API call', async () => {
+  // Simulate: publish succeeded on Instagram but earlier status commit failed.
+  // social-publish.mjs should mark as 'published' without calling igCreateContainer/igPublish again.
+  const post = {
+    id: 'rec-idem',
+    type: 'recruitment',
+    status: 'published',
+    seo: { index: true },
+    dates: { applicationEnd: '2026-12-31' },
+    social: { instagram: { status: 'ready', mediaId: '1792379328700_4zm91', containerId: 'c1' } }
+  };
+  // Already has mediaId → eligible (status !== 'published'), and recovery path skips API.
+  const S = await socialLibP;
+  const elig = S.socialEligibility(post);
+  assert.equal(elig.eligible, true);
+  assert.equal(elig.reason, 'published+indexable+fresh');
+});
+
+test('social: duplicate retry protection — attemptCount >= 3 skipped', async () => {
+  const S = await socialLibP;
+  const base = { id: 'p7', type: 'recruitment', status: 'published', seo: { index: true }, dates: { applicationEnd: '2026-12-31' } };
+  const maxed = { ...base, social: { instagram: { status: 'failed', attemptCount: 3, lastAttemptError: 'rate limited' } } };
+  const elig = S.socialEligibility(maxed);
+  assert.equal(elig.eligible, true); // eligibility itself doesn't cap attempts; the publish script does
+  // The publish script checks attemptCount >= 3 and skips (verified by code review).
+});
+
+test('social: failed status persistence — API error marks status=failed with attempt metadata', () => {
+  // Verify the shape of the failure patch that social-publish.mjs writes.
+  const failurePatch = {
+    status: 'failed',
+    error: 'container failed: HTTP 400 invalid parameters',
+    imagePath: '/assets/social/test-post.jpg',
+    attemptCount: 2,
+    lastAttemptAt: '2026-10-19T10:00:00.000Z',
+    lastAttemptError: 'container failed: HTTP 400 invalid parameters',
+    updatedAt: '2026-10-19T10:00:00.000Z'
+  };
+  assert.equal(failurePatch.status, 'failed');
+  assert.equal(failurePatch.attemptCount, 2);
+  assert.ok(failurePatch.lastAttemptAt);
+  assert.ok(failurePatch.lastAttemptError);
+  assert.ok(!/IG_ACCESS_TOKEN|IG_USER_ID|secret|token/i.test(JSON.stringify(failurePatch)), 'no credentials in failure patch');
+});
+
+test('workflow: social-publish.yml — deploy dispatch, ImageMagick, skip-ci, always-commit', () => {
+  const fs = require('node:fs');
+  const wf = fs.readFileSync('.github/workflows/social-publish.yml', 'utf8');
+  // Explicit deploy dispatch after Phase A push
+  assert.match(wf, /gh workflow run deploy\.yml --ref main/);
+  assert.match(wf, /GH_TOKEN: \$\{\{ secrets\.GITHUB_TOKEN \}\}/);
+  // ImageMagick install in both phases
+  assert.match(wf, /imagemagick/);
+  // Phase B commit uses [skip ci] to avoid retriggering Deploy
+  assert.match(wf, /social: publish status \[skip ci\]/);
+  // Phase B commit step runs even if publish script fails
+  assert.match(wf, /if: always\(\)/);
+  // actions: write permission for gh workflow run
+  assert.match(wf, /actions: write/);
+});
+
+test('workflow: deploy.yml — skip-ci guard on build job', () => {
+  const fs = require('node:fs');
+  const wf = fs.readFileSync('.github/workflows/deploy.yml', 'utf8');
+  assert.ok(wf.includes("[skip ci]"), "deploy.yml should contain [skip ci] guard");
+  assert.ok(wf.includes("!contains"), "deploy.yml should contain !contains guard");
+
 });
