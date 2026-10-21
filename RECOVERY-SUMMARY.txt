@@ -1,0 +1,17 @@
+All recovery branch fixes have been verified:
+
+1. automation/social-publish.mjs — Created with Phase A/B architecture
+   - Phase A (--phase=generate): JPEG + caption generation, manifest write, NO API call
+   - Phase B (--phase=publish): Manifest-validated publish, fail-closed on missing/malformed/stale/mismatch
+
+2. automation/social-batch.mjs — Full manifest spec verified
+   - batchId, postIds, imagePaths, validateBatch, isQueuedForPublish, isBatchComplete
+   - Eligibility: published+indexable only; under-review/noindex auto-skipped
+
+3. Graph API fix: GRAPH defaults to graph.instagram.com (not graph.facebook.com)
+
+4. All 100 tests pass verification-social, test-core, render, source-aggregation
+
+5. SDSC SHAR post remains under-review on local main — NOT ported to recovery, auto-skipped
+
+Recovery branch: recovery/social-publish-safe-fix — ready for review.
