@@ -1,0 +1,93 @@
+{
+  "id": "major-zoonotic-diseases-and-their-modes-of-transmission",
+  "type": "current-affairs",
+  "kind": "daily",
+  "collectionOnly": true,
+  "date": "2026-10-22",
+  "items": [],
+  "itemSchema": "docs/02-DATA-SCHEMA.md §3 — { id, question, answer, explanation, category, importance, source, tags }",
+  "title": "Major Zoonotic Diseases and Their Modes of Transmission",
+  "slug": "major-zoonotic-diseases-and-their-modes-of-transmission",
+  "path": "/current-affairs/major-zoonotic-diseases-and-their-modes-of-transmission/",
+  "category": "current-affairs",
+  "exam": null,
+  "department": "GKToday (Current Affairs)",
+  "recruitment": {
+    "postNames": [],
+    "vacancies": null,
+    "vacanciesNote": null,
+    "qualification": [],
+    "ageLimit": null,
+    "salary": null,
+    "fee": null,
+    "applicationMode": null,
+    "location": null,
+    "jobType": null
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.gktoday.in/major-zoonotic-diseases-and-their-modes-of-transmission/",
+    "applyUrl": null,
+    "officialUrl": null
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "Home Major Zoonotic Diseases and Their Modes of Transmission Major Zoonotic Diseases and Their Modes of Transmission @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column",
+    "metaDescription": null,
+    "sections": [
+      {
+        "heading": "थोडक्यात",
+        "type": "text",
+        "body": "Home Major Zoonotic Diseases and Their Modes of Transmission Major Zoonotic Diseases and Their Modes of Transmission @media(max-width:767px){.gkt-responsive-ad-space{min-height:100vw}} (adsbygoogle = window.adsbygoogle || []).push({}); /* Ensure middle column never overflows */ .column.middle-column"
+      }
+    ],
+    "faqs": []
+  },
+  "sources": [
+    {
+      "url": "https://www.gktoday.in/major-zoonotic-diseases-and-their-modes-of-transmission/",
+      "name": "GKToday (Current Affairs)",
+      "priority": 3,
+      "role": "notification",
+      "verifiedAt": "2026-10-22T16:55:27.513Z"
+    }
+  ],
+  "provenance": {
+    "sourceName": "GKToday (Current Affairs)",
+    "sourceUrl": "https://www.gktoday.in/major-zoonotic-diseases-and-their-modes-of-transmission/",
+    "sourceType": "article-list",
+    "officialUrl": null,
+    "officialNotificationUrl": null,
+    "retrievedAt": "2026-10-22T16:55:27.513Z",
+    "verifiedAt": null,
+    "confidence": 85,
+    "contentHash": null,
+    "copySimilarity": 0,
+    "flags": []
+  },
+  "rewritePending": true,
+  "status": "ai-generated",
+  "confidence": 85,
+  "publishedAt": null,
+  "lastUpdatedAt": "2026-10-22T16:55:27.513Z",
+  "contentHash": "34fdfe52fe25af5be3741881d1ac5d165a4271a5929b3e819ba08237d4af0ccf",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "Major Zoonotic Diseases and Their Modes of Transmission",
+      "चालू घडामोडी",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/major-zoonotic-diseases-and-their-modes-of-transmission.svg",
+    "index": false
+  }
+}
