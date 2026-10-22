@@ -281,5 +281,130 @@ test('workflow: deploy.yml — skip-ci guard on build job', () => {
   const wf = fs.readFileSync('.github/workflows/deploy.yml', 'utf8');
   assert.ok(wf.includes("[skip ci]"), "deploy.yml should contain [skip ci] guard");
   assert.ok(wf.includes("!contains"), "deploy.yml should contain !contains guard");
+});
 
+/* ================= Batch identity & receipt linkage tests ================= */
+test('batch: createBatch generates exactly one batchId for all postIds', async () => {
+  const B = await import('../social-batch.mjs');
+  const m = B.createBatch({ postIds: ['post-1', 'post-2', 'post-3'], branch: 'main', sourceSha: 'abc1234' });
+  assert.equal(typeof m.batchId, 'string');
+  assert.ok(m.batchId.startsWith('batch-'));
+  assert.deepEqual(m.postIds, ['post-1', 'post-2', 'post-3']);
+  assert.equal(m.artifactsSha, 'abc1234');
+  assert.equal(m.deployRunId, null);
+});
+
+test('batch: createBatch with single postId produces valid manifest', async () => {
+  const B = await import('../social-batch.mjs');
+  const m = B.createBatch({ postIds: ['post-1'], branch: 'main', sourceSha: '' });
+  assert.equal(m.batchId.startsWith('batch-'), true);
+  assert.deepEqual(m.postIds, ['post-1']);
+  assert.equal(m.artifactsSha, '');
+});
+
+test('batch: parseBatch rejects missing batchId', async () => {
+  const B = await import('../social-batch.mjs');
+  const r = B.parseBatch(JSON.stringify({ schema: 1, branch: 'main', postIds: ['p1'] }));
+  assert.equal(r.ok, false);
+  assert.equal(r.reason, 'manifest-missing-batchId');
+});
+
+test('batch: parseBatch rejects missing branch', async () => {
+  const B = await import('../social-batch.mjs');
+  const r = B.parseBatch(JSON.stringify({ schema: 1, batchId: 'batch-x', postIds: ['p1'] }));
+  assert.equal(r.ok, false);
+  assert.equal(r.reason, 'manifest-missing-branch');
+});
+
+test('batch: validateBatch rejects branch mismatch', async () => {
+  const B = await import('../social-batch.mjs');
+  const m = B.createBatch({ postIds: ['p1'], branch: 'main', sourceSha: 'abc' });
+  const r = B.validateBatch(m, { expectedBranch: 'other' });
+  assert.equal(r.ok, false);
+  assert.equal(r.reason, 'batch-branch-mismatch');
+});
+
+test('batch: validateBatch rejects batchId mismatch', async () => {
+  const B = await import('../social-batch.mjs');
+  const m = B.createBatch({ postIds: ['p1'], branch: 'main', sourceSha: 'abc' });
+  const r = B.validateBatch(m, { expectedBatchId: 'batch-other' });
+  assert.equal(r.ok, false);
+  assert.equal(r.reason, 'batch-id-mismatch');
+});
+
+test('batch: validateBatch rejects deployRunId mismatch', async () => {
+  const B = await import('../social-batch.mjs');
+  const m = B.createBatch({ postIds: ['p1'], branch: 'main', sourceSha: 'abc', deployRunId: 'run-123' });
+  const r = B.validateBatch(m, { expectedDeployRunId: 'run-456' });
+  assert.equal(r.ok, false);
+  assert.equal(r.reason, 'batch-deploy-run-id-mismatch');
+});
+
+test('batch: validateBatch accepts matching context', async () => {
+  const B = await import('../social-batch.mjs');
+  const m = B.createBatch({ postIds: ['p1', 'p2'], branch: 'main', sourceSha: 'abc1234', deployRunId: 'run-789' });
+  const r = B.validateBatch(m, { expectedBranch: 'main', expectedBatchId: m.batchId, expectedDeployRunId: 'run-789' });
+  assert.equal(r.ok, true);
+});
+
+test('workflow: social-publish.yml downloads receipt to assets/social (matches publisher read path)', () => {
+  const fs = require('node:fs');
+  const wf = fs.readFileSync('.github/workflows/social-publish.yml', 'utf8');
+  const normalized = wf.replace(/\r\n/g, '\n');
+  assert.match(normalized, /name: deployment-receipt\s+run-id:\s*\$\{\{ github.event.workflow_run.id \}\}\s+repository:\s*\$\{\{ github.repository \}\}\s+github-token:\s*\$\{\{ secrets.GITHUB_TOKEN \}\}\s+path:\s*assets\/social/);
+});
+
+test('workflow: social-publish.yml downloads before publisher runs', () => {
+  const fs = require('node:fs');
+  const wf = fs.readFileSync('.github/workflows/social-publish.yml', 'utf8');
+  const normalized = wf.replace(/\r\n/g, '\n');
+  const downloadIdx = normalized.indexOf('Download deployment receipt artifact');
+  const publishIdx = normalized.indexOf('name: Phase B');
+  assert.ok(downloadIdx > 0, 'download step must exist');
+  assert.ok(publishIdx > downloadIdx, 'download must precede publisher step');
+});
+
+test('workflow: deploy.yml creates receipt only for valid publishable batch', () => {
+  const fs = require('node:fs');
+  const wf = fs.readFileSync('.github/workflows/deploy.yml', 'utf8');
+  assert.match(wf, /Validate batch manifest for receipt/);
+  assert.match(wf, /has_batch/);
+  assert.match(wf, /if: steps.validate-manifest.outputs.has_batch == 'true'/);
+});
+
+test('social-publish.mjs: createManifest generates one batchId for all posts', () => {
+  const fs = require('node:fs');
+  const src = fs.readFileSync('automation/social-publish.mjs', 'utf8');
+  // createManifest should be called once after the loop with all postIds
+  assert.match(src, /createManifest\(postIds, branch, sourceSha\)/);
+  // Should NOT call createManifest inside the loop per-post
+  assert.ok(!src.match(/createManifest\(\[post\.id\]/), 'createManifest must not be called per-post inside loop');
+  // createManifest function itself must not create a deployment receipt
+  const fnStart = src.indexOf('function createManifest');
+  assert.ok(fnStart >= 0, 'createManifest function must exist');
+  const fnBody = src.substring(fnStart);
+  // Find end of function by counting braces
+  let depth = 0, fnEnd = -1;
+  for (let i = fnStart; i < fnBody.length; i++) {
+    if (fnBody[i] === '{') depth++;
+    if (fnBody[i] === '}') { depth--; if (depth === 0) { fnEnd = i; break; } }
+  }
+  assert.ok(fnEnd > 0, 'createManifest function must have matching closing brace');
+  const cmBody = fnBody.substring(0, fnEnd + 1);
+  assert.ok(!cmBody.includes('deployment-receipt.json'), 'createManifest must not create deployment receipt');
+  assert.ok(!cmBody.includes('artifactsSha: null'), 'artifactsSha must not be set to null');
+});
+
+test('social-publish.mjs: Phase B extracts trigger metadata and fails closed if missing', () => {
+  const fs = require('node:fs');
+  const src = fs.readFileSync('automation/social-publish.mjs', 'utf8');
+  assert.match(src, /triggerRunId/);
+  assert.match(src, /triggerHeadSha/);
+  assert.match(src, /triggerHeadBranch/);
+  assert.match(src, /workflow_run metadata missing or invalid/);
+  assert.ok(!src.match(/triggerRunId = process\.env\.GITHUB_RUN_ID/), 'Must not fall back to GITHUB_RUN_ID');
+  assert.match(src, /receipt\.batchId !== manifest\.batchId/);
+  assert.match(src, /receipt\.deployRunId !== triggerRunId/);
+  assert.match(src, /receipt\.deployedSha !== triggerHeadSha/);
+  assert.match(src, /receipt\.branch !== triggerHeadBranch/);
 });

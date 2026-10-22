@@ -9,6 +9,7 @@
 // API failure -> website unaffected, status='failed' नोंदवा, Phase B मध्ये job fail करा (मिसलीडिंग green success नको).
 import fs from 'node:fs';
 import path from 'node:path';
+import { spawnSync, execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { safeText } from './lib.mjs';
 import { socialEligibility, buildCaption, articleUrl } from './social-lib.mjs';
@@ -26,7 +27,7 @@ const SOCIAL_DIR = path.join(root, 'assets', 'social');
 
 const IG_USER_ID = process.env.IG_USER_ID || '';
 const IG_ACCESS_TOKEN = process.env.IG_ACCESS_TOKEN || '';
-const GRAPH = (process.env.IG_GRAPH_HOST || 'https://graph.instagram.com').replace(/\\/$/, '');
+const GRAPH = (process.env.IG_GRAPH_HOST || 'https://graph.instagram.com').replace(/\/+$/, '');
 const API_VER = process.env.IG_API_VERSION || 'v23.0';
 // Phase B fail-closed context: deployed run must be on main and carry an exact commit sha.
 const DEPLOY_HEAD_SHA = process.env.DEPLOY_HEAD_SHA || '';
@@ -55,53 +56,35 @@ function saveArtifact(post, caption) {
 
 // Phase A: create batch manifest with exact eligible post IDs.
 // This is called after saving artifacts so the manifest references existing files.
-function createManifest(postIds, branch, sourceSha, now = Date.now(), deployRunId) {
+// The batch ID is generated exactly once and stored in the manifest.
+// Phase A does NOT create a deployment receipt — that is the exclusive
+// responsibility of deploy.yml, which reads this manifest at deploy time.
+function createManifest(postIds, branch, sourceSha, now = Date.now()) {
   const ids = [...new Set((Array.isArray(postIds) ? postIds : [])
     .map(id => (typeof id === 'string' ? id.trim() : ''))
     .filter(Boolean))];
   if (ids.length === 0) throw new Error('manifest: at least one postId required');
   const imagePaths = {};
   for (const id of ids) imagePaths[id] = '/assets/social/' + id + '.jpg';
-  // Determine the exact commit SHA where artifacts were committed.
-  // This is the target deployment commit SHA - passed in from the workflow.
+  // artifactsSha is the commit SHA where the artifacts (JPEG + caption + manifest)
+  // will be committed. It comes from the Phase A git HEAD and is later bound
+  // to the deployed SHA by deploy.yml when creating the deployment receipt.
   const artifactsSha = sourceSha || DEPLOY_HEAD_SHA || '';
-// Create receipt for deployment linkage
-const deployRunId = deployRunId || process.env.GITHUB_RUN_ID || '';
-const deployedSha = artifactsSha || DEPLOY_HEAD_SHA || '';
-const receipt = {
-  batchId: manifest.batchId,
-  deployRunId,
-  deployedSha,
-};
-
-// Write receipt file
-const SOCIAL_DIR = path.join(root, 'assets', 'social');
-fs.mkdirSync(SOCIAL_DIR, { recursive: true });
-fs.writeFileSync(path.join(SOCIAL_DIR, 'deployment-receipt.json'), JSON.stringify(receipt, null, 2) + '\n', 'utf8');
+  const batchId = newBatchId(now);
   const manifest = {
     schema: MANIFEST_SCHEMA,
-    batchId: newBatchId(now),
+    batchId,
     branch,
     sourceSha,
     artifactsSha,
     generatedAt: new Date(now).toISOString(),
     postIds: ids,
     imagePaths,
-    artifactsSha,
     processedAt: null,
-    deployRunId: deployRunId || null
-  };rypto.randomBytes(6).toString('hex'),
-    branch,
-    sourceSha,
-    generatedAt: new Date(now).toISOString(),
-    postIds: ids,
-    imagePaths,
-    artifactsSha: null,
-    deployRunId: deployRunId || null,
-    processedAt: null
+    deployRunId: null
   };
-  fs.writeFileSync(MANIFEST_FULL_PATH, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
-  }
+  return manifest;
+}
  // Main entry point for Phase A and Phase B
 const phaseArg = process.argv.find(arg => arg.startsWith('--phase='))?.split('=')[1];
 if (!phaseArg) {
@@ -130,21 +113,23 @@ if (phaseArg === 'generate') {
   }
 
   // Get branch and source SHA from git context
-  const { spawnSync } = await import('node:child_process');
   const branch = spawnSync('git', ['-C', root, 'rev-parse', '--abbrev-ref', 'HEAD'], { encoding: 'utf8' }).trim();
   const sourceSha = spawnSync('git', ['-C', root, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
 
-  // Create JPEG + caption + manifest for each eligible post
+  // Create JPEG + caption for each eligible post, then build ONE manifest
+  // covering ALL eligible posts in a single Phase A run.
   const generated = [];
+  const postIds = [];
   for (const post of eligiblePosts) {
     // Generate caption
     const caption = buildCaption(post, site.url);
     // Save artifact (JPEG + caption)
     const imagePath = saveArtifact(post, caption);
-    // Create batch manifest entry
-    const manifest = createManifest([post.id], branch, sourceSha);
-    generated.push({ post, manifest, imagePath });
+    postIds.push(post.id);
+    generated.push({ post, imagePath });
   }
+  // Single manifest with all post IDs and one batch ID
+  const manifest = createManifest(postIds, branch, sourceSha);
 
   // Commit social changes
   spawnSync('git', ['config', 'user.name', 'github-actions[bot]'], { encoding: 'utf8' });
@@ -157,7 +142,6 @@ if (phaseArg === 'generate') {
   }
 
   // Explicitly trigger Deploy workflow after push
-  const { execSync } = await import('node:child_process');
   try {
     execSync('gh workflow run deploy.yml --ref main', { encoding: 'utf8', stdio: 'ignore' });
   } catch (e) {
@@ -185,13 +169,7 @@ if (phaseArg === 'generate') {
   // Validate manifest against deployment context (branch check)
   const validate = validateBatch(manifest, {
     expectedBranch: DEPLOY_BRANCH,
-expectedDeployRunId: manifest.deployRunId
-console.error('Phase B failed-closed: manifest sourceSha not linked to deployment commit');
-    process.exit(1);
-  }
-  const validate = validateBatch(manifest, {
-    expectedBatchId: manifest.batchId,
-  expectedDeployRunId: manifest.deployRunId
+    expectedDeployRunId: manifest.deployRunId
   });
   if (!validate.ok) {
     console.error('Phase B failed-closed: manifest validation failed — ' + validate.reason);
@@ -208,16 +186,42 @@ console.error('Phase B failed-closed: manifest sourceSha not linked to deploymen
     console.error('Phase B failed-closed: deployment receipt missing or malformed');
     process.exit(1);
   }
+  // Extract triggering deployment run metadata from workflow_run event payload.
+  // Fail closed if this metadata is missing or invalid — never fall back to
+  // Phase B's own GITHUB_RUN_ID.
+  let triggerRunId = '';
+  let triggerHeadSha = '';
+  let triggerHeadBranch = '';
+  const eventPath = process.env.GITHUB_EVENT_PATH;
+  if (eventPath) {
+    try {
+      const eventData = JSON.parse(fs.readFileSync(eventPath, 'utf8'));
+      const run = eventData.workflow_run || {};
+      triggerRunId = run.id != null ? String(run.id) : '';
+      triggerHeadSha = run.head_sha || '';
+      triggerHeadBranch = run.head_branch || '';
+    } catch {}
+  }
+  if (!triggerRunId || !triggerHeadSha || !triggerHeadBranch) {
+    console.error('Phase B failed-closed: triggering workflow_run metadata missing or invalid');
+    process.exit(1);
+  }
+
+  // Validate manifest against trusted triggering-run metadata before any API call
   if (receipt.batchId !== manifest.batchId) {
     console.error('Phase B failed-closed: receipt batchId', receipt.batchId, 'does not match manifest batchId', manifest.batchId);
     process.exit(1);
   }
-  if (receipt.deployRunId !== process.env.GITHUB_RUN_ID) {
-    console.error('Phase B failed-closed: receipt deployRunId', receipt.deployRunId, 'does not match current run', process.env.GITHUB_RUN_ID);
+  if (receipt.deployRunId !== triggerRunId) {
+    console.error('Phase B failed-closed: receipt deployRunId', receipt.deployRunId, 'does not match triggering run ID', triggerRunId);
     process.exit(1);
   }
-  if (receipt.deployedSha !== (manifest.artifactsSha || DEPLOY_HEAD_SHA || '')) {
-    console.error('Phase B failed-closed: receipt deployedSha', receipt.deployedSha, 'does not match manifest artifactsSha');
+  if (receipt.deployedSha !== triggerHeadSha) {
+    console.error('Phase B failed-closed: receipt deployedSha', receipt.deployedSha, 'does not match triggering deployment head SHA', triggerHeadSha);
+    process.exit(1);
+  }
+  if (receipt.branch !== triggerHeadBranch) {
+    console.error('Phase B failed-closed: receipt branch', receipt.branch, 'does not match triggering run branch', triggerHeadBranch);
     process.exit(1);
   }
 

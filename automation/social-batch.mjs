@@ -36,7 +36,7 @@ export function createBatch({ postIds, branch = 'main', sourceSha = '', now = Da
     generatedAt,
     postIds: ids,
     imagePaths,
-    artifactsSha: null,
+    artifactsSha: sourceSha,
     processedAt: null,
     deployRunId: deployRunId || null
   };
@@ -59,7 +59,7 @@ export function parseBatch(text) {
     if (m.imagePaths[id] !== imagePathFor(id)) return { ok: false, reason: `manifest-imagePath-mismatch:${id}` };
     if (!String(m.imagePaths[id]).endsWith('.jpg')) return { ok: false, reason: `manifest-non-jpeg-path:${id}` };
   }
-  if (m.artifactsSha !== null && (typeof m.artifactsSha !== 'string' || !/^[0-9a-f]{7,40}$/i.test(m.artifactsSha))) {
+  if (m.artifactsSha !== null && m.artifactsSha !== '' && (typeof m.artifactsSha !== 'string' || !/^[0-9a-f]{7,40}$/i.test(m.artifactsSha))) {
     return { ok: false, reason: 'manifest-invalid-artifactsSha' };
   }
   if (typeof m.deployRunId !== 'undefined' && typeof m.deployRunId !== 'string') {

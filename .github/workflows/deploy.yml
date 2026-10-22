@@ -43,6 +43,52 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      - name: Validate batch manifest for receipt
+        id: validate-manifest
+        run: |
+          if [ -f assets/social/social-batch.json ]; then
+            HAS_BATCH=$(node -e "
+const fs = require('fs');
+const m = JSON.parse(fs.readFileSync('assets/social/social-batch.json', 'utf8'));
+console.log(!!(m.batchId && Array.isArray(m.postIds) && m.postIds.length > 0));
+")
+            if [ "$HAS_BATCH" = "true" ]; then
+              echo "has_batch=true" >> $GITHUB_OUTPUT
+              echo "Valid publishable batch found"
+            else
+              echo "has_batch=false" >> $GITHUB_OUTPUT
+              echo "No valid publishable batch — skipping receipt creation"
+            fi
+          else
+            echo "has_batch=false" >> $GITHUB_OUTPUT
+            echo "No manifest found — skipping receipt creation"
+          fi
+      - name: Create deployment receipt
+        if: steps.validate-manifest.outputs.has_batch == 'true'
+        run: |
+          BRANCH="${GITHUB_REF_NAME:-main}"
+          node -e "
+const fs = require('fs');
+const path = require('path');
+const manifestPath = path.join(process.cwd(), 'assets', 'social', 'social-batch.json');
+const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+const receipt = {
+  batchId: manifest.batchId,
+  deployRunId: process.env.GITHUB_RUN_ID,
+  deployedSha: '${GITHUB_SHA}',
+  branch: '${BRANCH}'
+};
+const SOCIAL_DIR = path.join(process.cwd(), 'assets', 'social');
+fs.mkdirSync(SOCIAL_DIR, { recursive: true });
+fs.writeFileSync(path.join(SOCIAL_DIR, 'deployment-receipt.json'), JSON.stringify(receipt, null, 2) + '\n', 'utf8');
+console.log('Deployment receipt created');
+"
+      - name: Upload deployment receipt artifact
+        if: steps.validate-manifest.outputs.has_batch == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: deployment-receipt
+          path: assets/social/deployment-receipt.json
   deploy:
     needs: build
     runs-on: ubuntu-latest

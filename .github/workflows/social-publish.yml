@@ -1,4 +1,4 @@
-name: Social Publish (Instagram — published articles only)
+name: Social Publish (Instagram Ã¢ÂÂ published articles only)
 
 on:
   workflow_dispatch:
@@ -11,19 +11,19 @@ on:
         description: 'Publish only this post id (optional)'
         required: false
         default: ''
-  # Phase B: Deploy workflow यशस्वी झाल्यानंतरच publish करा.
+  # Phase B: Deploy workflow Ã Â¤Â¯Ã Â¤Â¶Ã Â¤Â¸Ã Â¥ÂÃ Â¤ÂµÃ Â¥Â Ã Â¤ÂÃ Â¤Â¾Ã Â¤Â²Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤Â¨Ã Â¤ÂÃ Â¤Â¤Ã Â¤Â°Ã Â¤Â publish Ã Â¤ÂÃ Â¤Â°Ã Â¤Â¾.
   workflow_run:
     workflows: ["Deploy to GitHub Pages"]
     types: [completed]
 
-# Deploy नंतरच — public image URL उपलब्ध हवी. Push वर नाही (duplicate टाळा).
+# Deploy Ã Â¤Â¨Ã Â¤ÂÃ Â¤Â¤Ã Â¤Â°Ã Â¤Â Ã¢ÂÂ public image URL Ã Â¤ÂÃ Â¤ÂªÃ Â¤Â²Ã Â¤Â¬Ã Â¥ÂÃ Â¤Â§ Ã Â¤Â¹Ã Â¤ÂµÃ Â¥Â. Push Ã Â¤ÂµÃ Â¤Â° Ã Â¤Â¨Ã Â¤Â¾Ã Â¤Â¹Ã Â¥Â (duplicate Ã Â¤ÂÃ Â¤Â¾Ã Â¤Â³Ã Â¤Â¾).
 
 permissions:
   contents: write
   actions: write
 
 jobs:
-  # Phase A — Generate assets: JPEG image + caption तयार करा, status='ready' नोंदवा, commit/push करा. Instagram API कॉल नको.
+  # Phase A Ã¢ÂÂ Generate assets: JPEG image + caption Ã Â¤Â¤Ã Â¤Â¯Ã Â¤Â¾Ã Â¤Â° Ã Â¤ÂÃ Â¤Â°Ã Â¤Â¾, status='ready' Ã Â¤Â¨Ã Â¥ÂÃ Â¤ÂÃ Â¤Â¦Ã Â¤ÂµÃ Â¤Â¾, commit/push Ã Â¤ÂÃ Â¤Â°Ã Â¤Â¾. Instagram API Ã Â¤ÂÃ Â¥ÂÃ Â¤Â² Ã Â¤Â¨Ã Â¤ÂÃ Â¥Â.
   generate:
     if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
@@ -32,9 +32,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install ImageMagick (svg → jpeg conversion)
+      - name: Install ImageMagick (svg Ã¢ÂÂ jpeg conversion)
         run: sudo apt-get update -y && sudo apt-get install -y imagemagick
-      - name: Phase A — Generate social assets (JPEG + caption, no Instagram publish)
+      - name: Phase A Ã¢ÂÂ Generate social assets (JPEG + caption, no Instagram publish)
         run: node automation/social-publish.mjs --phase=generate --limit=${{ inputs.limit || '5' }} ${{ inputs.post_id && format('--id={0}', inputs.post_id) || '' }}
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -47,7 +47,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/posts assets/social 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No social changes — skipping commit"
+            echo "No social changes Ã¢ÂÂ skipping commit"
           else
             git commit -m "social: artifacts + instagram status"
             git push
@@ -57,7 +57,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # Phase B — Publish after successful deployment: deploy workflow च्या name शी जुळणारा workflow_run trigger वापर.
+  # Phase B Ã¢ÂÂ Publish after successful deployment: deploy workflow Ã Â¤ÂÃ Â¥ÂÃ Â¤Â¯Ã Â¤Â¾ name Ã Â¤Â¶Ã Â¥Â Ã Â¤ÂÃ Â¥ÂÃ Â¤Â³Ã Â¤Â£Ã Â¤Â¾Ã Â¤Â°Ã Â¤Â¾ workflow_run trigger Ã Â¤ÂµÃ Â¤Â¾Ã Â¤ÂªÃ Â¤Â°.
   publish:
     if: |
       github.event_name == 'workflow_run' &&
@@ -65,12 +65,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 24
       - name: Install ImageMagick (jpeg verification + dimension check)
         run: sudo apt-get update -y && sudo apt-get install -y imagemagick
-      - name: Phase B — Publish after successful deploy
+      - name: Download deployment receipt artifact from triggering workflow run
+        uses: actions/download-artifact@v8
+        with:
+          name: deployment-receipt
+          run-id: ${{ github.event.workflow_run.id }}
+          repository: ${{ github.repository }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: assets/social
+      - name: Phase B Ã¢ÂÂ Publish after successful deploy
         run: node automation/social-publish.mjs --phase=publish --limit=5
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -84,7 +94,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/posts assets/social 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No social status changes — skipping commit"
+            echo "No social status changes Ã¢ÂÂ skipping commit"
           else
             git commit -m "social: publish status [skip ci]"
             git push
