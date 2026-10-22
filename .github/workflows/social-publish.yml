@@ -25,7 +25,7 @@ permissions:
 jobs:
   # Phase A Ã¢ÂÂ Generate assets: JPEG image + caption Ã Â¤Â¤Ã Â¤Â¯Ã Â¤Â¾Ã Â¤Â° Ã Â¤ÂÃ Â¤Â°Ã Â¤Â¾, status='ready' Ã Â¤Â¨Ã Â¥ÂÃ Â¤ÂÃ Â¤Â¦Ã Â¤ÂµÃ Â¤Â¾, commit/push Ã Â¤ÂÃ Â¤Â°Ã Â¤Â¾. Instagram API Ã Â¤ÂÃ Â¥ÂÃ Â¤Â² Ã Â¤Â¨Ã Â¤ÂÃ Â¥Â.
   generate:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -52,24 +52,10 @@ jobs:
             git commit -m "social: artifacts + instagram status"
             git push
           fi
-      - name: Explicitly trigger Deploy workflow after push
+      - name: Dispatch deployment workflow
         run: gh workflow run deploy.yml --ref main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # Phase B Ã¢ÂÂ Publish after successful deployment: deploy workflow Ã Â¤ÂÃ Â¥ÂÃ Â¤Â¯Ã Â¤Â¾ name Ã Â¤Â¶Ã Â¥Â Ã Â¤ÂÃ Â¥ÂÃ Â¤Â³Ã Â¤Â£Ã Â¤Â¾Ã Â¤Â°Ã Â¤Â¾ workflow_run trigger Ã Â¤ÂµÃ Â¤Â¾Ã Â¤ÂªÃ Â¤Â°.
-  publish:
-    if: |
-      github.event_name == 'workflow_run' &&
-      github.event.workflow_run.conclusion == 'success'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.workflow_run.head_sha }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
       - name: Install ImageMagick (jpeg verification + dimension check)
         run: sudo apt-get update -y && sudo apt-get install -y imagemagick
       - name: Download deployment receipt artifact from triggering workflow run

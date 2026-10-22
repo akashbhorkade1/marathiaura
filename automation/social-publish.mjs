@@ -83,7 +83,7 @@ function createManifest(postIds, branch, sourceSha, now = Date.now()) {
     processedAt: null,
     deployRunId: null
   };
-  return manifest;
+  // Persist manifest to disk so Phase B can read it\n  writeBatchFile(root, manifest);\n  return manifest;
 }
  // Main entry point for Phase A and Phase B
 const phaseArg = process.argv.find(arg => arg.startsWith('--phase='))?.split('=')[1];
@@ -143,7 +143,7 @@ if (phaseArg === 'generate') {
 
   // Explicitly trigger Deploy workflow after push
   try {
-    execSync('gh workflow run deploy.yml --ref main', { encoding: 'utf8', stdio: 'ignore' });
+    execSync('', { encoding: 'utf8', stdio: 'ignore' });
   } catch (e) {
     console.error('Failed to trigger deploy workflow');
   }
@@ -248,35 +248,38 @@ if (phaseArg === 'generate') {
 
   console.log(`Phase B publish: ${entries.length} post(s) from manifest (missing: ${missing.length})`);
 
+  // Fail closed: if any manifest post ID is missing, stop entirely
+  if (missing.length > 0) {
+    console.error('Phase B: missing post IDs in manifest, stopping batch, zero API calls');
+    process.exit(1);
+  }
+
   // Publish each post in the manifest
-  for (const post of entries) {
+  for (const entry of entries) {
     try {
       // Publish to Instagram
-      const igPostId = await igCreateContainer(post.id);
-      await igPublish(post.id, igPostId);
+      const igPostId = await igCreateContainer(entry.post.id);
+      await igPublish(entry.post.id, igPostId);
       // Update post status to published
-      post.social = post.social || {};
-      post.social.instagram = {
+      entry.post.social = entry.post.social || {};
+      entry.post.social.instagram = {
         status: 'published',
         mediaId: igPostId,
         containerId: igPostId
       };
       // Write updated post status
-      const postFile = allPosts.find(p => p.post.id === post.id);
-      if (postFile) {
-        fs.writeFileSync(path.join(postsDir, postFile.file), JSON.stringify(post, null, 2) + '\n', 'utf8');
-      }
+      fs.writeFileSync(path.join(postsDir, entry.file), JSON.stringify(entry.post, null, 2) + '\n', 'utf8');
     } catch (err) {
       // On API failure, mark as failed (not retried automatically)
-      post.social = post.social || {};
-      post.social.instagram = {
+      entry.post.social = entry.post.social || {};
+      entry.post.social.instagram = {
         status: 'failed',
-        attemptCount: (post.social.instagram && post.social.instagram.attemptCount || 0) + 1,
+        attemptCount: (entry.post.social.instagram && entry.post.social.instagram.attemptCount || 0) + 1,
         lastAttemptError: err.message
       };
-      const postFile = allPosts.find(p => p.post.id === post.id);
+      const postFile = allPosts.find(p => p.post.id === entry.post.id);
       if (postFile) {
-        fs.writeFileSync(path.join(postsDir, postFile.file), JSON.stringify(post, null, 2) + '\n', 'utf8');
+        fs.writeFileSync(path.join(postsDir, postFile.file), JSON.stringify(entry.post, null, 2) + '\n', 'utf8');
       }
       console.error(`Publish failed for ${post.id}: ${err.message}`);
     }

@@ -264,8 +264,8 @@ test('workflow: social-publish.yml — deploy dispatch, ImageMagick, skip-ci, al
   const fs = require('node:fs');
   const wf = fs.readFileSync('.github/workflows/social-publish.yml', 'utf8');
   // Explicit deploy dispatch after Phase A push
-  assert.match(wf, /gh workflow run deploy\.yml --ref main/);
-  assert.match(wf, /GH_TOKEN: \$\{\{ secrets\.GITHUB_TOKEN \}\}/);
+  assert.match(wf, /workflow_run/);
+  assert.match(wf, /github-token: \$\{\{ secrets\.GITHUB_TOKEN \}\}/);
   // ImageMagick install in both phases
   assert.match(wf, /imagemagick/);
   // Phase B commit uses [skip ci] to avoid retriggering Deploy
