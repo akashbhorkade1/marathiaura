@@ -56,6 +56,14 @@ jobs:
         run: gh workflow run deploy.yml --ref main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
       - name: Install ImageMagick (jpeg verification + dimension check)
         run: sudo apt-get update -y && sudo apt-get install -y imagemagick
       - name: Download deployment receipt artifact from triggering workflow run
@@ -66,7 +74,7 @@ jobs:
           repository: ${{ github.repository }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: assets/social
-      - name: Phase B Ã¢ÂÂ Publish after successful deploy
+      - name: Phase B Publish after successful deploy
         run: node automation/social-publish.mjs --phase=publish --limit=5
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -80,7 +88,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/posts assets/social 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No social status changes Ã¢ÂÂ skipping commit"
+            echo "No social status changes - skipping commit"
           else
             git commit -m "social: publish status [skip ci]"
             git push
