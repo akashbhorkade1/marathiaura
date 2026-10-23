@@ -199,7 +199,7 @@
   "status": "published",
   "confidence": 90,
   "publishedAt": "2026-09-20T12:00:00+05:30",
-  "lastUpdatedAt": "2026-09-22T08:00:00+05:30",
+  "lastUpdatedAt": "2026-10-23T09:56:09.529Z",
   "contentHash": "cea7657febaba6a4146a4d157c3a289ff51baa00ce8fcff77891dd193c28335a",
   "updates": [
     {
@@ -225,5 +225,14 @@
     ],
     "ogImage": "/og-images/ibps-rrb-bharti-2026-13706-posts.svg",
     "index": true
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/ibps-rrb-bharti-2026-13706-posts.caption.txt",
+      "imagePath": "/assets/social/ibps-rrb-bharti-2026-13706-posts.svg",
+      "note": "deploy-pending: public image URL not reachable (deploy pending?): HTTP 404",
+      "updatedAt": "2026-10-23T09:56:09.529Z"
+    }
   }
 }

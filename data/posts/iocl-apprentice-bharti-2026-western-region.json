@@ -212,7 +212,7 @@
   "status": "published",
   "confidence": 85,
   "publishedAt": "2026-10-05T08:17:32.884Z",
-  "lastUpdatedAt": "2026-10-05T08:17:32.884Z",
+  "lastUpdatedAt": "2026-10-23T09:56:09.739Z",
   "contentHash": "9c03363183d614c80f815f85bdc10f8165d77f7995f7123641f2e28d5a8f7f3f",
   "updates": [],
   "seo": {
@@ -227,5 +227,14 @@
     ],
     "ogImage": "/og-images/iocl-apprentice-bharti-2026-western-region.svg",
     "index": true
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/iocl-apprentice-bharti-2026-western-region.caption.txt",
+      "imagePath": "/assets/social/iocl-apprentice-bharti-2026-western-region.svg",
+      "note": "deploy-pending: public image URL not reachable (deploy pending?): HTTP 404",
+      "updatedAt": "2026-10-23T09:56:09.739Z"
+    }
   }
 }

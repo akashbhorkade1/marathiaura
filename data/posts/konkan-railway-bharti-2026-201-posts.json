@@ -212,7 +212,7 @@
   "status": "published",
   "confidence": 88,
   "publishedAt": "2026-09-21T12:00:00+05:30",
-  "lastUpdatedAt": "2026-09-21T12:00:00+05:30",
+  "lastUpdatedAt": "2026-10-23T09:56:09.859Z",
   "contentHash": "440b5b0dd72f3c17c5b0717c17f354acfdf40979f97d4d39d8b4442f910a346c",
   "updates": [],
   "seo": {
@@ -227,5 +227,14 @@
     ],
     "ogImage": "/og-images/konkan-railway-bharti-2026-201-posts.svg",
     "index": true
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/konkan-railway-bharti-2026-201-posts.caption.txt",
+      "imagePath": "/assets/social/konkan-railway-bharti-2026-201-posts.svg",
+      "note": "deploy-pending: public image URL not reachable (deploy pending?): HTTP 404",
+      "updatedAt": "2026-10-23T09:56:09.859Z"
+    }
   }
 }

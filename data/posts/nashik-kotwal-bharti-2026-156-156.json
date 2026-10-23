@@ -250,7 +250,7 @@
   "status": "published",
   "confidence": 85,
   "publishedAt": "2026-10-05T05:52:55.011Z",
-  "lastUpdatedAt": "2026-10-05T05:52:55.011Z",
+  "lastUpdatedAt": "2026-10-23T09:56:09.958Z",
   "contentHash": "c431e342a85a9d56663987bb5eb704f63291bbc054c9f1c6505e459e179447d7",
   "updates": [],
   "seo": {
@@ -267,5 +267,14 @@
     "index": true
   },
   "aiRewritten": true,
-  "aiRewrittenAt": "2026-10-04T21:06:02.494Z"
+  "aiRewrittenAt": "2026-10-04T21:06:02.494Z",
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/nashik-kotwal-bharti-2026-156-156.caption.txt",
+      "imagePath": "/assets/social/nashik-kotwal-bharti-2026-156-156.svg",
+      "note": "deploy-pending: public image URL not reachable (deploy pending?): HTTP 404",
+      "updatedAt": "2026-10-23T09:56:09.958Z"
+    }
+  }
 }

@@ -71,7 +71,7 @@
   "status": "published",
   "confidence": 90,
   "publishedAt": "2026-09-29T05:30:00.000Z",
-  "lastUpdatedAt": "2026-09-29T05:30:00.000Z",
+  "lastUpdatedAt": "2026-10-23T09:56:09.650Z",
   "contentHash": "15760c4a206e96c9cf262479d1b212aa92c77d5e352b098a21b8604d207cb8b6",
   "updates": [
     {
@@ -147,5 +147,14 @@
         "a": "IIM Nagpur, Nagpur (Maharashtra)."
       }
     ]
+  },
+  "social": {
+    "instagram": {
+      "status": "ready",
+      "captionPath": "/assets/social/iim-nagpur-junior-executive-bharti-2026-obc.caption.txt",
+      "imagePath": "/assets/social/iim-nagpur-junior-executive-bharti-2026-obc.svg",
+      "note": "deploy-pending: public image URL not reachable (deploy pending?): HTTP 404",
+      "updatedAt": "2026-10-23T09:56:09.650Z"
+    }
   }
 }
