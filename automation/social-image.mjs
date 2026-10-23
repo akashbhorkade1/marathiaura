@@ -1,10 +1,48 @@
 // Social image — deterministic 1080×1350 (4:5) SVG template, article facts only.
 // No AI image generation. Same facts → same poster. Fabrication नाही:
 // image text फक्त article JSON मधून; unknown fields omit.
+// Instagram publish च्यासाठी SVG ऐवजी वैध JPEG (.jpg) आवश्यक.
 import { safeText, esc } from './lib.mjs';
+import { execFileSync } from 'node:child_process';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 export const SOCIAL_W = 1080;
 export const SOCIAL_H = 1350;
+
+// JPEG SOI marker: FF D8 FF
+export function isValidJpeg(buf) {
+  return Buffer.isBuffer(buf) && buf.length >= 3 && buf[0] === 0xFF && buf[1] === 0xD8 && buf[2] === 0xFF;
+}
+
+// SVG → JPEG (1080×1350, 4:5) using ImageMagick convert पर ubuntu-latest GH Actions runner.
+// convert SVG ला rasterize करून JPEG तयार करते. Output चा MIME type image/jpeg असल्याची खात्री करतो.
+export function socialJpeg(post) {
+  const svg = socialSvg(post);
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'marathiaura-social-'));
+  try {
+    const svgPath = path.join(tmpDir, 'post.svg');
+    const jpgPath = path.join(tmpDir, 'post.jpg');
+    fs.writeFileSync(svgPath, svg, 'utf8');
+
+    execFileSync('convert', [
+      svgPath,
+      '-resize', `${SOCIAL_W}x${SOCIAL_H}!`,
+      '-quality', '90',
+      '-colorspace', 'sRGB',
+      jpgPath
+    ], { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024 });
+
+    const buf = fs.readFileSync(jpgPath);
+    if (!isValidJpeg(buf)) {
+      throw new Error('convert output is not a valid JPEG (missing FFD8FF SOI marker)');
+    }
+    return buf;
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
+}
 
 function wrap(text, max) {
   const words = safeText(text).split(/\s+/).filter(Boolean);
