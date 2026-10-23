@@ -1,4 +1,4 @@
-name: Social Publish (Instagram — published articles only)
+name: Social Publish (Instagram - published articles only)
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ on:
         description: 'Publish only this post id (optional)'
         required: false
         default: ''
-  # Deploy नंतरच — public image URL उपलब्ध हवी. Push वर नाही (duplicate टाळा).
+  # Deploy public image URL
 
 permissions:
   contents: write
@@ -37,7 +37,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/posts assets/social 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No social changes — skipping commit"
+            echo "No social changes - skipping commit"
           else
             git commit -m "social: artifacts + instagram status"
             git push
