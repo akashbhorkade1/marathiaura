@@ -1,6 +1,6 @@
 {
   "type": "recruitment",
-  "status": "under-review",
+  "status": "published",
   "id": "sdsc-shar-recruitment-advt-03-2026",
   "title": "SDSC SHAR भरती 2026: तांत्रिक सहाय्यक, तंत्रज्ञ, ड्रायव्हर व इतर पदे — जाहिरात 03/2026",
   "slug": "sdsc-shar-recruitment-advt-03-2026",
@@ -139,7 +139,7 @@
     }
   ],
   "confidence": 90,
-  "publishedAt": null,
+  "publishedAt": "2026-10-23T11:00:00.000Z",
   "lastUpdatedAt": "2026-10-20T05:30:00.000Z",
   "contentHash": "d933fb7bd57472b81add9830751b53e2a0390b51a8195ba6a346b5f06c518042",
   "updates": [],
