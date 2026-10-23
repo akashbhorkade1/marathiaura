@@ -48,12 +48,19 @@ jobs:
         run: |
           if [ -f assets/social/social-batch.json ]; then
             HAS_BATCH=$(node <<'NODE'
-const fs = require('fs');
-const m = JSON.parse(fs.readFileSync('assets/social/social-batch.json', 'utf8'));
-console.log(!!(m.batchId && Array.isArray(m.postIds) && m.postIds.length > 0));
-NODE
-)
-if [ "$HAS_BATCH" = "true" ]; then
+          const fs = require('fs');
+          let valid = false;
+          try {
+            const m = JSON.parse(fs.readFileSync('assets/social/social-batch.json', 'utf8'));
+            valid = !!(m.batchId && Array.isArray(m.postIds) && m.postIds.length > 0);
+          } catch (e) {
+            console.error('Invalid manifest JSON:', e.message);
+            valid = false;
+          }
+          console.log(valid);
+          NODE
+            )
+            if [ "$HAS_BATCH" = "true" ]; then
               echo "has_batch=true" >> $GITHUB_OUTPUT
               echo "Valid publishable batch found"
             else
@@ -67,23 +74,22 @@ if [ "$HAS_BATCH" = "true" ]; then
       - name: Create deployment receipt
         if: steps.validate-manifest.outputs.has_batch == 'true'
         run: |
-          BRANCH="${GITHUB_REF_NAME:-main}"
           node <<'NODE'
-const fs = require('fs');
-const path = require('path');
-const manifestPath = path.join(process.cwd(), 'assets', 'social', 'social-batch.json');
-const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-const receipt = {
-  batchId: manifest.batchId,
-  deployRunId: process.env.GITHUB_RUN_ID,
-  deployedSha: '${GITHUB_SHA}',
-  branch: '${BRANCH}'
-};
-const SOCIAL_DIR = path.join(process.cwd(), 'assets', 'social');
-fs.mkdirSync(SOCIAL_DIR, { recursive: true });
-fs.writeFileSync(path.join(SOCIAL_DIR, 'deployment-receipt.json'), JSON.stringify(receipt, null, 2) + '\n', 'utf8');
-console.log('Deployment receipt created');
-NODE
+          const fs = require('fs');
+          const path = require('path');
+          const manifestPath = path.join(process.cwd(), 'assets', 'social', 'social-batch.json');
+          const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+          const receipt = {
+            batchId: manifest.batchId,
+            deployRunId: process.env.GITHUB_RUN_ID,
+            deployedSha: process.env.GITHUB_SHA,
+            branch: process.env.GITHUB_REF_NAME || 'main'
+          };
+          const SOCIAL_DIR = path.join(process.cwd(), 'assets', 'social');
+          fs.mkdirSync(SOCIAL_DIR, { recursive: true });
+          fs.writeFileSync(path.join(SOCIAL_DIR, 'deployment-receipt.json'), JSON.stringify(receipt, null, 2) + '\n', 'utf8');
+          console.log('Deployment receipt created');
+          NODE
       - name: Upload deployment receipt artifact
         if: steps.validate-manifest.outputs.has_batch == 'true'
         uses: actions/upload-artifact@v7

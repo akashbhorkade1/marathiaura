@@ -1,4 +1,4 @@
-name: Social Publish (Instagram ÃƒÂ¢Ã‚Â€Ã‚Â” published articles only)
+name: Social Publish (Instagram - published articles only)
 
 on:
   workflow_dispatch:
@@ -32,9 +32,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install ImageMagick (svg ÃƒÂ¢Ã‚Â†Ã‚Â’ jpeg conversion)
+      - name: Install ImageMagick (svg to jpeg conversion)
         run: sudo apt-get update -y && sudo apt-get install -y imagemagick
-      - name: Phase A ÃƒÂ¢Ã‚Â€Ã‚Â” Generate social assets (JPEG + caption, no Instagram publish)
+      - name: Phase A Generate social assets (JPEG + caption, no Instagram publish)
         run: node automation/social-publish.mjs --phase=generate --limit=${{ inputs.limit || '5' }} ${{ inputs.post_id && format('--id={0}', inputs.post_id) || '' }}
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -47,7 +47,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/posts assets/social 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No social changes ÃƒÂ¢Ã‚Â€Ã‚Â” skipping commit"
+            echo "No social changes - skipping commit"
           else
             git commit -m "social: artifacts + instagram status"
             git push
