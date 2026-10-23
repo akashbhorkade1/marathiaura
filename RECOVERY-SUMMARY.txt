@@ -10,7 +10,7 @@ All recovery branch fixes have been verified:
 
 3. Graph API fix: GRAPH defaults to graph.instagram.com (not graph.facebook.com)
 
-4. All 100 tests pass verification-social, test-core, render, source-aggregation
+4. All 113 tests pass verification-social, test-core, render, source-aggregation
 
 5. SDSC SHAR post remains under-review on local main — NOT ported to recovery, auto-skipped
 
