@@ -47,12 +47,13 @@ jobs:
         id: validate-manifest
         run: |
           if [ -f assets/social/social-batch.json ]; then
-            HAS_BATCH=$(node -e "
+            HAS_BATCH=$(node <<'NODE'
 const fs = require('fs');
 const m = JSON.parse(fs.readFileSync('assets/social/social-batch.json', 'utf8'));
 console.log(!!(m.batchId && Array.isArray(m.postIds) && m.postIds.length > 0));
-")
-            if [ "$HAS_BATCH" = "true" ]; then
+NODE
+)
+if [ "$HAS_BATCH" = "true" ]; then
               echo "has_batch=true" >> $GITHUB_OUTPUT
               echo "Valid publishable batch found"
             else
@@ -67,7 +68,7 @@ console.log(!!(m.batchId && Array.isArray(m.postIds) && m.postIds.length > 0));
         if: steps.validate-manifest.outputs.has_batch == 'true'
         run: |
           BRANCH="${GITHUB_REF_NAME:-main}"
-          node -e "
+          node <<'NODE'
 const fs = require('fs');
 const path = require('path');
 const manifestPath = path.join(process.cwd(), 'assets', 'social', 'social-batch.json');
@@ -82,7 +83,7 @@ const SOCIAL_DIR = path.join(process.cwd(), 'assets', 'social');
 fs.mkdirSync(SOCIAL_DIR, { recursive: true });
 fs.writeFileSync(path.join(SOCIAL_DIR, 'deployment-receipt.json'), JSON.stringify(receipt, null, 2) + '\n', 'utf8');
 console.log('Deployment receipt created');
-"
+NODE
       - name: Upload deployment receipt artifact
         if: steps.validate-manifest.outputs.has_batch == 'true'
         uses: actions/upload-artifact@v7
