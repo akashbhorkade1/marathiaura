@@ -12,6 +12,10 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # AUTO_ARTICLE_GENERATION=false is the permanent default — scheduled jobs and retries
+    # cannot bypass this safeguard. To enable, a maintainer must explicitly set it to "true".
+    env:
+      AUTO_ARTICLE_GENERATION: "false"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,16 +24,20 @@ jobs:
       - name: Run test suite
         run: node automation/test/test-core.test.cjs
       - name: Monitor sources (detect new notifications)
+        if: env.AUTO_ARTICLE_GENERATION == 'true'
         run: node automation/monitor.mjs
       - name: Weekly CA roundup draft (if 3+ developments; else skip)
+        if: env.AUTO_ARTICLE_GENERATION == 'true'
         run: node automation/ca-weekly.mjs || true
       - name: Monthly CA roundup draft (if enough data; else skip)
+        if: env.AUTO_ARTICLE_GENERATION == 'true'
         run: node automation/ca-monthly.mjs || true
       - name: AI rewrite drafts (Marathi)
+        if: env.AUTO_ARTICLE_GENERATION == 'true'
         run: node automation/rewrite.mjs
         env:
           AI_API_KEY: ${{ secrets.MARATHIAURA }}
-      - name: Validate records
+      - name: Validate records (quality gate — always runs)
         run: node automation/validate.mjs
       - name: Build (drafts render होत नाहीत — फक्त published)
         run: node automation/build.mjs

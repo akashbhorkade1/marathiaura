@@ -8,6 +8,13 @@ import { normalizeFacts, detectCategoryFacts } from './normalize.mjs';
 import { findCanonical, SIM_THRESHOLD, titleSimilarity } from './dedup.mjs';
 import { classifyUrl, resolveConflict, FAKE_URGENCY_RE, PLACEHOLDER_RE } from './verify-official.mjs';
 import { buildTitle, buildShortDesc, buildSections, buildLinksSection, shingleSimilarity, COPY_THRESHOLD } from './generate-original-mr.mjs';
+import { autoArticleGenerationEnabled } from './lib.mjs';
+
+// ---- Auto-article-generation safeguard ---------------------------------------
+if (!autoArticleGenerationEnabled()) {
+  console.log('monitor.mjs: AUTO_ARTICLE_GENERATION is disabled — exiting without creating or modifying any article files under data/posts/.');
+  process.exit(0);
+}
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = p => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));

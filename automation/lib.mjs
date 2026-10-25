@@ -170,6 +170,22 @@ export const loadPages = () => readJson('data/pages.json');
 // Published records only (status workflow enforcement)
 export const published = list => list.filter(p => p.status === 'published' || p.status === 'updated');
 
+// ---- Auto-article-generation safeguard ---------------------------------------
+// Explicit configuration flag: AUTO_ARTICLE_GENERATION.
+// Precedence: 1) process.env.AUTO_ARTICLE_GENERATION ("true"/"false"),
+//             2) data/site.json  site.autoArticleGeneration (boolean),
+//             3) default: false (disabled).
+// Every automatic article-generation / rewriting entry point must call this
+// before creating or modifying files under data/posts/.
+export function autoArticleGenerationEnabled() {
+  const env = process.env.AUTO_ARTICLE_GENERATION;
+  if (env !== undefined) return env === 'true';
+  try {
+    const site = readJson('data/site.json');
+    return site && site.autoArticleGeneration === true;
+  } catch { return false; } // default: disabled — never auto-generate
+}
+
 // Schema V2: slug = bare segment, path = full URL path
 export const pathOf = p => p.path || ('/' + String(p.slug || '').replace(/^\/+|\/+$/g, '') + '/');
 

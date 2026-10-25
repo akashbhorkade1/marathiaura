@@ -6,6 +6,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { safeText } from './lib.mjs';
 
+import { autoArticleGenerationEnabled } from './lib.mjs';
+
+// ---- Auto-article-generation safeguard ----
+if (!autoArticleGenerationEnabled()) {
+  console.log('ca-monthly.mjs: AUTO_ARTICLE_GENERATION is disabled — exiting without creating any article files under data/posts/.');
+  process.exit(0);
+}
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const postsDir = path.join(root, 'data', 'posts');
 const queuePath = path.join(root, 'data', 'review-queue.json');

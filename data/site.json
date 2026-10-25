@@ -1,5 +1,6 @@
 {
   "site": {
+    "autoArticleGeneration": false,
     "name": "MarathiAura",
     "url": "https://marathiaura.in",
     "locale": "mr_IN",

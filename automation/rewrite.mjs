@@ -6,6 +6,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { autoArticleGenerationEnabled } from './lib.mjs';
+
+// ---- Auto-article-generation safeguard ----
+if (!autoArticleGenerationEnabled()) {
+  console.log('rewrite.mjs: AUTO_ARTICLE_GENERATION is disabled — exiting without rewriting any article files under data/posts/.');
+  process.exit(0);
+}
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const queuePath = path.join(root, 'data/review-queue.json');
 const postPath = pid => path.join(root, 'data/posts', `${pid}.json`);
@@ -101,3 +109,4 @@ for (const q of pending) {
   }
 }
 console.log(`\nrewrite.mjs: ${done} rewritten, ${failed} skipped (template fallback)`);
+
