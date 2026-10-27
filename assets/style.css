@@ -169,21 +169,143 @@ footer.site a:hover{text-decoration:underline}
 .section-head .section-title{margin:0}
 .section-head a{font-size:.85rem;white-space:nowrap}
 
-/* Job cards */
-.job-list{display:grid;gap:12px}
-.job-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;text-decoration:none;color:var(--text);transition:box-shadow .15s,border-color .15s}
-.job-card:hover{box-shadow:0 4px 14px rgba(12,68,124,.12);border-color:var(--primary)}
-.job-card .job-dept{font-size:.84rem;color:var(--muted);margin-bottom:6px}
-.job-card .title{font-family:var(--font-head);font-weight:600;font-size:1.02rem;line-height:1.55;margin-bottom:8px}
-.job-qual{font-size:.86rem;margin-bottom:4px}
-.job-qual .lbl{color:var(--muted)}
-.job-lastdate{font-size:.88rem;margin-bottom:2px}
-.job-lastdate strong{color:var(--primary-dark)}
-.job-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.job-actions .jbtn{display:inline-block;font-size:.85rem;font-weight:700;padding:7px 14px;border-radius:8px}
-.job-actions .jbtn-solid{background:var(--primary);color:#fff}
-.job-actions .jbtn-solid:hover{background:var(--primary-dark)}
-.job-actions .jbtn-outline{border:1px solid var(--border);background:#fff;color:var(--primary)}
+/* Job cards — clean modern mobile-first design */
+.job-list{display:grid;gap:16px}
+.job-card{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px;
+  color:var(--text);
+  transition:box-shadow .15s,border-color .15s,transform .15s;
+}
+.job-card:hover{
+  box-shadow:0 6px 20px rgba(12,68,124,.10);
+  border-color:var(--primary);
+  transform:translateY(-2px);
+}
+.job-card[data-status="CLOSING_SOON"]{
+  border-left:4px solid #b35c00;
+  padding-left:12px;
+}
+.job-card[data-status="ACTIVE"]{
+  border-left:4px solid var(--success);
+  padding-left:12px;
+}
+.job-org{
+  font-size:.8rem;
+  font-weight:800;
+  color:var(--primary);
+  text-transform:uppercase;
+  letter-spacing:.4px;
+  margin-bottom:2px;
+}
+.job-title{
+  font-family:var(--font-head);
+  font-weight:700;
+  font-size:1.1rem;
+  line-height:1.4;
+  margin:0 0 4px 0;
+  color:var(--text);
+}
+.job-subtitle{
+  font-size:.85rem;
+  color:var(--muted);
+  margin:0 0 8px 0;
+  font-weight:600;
+}
+.job-status{margin:0 0 8px 0}
+.job-info{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:0 0 10px 0;
+  padding:10px;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:8px;
+}
+.job-info-item{
+  display:flex;
+  flex-direction:column;
+  min-width:110px;
+}
+.job-info-label{
+  font-size:.72rem;
+  color:var(--muted);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.2px;
+  margin-bottom:2px;
+}
+.job-info-value{
+  font-size:.95rem;
+  font-weight:700;
+  color:var(--text);
+}
+.job-eligibility{
+  font-size:.88rem;
+  color:var(--text);
+  margin:0 0 12px 0;
+  line-height:1.5;
+}
+.job-eligibility .lbl{
+  font-weight:700;
+  color:var(--primary);
+}
+.job-actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:auto;
+  padding-top:8px;
+  border-top:1px solid var(--border);
+}
+.jbtn{
+  display:inline-block;
+  font-size:.85rem;
+  font-weight:700;
+  padding:9px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  text-align:center;
+  flex:1;
+  min-width:120px;
+  transition:background .15s,border-color .15s,color .15s;
+}
+.jbtn-solid{
+  background:var(--primary);
+  color:#fff;
+}
+.jbtn-solid:hover{background:var(--primary-dark)}
+.jbtn-outline{
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--primary);
+}
+.jbtn-outline:hover{background:var(--bg);border-color:var(--primary)}
+.jbtn-outline.official-link{
+  border-color:var(--success);
+  color:var(--success);
+}
+.jbtn-outline.official-link:hover{
+  background:#e6f4ea;
+  border-color:var(--success);
+}
+/* Responsive: mobile-first single column, then 2 cols tablet, 3 cols desktop */
+@media(min-width:640px){
+  .job-list{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1024px){
+  .job-list{grid-template-columns:repeat(3,1fr)}
+  .job-card{padding:18px 20px}
+}
+/* शेवटची तारीख sidebar — closing-soon cards keep red accent */
+.home-closing .job-card{border-left:4px solid var(--danger);padding-left:12px}
+.home-side .empty-state{margin:0}
 
 /* शेवटची तारीख sidebar */
 .deadline-list{display:grid;gap:10px}

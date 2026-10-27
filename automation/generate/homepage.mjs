@@ -55,26 +55,50 @@ const quickLinks = [
   ...(waLink ? [{ href: waLink, img: '/assets/img/whatsapp.jpg', label: 'WhatsApp जॉइन करा', sub: 'WhatsApp Group', external: true }] : [])
 ].filter(t => t.external || t.href.startsWith('#') || (t.href === '/mock-test/' ? testsRenderable : avail.has(t.href)));
 
-// Job card (Phase 1) — फक्त record मध्ये असलेलीच facts; source-मध्ये नसलेली संख्या कधीच guess नाही
+// Job card (clean modern mobile-first design)
+// Structure: <article> container — no nested clickable links.
+//   CTA link (internal article) + optional official link are sibling <a> elements.
+// Status badge shown only when date data exists (verified).
 function jobCard(p) {
   const r = p.recruitment || {};
-  const dept = [safeText(p.department), safeText(r.location)].filter(Boolean).join(' · ');
+  const dept = safeText(p.department) || '';
+  const postNames = (r.postNames || []).map(safeText).filter(Boolean);
+  const postNameSubtitle = postNames.length ? postNames[0] : '';
   const vacNum = Number(r.vacancies);
-  const vac = (r.vacancies != null && Number.isFinite(vacNum)) ? `${vacNum.toLocaleString('en-IN')} जागा` : '';
-  const meta = [dept, vac].filter(Boolean).join(' · ');
-  const qual = (r.qualification || []).map(safeText).filter(Boolean).slice(0, 2).join(', ');
+  const vac = (r.vacancies != null && Number.isFinite(vacNum))
+    ? vacNum.toLocaleString('en-IN') + ' जागा'
+    : '';
+  const qual = (r.qualification || [])
+    .map(safeText)
+    .filter(Boolean)
+    .slice(0, 2)
+    .join(', ');
   const lastDate = p.dates && p.dates.applicationEnd ? fmtDate(p.dates.applicationEnd) : '';
-  const official = !!(p.links && p.links.applyUrl && String(p.links.applyUrl).startsWith('https://'));
-  return `<a class="job-card" href="${esc(pathOf(p))}">
-  ${meta ? `<div class="job-dept">${esc(meta)}</div>` : ''}
-  <div class="title">${esc(p.title)} ${statusBadge(p)}</div>
-  ${qual ? `<div class="job-qual"><span class="lbl">पात्रता:</span> ${esc(qual)}</div>` : ''}
-  ${lastDate ? `<div class="job-lastdate"><strong>अर्जाची शेवटची तारीख:</strong> ${esc(lastDate)}</div>` : ''}
-  <div class="job-actions">
-    <span class="jbtn jbtn-solid">संपूर्ण माहिती →</span>
-    ${official ? '<span class="jbtn jbtn-outline">अधिकृत संकेतस्थळ ↗</span>' : ''}
-  </div>
-</a>`;
+  const officialUrl =
+    p.links && p.links.applyUrl && String(p.links.applyUrl).startsWith('https://')
+      ? p.links.applyUrl
+      : null;
+  // Verified status label — only when date data exists to back it
+  const hasDateData = p.dates &&
+    (p.dates.applicationEnd || p.dates.applicationStart || p.dates.resultDate || p.dates.admitCardDate);
+  const badgeHtml = hasDateData ? statusBadge(p) : '';
+  const hasStatus = !!badgeHtml;
+
+  return `<article class="job-card"${hasStatus ? ' data-status="' + recruitStatus(p) + '"' : ''}>
+    ${dept ? `<div class="job-org">${esc(dept)}</div>` : ''}
+    <h3 class="job-title">${esc(p.title)}</h3>
+    ${postNameSubtitle ? `<p class="job-subtitle">${esc(postNameSubtitle)}</p>` : ''}
+    ${badgeHtml ? `<div class="job-status">${badgeHtml}</div>` : ''}
+    <div class="job-info">
+      ${vac ? `<div class="job-info-item"><span class="job-info-label">एकूण जागा</span><span class="job-info-value">${esc(vac)}</span></div>` : ''}
+      ${lastDate ? `<div class="job-info-item"><span class="job-info-label">अर्ज शेवट</span><span class="job-info-value">${esc(lastDate)}</span></div>` : ''}
+    </div>
+    ${qual ? `<div class="job-eligibility"><span class="lbl">पात्रता:</span> ${esc(qual)}</div>` : ''}
+    <div class="job-actions">
+      <a href="${esc(pathOf(p))}" class="jbtn jbtn-solid">संपूर्ण माहिती वाचा →</a>
+      ${officialUrl ? `<a href="${esc(officialUrl)}" class="jbtn jbtn-outline official-link" target="_blank" rel="noopener">अधिकृत संकेतस्थळ ↗</a>` : ''}
+    </div>
+  </article>`;
 }
 
 // Deadline item — daysLeft IST calendar-day ने (recruitStatus प्रमाणेच)
