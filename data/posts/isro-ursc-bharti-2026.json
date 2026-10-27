@@ -1,0 +1,339 @@
+{
+  "id": "isro-ursc-bharti-2026",
+  "type": "recruitment",
+  "title": "ISRO URSC भरती 2026: टेक्निशियन, ड्रायव्हर पदांसाठी 61 जागा",
+  "slug": "isro-ursc-bharti-2026",
+  "path": "/isro-ursc-bharti-2026/",
+  "category": "recruitment",
+  "exam": null,
+  "department": "भारतीय अंतराळ संशोधन संस्था (ISRO), U R Rao Satellite Centre (URSC), Bengaluru",
+  "recruitment": {
+    "postNames": [
+      "Technician-B",
+      "Light Vehicle Driver-A",
+      "Staff Car Driver-A",
+      "Heavy Vehicle Driver-A"
+    ],
+    "vacancies": 61,
+    "qualification": [
+      "Technician-B: SSLC/SSC/Matriculation उत्तीर्ण आणि संबंधित ट्रेडमध्ये NCVT कडून ITI/NTC/NAC.",
+      "Light Vehicle Driver-A: SSLC/SSC/Matriculation उत्तीर्ण, हलके वाहन चालवण्याचा 3 वर्षांचा अनुभव आणि वैध Light Vehicle Driving Licence.",
+      "Staff Car Driver-A: SSLC/SSC/Matriculation उत्तीर्ण, हलके वाहन चालक म्हणून 3 वर्षांचा अनुभव आणि वैध Light Vehicle Driving Licence.",
+      "Heavy Vehicle Driver-A: SSLC/SSC/Matriculation उत्तीर्ण, एकूण 5 वर्षांचा अनुभव; त्यापैकी किमान 3 वर्षे Heavy Vehicle Driver म्हणून आणि उर्वरित अनुभव Light Motor Vehicle चालवण्याचा. वैध Heavy Vehicle Driving Licence आणि लागू असल्यास Public Service Badge आवश्यक."
+    ],
+    "ageLimit": {
+      "min": 18,
+      "max": 35,
+      "asOn": "2026-11-13",
+      "relaxation": "SC/ST उमेदवारांना राखीव जागांसाठी 5 वर्षे आणि OBC उमेदवारांना राखीव जागांसाठी 3 वर्षे सूट. इतर पात्र प्रवर्गांसाठी केंद्र सरकारच्या लागू नियमांनुसार सूट."
+    },
+    "salary": {
+      "technicianB": "Pay Level 3: ₹21,700 प्रतिमहिना + लागू भत्ते",
+      "drivers": "Pay Level 2: ₹19,900 प्रतिमहिना + लागू भत्ते",
+      "note": "अधिसूचनेनुसार मूळ वेतन; एकूण वेतन लागू भत्ते आणि नियमांनुसार."
+    },
+    "fee": {
+      "initialPayment": 500,
+      "nonRefundable": 100,
+      "refund": 400,
+      "note": "सर्व उमेदवारांना सुरुवातीला ₹500 भरावे लागतील. लेखी परीक्षेला उपस्थित राहणाऱ्या उमेदवारांना ₹400 परत केले जातील. लागू सेवा शुल्क उमेदवाराने भरायचे आहे."
+    },
+    "applicationMode": "Online",
+    "location": "URSC, Bengaluru; संबंधित पदांसाठी जाहिरातीत नमूद केलेल्या जागा",
+    "jobType": "government"
+  },
+  "dates": {
+    "notification": "2026-10-24",
+    "applicationStart": "2026-10-24",
+    "applicationStartTime": "17:00",
+    "applicationEnd": "2026-11-13",
+    "applicationEndTime": "23:55",
+    "feePaymentEnd": "2026-11-13",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/8103298105.pdf",
+    "applyUrl": "https://www.ursc.gov.in/",
+    "officialUrl": "https://www.isro.gov.in/",
+    "careersUrl": "https://www.ursc.gov.in/"
+  },
+  "selectionProcess": [
+    "लेखी परीक्षा / Computer Based Test",
+    "कौशल्य चाचणी",
+    "ड्रायव्हर पदांसाठी Driving Skill Test",
+    "कागदपत्र पडताळणी"
+  ],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "ISRO URSC Recruitment 2026 अंतर्गत Technician-B, Light Vehicle Driver-A, Staff Car Driver-A आणि Heavy Vehicle Driver-A पदांसाठी एकूण 61 जागा आहेत. पात्र उमेदवार 13 नोव्हेंबर 2026 पर्यंत ऑनलाइन अर्ज करू शकतात.",
+    "metaDescription": "ISRO URSC Bharti 2026: टेक्निशियन-B आणि ड्रायव्हर पदांच्या 61 जागा, शैक्षणिक पात्रता, वयोमर्यादा, ₹21,700 वेतन, अर्ज शुल्क आणि ऑनलाइन अर्जाची माहिती मराठीत.",
+    "sections": [
+      {
+        "heading": "ISRO URSC भरती 2026 माहिती",
+        "type": "text",
+        "body": "भारतीय अंतराळ संशोधन संस्था (ISRO) अंतर्गत U R Rao Satellite Centre (URSC), Bengaluru यांनी जाहिरात क्रमांक URSC:04:2026 द्वारे Technician-B, Light Vehicle Driver-A, Staff Car Driver-A आणि Heavy Vehicle Driver-A पदांसाठी ऑनलाइन अर्ज मागवले आहेत."
+      },
+      {
+        "heading": "महत्त्वाच्या तारखा",
+        "type": "table",
+        "headers": [
+          "तपशील",
+          "तारीख"
+        ],
+        "rows": [
+          [
+            "जाहिरात दिनांक",
+            "24 ऑक्टोबर 2026"
+          ],
+          [
+            "ऑनलाइन अर्ज सुरू",
+            "24 ऑक्टोबर 2026, सायं. 5:00"
+          ],
+          [
+            "अर्ज करण्याची अंतिम तारीख",
+            "13 नोव्हेंबर 2026, रात्री 11:55"
+          ],
+          [
+            "अर्ज शुल्क भरण्याची अंतिम तारीख",
+            "13 नोव्हेंबर 2026"
+          ],
+          [
+            "परीक्षा दिनांक",
+            "अद्याप नमूद नाही"
+          ]
+        ]
+      },
+      {
+        "heading": "पदनिहाय रिक्त जागा",
+        "type": "table",
+        "headers": [
+          "पदाचे नाव",
+          "पद कोड",
+          "जागा"
+        ],
+        "rows": [
+          [
+            "Technician-B — Electronics Mechanic आणि संबंधित इलेक्ट्रॉनिक्स ट्रेड",
+            "01",
+            24
+          ],
+          [
+            "Technician-B — Fitter",
+            "02",
+            8
+          ],
+          [
+            "Technician-B — Electrician",
+            "03",
+            4
+          ],
+          [
+            "Technician-B — Refrigeration and Air Conditioning",
+            "04",
+            5
+          ],
+          [
+            "Technician-B — Turner",
+            "05",
+            1
+          ],
+          [
+            "Technician-B — Machinist",
+            "06",
+            2
+          ],
+          [
+            "Technician-B — Motor Vehicle Mechanic",
+            "07",
+            1
+          ],
+          [
+            "Technician-B — Electroplater",
+            "08",
+            1
+          ],
+          [
+            "Light Vehicle Driver-A",
+            "09",
+            3
+          ],
+          [
+            "Staff Car Driver-A",
+            "10",
+            2
+          ],
+          [
+            "Heavy Vehicle Driver-A",
+            "11",
+            10
+          ],
+          [
+            "एकूण",
+            "",
+            61
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक पात्रता",
+        "type": "list",
+        "items": [
+          "Technician-B: दहावी उत्तीर्ण आणि अर्ज केलेल्या संबंधित ट्रेडमध्ये NCVT मान्यताप्राप्त ITI/NTC/NAC.",
+          "Light Vehicle Driver-A: दहावी उत्तीर्ण, हलके वाहन चालवण्याचा किमान 3 वर्षांचा अनुभव आणि वैध Light Vehicle Driving Licence.",
+          "Staff Car Driver-A: दहावी उत्तीर्ण, हलके वाहन चालक म्हणून किमान 3 वर्षांचा अनुभव आणि वैध Light Vehicle Driving Licence.",
+          "Heavy Vehicle Driver-A: दहावी उत्तीर्ण, एकूण 5 वर्षांचा अनुभव; त्यापैकी किमान 3 वर्षे अवजड वाहन चालक म्हणून आणि उर्वरित अनुभव हलके वाहन चालवण्याचा."
+        ]
+      },
+      {
+        "heading": "वयोमर्यादा",
+        "type": "text",
+        "body": "13 नोव्हेंबर 2026 रोजी सर्व अधिसूचित पदांसाठी वयोमर्यादा 18 ते 35 वर्षे आहे."
+      },
+      {
+        "heading": "वेतन आणि सुविधा",
+        "type": "table",
+        "headers": [
+          "पद",
+          "Pay Level",
+          "प्रारंभिक मूळ वेतन"
+        ],
+        "rows": [
+          [
+            "Technician-B",
+            "Level 3",
+            "₹21,700 प्रतिमहिना"
+          ],
+          [
+            "Light Vehicle Driver-A",
+            "Level 2",
+            "₹19,900 प्रतिमहिना"
+          ],
+          [
+            "Staff Car Driver-A",
+            "Level 2",
+            "₹19,900 प्रतिमहिना"
+          ],
+          [
+            "Heavy Vehicle Driver-A",
+            "Level 2",
+            "₹19,900 प्रतिमहिना"
+          ]
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क",
+        "type": "text",
+        "body": "सर्व उमेदवारांना अर्ज करताना सुरुवातीला ₹500 भरावे लागतील. लेखी परीक्षेला उपस्थित राहिल्यावर ₹400 परत मिळतात; ₹100 परत न मिळणारे शुल्क आहे."
+      },
+      {
+        "heading": "निवड प्रक्रिया",
+        "type": "list",
+        "items": [
+          "लेखी परीक्षा किंवा Computer Based Test.",
+          "कौशल्य चाचणी.",
+          "ड्रायव्हर पदांसाठी Driving Skill Test.",
+          "कागदपत्रे आणि पात्रतेची पडताळणी."
+        ]
+      },
+      {
+        "heading": "ऑनलाइन अर्ज कसा करावा?",
+        "type": "olist",
+        "items": [
+          "ISRO ची अधिकृत वेबसाइट https://www.isro.gov.in/ किंवा URSC वेबसाइट https://www.ursc.gov.in/ उघडा.",
+          "Careers विभागात URSC:04:2026 भरतीची जाहिरात शोधा.",
+          "ऑनलाइन अर्जाची लिंक उघडा आणि अर्ज भरा.",
+          "अर्ज शुल्क ऑनलाइन भरा आणि अंतिम सबमिशन करा."
+        ]
+      },
+      {
+        "heading": "अधिकृत लिंक्स",
+        "type": "list",
+        "items": [
+          "ISRO अधिकृत वेबसाइट: https://www.isro.gov.in/",
+          "URSC अधिकृत वेबसाइट: https://www.ursc.gov.in/"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ISRO URSC भरती 2026 चा जाहिरात क्रमांक काय आहे?",
+        "a": "URSC:04:2026."
+      },
+      {
+        "q": "एकूण किती जागा आहेत?",
+        "a": "एकूण 61 जागा आहेत."
+      },
+      {
+        "q": "अर्ज करण्याची अंतिम तारीख काय आहे?",
+        "a": "13 नोव्हेंबर 2026 रोजी रात्री 11:55."
+      },
+      {
+        "q": "Technician-B साठी पात्रता काय आहे?",
+        "a": "दहावी उत्तीर्ण आणि संबंधित ट्रेडमध्ये NCVT कडून ITI/NTC/NAC आवश्यक आहे."
+      },
+      {
+        "q": "वयोमर्यादा किती आहे?",
+        "a": "13 नोव्हेंबर 2026 रोजी 18 ते 35 वर्षे."
+      },
+      {
+        "q": "अर्ज शुल्क किती आहे?",
+        "a": "सुरुवातीला ₹500. लेखी परीक्षेला उपस्थित राहिल्यावर ₹400 परत मिळतात."
+      },
+      {
+        "q": "अर्ज कुठे करायचा?",
+        "a": "https://www.ursc.gov.in/ किंवा https://www.isro.gov.in/ वरील Careers विभागातून."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ursc.gov.in/",
+      "name": "URSC:04:2026 अधिकृत भरती अधिसूचना",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-10-27"
+    },
+    {
+      "url": "https://www.isro.gov.in/",
+      "name": "ISRO अधिकृत वेबसाइट",
+      "priority": 1,
+      "role": "official-portal",
+      "verifiedAt": "2026-10-27"
+    }
+  ],
+  "status": "published",
+  "confidence": 95,
+  "publishedAt": "2026-10-27T06:46:29.276270+00:00",
+  "lastUpdatedAt": "2026-10-27T06:46:29.276270+00:00",
+  "contentHash": "dbedec3e261d1256ac761e39fc1ebdaf6de50321789ab7827192637b7fa7018b",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "ISRO URSC Bharti 2026",
+      "ISRO Recruitment 2026",
+      "URSC Recruitment 2026",
+      "Technician B Vacancy 2026",
+      "ISRO Driver Recruitment",
+      "ISRO Technician Salary",
+      "ISRO Recruitment Marathi",
+      "इसरो भरती 2026",
+      "इसरो टेक्निशियन भरती",
+      "इसरो ड्रायव्हर भरती",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/isro-ursc-bharti-2026.svg",
+    "index": true
+  },
+  "social": {
+    "instagram": {
+      "status": "draft",
+      "captionPath": "/assets/social/isro-ursc-bharti-2026.caption.txt",
+      "imagePath": "/assets/social/isro-ursc-bharti-2026.svg",
+      "note": "Social assets generate आणि validate झाल्यानंतरच प्रकाशित करा.",
+      "updatedAt": null
+    }
+  }
+}
