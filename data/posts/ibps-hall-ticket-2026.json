@@ -1,0 +1,426 @@
+{
+  "id": "ibps-hall-ticket-2026",
+  "type": "admit-card",
+  "title": "IBPS Hall Ticket 2026: PO, SO, Clerk आणि RRB Admit Card डाउनलोड लिंक",
+  "slug": "ibps-hall-ticket-2026",
+  "path": "/ibps-hall-ticket-2026/",
+  "category": "admit-card",
+  "exam": "IBPS CRP Examinations 2026",
+  "department": "Institute of Banking Personnel Selection (IBPS)",
+  "hallTicket": {
+    "title": "IBPS Hall Ticket 2026",
+    "year": 2026,
+    "officialWebsite": "https://www.ibps.in/",
+    "downloadPortal": "https://ibpsreg.ibps.in/",
+    "lastUpdated": "2026-10-29",
+    "items": [
+      {
+        "id": "ibps-so-mains-2026",
+        "examName": "IBPS Specialist Officer (SO) Mains",
+        "cycle": "CRP SPL-XVI",
+        "stage": "Main Examination",
+        "status": "available",
+        "releaseDate": "2026-10-22",
+        "examDate": "2026-11-01",
+        "downloadEnd": "2026-11-01",
+        "downloadUrl": "https://ibpsreg.ibps.in/crpspxvimy26/oecla_oct26/login.php?appid=dfac30f9e85bd1986fb4190e0ef49a00",
+        "officialInfoUrl": "https://www.ibps.in/index.php/specialist-officers-xvi/",
+        "credentials": [
+          "Registration Number किंवा Roll Number",
+          "Password किंवा जन्मतारीख"
+        ],
+        "eligibilityNote": "पूर्व परीक्षेत पात्र ठरलेल्या उमेदवारांसाठी मुख्य परीक्षेचे प्रवेशपत्र."
+      },
+      {
+        "id": "ibps-po-mains-2026",
+        "examName": "IBPS Probationary Officer (PO/MT) Mains",
+        "cycle": "CRP PO/MT-XVI",
+        "stage": "Main Examination",
+        "status": "exam-completed",
+        "releaseDate": "2026-09-25",
+        "examDate": "2026-10-04",
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://www.ibps.in/index.php/management-trainees-xvi/",
+        "credentials": [
+          "Registration Number किंवा Roll Number",
+          "Password किंवा जन्मतारीख"
+        ],
+        "eligibilityNote": "मुख्य परीक्षा पार पडली आहे. नवीन निकाल किंवा पुढील टप्प्याची माहिती अधिकृत वेबसाइटवर तपासावी."
+      },
+      {
+        "id": "ibps-clerk-csa-2026",
+        "examName": "IBPS Clerk / Customer Service Associate",
+        "cycle": "CRP CSA-XVI",
+        "stage": "Main Examination",
+        "status": "upcoming-admit-card-pending",
+        "releaseDate": null,
+        "examDate": "2026-12-27",
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://www.ibps.in/index.php/clerical-cadre-xvi/",
+        "credentials": [
+          "Registration Number किंवा Roll Number",
+          "Password किंवा जन्मतारीख"
+        ],
+        "eligibilityNote": "मुख्य परीक्षेचे प्रवेशपत्र जाहीर झाल्यावर अधिकृत लिंक येथे जोडावी."
+      },
+      {
+        "id": "ibps-rrb-officer-scale-1-2026",
+        "examName": "IBPS RRB Officer Scale-I",
+        "cycle": "CRP RRBs-XV",
+        "stage": "Preliminary Examination",
+        "status": "upcoming-admit-card-pending",
+        "releaseDate": null,
+        "examDate": null,
+        "examWindow": [
+          "2026-11-21",
+          "2026-11-22"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://www.ibps.in/index.php/rural-bank-xv/",
+        "credentials": [
+          "Registration Number किंवा Roll Number",
+          "Password किंवा जन्मतारीख"
+        ],
+        "eligibilityNote": "प्रवेशपत्र आणि उमेदवारनिहाय परीक्षा तारीख अधिकृतपणे जाहीर झाल्यावर तपासावी."
+      },
+      {
+        "id": "ibps-rrb-office-assistant-2026",
+        "examName": "IBPS RRB Office Assistant (Multipurpose)",
+        "cycle": "CRP RRBs-XV",
+        "stage": "Preliminary Examination",
+        "status": "upcoming-admit-card-pending",
+        "releaseDate": null,
+        "examDate": null,
+        "examWindow": [
+          "2026-12-06",
+          "2026-12-12",
+          "2026-12-13"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://www.ibps.in/index.php/rural-bank-xv/",
+        "credentials": [
+          "Registration Number किंवा Roll Number",
+          "Password किंवा जन्मतारीख"
+        ],
+        "eligibilityNote": "प्रवेशपत्र जाहीर झाल्यावर अधिकृत डाउनलोड लिंक येथे जोडावी."
+      },
+      {
+        "id": "ibps-rrb-officer-scale-2-3-2026",
+        "examName": "IBPS RRB Officer Scale-II आणि Scale-III",
+        "cycle": "CRP RRBs-XV",
+        "stage": "Single Examination",
+        "status": "upcoming-admit-card-pending",
+        "releaseDate": null,
+        "examDate": "2026-12-20",
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://www.ibps.in/index.php/rural-bank-xv/",
+        "credentials": [
+          "Registration Number किंवा Roll Number",
+          "Password किंवा जन्मतारीख"
+        ],
+        "eligibilityNote": "प्रवेशपत्राच्या अधिकृत घोषणेची प्रतीक्षा."
+      }
+    ]
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "officialUrl": "https://www.ibps.in/",
+    "downloadPortal": "https://ibpsreg.ibps.in/",
+    "crpUpdatesUrl": "https://www.ibps.in/index.php/crp-updates/",
+    "poUrl": "https://www.ibps.in/index.php/management-trainees-xvi/",
+    "soUrl": "https://www.ibps.in/index.php/specialist-officers-xvi/",
+    "clerkUrl": "https://www.ibps.in/index.php/clerical-cadre-xvi/",
+    "rrbUrl": "https://www.ibps.in/index.php/rural-bank-xv/"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "IBPS Hall Ticket 2026: PO, SO, Clerk आणि RRB परीक्षांच्या प्रवेशपत्रांची स्थिती, अधिकृत डाउनलोड लिंक, परीक्षा तारखा आणि प्रवेशपत्र डाउनलोड करण्याची पद्धत एका ठिकाणी तपासा. सध्या IBPS SO Mains प्रवेशपत्र उपलब्ध आहे.",
+    "metaDescription": "IBPS Hall Ticket 2026 डाउनलोड लिंक: IBPS SO Mains Admit Card, PO, Clerk आणि RRB प्रवेशपत्रांची स्थिती, परीक्षा तारखा, अधिकृत वेबसाइट आणि डाउनलोड करण्याची पद्धत मराठीत.",
+    "sections": [
+      {
+        "heading": "IBPS Hall Ticket 2026 बद्दल",
+        "type": "text",
+        "body": "Institute of Banking Personnel Selection (IBPS) मार्फत विविध सार्वजनिक क्षेत्रातील बँका आणि Regional Rural Banks साठी भरती परीक्षा घेतल्या जातात. या पेजवर IBPS PO/MT, Specialist Officer (SO), Customer Service Associate (Clerk) आणि RRB परीक्षांच्या प्रवेशपत्रांची स्थिती व अधिकृत लिंक्स एकत्र दिल्या आहेत. प्रवेशपत्र डाउनलोड करण्यापूर्वी संबंधित परीक्षेची अधिकृत सूचना, पात्रता आणि तारीख तपासा."
+      },
+      {
+        "heading": "सध्या उपलब्ध प्रवेशपत्र",
+        "type": "table",
+        "headers": [
+          "परीक्षा",
+          "स्थिती",
+          "परीक्षा तारीख",
+          "डाउनलोड"
+        ],
+        "rows": [
+          [
+            "IBPS SO Mains — CRP SPL-XVI",
+            "उपलब्ध",
+            "1 नोव्हेंबर 2026",
+            "अधिकृत डाउनलोड लिंक"
+          ],
+          [
+            "IBPS PO/MT Mains — CRP PO/MT-XVI",
+            "परीक्षा पार पडली",
+            "4 ऑक्टोबर 2026",
+            "पुढील अपडेट तपासा"
+          ],
+          [
+            "IBPS Clerk/CSA Mains — CRP CSA-XVI",
+            "प्रवेशपत्र जाहीर होण्याची प्रतीक्षा",
+            "27 डिसेंबर 2026",
+            "अधिकृत अपडेट तपासा"
+          ],
+          [
+            "IBPS RRB Officer Scale-I Prelims",
+            "प्रवेशपत्र जाहीर होण्याची प्रतीक्षा",
+            "21 आणि 22 नोव्हेंबर 2026",
+            "अधिकृत अपडेट तपासा"
+          ],
+          [
+            "IBPS RRB Office Assistant Prelims",
+            "प्रवेशपत्र जाहीर होण्याची प्रतीक्षा",
+            "6, 12 आणि 13 डिसेंबर 2026",
+            "अधिकृत अपडेट तपासा"
+          ],
+          [
+            "IBPS RRB Officer Scale-II/III",
+            "प्रवेशपत्र जाहीर होण्याची प्रतीक्षा",
+            "20 डिसेंबर 2026",
+            "अधिकृत अपडेट तपासा"
+          ]
+        ]
+      },
+      {
+        "heading": "IBPS SO Mains Hall Ticket 2026 डाउनलोड",
+        "type": "text",
+        "body": "IBPS ने CRP SPL-XVI अंतर्गत Specialist Officer मुख्य परीक्षेचे Call Letter 22 ऑक्टोबर 2026 रोजी उपलब्ध केले आहे. परीक्षा 1 नोव्हेंबर 2026 रोजी नियोजित आहे. पात्र उमेदवारांनी अधिकृत डाउनलोड पोर्टलवर Registration Number/Roll Number आणि Password/जन्मतारीख वापरून प्रवेशपत्र डाउनलोड करावे. डाउनलोडची अंतिम तारीख 1 नोव्हेंबर 2026 असल्याने शक्य तितक्या लवकर प्रवेशपत्र जतन करावे."
+      },
+      {
+        "heading": "प्रवेशपत्र डाउनलोड करण्याची पद्धत",
+        "type": "olist",
+        "items": [
+          "IBPS ची अधिकृत वेबसाइट https://www.ibps.in/ उघडा.",
+          "CRP Updates किंवा संबंधित परीक्षेचा विभाग निवडा.",
+          "परीक्षेच्या नावासमोरील Call Letter / Admit Card लिंक उघडा.",
+          "Registration Number किंवा Roll Number प्रविष्ट करा.",
+          "Password किंवा जन्मतारीख भरा आणि आवश्यक असल्यास CAPTCHA पूर्ण करा.",
+          "Login केल्यानंतर प्रवेशपत्र डाउनलोड करा.",
+          "PDF सुरक्षित जतन करून स्पष्ट प्रिंट काढा."
+        ]
+      },
+      {
+        "heading": "प्रवेशपत्रावर कोणती माहिती तपासावी?",
+        "type": "list",
+        "items": [
+          "उमेदवाराचे पूर्ण नाव",
+          "Roll Number आणि Registration Number",
+          "छायाचित्र आणि स्वाक्षरी",
+          "परीक्षेची तारीख व वेळ",
+          "Reporting Time",
+          "परीक्षा केंद्राचा पत्ता",
+          "परीक्षेसंबंधी सूचना आणि आवश्यक कागदपत्रे"
+        ]
+      },
+      {
+        "heading": "प्रवेशपत्र डाउनलोड होत नसेल तर",
+        "type": "list",
+        "items": [
+          "Registration Number/Roll Number आणि Password/जन्मतारीख अर्जातील माहितeenुसार असल्याची खात्री करा.",
+          "वेबसाइटवर अधिक ट्रॅफिक असल्यास काही वेळाने पुन्हा प्रयत्न करा.",
+          "ब्राउझर रिफ्रेश करा किंवा दुसऱ्या ब्राउझरमधून प्रयत्न करा.",
+          "नोंदणीवेळी वापरलेला ई-मेल आणि SMS तपासा.",
+          "तरीही अडचण असल्यास IBPS च्या अधिकृत Helpdesk/Contact पेजवरील सूचना वापरा."
+        ]
+      },
+      {
+        "heading": "परीक्षेला जाताना आवश्यक गोष्टी",
+        "type": "list",
+        "items": [
+          "डाउनलोड केलेले प्रवेशपत्र आणि त्याची प्रिंट प्रत सोबत ठेवा.",
+          "अधिकृत सूचनेत मान्य केलेले मूळ फोटो ओळखपत्र आणा.",
+          "प्रवेशपत्रावरील reporting time आणि परीक्षा केंद्र आधी तपासा.",
+          "मोबाईल, स्मार्टवॉच, कॅल्क्युलेटर किंवा इतर प्रतिबंधित वस्तूंबाबत Call Letter मधील नियम पाळा.",
+          "प्रवेशपत्रावर दिलेल्या Self-declaration, फोटो किंवा इतर सूचनांचे पालन करा."
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "प्रवेशपत्र फक्त अधिकृत IBPS वेबसाइट किंवा त्यावरून दिलेल्या अर्ज पोर्टलवरूनच डाउनलोड करा.",
+          "सर्व IBPS परीक्षांचे प्रवेशपत्र एकाच वेळी जाहीर होत नाही.",
+          "प्रवेशपत्राची स्थिती आणि डाउनलोड लिंक बदलू शकते; अर्जदारांनी अधिकृत CRP Updates तपासावेत.",
+          "परीक्षा पार पडलेल्या भरतींच्या जुन्या डाउनलोड लिंक सक्रिय असतीलच असे नाही.",
+          "या पेजवरील आगामी परीक्षांची तारीख ही IBPS च्या प्रकाशित वेळापत्रकानुसार आहे; बदलांसाठी अधिकृत सूचना अंतिम मानाव्यात.",
+          "पासवर्ड, OTP किंवा वैयक्तिक लॉगिन तपशील कोणत्याही अनधिकृत व्यक्तीला देऊ नका."
+        ]
+      },
+      {
+        "heading": "अधिकृत लिंक्स",
+        "type": "list",
+        "items": [
+          "IBPS अधिकृत वेबसाइट: https://www.ibps.in/",
+          "IBPS CRP Updates: https://www.ibps.in/index.php/crp-updates/",
+          "IBPS PO/MT-XVI: https://www.ibps.in/index.php/management-trainees-xvi/",
+          "IBPS SO-XVI: https://www.ibps.in/index.php/specialist-officers-xvi/",
+          "IBPS CSA-XVI: https://www.ibps.in/index.php/clerical-cadre-xvi/",
+          "IBPS RRB-XV: https://www.ibps.in/index.php/rural-bank-xv/",
+          "IBPS परीक्षा पोर्टल: https://ibpsreg.ibps.in/"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "IBPS Hall Ticket 2026 कुठे डाउनलोड करायचे?",
+        "a": "IBPS ची अधिकृत वेबसाइट https://www.ibps.in/ उघडून संबंधित परीक्षेची Call Letter लिंक निवडा. अधिकृत लिंकवरून दिलेल्या IBPS अर्ज पोर्टलवर प्रवेशपत्र डाउनलोड करा."
+      },
+      {
+        "q": "सध्या IBPS चे कोणते प्रवेशपत्र उपलब्ध आहे?",
+        "a": "29 ऑक्टोबर 2026 रोजी उपलब्ध अधिकृत माहितीनुसार IBPS SO Mains (CRP SPL-XVI) चे प्रवेशपत्र उपलब्ध आहे. ते 1 नोव्हेंबर 2026 पर्यंत डाउनलोड करता येते."
+      },
+      {
+        "q": "IBPS SO Mains परीक्षा कधी आहे?",
+        "a": "CRP SPL-XVI मुख्य परीक्षा 1 नोव्हेंबर 2026 रोजी नियोजित आहे."
+      },
+      {
+        "q": "IBPS SO Hall Ticket डाउनलोड करण्यासाठी काय लागते?",
+        "a": "Registration Number किंवा Roll Number आणि Password किंवा जन्मतारीख आवश्यक असते."
+      },
+      {
+        "q": "IBPS PO Mains प्रवेशपत्र आता डाउनलोड करता येईल का?",
+        "a": "PO/MT-XVI मुख्य परीक्षा 4 ऑक्टोबर 2026 रोजी पार पडली आहे. जुनी डाउनलोड लिंक अजून सक्रिय आहे असे गृहीत धरू नये; पुढील अपडेट अधिकृत IBPS पेजवर तपासा."
+      },
+      {
+        "q": "IBPS Clerk Mains प्रवेशपत्र कधी येईल?",
+        "a": "29 ऑक्टोबर 2026 पर्यंत या पेजवर मुख्य परीक्षेचे प्रवेशपत्र जाहीर झाल्याची पुष्टी नाही. परीक्षा वेळापत्रकानुसार 27 डिसेंबर 2026 रोजी नियोजित आहे. अधिकृत घोषणेनंतर लिंक अपडेट करावी."
+      },
+      {
+        "q": "IBPS RRB प्रवेशपत्र जाहीर झाले आहे का?",
+        "a": "Officer Scale-I आणि Office Assistant परीक्षांची वेळापत्रकातील तारीख आगामी आहे. संबंधित प्रवेशपत्र जाहीर झाल्याची अधिकृत पुष्टी मिळाल्यावरच डाउनलोड लिंक सक्रिय म्हणून दाखवावी."
+      },
+      {
+        "q": "प्रवेशपत्र डाउनलोड होत नसेल तर काय करावे?",
+        "a": "लॉगिन तपशील तपासा, काही वेळाने पुन्हा प्रयत्न करा आणि अधिकृत IBPS वेबसाइटवरील सूचना वापरा."
+      },
+      {
+        "q": "परीक्षेला प्रवेशपत्रासोबत काय न्यावे?",
+        "a": "प्रवेशपत्र, अधिकृत सूचनेत मान्य केलेले मूळ फोटो ओळखपत्र आणि Call Letter मध्ये सांगितलेली इतर कागदपत्रे सोबत न्यावीत."
+      },
+      {
+        "q": "IBPS Hall Ticket अपडेट कुठे तपासावे?",
+        "a": "https://www.ibps.in/index.php/crp-updates/ या IBPS च्या अधिकृत अपडेट पेजवर तपासा."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ibps.in/index.php/crp-updates/",
+      "name": "IBPS CRP Updates — अधिकृत अपडेट्स",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://ibpsreg.ibps.in/crpspxvimy26/oecla_oct26/login.php?appid=dfac30f9e85bd1986fb4190e0ef49a00",
+      "name": "IBPS SO Mains CRP SPL-XVI Call Letter",
+      "priority": 1,
+      "role": "admit-card",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://www.ibps.in/index.php/specialist-officers-xvi/",
+      "name": "IBPS Specialist Officers XVI",
+      "priority": 1,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://www.ibps.in/index.php/management-trainees-xvi/",
+      "name": "IBPS PO/MT XVI",
+      "priority": 1,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://www.ibps.in/index.php/clerical-cadre-xvi/",
+      "name": "IBPS CSA XVI",
+      "priority": 1,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://www.ibps.in/index.php/rural-bank-xv/",
+      "name": "IBPS RRB XV",
+      "priority": 1,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://majhinaukri.in/hall-ticket/ibps-hall-ticket/",
+      "name": "MajhiNaukri — IBPS Hall Ticket reference page",
+      "priority": 2,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://www.testbook.com/news/ibps-so-mains-admit-card-2026-out/",
+      "name": "Testbook — IBPS SO Mains Admit Card 2026",
+      "priority": 2,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    },
+    {
+      "url": "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf",
+      "name": "IBPS Tentative Calendar 2026-27",
+      "priority": 1,
+      "role": "reference",
+      "verifiedAt": "2026-10-29T14:04:00+05:30"
+    }
+  ],
+  "status": "published",
+  "confidence": 93,
+  "publishedAt": "2026-10-29T09:24:21.911Z",
+  "lastUpdatedAt": "2026-10-29T09:24:21.911Z",
+  "contentHash": "eb3f235a404ea0d8ebba2ff2db38574b9abf7a8158497fdfc9ac6cc5a470cbcb",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "IBPS Hall Ticket 2026",
+      "IBPS Admit Card 2026",
+      "IBPS SO Mains Admit Card 2026",
+      "IBPS PO Mains Hall Ticket",
+      "IBPS Clerk Admit Card 2026",
+      "IBPS RRB Admit Card 2026",
+      "IBPS Call Letter Download",
+      "IBPS Hall Ticket Marathi",
+      "IBPS प्रवेशपत्र 2026",
+      "बँक भरती प्रवेशपत्र",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/ibps-hall-ticket-2026.svg",
+    "index": true
+  },
+  "social": {
+    "instagram": {
+      "status": "draft",
+      "captionPath": "/assets/social/ibps-hall-ticket-2026.caption.txt",
+      "imagePath": "/assets/social/ibps-hall-ticket-2026.svg",
+      "note": "Social assets generate आणि validate झाल्यानंतरच प्रकाशित करा.",
+      "updatedAt": null
+    }
+  }
+}
