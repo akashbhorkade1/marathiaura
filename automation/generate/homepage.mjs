@@ -4,7 +4,7 @@
 // नियम: active sections नेहमी <!--active-list--> markers मध्ये (validate-output gate);
 //       फक्त प्रत्यक्षात generate झालेलीच paths link होतील; source-मध्ये नसलेली facts कधीच render होत नाहीत.
 import { loadSite, loadCategories, loadPosts, loadTests, published, write, esc, pageHtml, pathOf, svgOg,
-  safeText, fmtDate, statusBadge, recruitStatus, isClosed, generatedCategoryPaths, questionIndex, isRenderableTest } from '../lib.mjs';
+  safeText, fmtDate, statusBadge, recruitStatus, isClosed, generatedCategoryPaths, questionIndex, isRenderableTest, postCard } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -26,6 +26,13 @@ const withDeadline = activeRec
 // Phase 2 — graceful fallback: active भरती आहेत पण तारखा जाहीर नाहीत → खोटी तारीख न देता
 // स्पष्ट empty-state दाखवा (docs/04: source-मध्ये नसलेली facts कधीच render नाहीत)
 const showSidebar = withDeadline.length > 0 || activeRec.length > 0;
+
+// Hall Ticket / Admit Card posts — फक्त published, नवीनतम आधी (top 4)
+// `posts` आधीच published() वरून filter केलेले आहेत आणि lastUpdatedAt नुसार sort केलेले आहेत.
+const admitCardPosts = posts
+  .filter(p => p.category === 'admit-card' || p.type === 'admit-card')
+  .slice(0, 4);
+const admitCardLink = avail.has('/admit-card/') ? '<a href="/admit-card/">सर्व पहा →</a>' : '';
 
 // Category index cards — फक्त generated hubs (thin-page rule, docs/03 §3)
 const catCards = categories
@@ -156,6 +163,19 @@ ${showSidebar ? `
     </div>` : '<p class="empty-state">सध्या निश्चित अंतिम तारीख उपलब्ध नाही — अधिकृत जाहिरात प्रसिद्ध होताच येथे दिसेल.</p>'}
   </aside>` : ''}
 <!--/active-list-->
+  ${admitCardPosts.length ? `
+  <section class="home-hall-ticket">
+    <div class="section-head">
+      <h2 class="section-title">🎟️ प्रवेशपत्र (Hall Ticket)</h2>
+      ${admitCardLink}
+    </div>
+    <div class="job-list">
+    ${admitCardPosts.map(p => {
+      const cat = categories.find(c => c.id === p.category);
+      return postCard(p, cat);
+    }).join('')}
+    </div>
+  </section>` : ''}
 </div>
 
 ${closingSoonHtml ? `
