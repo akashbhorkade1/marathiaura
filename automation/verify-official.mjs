@@ -5,7 +5,7 @@
 import { safeText } from './lib.mjs';
 
 // ---------- Domain classification (§5) ----------
-const OFFICIAL_RE = /(^|\.)(gov\.in|nic\.in|gov|nic\.in|edu\.in|ac\.in)$/i;
+const OFFICIAL_RE = /(^|\.)(gov\.in|nic\.in|gov|nic\.in|edu\.in|ac\.in|ibps\.in)$/i;
 export function classifyUrl(url) {
   const u = safeText(url);
   if (!u) return { ok: false, official: false, reason: 'empty' };

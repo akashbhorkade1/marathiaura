@@ -117,14 +117,23 @@ export function lastVerified(p) {
   return dates.length ? dates[dates.length - 1] : null;
 }
 
-// Source trust (Part 14) — gov.in/nic.in hosts only are "official"
+// Source trust (Part 14) — gov.in/nic.in hosts and the official IBPS domain are "official"
+// ibps.in / ibpsreg.ibps.in are the Institute of Banking Personnel Selection's official domains.
 export function isOfficialUrl(u) {
   try {
     const x = new URL(u);
     if (x.protocol !== 'http:' && x.protocol !== 'https:') return false;
     const h = x.hostname.toLowerCase();
-    return h === 'gov.in' || h.endsWith('.gov.in') || h === 'nic.in' || h.endsWith('.nic.in');
+    return h === 'gov.in' || h.endsWith('.gov.in') || h === 'nic.in' || h.endsWith('.nic.in')
+      || h === 'ibps.in' || h.endsWith('.ibps.in');
   } catch { return false; }
+}
+
+// Source-trust for full source objects: official domain OR priority 1 (L1 official per sourceTier)
+export function isOfficialSource(s) {
+  if (!s) return false;
+  const pri = Number.isFinite(s.priority) ? s.priority : 4;
+  return isOfficialUrl(s.url) || pri <= 1;
 }
 export const linkLabel = url => isOfficialUrl(url) ? 'अधिकृत जाहिरात / Notification' : 'माहिती स्रोत (तृतीय-पक्ष)';
 

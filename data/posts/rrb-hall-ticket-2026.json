@@ -1,0 +1,385 @@
+{
+  "id": "rrb-hall-ticket-2026",
+  "type": "admit-card",
+  "title": "RRB Hall Ticket 2026: JE Admit Card, Group D, NTPC व Technician डाउनलोड लिंक",
+  "slug": "rrb-hall-ticket-2026",
+  "path": "/rrb-hall-ticket-2026/",
+  "category": "admit-card",
+  "exam": "Railway Recruitment Board Examinations",
+  "department": "रेल्वे मंत्रालय, भारत सरकार — Railway Recruitment Boards (RRB)",
+  "hallTicket": {
+    "title": "RRB Hall Ticket 2026",
+    "year": 2026,
+    "lastUpdated": "2026-10-29",
+    "officialWebsite": "https://rrb.indianrailways.gov.in/",
+    "downloadPortal": "https://www.rrbapply.gov.in/",
+    "items": [
+      {
+        "id": "rrb-je-cen-04-2026",
+        "examName": "RRB JE / DMS / CMA CBT-1",
+        "cycle": "CEN 04/2026",
+        "stage": "CBT-1",
+        "status": "released-reschedule-check",
+        "releaseDate": "2026-10-23",
+        "examDate": null,
+        "examWindow": [
+          "2026-10-27",
+          "2026-10-28"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": "https://rrb.digialm.com//EForms/configuredHtml/33244/102815/9hhNyUtYzKG0WENxBk/login.html",
+        "officialInfoUrl": "https://rrbsecunderabad.gov.in/advertisement_category/cen-04-2026-je-dms/",
+        "credentials": [
+          "Registration Number",
+          "जन्मतारीख किंवा लॉगिन पेजवर मागितलेला पासवर्ड"
+        ],
+        "note": "प्रवेशपत्राची लिंक संदर्भ पेजमधून घेतली आहे. नियमित परीक्षा 27–28 ऑक्टोबर 2026 रोजी नियोजित होती. आंध्र प्रदेशातील काही केंद्रांसाठी पुनर्नियोजनाची सूचना तपासा. नवीन प्रवेशपत्र किंवा सुधारित तारीख अधिकृत RRB पोर्टलवरून निश्चित करावी."
+      },
+      {
+        "id": "rrb-group-d-cen-09-2025",
+        "examName": "RRB Group D / Level-1",
+        "cycle": "CEN 09/2025",
+        "stage": "CBT",
+        "status": "exam-completed",
+        "releaseDate": null,
+        "examDate": null,
+        "examWindow": [
+          "2026-08-03",
+          "2026-08-21"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://rrb.indianrailways.gov.in/",
+        "credentials": [
+          "Registration Number",
+          "जन्मतारीख किंवा अधिकृत लॉगिन सूचनांनुसार तपशील"
+        ],
+        "note": "संदर्भ पेजवर दिलेल्या वेळापत्रकानुसार परीक्षा कालावधी संपला आहे. जुनी डाउनलोड लिंक सक्रिय असल्याची पुष्टी नाही."
+      },
+      {
+        "id": "rrb-ntpc-graduate-cen-06-2025",
+        "examName": "RRB NTPC Graduate",
+        "cycle": "CEN 06/2025",
+        "stage": "CBT-I",
+        "status": "exam-completed",
+        "releaseDate": null,
+        "examDate": null,
+        "examWindow": [
+          "2026-03-16",
+          "2026-03-27"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://www.rrbchennai.gov.in/cen06-2025-NTPC-view.htm",
+        "credentials": [
+          "Registration Number",
+          "जन्मतारीख किंवा अधिकृत लॉगिन सूचनांनुसार तपशील"
+        ],
+        "note": "CBT-I चा परीक्षा कालावधी संपला आहे. पुढील टप्पे, निकाल किंवा नवीन Call Letter साठी अधिकृत RRB सूचना तपासा."
+      },
+      {
+        "id": "rrb-technician-cen-02-2025",
+        "examName": "RRB Technician",
+        "cycle": "CEN 02/2025",
+        "stage": "CBT",
+        "status": "exam-completed",
+        "releaseDate": null,
+        "examDate": null,
+        "examWindow": [
+          "2026-03-06",
+          "2026-03-13"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://rrb.indianrailways.gov.in/",
+        "credentials": [
+          "Registration Number",
+          "जन्मतारीख किंवा अधिकृत लॉगिन सूचनांनुसार तपशील"
+        ],
+        "note": "संदर्भ पेजवरील परीक्षा तारखांनुसार जुना CBT कालावधी संपला आहे. या जुन्या लॉगिन लिंकला सक्रिय डाउनलोड लिंक म्हणून दाखवू नये."
+      },
+      {
+        "id": "rrb-je-cen-05-2025",
+        "examName": "RRB JE / DMS",
+        "cycle": "CEN 05/2025",
+        "stage": "CBT",
+        "status": "exam-completed",
+        "releaseDate": null,
+        "examDate": null,
+        "examWindow": [
+          "2026-02-19",
+          "2026-02-25"
+        ],
+        "downloadEnd": null,
+        "downloadUrl": null,
+        "officialInfoUrl": "https://rrb.indianrailways.gov.in/",
+        "credentials": [
+          "Registration Number",
+          "जन्मतारीख किंवा अधिकृत लॉगिन सूचनांनुसार तपशील"
+        ],
+        "note": "जुनी परीक्षा पूर्ण झाली आहे. पुढील टप्प्यांची स्थिती अधिकृत RRB वेबसाइटवर तपासावी."
+      }
+    ]
+  },
+  "dates": {
+    "notification": null,
+    "applicationStart": null,
+    "applicationEnd": null,
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "officialUrl": "https://rrb.indianrailways.gov.in/",
+    "downloadPortal": "https://www.rrbapply.gov.in/",
+    "rrbJeDownloadUrl": "https://rrb.digialm.com//EForms/configuredHtml/33244/102815/9hhNyUtYzKG0WENxBk/login.html",
+    "rrbJeNoticeUrl": "https://rrbsecunderabad.gov.in/advertisement_category/cen-04-2026-je-dms/",
+    "rrbNtpcGraduateUrl": "https://www.rrbchennai.gov.in/cen06-2025-NTPC-view.htm"
+  },
+  "selectionProcess": [],
+  "syllabusRef": null,
+  "relatedMockTests": [],
+  "content": {
+    "shortDesc": "RRB Hall Ticket 2026: RRB JE, Group D, NTPC आणि Technician प्रवेशपत्रांची स्थिती, परीक्षा तारखा आणि अधिकृत डाउनलोड लिंक एका ठिकाणी तपासा. CEN 04/2026 JE साठी प्रवेशपत्राची लिंक उपलब्ध आहे; काही केंद्रांसाठी सुधारित परीक्षा सूचनेची खात्री करणे आवश्यक आहे.",
+    "metaDescription": "RRB Hall Ticket 2026 डाउनलोड लिंक: JE CEN 04/2026 Admit Card, Group D, NTPC आणि Technician परीक्षांची स्थिती, अधिकृत वेबसाइट व प्रवेशपत्र डाउनलोड करण्याची पद्धत मराठीत.",
+    "sections": [
+      {
+        "heading": "RRB Hall Ticket 2026 बद्दल",
+        "type": "text",
+        "body": "रेल्वे भरती बोर्ड (RRB) विविध रेल्वे भरती परीक्षांसाठी City Intimation Slip, E-Call Letter आणि Admit Card प्रकाशित करतात. या पेजवर RRB JE, Group D, NTPC आणि Technician परीक्षांच्या प्रवेशपत्रांची स्थिती एकत्र दिली आहे. जुन्या परीक्षांच्या लिंक सक्रिय आहेत असे गृहीत न धरता प्रत्येक परीक्षेसाठी अधिकृत RRB सूचना तपासा."
+      },
+      {
+        "heading": "सध्याची महत्त्वाची प्रवेशपत्र लिंक",
+        "type": "table",
+        "headers": [
+          "परीक्षा",
+          "जाहिरात क्रमांक",
+          "स्थिती",
+          "डाउनलोड"
+        ],
+        "rows": [
+          [
+            "RRB JE / DMS / CMA CBT-1",
+            "CEN 04/2026",
+            "प्रवेशपत्र प्रसिद्ध; सुधारित सूचनांची खात्री करा",
+            "अधिकृत लॉगिन"
+          ],
+          [
+            "RRB Group D / Level-1",
+            "CEN 09/2025",
+            "संदर्भातील परीक्षा कालावधी संपला",
+            "नवीन अधिकृत लिंक उपलब्ध असल्यास तपासा"
+          ],
+          [
+            "RRB NTPC Graduate CBT-I",
+            "CEN 06/2025",
+            "परीक्षा कालावधी संपला",
+            "अधिकृत RRB अपडेट तपासा"
+          ],
+          [
+            "RRB Technician CBT",
+            "CEN 02/2025",
+            "संदर्भातील परीक्षा कालावधी संपला",
+            "अधिकृत RRB अपडेट तपासा"
+          ],
+          [
+            "RRB JE / DMS CBT",
+            "CEN 05/2025",
+            "जुनी परीक्षा",
+            "अधिकृत RRB अपडेट तपासा"
+          ]
+        ]
+      },
+      {
+        "heading": "RRB JE Admit Card 2026 — CEN 04/2026",
+        "type": "text",
+        "body": "CEN 04/2026 अंतर्गत Junior Engineer (JE), Depot Material Superintendent (DMS) आणि Chemical & Metallurgical Assistant (CMA) पदांसाठी CBT-1 प्रवेशपत्र 23 ऑक्टोबर 2026 पासून उपलब्ध झाल्याची माहिती संदर्भ पेजवर दिली आहे. नियमित परीक्षा 27 आणि 28 ऑक्टोबर 2026 रोजी नियोजित होती. आंध्र प्रदेशातील काही परीक्षा केंद्रांवर 28 ऑक्टोबरची परीक्षा पुढे ढकलल्याच्या बातम्या आल्या आहेत. त्यामुळे संबंधित उमेदवारांनी नवीन परीक्षा तारीख आणि सुधारित प्रवेशपत्र अधिकृत RRB पोर्टलवरून तपासावे."
+      },
+      {
+        "heading": "RRB JE प्रवेशपत्र डाउनलोड करा",
+        "type": "list",
+        "items": [
+          "प्रथम अधिकृत RRB वेबसाइट https://rrb.indianrailways.gov.in/ उघडा.",
+          "आपण अर्ज केलेल्या RRB ची वेबसाइट किंवा CEN 04/2026 संदर्भातील सूचना उघडा.",
+          "अधिकृत लिंकवरून E-Call Letter लॉगिन पेज उघडा.",
+          "Registration Number आणि मागितलेली जन्मतारीख/पासवर्ड माहिती भरा.",
+          "लॉगिन केल्यानंतर प्रवेशपत्रावरील नाव, रोल नंबर, परीक्षा तारीख, शिफ्ट, रिपोर्टिंग वेळ आणि केंद्राचा पत्ता तपासा.",
+          "प्रवेशपत्राची PDF डाउनलोड करून प्रिंट काढा.",
+          "परीक्षा तारीख पुढे ढकललेल्या केंद्रातील उमेदवारांनी जुने Call Letter वापरण्याऐवजी सुधारित सूचना तपासाव्यात."
+        ]
+      },
+      {
+        "heading": "इतर RRB परीक्षांची स्थिती",
+        "type": "table",
+        "headers": [
+          "परीक्षा",
+          "संदर्भातील परीक्षा कालावधी",
+          "स्थिती"
+        ],
+        "rows": [
+          [
+            "RRB Group D — CEN 09/2025",
+            "3 ते 21 ऑगस्ट 2026",
+            "परीक्षा कालावधी संपला"
+          ],
+          [
+            "RRB NTPC Graduate — CEN 06/2025",
+            "16 ते 27 मार्च 2026",
+            "CBT-I कालावधी संपला"
+          ],
+          [
+            "RRB Technician — CEN 02/2025",
+            "6, 9, 10 आणि 13 मार्च 2026",
+            "परीक्षा कालावधी संपला"
+          ],
+          [
+            "RRB JE — CEN 05/2025",
+            "19, 20 आणि 25 फेब्रुवारी 2026",
+            "जुनी परीक्षा"
+          ]
+        ]
+      },
+      {
+        "heading": "प्रवेशपत्रावर कोणती माहिती तपासावी?",
+        "type": "list",
+        "items": [
+          "उमेदवाराचे नाव आणि Roll Number",
+          "Registration Number आणि छायाचित्र",
+          "परीक्षेचे नाव व CEN क्रमांक",
+          "परीक्षेची तारीख आणि शिफ्ट",
+          "Reporting Time आणि Gate Closing Time",
+          "परीक्षा केंद्राचा संपूर्ण पत्ता",
+          "मूळ फोटो ओळखपत्र आणि इतर परीक्षा-दिवसाच्या सूचना"
+        ]
+      },
+      {
+        "heading": "प्रवेशपत्र डाउनलोड होत नसेल तर",
+        "type": "list",
+        "items": [
+          "योग्य RRB आणि संबंधित CEN निवडल्याची खात्री करा.",
+          "Registration Number आणि जन्मतारीख/पासवर्ड अचूक भरा.",
+          "वेबसाइटवर जास्त ट्रॅफिक असल्यास नंतर पुन्हा प्रयत्न करा.",
+          "प्रवेशपत्र उपलब्ध होण्याची तारीख आणि आपल्या परीक्षेची तारीख तपासा.",
+          "परीक्षा पुढे ढकलली असल्यास जुन्या प्रवेशपत्राऐवजी अधिकृत सुधारित सूचनेचे पालन करा.",
+          "समस्या कायम राहिल्यास संबंधित RRB च्या अधिकृत मदत केंद्राशी संपर्क करा."
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "परीक्षा शहराची माहिती देणारी City Intimation Slip आणि प्रवेशपत्र (E-Call Letter) ही वेगवेगळी कागदपत्रे आहेत.",
+          "प्रवेशपत्राच्या जुन्या लिंक सक्रिय असतीलच असे नाही.",
+          "फक्त अधिकृत RRB वेबसाइट किंवा अधिकृत लॉगिन पोर्टल वापरा.",
+          "परीक्षा तारीख किंवा केंद्रात बदल झाल्यास अधिकृत सुधारित सूचना अंतिम मानावी.",
+          "प्रवेशपत्राची प्रिंट आणि मान्य मूळ फोटो ओळखपत्र परीक्षा केंद्रावर सोबत न्यावे."
+        ]
+      },
+      {
+        "heading": "अधिकृत लिंक्स",
+        "type": "list",
+        "items": [
+          "सर्व RRB ची अधिकृत वेबसाइट: https://rrb.indianrailways.gov.in/",
+          "RRB Apply पोर्टल: https://www.rrbapply.gov.in/",
+          "RRB JE / DMS CEN 04/2026 सूचना: https://rrbsecunderabad.gov.in/advertisement_category/cen-04-2026-je-dms/",
+          "RRB NTPC Graduate CEN 06/2025 माहिती: https://www.rrbchennai.gov.in/cen06-2025-NTPC-view.htm"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "RRB Hall Ticket 2026 कुठे डाउनलोड करायचे?",
+        "a": "https://rrb.indianrailways.gov.in/ येथे जाऊन आपला RRB आणि संबंधित CEN निवडा. प्रवेशपत्राची लिंक अधिकृत पोर्टलवरून उघडा."
+      },
+      {
+        "q": "RRB JE CEN 04/2026 प्रवेशपत्र उपलब्ध झाले आहे का?",
+        "a": "संदर्भ पेजनुसार प्रवेशपत्राची लिंक 23 ऑक्टोबर 2026 पासून उपलब्ध झाली आहे. काही केंद्रांसाठी परीक्षा पुढे ढकलल्याने सुधारित सूचना तपासणे आवश्यक आहे."
+      },
+      {
+        "q": "RRB JE परीक्षेची तारीख काय आहे?",
+        "a": "CBT-1 चे नियमित वेळापत्रक 27 आणि 28 ऑक्टोबर 2026 असे होते. निवडक आंध्र प्रदेश केंद्रांवरील काही उमेदवारांसाठी सुधारित तारीख अधिकृत RRB पोर्टलवर तपासावी."
+      },
+      {
+        "q": "RRB प्रवेशपत्र डाउनलोड करण्यासाठी काय लागते?",
+        "a": "सामान्यतः Registration Number आणि जन्मतारीख किंवा लॉगिन पेजवर मागितलेला पासवर्ड आवश्यक असतो."
+      },
+      {
+        "q": "City Intimation Slip आणि Hall Ticket एकच आहे का?",
+        "a": "नाही. City Intimation Slip मध्ये परीक्षा शहर किंवा तारीखविषयक माहिती असते. E-Call Letter/Admit Card मध्ये परीक्षा केंद्र, रिपोर्टिंग वेळ आणि परीक्षा-दिवसाच्या सूचना असतात."
+      },
+      {
+        "q": "RRB Group D 2026 चे प्रवेशपत्र अजून डाउनलोड करता येईल का?",
+        "a": "संदर्भातील Group D परीक्षा कालावधी ऑगस्ट 2026 मध्ये संपला आहे. जुनी लिंक सक्रिय असल्याची पुष्टी नाही; पुढील टप्प्यांसाठी अधिकृत RRB वेबसाइट तपासा."
+      },
+      {
+        "q": "RRB NTPC किंवा Technician प्रवेशपत्राची जुनी लिंक वापरावी का?",
+        "a": "जुना परीक्षा कालावधी संपलेला असल्यास त्या लिंकला सक्रिय प्रवेशपत्र लिंक म्हणून दाखवू नये. पुढील परीक्षा, निकाल किंवा DV साठी अधिकृत नोटीस तपासा."
+      },
+      {
+        "q": "प्रवेशपत्र डाउनलोड होत नसेल तर काय करावे?",
+        "a": "लॉगिन तपशील तपासा, काही वेळाने पुन्हा प्रयत्न करा आणि संबंधित RRB च्या अधिकृत वेबसाइटवरील मदत सूचना वापरा."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://rrb.indianrailways.gov.in/",
+      "name": "Railway Recruitment Boards — अधिकृत वेबसाइट",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-10-29T14:30:00+05:30"
+    },
+    {
+      "url": "https://rrbsecunderabad.gov.in/advertisement_category/cen-04-2026-je-dms/",
+      "name": "RRB CEN 04/2026 JE / DMS अधिकृत सूचना पेज",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-10-29T14:30:00+05:30"
+    },
+    {
+      "url": "https://rrb.digialm.com//EForms/configuredHtml/33244/102815/9hhNyUtYzKG0WENxBk/login.html",
+      "name": "RRB JE CEN 04/2026 E-Call Letter लॉगिन लिंक — संदर्भ पेजमधून",
+      "priority": 1,
+      "role": "admit-card",
+      "verifiedAt": null
+    },
+    {
+      "url": "https://www.rrbchennai.gov.in/cen06-2025-NTPC-view.htm",
+      "name": "RRB Chennai — CEN 06/2025 NTPC Graduate अधिकृत माहिती",
+      "priority": 1,
+      "role": "notification",
+      "verifiedAt": "2026-10-29T14:30:00+05:30"
+    }
+  ],
+  "status": "published",
+  "confidence": 90,
+  "publishedAt": "2026-10-29T10:26:47.836Z",
+  "lastUpdatedAt": "2026-10-29T10:26:47.836Z",
+  "contentHash": "d6c5c27c689b342de0d361813b3c70ff95acef78e72fc0b18e6813efca2c1872",
+  "updates": [],
+  "seo": {
+    "keywords": [
+      "RRB Hall Ticket 2026",
+      "RRB Admit Card 2026",
+      "RRB JE Admit Card 2026",
+      "CEN 04/2026 E Call Letter",
+      "RRB Group D Hall Ticket",
+      "RRB NTPC Admit Card",
+      "RRB Technician Hall Ticket",
+      "रेल्वे प्रवेशपत्र 2026",
+      "रेल्वे भरती Admit Card",
+      "MarathiAura"
+    ],
+    "ogImage": "/og-images/rrb-hall-ticket-2026.svg",
+    "index": true
+  },
+  "social": {
+    "instagram": {
+      "status": "draft",
+      "captionPath": "/assets/social/rrb-hall-ticket-2026.caption.txt",
+      "imagePath": "/assets/social/rrb-hall-ticket-2026.svg",
+      "note": "Social assets generate आणि validate झाल्यानंतरच प्रकाशित करा.",
+      "updatedAt": null
+    }
+  }
+}

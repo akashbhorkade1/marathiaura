@@ -1,6 +1,6 @@
 // Generates: post article pages + category index pages + OG images
 import { loadSite, loadCategories, loadPosts, loadTests, published, write, esc, pageHtml, postCard, svgOg, pathOf,
-  safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, linkifyCell, breadcrumbHtml, STATUS_META,
+  safeText, statusBadge, recruitStatus, isClosed, fmtDate, lastVerified, isOfficialUrl, isOfficialSource, linkifyCell, breadcrumbHtml, STATUS_META,
   EMPTY_HUB_CATEGORIES } from '../lib.mjs';
 
 const site = loadSite();
@@ -301,7 +301,7 @@ function renderPost(p) {
   // स्रोत (Part 14) — सर्व sources[] स्पष्टपणे; official vs तृतीय-पक्ष वेगळे
   const srcList = (p.sources || []).filter(s => s && s.url && /^https?:\/\//.test(s.url));
   const sourceHtml = srcList.length
-    ? srcList.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener${isOfficialUrl(s.url) ? '' : ' nofollow'}">${esc(safeText(s.name) || s.url)}${isOfficialUrl(s.url) ? '' : ' (तृतीय-पक्ष)'}</a>`).join(', ')
+    ? srcList.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener${isOfficialSource(s) ? '' : ' nofollow'}">${esc(safeText(s.name) || s.url)}${isOfficialSource(s) ? '' : ' (तृतीय-पक्ष)'}</a>`).join(', ')
     : 'अधिकृत जाहिरात';
 
   const verified = lastVerified(p);
