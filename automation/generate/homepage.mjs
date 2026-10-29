@@ -32,6 +32,37 @@ const showSidebar = withDeadline.length > 0 || activeRec.length > 0;
 const admitCardPosts = posts
   .filter(p => p.category === 'admit-card' || p.type === 'admit-card')
   .slice(0, 4);
+
+// Automatic expiry filter based on hallTicket.downloadEnd dates (IST timezone)
+// Rule: post is "valid" if at least one hallTicket item has downloadEnd not yet passed,
+// OR if all downloadEnd are null/missing (pending release). If all items' downloadEnd
+// has passed, the post is expired and hidden from homepage.
+const istToday = () => new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit'
+}).format(Date.now());
+
+const isHallTicketValid = (p) => {
+  const items = (p.hallTicket && p.hallTicket.items) || [];
+  if (!items.length) return true; // No items → show post
+  
+  const hasAnyDownloadEnd = items.some(item => item.downloadEnd);
+  if (!hasAnyDownloadEnd) return true; // No downloadEnd dates at all → show (pending)
+  
+  // Check if ANY item's downloadEnd is still valid (not yet passed in IST)
+  const hasValidDownloadEnd = items.some(item => {
+    const endDate = item.downloadEnd;
+    if (!endDate) return true;
+    // Compare YYYY-MM-DD dates in IST
+    const endDay = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' })
+      .format(new Date(endDate + 'T00:00:00+05:30'));
+    const today = istToday();
+    return endDay >= today; // downloadEnd day >= today → still valid
+  });
+  
+  return hasValidDownloadEnd;
+};
+
+const validAdmitCardPosts = admitCardPosts.filter(isHallTicketValid);
 const admitCardLink = avail.has('/admit-card/') ? '<a href="/admit-card/">सर्व पहा →</a>' : '';
 
 // Category index cards — फक्त generated hubs (thin-page rule, docs/03 §3)
