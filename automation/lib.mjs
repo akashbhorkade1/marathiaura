@@ -125,6 +125,7 @@ export function isOfficialUrl(u) {
     if (x.protocol !== 'http:' && x.protocol !== 'https:') return false;
     const h = x.hostname.toLowerCase();
     return h === 'gov.in' || h.endsWith('.gov.in') || h === 'nic.in' || h.endsWith('.nic.in')
+      || h === 'nlcindia.in' || h.endsWith('.nlcindia.in')
       || h === 'ibps.in' || h.endsWith('.ibps.in');
   } catch { return false; }
 }
