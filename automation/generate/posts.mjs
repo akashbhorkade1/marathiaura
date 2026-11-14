@@ -370,7 +370,7 @@ function renderPost(p) {
   if (datesItem) finalSecs.push(datesItem);
   else if (p.type !== 'result' && datesTable(p)) finalSecs.push({ heading: 'महत्त्वाच्या तारखा', type: 'auto-dates' });
   const autoEligibility = sectionHeadings.has('ही भरती तुमच्यासाठी आहे का? 👀') ? '' : checklistHtml(p);
-  const sections = finalSecs.map(s => (s.type === 'auto-dates' ? datesTable(p) : renderSection(s))).join('');
+  const sections = finalSecs.map(s => s.html || (s.type === 'auto-dates' ? datesTable(p) : renderSection(s))).join('');
 
   const body = `
 ${breadcrumbHtml(cat)}
