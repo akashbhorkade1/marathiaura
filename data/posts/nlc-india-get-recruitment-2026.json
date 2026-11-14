@@ -1,0 +1,335 @@
+{
+  "id": "nlc-india-get-recruitment-2026",
+  "type": "recruitment",
+  "title": "NLC India GET भरती 2026: Graduate Executive Trainee पदांच्या 143 जागा",
+  "slug": "nlc-india-get-recruitment-2026",
+  "path": "/nlc-india-get-recruitment-2026/",
+  "category": "latest-bharti",
+  "exam": "GATE 2025",
+  "department": "NLC India Limited (NLCIL)",
+  "recruitment": {
+    "postNames": [
+      "Graduate Executive Trainee (GET)"
+    ],
+    "vacancies": 143,
+    "qualification": [
+      "संबंधित Engineering शाखेतील मान्यताप्राप्त Bachelor Degree आणि GATE 2025 पात्रता"
+    ],
+    "salary": {
+      "payScale": "₹50,000 – ₹1,60,000",
+      "note": "प्रशिक्षणाचा कालावधी एक वर्ष. प्रशिक्षण पूर्ण झाल्यानंतर पात्र उमेदवार E-3 Grade मध्ये ₹60,000 – ₹1,80,000 वेतनश्रेणीत समाविष्ट होतील. अंदाजे वार्षिक CTC ₹14.50 लाख."
+    },
+    "fee": {
+      "general": 854,
+      "reserved": 354,
+      "note": "UR/EWS/OBC (NCL): ₹500 अर्ज शुल्क + ₹354 processing fee. SC/ST/PwBD/Ex-Servicemen: अर्ज शुल्क माफ; ₹354 processing fee."
+    },
+    "applicationMode": "Online",
+    "location": "Tamil Nadu, Rajasthan, Odisha, Jharkhand आणि इतर राज्यांतील NLCIL प्रकल्प",
+    "jobType": "Permanent"
+  },
+  "dates": {
+    "notification": "2026-11-05",
+    "applicationStart": "2026-11-13",
+    "applicationEnd": "2026-12-14",
+    "feePaymentEnd": "2026-12-14",
+    "finalSubmissionEnd": "2026-12-16",
+    "examDate": null,
+    "admitCardDate": null,
+    "resultDate": null
+  },
+  "links": {
+    "notificationUrl": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+    "officialUrl": "https://www.nlcindia.in/"
+  },
+  "selectionProcess": [
+    "GATE 2025 गुण — 80 गुण",
+    "वैयक्तिक मुलाखत — 20 गुण",
+    "कागदपत्रे / प्रमाणपत्र पडताळणी",
+    "वैद्यकीय तपासणी"
+  ],
+  "content": {
+    "shortDesc": "NLC India Limited (NLCIL) मार्फत Graduate Executive Trainee (GET) पदांच्या 143 जागांसाठी भरती जाहीर झाली आहे. संबंधित Engineering शाखेतील पदवी आणि GATE 2025 पात्र उमेदवार 14 डिसेंबर 2026 पर्यंत ऑनलाइन नोंदणी करू शकतात.",
+    "metaDescription": "NLC India GET Recruitment 2026: 143 Graduate Executive Trainee जागा, पात्रता, वयोमर्यादा, वेतन, अर्ज शुल्क आणि अर्जाची अंतिम तारीख.",
+    "sections": [
+      {
+        "heading": "भरतीबाबत थोडक्यात माहिती",
+        "type": "text",
+        "body": "NLC India Limited ही भारत सरकारची Navratna सार्वजनिक क्षेत्रातील कंपनी आहे. Advertisement No. 10/2026 अंतर्गत Graduate Executive Trainee (GET) पदांसाठी GATE 2025 गुणांच्या आधारे भरती जाहीर करण्यात आली आहे. Thermal Power Stations, Mines & Allied Services, Renewable Energy Projects आणि Services & Support या चार क्षेत्रांतील पदांचा यात समावेश आहे."
+      },
+      {
+        "heading": "पदनिहाय जागा",
+        "type": "table",
+        "headers": [
+          "Engineering शाखा",
+          "GATE Code",
+          "जागा"
+        ],
+        "rows": [
+          [
+            "Mechanical",
+            "ME",
+            "66"
+          ],
+          [
+            "Electrical",
+            "EE",
+            "44"
+          ],
+          [
+            "Civil",
+            "CE",
+            "23"
+          ],
+          [
+            "Mining",
+            "MN",
+            "10"
+          ],
+          [
+            "एकूण",
+            "—",
+            "143"
+          ]
+        ]
+      },
+      {
+        "heading": "Area नुसार जागा",
+        "type": "table",
+        "headers": [
+          "Area",
+          "कामाचे स्वरूप",
+          "जागा"
+        ],
+        "rows": [
+          [
+            "Area 1",
+            "Thermal Power Stations आणि Renewable Energy",
+            "80"
+          ],
+          [
+            "Area 2",
+            "Mines आणि Allied Services",
+            "37"
+          ],
+          [
+            "Area 3",
+            "Renewable Energy, Projects आणि Planning",
+            "18"
+          ],
+          [
+            "Area 4",
+            "Services आणि Support",
+            "8"
+          ],
+          [
+            "एकूण",
+            "—",
+            "143"
+          ]
+        ]
+      },
+      {
+        "heading": "शैक्षणिक पात्रता",
+        "type": "text",
+        "body": "उमेदवाराने संबंधित GATE 2025 पेपरमध्ये पात्रता मिळवलेली असावी आणि संबंधित Engineering शाखेतील मान्यताप्राप्त विद्यापीठाची Bachelor Degree आवश्यक आहे."
+      },
+      {
+        "heading": "शाखेनुसार शैक्षणिक पात्रता",
+        "type": "list",
+        "items": [
+          "Mechanical: Mechanical Engineering किंवा Mechanical & Production Engineering",
+          "Electrical: Electrical Engineering, Electrical & Electronics Engineering किंवा Power Engineering",
+          "Civil: Civil Engineering किंवा Civil & Structural Engineering",
+          "Mining: Mining Engineering"
+        ]
+      },
+      {
+        "heading": "किमान गुणांची अट",
+        "type": "text",
+        "body": "UR/EWS/OBC (NCL) उमेदवारांसाठी 60% आणि SC/ST उमेदवारांसाठी 50% किमान गुण आवश्यक आहेत. पदवीची पात्रता 01 नोव्हेंबर 2026 पर्यंत पूर्ण असणे आवश्यक आहे."
+      },
+      {
+        "heading": "वयोमर्यादा",
+        "type": "table",
+        "headers": [
+          "प्रवर्ग",
+          "कमाल वय"
+        ],
+        "rows": [
+          [
+            "UR / EWS",
+            "30 वर्षे"
+          ],
+          [
+            "OBC (NCL)",
+            "33 वर्षे"
+          ],
+          [
+            "SC",
+            "35 वर्षे"
+          ],
+          [
+            "ST",
+            "35 वर्षे"
+          ]
+        ]
+      },
+      {
+        "heading": "वयामध्ये सवलत",
+        "type": "text",
+        "body": "SC/ST उमेदवारांना 5 वर्षे, OBC (NCL) उमेदवारांना 3 वर्षे आणि PwBD उमेदवारांना लागू नियमानुसार वयोमर्यादेत सवलत मिळेल. वय मोजण्याची तारीख 01 नोव्हेंबर 2026 आहे. अंतिम अटींसाठी अधिकृत जाहिरात पाहावी."
+      },
+      {
+        "heading": "वेतन / Pay Scale",
+        "type": "text",
+        "body": "Graduate Executive Trainee पदासाठी E-2 Grade अंतर्गत ₹50,000 ते ₹1,60,000 वेतनश्रेणी असून अंदाजे वार्षिक CTC ₹14.50 लाख आहे. प्रशिक्षणाचा कालावधी एक वर्ष आहे. प्रशिक्षण पूर्ण झाल्यानंतर पात्र उमेदवारांना E-3 Grade मध्ये ₹60,000 ते ₹1,80,000 वेतनश्रेणीत समाविष्ट केले जाईल."
+      },
+      {
+        "heading": "निवड प्रक्रिया",
+        "type": "olist",
+        "items": [
+          "GATE 2025 गुण — 80 गुण",
+          "वैयक्तिक मुलाखत — 20 गुण",
+          "कागदपत्रे / प्रमाणपत्र पडताळणी",
+          "वैद्यकीय तपासणी"
+        ]
+      },
+      {
+        "heading": "अर्ज शुल्क व पद्धत",
+        "type": "table",
+        "headers": [
+          "प्रवर्ग",
+          "अर्ज शुल्क",
+          "Processing Fee",
+          "एकूण"
+        ],
+        "rows": [
+          [
+            "UR / EWS / OBC (NCL)",
+            "₹500",
+            "₹354",
+            "₹854"
+          ],
+          [
+            "SC / ST / PwBD / Ex-Servicemen",
+            "माफ",
+            "₹354",
+            "₹354"
+          ]
+        ]
+      },
+      {
+        "heading": "अर्ज करण्याच्या महत्त्वाच्या तारखा",
+        "type": "table",
+        "headers": [
+          "तपशील",
+          "तारीख व वेळ"
+        ],
+        "rows": [
+          [
+            "जाहिरात दिनांक",
+            "05 नोव्हेंबर 2026"
+          ],
+          [
+            "ऑनलाइन नोंदणी सुरू",
+            "13 नोव्हेंबर 2026, सकाळी 10:00"
+          ],
+          [
+            "नोंदणीची अंतिम तारीख",
+            "14 डिसेंबर 2026, सायंकाळी 5:00"
+          ],
+          [
+            "अर्ज शुल्क भरण्याची अंतिम वेळ",
+            "14 डिसेंबर 2026, रात्री 11:45"
+          ],
+          [
+            "अंतिम अर्ज सादर करण्याची अंतिम वेळ",
+            "16 डिसेंबर 2026, सायंकाळी 5:00"
+          ]
+        ]
+      },
+      {
+        "heading": "ऑनलाइन अर्ज कसा करावा?",
+        "type": "olist",
+        "items": [
+          "NLC India च्या अधिकृत वेबसाइटवरील Careers / Recruitment विभाग उघडा.",
+          "Advertisement No. 10/2026 – Graduate Executive Trainee भरती निवडा.",
+          "GATE 2025 Registration Number वापरून नोंदणी करा.",
+          "वैयक्तिक, शैक्षणिक आणि इतर आवश्यक माहिती भरा.",
+          "आवश्यक कागदपत्रे, फोटो आणि स्वाक्षरी अपलोड करा.",
+          "लागू असलेले अर्ज शुल्क ऑनलाइन भरा.",
+          "अर्ज सादर करून त्याची प्रिंट किंवा PDF जतन करा."
+        ]
+      },
+      {
+        "heading": "महत्त्वाच्या सूचना",
+        "type": "list",
+        "items": [
+          "उमेदवाराला Area 1, Area 2, Area 3 किंवा Area 4 यापैकी फक्त एका Area साठी अर्ज करता येईल.",
+          "एकापेक्षा जास्त Area साठी अर्ज केल्यास नवीनतम अर्ज ग्राह्य धरला जाईल.",
+          "अर्ज करण्यापूर्वी अधिकृत जाहिरात काळजीपूर्वक वाचा."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "NLC India Recruitment 2026 मध्ये किती जागा आहेत?",
+        "a": "Graduate Executive Trainee पदांच्या एकूण 143 जागा आहेत."
+      },
+      {
+        "q": "अर्ज करण्यासाठी कोणती परीक्षा पात्र असणे आवश्यक आहे?",
+        "a": "संबंधित Engineering शाखेतील GATE 2025 परीक्षेत पात्र असणे आवश्यक आहे."
+      },
+      {
+        "q": "अर्जाची अंतिम तारीख काय आहे?",
+        "a": "ऑनलाइन नोंदणी आणि शुल्क भरण्याची अंतिम तारीख 14 डिसेंबर 2026 आहे. वेळेत नोंदणी व शुल्क भरलेल्या उमेदवारांना अंतिम अर्ज 16 डिसेंबर 2026 पर्यंत सादर करता येईल."
+      },
+      {
+        "q": "अर्ज शुल्क किती आहे?",
+        "a": "UR/EWS/OBC (NCL) उमेदवारांसाठी एकूण ₹854 आणि SC/ST/PwBD/Ex-Servicemen उमेदवारांसाठी ₹354 processing fee आहे."
+      },
+      {
+        "q": "निवड प्रक्रिया काय आहे?",
+        "a": "GATE 2025 गुणांना 80 आणि वैयक्तिक मुलाखतीला 20 गुण देऊन निवड केली जाईल. त्यानंतर कागदपत्र पडताळणी आणि वैद्यकीय तपासणी होईल."
+      },
+      {
+        "q": "वेतन किती आहे?",
+        "a": "प्रशिक्षणादरम्यान वेतनश्रेणी ₹50,000 ते ₹1,60,000 असून अंदाजे वार्षिक CTC ₹14.50 लाख आहे."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "name": "NLC India Official Recruitment Notification – Advertisement No. 10/2026",
+      "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+      "priority": 1,
+      "role": "notification-pdf"
+    },
+    {
+      "name": "NLC India Official Website",
+      "url": "https://www.nlcindia.in/",
+      "priority": 1,
+      "role": "notification"
+    }
+  ],
+  "status": "published",
+  "confidence": 85,
+  "publishedAt": "2026-11-14T16:26:00+05:30",
+  "lastUpdatedAt": "2026-11-14T16:26:00+05:30",
+  "contentHash": "63539c33d9ede19a66fe0b208bd7101199032cd454ad7efcffb87cea587bc02f",
+  "updates": [],
+  "seo": {
+    "title": "NLC India GET Recruitment 2026: 143 जागा",
+    "description": "NLC India Graduate Executive Trainee भरती 2026: 143 जागा, GATE 2025 पात्रता, वेतन, शुल्क आणि अर्जाच्या महत्त्वाच्या तारखा.",
+    "keywords": [
+      "NLC India Recruitment 2026",
+      "NLC GET Recruitment 2026",
+      "Graduate Executive Trainee",
+      "NLCIL Vacancy 2026",
+      "NLC India 143 Posts",
+      "GATE 2025 Recruitment"
+    ],
+    "index": true
+  }
+}

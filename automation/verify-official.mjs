@@ -13,7 +13,7 @@ export function classifyUrl(url) {
   try { parsed = new URL(u); } catch { return { ok: false, official: false, reason: 'not a url' }; }
   if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return { ok: false, official: false, reason: 'scheme must be http(s)' };
   const host = parsed.hostname.replace(/^www\./, '');
-  const official = OFFICIAL_RE.test(host);
+  const official = OFFICIAL_RE.test(host) || host === 'nlcindia.in' || host.endsWith('.nlcindia.in');
   return { ok: true, official, host, reason: official ? 'official government domain' : 'non-government host — official म्हणून label करू नये' };
 }
 

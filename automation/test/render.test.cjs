@@ -140,12 +140,15 @@ test('safeText: null / undefined / NaN → empty safe value', async () => {
 });
 
 /* ---------- 6. Link trust (Parts 13/14/22) ---------- */
-test('isOfficialUrl: only gov.in / nic.in hosts count as official', async () => {
+test('isOfficialUrl: government and supported PSU domains count as official', async () => {
   const L = await libP;
   assert.equal(L.isOfficialUrl('https://mpsc.gov.in/notice.pdf'), true);
   assert.equal(L.isOfficialUrl('https://www.mahapolice.gov.in'), true);
   assert.equal(L.isOfficialUrl('https://ssc.nic.in/'), true);
+  assert.equal(L.isOfficialUrl('https://www.nlcindia.in/'), true);
+  assert.equal(L.isOfficialUrl('https://careers.nlcindia.in/notice.pdf'), true);
   assert.equal(L.isOfficialUrl('https://majhinaukri.com/job-1'), false);
+  assert.equal(L.isOfficialUrl('https://nlcindia.in.example.com/'), false);
   assert.equal(L.isOfficialUrl('https://fakegov.in.example.com'), false);
   assert.equal(L.isOfficialUrl('majhinaukri.com'), false);
   assert.equal(L.isOfficialUrl(''), false);
