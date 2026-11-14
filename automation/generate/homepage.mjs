@@ -4,7 +4,7 @@
 // नियम: active sections नेहमी <!--active-list--> markers मध्ये (validate-output gate);
 //       फक्त प्रत्यक्षात generate झालेलीच paths link होतील; source-मध्ये नसलेली facts कधीच render होत नाहीत.
 import { loadSite, loadCategories, loadPosts, loadTests, published, write, esc, pageHtml, pathOf, svgOg,
-  safeText, fmtDate, statusBadge, recruitStatus, isClosed, generatedCategoryPaths, questionIndex, isRenderableTest, postCard } from '../lib.mjs';
+  safeText, fmtDate, statusBadge, recruitStatus, generatedCategoryPaths, questionIndex, isRenderableTest, postCard } from '../lib.mjs';
 
 const site = loadSite();
 const categories = loadCategories();
@@ -13,7 +13,8 @@ const avail = generatedCategoryPaths();
 const testsRenderable = loadTests().some(t => isRenderableTest(t, questionIndex()));
 
 const recPosts = posts.filter(p => p.type === 'recruitment');
-const activeRec = recPosts.filter(p => !isClosed(p));
+const upcomingRec = recPosts.filter(p => recruitStatus(p) === 'UPCOMING');
+const activeRec = recPosts.filter(p => ['ACTIVE', 'CLOSING_SOON'].includes(recruitStatus(p)));
 const closingSoon = activeRec.filter(p => recruitStatus(p) === 'CLOSING_SOON');
 const featured = activeRec.filter(p => recruitStatus(p) !== 'CLOSING_SOON').slice(0, 6);
 
@@ -141,6 +142,7 @@ const deadlinesHtml = withDeadline.map(p => deadlineItem(p)).join('\n');
 const closingSoonHtml = [...closingSoon]
   .sort((a, b) => String(a.dates.applicationEnd).localeCompare(String(b.dates.applicationEnd)))
   .map(p => jobCard(p)).join('\n');
+const upcomingHtml = upcomingRec.slice(0, 6).map(p => jobCard(p)).join('\n');
 
 // अभ्यास साधनं — फक्त प्रत्यक्षात generate झालेलीच pages link करा
 const studyTools = [
@@ -208,6 +210,17 @@ ${showSidebar ? `
     </div>
   </section>` : ''}
 </div>
+
+${upcomingHtml ? `
+<section class="block wrap home-upcoming" aria-label="लवकरच अर्ज सुरू होणाऱ्या भरती">
+  <div class="section-head">
+    <h2 class="section-title">🔜 लवकरच अर्ज सुरू होणाऱ्या भरती</h2>
+    ${latestLink}
+  </div>
+  <div class="job-list">
+  ${upcomingHtml}
+  </div>
+</section>` : ''}
 
 ${closingSoonHtml ? `
 <!--active-list-->
