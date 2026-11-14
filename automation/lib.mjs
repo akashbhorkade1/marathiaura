@@ -117,8 +117,7 @@ export function lastVerified(p) {
   return dates.length ? dates[dates.length - 1] : null;
 }
 
-// Source trust (Part 14) — gov.in/nic.in hosts and the official IBPS domain are "official"
-// ibps.in / ibpsreg.ibps.in are the Institute of Banking Personnel Selection's official domains.
+// Source trust (Part 14) — government sites and explicitly supported official institutions.
 export function isOfficialUrl(u) {
   try {
     const x = new URL(u);
@@ -126,6 +125,7 @@ export function isOfficialUrl(u) {
     const h = x.hostname.toLowerCase();
     return h === 'gov.in' || h.endsWith('.gov.in') || h === 'nic.in' || h.endsWith('.nic.in')
       || h === 'nlcindia.in' || h.endsWith('.nlcindia.in')
+      || h === 'eximbankindia.in' || h.endsWith('.eximbankindia.in')
       || h === 'ibps.in' || h.endsWith('.ibps.in');
   } catch { return false; }
 }
