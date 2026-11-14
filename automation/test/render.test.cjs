@@ -6,6 +6,9 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const { spawnSync } = require('node:child_process');
 
 // lib.mjs is ESM — load once via dynamic import
 const libP = import('../lib.mjs');
@@ -212,4 +215,23 @@ test('renderer matrix: missing/empty/array sources + official vs invalid links s
   assert.equal(L.isOfficialUrl('https://mpsc.gov.in/notice.pdf'), true);
   assert.equal(L.isOfficialUrl('not a url'), false);
   assert.equal(L.isOfficialUrl('ftp://mpsc.gov.in/x'), false);
+});
+
+test('build: auto-generated salary section keeps its content', () => {
+  const root = path.resolve(__dirname, '../..');
+  const outDirName = `.test-render-${process.pid}`;
+  const outDir = path.join(root, outDirName);
+  const result = spawnSync(process.execPath, [path.join(root, 'automation', 'build.mjs')], {
+    cwd: root,
+    encoding: 'utf8',
+    env: { ...process.env, OUT_DIR: outDirName }
+  });
+  try {
+    assert.equal(result.status, 0, result.stdout + result.stderr);
+    const html = fs.readFileSync(path.join(outDir, 'exim-bank-mt-manager-recruitment-2026', 'index.html'), 'utf8');
+    assert.match(html, /<h2>वेतन \/ Pay Scale<\/h2>\s*<p><strong>MT प्रशिक्षणादरम्यान ₹65,000 मासिक/);
+    assert.match(html, /अंदाजे वार्षिक CTC ₹25 लाख/);
+  } finally {
+    fs.rmSync(outDir, { recursive: true, force: true });
+  }
 });
